@@ -35,10 +35,24 @@ try {
       .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'])
       .analyze();
 
-    const report = { url: route, violations: results.violations, passes: results.passes.length, incomplete: results.incomplete.length };
+    const incompleteDetails = results.incomplete.map((check) => ({
+      id: check.id,
+      impact: check.impact,
+      description: check.description,
+      help: check.help,
+      helpUrl: check.helpUrl,
+      nodes: check.nodes.map((node) => ({
+        target: node.target,
+        failureSummary: node.failureSummary,
+        any: node.any.map(({ id, message }) => ({ id, message })),
+        all: node.all.map(({ id, message }) => ({ id, message })),
+        none: node.none.map(({ id, message }) => ({ id, message }))
+      }))
+    }));
+    const report = { url: route, violations: results.violations, passes: results.passes.length, incomplete: results.incomplete.length, incompleteDetails };
     const file = path.join('test-reports/axe', (route === '/' ? 'home' : route.split('/').filter(Boolean).join('__')) + '.json');
     fs.writeFileSync(file, JSON.stringify(report, null, 2));
-    summaries.push({ route, status: 'passed', passes: results.passes.length, violations: results.violations.length, incomplete: results.incomplete.length });
+    summaries.push({ route, status: 'passed', passes: results.passes.length, violations: results.violations.length, incomplete: results.incomplete.length, incompleteDetails });
 
     for (const violation of results.violations) {
       console.log(route + ' | ' + violation.impact + ' | ' + violation.id + ' | ' + violation.nodes.length + ' node(s)');

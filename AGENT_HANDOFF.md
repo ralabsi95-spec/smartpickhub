@@ -183,3 +183,60 @@ Do not ask the owner to repeat details already documented here.
 ## 16 November 2026 – CI trigger de-duplication
 - QA concurrency now groups push and pull-request events by `github.head_ref || github.ref_name`, avoiding duplicate runs for the same branch while keeping both triggers enabled.
 - This is scheduling-only; no test code or dependencies changed. The last complete QA evidence is Run #193, successful.
+
+
+## 16 November 2026 – Isolated Astro 7 security upgrade assessment
+- Verified current development branch head: `7bb3537249d700d06d5b4296af20c0939297428b`. PR #1 remains open; no merge was performed. Cloudflare Pages confirmed the preview deployment for commit `7bb3537` succeeded.
+- Created isolated branch `security/astro7-upgrade-assessment` from `automation/bootstrap`; the development branch remains unchanged.
+- Prepared an upgrade test using Astro `^7.4.12`, `@astrojs/rss ^4.0.19`, `@astrojs/sitemap ^3.7.5`, `@astrojs/check ^0.9.12`, TypeScript `^5.9.3`, and Node `22.23.4` (recorded in `.nvmrc` and both workflows). The QA workflow now includes this isolated branch as a push trigger and copies the generated package lock into the quality artifact for review.
+- Rationale: Run #193's npm audit reported five vulnerable packages (Astro direct/critical; sharp, zod and zod-to-ts high; esbuild low). Astro's official changelog confirms the Node 22.23.4 minimum; Astro v6 upgrade guidance also flags Vite 7 and Zod 4 migration considerations. Astro 7 uses Vite 8 and Zod 4, so this is a major migration, not a routine patch.
+- No lockfile has yet been committed, no dependency upgrade has been merged into `automation/bootstrap`, and no production or WordPress changes were made. Await the isolated CI run and inspect the generated lockfile, audit results, build, smoke, axe and Lighthouse reports before deciding whether to proceed.
+- Sources reviewed: official Astro upgrade guides and changelog; npm package metadata for Astro, RSS, Sitemap and Astro Check.
+- **Next:** inspect the isolated branch's Actions result and artifact; if it passes, retrieve and commit the tested lockfile on this branch, switch CI from `npm install` to `npm ci`, and run the full suite again. Keep the branch unmerged until owner review.
+
+
+## 16 November 2026 – Security assessment QA refinements
+- On `security/astro7-upgrade-assessment`, updated `scripts/accessibility-test.mjs` to retain details for axe-core `incomplete` checks (rule IDs, descriptions, help URLs, target selectors and check messages), rather than recording only their count. This makes manual accessibility review actionable and does not convert incomplete checks into violations.
+- Latest code change before this documentation entry: `20183ea2fba10de16994e35db79dad8cbd6d117a`. Isolated Astro 7 QA remains pending; inspect its workflow result and generated lockfile artifact before making any further dependency changes.
+- The baseline branch `automation/bootstrap` remains unchanged at the verified `7bb3537249d700d06d5b4296af20c0939297428b` checkpoint. PR #1 remains open and unmerged; preview deployment for that checkpoint succeeded.
+
+
+## 16 November 2026 – Draft security assessment PR
+- Opened [Draft PR #2](https://github.com/ralabsi95-spec/smartpickhub/pull/2) from `security/astro7-upgrade-assessment` into `automation/bootstrap` so the migration can be reviewed independently. PR #2 is open, Draft and unmerged. PR #1 remains open and unmerged.
+- The isolated QA workflow now also runs `npm ci` from the generated lockfile after capturing that lockfile in the artifact. This tests reproducibility without committing an unreviewed lockfile.
+- Latest isolated branch code commit: `f40454e758ce69ee0b7286e04c3aca7e29649542`. CI status/artifacts have not yet been confirmed through the available GitHub status endpoints; do not mark the upgrade as passed.
+
+
+## 16 November 2026 – Run #212 in progress (Astro 7 assessment)
+- GitHub Actions run #212: https://github.com/ralabsi95-spec/smartpickhub/actions/runs/43901624336, commit `4a8bdd737caf3a9a0eeae83f19d65941ae0e1d62`, event `pull_request` for Draft PR #2.
+- Confirmed successful steps: dependency installation; generated lockfile capture; clean `npm ci`; dependency-audit JSON capture; Astro type/content checks; catalogue and affiliate destination validation; keyword universe generation; static build; generated-page/SEO/JSON-LD/affiliate smoke test; Chromium install; axe-core audit across all catalogue routes; homepage desktop and mobile Lighthouse.
+- At this checkpoint, Lighthouse on guide index, disclosure and all 10 guide pages is still in progress. Consolidated report and artifact upload are pending. Do not declare full QA passed until run completes.
+- No dependency lockfile committed yet; audit findings must be inspected from artifact after upload. PR #2 remains Draft/open/unmerged; PR #1 remains open/unmerged. Production and WordPress remain untouched.
+
+
+## Session update — 2026-11-16 (Astro 7 security assessment)
+
+- Latest full verification: GitHub Actions Run #43904133719 completed successfully on PR validation (tested merge commit `331f2b1990989112aaf6ce73259326cdb99df5b0`, source branch head `d0f0fff60bf20e49e76e862d858cf2a239e20b6f`). Run: https://github.com/ralabsi95-spec/smartpickhub/actions/runs/43904133719
+- Isolated branch: `security/astro7-upgrade-assessment`; Draft PR #2 remains open and unmerged. PR #1 also remains open/unmerged. No live WordPress, production, DNS, publication, or migration changes.
+- Dependency audit: zero vulnerabilities across 362 dependency records. Tested lockfile artifact resolves Astro 7.4.12, RSS 4.0.19, Sitemap 3.7.5, Astro Check 0.9.12, TypeScript 5.9.3, Sharp 0.35.5 and Zod 4.6.7. The generated `package-lock.json` is retained in the workflow artifact for review; it has NOT yet been committed to the repository.
+- QA: 10 guides / 40 products; 40 US and 40 UK affiliate URL constructions using tracking IDs `smartpickh0bc-20` and `smartpickhubu-21`; 14 HTML pages smoke-tested with zero errors/warnings; 13 accessibility routes with zero confirmed axe violations; 14 Lighthouse reports each score 100 for Performance, Accessibility and Best Practices. SEO score 66 is expected for this private preview because noindex/robots disallow is deliberately enabled; do not remove preview protections.
+- Accessibility detail: the previous invalid `aria-label` on the homepage hero-panel div was removed in commit `d0f0fff60bf20e49e76e862d858cf2a239e20b6f`, then the full suite passed. One axe incomplete color-contrast rule remains on homepage only because axe cannot resolve the hero gradient and some overlapping card text; this is not a confirmed violation. Manual visual/contrast verification remains a review item.
+- Verified preview safety: robots.txt disallows crawling, noindex is present, public publication is disabled.
+- Next: review/commit the tested lockfile on this isolated branch, simplify CI to use committed `npm ci` (after lockfile is present), rerun full QA, then decide whether to promote the upgrade PR to non-draft. Do not merge or publish without explicit user approval.
+
+
+## Session update — 2026-11-16 (Run #43907094811 complete; lockfile and contrast review)
+
+- Follow-up GitHub Actions run #43907094811 completed successfully after the documentation update: https://github.com/ralabsi95-spec/smartpickhub/actions/runs/43907094811. All workflow steps completed, including Lighthouse for all 14 pages, consolidated audit generation, and artifact upload.
+- Reviewed artifact #14245464108. latest-audit.json reports overall passed; npm audit reports zero vulnerabilities (0 info/low/moderate/high/critical); Lighthouse audited 14/14 pages, each scoring 100 Performance, 100 Accessibility, 100 Best Practices and 66 SEO. SEO remains intentionally limited by private-preview noindex/robots protections.
+- Reviewed generated package-lock.json from the artifact: lockfileVersion 3; 363 package records including the root; direct dependencies resolve to Astro 7.4.12, RSS 4.0.19, Sitemap 3.7.5, Astro Check 0.9.12, TypeScript 5.9.3, axe Playwright 4.14.0 and Playwright 1.65.1. Key transitive versions include Vite 8.3.8, Sharp 0.35.5 and Zod 4.6.7. All package tarball URLs use https://registry.npmjs.org/; no non-registry resolved URLs or link packages were found. This exact generated lockfile passed the workflow's clean npm ci step and its npm audit was clean. It is still not committed to the branch.
+- CSS contrast estimate for homepage text was checked against declared gradient endpoint colours and the 88%-opaque white hero panel. Main hero text colours measured at or above 5.75:1; muted text inside the translucent panel measured at or above approximately 4.63:1 on sampled gradient endpoints. This supports the CSS design but is not a rendered-pixel/manual visual sign-off. axe still reports homepage color-contrast items as incomplete because of gradient/overlap sampling; zero confirmed axe violations remain across 13 routes.
+- Branch/PR safety verified: automation/bootstrap remains 7bb3537249d700d06d5b4296af20c0939297428b; assessment branch head at this checkpoint is 94eee455c2be853d950f1dabc0b160a243d95817; PR #2 remains Draft/open/unmerged and PR #1 remains open/unmerged. No production, WordPress, DNS, public publication or live-site changes.
+- Next: commit this reviewed lockfile on the assessment branch only, then change the assessment workflow's install step to npm ci (without generating a new lockfile), rerun the full QA suite, and complete a visual homepage contrast check. Do not merge, promote, remove noindex protections or publish without explicit user approval.
+
+
+## 16 November 2026 — Astro 7 lockfile and deterministic CI
+- The exact `package-lock.json` generated and tested in successful QA run `43914985815` was committed to `security/astro7-upgrade-assessment` by the restricted `commit-tested-lockfile` workflow job. It is lockfileVersion 3 and contains 363 package records.
+- That run completed successfully, including the generated lockfile verification, clean `npm ci`, zero-vulnerability dependency audit, Astro checks, catalogue validation, static build, smoke tests, axe-core and Lighthouse audits.
+- Simplified CI to use the committed lockfile with `npm ci` directly and removed the temporary lockfile-commit job. A new PR run must pass on the lockfile-backed workflow before promotion.
+- PR #2 remains Draft/open/unmerged; no merge to development or production deployment is performed in this step.
