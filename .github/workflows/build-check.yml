@@ -54,12 +54,14 @@ jobs:
           mkdir -p test-reports/lighthouse
           npx --yes lighthouse http://127.0.0.1:4321/ --preset=desktop --only-categories=performance,accessibility,best-practices,seo --output=json --output-path=test-reports/lighthouse/home-desktop.json --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage"
           npx --yes lighthouse http://127.0.0.1:4321/ --form-factor=mobile --only-categories=performance,accessibility,best-practices,seo --output=json --output-path=test-reports/lighthouse/home-mobile.json --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage"
-      - name: Lighthouse audit - guide pages
+      - name: Lighthouse audit - all guide and core pages
+        shell: bash
         run: |
-          for page in /guides/ /guides/home-office-ergonomics-us-uk/ /guides/portable-power-travel-tech-us-uk/ /guides/smart-home-security-cameras-us-uk/ /guides/wifi-7-home-mesh-routers-us-uk/ /guides/usb-c-gan-chargers-us-uk/ /guides/webcams-video-calls-streaming-us-uk/ /guides/4k-usb-c-monitors-home-office-us-uk/ /guides/thunderbolt-usb-c-docking-stations-us-uk/ /guides/portable-ssd-external-storage-us-uk/; do
-            slug=$(echo "$page" | tr '/' '_' | sed 's/^_//;s/_$//')
+          mkdir -p test-reports/lighthouse
+          while IFS= read -r page; do
+            slug=$(printf '%s' "$page" | tr '/' '_' | sed 's/^_//;s/_$//')
             npx --yes lighthouse "http://127.0.0.1:4321$page" --only-categories=performance,accessibility,best-practices,seo --output=json --output-path="test-reports/lighthouse/$slug.json" --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage"
-          done
+          done < <(node --input-type=module -e 'import fs from "node:fs"; const data=JSON.parse(fs.readFileSync("src/data/products.json","utf8")); console.log(["/guides/","/affiliate-disclosure/",...(data.guides ?? []).map(g => "/guides/"+g.slug+"/")].join("\n"))')
       - name: Upload automated test reports
         if: always()
         uses: actions/upload-artifact@v4
