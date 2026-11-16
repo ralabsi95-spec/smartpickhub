@@ -158,3 +158,13 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - New content and products remain research drafts until human editorial approval. Product additions require exact model/variant verification, primary-source documentation, separate US/UK search phrases, and no fabricated ASINs, prices, ratings or availability.
 - Google policy guardrail: do not mass-publish unoriginal pages or create pages solely for keyword permutations. Google classifies large-scale low-value content as scaled content abuse; AI assistance is acceptable only when the result is genuinely useful and editorially controlled. Reference: https://developers.google.com/search/docs/essentials/spam-policies and https://developers.google.com/search/docs/fundamentals/using-gen-ai-content.
 - Preview remains noindex and crawl-disallowed. No WordPress, DNS, custom-domain, production or `main` changes. PR #1 remains open and unmerged.
+
+## 16 November 2026 – Webcam buying guide expansion
+- Added a sixth research-draft buying guide, `webcams-video-calls-streaming-us-uk`, with four products: Insta360 Link 2, Logitech Brio 4K, Razer Kiyo Pro Ultra and Elgato Facecam Neo.
+- Catalogue now contains 6 guides and 24 products. All new product identifiers are exact model-name search phrases for Amazon US and Amazon UK; none are represented as verified ASINs or direct product links.
+- New product descriptions are grounded in official manufacturer specifications. Pros/cons describe documented features and practical purchase considerations; they are not hands-on test claims, rankings, reviews or endorsements.
+- Expanded the Home Office keyword cluster with webcam, AI-tracking, speakerphone and capture-card phrases plus audience/decision modifiers.
+- Updated catalogue validation to require six guides and 24 products, retain four products per guide, reject unverified ASIN-shaped identifiers and prevent price/rating/review fields.
+- JSON-LD Article and ItemList continue to be generated dynamically from guide/product data. This structured data describes the comparison content; it does not imply Google rich-result eligibility or guaranteed AI/search visibility.
+- Preview remains noindex; no WordPress, DNS, custom-domain, production or `main` changes. PR #1 remains open and unmerged.
+- Next: verify latest Astro Build Check, review each guide in mobile/desktop preview, then add further product categories only with manufacturer-backed source notes and market-specific model/variant checks.
