@@ -23,11 +23,11 @@ const has = (html, pattern) => new RegExp(pattern, 'i').test(html);
 for (const file of htmlFiles) {
   const html = fs.readFileSync(file, 'utf8');
   const label = path.relative(root, file).split(path.sep).join('/');
-  if (!has(html, '<html[^>]*lang=["'][^"']+["']')) errors.push(label + ': missing HTML language attribute.');
+  if (!has(html, '<html[^>]*lang="[^"]+"')) errors.push(label + ': missing HTML language attribute.');
   if (!has(html, '<title>[^<]{3,}</title>')) errors.push(label + ': missing or empty title.');
-  if (!has(html, '<meta\\s+name=["']description["']\\s+content=["'][^"']{20,}["']')) warnings.push(label + ': meta description missing or unusually short.');
-  if (!has(html, '<meta\\s+name=["']robots["']\\s+content=["'][^"']*noindex')) errors.push(label + ': preview page is missing its noindex directive.');
-  if (!has(html, '<link\\s+rel=["']canonical["']\\s+href=["']https://')) errors.push(label + ': missing absolute HTTPS canonical URL.');
+  if (!has(html, '<meta\\s+name="description"\\s+content="[^"]{20,}"')) warnings.push(label + ': meta description missing or unusually short.');
+  if (!has(html, '<meta\\s+name="robots"\\s+content="[^"]*noindex')) errors.push(label + ': preview page is missing its noindex directive.');
+  if (!has(html, '<link\\s+rel="canonical"\\s+href="https://')) errors.push(label + ': missing absolute HTTPS canonical URL.');
 
   const hrefs = html.matchAll(new RegExp('href="([^"#]+)"', 'g'));
   for (const match of hrefs) {
