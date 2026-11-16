@@ -12,7 +12,7 @@ const pages = [
   '/',
   '/guides/',
   '/affiliate-disclosure/',
-  ...guides.map(({ slug }) => `/guides/${slug}/`)
+  ...guides.map(({ slug }) => '/guides/' + slug + '/')
 ];
 if (new Set(pages).size !== pages.length) throw new Error('Duplicate route detected in accessibility test list.');
 
@@ -28,6 +28,7 @@ try {
     const response = await page.goto(baseUrl + route, { waitUntil: 'networkidle' });
     if (!response || !response.ok()) {
       failures.push(route + ': page did not return a successful HTTP response.');
+      summaries.push({ route, status: 'failed', error: 'non-success HTTP response' });
       continue;
     }
     const results = await new AxeBuilder({ page })
@@ -37,7 +38,7 @@ try {
     const report = { url: route, violations: results.violations, passes: results.passes.length, incomplete: results.incomplete.length };
     const file = path.join('test-reports/axe', (route === '/' ? 'home' : route.split('/').filter(Boolean).join('__')) + '.json');
     fs.writeFileSync(file, JSON.stringify(report, null, 2));
-    summaries.push({ route, passes: results.passes.length, violations: results.violations.length, incomplete: results.incomplete.length });
+    summaries.push({ route, status: 'passed', passes: results.passes.length, violations: results.violations.length, incomplete: results.incomplete.length });
 
     for (const violation of results.violations) {
       console.log(route + ' | ' + violation.impact + ' | ' + violation.id + ' | ' + violation.nodes.length + ' node(s)');
@@ -51,7 +52,20 @@ try {
   await browser.close();
 }
 
-console.log(JSON.stringify({ auditedRoutes: pages.length, guideCount: guides.length, results: summaries }, null, 2));
+const totalViolations = summaries.reduce((sum, item) => sum + (item.violations ?? 0), 0);
+const totalIncomplete = summaries.reduce((sum, item) => sum + (item.incomplete ?? 0), 0);
+const summary = {
+  status: failures.length ? 'failed' : 'passed',
+  generatedAt: new Date().toISOString(),
+  auditedRoutes: pages.length,
+  guideCount: guides.length,
+  totalViolations,
+  totalIncomplete,
+  results: summaries,
+  failures
+};
+fs.writeFileSync('test-reports/axe/summary.json', JSON.stringify(summary, null, 2));
+console.log(JSON.stringify(summary, null, 2));
 if (failures.length) {
   console.error('Accessibility audit failed:');
   for (const failure of failures) console.error('- ' + failure);

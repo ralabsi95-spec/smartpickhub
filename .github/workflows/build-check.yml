@@ -10,26 +10,35 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: smartpickhub-quality-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build-and-audit:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm install
+      - name: Install project dependencies
+        run: npm install
       - name: Capture dependency audit report
         if: always()
         run: |
           mkdir -p test-reports
-          npm audit --json > test-reports/npm-audit.json || echo "npm audit reported findings; inspect the JSON artifact."
-      - run: npm run check
-      - run: npm run validate
-      - run: npm run keywords
-      - run: npm run build
-      - name: Smoke-test generated site
+          npm audit --json > test-reports/npm-audit.json || echo "npm audit reported findings; inspect the JSON report."
+      - name: Astro type and content checks
+        run: npm run check
+      - name: Validate catalogue and affiliate destinations
+        run: npm run validate
+      - name: Generate keyword research universe
+        run: npm run keywords
+      - name: Build static preview
+        run: npm run build
+      - name: Smoke-test generated pages, SEO, JSON-LD and affiliate links
         run: npm run smoke
       - name: Start local preview server
         run: |
@@ -45,24 +54,27 @@ jobs:
           exit 1
       - name: Install Chromium for accessibility audit
         run: npx playwright install --with-deps chromium
-      - name: axe-core accessibility audit
+      - name: axe-core accessibility audit on every catalogue route
         run: npm run accessibility
         env:
           BASE_URL: http://127.0.0.1:4321
-      - name: Lighthouse audit - mobile homepage
+      - name: Lighthouse audit - homepage desktop and mobile
         run: |
           mkdir -p test-reports/lighthouse
           npx --yes lighthouse http://127.0.0.1:4321/ --preset=desktop --only-categories=performance,accessibility,best-practices,seo --output=json --output-path=test-reports/lighthouse/home-desktop.json --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage"
           npx --yes lighthouse http://127.0.0.1:4321/ --form-factor=mobile --only-categories=performance,accessibility,best-practices,seo --output=json --output-path=test-reports/lighthouse/home-mobile.json --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage"
-      - name: Lighthouse audit - all guide and core pages
+      - name: Lighthouse audit - guide index, disclosure and every guide
         shell: bash
         run: |
           mkdir -p test-reports/lighthouse
           while IFS= read -r page; do
             slug=$(printf '%s' "$page" | tr '/' '_' | sed 's/^_//;s/_$//')
             npx --yes lighthouse "http://127.0.0.1:4321$page" --only-categories=performance,accessibility,best-practices,seo --output=json --output-path="test-reports/lighthouse/$slug.json" --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage"
-          done < <(node --input-type=module -e 'import fs from "node:fs"; const data=JSON.parse(fs.readFileSync("src/data/products.json","utf8")); console.log(["/guides/","/affiliate-disclosure/",...(data.guides ?? []).map(g => "/guides/"+g.slug+"/")].join("\n"))')
-      - name: Upload automated test reports
+          done < <(node --input-type=module -e 'import fs from "node:fs"; const data=JSON.parse(fs.readFileSync("src/data/products.json","utf8")); console.log(["/guides/","/affiliate-disclosure/",...(data.guides ?? []).map(g => "/guides/"+g.slug+"/")].join("\\n"))')
+      - name: Build consolidated JSON audit report
+        if: always()
+        run: node scripts/build-audit-report.mjs
+      - name: Upload unified quality and security reports
         if: always()
         uses: actions/upload-artifact@v4
         with:

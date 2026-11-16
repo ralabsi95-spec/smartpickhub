@@ -80,26 +80,28 @@
 - The suggested npm fix involved a major Astro upgrade to 7.4.12 from the current Astro 5 range. No automatic fix or package upgrade was applied.
 - Next agent must retrieve a fresh audit report, verify each advisory against current installed/lockfile versions and official advisories, inspect `npm explain` paths, and prepare a tested upgrade plan. Do not blindly jump major versions or force-install.
 
-## 3. Known stale or inconsistent documentation/code
+## 3. Current QA architecture and known issues
 
-These issues must be reconciled; do not assume old prose is current:
-- Older sections in `MASTER_PROJECT.md` say the catalogue is empty or has 3/9 guides. They are historical. Current data file and validator say 10 guides / 40 products.
-- `README.md` currently says product data is intentionally empty and no old products are imported. The no-import statement remains true, but the empty-catalogue statement is stale and must be corrected.
-- The quality workflows still enumerate only 9 guide routes for accessibility/Lighthouse. Add coverage for all current guide slugs.
-- `.github/workflows/auto-publish.yml` uses Node 20, while the build/QA workflow uses Node 22. It is a draft-research workflow only; scheduled GitHub Actions run from the default branch, so a schedule configured only on this development branch will not run until an approved merge/default-branch change. Do not merge just to activate it.
-- The auto-publish workflow has write permissions and commits generated files under `content-drafts/`; inspect the script and branch target carefully before any manual dispatch. It must never publish pages.
-- Historical entries may describe different earlier counts and run states. Use commit SHA, current files and the latest matching workflow run to establish current truth.
+- There is one QA workflow: `.github/workflows/build-check.yml`. Gemini's reference commit `ef55e105` used this same workflow; no separate test workflow needs importing or merging.
+- `.github/workflows/auto-publish.yml` is a separate draft-research writer that saves unverified drafts to `content-drafts/`; it is not a QA workflow and must not be manually dispatched without owner authorization.
+- Both workflow Node runtimes are aligned to Node 22. The quality workflow uses concurrency cancellation to avoid spending CI time on superseded commits.
+- The QA suite derives guide routes from `src/data/products.json`. Current data is 10 guides / 40 products, but future guides are included without hard-coded route lists.
+- The unified checks cover catalogue structure, Amazon US/UK URL construction and tracking tags, generated HTML noindex/robots/canonical/internal links, required guide JSON-LD Article/ItemList, sponsored/nofollow affiliate anchors, axe-core, Lighthouse and npm audit.
+- Individual JSON reports are saved under `test-reports/`; the consolidated `test-reports/latest-audit.json` is uploaded in the `smartpickhub-quality-reports` artifact for 14 days.
+- Historical Gemini Actions #129 and #130 at `ef55e105` failed at the smoke-test step because the older rendered-HTML checks falsely reported missing noindex/canonical tags. Lighthouse did not run and no artifact was produced. Later test revisions fixed the parser; see Run #179.
+- Runs #174 and #175 succeeded but were documentation-change runs, not Gemini test runs.
+- Run #179 passed the dynamic QA workflow on commit `6a2f61e2faca5927093afcfbfe0d8b92be1e8d4f`: axe-core 13 routes, zero violations, two incomplete homepage checks; Lighthouse 14 pages with Performance/Accessibility/Best Practices 100 and SEO 66 (expected for noindex preview).
+- Run #179 npm audit: 5 findings (1 low, 3 high, 1 critical). Astro is the direct critical package; transitive affected paths include esbuild, sharp, zod and zod-to-ts. No package upgrade has been applied.
+- The latest unified report run is still pending CI verification. Treat this handoff as the intended implementation state until the latest branch run confirms it.
 
 ## 4. Next actions – recommended order
 
-1. **Verify dynamic QA coverage:** inspect CI on the newest head; confirm axe-core and Lighthouse cover all 10 guide routes plus the guides index and disclosure page.
-2. **Fresh dependency audit:** inspect the newest `npm audit --json` artifact; verify advisory IDs, fixed versions and dependency paths; assess a compatible Astro upgrade separately. No force fix.
-3. **Reconcile workflow runtime:** assess Node 20 vs 22 in `auto-publish.yml`; keep automation draft-only and do not enable scheduled production actions.
-4. **Manual visual review:** inspect preview desktop/mobile and key guide templates; record observations before UI changes.
-5. **Manual visual review:** inspect Cloudflare preview at desktop and mobile sizes, including homepage, guides index, all guide pages, affiliate disclosure, navigation, tables and Amazon link labels. Automated tests do not replace visual review.
-6. **Editorial verification:** verify exact US/UK product SKUs and marketplace search destinations, manufacturer claims, regional electrical differences and current listings. Keep drafts unapproved until owner review.
-7. **Marketing/measurement:** plan Search Console and analytics integration only after owner authorizes accounts/consent/privacy choices. Distinguish real visitors from owner/QA traffic. Build Pinterest/social distribution only around approved guide URLs and assets.
-8. **Production decision is separate:** compare continuing WordPress versus Astro migration, including backup, content migration, redirects, SEO, affiliate links, hosting and rollback. Present options; do not execute without explicit approval.
+1. Verify the unified QA workflow on the latest branch SHA; inspect `test-reports/latest-audit.json` and the artifact.
+2. Review current npm advisory IDs, exact dependency paths and fixed versions. Do not run `npm audit fix --force` or make an untested major upgrade.
+3. Prepare a separate Astro upgrade branch or isolated test commit with lockfile/build/QA evidence before recommending adoption.
+4. Complete manual desktop/mobile visual review of the preview and all guide templates.
+5. Verify product-specific US/UK variants and Amazon marketplace destinations before editorial approval.
+6. Keep all guides as research drafts until owner review. Do not enable public publication or migrate WordPress without explicit approval.
 
 ## 5. Working commands
 
@@ -143,3 +145,11 @@ Start by confirming you have read `AGENT_HANDOFF.md` and `MASTER_PROJECT.md`. Re
 - the single next action you recommend.
 
 Do not ask the owner to repeat details already documented here.
+
+
+## 16 November 2026 – Unified QA update
+- Reviewed Gemini reference `ef55e105`: it was the same build-check workflow, not a second QA system. Its Actions #129/#130 failed at the old smoke test due to false-negative parsing of rendered noindex/canonical tags; Lighthouse did not run. Runs #174/#175 were documentation runs and succeeded, but were not the Gemini workflow result.
+- Run #179 subsequently passed the dynamic all-guide QA on SHA `6a2f61e2faca5927093afcfbfe0d8b92be1e8d4f`: axe 13 routes, zero violations, 2 incomplete homepage checks; Lighthouse 14 pages with 100/100/100/66 scores.
+- Run #179 npm audit: 5 vulnerabilities (1 low, 3 high, 1 critical), Astro direct and esbuild/sharp/zod/zod-to-ts transitive. No upgrade applied.
+- Current implementation adds dynamic marketplace-link and JSON-LD checks, noindex/robots/canonical/internal-link checks, structured test JSON and consolidated `test-reports/latest-audit.json`. CI verification is pending for this batch.
+- Node 22 is aligned across workflows. No publishing, merge, WordPress or DNS changes.
