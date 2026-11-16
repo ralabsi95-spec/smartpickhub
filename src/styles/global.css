@@ -64,3 +64,12 @@ main { min-height: 70vh; padding-block: 2.5rem; }
     text-align: center;
   }
 }
+
+/* Responsive comparison tables used on individual buying guides. */
+.table-wrap { width: 100%; overflow-x: auto; margin-block: 1rem 1.5rem; border: 1px solid #e5e7eb; border-radius: .85rem; background: #fff; }
+.comparison-overview table { width: 100%; min-width: 620px; border-collapse: collapse; text-align: left; }
+.comparison-overview th, .comparison-overview td { padding: .85rem 1rem; border-bottom: 1px solid #e5e7eb; vertical-align: top; }
+.comparison-overview thead th { background: #f1f5f9; font-size: .875rem; }
+.comparison-overview tbody th { min-width: 180px; font-weight: 700; }
+.comparison-overview tbody tr:last-child th, .comparison-overview tbody tr:last-child td { border-bottom: 0; }
+.comparison-overview a { text-decoration: underline; text-underline-offset: .15em; }
