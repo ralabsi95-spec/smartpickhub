@@ -107,7 +107,7 @@ jobs:
         shell: bash
         run: |
           cp /tmp/smartpickhub-reports/package-lock.json package-lock.json
-          node --input-type=module -e 'import fs from "node:fs"; const pkg=JSON.parse(fs.readFileSync("package.json","utf8")); const lock=JSON.parse(fs.readFileSync("package-lock.json","utf8")); const root=lock.packages?.[""]; if(lock.lockfileVersion!==3 || JSON.stringify(root?.dependencies)!==JSON.stringify(pkg.dependencies) || JSON.stringify(root?.devDependencies)!==JSON.stringify(pkg.devDependencies)) process.exit(1); console.log("Lockfile matches package.json and lockfileVersion 3");'
+          node --input-type=module -e 'import fs from "node:fs"; const pkg=JSON.parse(fs.readFileSync("package.json","utf8")); const lock=JSON.parse(fs.readFileSync("package-lock.json","utf8")); const root=lock.packages?.[""]; const stable=o=>JSON.stringify(Object.entries(o ?? {}).sort(([a],[b])=>a.localeCompare(b))); if(lock.lockfileVersion!==3 || stable(root?.dependencies)!==stable(pkg.dependencies) || stable(root?.devDependencies)!==stable(pkg.devDependencies)) process.exit(1); console.log("Lockfile matches package.json and lockfileVersion 3");'
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add package-lock.json
