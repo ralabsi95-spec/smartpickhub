@@ -2,7 +2,7 @@ name: Astro Build and Quality Checks
 
 on:
   push:
-    branches: [automation/bootstrap, security/astro7-upgrade-assessment]
+    branches: [automation/bootstrap]
   pull_request:
     branches: [main, automation/bootstrap]
   workflow_dispatch:
@@ -91,7 +91,7 @@ jobs:
 
   commit-tested-lockfile:
     needs: build-and-audit
-    if: github.event_name == 'push' && github.ref == 'refs/heads/security/astro7-upgrade-assessment' && needs.build-and-audit.result == 'success'
+    if: github.event_name == 'pull_request' && github.head_ref == 'security/astro7-upgrade-assessment' && github.base_ref == 'automation/bootstrap' && github.event.pull_request.head.repo.full_name == github.repository && needs.build-and-audit.result == 'success'
     runs-on: ubuntu-latest
     permissions:
       contents: write
