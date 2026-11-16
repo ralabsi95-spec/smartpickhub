@@ -1,0 +1,38 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import data from '../../data/products.json';
+import { buildAffiliateUrl } from '../../config/affiliate';
+export function getStaticPaths() {
+  return (data.guides ?? []).map((guide) => ({ params: { slug: guide.slug }, props: { guide } }));
+}
+const { guide } = Astro.props;
+---
+<Layout title={guide.title} description={guide.summary}>
+  <article>
+    <span class="pill">{guide.category}</span>
+    <h1>{guide.title}</h1>
+    <p class="muted">{guide.summary}</p>
+    {guide.introduction && <p>{guide.introduction}</p>}
+    {guide.products?.map((product, index) => (
+      <section class="card" style="margin-block: 1.25rem">
+        <h2>{index + 1}. {product.name}</h2>
+        {product.verdict && <p>{product.verdict}</p>}
+        {product.pros?.length > 0 && <><h3>What to consider</h3><ul>{product.pros.map((item) => <li>{item}</li>)}</ul></>}
+        {product.cons?.length > 0 && <><h3>Potential drawbacks</h3><ul>{product.cons.map((item) => <li>{item}</li>)}</ul></>}
+        <div class="product-actions">
+          {product.us_identifier && <a class="button" href={buildAffiliateUrl('us', product.us_identifier)} rel="sponsored nofollow noopener" target="_blank">Check on Amazon US</a>}
+          {product.uk_identifier && <a class="button secondary" href={buildAffiliateUrl('uk', product.uk_identifier)} rel="sponsored nofollow noopener" target="_blank">Check on Amazon UK</a>}
+        </div>
+      </section>
+    ))}
+    <p class="disclosure">As an Amazon Associate, SmartPickHub earns from qualifying purchases. We do not claim hands-on testing unless explicitly stated and evidenced.</p>
+  </article>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: guide.title,
+    description: guide.summary,
+    datePublished: guide.publishedAt,
+    author: { '@type': 'Organization', name: 'SmartPickHub' }
+  })} />
+</Layout>
