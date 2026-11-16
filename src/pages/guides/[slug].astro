@@ -50,8 +50,25 @@ const jsonLd = JSON.stringify(structuredData).replace(/</g, '\\u003c');
     <p class="muted">{guide.summary}</p>
     {guide.editorialStatus && <p class="disclosure">{guide.editorialStatus}</p>}
     {guide.introduction && <p>{guide.introduction}</p>}
+    <section class="comparison-overview" aria-labelledby="comparison-overview-title">
+      <h2 id="comparison-overview-title">Quick comparison</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Product</th><th scope="col">Best for</th><th scope="col">Key decision point</th></tr></thead>
+          <tbody>
+            {products.map((product) => (
+              <tr>
+                <th scope="row"><a href={`#product-${product.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}>{product.name}</a></th>
+                <td>{product.bestFor}</td>
+                <td>{product.pros?.[0] ?? product.verdict}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
     {products.map((product, index) => (
-      <section class="card" style="margin-block: 1.25rem">
+      <section class="card" id={`product-${product.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`} style="margin-block: 1.25rem">
         <h2>{index + 1}. {product.name}</h2>
         {product.bestFor && <p><strong>Best for:</strong> {product.bestFor}</p>}
         {product.verdict && <p>{product.verdict}</p>}
