@@ -7,10 +7,12 @@ interface Props {
   ukIdentifier?: string;
 }
 const { name, verdict, usIdentifier, ukIdentifier } = Astro.props;
+const hasAffiliateLinks = Boolean(usIdentifier || ukIdentifier);
 ---
 <article class="card">
   <h3>{name}</h3>
   {verdict && <p>{verdict}</p>}
+  {hasAffiliateLinks && <p class="affiliate-note">Affiliate links (paid links):</p>}
   <div class="product-actions">
     {usIdentifier && <a class="button" href={buildAffiliateUrl('us', usIdentifier)} rel="sponsored nofollow noopener" target="_blank">Amazon US</a>}
     {ukIdentifier && <a class="button secondary" href={buildAffiliateUrl('uk', ukIdentifier)} rel="sponsored nofollow noopener" target="_blank">Amazon UK</a>}
