@@ -1,8 +1,9 @@
 import rss from '@astrojs/rss';
 import data from '../data/products.json';
 
+// Only editorially approved guides may enter the public feed.
 export function GET(context) {
-  const guides = (data.guides ?? []).map((guide) => ({
+  const guides = (data.guides ?? []).filter((guide) => guide.editorialStatus === 'Approved for publication').map((guide) => ({
     title: guide.title,
     pubDate: guide.publishedAt ? new Date(guide.publishedAt) : new Date(),
     description: guide.summary,
