@@ -284,3 +284,16 @@ Do not ask the owner to repeat details already documented here.
 - Cloudflare Pages preview check succeeded for the latest candidate commit; preview remains noindex and blocked in robots.txt. The separate Cloudflare Workers build check continues to fail and is not a Pages deployment.
 - Production `main` remains unchanged; PR #1 remains Draft/open/unmerged. No public site content, settings, DNS or production affiliate configuration was changed.
 - Next: complete Lighthouse verification; review/replace the legacy EF21 candidate before any public release; continue product-by-product UK/US variant and direct Amazon listing/ASIN verification; then review homepage discovery layout. No direct Amazon ASINs, prices or ratings should be added without verification and editorial approval.
+
+
+## 16 November 2026 – Pinterest cover automation implementation
+- Development implementation commit: 76105fa678a952e960d3de9843fd76f6efe5d7c8 (branch automation/bootstrap).
+- Added a deterministic, local image pipeline that reads the 25 guide records and generates one original branded 1000×1500 PNG cover per guide in public/images/pinterest/<slug>.png. Uses Sharp 0.35.5 with original SVG text/shapes; no external image service, stock photography, paid API, external artwork or credentials.
+- The image command runs automatically before Astro dev and build. Guide pages display their cover and include Open Graph/Twitter image metadata; the Buying Guides index displays matching cover thumbnails.
+- Smoke tests now verify every guide has a valid PNG signature and exact 1000×1500 dimensions, that the guide page references it, and that social image metadata exists.
+- On quality run #43943510553, dependency installation, Astro checks, catalogue validation, keyword generation, static build, smoke tests, local preview server, axe accessibility audit and homepage desktop/mobile Lighthouse completed successfully. Per-guide Lighthouse audits were still running when this handoff note was written; check the final run result before calling full QA complete.
+- Isolated Cloudflare preview guide page was fetched successfully and its canonical URL, noindex/nofollow directive, and Open Graph/Twitter image URLs point to the generated cover path. Direct binary extraction of the PNG was not available through the page fetch, while the CI smoke test verified the built PNG files.
+- Confirmed main branch remains at 2b7b9a82bd8a7fdf601b2add42d5612d04d3e3b4; PR #1 remains open, Draft and unmerged. No production or WordPress changes.
+- Product photos are still intentionally omitted. Existing manufacturer source links and Amazon US/UK model-search links remain; direct ASINs and image feeds require verified listings and applicable licensing/API eligibility. No product image has been scraped or copied.
+- Free-operation note: the generator itself uses no paid API or stock asset. GitHub Actions and hosting remain subject to their normal included-usage quotas; this is not a promise of unlimited compute/hosting at zero cost.
+- Next: check completion of run #43943510553, inspect the deployed preview cover, then continue product-by-product verification of official source links and exact US/UK retailer listings. Keep all content in draft/review status and do not merge or publish without owner approval.
