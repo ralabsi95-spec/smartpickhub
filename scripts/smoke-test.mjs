@@ -106,7 +106,7 @@ for (const file of htmlFiles) {
       const href = attr(anchor, 'href');
       if (!href) continue;
       let url;
-      try { url = new URL(href); } catch { continue; }
+      try { url = new URL(href.replace(/&amp;/g, '&').replace(/&#38;/g, '&')); } catch { continue; }
       const host = url.hostname.toLowerCase();
       if (host === 'www.amazon.com' || host === 'amazon.com' || host.endsWith('.amazon.com')) {
         amazonLinks.push({ market: 'us', url, rel: attr(anchor, 'rel') });
