@@ -176,3 +176,11 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Updated the catalogue validator to require seven guides and 28 products; expanded the computer-accessories keyword cluster with USB-C monitor, creator display and docking-intent phrases.
 - All content remains research draft, not approved hands-on reviews or ranked recommendations. No price, rating, review-count, stock or performance-test claims were added.
 - Astro preview remains noindex. No production publication, WordPress/DNS changes, PR merge or changes to `main`.
+
+## 16 November 2026 – Monitor category and guide UX improvements
+- Added guide seven (4K USB-C monitors) with four manufacturer-documented models. Total catalogue: 7 research guides / 28 product records.
+- Improved every guide page with a quick-comparison table linking each model to its detailed section, showing best-for context and a key decision point from the recorded specifications.
+- Added horizontally scrollable, accessible table styling for narrow screens; preserved the existing mobile header and product-card layout.
+- Updated product data, keyword clusters, validator and this master log. No price/rating/review claims, no unverified ASINs and no hands-on testing claims.
+- Build validation is pending for the latest UI changes. Prior run 88 on the 24-product head passed; new 28-product and table changes must pass their own CI run.
+- Branch remains `automation/bootstrap`; PR #1 is not merged. Preview remains noindex. WordPress, DNS and production were not changed.
