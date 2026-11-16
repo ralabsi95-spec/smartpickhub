@@ -373,3 +373,9 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Added detailed axe-core incomplete-check output in `scripts/accessibility-test.mjs` on the isolated security branch. Reports now preserve rule IDs, descriptions, help URLs, target selectors and individual check messages, enabling manual review of the two previously incomplete homepage checks without misclassifying them as violations.
 - Code checkpoint: `20183ea2fba10de16994e35db79dad8cbd6d117a`; full isolated Astro 7 QA is pending. The workflow captures the generated lockfile as an artifact for reproducibility review.
 - No changes were made to `automation/bootstrap`, PR #1, the live WordPress site, DNS or production. PR #1 remains unmerged; its latest verified base checkpoint is `7bb3537249d700d06d5b4296af20c0939297428b`.
+
+
+## 16 November 2026 – Draft security assessment PR
+- Opened Draft PR #2: https://github.com/ralabsi95-spec/smartpickhub/pull/2, from `security/astro7-upgrade-assessment` to `automation/bootstrap`. It remains open, Draft and unmerged; PR #1 also remains open and unmerged.
+- The assessment workflow captures its generated lockfile, then performs a clean `npm ci` install before audit/build/test steps. This checks lockfile reproducibility while keeping the lockfile out of the branch until reviewed.
+- Latest isolated code commit: `f40454e758ce69ee0b7286e04c3aca7e29649542`. CI status is not yet confirmed; no success is claimed.
