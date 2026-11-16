@@ -212,23 +212,23 @@
           "sourceNote": "eufy specifications describe the dual cameras, solar panel, local storage, Wi-Fi band and recording limitations."
         },
         {
-          "name": "Arlo Essential Outdoor Camera 2K (2nd Generation)",
-          "bestFor": "Wire-free outdoor monitoring with 2K video, spotlight and two-way audio.",
-          "us_identifier": "Arlo Essential Outdoor Camera 2K 2nd Generation VMC3050",
-          "uk_identifier": "Arlo Essential Outdoor Camera 2K 2nd Generation VMC3050",
+          "name": "Arlo Essential 3 2K Outdoor Security Camera",
+          "bestFor": "Wire-free outdoor monitoring for users who want 2K video, colour night vision, two-way audio and a built-in spotlight.",
+          "us_identifier": "Arlo Essential 3 2K Outdoor Security Camera",
+          "uk_identifier": "Arlo Essential 3 2K Security Camera",
           "pros": [
-            "2K video with a 130-degree diagonal field of view",
-            "Integrated spotlight, colour night vision and two-way audio",
-            "Rechargeable battery and weather-resistant outdoor design"
+            "2K video with a 130-degree diagonal field of view and up to 12x digital zoom",
+            "Colour night vision, built-in spotlight and siren, plus two-way audio",
+            "Integrated rechargeable battery and support for 2.4GHz and 5GHz Wi-Fi"
           ],
           "cons": [
-            "The integrated battery is rechargeable but not removable",
-            "Some smart notifications and cloud features require an Arlo Secure subscription",
-            "Uses 2.4GHz Wi-Fi and needs suitable upload bandwidth"
+            "The battery is integrated rather than a quick-swap removable pack",
+            "Cloud video storage and some advanced AI/notification features depend on an Arlo Secure plan",
+            "The camera has a fixed view rather than pan-and-tilt movement"
           ],
-          "verdict": "Consider it for a wire-free outdoor installation where 2K capture and two-way audio matter. Verify the exact VMC3050 model and subscription features for your country.",
-          "source": "https://www.arlo.com/en_gb/cameras/arlo-essential-2k-outdoor",
-          "sourceNote": "Arlo UK product specifications and support documentation describe resolution, field of view, battery, Wi-Fi and subscription-dependent features."
+          "verdict": "A current-generation option to compare for wire-free outdoor monitoring where 2K detail, colour night vision and two-way audio matter. Check the exact regional package and subscription terms before buying.",
+          "source": "https://www.arlo.com/en_gb/cameras/arlo-essential-3-2k-security",
+          "sourceNote": "Arlo UK's Essential 3 2K product page lists 2K resolution, 130-degree field of view, 12x digital zoom, integrated battery, Wi-Fi bands, spotlight, siren and two-way audio; some AI and cloud functions are plan-dependent."
         },
         {
           "name": "Ring Battery Doorbell 2K Plus",
