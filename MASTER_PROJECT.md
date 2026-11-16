@@ -299,3 +299,13 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - No WordPress/live site, `main`, PR merge, DNS, custom domain, production deployment, or editorial publication was changed or authorized.
 - Documentation commits: handoff `45c0d7d7c5a65cfaa9fa501f1c8fdce9d6569cf4`; README update recorded in Git history immediately before this entry.
 - **Next action:** make axe-core and Lighthouse route coverage derive dynamically from all guide slugs in `src/data/products.json`, then run CI and inspect the resulting artifact. Follow with fresh dependency audit and safe Astro upgrade assessment.
+
+
+## 16 November 2026 – Dynamic quality coverage for the complete catalogue
+- Replaced the hard-coded axe-core route array in `scripts/accessibility-test.mjs` with routes derived directly from `src/data/products.json`. It now audits the homepage, guide index, affiliate disclosure and every current guide, and records route count plus incomplete-check counts in its summary.
+- Replaced the fixed Lighthouse guide loop in `.github/workflows/build-check.yml` with a catalogue-driven loop. Lighthouse now audits the guide index, affiliate disclosure and all guide detail pages; the homepage continues to receive desktop and mobile audits.
+- This removes the known nine-of-ten guide coverage gap and makes future guide additions automatically enter both QA suites without manually editing route lists.
+- Implementation commits: accessibility `e1cd5faf1ded573fe5fb9bc498bad243fcc532d7`; Lighthouse workflow `6a2f61e2faca5927093afcfbfe0d8b92be1e8d4f`. Both are on `automation/bootstrap`; GitHub Actions verification is pending.
+- The workflow still captures a fresh `npm audit --json` report as a CI artifact. No package versions or lockfiles were changed; no audit fix was run.
+- Latest known PR state before these commits: PR #1 open, Draft and unmerged. Live WordPress, DNS, production, editorial publication and preview indexing safeguards remain unchanged.
+- **Next:** verify the Actions run for the newest branch head, inspect the axe/Lighthouse/audit artifacts, and then triage current npm advisories by exact dependency path and fixed version. No blind major upgrade or `npm audit fix --force`.
