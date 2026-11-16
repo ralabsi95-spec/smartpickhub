@@ -367,3 +367,9 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - This is a major upgrade assessment: Astro v6 introduced Vite 7 and Zod 4 changes; Astro 7 moves to Vite 8 and has a minimum Node requirement of 22.23.4. The previous npm audit showed 5 findings (1 low, 3 high, 1 critical). No blind fix or forced update was used.
 - **Pending:** isolated CI, lockfile review, fresh npm audit, and full build/smoke/axe/Lighthouse verification. No package change has been merged into `automation/bootstrap`; PR #1 remains Draft/open/unmerged. No live WordPress, DNS, publishing or production changes.
 - **Next:** inspect the isolated CI run and its artifact. Only after passing tests should the generated lockfile be committed to the isolated branch and CI switched to reproducible `npm ci`.
+
+
+## 16 November 2026 – Security assessment QA refinements
+- Added detailed axe-core incomplete-check output in `scripts/accessibility-test.mjs` on the isolated security branch. Reports now preserve rule IDs, descriptions, help URLs, target selectors and individual check messages, enabling manual review of the two previously incomplete homepage checks without misclassifying them as violations.
+- Code checkpoint: `20183ea2fba10de16994e35db79dad8cbd6d117a`; full isolated Astro 7 QA is pending. The workflow captures the generated lockfile as an artifact for reproducibility review.
+- No changes were made to `automation/bootstrap`, PR #1, the live WordPress site, DNS or production. PR #1 remains unmerged; its latest verified base checkpoint is `7bb3537249d700d06d5b4296af20c0939297428b`.
