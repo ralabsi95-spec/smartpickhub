@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 interface Props { title: string; description?: string; canonical?: string; }
-const { title, description = 'Practical buying guides and product comparisons for US and UK shoppers.', canonical } = Astro.props;
+const { title, description = 'Practical buying guides and product comparisons for shoppers in the United States and United Kingdom.', canonical } = Astro.props;
 const canonicalUrl = canonical ?? Astro.url.href;
 ---
 <!doctype html>
@@ -9,6 +9,7 @@ const canonicalUrl = canonical ?? Astro.url.href;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
@@ -31,8 +32,8 @@ const canonicalUrl = canonical ?? Astro.url.href;
     <main class="container"><slot /></main>
     <footer class="site-footer">
       <div class="container">
-        <p>© {new Date().getFullYear()} SmartPickHub. As an Amazon Associate, we may earn from qualifying purchases.</p>
-        <p>Product details and availability can change. Always confirm details on the retailer's website.</p>
+        <p>As an Amazon Associate I earn from qualifying purchases.</p>
+        <p>SmartPickHub may earn commissions from qualifying purchases. Affiliate links are identified near the relevant links. Product details and availability can change; always confirm current details with the retailer.</p>
       </div>
     </footer>
   </body>
