@@ -132,7 +132,12 @@
         "monitors with USB C power delivery",
         "colour accurate monitors",
         "USB C hub monitors",
-        "dual monitor setups"
+        "dual monitor setups",
+        "Thunderbolt 4 docking stations",
+        "Thunderbolt 5 docks",
+        "USB C docking stations",
+        "dual monitor laptop docks",
+        "laptop docking stations with 2.5Gb Ethernet"
       ],
       "audiences": [
         "for MacBook",
@@ -140,7 +145,10 @@
         "for dual monitor setups",
         "for photo editing",
         "for graphic design",
-        "for laptop docking"
+        "for laptop docking",
+        "for dual 4K monitors",
+        "for Thunderbolt 5 laptops",
+        "for multi-peripheral workstations"
       ],
       "needs": [
         "port compatibility",
@@ -148,7 +156,11 @@
         "desk cable management",
         "USB-C power delivery wattage",
         "colour gamut and calibration",
-        "stand ergonomics and refresh rate"
+        "stand ergonomics and refresh rate",
+        "host laptop Thunderbolt and USB4 support",
+        "USB-C Power Delivery wattage",
+        "macOS versus Windows multi-display limits",
+        "port selection and Ethernet speed"
       ]
     },
     {
