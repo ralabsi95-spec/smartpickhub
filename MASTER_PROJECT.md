@@ -277,3 +277,12 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 2. Continue adding product categories only where regional model variants and manufacturer documentation can be verified.
 3. Review desktop and mobile preview visually; do not remove preview indexing protections.
 4. Keep all new guides as drafts until exact marketplace listings, product variants, links and editorial content receive human approval.
+
+
+## 16 November 2026 – Quality artifact #166 security review
+- Downloaded and inspected the `smartpickhub-quality-reports` artifact from run #166 (commit `866f83a8f71d51791ba6dd98b84270296a723538`).
+- axe-core: zero violations on all 12 audited routes. Homepage has two incomplete checks requiring human review; the other 11 route reports have zero incomplete checks.
+- Lighthouse: all 12 reports show Performance 100, Accessibility 100 and Best Practices 100; SEO 66 remains expected because preview indexing is intentionally blocked.
+- npm audit: 5 findings (1 low, 3 high, 1 critical) across direct Astro and transitive esbuild, sharp, zod and zod-to-ts. The critical Astro advisory is GHSA-26w7-cxv4-gfx2 (remote code execution through AVIF image optimization; affected Astro versions below 7.2.8). The report indicates npm's proposed fix is Astro 7.4.12, a major-version jump from the current Astro 5 dependency range.
+- No `npm audit fix`, `--force`, dependency update or lockfile change was made. Treat this as a material dependency risk requiring a deliberate Astro 7 migration assessment and compatibility testing; do not apply a blind major upgrade.
+- The audit report is from run #166's installed dependency tree, not yet a refreshed audit after the latest catalogue additions. Re-run the audit against the current branch before release.
