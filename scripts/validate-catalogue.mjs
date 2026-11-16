@@ -13,10 +13,11 @@ const expected = new Set([
   'webcams-video-calls-streaming-us-uk',
   '4k-usb-c-monitors-home-office-us-uk',
   'thunderbolt-usb-c-docking-stations-us-uk',
+  'portable-ssd-external-storage-us-uk',
 ]);
 const forbiddenKeys = new Set(['price', 'rating', 'reviewCount', 'reviews', 'offers', 'aggregateRating', 'availability']);
 
-if (guides.length !== 8) errors.push(`Expected 8 research guides; found ${guides.length}.`);
+if (guides.length !== 9) errors.push(`Expected 9 research guides; found ${guides.length}.`);
 const slugs = new Set();
 let productCount = 0;
 for (const guide of guides) {
@@ -45,7 +46,7 @@ for (const guide of guides) {
     }
   }
 }
-if (productCount !== 32) errors.push(`Expected 32 products; found ${productCount}.`);
+if (productCount !== 36) errors.push(`Expected 36 products; found ${productCount}.`);
 if (errors.length) {
   console.error('Catalogue validation failed:');
   for (const error of errors) console.error(`- ${error}`);
