@@ -44,11 +44,11 @@ const categories = [...new Set(guides.map((guide) => guide.category).filter(Bool
   </section>
 
   <script>
-    const searchInput = document.querySelector('#guide-search');
-    const categorySelect = document.querySelector('#guide-category');
-    const cards = Array.from(document.querySelectorAll('[data-guide-card]'));
-    const count = document.querySelector('#guide-results-count');
-    const emptyState = document.querySelector('#guide-no-results');
+    const searchInput = document.querySelector<HTMLInputElement>('#guide-search');
+    const categorySelect = document.querySelector<HTMLSelectElement>('#guide-category');
+    const cards = Array.from(document.querySelectorAll<HTMLElement>('[data-guide-card]'));
+    const count = document.querySelector<HTMLElement>('#guide-results-count');
+    const emptyState = document.querySelector<HTMLElement>('#guide-no-results');
 
     function filterGuides() {
       const query = searchInput?.value.trim().toLocaleLowerCase() ?? '';
