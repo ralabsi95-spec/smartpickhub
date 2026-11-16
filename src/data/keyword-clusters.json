@@ -137,7 +137,14 @@
         "Thunderbolt 5 docks",
         "USB C docking stations",
         "dual monitor laptop docks",
-        "laptop docking stations with 2.5Gb Ethernet"
+        "laptop docking stations with 2.5Gb Ethernet",
+        "portable SSDs",
+        "external SSD drives",
+        "USB4 portable SSDs",
+        "rugged external SSDs",
+        "portable SSDs for video editing",
+        "2TB portable SSD",
+        "4TB external SSD"
       ],
       "audiences": [
         "for MacBook",
@@ -148,7 +155,10 @@
         "for laptop docking",
         "for dual 4K monitors",
         "for Thunderbolt 5 laptops",
-        "for multi-peripheral workstations"
+        "for multi-peripheral workstations",
+        "for photographers and videographers",
+        "for laptop backups",
+        "for travel and field work"
       ],
       "needs": [
         "port compatibility",
@@ -160,7 +170,11 @@
         "host laptop Thunderbolt and USB4 support",
         "USB-C Power Delivery wattage",
         "macOS versus Windows multi-display limits",
-        "port selection and Ethernet speed"
+        "port selection and Ethernet speed",
+        "USB 3.2 Gen 2 versus Gen 2x2 bandwidth",
+        "USB4 and Thunderbolt host compatibility",
+        "IP water and dust protection ratings",
+        "hardware encryption and backup strategy"
       ]
     },
     {
