@@ -2,38 +2,70 @@
 import Layout from '../../layouts/Layout.astro';
 import data from '../../data/products.json';
 import { buildAffiliateUrl } from '../../config/affiliate';
+
 export function getStaticPaths() {
   return (data.guides ?? []).map((guide) => ({ params: { slug: guide.slug }, props: { guide } }));
 }
+
 const { guide } = Astro.props;
+const canonicalUrl = new URL(`/guides/${guide.slug}/`, Astro.site).toString();
+const products = guide.products ?? [];
+const itemList = {
+  '@type': 'ItemList',
+  name: `${guide.title} — product comparison`,
+  numberOfItems: products.length,
+  itemListOrder: 'https://schema.org/ItemListUnordered',
+  itemListElement: products.map((product, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    item: {
+      '@type': 'Product',
+      name: product.name,
+      description: product.verdict ?? product.bestFor ?? undefined
+    }
+  }))
+};
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      headline: guide.title,
+      description: guide.summary,
+      datePublished: guide.publishedAt,
+      author: { '@type': 'Organization', name: 'SmartPickHub' },
+      publisher: { '@type': 'Organization', name: 'SmartPickHub' },
+      mainEntityOfPage: canonicalUrl,
+      mainEntity: itemList
+    },
+    itemList
+  ]
+};
+const jsonLd = JSON.stringify(structuredData).replace(/</g, '\\u003c');
 ---
 <Layout title={guide.title} description={guide.summary}>
   <article>
     <span class="pill">{guide.category}</span>
     <h1>{guide.title}</h1>
     <p class="muted">{guide.summary}</p>
+    {guide.editorialStatus && <p class="disclosure">{guide.editorialStatus}</p>}
     {guide.introduction && <p>{guide.introduction}</p>}
-    {guide.products?.map((product, index) => (
+    {products.map((product, index) => (
       <section class="card" style="margin-block: 1.25rem">
         <h2>{index + 1}. {product.name}</h2>
+        {product.bestFor && <p><strong>Best for:</strong> {product.bestFor}</p>}
         {product.verdict && <p>{product.verdict}</p>}
-        {product.pros?.length > 0 && <><h3>What to consider</h3><ul>{product.pros.map((item) => <li>{item}</li>)}</ul></>}
-        {product.cons?.length > 0 && <><h3>Potential drawbacks</h3><ul>{product.cons.map((item) => <li>{item}</li>)}</ul></>}
-        <p class="muted">Choose the Amazon store you normally use. These are separate marketplace links.</p>
+        {product.pros?.length > 0 && <><h3>Potential advantages</h3><ul>{product.pros.map((item) => <li>{item}</li>)}</ul></>}
+        {product.cons?.length > 0 && <><h3>Points to consider</h3><ul>{product.cons.map((item) => <li>{item}</li>)}</ul></>}
+        {product.source && <p class="muted">Manufacturer information: <a href={product.source} target="_blank" rel="noopener noreferrer">View product specifications</a>. {product.sourceNote}</p>}
+        <p class="muted">Choose the Amazon store you normally use. These are separate marketplace search links unless a verified direct ASIN is supplied.</p>
         <div class="product-actions">
           {product.us_identifier && <a class="button" href={buildAffiliateUrl('us', product.us_identifier)} rel="sponsored nofollow noopener" target="_blank">Amazon US (paid link)</a>}
           {product.uk_identifier && <a class="button secondary" href={buildAffiliateUrl('uk', product.uk_identifier)} rel="sponsored nofollow noopener" target="_blank">Amazon UK (paid link)</a>}
         </div>
       </section>
     ))}
-    <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Affiliate links are paid links. Product information is research-based unless documented hands-on testing is explicitly stated.</p>
+    <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Affiliate links are paid links. Product information is based on cited manufacturer documentation and editorial research; SmartPickHub has not claimed hands-on testing.</p>
   </article>
-  <script type="application/ld+json" set:html={JSON.stringify({
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: guide.title,
-    description: guide.summary,
-    datePublished: guide.publishedAt,
-    author: { '@type': 'Organization', name: 'SmartPickHub' }
-  })} />
+  <script type="application/ld+json" set:html={jsonLd} />
 </Layout>
