@@ -8,14 +8,16 @@ const routeResults = [];
 const catalogue = JSON.parse(fs.readFileSync('src/data/products.json', 'utf8'));
 const guides = catalogue.guides ?? [];
 const expectedGuideMap = new Map(guides.map(guide => [guide.slug, guide]));
+const htmlFiles = [];
+let robotsTxtDisallowAll = false;
 
 function attr(tag, name) {
-  const pattern = new RegExp('\\\\b' + name + '\\\\s*=\\\\s*(?:"([^"]*)"|\\\\x27([^\\\\x27]*)\\\\x27|([^\\\\s>]+))', 'i');
+  const pattern = new RegExp('\\b' + name + '\\s*=\\s*(?:"([^"]*)"|\\x27([^\\x27]*)\\x27|([^\\s>]+))', 'i');
   const match = tag.match(pattern);
   return match?.[1] ?? match?.[2] ?? match?.[3] ?? '';
 }
 function hasToken(value, token) {
-  return value.toLowerCase().split(/\\s+/).includes(token);
+  return value.toLowerCase().split(/\s+/).includes(token);
 }
 function writeReport(status) {
   fs.mkdirSync('test-reports', { recursive: true });
@@ -25,7 +27,7 @@ function writeReport(status) {
     scannedHtmlPages: htmlFiles.length,
     guideCount: guides.length,
     routes: routeResults,
-    robotsTxtDisallowAll: robotsTxtDisallowAll,
+    robotsTxtDisallowAll,
     errors,
     warnings
   }, null, 2));
@@ -33,14 +35,11 @@ function writeReport(status) {
 
 if (!fs.existsSync(root)) {
   errors.push('Build output dist does not exist.');
-  const htmlFiles = [];
-  const robotsTxtDisallowAll = false;
   writeReport('failed');
-  console.error(errors.join('\\n'));
+  console.error(errors.join('\n'));
   process.exit(1);
 }
 
-const htmlFiles = [];
 function walk(dir) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     const full = path.join(dir, entry.name);
@@ -53,21 +52,23 @@ if (!htmlFiles.length) errors.push('No HTML pages were generated.');
 
 const robotsPath = path.join(root, 'robots.txt');
 const robotsText = fs.existsSync(robotsPath) ? fs.readFileSync(robotsPath, 'utf8') : '';
-const robotsTxtDisallowAll = /User-agent:\\s*\\*/i.test(robotsText) && /Disallow:\\s*\\//i.test(robotsText);
+robotsTxtDisallowAll = /User-agent:\s*\*/i.test(robotsText) && /Disallow:\s*\//i.test(robotsText);
 if (!robotsTxtDisallowAll) errors.push('Preview robots.txt must disallow crawling (User-agent: * / Disallow: /).');
 
 for (const file of htmlFiles) {
   const html = fs.readFileSync(file, 'utf8');
   const label = path.relative(root, file).split(path.sep).join('/');
-  const metaTags = [...html.matchAll(/<meta\\b[^>]*>/gi)].map(match => match[0]);
-  const linkTags = [...html.matchAll(/<link\\b[^>]*>/gi)].map(match => match[0]);
+  const metaTags = [...html.matchAll(/<meta\b[^>]*>/gi)].map(match => match[0]);
+  const linkTags = [...html.matchAll(/<link\b[^>]*>/gi)].map(match => match[0]);
   const is404 = label === '404.html';
-  const guideMatch = label.match(/^guides\\/([^/]+)\\/index\\.html$/);
+  const guideMatch = label.match(/^guides\/([^/]+)\/index\.html$/);
   const guide = guideMatch ? expectedGuideMap.get(guideMatch[1]) : null;
   const routeErrors = [];
+  let amazonUsLinks = 0;
+  let amazonUkLinks = 0;
 
-  if (!/<html\\b[^>]*lang=/i.test(html)) routeErrors.push('missing HTML language attribute');
-  if (!/<title>[^<]{3,}<\\/title>/i.test(html)) routeErrors.push('missing or empty title');
+  if (!/<html\b[^>]*lang=/i.test(html)) routeErrors.push('missing HTML language attribute');
+  if (!/<title>[^<]{3,}<\/title>/i.test(html)) routeErrors.push('missing or empty title');
 
   const description = metaTags.find(tag => attr(tag, 'name').toLowerCase() === 'description');
   if (!is404 && (!description || !attr(description, 'content').trim())) warnings.push(label + ': meta description missing or empty.');
@@ -76,10 +77,10 @@ for (const file of htmlFiles) {
     const robots = metaTags.find(tag => attr(tag, 'name').toLowerCase() === 'robots');
     if (!robots || !attr(robots, 'content').toLowerCase().includes('noindex')) routeErrors.push('preview page missing noindex');
     const canonical = linkTags.find(tag => hasToken(attr(tag, 'rel'), 'canonical'));
-    if (!canonical || !/^https:\\/\\//i.test(attr(canonical, 'href'))) routeErrors.push('missing HTTPS canonical URL');
+    if (!canonical || !/^https:\/\//i.test(attr(canonical, 'href'))) routeErrors.push('missing HTTPS canonical URL');
   }
 
-  const jsonLdScripts = [...html.matchAll(/<script\\b[^>]*>([\\s\\S]*?)<\\/script>/gi)]
+  const jsonLdScripts = [...html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi)]
     .filter(match => attr(match[0].split('>')[0] + '>', 'type').toLowerCase().includes('application/ld+json'));
   const parsedJsonLd = [];
   for (const match of jsonLdScripts) {
@@ -100,7 +101,7 @@ for (const file of htmlFiles) {
     }
 
     const amazonLinks = [];
-    const anchors = [...html.matchAll(/<a\\b[^>]*>/gi)].map(match => match[0]);
+    const anchors = [...html.matchAll(/<a\b[^>]*>/gi)].map(match => match[0]);
     for (const anchor of anchors) {
       const href = attr(anchor, 'href');
       if (!href) continue;
@@ -115,17 +116,19 @@ for (const file of htmlFiles) {
     }
     const usLinks = amazonLinks.filter(link => link.market === 'us');
     const ukLinks = amazonLinks.filter(link => link.market === 'uk');
+    amazonUsLinks = usLinks.length;
+    amazonUkLinks = ukLinks.length;
     if (usLinks.length !== guide.products.length) routeErrors.push('expected ' + guide.products.length + ' Amazon US links; found ' + usLinks.length);
     if (ukLinks.length !== guide.products.length) routeErrors.push('expected ' + guide.products.length + ' Amazon UK links; found ' + ukLinks.length);
     for (const link of usLinks) {
       if (link.url.searchParams.get('tag') !== 'smartpickh0bc-20') routeErrors.push('Amazon US tracking ID mismatch');
       if (!hasToken(link.rel, 'sponsored') || !hasToken(link.rel, 'nofollow')) routeErrors.push('Amazon US affiliate link missing sponsored/nofollow rel attributes');
-      if (!(link.url.pathname.startsWith('/s') && link.url.searchParams.has('k')) && !/^\\/dp\\/[A-Z0-9]{10}$/.test(link.url.pathname)) routeErrors.push('Amazon US link is neither a search URL nor a verified ASIN URL');
+      if (!(link.url.pathname.startsWith('/s') && link.url.searchParams.has('k')) && !/^\/dp\/[A-Z0-9]{10}$/.test(link.url.pathname)) routeErrors.push('Amazon US link is neither a search URL nor a verified ASIN URL');
     }
     for (const link of ukLinks) {
       if (link.url.searchParams.get('tag') !== 'smartpickhubu-21') routeErrors.push('Amazon UK tracking ID mismatch');
       if (!hasToken(link.rel, 'sponsored') || !hasToken(link.rel, 'nofollow')) routeErrors.push('Amazon UK affiliate link missing sponsored/nofollow rel attributes');
-      if (!(link.url.pathname.startsWith('/s') && link.url.searchParams.has('k')) && !/^\\/dp\\/[A-Z0-9]{10}$/.test(link.url.pathname)) routeErrors.push('Amazon UK link is neither a search URL nor a verified ASIN URL');
+      if (!(link.url.pathname.startsWith('/s') && link.url.searchParams.has('k')) && !/^\/dp\/[A-Z0-9]{10}$/.test(link.url.pathname)) routeErrors.push('Amazon UK link is neither a search URL nor a verified ASIN URL');
     }
   }
 
@@ -139,7 +142,15 @@ for (const file of htmlFiles) {
   }
 
   for (const error of routeErrors) errors.push(label + ': ' + error + '.');
-  routeResults.push({ route: '/' + label.replace(/index\\.html$/, ''), isGuide: Boolean(guide), jsonLdBlocks: parsedJsonLd.length, amazonUsLinks: guide ? guide.products.length : undefined, amazonUkLinks: guide ? guide.products.length : undefined, status: routeErrors.length ? 'failed' : 'passed', errors: routeErrors });
+  routeResults.push({
+    route: '/' + label.replace(/index\.html$/, ''),
+    isGuide: Boolean(guide),
+    jsonLdBlocks: parsedJsonLd.length,
+    amazonUsLinks,
+    amazonUkLinks,
+    status: routeErrors.length ? 'failed' : 'passed',
+    errors: routeErrors
+  });
 }
 
 writeReport(errors.length ? 'failed' : 'passed');
