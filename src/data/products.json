@@ -130,18 +130,18 @@
           "us_identifier": "Anker Prime Power Bank 27650mAh 250W",
           "uk_identifier": "Anker Prime Power Bank 27650mAh 250W",
           "pros": [
-            "High-capacity power-bank format intended for demanding USB-C devices",
-            "Multiple USB-C outputs for charging more than one device",
-            "A useful option to compare when output capacity matters more than minimum weight"
+            "27,650mAh stated cell capacity",
+            "Up to 250W combined output across its ports",
+            "Two USB-C ports and one USB-A port, with app-based monitoring"
           ],
           "cons": [
-            "High-capacity batteries add weight and bulk",
-            "Actual charging speed is limited by the device, cable and shared output behaviour",
-            "Airline carriage restrictions must be checked before travel"
+            "At 665g it is relatively heavy for everyday pocket carry",
+            "Maximum output is shared across ports and depends on device/cable requirements",
+            "High-capacity power-bank airline carriage rules must be checked before travel"
           ],
-          "verdict": "Compare this model when you need a high-output multi-device power bank. Confirm the exact model generation and manufacturer specifications on the regional product listing before purchase.",
-          "source": "https://www.anker.com/",
-          "sourceNote": "Model name is retained as an exact Amazon search phrase; detailed feature claims are intentionally limited pending a specific manufacturer product-page verification."
+          "verdict": "A high-output option for users carrying laptops and several mobile devices. Confirm the A1340 model, local stock and applicable airline battery rules.",
+          "source": "https://www.anker.com/uk/products/a1340-250w-power-bank",
+          "sourceNote": "Anker UK identifies model A1340, 27,650mAh capacity, up to 250W total output and port configuration."
         },
         {
           "name": "EcoFlow RIVER 2 Portable Power Station",
@@ -149,18 +149,18 @@
           "us_identifier": "EcoFlow RIVER 2 Portable Power Station",
           "uk_identifier": "EcoFlow RIVER 2 Portable Power Station",
           "pros": [
-            "Portable power-station format with AC and USB output options",
-            "Rechargeable from mains and other supported input methods",
-            "More suitable than a USB-only power bank when a compatible AC device must be powered"
+            "256Wh LFP battery capacity",
+            "300W pure-sine-wave AC output with stated surge capability",
+            "AC, USB-C, USB-A, car and solar charging inputs/outputs, depending on regional version"
           ],
           "cons": [
-            "Heavier and larger than a conventional phone power bank",
-            "AC output is limited by the unit's rated capacity and output specification",
-            "Not intended to replace a home standby generator or power high-demand appliances indefinitely"
+            "Approximately 3.5kg, so it is not a pocket-sized travel charger",
+            "AC socket voltage and frequency differ between US and UK versions",
+            "300W output limits the appliances it can run; check startup surge and continuous wattage"
           ],
-          "verdict": "A compact power-station option to investigate for small-device backup and outdoor use. Check the exact regional socket type, capacity and output rating before ordering.",
-          "source": "https://www.ecoflow.com/",
-          "sourceNote": "Product family identity is established; detailed regional configuration should be confirmed against the exact retailer listing before publication."
+          "verdict": "A compact power-station candidate for small electronics and low-wattage equipment. Select the correct US or UK electrical version; never assume the socket voltage is interchangeable.",
+          "source": "https://uk.ecoflow.com/products/river-2-portable-power-station",
+          "sourceNote": "EcoFlow UK specifications list 256Wh LFP capacity, 300W AC output, 230V regional output and approximately 3.5kg weight."
         },
         {
           "name": "Jackery Explorer 300 Plus Portable Power Station",
@@ -168,18 +168,18 @@
           "us_identifier": "Jackery Explorer 300 Plus Portable Power Station",
           "uk_identifier": "Jackery Explorer 300 Plus Portable Power Station",
           "pros": [
-            "Compact portable power-station category rather than a pocket power bank",
-            "Designed for charging small electronics and compatible low-power equipment",
-            "Useful to compare when portability and multiple output types are priorities"
+            "288Wh LiFePO4 battery capacity",
+            "300W rated AC output with pure-sine-wave output",
+            "Portable format with solar and car charging input support"
           ],
           "cons": [
-            "Capacity is limited compared with larger power stations",
-            "Not suitable for every high-wattage appliance",
-            "Weight and charging accessories make it less convenient than a standard power bank"
+            "Approximately 3.75kg, which is heavier than a conventional power bank",
+            "The US and European versions have different AC input/output voltage specifications",
+            "300W output is not suitable for many high-demand appliances"
           ],
-          "verdict": "A candidate for light camping and portable electronics. Verify the exact capacity, output ports, regional bundle and current manufacturer support before choosing.",
-          "source": "https://www.jackery.com/",
-          "sourceNote": "Model identity is used as an exact marketplace search phrase; detailed specification claims remain conservative until exact regional documentation is checked."
+          "verdict": "A small power-station option for camping and portable electronics. Choose the correct regional version and check the appliance's continuous and startup power needs.",
+          "source": "https://helpcenter.eu.jackery.com/hc/en-gb/articles/52682971950363-Explorer-300-Plus-Basic-Information",
+          "sourceNote": "Jackery Europe identifies model JE-300B, 288Wh LiFePO4 battery, approximately 3.75kg weight and regional AC specifications."
         }
       ]
     },
