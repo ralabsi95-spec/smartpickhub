@@ -183,3 +183,13 @@ Do not ask the owner to repeat details already documented here.
 ## 16 November 2026 – CI trigger de-duplication
 - QA concurrency now groups push and pull-request events by `github.head_ref || github.ref_name`, avoiding duplicate runs for the same branch while keeping both triggers enabled.
 - This is scheduling-only; no test code or dependencies changed. The last complete QA evidence is Run #193, successful.
+
+
+## 16 November 2026 – Isolated Astro 7 security upgrade assessment
+- Verified current development branch head: `7bb3537249d700d06d5b4296af20c0939297428b`. PR #1 remains open; no merge was performed. Cloudflare Pages confirmed the preview deployment for commit `7bb3537` succeeded.
+- Created isolated branch `security/astro7-upgrade-assessment` from `automation/bootstrap`; the development branch remains unchanged.
+- Prepared an upgrade test using Astro `^7.4.12`, `@astrojs/rss ^4.0.19`, `@astrojs/sitemap ^3.7.5`, `@astrojs/check ^0.9.12`, TypeScript `^5.9.3`, and Node `22.23.4` (recorded in `.nvmrc` and both workflows). The QA workflow now includes this isolated branch as a push trigger and copies the generated package lock into the quality artifact for review.
+- Rationale: Run #193's npm audit reported five vulnerable packages (Astro direct/critical; sharp, zod and zod-to-ts high; esbuild low). Astro's official changelog confirms the Node 22.23.4 minimum; Astro v6 upgrade guidance also flags Vite 7 and Zod 4 migration considerations. Astro 7 uses Vite 8 and Zod 4, so this is a major migration, not a routine patch.
+- No lockfile has yet been committed, no dependency upgrade has been merged into `automation/bootstrap`, and no production or WordPress changes were made. Await the isolated CI run and inspect the generated lockfile, audit results, build, smoke, axe and Lighthouse reports before deciding whether to proceed.
+- Sources reviewed: official Astro upgrade guides and changelog; npm package metadata for Astro, RSS, Sitemap and Astro Check.
+- **Next:** inspect the isolated branch's Actions result and artifact; if it passes, retrieve and commit the tested lockfile on this branch, switch CI from `npm install` to `npm ci`, and run the full suite again. Keep the branch unmerged until owner review.
