@@ -29,6 +29,8 @@ jobs:
         run: |
           mkdir -p test-reports
           cp package-lock.json test-reports/package-lock.json
+      - name: Verify reproducible clean install
+        run: npm ci
       - name: Capture dependency audit report
         if: always()
         run: |
