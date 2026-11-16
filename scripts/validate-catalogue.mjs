@@ -12,10 +12,11 @@ const expected = new Set([
   'usb-c-gan-chargers-us-uk',
   'webcams-video-calls-streaming-us-uk',
   '4k-usb-c-monitors-home-office-us-uk',
+  'thunderbolt-usb-c-docking-stations-us-uk',
 ]);
 const forbiddenKeys = new Set(['price', 'rating', 'reviewCount', 'reviews', 'offers', 'aggregateRating', 'availability']);
 
-if (guides.length !== 7) errors.push(`Expected 7 research guides; found ${guides.length}.`);
+if (guides.length !== 8) errors.push(`Expected 8 research guides; found ${guides.length}.`);
 const slugs = new Set();
 let productCount = 0;
 for (const guide of guides) {
@@ -44,7 +45,7 @@ for (const guide of guides) {
     }
   }
 }
-if (productCount !== 28) errors.push(`Expected 28 products; found ${productCount}.`);
+if (productCount !== 32) errors.push(`Expected 32 products; found ${productCount}.`);
 if (errors.length) {
   console.error('Catalogue validation failed:');
   for (const error of errors) console.error(`- ${error}`);
