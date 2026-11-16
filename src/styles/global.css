@@ -14,6 +14,8 @@ main { min-height: 70vh; padding-block: 2.5rem; }
 .hero { padding: 3.5rem 0 2rem; text-align: center; }
 .hero h1 { font-size: clamp(2rem, 5vw, 3.25rem); line-height: 1.1; letter-spacing: -.04em; }
 .muted { color: #64748b; }
+/* Make inline manufacturer/source links distinguishable without relying on colour alone. */
+.muted a { text-decoration: underline; text-underline-offset: .15em; }
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
 .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 1rem; padding: 1.4rem; box-shadow: 0 4px 18px rgb(15 23 42 / 4%); }
 .pill { display: inline-block; border-radius: 999px; padding: .2rem .7rem; background: #eff6ff; color: #1d4ed8; font-size: .75rem; font-weight: 700; }
