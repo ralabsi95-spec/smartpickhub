@@ -18,7 +18,7 @@ for (const cluster of input.clusters) {
             `${topic} ${audience} ${modifier.value}`
           ];
           for (const phrase of candidates) {
-            const keyword = phrase.replace(/\\s+/g, ' ').trim().toLowerCase();
+            const keyword = phrase.replace(/\s+/g, ' ').trim().toLowerCase();
             const key = `${market.code}|${keyword}`;
             if (seen.has(key)) continue;
             seen.add(key);
@@ -50,5 +50,5 @@ const result = {
   policy: input.generationPolicy,
   keywords: rows
 };
-fs.writeFileSync(path.join(outputDir, 'keyword-opportunities.json'), JSON.stringify(result, null, 2) + '\\n');
+fs.writeFileSync(path.join(outputDir, 'keyword-opportunities.json'), JSON.stringify(result, null, 2) + '\n');
 console.log(`Generated ${rows.length} deduplicated US/UK keyword opportunities. No volume estimates or pages were published.`);
