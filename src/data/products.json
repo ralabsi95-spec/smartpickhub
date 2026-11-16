@@ -231,10 +231,10 @@
           "sourceNote": "Arlo UK product specifications and support documentation describe resolution, field of view, battery, Wi-Fi and subscription-dependent features."
         },
         {
-          "name": "Ring Battery Doorbell Plus (2nd Generation) / Battery Doorbell 2K Plus",
+          "name": "Ring Battery Doorbell 2K Plus",
           "bestFor": "Front-door monitoring with a battery-powered doorbell, head-to-toe view and two-way talk.",
-          "us_identifier": "Ring Battery Doorbell 2K Plus 2nd Generation",
-          "uk_identifier": "Ring Battery Doorbell 2K Plus 2nd Generation",
+          "us_identifier": "Ring Battery Doorbell 2K Plus",
+          "uk_identifier": "Ring Battery Doorbell 2K Plus",
           "pros": [
             "2K video with head-to-toe field of view",
             "Quick-release battery pack",
@@ -247,7 +247,7 @@
           ],
           "verdict": "A candidate for households wanting a battery-powered smart doorbell with a broad view of the doorstep. Confirm the current regional product name, generation and plan requirements.",
           "source": "https://ring.com/products/battery-doorbell-plus-2nd-gen",
-          "sourceNote": "Ring's current product specifications identify the 2K video, quick-release battery, motion zones and Wi-Fi requirements."
+          "sourceNote": "Ring's 2026 product naming update identifies this model as Battery Doorbell 2K Plus; Ring states that the previous Battery Doorbell Plus (2nd Gen) name referred to the same device."
         },
         {
           "name": "Google Nest Cam (outdoor or indoor, battery)",
