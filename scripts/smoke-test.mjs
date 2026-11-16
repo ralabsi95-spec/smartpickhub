@@ -23,11 +23,11 @@ if (!htmlFiles.length) errors.push('No HTML pages were generated.');
 for (const file of htmlFiles) {
   const html = fs.readFileSync(file, 'utf8');
   const label = path.relative(root, file).split(path.sep).join('/');
-  const metaTags = [...html.matchAll(/<meta\\b[^>]*>/gi)].map(match => match[0].toLowerCase());
-  const linkTags = [...html.matchAll(/<link\\b[^>]*>/gi)].map(match => match[0].toLowerCase());
+  const metaTags = [...html.matchAll(/<meta\b[^>]*>/gi)].map(match => match[0].toLowerCase());
+  const linkTags = [...html.matchAll(/<link\b[^>]*>/gi)].map(match => match[0].toLowerCase());
 
-  if (!/<html\\b[^>]*lang=/i.test(html)) errors.push(label + ': missing HTML language attribute.');
-  if (!/<title>[^<]{3,}<\\/title>/i.test(html)) errors.push(label + ': missing or empty title.');
+  if (!/<html\b[^>]*lang=/i.test(html)) errors.push(label + ': missing HTML language attribute.');
+  if (!/<title>[^<]{3,}<\/title>/i.test(html)) errors.push(label + ': missing or empty title.');
   if (!metaTags.some(tag => /name=["']description["']/.test(tag))) warnings.push(label + ': meta description missing.');
 
   // The standalone 404 page is intentionally excluded from canonical checks.
@@ -35,7 +35,7 @@ for (const file of htmlFiles) {
     if (!metaTags.some(tag => /name=["']robots["']/.test(tag) && /noindex/.test(tag))) {
       errors.push(label + ': preview page missing noindex.');
     }
-    if (!linkTags.some(tag => /rel=["']canonical["']/.test(tag) && /href=["']https:\\/\\//.test(tag))) {
+    if (!linkTags.some(tag => /rel=["']canonical["']/.test(tag) && /href=["']https:\/\//.test(tag))) {
       errors.push(label + ': missing HTTPS canonical URL.');
     }
   }
@@ -49,7 +49,7 @@ for (const file of htmlFiles) {
     }
   }
 
-  for (const match of html.matchAll(/<script[^>]*application\\/ld\\+json[^>]*>([\\s\\S]*?)<\\/script>/gi)) {
+  for (const match of html.matchAll(/<script[^>]*application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi)) {
     try { JSON.parse(match[1]); }
     catch { errors.push(label + ': invalid JSON-LD.'); }
   }
