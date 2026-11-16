@@ -21,11 +21,12 @@ const pages = [
 
 fs.mkdirSync('test-reports/axe', { recursive: true });
 const browser = await chromium.launch({ headless: true });
+const context = await browser.newContext();
 const failures = [];
 const summaries = [];
 
 try {
-  const page = await browser.newPage();
+  const page = await context.newPage();
   for (const route of pages) {
     const response = await page.goto(baseUrl + route, { waitUntil: 'networkidle' });
     if (!response || !response.ok()) {
@@ -49,6 +50,7 @@ try {
     }
   }
 } finally {
+  await context.close();
   await browser.close();
 }
 
