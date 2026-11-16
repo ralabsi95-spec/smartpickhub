@@ -205,3 +205,10 @@ Do not ask the owner to repeat details already documented here.
 - Opened [Draft PR #2](https://github.com/ralabsi95-spec/smartpickhub/pull/2) from `security/astro7-upgrade-assessment` into `automation/bootstrap` so the migration can be reviewed independently. PR #2 is open, Draft and unmerged. PR #1 remains open and unmerged.
 - The isolated QA workflow now also runs `npm ci` from the generated lockfile after capturing that lockfile in the artifact. This tests reproducibility without committing an unreviewed lockfile.
 - Latest isolated branch code commit: `f40454e758ce69ee0b7286e04c3aca7e29649542`. CI status/artifacts have not yet been confirmed through the available GitHub status endpoints; do not mark the upgrade as passed.
+
+
+## 16 November 2026 – Run #212 in progress (Astro 7 assessment)
+- GitHub Actions run #212: https://github.com/ralabsi95-spec/smartpickhub/actions/runs/43901624336, commit `4a8bdd737caf3a9a0eeae83f19d65941ae0e1d62`, event `pull_request` for Draft PR #2.
+- Confirmed successful steps: dependency installation; generated lockfile capture; clean `npm ci`; dependency-audit JSON capture; Astro type/content checks; catalogue and affiliate destination validation; keyword universe generation; static build; generated-page/SEO/JSON-LD/affiliate smoke test; Chromium install; axe-core audit across all catalogue routes; homepage desktop and mobile Lighthouse.
+- At this checkpoint, Lighthouse on guide index, disclosure and all 10 guide pages is still in progress. Consolidated report and artifact upload are pending. Do not declare full QA passed until run completes.
+- No dependency lockfile committed yet; audit findings must be inspected from artifact after upload. PR #2 remains Draft/open/unmerged; PR #1 remains open/unmerged. Production and WordPress remain untouched.
