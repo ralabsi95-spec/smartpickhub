@@ -14,7 +14,7 @@ const itemList = {
   '@type': 'ItemList',
   name: `${guide.title} — product comparison`,
   numberOfItems: products.length,
-  itemListOrder: 'https://schema.org/ItemListUnordered',
+  itemListOrder: 'https://schema.org/ItemListOrderAscending',
   itemListElement: products.map((product, index) => ({
     '@type': 'ListItem',
     position: index + 1,
