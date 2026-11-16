@@ -39,7 +39,7 @@ const structuredData = {
       headline: guide.title,
       description: guide.summary,
       datePublished: guide.publishedAt,
-      dateModified: guide.updatedAt ?? guide.publishedAt,
+      dateModified: guide.publishedAt,
       author: { '@type': 'Organization', name: 'SmartPickHub' },
       publisher: { '@type': 'Organization', name: 'SmartPickHub' },
       mainEntityOfPage: canonicalUrl,
@@ -67,7 +67,7 @@ const jsonLd = JSON.stringify(structuredData).replace(/</g, '\\u003c');
       <span class="pill">{guide.category}</span>
       <h1>{guide.title}</h1>
       <p class="guide-summary">{guide.summary}</p>
-      <p class="guide-meta">Research-led guide · Updated {guide.updatedAt ?? guide.publishedAt} · US and UK marketplace links</p>
+      <p class="guide-meta">Research-led guide · Updated {guide.publishedAt} · US and UK marketplace links</p>
       {guide.editorialStatus && <p class="disclosure">{guide.editorialStatus}</p>}
       {guide.introduction && <p class="guide-introduction">{guide.introduction}</p>}
     </header>
