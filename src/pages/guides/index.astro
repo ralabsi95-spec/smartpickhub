@@ -1,9 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import data from '../../data/products.json';
+const guides = data.guides ?? [];
 ---
 <Layout title="Buying Guides | SmartPickHub">
   <h1>Buying Guides</h1>
   <p class="muted">Research-led guides for US and UK shoppers.</p>
-  {data.guides.length ? <div class="grid">{data.guides.map((guide) => <article class="card"><h2><a href={`/guides/${guide.slug}/`}>{guide.title}</a></h2><p>{guide.summary}</p></article>)}</div> : <p>No approved guides have been migrated to this site yet.</p>}
+  {guides.length ? <div class="grid">{guides.map((guide) => <article class="card"><span class="pill">{guide.category}</span><h2><a href={`/guides/${guide.slug}/`}>{guide.title}</a></h2><p>{guide.summary}</p><p class="disclosure">{guide.editorialStatus ?? 'Editorial review required before publication.'}</p></article>)}</div> : <p>No guides are available yet.</p>}
 </Layout>
