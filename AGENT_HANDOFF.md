@@ -199,3 +199,9 @@ Do not ask the owner to repeat details already documented here.
 - On `security/astro7-upgrade-assessment`, updated `scripts/accessibility-test.mjs` to retain details for axe-core `incomplete` checks (rule IDs, descriptions, help URLs, target selectors and check messages), rather than recording only their count. This makes manual accessibility review actionable and does not convert incomplete checks into violations.
 - Latest code change before this documentation entry: `20183ea2fba10de16994e35db79dad8cbd6d117a`. Isolated Astro 7 QA remains pending; inspect its workflow result and generated lockfile artifact before making any further dependency changes.
 - The baseline branch `automation/bootstrap` remains unchanged at the verified `7bb3537249d700d06d5b4296af20c0939297428b` checkpoint. PR #1 remains open and unmerged; preview deployment for that checkpoint succeeded.
+
+
+## 16 November 2026 – Draft security assessment PR
+- Opened [Draft PR #2](https://github.com/ralabsi95-spec/smartpickhub/pull/2) from `security/astro7-upgrade-assessment` into `automation/bootstrap` so the migration can be reviewed independently. PR #2 is open, Draft and unmerged. PR #1 remains open and unmerged.
+- The isolated QA workflow now also runs `npm ci` from the generated lockfile after capturing that lockfile in the artifact. This tests reproducibility without committing an unreviewed lockfile.
+- Latest isolated branch code commit: `f40454e758ce69ee0b7286e04c3aca7e29649542`. CI status/artifacts have not yet been confirmed through the available GitHub status endpoints; do not mark the upgrade as passed.
