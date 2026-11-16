@@ -122,3 +122,13 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - The 12 catalogue records remain research drafts, not approved product recommendations. Affiliate URLs continue to be marketplace search links based on exact model phrases; no unverified ASINs, prices, ratings, review counts or availability claims were added.
 - QA status before this refresh: Astro Build Check succeeded on branch head `b9e16325e88380ce92f4c6eae0b6a8685990160a` (GitHub Actions runs 43872738688 and 43872730077). The Arlo refresh commit triggers a new build/check run; do not mark this latest commit build-confirmed until that run completes.
 - PR #1 remains open and unmerged; `main` is unchanged. Cloudflare Pages remains the isolated noindex preview; WordPress, DNS and custom-domain settings remain untouched.
+
+## 16 November 2026 – Current verified branch state (authoritative update)
+- Current catalogue state supersedes earlier historical notes saying the data collection was empty: three research-draft guides and 12 product records are present in `src/data/products.json`, four products per guide.
+- Both Amazon marketplaces are supported per product through separate US and UK search links and the configured tracking IDs. Current identifiers are model-name search phrases, not direct ASIN links.
+- Dynamic JSON-LD emits `Article` and `ItemList` / `ListItem` / `Product` structure. It intentionally omits offers, prices, aggregate ratings, reviews and availability.
+- GitHub Actions Astro Build Check passed on branch head `9e3d57a9a260c2210384f4504a0556fcc4ae2322` (run #55; run URL: https://github.com/ralabsi95-spec/smartpickhub/actions/runs/43873377035). This confirms the build at that commit only.
+- Owner-provided mobile preview screenshot showed the navigation links wrapping around the brand on narrow screens. A mobile CSS refinement has now been committed to keep the brand on its own row and the navigation in a horizontally scrollable single row; this latest CSS commit requires its own CI run and visual confirmation.
+- The GitHub repository is private; a signed-out GitHub 404 page does not indicate that the public Cloudflare preview is down. The isolated preview remains https://smartpickhub-preview.pages.dev/.
+- The preview remains `noindex,nofollow` and crawl-disallowed. RSS intentionally excludes research drafts until editorial status is explicitly set to `Approved for publication`; therefore an RSS feed containing no guide items is expected at this stage.
+- No merge to `main`, no WordPress changes, no DNS/custom-domain changes, and no production deployment.
