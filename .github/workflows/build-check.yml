@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
       - run: npm install
       - run: npm run check
       - run: npm run validate
@@ -38,6 +38,12 @@ jobs:
           done
           cat /tmp/smartpickhub-preview.log
           exit 1
+      - name: Install Chromium for accessibility audit
+        run: npx playwright install --with-deps chromium
+      - name: axe-core accessibility audit
+        run: npm run accessibility
+        env:
+          BASE_URL: http://127.0.0.1:4321
       - name: Lighthouse audit - mobile homepage
         run: |
           mkdir -p test-reports/lighthouse
