@@ -223,3 +223,14 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Changes committed only to `automation/bootstrap`: CSS commit `28699a0dd9106db705771990af058ba205364ae6`; layout commit `e23027b359c1c9a508cf4edb01cb851f8fc635b4`; favicon commit `644471118292e19672232793a45fcf031401ec73`. A new CI run is required before these fixes can be marked verified.
 - No changes to WordPress, production, DNS, custom domains, or `main`; PR #1 remains unmerged. Preview noindex protections remain in place.
 - Next: inspect the new CI run and its Lighthouse artifact. Confirm the favicon 404 and guide link-in-text-block issue are gone; then add axe-core automated accessibility checks if the current workflow remains stable.
+
+
+## 16 November 2026 – axe-core integration (implementation pending CI verification)
+- Latest completed smoke-test evidence: workflow #140 on commit `8644153d056bd2f1fa2fe053bedcdaa25bdf4000` passed the smoke test, preview server startup, and homepage Lighthouse audits. Its guide-page Lighthouse step was still running at the last check; do not mark the full run complete until its conclusion and report upload are verified.
+- Added Playwright and `@axe-core/playwright` as development dependencies and an `npm run accessibility` script at `scripts/accessibility-test.mjs`.
+- The axe-core script audits the homepage, guide index, affiliate disclosure, and all nine guide pages against WCAG 2.0/2.1/2.2 A/AA tags. It writes per-page JSON reports under `test-reports/axe/` and fails CI on serious or critical violations; lesser findings are reported for review.
+- Updated CI to Node.js 22, install Chromium, run axe-core after the local preview server starts, and include axe reports in the existing quality artifact. The accessibility script and CI integration are committed on `automation/bootstrap`; latest relevant commit at this note is `bb1bd44e0362d4715dff5692134296086c2197ed`.
+- CI executions #142–#149 were triggered by the incremental commits and may overlap; use the run matching the final branch HEAD, not older intermediate runs, to verify the integrated result.
+- npm audit output from an earlier Node 20 install reported 5 dependency vulnerabilities (1 low, 3 high, 1 critical), and engine warnings for packages requiring Node 22. This is not yet remediated or triaged. Node 22 was selected in CI for compatibility; inspect current dependency tree and audit output before changing package versions. Do not run `npm audit fix --force`.
+- No WordPress/live production, DNS, custom domain, or `main` changes. Preview remains noindex/nofollow. PR #1 remains unmerged.
+- Next: wait for CI on final branch HEAD; inspect axe JSON and Lighthouse outputs; remediate confirmed issues in development branch only; then assess dependency vulnerabilities and CI duplication/runtime before any release decision.
