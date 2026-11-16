@@ -25,17 +25,27 @@
         "monitor arms",
         "desk lamps",
         "webcams",
-        "USB microphones"
+        "USB microphones",
+        "4K webcams",
+        "1080p webcams",
+        "AI tracking webcams",
+        "conference speakerphones",
+        "USB capture cards"
       ],
       "audiences": [
         "for home offices",
         "for remote work",
-        "for small desks"
+        "for small desks",
+        "for video calls",
+        "for streaming and content creation"
       ],
       "needs": [
         "comfort and posture",
         "small spaces",
-        "long work sessions"
+        "long work sessions",
+        "resolution versus frame rate",
+        "field of view and autofocus",
+        "privacy shutter and software compatibility"
       ]
     },
     {
