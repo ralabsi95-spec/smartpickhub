@@ -1,0 +1,39 @@
+---
+import '../styles/global.css';
+interface Props { title: string; description?: string; canonical?: string; }
+const { title, description = 'Practical buying guides and product comparisons for US and UK shoppers.', canonical } = Astro.props;
+const canonicalUrl = canonical ?? Astro.url.href;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/">SmartPickHub</a>
+        <nav aria-label="Main navigation">
+          <a href="/">Home</a>
+          <a href="/guides/">Buying Guides</a>
+          <a href="/rss.xml">RSS</a>
+          <a href="/affiliate-disclosure/">Affiliate Disclosure</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container"><slot /></main>
+    <footer class="site-footer">
+      <div class="container">
+        <p>© {new Date().getFullYear()} SmartPickHub. As an Amazon Associate, we may earn from qualifying purchases.</p>
+        <p>Product details and availability can change. Always confirm details on the retailer's website.</p>
+      </div>
+    </footer>
+  </body>
+</html>
