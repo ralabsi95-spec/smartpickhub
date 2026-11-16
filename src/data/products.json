@@ -356,6 +356,93 @@
           "sourceNote": "NETGEAR's RBE773 technical specification sheet identifies the router-plus-two-satellite pack, 2.5Gbps ports and subscription qualifications for optional security and parental-control services."
         }
       ]
+    },
+    {
+      "slug": "usb-c-gan-chargers-us-uk",
+      "title": "USB-C GaN Chargers: Multi-Port Laptop and Phone Charging for US & UK",
+      "category": "USB-C Charging & Travel Tech",
+      "publishedAt": "2026-11-16",
+      "summary": "A practical comparison of multi-port USB-C GaN wall chargers, focusing on power sharing, port mix, supported charging standards and regional plug versions.",
+      "introduction": "Choose a USB-C charger by checking the maximum output of the port you will use, how total power is shared when several devices are connected, and whether your laptop supports the charger's charging protocol. A 100W label does not mean every port supplies 100W simultaneously. Check the exact regional plug, cable rating and device requirements before buying.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Anker Prime Charger (100W, 3 Ports, GaN) — A2688",
+          "bestFor": "Laptop and phone users who want a compact multi-port charger for up to three devices.",
+          "us_identifier": "Anker Prime Charger 100W 3 Ports GaN A2688",
+          "uk_identifier": "Anker Prime Charger 100W 3 Ports GaN A2688",
+          "pros": [
+            "Up to 100W maximum output from a USB-C port when used alone",
+            "Two USB-C ports and one USB-A port",
+            "Manufacturer lists 100–240V input and up to 89W total output when all three ports are used"
+          ],
+          "cons": [
+            "Total output is shared between connected devices; three-port use is limited to 89W maximum",
+            "Charging cables are not included in the documented package",
+            "A suitable E-Marker USB-C cable is recommended for 100W charging"
+          ],
+          "verdict": "A compact option for users who need to charge a laptop and smaller devices from one wall outlet. Check the port power split, plug format and cable rating before purchase.",
+          "source": "https://www.anker.com/products/a2688-anker-prime-charger-100w-3-ports-gan",
+          "sourceNote": "Anker's A2688 product specifications list 100W maximum output, two USB-C ports, one USB-A port, 100–240V input and 89W maximum when all three ports are used."
+        },
+        {
+          "name": "UGREEN Nexode 100W 4-Port Charger — SKU 40749",
+          "bestFor": "Users who want four charging ports for phones, tablets and a compatible laptop.",
+          "us_identifier": "UGREEN Nexode 100W 4-Port Charger SKU 40749",
+          "uk_identifier": "UGREEN Nexode 100W 4-Port Charger SKU 40749",
+          "pros": [
+            "Up to 100W total output",
+            "Three USB-C ports and one USB-A port",
+            "Manufacturer lists 100–240V input and support for USB Power Delivery 3.0 and other charging protocols"
+          ],
+          "cons": [
+            "100W is the total maximum, not 100W available to every port at the same time",
+            "The UK listing specifies SKU 40749; verify the US retail listing and exact hardware revision",
+            "The wall plug is not described as foldable in the UK specification table"
+          ],
+          "verdict": "A useful multi-port comparison candidate for a shared desk or travel bag. Confirm the actual port-by-port power allocation and regional listing before relying on it for a high-wattage laptop.",
+          "source": "https://uk.ugreen.com/products/ugreen-nexode-100w-usb-c-gan-charger-4-ports-wall-charger",
+          "sourceNote": "UGREEN UK lists SKU 40749, three USB-C plus one USB-A port, 100W total output, 100–240V input and supported charging protocols."
+        },
+        {
+          "name": "Belkin BoostCharge Pro 200W 4-Port USB-C GaN Charger — WCH015",
+          "bestFor": "A fixed desk setup that needs to charge several USB-C laptops and mobile devices together.",
+          "us_identifier": "Belkin BoostCharge Pro 200W 4-Port USB-C GaN Charger WCH015",
+          "uk_identifier": "Belkin BoostCharge Pro 200W 4-Port USB-C GaN Charger WCH015",
+          "pros": [
+            "Up to 200W combined output across four USB-C ports",
+            "Up to 140W maximum from either of the first two ports, with lower maximum output on ports three and four",
+            "Detachable 1.5m power cord and 100–240V input"
+          ],
+          "cons": [
+            "Designed as a desktop charger rather than a compact travel wall plug",
+            "The power cord and charger take more desk space than a small single-port adapter",
+            "The exact regional SKU and plug/cable package should be checked before purchase"
+          ],
+          "verdict": "A high-capacity desk charger for users who need to power multiple USB-C devices. Check the port-specific power allocation and the laptop's USB PD requirements rather than relying on the 200W combined figure.",
+          "source": "https://www.belkin.com/support-article?articleNum=336311",
+          "sourceNote": "Belkin's WCH015 support specifications list four USB-C ports, 200W total maximum, up to 140W on ports one/two, up to 60W on ports three/four and 100–240V input."
+        },
+        {
+          "name": "UGREEN Nexode 200W 4-Port GaN Fast Charger — SKU 35539",
+          "bestFor": "Users who need a high-output desktop charger for more than one laptop or several USB-C devices.",
+          "us_identifier": "UGREEN Nexode 200W 4-Port GaN Fast Charger SKU 35539",
+          "uk_identifier": "UGREEN Nexode 200W 4-Port GaN Fast Charger SKU 35539",
+          "pros": [
+            "Up to 200W total output across four ports",
+            "Three USB-C ports and one USB-A port",
+            "Manufacturer's EU specification lists up to 140W on USB-C1 and up to 100W on USB-C2"
+          ],
+          "cons": [
+            "Power is dynamically shared and individual ports have different output limits",
+            "At approximately 502g in the listed EU specification, it is more suited to a desk or substantial travel kit than pocket carry",
+            "The referenced detailed specification is the EU product version; verify US model number, plug and electrical certification before buying"
+          ],
+          "verdict": "A powerful multi-device charging station candidate for a home office. Compare the exact regional version and its port-sharing table against the devices you intend to charge.",
+          "source": "https://eu.ugreen.com/en-ch/pages/nexode",
+          "sourceNote": "UGREEN's EU Nexode specification table lists SKU 35539, 200W maximum, four ports, USB-C1 up to 140W, USB-C2 up to 100W and approximate 502g weight."
+        }
+      ]
     }
   ]
 }
