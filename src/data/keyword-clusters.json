@@ -126,17 +126,29 @@
         "portable monitors",
         "mechanical keyboards",
         "wireless mice",
-        "KVM switches"
+        "KVM switches",
+        "4K USB-C monitors",
+        "27 inch 4K monitors",
+        "monitors with USB C power delivery",
+        "colour accurate monitors",
+        "USB C hub monitors",
+        "dual monitor setups"
       ],
       "audiences": [
         "for MacBook",
         "for Windows laptops",
-        "for dual monitor setups"
+        "for dual monitor setups",
+        "for photo editing",
+        "for graphic design",
+        "for laptop docking"
       ],
       "needs": [
         "port compatibility",
         "multiple displays",
-        "desk cable management"
+        "desk cable management",
+        "USB-C power delivery wattage",
+        "colour gamut and calibration",
+        "stand ergonomics and refresh rate"
       ]
     },
     {
