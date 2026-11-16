@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import data from '../data/products.json';
 const guides = data.guides ?? [];
 const guideCount = guides.length;
+const featuredGuides = guides.slice(0, 6);
 const productCount = guides.reduce((total, guide) => total + (guide.products?.length ?? 0), 0);
 ---
 <Layout title="SmartPickHub – Clear Buying Guides for the US & UK" description="Make confident tech and home-buying decisions with practical, research-led product comparisons for shoppers in the United States and United Kingdom.">
@@ -40,12 +41,12 @@ const productCount = guides.reduce((total, guide) => total + (guide.products?.le
 
   <section class="home-section" id="guides">
     <div class="section-heading">
-      <div><span class="eyebrow">Explore the library</span><h2>Find the right guide for your next purchase</h2></div>
-      <a class="text-link" href="/guides/">View all guides <span aria-hidden="true">→</span></a>
+      <div><span class="eyebrow">A good place to start</span><h2>Featured buying guides</h2><p class="muted">A small selection from our growing library. Browse the full collection to explore all {guideCount} topics.</p></div>
+      <a class="text-link" href="/guides/">Browse all {guideCount} guides <span aria-hidden="true">→</span></a>
     </div>
     {guides.length > 0 ? (
       <div class="guide-grid">
-        {guides.map((guide, index) => (
+        {featuredGuides.map((guide, index) => (
           <article class="guide-card">
             <div class="guide-card-top"><span class="guide-number">{String(index + 1).padStart(2, '0')}</span><span class="category-tag">{guide.category}</span></div>
             <h3><a href={`/guides/${guide.slug}/`}>{guide.title}</a></h3>
