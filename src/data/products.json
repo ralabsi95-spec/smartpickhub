@@ -95,6 +95,12 @@
           "source": "https://www.logitech.com/en-us/shop/p/mx-ergo-s-wireless-trackball-mouse.910-007260",
           "sourceNote": "Logitech product documentation describes the trackball, tilt angle, hand fit and customisable controls."
         }
+      ],
+      "buyingChecklist": [
+        "Check hand size, grip preference and keyboard layout before choosing an ergonomic shape.",
+        "Confirm operating-system support, Bluetooth/receiver requirements and multi-device switching.",
+        "Measure desk space and check wrist-rest height, keyboard width and mouse reach.",
+        "Use a return policy to assess comfort over normal work sessions; ergonomics are personal."
       ]
     },
     {
@@ -182,6 +188,12 @@
           "source": "https://helpcenter.eu.jackery.com/hc/en-gb/articles/52682971950363-Explorer-300-Plus-Basic-Information",
           "sourceNote": "Jackery Europe identifies model JE-300B, 288Wh LiFePO4 battery, approximately 3.75kg weight and regional AC specifications."
         }
+      ],
+      "buyingChecklist": [
+        "Compare watt-hours (Wh), USB-C Power Delivery output and port-sharing limits—not capacity labels alone.",
+        "Check whether the product provides USB output only or AC mains sockets, and confirm continuous wattage.",
+        "Confirm battery transport rules with the airline; power stations and power banks have different limits.",
+        "Choose the correct US/UK electrical version, plug and charging input before ordering."
       ]
     },
     {
@@ -269,6 +281,12 @@
           "source": "https://store.google.com/product/nest_cam_battery_specs",
           "sourceNote": "Google Store specifications identify the battery model, 1080p HDR video, field of view, app requirement and event-history limits."
         }
+      ],
+      "buyingChecklist": [
+        "Check 2.4GHz/5GHz Wi-Fi support, router range and whether a hub is required.",
+        "Compare local storage with cloud subscriptions and identify which features stop without a plan.",
+        "Check weather rating, mounting position, field of view and night illumination.",
+        "Review privacy settings, account requirements, event-history limits and power options."
       ]
     },
     {
@@ -356,6 +374,12 @@
           "source": "https://www.downloads.netgear.com/files/GDC/RBE773/RBE773_TS-EU-AP-CA.pdf",
           "sourceNote": "NETGEAR's RBE773 technical specification sheet identifies the router-plus-two-satellite pack, 2.5Gbps ports and subscription qualifications for optional security and parental-control services."
         }
+      ],
+      "buyingChecklist": [
+        "Check the broadband modem/ONT connection and WAN port speed before selecting a router.",
+        "Confirm client devices support Wi-Fi 7 features; older devices will not gain every benefit.",
+        "Compare Ethernet port speeds, backhaul options and the number of mesh nodes required.",
+        "Check regional firmware, power adapter, ISP compatibility and subscription-dependent security features."
       ]
     },
     {
@@ -443,6 +467,12 @@
           "source": "https://eu.ugreen.com/en-ch/pages/nexode",
           "sourceNote": "UGREEN's EU Nexode specification table lists SKU 35539, 200W maximum, four ports, USB-C1 up to 140W, USB-C2 up to 100W and approximate 502g weight."
         }
+      ],
+      "buyingChecklist": [
+        "Match the charger's USB-C PD profile and maximum wattage to the laptop or phone requirement.",
+        "Check how total output is divided when multiple ports are used at the same time.",
+        "Use a cable rated for the required power and data specification.",
+        "Confirm plug type, input voltage range, dimensions and travel suitability."
       ]
     },
     {
@@ -530,6 +560,12 @@
           "source": "https://www.elgato.com/ww/en/p/facecam-neo",
           "sourceNote": "Elgato's official technical specifications list supported resolutions, autofocus optics, field of view, fixed USB-C connection, UVC support and operating-system requirements."
         }
+      ],
+      "buyingChecklist": [
+        "Check real output resolution and frame rate; advertised sensor resolution may differ from live modes.",
+        "Compare autofocus, field of view, low-light performance and microphone requirements.",
+        "Confirm USB bandwidth, cable type, operating-system support and video-call app compatibility.",
+        "Check mounting thread, monitor clearance, privacy shutter and included accessories."
       ]
     },
     {
@@ -617,6 +653,12 @@
           "source": "https://www.delltechnologies.com/asset/en-gb/products/electronics-and-accessories/technical-support/dell-27-4k-usb-c-hub-monitor-p2723qe-datasheet.pdf",
           "sourceNote": "Dell's official P2723QE datasheet lists 27-inch 4K 60Hz, IPS, USB-C hub, and height/tilt/swivel/pivot stand adjustment."
         }
+      ],
+      "buyingChecklist": [
+        "Confirm the laptop supports video over USB-C/Thunderbolt; a USB-C socket alone does not guarantee display output.",
+        "Check USB-C Power Delivery wattage against the laptop's charging requirement.",
+        "Compare panel type, colour coverage, refresh rate, HDR limits and factory calibration claims.",
+        "Check stand adjustment, VESA mounting, port layout and whether the supplied cable supports the required bandwidth."
       ]
     },
     {
@@ -704,6 +746,12 @@
           "source": "https://plugable.com/products/tbt4-udz",
           "sourceNote": "Plugable's official product page documents port count, 100W/98W charging, 2.5Gb Ethernet, compatibility and display-output caveats."
         }
+      ],
+      "buyingChecklist": [
+        "Identify the host port standard (USB-C, USB4 or Thunderbolt) and the dock's minimum requirements.",
+        "Check supported monitor count, resolution and refresh rate for the exact laptop and operating system.",
+        "Match host charging wattage and power-adapter capacity to the laptop.",
+        "Review Ethernet speed, USB port generations, SD reader and any display-driver dependency."
       ]
     },
     {
@@ -791,6 +839,12 @@
           "source": "https://www.kingston.com/datasheets/SXS2000_en.pdf",
           "sourceNote": "Kingston's official XS2000 datasheet lists USB 3.2 Gen 2x2, up to 2,000MB/s, 28.9g weight, capacities to 4TB and IP55 with the rubber sleeve."
         }
+      ],
+      "buyingChecklist": [
+        "Check the computer's USB generation and port support; the drive's headline speed may not be achievable on every host.",
+        "Choose capacity based on current data plus expected growth and maintain a separate backup.",
+        "Compare hardware encryption, password recovery, ruggedness and warranty terms.",
+        "Confirm included cable/adapter compatibility and whether sustained writes affect performance."
       ]
     },
     {
@@ -878,6 +932,12 @@
           "source": "https://cosori.co.uk/products/cosori-turbo-blaze-6l-air-fryer",
           "sourceNote": "COSORI UK lists the 6L TurboBlaze, nine functions and 30–230°C range; COSORI US identifies model CAF-DC601-KUS as 120V, 1725W and 6qt: https://cosori.com/products/turboblaze-air-fryer"
         }
+      ],
+      "buyingChecklist": [
+        "Compare usable basket capacity and dimensions, not just the advertised family-size claim.",
+        "Check the exact regional model number, voltage, wattage, plug and counter-space clearance.",
+        "Decide whether single basket, dual-zone synchronisation or steam functions are genuinely useful.",
+        "Check dishwasher-safe parts, cleaning access, replacement accessories and warranty conditions."
       ]
     },
     {
@@ -969,6 +1029,12 @@
           "source": "https://media.miele.com/downloads/n-/gb/FS_11819170_GBE_GB-en-GB.pdf",
           "sourceNote": "Miele UK technical sheet lists 3-in-1 design, 3.6 kg weight, 60 minutes PowerUnit-only runtime, 30 minutes with electrical accessories at low power, 14 minutes at high power with electrical accessories and four-hour charging."
         }
+      ],
+      "buyingChecklist": [
+        "Compare measured suction claims carefully and check which tool/mode was used for runtime figures.",
+        "Check floor-head design, anti-tangle features, bin capacity, weight and filtration.",
+        "Confirm battery runtime at the power level you will actually use and whether batteries are replaceable.",
+        "Check regional model suffix, included tools, wall dock, filter availability and warranty."
       ]
     },
     {
@@ -1048,6 +1114,12 @@
           "source": "https://www.dewalt.com/en-us/products/power-tools/drills/drill-drivers",
           "sourceNote": "DEWALT's official drill-driver catalogue lists the model families and kit/tool-only variants. Check the exact regional SKU and included battery/charger before buying."
         }
+      ],
+      "buyingChecklist": [
+        "Confirm the exact platform voltage, battery chemistry, included battery capacity and charger.",
+        "Compare torque, speed ranges, chuck size and clutch settings with the materials you plan to drill.",
+        "Check whether the listing is a bare tool or a kit and whether batteries are compatible with tools you own.",
+        "Confirm regional model suffixes, charger voltage, warranty and availability of replacement batteries."
       ]
     },
     {
@@ -1127,6 +1199,12 @@
           "source": "https://us.roborock.com/collections/robot-vacuums",
           "sourceNote": "Roborock's official US catalogue lists the Saros and Qrevo model families and their advertised system features. Check regional model availability and dock bundle details."
         }
+      ],
+      "buyingChecklist": [
+        "Check navigation and obstacle avoidance performance for your floor plan, cables and thresholds.",
+        "Compare dock functions: auto-empty, mop washing/drying, water refill and detergent requirements.",
+        "Confirm consumable availability, replacement costs and which features require an app or subscription.",
+        "Check carpet detection, mop lifting, privacy controls and regional warranty."
       ]
     },
     {
@@ -1206,6 +1284,12 @@
           "source": "https://www.sony.com/en-jo/headphones/headband",
           "sourceNote": "Sony's official headphone catalogue lists the WH-1000X family and ULT Wear models. Check regional suffixes, colours and included accessories."
         }
+      ],
+      "buyingChecklist": [
+        "Compare comfort, clamp force, weight and ear-cup fit for long listening sessions.",
+        "Check ANC behaviour, transparency mode, microphone performance and wind-noise handling.",
+        "Confirm Bluetooth codecs, multipoint support, wired operation and compatibility with your devices.",
+        "Compare battery life with ANC enabled, charging connector, foldability and replacement ear pads."
       ]
     },
     {
@@ -1231,8 +1315,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A premium earbud candidate for users who want to compare Sony's current ANC platform.",
-          "source": "https://www.apple.com/jo/airpods/compare/",
-          "sourceNote": "Apple's official comparison lists AirPods generations and their ecosystem features. Sony's regional wireless headphone catalogue lists WF-1000X models; verify regional variant codes."
+          "source": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wf-1000xm6/specifications",
+          "sourceNote": "Sony's official WF-1000XM6 specifications cover supported codecs, multipoint, IPX4 rating and battery figures; confirm the regional SKU and package contents."
         },
         {
           "name": "Sony WF-1000XM5 Truly Wireless Noise Cancelling Earbuds",
@@ -1248,8 +1332,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "Compare the XM5 when its size, feature mix and price positioning suit the buyer.",
-          "source": "https://www.apple.com/jo/airpods/compare/",
-          "sourceNote": "Apple's official comparison lists AirPods generations and their ecosystem features. Sony's regional wireless headphone catalogue lists WF-1000X models; verify regional variant codes."
+          "source": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wf-1000xm5/specifications",
+          "sourceNote": "Sony's official WF-1000XM5 specifications cover codecs, multipoint, IPX4-equivalent water resistance and battery figures."
         },
         {
           "name": "Apple AirPods Pro 3",
@@ -1265,8 +1349,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A strong ecosystem candidate for buyers already using compatible Apple devices.",
-          "source": "https://www.apple.com/jo/airpods/compare/",
-          "sourceNote": "Apple's official comparison lists AirPods generations and their ecosystem features. Sony's regional wireless headphone catalogue lists WF-1000X models; verify regional variant codes."
+          "source": "https://www.apple.com/airpods-pro/specs/",
+          "sourceNote": "Apple's official AirPods Pro 3 specifications cover ANC, Adaptive Audio, IP57 resistance, charging options and battery claims; several features depend on Apple devices and software."
         },
         {
           "name": "Apple AirPods 4 with Active Noise Cancellation",
@@ -1282,9 +1366,15 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "Compare against AirPods Pro if the buyer prefers an open-fit style over sealed ear tips.",
-          "source": "https://www.apple.com/jo/airpods/compare/",
-          "sourceNote": "Apple's official comparison lists AirPods generations and their ecosystem features. Sony's regional wireless headphone catalogue lists WF-1000X models; verify regional variant codes."
+          "source": "https://support.apple.com/en-gb/121204",
+          "sourceNote": "Apple Support's UK technical specifications identify the AirPods 4 ANC model, H2 chip, IP54 resistance and charging-case details."
         }
+      ],
+      "buyingChecklist": [
+        "Check ear-tip fit, comfort, isolation and whether an open-fit design suits your ears.",
+        "Compare ANC, transparency, microphone performance and wind handling in your typical environment.",
+        "Confirm codec and feature compatibility across iPhone, Android and companion apps.",
+        "Check case charging, wireless charging support, water-resistance rating and replacement-tip availability."
       ]
     },
     {
@@ -1364,6 +1454,12 @@
           "source": "https://levoit.com/collections/air-purifiers",
           "sourceNote": "Levoit's official product catalogue lists Core and Vital series models and intended room categories. Check the precise regional filter SKU and performance documentation."
         }
+      ],
+      "buyingChecklist": [
+        "Size the purifier using clean-air delivery rate (CADR) and room area, not a vague room-size headline.",
+        "Check filter type, replacement SKU, availability and ongoing filter cost.",
+        "Review noise levels at the fan speed needed for the room and whether sleep mode reduces output.",
+        "Check sensor claims, app/cloud dependencies, ozone-related claims and regional electrical requirements."
       ]
     },
     {
@@ -1443,6 +1539,12 @@
           "source": "https://www.breville.com/en-us/support/categories/espresso-machines",
           "sourceNote": "Breville's official support catalogue confirms the BES model families for Bambino Plus, Barista Express, Barista Pro and Oracle Jet. Regional names, plugs and voltage must be checked."
         }
+      ],
+      "buyingChecklist": [
+        "Decide whether you want manual control, assisted dosing or an integrated grinder.",
+        "Check grinder adjustment, basket size, temperature control, steam workflow and warm-up time.",
+        "Confirm voltage, plug, water-filter compatibility and regional service support.",
+        "Include grinder, tamper, cleaning supplies and maintenance costs in the total ownership decision."
       ]
     },
     {
@@ -1522,6 +1624,12 @@
           "source": "https://www.apple.com/ipad/compare/",
           "sourceNote": "Apple's official iPad comparison lists current Pro, Air, standard iPad and mini models, display sizes and processor families. Check exact storage and cellular configurations."
         }
+      ],
+      "buyingChecklist": [
+        "Choose screen size, storage and Wi-Fi/cellular configuration for your actual workload.",
+        "Check stylus and keyboard compatibility, including whether accessories are sold separately.",
+        "Compare chip generation, memory limits, external display support and port capabilities.",
+        "Confirm regional warranty, cellular band support and charger/accessory package."
       ]
     },
     {
@@ -1601,6 +1709,12 @@
           "source": "https://www.garmin.com/en-US/newsroom/press-release/automotive/capture-detailed-eyewitness-video-with-the-new-garmin-dash-cam-x-series/",
           "sourceNote": "Garmin's official X-series announcement identifies the Mini 3, X110, X210 and X310 models and their resolution family. Confirm regional package contents and power accessories."
         }
+      ],
+      "buyingChecklist": [
+        "Compare front/rear resolution, frame rate, HDR and number-plate readability in day and night footage.",
+        "Check whether a microSD card, polarising filter, hardwire kit or rear camera is included.",
+        "Review parking-mode power requirements and whether a low-voltage cut-off is provided.",
+        "Check local privacy/recording rules, GPS features, app support and regional warranty."
       ]
     },
     {
@@ -1627,7 +1741,7 @@
           ],
           "verdict": "A portable choice when battery operation and integrated streaming are important.",
           "source": "https://global.xgimi.com/products/mogo-4",
-          "sourceNote": "XGIMI's official MoGo 4 specifications list 1080p resolution, 450 ISO lumens, Google TV and battery claims. Epson's official projector catalogue lists portable and smart projector families; verify regional model specifications."
+          "sourceNote": "XGIMI's official product page lists native 1080p, 450 ISO lumens, Google TV, 71.28Wh battery and up to 2.5 hours of video playback in Eco mode."
         },
         {
           "name": "Epson EpiqVision Mini EF21 Laser Projector",
@@ -1643,8 +1757,9 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "Compare with battery-powered DLP projectors if built-in battery operation is a priority.",
-          "source": "https://global.xgimi.com/products/mogo-4",
-          "sourceNote": "XGIMI's official MoGo 4 specifications list 1080p resolution, 450 ISO lumens, Google TV and battery claims. Epson's official projector catalogue lists portable and smart projector families; verify regional model specifications."
+          "source": "https://epson.com/For-Home/Projectors/Home-Cinema/Epson-EpiqVision-Mini-EF21-Portable-Smart-Laser-Projector-%E2%80%93-Diamond-White/p/V11HB35020",
+          "sourceNote": "Epson's US product page lists model V11HB35020 as discontinued. Treat EF21 as a legacy comparison candidate and verify current regional stock, warranty and support before publication.",
+          "availabilityNote": "Epson currently marks this US EF21 listing as discontinued. Do not present it as a currently available recommendation without checking a live regional listing."
         },
         {
           "name": "Epson EF-30 Smart Personal Projector",
@@ -1660,8 +1775,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A compact smart projector for controlled-light environments.",
-          "source": "https://global.xgimi.com/products/mogo-4",
-          "sourceNote": "XGIMI's official MoGo 4 specifications list 1080p resolution, 450 ISO lumens, Google TV and battery claims. Epson's official projector catalogue lists portable and smart projector families; verify regional model specifications."
+          "source": "https://epson.com/For-Home/Projectors/Streaming-Entertainment/EF-30-Smart-Personal-Projector/p/V11HC43920",
+          "sourceNote": "Epson's official US page identifies model V11HC43920 and lists Full HD, 350 lumens, built-in Google TV and Dolby Audio. Brightness is modest; compare room-light requirements."
         },
         {
           "name": "Epson EpiqVision Flex CO-FH02 Smart Portable Projector",
@@ -1677,9 +1792,15 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A brighter portable option where mains power is available.",
-          "source": "https://global.xgimi.com/products/mogo-4",
-          "sourceNote": "XGIMI's official MoGo 4 specifications list 1080p resolution, 450 ISO lumens, Google TV and battery claims. Epson's official projector catalogue lists portable and smart projector families; verify regional model specifications."
+          "source": "https://epson.com/For-Home/Projectors/Streaming-Entertainment/EpiqVision%C2%AE-Flex-CO-FH02-Full-HD-1080p-Smart-Portable-Projector/p/V11HA85020",
+          "sourceNote": "Epson's official US product page lists native Full HD, 3,000 lumens and an included Android TV streaming device; regional package and power details can vary."
         }
+      ],
+      "buyingChecklist": [
+        "Compare ANSI/ISO lumens and colour brightness standards; do not compare unlike lumen claims directly.",
+        "Check native resolution, throw ratio, focus/keystone features and required projection distance.",
+        "Confirm whether a battery is built in, expected runtime and whether streaming apps are licensed in your region.",
+        "Check HDMI/USB-C inputs, speaker output, fan noise, plug type and current regional availability."
       ]
     },
     {
@@ -1759,6 +1880,12 @@
           "source": "https://www.synology.com/en-us/products",
           "sourceNote": "Synology's official product catalogue lists current DiskStation families, bay counts, networking and expansion details. Check the exact hardware spec sheet and drive compatibility list for each model."
         }
+      ],
+      "buyingChecklist": [
+        "Choose bay count based on usable capacity, redundancy plan and expected expansion—not raw disk capacity alone.",
+        "Check CPU/RAM, network ports, upgrade options and whether link aggregation or 10GbE is supported.",
+        "Review the manufacturer's drive compatibility list and any restrictions on third-party drives.",
+        "Budget for NAS-rated disks, off-site backup, power protection and software/security update support."
       ]
     },
     {
@@ -1838,6 +1965,12 @@
           "source": "https://oralb.com/en-us/products/electric-toothbrushes/electric-toothbrushes/",
           "sourceNote": "Oral-B's official iO catalogue lists Series 2 through Series 10 and describes the feature differences between tiers. Check the exact bundle and compatible replacement heads."
         }
+      ],
+      "buyingChecklist": [
+        "Compare pressure feedback, timer, cleaning modes and whether app guidance is useful to you.",
+        "Check the exact handle generation and compatible replacement brush-head family.",
+        "Compare charger type, travel case, battery claims and replacement-head availability/cost.",
+        "Do not treat app scores as a dental diagnosis; follow professional dental advice for oral-health concerns."
       ]
     },
     {
@@ -1917,6 +2050,12 @@
           "source": "https://www.logitechg.com/en-us/shop/c/logig-mice",
           "sourceNote": "Logitech G's official catalogue lists the PRO, G502 X and G309 families. Check exact model suffix, connectivity and regional bundle."
         }
+      ],
+      "buyingChecklist": [
+        "Choose shape and size based on hand dimensions and grip style before prioritising weight.",
+        "Compare sensor performance, polling rate, click technology and wired/2.4GHz/Bluetooth modes.",
+        "Check battery life, receiver storage, software compatibility and onboard profile support.",
+        "Confirm the exact model generation, included receiver/cable and warranty."
       ]
     },
     {
@@ -1929,10 +2068,10 @@
       "editorialStatus": "Research draft — requires human review before publication.",
       "products": [
         {
-          "name": "Apple Watch Series 11",
+          "name": "Apple Watch Series 12",
           "bestFor": "iPhone users seeking a mainstream smartwatch for daily notifications and activity tracking.",
-          "us_identifier": "Apple Watch Series 11",
-          "uk_identifier": "Apple Watch Series 11",
+          "us_identifier": "Apple Watch Series 12",
+          "uk_identifier": "Apple Watch Series 12",
           "pros": [
             "Apple lists Series 11 with 42 mm and 46 mm case options and an always-on display.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -1942,8 +2081,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A general-purpose option for buyers already using an iPhone.",
-          "source": "https://www.apple.com/jo/watch/compare/",
-          "sourceNote": "Apple's official comparison lists Series 11, SE 3 and Ultra 3, including case sizes and materials. Garmin's official running smartwatch catalogue lists Forerunner 265 and current multisport families."
+          "source": "https://www.apple.com/watch/compare/",
+          "sourceNote": "Apple's current official comparison lists Series 12 alongside SE 3 and Ultra 4. Confirm case size, material, GPS/cellular configuration and local feature availability."
         },
         {
           "name": "Apple Watch SE 3",
@@ -1963,10 +2102,10 @@
           "sourceNote": "Apple's official comparison lists Series 11, SE 3 and Ultra 3, including case sizes and materials. Garmin's official running smartwatch catalogue lists Forerunner 265 and current multisport families."
         },
         {
-          "name": "Apple Watch Ultra 3",
+          "name": "Apple Watch Ultra 4",
           "bestFor": "Outdoor and endurance users who want a larger rugged-oriented Apple Watch.",
-          "us_identifier": "Apple Watch Ultra 3",
-          "uk_identifier": "Apple Watch Ultra 3",
+          "us_identifier": "Apple Watch Ultra 4",
+          "uk_identifier": "Apple Watch Ultra 4",
           "pros": [
             "Apple lists Ultra 3 with a 49 mm titanium case and expanded outdoor-focused design.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -1976,8 +2115,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A rugged premium candidate for users who need its larger case and outdoor feature set.",
-          "source": "https://www.apple.com/jo/watch/compare/",
-          "sourceNote": "Apple's official comparison lists Series 11, SE 3 and Ultra 3, including case sizes and materials. Garmin's official running smartwatch catalogue lists Forerunner 265 and current multisport families."
+          "source": "https://www.apple.com/watch/compare/",
+          "sourceNote": "Apple's current official comparison lists Ultra 4; confirm case finish, cellular configuration, band size and feature availability in the buyer's country."
         },
         {
           "name": "Garmin Forerunner 265",
@@ -1993,9 +2132,15 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A sport-focused alternative for users who prioritise training data over a general app ecosystem.",
-          "source": "https://www.apple.com/jo/watch/compare/",
-          "sourceNote": "Apple's official comparison lists Series 11, SE 3 and Ultra 3, including case sizes and materials. Garmin's official running smartwatch catalogue lists Forerunner 265 and current multisport families."
+          "source": "https://www.garmin.com/en-GB/compare/?compareProduct=886785",
+          "sourceNote": "Garmin's official UK comparison lists Forerunner 265 specifications including AMOLED display, multi-band GPS, 5 ATM rating and battery figures. The 970 is a newer higher-tier family option; compare features before choosing."
         }
+      ],
+      "buyingChecklist": [
+        "Check phone compatibility first; some watch features are restricted to a particular mobile ecosystem.",
+        "Compare GPS accuracy, battery life in smartwatch and activity modes, display size and comfort.",
+        "Check whether cellular connectivity requires a supported carrier plan in your country.",
+        "Treat health sensors as wellness features unless the manufacturer and local regulator specify otherwise."
       ]
     },
     {
@@ -2075,6 +2220,12 @@
           "source": "https://www.brother-usa.com/c/shop/printers/laser-printers",
           "sourceNote": "Brother's official US printer catalogue lists current laser and multifunction models. Product pages show print, scan, duplex, networking and toner-family details; regional SKUs can differ."
         }
+      ],
+      "buyingChecklist": [
+        "Estimate monthly print volume and compare toner/ink yield and replacement consumable costs.",
+        "Choose laser or inkjet based on colour needs, print frequency and document/photo use.",
+        "Check automatic duplex, ADF duplex scanning, paper sizes, tray capacity and network protocols.",
+        "Verify the regional model suffix, mains voltage, toner cartridge family, warranty and driver support."
       ]
     }
   ]

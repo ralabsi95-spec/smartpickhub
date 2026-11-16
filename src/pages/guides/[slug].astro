@@ -10,6 +10,12 @@ export function getStaticPaths() {
 const { guide } = Astro.props;
 const canonicalUrl = new URL(`/guides/${guide.slug}/`, Astro.site).toString();
 const products = guide.products ?? [];
+const checklist = guide.buyingChecklist ?? [
+  'Confirm the exact model and specification against the manufacturer documentation.',
+  'Check compatibility with your devices, region and intended use.',
+  'Compare total ownership costs, accessories and warranty conditions.',
+  'Verify the live retailer listing, seller, delivery terms and return policy before ordering.'
+];
 const itemList = {
   '@type': 'ItemList',
   name: `${guide.title} — product comparison`,
@@ -33,25 +39,49 @@ const structuredData = {
       headline: guide.title,
       description: guide.summary,
       datePublished: guide.publishedAt,
+      dateModified: guide.updatedAt ?? guide.publishedAt,
       author: { '@type': 'Organization', name: 'SmartPickHub' },
       publisher: { '@type': 'Organization', name: 'SmartPickHub' },
       mainEntityOfPage: canonicalUrl,
       mainEntity: itemList
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).toString() },
+        { '@type': 'ListItem', position: 2, name: 'Buying Guides', item: new URL('/guides/', Astro.site).toString() },
+        { '@type': 'ListItem', position: 3, name: guide.title, item: canonicalUrl }
+      ]
     },
     itemList
   ]
 };
 const jsonLd = JSON.stringify(structuredData).replace(/</g, '\\u003c');
 ---
-<Layout title={guide.title} description={guide.summary}>
-  <article>
-    <span class="pill">{guide.category}</span>
-    <h1>{guide.title}</h1>
-    <p class="muted">{guide.summary}</p>
-    {guide.editorialStatus && <p class="disclosure">{guide.editorialStatus}</p>}
-    {guide.introduction && <p>{guide.introduction}</p>}
-    <section class="comparison-overview" aria-labelledby="comparison-overview-title">
+<Layout title={guide.title} description={guide.summary} canonical={canonicalUrl}>
+  <article class="buying-guide">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Buying Guides</a><span aria-hidden="true">/</span><span aria-current="page">{guide.category}</span>
+    </nav>
+    <header class="guide-header">
+      <span class="pill">{guide.category}</span>
+      <h1>{guide.title}</h1>
+      <p class="guide-summary">{guide.summary}</p>
+      <p class="guide-meta">Research-led guide · Updated {guide.updatedAt ?? guide.publishedAt} · US and UK marketplace links</p>
+      {guide.editorialStatus && <p class="disclosure">{guide.editorialStatus}</p>}
+      {guide.introduction && <p class="guide-introduction">{guide.introduction}</p>}
+    </header>
+
+    <nav class="guide-contents" aria-label="On this page">
+      <strong>On this page</strong>
+      <a href="#quick-comparison">Quick comparison</a>
+      <a href="#buying-checklist">What to check</a>
+      <a href="#product-reviews">Product details</a>
+    </nav>
+
+    <section class="comparison-overview" id="quick-comparison" aria-labelledby="comparison-overview-title">
       <h2 id="comparison-overview-title">Quick comparison</h2>
+      <p class="muted">Use this table to shortlist products. It is not a hands-on test ranking.</p>
       <div class="table-wrap">
         <table>
           <thead><tr><th scope="col">Product</th><th scope="col">Best for</th><th scope="col">Key decision point</th></tr></thead>
@@ -67,21 +97,38 @@ const jsonLd = JSON.stringify(structuredData).replace(/</g, '\\u003c');
         </table>
       </div>
     </section>
-    {products.map((product, index) => (
-      <section class="card" id={`product-${product.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`} style="margin-block: 1.25rem">
-        <h2>{index + 1}. {product.name}</h2>
-        {product.bestFor && <p><strong>Best for:</strong> {product.bestFor}</p>}
-        {product.verdict && <p>{product.verdict}</p>}
-        {product.pros?.length > 0 && <><h3>Potential advantages</h3><ul>{product.pros.map((item) => <li>{item}</li>)}</ul></>}
-        {product.cons?.length > 0 && <><h3>Points to consider</h3><ul>{product.cons.map((item) => <li>{item}</li>)}</ul></>}
-        {product.source && <p class="muted">Manufacturer information: <a href={product.source} target="_blank" rel="noopener noreferrer">View product specifications</a>. {product.sourceNote}</p>}
-        <p class="muted">Choose the Amazon store you normally use. These are separate marketplace search links unless a verified direct ASIN is supplied.</p>
-        <div class="product-actions">
-          {product.us_identifier && <a class="button" href={buildAffiliateUrl('us', product.us_identifier)} rel="sponsored nofollow noopener" target="_blank">Amazon US (paid link)</a>}
-          {product.uk_identifier && <a class="button secondary" href={buildAffiliateUrl('uk', product.uk_identifier)} rel="sponsored nofollow noopener" target="_blank">Amazon UK (paid link)</a>}
-        </div>
-      </section>
-    ))}
+
+    <section class="buyer-checklist" id="buying-checklist" aria-labelledby="buyer-checklist-title">
+      <h2 id="buyer-checklist-title">What to check before you buy</h2>
+      <ul>{checklist.map((item) => <li>{item}</li>)}</ul>
+    </section>
+
+    <section id="product-reviews" aria-labelledby="product-reviews-title">
+      <h2 id="product-reviews-title">Product details</h2>
+      <p class="muted">The advantages and limitations below are based on manufacturer documentation and editorial analysis. They are not claims of physical product testing.</p>
+      {products.map((product, index) => (
+        <section class="card product-detail" id={`product-${product.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}>
+          <div class="product-detail-heading">
+            <span class="product-index">{String(index + 1).padStart(2, '0')}</span>
+            <h3>{product.name}</h3>
+          </div>
+          {product.bestFor && <p><strong>Best for:</strong> {product.bestFor}</p>}
+          {product.verdict && <p class="product-verdict">{product.verdict}</p>}
+          <div class="pros-cons">
+            {product.pros?.length > 0 && <div><h4>Potential advantages</h4><ul>{product.pros.map((item) => <li>{item}</li>)}</ul></div>}
+            {product.cons?.length > 0 && <div><h4>Points to consider</h4><ul>{product.cons.map((item) => <li>{item}</li>)}</ul></div>}
+          </div>
+          {product.availabilityNote && <p class="availability-note"><strong>Availability check:</strong> {product.availabilityNote}</p>}
+          {product.source && <p class="manufacturer-source"><strong>Manufacturer source:</strong> <a href={product.source} target="_blank" rel="noopener noreferrer">View official specifications</a>. {product.sourceNote}</p>}
+          <p class="affiliate-context">Amazon links below open marketplace search results for the model phrase, not a verified direct product listing. Confirm the exact model, seller, regional variant and current terms before ordering.</p>
+          <div class="product-actions">
+            {product.us_identifier && <a class="button" href={buildAffiliateUrl('us', product.us_identifier)} rel="sponsored nofollow noopener" target="_blank" aria-label={`Search Amazon US for ${product.name}`}>Search Amazon US</a>}
+            {product.uk_identifier && <a class="button secondary" href={buildAffiliateUrl('uk', product.uk_identifier)} rel="sponsored nofollow noopener" target="_blank" aria-label={`Search Amazon UK for ${product.name}`}>Search Amazon UK</a>}
+          </div>
+        </section>
+      ))}
+    </section>
+
     <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Affiliate links are paid links. Product information is based on cited manufacturer documentation and editorial research; SmartPickHub has not claimed hands-on testing.</p>
   </article>
   <script type="application/ld+json" set:html={jsonLd} />

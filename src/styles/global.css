@@ -178,3 +178,38 @@ main { min-height: 70vh; padding-block: 2.5rem; }
 @media (max-width: 640px) {
   .guide-filters { grid-template-columns: 1fr; padding: .9rem; }
 }
+
+
+/* Buying guide editorial structure and product-level research clarity */
+.breadcrumbs { display:flex; flex-wrap:wrap; align-items:center; gap:.55rem; margin:0 0 1.25rem; color:#64748b; font-size:.82rem; }
+.breadcrumbs a { text-decoration:underline; text-underline-offset:.16em; }
+.guide-header { max-width:900px; }
+.guide-header h1 { margin:.8rem 0 .65rem; font-size:clamp(2rem,4.5vw,3.25rem); line-height:1.12; letter-spacing:-.04em; }
+.guide-summary { color:#475569; font-size:1.12rem; line-height:1.75; }
+.guide-meta { margin:.8rem 0 1rem; color:#64748b; font-size:.82rem; }
+.guide-introduction { margin:1.2rem 0 1.7rem; font-size:1.02rem; line-height:1.85; }
+.guide-contents { display:flex; flex-wrap:wrap; align-items:center; gap:.65rem 1rem; margin:1.5rem 0 2rem; padding:1rem 1.1rem; border:1px solid #dbe3ee; border-radius:.85rem; background:#fff; }
+.guide-contents strong { color:#172033; }
+.guide-contents a { font-size:.9rem; text-decoration:underline; text-underline-offset:.15em; }
+.comparison-overview, .buyer-checklist { margin-block:2rem; }
+.comparison-overview h2, .buyer-checklist h2, #product-reviews > h2 { font-size:clamp(1.35rem,3vw,1.8rem); letter-spacing:-.025em; }
+.buyer-checklist { padding:1.3rem 1.5rem; border:1px solid #dbeafe; border-radius:1rem; background:#f5f9ff; }
+.buyer-checklist ul { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.75rem 1.5rem; padding-left:1.2rem; }
+.buyer-checklist li { padding-left:.15rem; }
+.product-detail { margin-block:1.25rem; scroll-margin-top:1rem; }
+.product-detail-heading { display:flex; align-items:flex-start; gap:.8rem; }
+.product-detail-heading h3 { margin:.1rem 0 .75rem; font-size:1.25rem; line-height:1.35; }
+.product-index { flex:0 0 auto; display:grid; place-items:center; width:2rem; height:2rem; border-radius:.65rem; background:#eaf1fc; color:#174a94; font-size:.78rem; font-weight:850; }
+.product-verdict { padding:.85rem 1rem; border-left:3px solid #2457a7; background:#f8fbff; }
+.pros-cons { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
+.pros-cons h4 { margin-bottom:.4rem; }
+.pros-cons ul { padding-left:1.2rem; }
+.manufacturer-source, .affiliate-context { color:#475569; font-size:.88rem; line-height:1.7; }
+.manufacturer-source a { text-decoration:underline; text-underline-offset:.15em; }
+.affiliate-context { padding:.75rem .9rem; border-radius:.65rem; background:#f8fafc; }
+.availability-note { padding:.85rem 1rem; border-left:3px solid #b45309; background:#fffbeb; color:#78350f; }
+@media (max-width:640px) {
+  .buyer-checklist ul, .pros-cons { grid-template-columns:1fr; }
+  .guide-contents { align-items:flex-start; flex-direction:column; }
+  .product-detail { padding:1rem; }
+}
