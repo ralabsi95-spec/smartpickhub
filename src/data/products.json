@@ -7,7 +7,7 @@
     "identifierPolicy": "Identifiers below are exact model-name search phrases, not ASINs. The affiliate URL helper therefore creates marketplace search URLs. Replace with a direct ASIN only after verifying the exact product and marketplace.",
     "editorialPolicy": "Manufacturer specifications and product documentation inform factual feature summaries. Pros and considerations are editorial analysis, not hands-on testing, user-review aggregation, rankings, price claims or availability claims.",
     "publicationPolicy": "Do not treat these research drafts as approved editorial content. Preview remains noindex.",
-    "productCount": 28
+    "productCount": 32
   },
   "guides": [
     {
@@ -616,6 +616,93 @@
           "verdict": "A mainstream business-monitor option for a tidy USB-C desk setup. Compare it directly with the U2723QE and confirm the exact charging wattage for your region and laptop.",
           "source": "https://www.delltechnologies.com/asset/en-gb/products/electronics-and-accessories/technical-support/dell-27-4k-usb-c-hub-monitor-p2723qe-datasheet.pdf",
           "sourceNote": "Dell's official P2723QE datasheet lists 27-inch 4K 60Hz, IPS, USB-C hub, and height/tilt/swivel/pivot stand adjustment."
+        }
+      ]
+    },
+    {
+      "slug": "thunderbolt-usb-c-docking-stations-us-uk",
+      "title": "Best Thunderbolt and USB-C Docking Stations for Laptop Setups: US & UK Guide",
+      "category": "Laptop Docks & Connectivity",
+      "publishedAt": "2026-11-16",
+      "summary": "A specification-led guide to laptop docking stations, comparing host connectivity, display support, charging power, ports and operating-system limitations.",
+      "introduction": "Choose a dock only after checking the laptop's exact USB-C capabilities. USB-C connector shape alone does not guarantee Thunderbolt, USB4, video output or high-wattage charging. Multi-monitor support also depends on the computer's processor, graphics architecture and operating system. Confirm the exact model revision and regional power supply before buying. This guide is based on manufacturer documentation, not hands-on testing.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "CalDigit TS4 Thunderbolt 4 Dock",
+          "bestFor": "Thunderbolt laptop users who need a large range of ports, 2.5Gb Ethernet and high host charging power.",
+          "us_identifier": "CalDigit TS4 Thunderbolt 4 Dock",
+          "uk_identifier": "CalDigit TS4 Thunderbolt 4 Dock",
+          "pros": [
+            "Thunderbolt 4 host connection with up to 98W host power delivery",
+            "Large port selection including three Thunderbolt 4, three USB-C, five USB-A, DisplayPort 1.4 and UHS-II SD/microSD readers",
+            "2.5 Gigabit Ethernet and separate audio connections"
+          ],
+          "cons": [
+            "Requires a compatible Thunderbolt/USB4 or supported USB-C host for full functionality",
+            "Display count and resolution depend on the computer and its graphics/display pipeline",
+            "A premium multi-port dock may be unnecessary for users who only need a few USB peripherals"
+          ],
+          "verdict": "A strong connectivity-focused candidate for a fixed workstation with many peripherals and wired networking. Check CalDigit's host compatibility guidance and monitor limits for the exact laptop.",
+          "source": "https://www.caldigit.com/ts4-support/",
+          "sourceNote": "CalDigit's official TS4 support page lists its port inventory, 98W host power delivery, 2.5Gb Ethernet and minimum system requirements."
+        },
+        {
+          "name": "Anker Prime TB5 Docking Station (14-in-1)",
+          "bestFor": "Newer Thunderbolt 5 laptops and demanding desk setups that can benefit from high-bandwidth connectivity and up to 140W host charging.",
+          "us_identifier": "Anker Prime TB5 Docking Station 14-in-1 140W",
+          "uk_identifier": "Anker Prime TB5 Docking Station 14-in-1 140W",
+          "pros": [
+            "Thunderbolt 5 upstream connection with up to 140W maximum power delivery",
+            "Two downstream Thunderbolt 5 ports, 2.5Gb Ethernet, HDMI 2.1 or DisplayPort 2.1 output, SD and TF card readers",
+            "Designed for high-bandwidth workflows and multiple connected devices"
+          ],
+          "cons": [
+            "Full Thunderbolt 5 benefits require a compatible host computer and peripherals",
+            "The HDMI 2.1 and DisplayPort 2.1 outputs are selectable rather than simultaneous according to the listed port specification",
+            "Check the exact display modes and macOS/Windows compatibility for the laptop before purchase"
+          ],
+          "verdict": "A forward-looking option for compatible Thunderbolt 5 systems. It is unlikely to be a sensible upgrade for a laptop limited to basic USB-C or older Thunderbolt; verify host support first.",
+          "source": "https://www.anker.com/products/a83b5-anker-prime-thunderbolt5-docking-station-14-in-1-140w-8k",
+          "sourceNote": "Anker's official product specification lists Thunderbolt 5, 140W upstream power, downstream ports, display output selection, Ethernet and OS compatibility."
+        },
+        {
+          "name": "Kensington SD5780T Thunderbolt 4 Dock",
+          "bestFor": "Windows and Mac laptop users who want a Thunderbolt 4 dock with 96W charging, HDMI and dual-display support on compatible hosts.",
+          "us_identifier": "Kensington SD5780T Thunderbolt 4 Dock",
+          "uk_identifier": "Kensington SD5780T Thunderbolt 4 Dock",
+          "pros": [
+            "Thunderbolt 4 connection with up to 96W laptop charging",
+            "HDMI 2.1, two downstream Thunderbolt 4 ports, UHS-II SD reader and 2.5Gb Ethernet",
+            "Manufacturer lists dual 4K/60Hz or supported dual 6K/60Hz display configurations"
+          ],
+          "cons": [
+            "Some base-chip MacBook models and USB-C Alt Mode hosts support only one external display",
+            "Display capabilities depend on host graphics, DSC and DisplayPort support",
+            "Windows systems may require Intel Thunderbolt software to be enabled"
+          ],
+          "verdict": "A practical dock for users who need 96W charging and a mix of HDMI, Thunderbolt and 2.5Gb Ethernet. Check the manufacturer's compatibility table, especially for MacBook chip variants.",
+          "source": "https://www.kensington.com/p/products/device-docking-connectivity-products/laptop-docks-usb-accessories/sd5780t-thunderbolt-4-dual-4k-docking-station-with-96w-pd-winmac/",
+          "sourceNote": "Kensington's official product page documents 96W PD, Thunderbolt 4, HDMI 2.1, Ethernet and host-dependent monitor limitations."
+        },
+        {
+          "name": "Plugable TBT4-UDZ Thunderbolt 4 Dock",
+          "bestFor": "Windows and Mac users who need a broad port selection, dual 4K displays on supported systems and 2.5Gb Ethernet.",
+          "us_identifier": "Plugable TBT4-UDZ Thunderbolt 4 Dock",
+          "uk_identifier": "Plugable TBT4-UDZ Thunderbolt 4 Dock",
+          "pros": [
+            "16-in-1 port layout with dual HDMI and dual DisplayPort outputs",
+            "Up to 100W advertised host charging (98W certified) and 2.5Gb Ethernet",
+            "Includes SD and microSD readers, multiple USB ports and a Thunderbolt 4 host cable"
+          ],
+          "cons": [
+            "The number of extended displays varies substantially by host hardware and operating system",
+            "Some USB-C-only laptops may not support video output or multiple displays through this dock",
+            "Windows multi-display capability can depend on DisplayPort 1.4 HBR3 DSC support"
+          ],
+          "verdict": "A flexible option for mixed peripheral and display setups, especially where the extra video outputs are useful. Confirm the exact laptop's display architecture before assuming all outputs can be used.",
+          "source": "https://plugable.com/products/tbt4-udz",
+          "sourceNote": "Plugable's official product page documents port count, 100W/98W charging, 2.5Gb Ethernet, compatibility and display-output caveats."
         }
       ]
     }
