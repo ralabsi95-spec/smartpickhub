@@ -72,3 +72,11 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 3. Add only verified product records with separate marketplace identifiers/links, keeping content as drafts until approved.
 4. Test responsive/mobile layout and link destinations for both Amazon stores.
 5. Decide separately whether Astro complements or replaces WordPress; no migration or production switch without explicit approval and a verified backup.
+
+
+## 16 November 2026 – Preview verification and disclosure refinement
+- Owner visually confirmed the isolated Cloudflare Pages preview after deployment: Home, Buying Guides, Affiliate Disclosure and RSS load; RSS channel link now points to the preview domain. RSS has no guide items because the approved guide collection is intentionally empty.
+- Rechecked official Amazon US and UK Associates guidance: both operating agreements require the statement "As an Amazon Associate I earn from qualifying purchases." Amazon UK additionally requires a clear, conspicuous link-level disclosure near affiliate links/reviews (examples include "(paid link)" or "#ad").
+- Updated `src/components/ProductCard.astro` to show "Affiliate links (paid links):" immediately above the separate Amazon US and Amazon UK links when present. Existing tagged URL generation and rel="sponsored nofollow noopener" remain intact.
+- Official policy references reviewed: Amazon US and UK Associates Operating Agreements and Amazon UK disclosure help page (links in project chat).
+- This is a development-branch change only. Await GitHub Actions build result; no merge, WordPress changes, DNS/custom-domain changes, product imports or production deployment.
