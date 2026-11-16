@@ -2,9 +2,9 @@ name: Astro Build and Quality Checks
 
 on:
   push:
-    branches: [automation/bootstrap]
+    branches: [automation/bootstrap, content/cordless-vacuum-guide]
   pull_request:
-    branches: [main]
+    branches: [main, automation/bootstrap]
   workflow_dispatch:
 
 permissions:
