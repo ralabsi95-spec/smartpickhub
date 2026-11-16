@@ -357,3 +357,13 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 ## 16 November 2026 – CI trigger de-duplication
 - Adjusted the single QA workflow concurrency key to use `github.head_ref || github.ref_name`, so a push and its associated pull-request event for the same branch share one concurrency group. This prevents duplicate full Lighthouse/axe runs for the same commit while preserving both push and PR validation triggers.
 - No test logic, dependencies or site content changed. Latest full QA evidence remains Run #193 on code commit `6f27c02809827ce05bb2f04f7abc73da2e1d5daf`; this is a workflow scheduling-only adjustment.
+
+
+## 16 November 2026 – Isolated Astro 7 security upgrade assessment
+- Verified `automation/bootstrap` head at `7bb3537249d700d06d5b4296af20c0939297428b`; PR #1 remains open and unmerged. Cloudflare Pages reported a successful preview deployment for `7bb3537`.
+- Created `security/astro7-upgrade-assessment` from the development branch to test security remediation without altering the current baseline.
+- Test dependency set: Astro `^7.4.12`, `@astrojs/rss ^4.0.19`, `@astrojs/sitemap ^3.7.5`, `@astrojs/check ^0.9.12`, TypeScript `^5.9.3`; Node `22.23.4` is pinned in `.nvmrc` and both workflow files.
+- QA workflow runs on the isolated branch and stores its generated `package-lock.json` in the quality artifact so the exact dependency tree can be inspected before committing a lockfile.
+- This is a major upgrade assessment: Astro v6 introduced Vite 7 and Zod 4 changes; Astro 7 moves to Vite 8 and has a minimum Node requirement of 22.23.4. The previous npm audit showed 5 findings (1 low, 3 high, 1 critical). No blind fix or forced update was used.
+- **Pending:** isolated CI, lockfile review, fresh npm audit, and full build/smoke/axe/Lighthouse verification. No package change has been merged into `automation/bootstrap`; PR #1 remains Draft/open/unmerged. No live WordPress, DNS, publishing or production changes.
+- **Next:** inspect the isolated CI run and its artifact. Only after passing tests should the generated lockfile be committed to the isolated branch and CI switched to reproducible `npm ci`.
