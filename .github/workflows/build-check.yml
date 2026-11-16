@@ -4,7 +4,7 @@ on:
   push:
     branches: [automation/bootstrap, security/astro7-upgrade-assessment]
   pull_request:
-    branches: [main]
+    branches: [main, automation/bootstrap]
   workflow_dispatch:
 
 permissions:
