@@ -203,3 +203,13 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Updated validator to expect nine guides and 36 products. All entries remain research drafts; Amazon identifiers are exact model search phrases, not ASINs or verified direct product links.
 - New CI runs have been triggered for the latest SSD and keyword changes; their final status is pending verification.
 - No WordPress, DNS, production or `main` changes. PR #1 remains unmerged; preview noindex policy remains in force.
+
+## 16 November 2026 – Free automated QA laboratory
+- Added `scripts/smoke-test.mjs` and `npm run smoke` to test generated static HTML after Astro build.
+- Smoke tests inspect generated page count, HTML language, title, description warnings, mandatory preview `noindex`, absolute HTTPS canonical URLs, local internal-link targets and JSON-LD syntax.
+- Expanded GitHub Actions workflow to run build and smoke tests, start a local static preview, then execute Google Lighthouse audits for the homepage on desktop and mobile plus all guide/index pages.
+- Lighthouse categories collected: performance, accessibility, best practices and SEO. JSON reports are uploaded as a GitHub Actions artifact for 14 days; no external paid audit service is required.
+- This pipeline tests the generated Astro preview build, not the existing live WordPress website. No production URLs, DNS, WordPress or main branch are changed.
+- Gemini can be used as an optional reviewer of the Lighthouse JSON and smoke-test output. No Gemini API key, paid integration or automated code-writing permission has been added. Any future Gemini API use must rely on user-approved credentials stored as GitHub Secrets, with generated fixes requiring CI and human review.
+- Lighthouse audits provide lab measurements; they do not replace real-user Core Web Vitals, Search Console indexing data, manual usability testing or human accessibility review.
+- Current automated workflow has been updated; final success/failure on the newest commit remains to be verified.
