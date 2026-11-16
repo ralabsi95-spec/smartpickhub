@@ -379,3 +379,10 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Opened Draft PR #2: https://github.com/ralabsi95-spec/smartpickhub/pull/2, from `security/astro7-upgrade-assessment` to `automation/bootstrap`. It remains open, Draft and unmerged; PR #1 also remains open and unmerged.
 - The assessment workflow captures its generated lockfile, then performs a clean `npm ci` install before audit/build/test steps. This checks lockfile reproducibility while keeping the lockfile out of the branch until reviewed.
 - Latest isolated code commit: `f40454e758ce69ee0b7286e04c3aca7e29649542`. CI status is not yet confirmed; no success is claimed.
+
+
+## 16 November 2026 – Run #212 in progress (Astro 7 assessment)
+- Actions run #212: https://github.com/ralabsi95-spec/smartpickhub/actions/runs/43901624336 on isolated assessment commit `4a8bdd737caf3a9a0eeae83f19d65941ae0e1d62`, triggered by Draft PR #2.
+- Successful to date: npm install, lockfile capture, clean `npm ci`, npm audit report capture, Astro checks, 10-guide/40-product catalogue and affiliate validation, keyword universe generation, static build, smoke/SEO/JSON-LD checks, Chromium installation, axe-core on all catalogue routes, and homepage desktop/mobile Lighthouse.
+- Lighthouse for guide index, affiliate disclosure and all guide detail routes remains in progress; consolidated audit and artifact upload have not yet completed. Do not mark the migration fully validated until Actions completes and the reports are reviewed.
+- No lockfile has been committed and no dependency update has been merged into the development branch. PR #2 remains Draft; PR #1 remains open/unmerged. No live website, DNS, publication or production change.
