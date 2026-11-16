@@ -114,3 +114,11 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Expanded GitHub Actions CI to run `npm run check`, `npm run validate` and `npm run build` in sequence. The workflow triggered on the newest commits; final status must be confirmed separately.
 - Sources checked for current naming/specification context: Ring product-name change notice (August 2026); Ring Battery Doorbell 2K Plus product page; Arlo official product-lineup/spec-sheet pages; Google Nest Cam battery technical specifications; EcoFlow RIVER 2 UK specs and user manual.
 - Preview remains `noindex,nofollow` and blocked in `robots.txt`; WordPress, DNS, production domain, and `main` remain untouched. PR #1 remains unmerged.
+
+
+## 16 November 2026 – Official-source spot check and Arlo refresh
+- Re-opened the official manufacturer/support sources referenced by the 12-product research catalogue (Logitech, Anker, EcoFlow, Jackery, eufy, Arlo, Ring and Google) for a current spot-check.
+- Updated the Arlo entry from the previous Essential 2K (2nd Generation) naming to the current Arlo Essential 3 2K Outdoor Security Camera, using Arlo UK's current product page and its published 2K/130-degree/12x zoom, integrated battery, Wi-Fi, spotlight, siren and two-way-audio specifications. Updated the regional search phrases and cautions accordingly.
+- The 12 catalogue records remain research drafts, not approved product recommendations. Affiliate URLs continue to be marketplace search links based on exact model phrases; no unverified ASINs, prices, ratings, review counts or availability claims were added.
+- QA status before this refresh: Astro Build Check succeeded on branch head `b9e16325e88380ce92f4c6eae0b6a8685990160a` (GitHub Actions runs 43872738688 and 43872730077). The Arlo refresh commit triggers a new build/check run; do not mark this latest commit build-confirmed until that run completes.
+- PR #1 remains open and unmerged; `main` is unchanged. Cloudflare Pages remains the isolated noindex preview; WordPress, DNS and custom-domain settings remain untouched.
