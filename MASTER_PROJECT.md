@@ -352,3 +352,8 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Both workflow files use Node 22. Node 20 was deliberately not selected because it reached EOL on 30 April 2026; Node 22 remains Maintenance LTS through 30 April 2027.
 - No WordPress changes, product imports, content publication, DNS changes, production cutover, custom-domain changes or PR merge were performed. All catalogue content remains draft-only and preview noindex protections remain enabled.
 - Next: triage exact npm advisories and dependency paths; test an Astro 7.4.12-compatible upgrade in an isolated branch with a lockfile and full QA; manually review two incomplete axe checks and repeat the one homepage desktop Lighthouse outlier.
+
+
+## 16 November 2026 – CI trigger de-duplication
+- Adjusted the single QA workflow concurrency key to use `github.head_ref || github.ref_name`, so a push and its associated pull-request event for the same branch share one concurrency group. This prevents duplicate full Lighthouse/axe runs for the same commit while preserving both push and PR validation triggers.
+- No test logic, dependencies or site content changed. Latest full QA evidence remains Run #193 on code commit `6f27c02809827ce05bb2f04f7abc73da2e1d5daf`; this is a workflow scheduling-only adjustment.

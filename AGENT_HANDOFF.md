@@ -178,3 +178,8 @@ Do not ask the owner to repeat details already documented here.
 - npm audit: 5 findings (1 low, 3 high, 1 critical). No package upgrade applied. Review Astro, sharp, zod, zod-to-ts and esbuild paths before remediation.
 - Node 22 aligned across workflows; Node 20 is EOL as of 30 Apr 2026. No publication, WordPress/DNS change or PR merge.
 - Next: inspect npm advisory paths and test compatible Astro remediation separately; review two incomplete axe checks and repeat the desktop homepage Lighthouse outlier.
+
+
+## 16 November 2026 – CI trigger de-duplication
+- QA concurrency now groups push and pull-request events by `github.head_ref || github.ref_name`, avoiding duplicate runs for the same branch while keeping both triggers enabled.
+- This is scheduling-only; no test code or dependencies changed. The last complete QA evidence is Run #193, successful.
