@@ -322,3 +322,17 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - QA workflow concurrency now cancels obsolete duplicate runs on the same ref. The report is uploaded as the `smartpickhub-quality-reports` artifact for 14 days.
 - No WordPress changes, public publication, DNS changes, production cutover, PR merge, dependency upgrades or manual dispatch of the draft-research workflow were performed.
 - Next: wait for the unified QA run, download and inspect `latest-audit.json`, then triage the exact current npm advisories and design a separate, reversible Astro upgrade test.
+
+
+## 16 November 2026 – Unified QA implementation checkpoint
+- Final code checkpoint for this batch: `5a2234a6536eb33ad753f514b4f8129f879ee636` on `automation/bootstrap`.
+- Files changed across this QA batch: `.github/workflows/build-check.yml`, `.github/workflows/auto-publish.yml`, `package.json`, `scripts/validate-catalogue.mjs`, `scripts/smoke-test.mjs`, `scripts/accessibility-test.mjs`, new `scripts/build-audit-report.mjs`, and this handoff/master documentation.
+- QA now validates current catalogue slugs dynamically (no fixed list of 10), checks every product has generated US and UK Amazon destinations with the expected tracking IDs, and verifies the rendered guide pages contain the matching marketplace links, sponsored/nofollow attributes, Article/ItemList JSON-LD, preview noindex, robots.txt crawl blocking, HTTPS canonicals and working internal links.
+- Individual JSON results are written under `test-reports/`; consolidated `test-reports/latest-audit.json` is assembled even when an earlier QA step fails and uploaded in the 14-day `smartpickhub-quality-reports` artifact.
+- Both workflows now use Node 22. Node 20 was not adopted because the already-established quality baseline runs on Node 22; this avoids downgrading the tested runtime.
+- Intermediate CI Run #184 failed during Astro check because the first draft of the enhanced smoke script contained over-escaped regular expressions. The script was corrected in commit `f76412d1d7bdf9727b78426d0ca62eb51c65c225`; the later run must confirm it.
+- Runs #185 and #188 have not produced a completed result; #189 for the final workflow-concurrency checkpoint is queued. Do not interpret these as passed. The latest completed comprehensive baseline remains Run #179, SHA `6a2f61e2faca5927093afcfbfe0d8b92be1e8d4f`, with 13 axe routes (zero violations, two incomplete homepage checks) and 14 Lighthouse reports (100/100/100/66).
+- Run #179's npm audit reported 5 package findings: 1 low, 3 high, 1 critical. Astro is the direct critical package; affected transitive packages include sharp, zod, zod-to-ts and esbuild. No dependency upgrade or forced fix was performed.
+- Gemini reference commit `ef55e105` was the same QA workflow, not a second test system. Its Runs #129 and #130 both failed at the old smoke test due false-negative noindex/canonical parsing; Runs #174/#175 were later documentation runs and passed.
+- WordPress, production, DNS, publication state and PR merge status remain unchanged. All 10 guides / 40 products remain research drafts.
+- Next action: wait for a final completed CI run on the latest code, inspect `latest-audit.json`, then plan isolated dependency remediation.

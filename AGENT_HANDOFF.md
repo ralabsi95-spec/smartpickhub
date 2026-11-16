@@ -153,3 +153,14 @@ Do not ask the owner to repeat details already documented here.
 - Run #179 npm audit: 5 vulnerabilities (1 low, 3 high, 1 critical), Astro direct and esbuild/sharp/zod/zod-to-ts transitive. No upgrade applied.
 - Current implementation adds dynamic marketplace-link and JSON-LD checks, noindex/robots/canonical/internal-link checks, structured test JSON and consolidated `test-reports/latest-audit.json`. CI verification is pending for this batch.
 - Node 22 is aligned across workflows. No publishing, merge, WordPress or DNS changes.
+
+
+## 16 November 2026 – Latest QA implementation checkpoint
+- Latest code checkpoint: `5a2234a6536eb33ad753f514b4f8129f879ee636`.
+- Unified dynamic validation now checks every guide and every product's Amazon US/UK generated destination, tags, rendered affiliate links, sponsored/nofollow attributes, required Article/ItemList JSON-LD, noindex, robots.txt, canonicals and internal links.
+- Reports: `test-reports/catalogue-validation.json`, `test-reports/smoke-test.json`, `test-reports/axe/summary.json`, Lighthouse per-page JSON, `test-reports/npm-audit.json`, consolidated `test-reports/latest-audit.json`.
+- Both workflow files use Node 22. Only one QA workflow exists; `auto-publish.yml` remains a distinct draft-research writer and must not be manually dispatched without authorization.
+- The first enhanced implementation had a syntax error in smoke-test regex literals; Run #184 failed at Astro check. The script was corrected at commit `f76412d1d7bdf9727b78426d0ca62eb51c65c225`.
+- Runs #185/#188 have not completed; Run #189 is queued. Latest successful full dynamic-route baseline is Run #179 on SHA `6a2f61e2faca5927093afcfbfe0d8b92be1e8d4f`: 13 axe routes, zero violations, two incomplete homepage checks; 14 Lighthouse reports, all 100/100/100/66.
+- Freshest completed npm audit report in Run #179: 5 package findings (1 low, 3 high, 1 critical); direct Astro critical, transitive sharp/zod/zod-to-ts/esbuild. Do not upgrade blindly; no package change has been made.
+- Immediate next action: verify a final CI run on latest SHA and inspect its artifact before marking enhanced tests complete.
