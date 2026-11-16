@@ -1,8 +1,274 @@
 {
   "_meta": {
-    "purpose": "Structured content store for SmartPickHub.",
-    "status": "starter-empty",
-    "note": "No products or ratings have been imported. Populate only after product, market, ASIN/search URL and claims are verified. Existing WordPress products are not re-imported."
+    "purpose": "Research-led buying guide catalogue for US and UK shoppers.",
+    "status": "research-draft-unapproved",
+    "lastResearched": "2026-11-16",
+    "marketStrategy": "Serve both US and UK shoppers with separate Amazon marketplace links.",
+    "identifierPolicy": "Identifiers below are exact model-name search phrases, not ASINs. The affiliate URL helper therefore creates marketplace search URLs. Replace with a direct ASIN only after verifying the exact product and marketplace.",
+    "editorialPolicy": "Manufacturer specifications and product documentation inform factual feature summaries. Pros and considerations are editorial analysis, not hands-on testing, user-review aggregation, rankings, price claims or availability claims.",
+    "publicationPolicy": "Do not treat these research drafts as approved editorial content. Preview remains noindex."
   },
-  "guides": []
+  "guides": [
+    {
+      "slug": "home-office-ergonomics-us-uk",
+      "title": "Home Office Ergonomics: Practical Keyboard and Mouse Options for US & UK Buyers",
+      "category": "Home Office Ergonomics",
+      "publishedAt": "2026-11-16",
+      "summary": "A practical comparison of ergonomic keyboards and pointing devices, focusing on shape, connection options, hand fit and desk-work habits.",
+      "introduction": "Ergonomic accessories can change how your hands and arms are positioned at a desk, but no single shape suits everyone. Compare the layout, grip style, adjustment options and computer compatibility before choosing. These are research-led product summaries based on manufacturer documentation, not hands-on test results.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Logitech MX Vertical Advanced Ergonomic Mouse",
+          "bestFor": "Users who prefer a full-size vertical mouse with a rechargeable battery.",
+          "us_identifier": "Logitech MX Vertical Advanced Ergonomic Mouse",
+          "uk_identifier": "Logitech MX Vertical Advanced Ergonomic Mouse",
+          "pros": [
+            "57-degree vertical orientation designed around a handshake-style grip",
+            "Rechargeable design with USB-C charging",
+            "Bluetooth and USB receiver connectivity; supports switching between compatible computers"
+          ],
+          "cons": [
+            "The upright grip can feel unfamiliar and may require an adjustment period",
+            "Its larger shape is not ideal for every hand size or grip preference",
+            "The vertical design is not a substitute for adjusting desk height and overall posture"
+          ],
+          "verdict": "A candidate for users who want to try a pronounced vertical mouse shape and value multi-device connectivity. Check hand fit and current regional model details before buying.",
+          "source": "https://www.logitech.com/en-us/products/mice/mx-vertical-ergonomic-mouse.html",
+          "sourceNote": "Logitech product and technical documentation describes the 57-degree angle, rechargeable power and connection options."
+        },
+        {
+          "name": "Logitech Lift Vertical Ergonomic Mouse",
+          "bestFor": "Users with small-to-medium hands looking for a more compact vertical mouse.",
+          "us_identifier": "Logitech Lift Vertical Ergonomic Mouse",
+          "uk_identifier": "Logitech Lift Vertical Ergonomic Mouse",
+          "pros": [
+            "57-degree vertical grip",
+            "Bluetooth and Logi Bolt receiver connectivity",
+            "Compact shape with programmable buttons and a replaceable AA battery"
+          ],
+          "cons": [
+            "The compact body may not suit larger hands",
+            "Uses a replaceable AA battery rather than USB-C rechargeable power",
+            "Vertical pointing devices require a personal comfort check before committing"
+          ],
+          "verdict": "Worth comparing with larger vertical mice when hand size is a priority. Confirm the colour and handedness variant offered in the selected Amazon marketplace.",
+          "source": "https://www.logitech.com/en-us/products/mice/lift-vertical-ergonomic-mouse.html",
+          "sourceNote": "Logitech technical specifications identify the small-to-medium hand fit, 57-degree angle and connection methods."
+        },
+        {
+          "name": "Logitech ERGO K860 Split Ergonomic Keyboard",
+          "bestFor": "Frequent typists who want a full-size split keyboard with an integrated wrist rest.",
+          "us_identifier": "Logitech ERGO K860 Split Ergonomic Keyboard",
+          "uk_identifier": "Logitech ERGO K860 Split Ergonomic Keyboard",
+          "pros": [
+            "Curved split keyframe intended to encourage a more natural hand position",
+            "Integrated cushioned wrist rest",
+            "Adjustable palm-lift feet and wireless connectivity"
+          ],
+          "cons": [
+            "The split layout can take time to learn",
+            "Full-size footprint requires sufficient desk space",
+            "The integrated wrist rest and non-backlit keys may not suit every workstation"
+          ],
+          "verdict": "A sensible comparison option for desk workers who prefer a full-size ergonomic keyboard. Review the layout and language/region keycap variant carefully.",
+          "source": "https://www.logitech.com/en-us/shop/p/k860-split-ergonomic",
+          "sourceNote": "Logitech product information documents the split frame, wrist rest, palm-lift positions and wireless options."
+        },
+        {
+          "name": "Logitech MX Ergo S Wireless Trackball Mouse",
+          "bestFor": "Users who prefer thumb-controlled trackball navigation and want to reduce mouse travel across the desk.",
+          "us_identifier": "Logitech MX Ergo S Wireless Trackball Mouse",
+          "uk_identifier": "Logitech MX Ergo S Wireless Trackball Mouse",
+          "pros": [
+            "Trackball operation keeps the mouse body stationary during cursor movement",
+            "Adjustable 20-degree tilt",
+            "Customisable buttons and USB-C charging"
+          ],
+          "cons": [
+            "Thumb-operated trackballs have a distinct learning curve",
+            "The sculpted body is designed for medium-to-large hands",
+            "Trackball cleaning and maintenance differ from a conventional optical mouse"
+          ],
+          "verdict": "Consider it if you want a stationary pointing device and are comfortable learning thumb-controlled tracking. It is a different interaction style, not a universal ergonomic solution.",
+          "source": "https://www.logitech.com/en-us/shop/p/mx-ergo-s-wireless-trackball-mouse.910-007260",
+          "sourceNote": "Logitech product documentation describes the trackball, tilt angle, hand fit and customisable controls."
+        }
+      ]
+    },
+    {
+      "slug": "portable-power-travel-tech-us-uk",
+      "title": "Portable Power & Travel Tech: Power Banks and Compact Power Stations",
+      "category": "Portable Power & Travel Tech",
+      "publishedAt": "2026-11-16",
+      "summary": "Compare high-capacity USB-C power banks and compact portable power stations for mobile work, travel and backup use.",
+      "introduction": "Portable power products vary significantly in capacity, output, weight, charging method and transport restrictions. A USB power bank is not interchangeable with a mains-output power station. Check device charging requirements, airline rules, regional plug versions and the manufacturer's current specifications before purchase.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Anker 737 Power Bank (PowerCore 24K, A1289)",
+          "bestFor": "Laptop and phone users who need a high-output USB-C power bank.",
+          "us_identifier": "Anker 737 Power Bank PowerCore 24K A1289",
+          "uk_identifier": "Anker 737 Power Bank PowerCore 24K A1289",
+          "pros": [
+            "24,000mAh stated capacity",
+            "Up to 140W maximum output",
+            "Two USB-C ports and one USB-A port with an information display"
+          ],
+          "cons": [
+            "Its 630g stated weight is substantial for a pocket-sized travel charger",
+            "Maximum output depends on the connected device and a suitable cable",
+            "Does not provide AC mains sockets"
+          ],
+          "verdict": "A strong specification-led candidate for charging compatible laptops and mobile devices over USB. Check airline power-bank limits and the exact regional package.",
+          "source": "https://www.anker.com/products/a1289",
+          "sourceNote": "Anker product specifications list 24,000mAh, 140W maximum output, port count and weight."
+        },
+        {
+          "name": "Anker Prime Power Bank (27,650mAh, 250W)",
+          "bestFor": "Power users who need multiple high-output USB-C connections in a portable battery.",
+          "us_identifier": "Anker Prime Power Bank 27650mAh 250W",
+          "uk_identifier": "Anker Prime Power Bank 27650mAh 250W",
+          "pros": [
+            "High-capacity power-bank format intended for demanding USB-C devices",
+            "Multiple USB-C outputs for charging more than one device",
+            "A useful option to compare when output capacity matters more than minimum weight"
+          ],
+          "cons": [
+            "High-capacity batteries add weight and bulk",
+            "Actual charging speed is limited by the device, cable and shared output behaviour",
+            "Airline carriage restrictions must be checked before travel"
+          ],
+          "verdict": "Compare this model when you need a high-output multi-device power bank. Confirm the exact model generation and manufacturer specifications on the regional product listing before purchase.",
+          "source": "https://www.anker.com/",
+          "sourceNote": "Model name is retained as an exact Amazon search phrase; detailed feature claims are intentionally limited pending a specific manufacturer product-page verification."
+        },
+        {
+          "name": "EcoFlow RIVER 2 Portable Power Station",
+          "bestFor": "Short trips, small electronics and portable backup where AC output is needed.",
+          "us_identifier": "EcoFlow RIVER 2 Portable Power Station",
+          "uk_identifier": "EcoFlow RIVER 2 Portable Power Station",
+          "pros": [
+            "Portable power-station format with AC and USB output options",
+            "Rechargeable from mains and other supported input methods",
+            "More suitable than a USB-only power bank when a compatible AC device must be powered"
+          ],
+          "cons": [
+            "Heavier and larger than a conventional phone power bank",
+            "AC output is limited by the unit's rated capacity and output specification",
+            "Not intended to replace a home standby generator or power high-demand appliances indefinitely"
+          ],
+          "verdict": "A compact power-station option to investigate for small-device backup and outdoor use. Check the exact regional socket type, capacity and output rating before ordering.",
+          "source": "https://www.ecoflow.com/",
+          "sourceNote": "Product family identity is established; detailed regional configuration should be confirmed against the exact retailer listing before publication."
+        },
+        {
+          "name": "Jackery Explorer 300 Plus Portable Power Station",
+          "bestFor": "Travellers and campers seeking a compact power station for small electronics.",
+          "us_identifier": "Jackery Explorer 300 Plus Portable Power Station",
+          "uk_identifier": "Jackery Explorer 300 Plus Portable Power Station",
+          "pros": [
+            "Compact portable power-station category rather than a pocket power bank",
+            "Designed for charging small electronics and compatible low-power equipment",
+            "Useful to compare when portability and multiple output types are priorities"
+          ],
+          "cons": [
+            "Capacity is limited compared with larger power stations",
+            "Not suitable for every high-wattage appliance",
+            "Weight and charging accessories make it less convenient than a standard power bank"
+          ],
+          "verdict": "A candidate for light camping and portable electronics. Verify the exact capacity, output ports, regional bundle and current manufacturer support before choosing.",
+          "source": "https://www.jackery.com/",
+          "sourceNote": "Model identity is used as an exact marketplace search phrase; detailed specification claims remain conservative until exact regional documentation is checked."
+        }
+      ]
+    },
+    {
+      "slug": "smart-home-security-cameras-us-uk",
+      "title": "Smart Home Security Cameras: Battery, Solar and Wi-Fi Options",
+      "category": "Smart Home Security",
+      "publishedAt": "2026-11-16",
+      "summary": "A practical comparison of wire-free and connected home security cameras, including storage, subscriptions, Wi-Fi and installation considerations.",
+      "introduction": "A security camera should be selected around its installation location, power source, Wi-Fi coverage, recording needs and ongoing service costs. Resolution alone does not determine whether a camera is right for a home. Check regional availability, subscription terms, privacy settings and compatibility before purchase.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "eufy SoloCam S340",
+          "bestFor": "Outdoor monitoring where solar-assisted charging, local storage and pan-and-tilt coverage are priorities.",
+          "us_identifier": "eufy SoloCam S340",
+          "uk_identifier": "eufy SoloCam S340",
+          "pros": [
+            "Dual-camera system with wide-angle and telephoto views",
+            "Removable solar panel and built-in local storage",
+            "Pan-and-tilt movement, spotlight and on-device motion/person/vehicle detection"
+          ],
+          "cons": [
+            "Uses 2.4GHz Wi-Fi rather than dual-band Wi-Fi",
+            "Battery cameras do not provide continuous 24/7 recording",
+            "Solar charging performance depends on sunlight, placement and activity levels"
+          ],
+          "verdict": "A useful option to compare for outdoor areas where solar positioning and local recording are practical. Check HomeBase compatibility and the regional package contents.",
+          "source": "https://www.eufy.com/products/T81701W1",
+          "sourceNote": "eufy specifications describe the dual cameras, solar panel, local storage, Wi-Fi band and recording limitations."
+        },
+        {
+          "name": "Arlo Essential Outdoor Camera 2K (2nd Generation)",
+          "bestFor": "Wire-free outdoor monitoring with 2K video, spotlight and two-way audio.",
+          "us_identifier": "Arlo Essential Outdoor Camera 2K 2nd Generation VMC3050",
+          "uk_identifier": "Arlo Essential Outdoor Camera 2K 2nd Generation VMC3050",
+          "pros": [
+            "2K video with a 130-degree diagonal field of view",
+            "Integrated spotlight, colour night vision and two-way audio",
+            "Rechargeable battery and weather-resistant outdoor design"
+          ],
+          "cons": [
+            "The integrated battery is rechargeable but not removable",
+            "Some smart notifications and cloud features require an Arlo Secure subscription",
+            "Uses 2.4GHz Wi-Fi and needs suitable upload bandwidth"
+          ],
+          "verdict": "Consider it for a wire-free outdoor installation where 2K capture and two-way audio matter. Verify the exact VMC3050 model and subscription features for your country.",
+          "source": "https://www.arlo.com/en_gb/cameras/arlo-essential-2k-outdoor",
+          "sourceNote": "Arlo UK product specifications and support documentation describe resolution, field of view, battery, Wi-Fi and subscription-dependent features."
+        },
+        {
+          "name": "Ring Battery Doorbell Plus (2nd Generation) / Battery Doorbell 2K Plus",
+          "bestFor": "Front-door monitoring with a battery-powered doorbell, head-to-toe view and two-way talk.",
+          "us_identifier": "Ring Battery Doorbell 2K Plus 2nd Generation",
+          "uk_identifier": "Ring Battery Doorbell 2K Plus 2nd Generation",
+          "pros": [
+            "2K video with head-to-toe field of view",
+            "Quick-release battery pack",
+            "Customisable motion zones and two-way talk"
+          ],
+          "cons": [
+            "Requires suitable Wi-Fi coverage at the entrance",
+            "Cloud recording and some advanced functions may require a Ring subscription",
+            "Doorbell size, chime compatibility and included accessories should be checked for the region"
+          ],
+          "verdict": "A candidate for households wanting a battery-powered smart doorbell with a broad view of the doorstep. Confirm the current regional product name, generation and plan requirements.",
+          "source": "https://ring.com/products/battery-doorbell-plus-2nd-gen",
+          "sourceNote": "Ring's current product specifications identify the 2K video, quick-release battery, motion zones and Wi-Fi requirements."
+        },
+        {
+          "name": "Google Nest Cam (outdoor or indoor, battery)",
+          "bestFor": "Homes already using Google Home that want a battery-powered camera for flexible placement.",
+          "us_identifier": "Google Nest Cam outdoor or indoor battery",
+          "uk_identifier": "Google Nest Cam outdoor or indoor battery",
+          "pros": [
+            "Battery-powered camera suitable for indoor or outdoor placement",
+            "130-degree diagonal field of view and 1080p HDR video",
+            "Google Home integration and included event-based video history"
+          ],
+          "cons": [
+            "Longer video history requires a Google Home Premium subscription",
+            "Battery life varies with activity, settings and environmental conditions",
+            "Requires a Google account and Google Home app; check current regional compatibility"
+          ],
+          "verdict": "A practical comparison choice for users invested in Google Home. Review the subscription limits and confirm that the listing is the battery model, not the wired variant.",
+          "source": "https://store.google.com/product/nest_cam_battery_specs",
+          "sourceNote": "Google Store specifications identify the battery model, 1080p HDR video, field of view, app requirement and event-history limits."
+        }
+      ]
+    }
+  ]
 }
