@@ -1,8 +1,9 @@
 ---
 import '../styles/global.css';
-interface Props { title: string; description?: string; canonical?: string; }
-const { title, description = 'Practical buying guides and product comparisons for shoppers in the United States and United Kingdom.', canonical } = Astro.props;
+interface Props { title: string; description?: string; canonical?: string; socialImage?: string; }
+const { title, description = 'Practical buying guides and product comparisons for shoppers in the United States and United Kingdom.', canonical, socialImage } = Astro.props;
 const canonicalUrl = canonical ?? Astro.url.href;
+const socialImageUrl = socialImage ? new URL(socialImage, Astro.site).toString() : undefined;
 ---
 <!doctype html>
 <html lang="en">
@@ -17,6 +18,9 @@ const canonicalUrl = canonical ?? Astro.url.href;
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    {socialImageUrl && <meta property="og:image" content={socialImageUrl} />}
+    {socialImageUrl && <meta name="twitter:card" content="summary_large_image" />}
+    {socialImageUrl && <meta name="twitter:image" content={socialImageUrl} />}
   </head>
   <body>
     <header class="site-header">

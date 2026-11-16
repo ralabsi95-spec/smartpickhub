@@ -31,6 +31,7 @@ const categories = [...new Set(guides.map((guide) => guide.category).filter(Bool
           const searchText = [guide.title, guide.category, guide.summary].filter(Boolean).join(' ').toLocaleLowerCase();
           return (
             <article class="card guide-card" data-guide-card data-category={guide.category ?? ''} data-search={searchText}>
+              <a class="guide-card-cover" href={`/guides/${guide.slug}/`} tabindex="-1" aria-hidden="true"><img src={`/images/pinterest/${guide.slug}.png`} alt="" width="1000" height="1500" loading="lazy" decoding="async" /></a>
               <span class="pill">{guide.category}</span>
               <h2><a href={`/guides/${guide.slug}/`}>{guide.title}</a></h2>
               <p>{guide.summary}</p>

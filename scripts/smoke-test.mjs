@@ -90,6 +90,14 @@ for (const file of htmlFiles) {
   }
 
   if (guide) {
+    const coverPath = path.join(root, 'images', 'pinterest', guide.slug + '.png');
+    if (!fs.existsSync(coverPath)) routeErrors.push('missing generated Pinterest PNG ' + coverPath);
+    else {
+      const png = fs.readFileSync(coverPath);
+      if (png.length < 24 || png.toString('hex', 0, 8) !== '89504e470d0a1a0a' || png.readUInt32BE(16) !== 1000 || png.readUInt32BE(20) !== 1500) routeErrors.push('Pinterest image must be a valid 1000×1500 PNG');
+    }
+    if (!html.includes('/images/pinterest/' + guide.slug + '.png')) routeErrors.push('guide page does not reference its generated Pinterest cover');
+    if (!html.includes('og:image')) routeErrors.push('guide page missing Open Graph image metadata');
     if (!parsedJsonLd.length) routeErrors.push('guide page missing JSON-LD structured data');
     const graph = parsedJsonLd.flatMap(item => Array.isArray(item['@graph']) ? item['@graph'] : [item]);
     const article = graph.find(item => item['@type'] === 'Article');

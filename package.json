@@ -9,16 +9,19 @@
     "preview": "astro preview",
     "check": "astro check",
     "validate": "node scripts/validate-catalogue.mjs",
-    "prebuild": "npm run validate",
+    "prebuild": "npm run validate && npm run images",
     "keywords": "node scripts/build-keyword-universe.mjs",
     "smoke": "node scripts/smoke-test.mjs",
     "accessibility": "node scripts/accessibility-test.mjs",
-    "audit-report": "node scripts/build-audit-report.mjs"
+    "audit-report": "node scripts/build-audit-report.mjs",
+    "predev": "npm run images",
+    "images": "node scripts/generate-pinterest-images.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.5",
-    "astro": "^7.4.12"
+    "astro": "^7.4.12",
+    "sharp": "^0.35.5"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.12",
