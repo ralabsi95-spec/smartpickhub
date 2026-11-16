@@ -7,7 +7,7 @@
     "identifierPolicy": "Identifiers below are exact model-name search phrases, not ASINs. The affiliate URL helper therefore creates marketplace search URLs. Replace with a direct ASIN only after verifying the exact product and marketplace.",
     "editorialPolicy": "Manufacturer specifications and product documentation inform factual feature summaries. Pros and considerations are editorial analysis, not hands-on testing, user-review aggregation, rankings, price claims or availability claims.",
     "publicationPolicy": "Do not treat these research drafts as approved editorial content. Preview remains noindex.",
-    "productCount": 36
+    "productCount": 40
   },
   "guides": [
     {
@@ -790,6 +790,93 @@
           "verdict": "A highly portable option for users who want a small drive for travel. Confirm the host's USB speed and keep the sleeve fitted when relying on its stated environmental protection.",
           "source": "https://www.kingston.com/datasheets/SXS2000_en.pdf",
           "sourceNote": "Kingston's official XS2000 datasheet lists USB 3.2 Gen 2x2, up to 2,000MB/s, 28.9g weight, capacities to 4TB and IP55 with the rubber sleeve."
+        }
+      ]
+    },
+    {
+      "slug": "air-fryers-us-uk",
+      "title": "Air Fryers for US & UK Kitchens: Single-Basket, Dual-Zone and Steam Models",
+      "category": "Kitchen Appliances",
+      "publishedAt": "2026-11-16",
+      "summary": "Compare single-basket and dual-zone air fryers by usable capacity, cooking flexibility, cleaning, counter footprint and regional electrical specifications.",
+      "introduction": "Air fryers differ in basket layout, usable cooking space, controls and electrical requirements. A large headline capacity does not guarantee that a model will fit your counter or cook every food evenly. This guide compares four manufacturer-documented product families. US and UK variants are not interchangeable: check the exact model number, voltage, plug, capacity and included accessories on the local listing before ordering. These are research-led summaries, not hands-on test results.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Ninja Foodi MAX Dual Zone Air Fryer (AF400UK / DZ550)",
+          "bestFor": "Households wanting two independent cooking zones and a large family-sized capacity.",
+          "us_identifier": "Ninja Foodi 6-in-1 Smart 10-qt 2-Basket Air Fryer DZ550",
+          "uk_identifier": "Ninja Foodi MAX Dual Zone Air Fryer 9.5L AF400UK",
+          "pros": [
+            "Two independent baskets allow different foods, temperatures and cooking times",
+            "UK AF400UK has 9.5L total capacity and six cooking functions",
+            "US DZ550 adds a Smart Cook System with an integrated food thermometer"
+          ],
+          "cons": [
+            "The UK AF400UK and US DZ550 are different electrical and capacity variants, not interchangeable units",
+            "Dual-basket design needs substantial counter space",
+            "The Smart Cook thermometer feature is specific to the US DZ550 package and should not be assumed for AF400UK"
+          ],
+          "verdict": "A useful family-size dual-zone comparison, provided buyers select the exact regional model. Compare AF400UK for the UK and DZ550 for the US rather than importing across voltage regions.",
+          "source": "https://ninjakitchen.co.uk/product/ninja-foodi-max-dual-zone-air-fryer-af400uk-zidAF400UK",
+          "sourceNote": "Ninja UK lists AF400UK at 9.5L, 2470W, six cooking functions and two independent zones. Ninja US lists DZ550 at 10qt, 1690W, 120V, six functions and an integrated Smart Cook thermometer: https://www.ninjakitchen.com/products/ninja-foodi-6-in-1-smart-10-qt.-2-basket-air-fryer-zidDZ550"
+        },
+        {
+          "name": "Philips 5000 Series Dual-Basket Airfryer with Steam (NA555/09 / NA555/00)",
+          "bestFor": "Users who want dual baskets with steam cooking as well as air frying.",
+          "us_identifier": "Philips 5000 Series Dual Basket Airfryer with Steam 9.6 qt NA555/00",
+          "uk_identifier": "Philips 5000 Series Dual Basket Airfryer with Steam 9L NA555/09",
+          "pros": [
+            "Dual-basket configuration combines a 6L main drawer and 3L secondary drawer in the UK version",
+            "Steam, steam-and-airfry and steam-clean functions expand the cooking methods",
+            "Philips lists 12 presets and 19 cooking methods for the series"
+          ],
+          "cons": [
+            "The UK NA555/09 is specified for 220–240V while the US NA555/00 is a 120V model",
+            "Steam functions add cleaning and water-management steps compared with a basic air fryer",
+            "The 9L UK and 9.6qt US capacity figures use different regional specifications and should not be treated as identical measurements"
+          ],
+          "verdict": "A distinctive option when steam cooking is a real requirement. Check NA555/09 for the UK or NA555/00 for the US and confirm local voltage and dimensions.",
+          "source": "https://www.philips.co.uk/c-p/NA555_09/5000-series/overview",
+          "sourceNote": "Philips UK lists 9L, 2750W, 220–240V, two baskets, steam functions and 12 presets; Philips US lists NA555/00 at 9.6qt and 120V: https://www.usa.philips.com/c-p/NA555_00/5000-series"
+        },
+        {
+          "name": "Instant Vortex Plus Dual-Basket Air Fryer with ClearCook (DAF8132BK / 140-3090-01)",
+          "bestFor": "Buyers who value two independent baskets and viewing windows to monitor cooking.",
+          "us_identifier": "Instant Pot Vortex Plus Dual Black 8QT Air Fryer with ClearCook 140-3090-01",
+          "uk_identifier": "Instant Vortex Plus Dual Drawer with ClearCook Air Fryer DAF8132BK",
+          "pros": [
+            "ClearCook viewing windows let users check food without opening the drawers",
+            "SyncCook and SyncFinish support matching settings or coordinating different cooking programmes",
+            "UK DAF8132BK manual specifies 7.5L total capacity, 1700W and two 3.7L baskets"
+          ],
+          "cons": [
+            "The UK DAF8132BK and US 140-3090-01 have different capacity and electrical specifications",
+            "Two drawers take more counter width than many single-basket models",
+            "Viewing windows and lighting add components that need routine cleaning"
+          ],
+          "verdict": "A practical dual-basket alternative to compare when viewing windows and synchronised finish times matter. Select the UK DAF8132BK or US 140-3090-01 regional version.",
+          "source": "https://instantpot.co.uk/shop-all-products/instant/cooking-appliances/air-fryers/instant-vortex-plus-dual-drawer-8-in-1-air-fryer-with-clearcook-black/",
+          "sourceNote": "Instant UK product information and manual specify the DAF8132BK 7.5L, 1700W, 220–240V variant; Instant US lists SKU 140-3090-01 at 8qt with dual baskets and ClearCook: https://instantpot.com/products/instant-pot-vortex-plus-dual-black-8qt-air-fryer-with-clearcook"
+        },
+        {
+          "name": "COSORI TurboBlaze Air Fryer (UK 6L / US 6-Quart)",
+          "bestFor": "Users who prefer a single spacious basket and a broad temperature range over dual cooking zones.",
+          "us_identifier": "COSORI TurboBlaze 6 Quart Air Fryer CAF-DC601-KUS",
+          "uk_identifier": "COSORI TurboBlaze 6L Air Fryer",
+          "pros": [
+            "Single-basket format offers a simpler footprint than many dual-zone models",
+            "Nine cooking functions cover air frying, roasting, baking, broiling, dehydrating, proofing and reheating",
+            "Manufacturer specifications list a 30–230°C temperature range and five-speed airflow"
+          ],
+          "cons": [
+            "A single basket cannot cook two separate dishes independently at different settings",
+            "UK and US versions use different voltage, capacity notation and model identifiers",
+            "The 6L UK model page and US 6-quart model have variant-specific dimensions and should be checked locally"
+          ],
+          "verdict": "A flexible single-basket option for users who do not need separate cooking zones. Confirm the regional model and its electrical rating before purchase.",
+          "source": "https://cosori.co.uk/products/cosori-turbo-blaze-6l-air-fryer",
+          "sourceNote": "COSORI UK lists the 6L TurboBlaze, nine functions and 30–230°C range; COSORI US identifies model CAF-DC601-KUS as 120V, 1725W and 6qt: https://cosori.com/products/turboblaze-air-fryer"
         }
       ]
     }
