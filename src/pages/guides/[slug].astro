@@ -19,13 +19,14 @@ const { guide } = Astro.props;
         {product.verdict && <p>{product.verdict}</p>}
         {product.pros?.length > 0 && <><h3>What to consider</h3><ul>{product.pros.map((item) => <li>{item}</li>)}</ul></>}
         {product.cons?.length > 0 && <><h3>Potential drawbacks</h3><ul>{product.cons.map((item) => <li>{item}</li>)}</ul></>}
+        <p class="muted">Choose the Amazon store you normally use. These are separate marketplace links.</p>
         <div class="product-actions">
-          {product.us_identifier && <a class="button" href={buildAffiliateUrl('us', product.us_identifier)} rel="sponsored nofollow noopener" target="_blank">Check on Amazon US</a>}
-          {product.uk_identifier && <a class="button secondary" href={buildAffiliateUrl('uk', product.uk_identifier)} rel="sponsored nofollow noopener" target="_blank">Check on Amazon UK</a>}
+          {product.us_identifier && <a class="button" href={buildAffiliateUrl('us', product.us_identifier)} rel="sponsored nofollow noopener" target="_blank">Amazon US (paid link)</a>}
+          {product.uk_identifier && <a class="button secondary" href={buildAffiliateUrl('uk', product.uk_identifier)} rel="sponsored nofollow noopener" target="_blank">Amazon UK (paid link)</a>}
         </div>
       </section>
     ))}
-    <p class="disclosure">As an Amazon Associate, SmartPickHub earns from qualifying purchases. We do not claim hands-on testing unless explicitly stated and evidenced.</p>
+    <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Affiliate links are paid links. Product information is research-based unless documented hands-on testing is explicitly stated.</p>
   </article>
   <script type="application/ld+json" set:html={JSON.stringify({
     '@context': 'https://schema.org',
