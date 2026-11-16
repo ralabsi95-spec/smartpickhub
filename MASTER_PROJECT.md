@@ -365,3 +365,11 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Model-name search phrases are used for Amazon US/UK destinations; no unverified ASINs, prices, ratings or stock claims. The new guide is explicitly marked as an unapproved research draft.
 - This content branch is independent of the Astro 7 security assessment. `automation/bootstrap` and the live site remain unchanged. No publication or production change.
 - Next: run the full QA workflow on the content branch, review copy and rendered page, then seek editorial approval before any publication.
+
+
+## Session update — 2026-11-16 (catalogue expansion target 100)
+- Added 14 additional research-draft buying guides, each with four products, on isolated branch `content/cordless-vacuum-guide`: cordless drills, robot vacuum/mop systems, ANC headphones, wireless earbuds, air purifiers, espresso machines, tablets, dash cameras, portable projectors, home NAS, electric toothbrushes, gaming mice, smartwatches and home/small-office printers.
+- Catalogue increased from 11 guides / 44 products to 25 guides / 100 products. All new product identifiers are exact model-name search phrases for separate Amazon US/UK search destinations; no ASINs, prices, review scores, stock claims or hands-on testing claims were introduced.
+- New guide/product records remain `Research draft — requires human review before publication`. Manufacturer category/product documentation is linked in each entry; regional model suffixes, bundles, power/voltage and feature differences are called out where material.
+- The 100-product milestone is a catalogue/research milestone only; not an assertion that all products are live listings or affiliate conversions. No public publication or production changes made.
+- Next: run the full catalogue/build/smoke/axe/Lighthouse QA on this 100-product content branch, inspect all 25 rendered guides, then editorially review and seek explicit approval before publication.

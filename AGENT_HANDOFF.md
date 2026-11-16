@@ -192,3 +192,11 @@ Do not ask the owner to repeat details already documented here.
 - Research sources include official Dyson, Shark, Samsung and Miele product documentation. Regional model codes, battery configurations and runtime test conditions are called out where relevant.
 - No public publishing, Amazon product import, live WordPress change, DNS change, or production modification performed.
 - **Next:** run catalogue validation, Astro checks, static build, smoke, axe and Lighthouse on this branch; review any findings and the guide copy before creating or promoting a PR. Keep the Astro 7 security assessment separate.
+
+
+## Session update — 2026-11-16 (catalogue expansion target 100)
+- Added 14 additional research-draft buying guides, each with four products, on isolated branch `content/cordless-vacuum-guide`: cordless drills, robot vacuum/mop systems, ANC headphones, wireless earbuds, air purifiers, espresso machines, tablets, dash cameras, portable projectors, home NAS, electric toothbrushes, gaming mice, smartwatches and home/small-office printers.
+- Catalogue increased from 11 guides / 44 products to 25 guides / 100 products. All new product identifiers are exact model-name search phrases for separate Amazon US/UK search destinations; no ASINs, prices, review scores, stock claims or hands-on testing claims were introduced.
+- New guide/product records remain `Research draft — requires human review before publication`. Manufacturer category/product documentation is linked in each entry; regional model suffixes, bundles, power/voltage and feature differences are called out where material.
+- The 100-product milestone is a catalogue/research milestone only; not an assertion that all products are live listings or affiliate conversions. No public publication or production changes made.
+- Next: run the full catalogue/build/smoke/axe/Lighthouse QA on this 100-product content branch, inspect all 25 rendered guides, then editorially review and seek explicit approval before publication.
