@@ -59,8 +59,8 @@ for (const guide of guides) {
     for (const spec of markets) {
       const identifier = product[spec.key];
       if (typeof identifier !== 'string' || !identifier.trim()) continue;
-      if (/^[A-Z0-9]{10}$/.test(identifier) && !/^[A-Z0-9]{10}$/.test(identifier)) {
-        errors.push('ASIN-shaped identifier requires separate manual verification: ' + product.name + '.');
+      if (/^[A-Z0-9]{10}$/.test(identifier)) {
+        errors.push('ASIN-shaped identifier needs an explicit manual verification record before direct-link use: ' + product.name + ' (' + spec.market + ').');
       }
       const generated = buildExpectedUrl(spec.market, identifier);
       if (generated.url.hostname !== spec.host || generated.url.searchParams.get('tag') !== spec.tag) {
