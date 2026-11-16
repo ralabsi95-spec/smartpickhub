@@ -8,10 +8,11 @@ const expected = new Set([
   'home-office-ergonomics-us-uk',
   'portable-power-travel-tech-us-uk',
   'smart-home-security-cameras-us-uk',
+  'wifi-7-home-mesh-routers-us-uk',
 ]);
 const forbiddenKeys = new Set(['price', 'rating', 'reviewCount', 'reviews', 'offers', 'aggregateRating', 'availability']);
 
-if (guides.length !== 3) errors.push(`Expected 3 research guides; found ${guides.length}.`);
+if (guides.length !== 4) errors.push(`Expected 4 research guides; found ${guides.length}.`);
 const slugs = new Set();
 let productCount = 0;
 for (const guide of guides) {
@@ -40,7 +41,7 @@ for (const guide of guides) {
     }
   }
 }
-if (productCount !== 12) errors.push(`Expected 12 products; found ${productCount}.`);
+if (productCount !== 16) errors.push(`Expected 16 products; found ${productCount}.`);
 if (errors.length) {
   console.error('Catalogue validation failed:');
   for (const error of errors) console.error(`- ${error}`);
