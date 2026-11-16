@@ -168,3 +168,11 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - JSON-LD Article and ItemList continue to be generated dynamically from guide/product data. This structured data describes the comparison content; it does not imply Google rich-result eligibility or guaranteed AI/search visibility.
 - Preview remains noindex; no WordPress, DNS, custom-domain, production or `main` changes. PR #1 remains open and unmerged.
 - Next: verify latest Astro Build Check, review each guide in mobile/desktop preview, then add further product categories only with manufacturer-backed source notes and market-specific model/variant checks.
+
+## 16 November 2026 – 4K USB-C monitor guide expansion
+- Added seventh research-draft guide `4k-usb-c-monitors-home-office-us-uk`, with four models: Dell U2723QE, ASUS ProArt PA279CRV, BenQ PD2705U and Dell P2723QE.
+- Catalogue now contains 7 guides and 28 product records. Product summaries are based on official manufacturer pages/datasheets and cover resolution, USB-C power delivery, colour coverage, KVM/hub features and ergonomic adjustments.
+- US and UK affiliate destinations remain separate marketplace search links using exact model-name phrases, not direct ASIN links. Regional SKU/cable/power-delivery checks are explicitly called out where needed.
+- Updated the catalogue validator to require seven guides and 28 products; expanded the computer-accessories keyword cluster with USB-C monitor, creator display and docking-intent phrases.
+- All content remains research draft, not approved hands-on reviews or ranked recommendations. No price, rating, review-count, stock or performance-test claims were added.
+- Astro preview remains noindex. No production publication, WordPress/DNS changes, PR merge or changes to `main`.
