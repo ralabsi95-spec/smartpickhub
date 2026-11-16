@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import data from '../data/products.json';
+const guides = data.guides ?? [];
+---
+<Layout title="SmartPickHub – Practical Buying Guides" description="Clear buying guides and practical product comparisons for shoppers in the US and UK.">
+  <section class="hero">
+    <span class="pill">US & UK Buying Guides</span>
+    <h1>Clear Buying Guides.<br />Smarter Product Choices.</h1>
+    <p class="muted">Practical comparisons that help you understand what matters before you buy.</p>
+  </section>
+  <section>
+    <h2>Latest Buying Guides</h2>
+    {guides.length > 0 ? (
+      <div class="grid">
+        {guides.map((guide) => (
+          <article class="card">
+            <span class="pill">{guide.category}</span>
+            <h3><a href={`/guides/${guide.slug}/`}>{guide.title}</a></h3>
+            <p class="muted">{guide.summary}</p>
+          </article>
+        ))}
+      </div>
+    ) : (
+      <div class="card">
+        <h3>Guides are being prepared</h3>
+        <p class="muted">Our existing WordPress guides remain separate while the new publishing workflow is reviewed. New guides will appear here only after editorial approval.</p>
+      </div>
+    )}
+  </section>
+</Layout>
