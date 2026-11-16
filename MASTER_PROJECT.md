@@ -80,3 +80,27 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Updated `src/components/ProductCard.astro` to show "Affiliate links (paid links):" immediately above the separate Amazon US and Amazon UK links when present. Existing tagged URL generation and rel="sponsored nofollow noopener" remain intact.
 - Official policy references reviewed: Amazon US and UK Associates Operating Agreements and Amazon UK disclosure help page (links in project chat).
 - This is a development-branch change only. Await GitHub Actions build result; no merge, WordPress changes, DNS/custom-domain changes, product imports or production deployment.
+
+
+## 16 November 2026 – Initial US & UK research catalogue and structured data
+- Added three research-draft buying guides to `src/data/products.json`, with four named products each (12 total): Home Office Ergonomics; Portable Power & Travel Tech; Smart Home Security.
+- Every product has separate `us_identifier` and `uk_identifier` values. These are exact model-name search phrases, not fabricated ASINs; the existing affiliate helper therefore creates separate Amazon US and Amazon UK search links using the configured tracking IDs. No direct ASIN links were invented.
+- No fixed prices, star ratings, review counts, stock claims, comparative rankings or hands-on testing claims were added.
+- Added product-specific manufacturer/support reference links and concise feature/limitation summaries. Product notes distinguish verified manufacturer specifications from cautious editorial considerations. Exact retailer listing, local model/voltage, package contents, availability and subscription terms still require final marketplace checks before approval.
+- Added dynamic JSON-LD to `src/pages/guides/[slug].astro`: an `Article` entity and an `ItemList` containing ordered `ListItem` / `Product` entities, generated from the guide and product data. No price, rating, offer or review schema is emitted.
+- Updated homepage and Buying Guides index to show the three research drafts with an explicit editorial-review status.
+- Updated RSS generation to include only records whose `editorialStatus` is exactly `Approved for publication`; current drafts are therefore excluded from the feed.
+- Preview safety remains active: `Layout.astro` sends `noindex, nofollow`; `public/robots.txt` disallows crawling. Cloudflare Pages remains the isolated preview at https://smartpickhub-preview.pages.dev/.
+- The three guides are research drafts for owner/editorial review, not approved public recommendations. In particular, portable power products have region-specific AC voltage/socket variants; buyers must select the correct US or UK model. Amazon search phrases do not guarantee the exact variant or current availability.
+- No changes to WordPress, DNS, custom domains or the production website. No merge of PR #1 and no change to `main`.
+- Astro Build Check is triggered by the latest commits; record the final result only after the workflow completes.
+
+## Research references used for this batch
+- Logitech: MX Vertical, Lift, ERGO K860 and MX Ergo S official product/support pages.
+- Anker: 737 A1289 and Prime A1340 official product/support pages.
+- EcoFlow: RIVER 2 official UK product specifications and manual.
+- Jackery: Explorer 300 Plus official Europe support specifications.
+- eufy: SoloCam S340 official product specifications and FAQ.
+- Arlo: Essential Outdoor Camera 2K (2nd Generation) UK specifications/support.
+- Ring: Battery Doorbell 2K Plus (2nd Generation) official technical specifications.
+- Google: Nest Cam (outdoor or indoor, battery) official Google Store specifications.
