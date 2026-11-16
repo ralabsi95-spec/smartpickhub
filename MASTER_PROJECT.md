@@ -26,8 +26,8 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Astro static site foundation.
 - GitHub repository as source control and project record.
 - Isolated Cloudflare Pages preview: https://smartpickhub-preview.pages.dev/ (project `smartpickhub-preview`, branch `automation/bootstrap`). This is a preview only; no custom domain or production domain mapping.
-- Product data starts empty deliberately. Existing WordPress products must not be duplicated.
-- RSS endpoint is generated from approved guides.
+- Current Astro catalogue contains 10 research-draft guides and 40 product records; none is approved for publication. Existing WordPress products were not imported and must not be duplicated.
+- RSS endpoint is generated only from guides explicitly approved for publication; it may remain empty while all guides are drafts.
 - JSON-LD is limited to Article metadata; no unverified Product/Review ratings are emitted.
 
 ## Automation safety
