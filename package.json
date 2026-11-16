@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "check": "astro check",
     "validate": "node scripts/validate-catalogue.mjs",
-    "prebuild": "npm run validate"
+    "prebuild": "npm run validate",
+    "keywords": "node scripts/build-keyword-universe.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.7",
