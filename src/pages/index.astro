@@ -3,11 +3,11 @@ import Layout from '../layouts/Layout.astro';
 import data from '../data/products.json';
 const guides = data.guides ?? [];
 ---
-<Layout title="SmartPickHub – Practical Buying Guides" description="Clear buying guides and practical product comparisons for shoppers in the US and UK.">
+<Layout title="SmartPickHub – Practical Buying Guides" description="Clear buying guides and practical product comparisons for shoppers in the United States and United Kingdom.">
   <section class="hero">
-    <span class="pill">US & UK Buying Guides</span>
+    <span class="pill">Buying Guides for US & UK Shoppers</span>
     <h1>Clear Buying Guides.<br />Smarter Product Choices.</h1>
-    <p class="muted">Practical comparisons that help you understand what matters before you buy.</p>
+    <p class="muted">Practical, research-led comparisons for shoppers in the United States and United Kingdom. Where available, each product guide provides separate Amazon US and Amazon UK links so you can choose your local store.</p>
   </section>
   <section>
     <h2>Latest Buying Guides</h2>
@@ -23,8 +23,8 @@ const guides = data.guides ?? [];
       </div>
     ) : (
       <div class="card">
-        <h3>Guides are being prepared</h3>
-        <p class="muted">Our existing WordPress guides remain separate while the new publishing workflow is reviewed. New guides will appear here only after editorial approval.</p>
+        <h3>Buying guides are being prepared</h3>
+        <p class="muted">Guides for both US and UK shoppers are being researched. Existing WordPress content remains separate while the new publishing workflow is reviewed. New guides will appear here only after editorial approval.</p>
       </div>
     )}
   </section>
