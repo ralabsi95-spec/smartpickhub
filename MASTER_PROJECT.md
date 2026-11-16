@@ -193,3 +193,13 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Content remains editorial research draft. No current price, rating, availability or hands-on test claims were added. Human review is required before publication.
 - Latest known CI runs 100 and 101 passed for the preceding 28-product head. A fresh build check is required for this 32-product commit.
 - No WordPress, DNS, production or `main` changes; PR #1 remains unmerged; preview noindex policy remains in force.
+
+## 16 November 2026 – CI verification and portable SSD expansion
+- Verified GitHub Actions run #108 completed successfully on the then-current development head `2cb8b097cb3d34313b4b09e37b8747a14d41d6e9`; run #107 also succeeded. This confirms the previous 32-product catalogue head passed CI, not the later SSD changes.
+- Added ninth research guide `portable-ssd-external-storage-us-uk` with Samsung T9, SanDisk Extreme PRO USB 3.2 Gen 2x2, Crucial X10 Pro and Kingston XS2000.
+- Catalogue now contains 9 guides and 36 product records. Each SSD product record is based on its official manufacturer datasheet/product documentation.
+- Added editorial cautions explaining USB 3.2 Gen 2x2 host requirements, speed claims versus real-world performance, IP protection limits and backup strategy.
+- Expanded the computer-accessories keyword cluster for portable SSDs, USB4, rugged external storage, creator workflows and capacity intent.
+- Updated validator to expect nine guides and 36 products. All entries remain research drafts; Amazon identifiers are exact model search phrases, not ASINs or verified direct product links.
+- New CI runs have been triggered for the latest SSD and keyword changes; their final status is pending verification.
+- No WordPress, DNS, production or `main` changes. PR #1 remains unmerged; preview noindex policy remains in force.
