@@ -20,6 +20,8 @@ export function buildAffiliateUrl(market: AffiliateMarket, identifier: string): 
   const base = AMAZON_DOMAINS[market];
   const tag = AMAZON_TAGS[market];
   const isAsin = /^[A-Z0-9]{10}$/.test(value);
-  const path = isAsin ? `/dp/${value}` : `/s?k=${encodeURIComponent(value)}`;
-  return `${base}${path}?tag=${encodeURIComponent(tag)}`;
+  const url = new URL(isAsin ? `/dp/${value}` : '/s', base);
+  if (!isAsin) url.searchParams.set('k', value);
+  url.searchParams.set('tag', tag);
+  return url.toString();
 }

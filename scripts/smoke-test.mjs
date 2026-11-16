@@ -19,6 +19,10 @@ function attr(tag, name) {
 function hasToken(value, token) {
   return value.toLowerCase().split(/\s+/).includes(token);
 }
+function matchesIdentifier(url, identifier) {
+  if (/^[A-Z0-9]{10}$/.test(identifier)) return url.pathname === '/dp/' + identifier;
+  return url.pathname === '/s' && url.searchParams.get('k') === identifier;
+}
 function writeReport(status) {
   fs.mkdirSync('test-reports', { recursive: true });
   fs.writeFileSync('test-reports/smoke-test.json', JSON.stringify({
@@ -106,9 +110,9 @@ for (const file of htmlFiles) {
       let url;
       try { url = new URL(href.replace(/&amp;/g, '&').replace(/&#38;/g, '&')); } catch { continue; }
       const host = url.hostname.toLowerCase();
-      if (host === 'www.amazon.com' || host === 'amazon.com' || host.endsWith('.amazon.com')) {
+      if (host === 'www.amazon.com' || host === 'amazon.com') {
         amazonLinks.push({ market: 'us', url, rel: attr(anchor, 'rel') });
-      } else if (host === 'www.amazon.co.uk' || host === 'amazon.co.uk' || host.endsWith('.amazon.co.uk')) {
+      } else if (host === 'www.amazon.co.uk' || host === 'amazon.co.uk') {
         amazonLinks.push({ market: 'uk', url, rel: attr(anchor, 'rel') });
       }
     }
@@ -119,14 +123,18 @@ for (const file of htmlFiles) {
     if (usLinks.length !== guide.products.length) routeErrors.push('expected ' + guide.products.length + ' Amazon US links; found ' + usLinks.length);
     if (ukLinks.length !== guide.products.length) routeErrors.push('expected ' + guide.products.length + ' Amazon UK links; found ' + ukLinks.length);
     for (const link of usLinks) {
-      if (link.url.searchParams.get('tag') !== 'smartpickh0bc-20') routeErrors.push('Amazon US tracking ID mismatch');
+      if (link.url.searchParams.get('tag') !== 'smartpickh0bc-20') routeErrors.push('Amazon US tracking ID mismatch; expected smartpickh0bc-20, received ' + String(link.url.searchParams.get('tag')));
       if (!hasToken(link.rel, 'sponsored') || !hasToken(link.rel, 'nofollow')) routeErrors.push('Amazon US affiliate link missing sponsored/nofollow rel attributes');
       if (!(link.url.pathname.startsWith('/s') && link.url.searchParams.has('k')) && !/^\/dp\/[A-Z0-9]{10}$/.test(link.url.pathname)) routeErrors.push('Amazon US link is neither a search URL nor a verified ASIN URL');
     }
     for (const link of ukLinks) {
-      if (link.url.searchParams.get('tag') !== 'smartpickhubu-21') routeErrors.push('Amazon UK tracking ID mismatch');
+      if (link.url.searchParams.get('tag') !== 'smartpickhubu-21') routeErrors.push('Amazon UK tracking ID mismatch; expected smartpickhubu-21, received ' + String(link.url.searchParams.get('tag')));
       if (!hasToken(link.rel, 'sponsored') || !hasToken(link.rel, 'nofollow')) routeErrors.push('Amazon UK affiliate link missing sponsored/nofollow rel attributes');
       if (!(link.url.pathname.startsWith('/s') && link.url.searchParams.has('k')) && !/^\/dp\/[A-Z0-9]{10}$/.test(link.url.pathname)) routeErrors.push('Amazon UK link is neither a search URL nor a verified ASIN URL');
+    }
+    for (const product of guide.products) {
+      if (!usLinks.some(link => matchesIdentifier(link.url, product.us_identifier))) routeErrors.push('Amazon US URL does not match catalogue identifier for ' + product.name);
+      if (!ukLinks.some(link => matchesIdentifier(link.url, product.uk_identifier))) routeErrors.push('Amazon UK URL does not match catalogue identifier for ' + product.name);
     }
   }
 
