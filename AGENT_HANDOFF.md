@@ -99,9 +99,9 @@
 1. Verify the unified QA workflow on the latest branch SHA; inspect `test-reports/latest-audit.json` and the artifact.
 2. Review current npm advisory IDs, exact dependency paths and fixed versions. Do not run `npm audit fix --force` or make an untested major upgrade.
 3. Prepare a separate Astro upgrade branch or isolated test commit with lockfile/build/QA evidence before recommending adoption.
-4. Complete manual desktop/mobile visual review of the preview and all guide templates.
-5. Verify product-specific US/UK variants and Amazon marketplace destinations before editorial approval.
-6. Keep all guides as research drafts until owner review. Do not enable public publication or migrate WordPress without explicit approval.
+4. Manually review the two incomplete axe checks on the homepage.
+5. Repeat the one homepage desktop Lighthouse Performance 79 outlier; current report attributes the 500 ms TBT largely to Unattributable long tasks, while mobile and all other routes scored 100.
+6. Review exact product US/UK variants and marketplace listings before editorial approval. Keep all guides as drafts and do not enable public publication or migrate WordPress without approval.
 
 ## 5. Working commands
 
@@ -164,3 +164,17 @@ Do not ask the owner to repeat details already documented here.
 - Runs #185/#188 have not completed; Run #189 is queued. Latest successful full dynamic-route baseline is Run #179 on SHA `6a2f61e2faca5927093afcfbfe0d8b92be1e8d4f`: 13 axe routes, zero violations, two incomplete homepage checks; 14 Lighthouse reports, all 100/100/100/66.
 - Freshest completed npm audit report in Run #179: 5 package findings (1 low, 3 high, 1 critical); direct Astro critical, transitive sharp/zod/zod-to-ts/esbuild. Do not upgrade blindly; no package change has been made.
 - Immediate next action: verify a final CI run on latest SHA and inspect its artifact before marking enhanced tests complete.
+
+
+## 16 November 2026 – Final unified QA result (Run #193)
+- [Run #193](https://github.com/ralabsi95-spec/smartpickhub/actions/runs/43898538709) passed on SHA `6f27c02809827ce05bb2f04f7abc73da2e1d5daf`.
+- Dynamic QA covers all 10 current guides / 40 products and future slugs from the catalogue. Catalogue validation: 40 US and 40 UK generated URL checks passed.
+- Smoke test: 14 HTML pages passed; noindex and robots.txt block verified; no canonical or internal-link errors; all 10 guide pages have required Article/ItemList/Product JSON-LD and exactly 4 Amazon US plus 4 Amazon UK product links, with correct tags and sponsored/nofollow attributes. No warnings.
+- axe-core: 13 routes, zero violations, two incomplete homepage checks for manual review.
+- Lighthouse: 14 reports. Accessibility 100, Best Practices 100, SEO 66 (intentional noindex) on every page. Performance 100 on 13 pages; homepage desktop 79 due 500ms TBT / unattributed long tasks, while its own JS evaluation was under 1ms. Mobile homepage and all other pages were 100. Recheck this single outlier before changing UI.
+- The enhanced smoke test discovered and helped fix a genuine Amazon tracking bug: search URLs previously appended `?tag=` after an existing `?k=`, so the tag was not a separate parameter. `src/config/affiliate.ts` now uses URLSearchParams. Run #193 verifies actual rendered links.
+- Lighthouse route-list newline bug fixed; all 14 Lighthouse reports generated.
+- Artifact `smartpickhub-quality-reports` ID `14240212318`, includes `latest-audit.json`, per-route axe/Lighthouse JSON, catalogue/smoke reports and `npm-audit.json`; retention through 30 Nov 2026.
+- npm audit: 5 findings (1 low, 3 high, 1 critical). No package upgrade applied. Review Astro, sharp, zod, zod-to-ts and esbuild paths before remediation.
+- Node 22 aligned across workflows; Node 20 is EOL as of 30 Apr 2026. No publication, WordPress/DNS change or PR merge.
+- Next: inspect npm advisory paths and test compatible Astro remediation separately; review two incomplete axe checks and repeat the desktop homepage Lighthouse outlier.
