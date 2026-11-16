@@ -6,7 +6,8 @@
     "marketStrategy": "Serve both US and UK shoppers with separate Amazon marketplace links.",
     "identifierPolicy": "Identifiers below are exact model-name search phrases, not ASINs. The affiliate URL helper therefore creates marketplace search URLs. Replace with a direct ASIN only after verifying the exact product and marketplace.",
     "editorialPolicy": "Manufacturer specifications and product documentation inform factual feature summaries. Pros and considerations are editorial analysis, not hands-on testing, user-review aggregation, rankings, price claims or availability claims.",
-    "publicationPolicy": "Do not treat these research drafts as approved editorial content. Preview remains noindex."
+    "publicationPolicy": "Do not treat these research drafts as approved editorial content. Preview remains noindex.",
+    "productCount": 24
   },
   "guides": [
     {
@@ -441,6 +442,93 @@
           "verdict": "A powerful multi-device charging station candidate for a home office. Compare the exact regional version and its port-sharing table against the devices you intend to charge.",
           "source": "https://eu.ugreen.com/en-ch/pages/nexode",
           "sourceNote": "UGREEN's EU Nexode specification table lists SKU 35539, 200W maximum, four ports, USB-C1 up to 140W, USB-C2 up to 100W and approximate 502g weight."
+        }
+      ]
+    },
+    {
+      "slug": "webcams-video-calls-streaming-us-uk",
+      "title": "Best Webcams for Video Calls and Streaming: 4K and 1080p Options for US & UK",
+      "category": "Webcams & Video Conferencing",
+      "publishedAt": "2026-11-16",
+      "summary": "A specification-led comparison of webcams for remote work, online meetings and streaming, covering resolution, framing, focus, mounting and software requirements.",
+      "introduction": "Webcam choice depends on more than headline resolution. Check the maximum frame rate at the resolution you intend to use, the field of view, focus behaviour, connection type, privacy controls and software compatibility. The options below are research summaries based on manufacturer documentation, not hands-on tests.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Insta360 Link 2 4K AI Webcam",
+          "bestFor": "Presenters and remote workers who want 4K video with AI tracking and a two-axis gimbal.",
+          "us_identifier": "Insta360 Link 2 4K AI Webcam",
+          "uk_identifier": "Insta360 Link 2 4K AI Webcam",
+          "pros": [
+            "Supports 4K video up to 30 fps and 1080p up to 60 fps in supported modes",
+            "Two-axis gimbal with AI tracking, Smart Whiteboard and DeskView modes",
+            "HDR support and autofocus; magnetic mount includes a 1/4-inch tripod point"
+          ],
+          "cons": [
+            "4K is limited to 30 fps rather than 60 fps",
+            "Some advanced features depend on Link Controller software and host-computer compatibility",
+            "The motorised gimbal body needs more physical clearance than a simple fixed webcam"
+          ],
+          "verdict": "A feature-rich option for people who actively use presenter tracking, desk demonstrations or whiteboard framing. Confirm software compatibility and whether 4K/30 meets the intended workflow.",
+          "source": "https://www.insta360.com/specs/link2",
+          "sourceNote": "Insta360's official specifications list the 1/2-inch sensor, video modes, HDR, AI tracking, two-axis gimbal, USB-C connection and mounting details."
+        },
+        {
+          "name": "Logitech Brio 4K Webcam",
+          "bestFor": "Business users who want a conventional webcam with 4K/30 video, adjustable framing and Windows Hello support.",
+          "us_identifier": "Logitech Brio 4K Webcam",
+          "uk_identifier": "Logitech Brio 4K Webcam",
+          "pros": [
+            "Supports 4K at 30 fps and Full HD at up to 60 fps",
+            "Adjustable diagonal field of view with 65°, 78° and 90° presets",
+            "Autofocus, RightLight 3, dual omni-directional microphones and an attachable privacy shutter"
+          ],
+          "cons": [
+            "4K recording is limited to 30 fps",
+            "Privacy shutter is an attachable accessory rather than an integrated electronic shutter",
+            "USB-C use may require an adapter depending on the cable and computer ports"
+          ],
+          "verdict": "A practical choice for office video calls where adjustable framing and Windows Hello are useful. Check the exact regional part number and bundled cable before purchase.",
+          "source": "https://www.logitech.com/en-gb/products/webcams/brio-4k-hdr-webcam.html",
+          "sourceNote": "Logitech's UK product specifications document the resolution/frame-rate modes, field-of-view presets, autofocus, microphones, connection and privacy shutter."
+        },
+        {
+          "name": "Razer Kiyo Pro Ultra 4K Webcam",
+          "bestFor": "Streamers and creators prioritising a large sensor, 4K capture and manual camera-position flexibility.",
+          "us_identifier": "Razer Kiyo Pro Ultra 4K Webcam",
+          "uk_identifier": "Razer Kiyo Pro Ultra 4K Webcam",
+          "pros": [
+            "Supports 4K video at up to 30 fps and 1080p at up to 60 fps",
+            "Autofocus lens with built-in privacy shutter",
+            "USB-C connection, built-in microphones and 1/4-inch tripod mounting point"
+          ],
+          "cons": [
+            "4K capture is limited to 30 fps",
+            "The camera is designed for a more involved creator setup than a basic plug-and-play webcam",
+            "Confirm USB bandwidth, system compatibility and Razer Synapse requirements before buying"
+          ],
+          "verdict": "Worth comparing for creators who want 4K capture and more camera-control options. It may be excessive for routine calls where a simpler 1080p webcam is sufficient.",
+          "source": "https://mysupport.razer.com/app/answers/detail/a_id/6430/kw/webcam%20driver",
+          "sourceNote": "Razer's official support page lists the Kiyo Pro Ultra camera modes, lens, privacy shutter, USB-C port, microphones and mounting thread."
+        },
+        {
+          "name": "Elgato Facecam Neo 1080p60 Webcam",
+          "bestFor": "Users who want a compact, straightforward USB webcam for Full HD calls and streaming.",
+          "us_identifier": "Elgato Facecam Neo 1080p60 Webcam",
+          "uk_identifier": "Elgato Facecam Neo 1080p60 Webcam",
+          "pros": [
+            "Supports 1080p at up to 60 fps",
+            "Autofocus lens with a 77° field of view",
+            "USB-C connection, UVC support and a 1/4-inch mounting thread"
+          ],
+          "cons": [
+            "Maximum supported resolution is 1080p rather than 4K",
+            "The USB-C cable is fixed to the camera",
+            "A USB-A connection requires a compatible adapter, which is not included"
+          ],
+          "verdict": "A simpler option for Full HD video calls and streaming where ease of setup matters more than 4K resolution. Check the host operating-system requirements and port arrangement.",
+          "source": "https://www.elgato.com/ww/en/p/facecam-neo",
+          "sourceNote": "Elgato's official technical specifications list supported resolutions, autofocus optics, field of view, fixed USB-C connection, UVC support and operating-system requirements."
         }
       ]
     }
