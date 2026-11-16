@@ -1,0 +1,9 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import data from '../../data/products.json';
+---
+<Layout title="Buying Guides | SmartPickHub">
+  <h1>Buying Guides</h1>
+  <p class="muted">Research-led guides for US and UK shoppers.</p>
+  {data.guides.length ? <div class="grid">{data.guides.map((guide) => <article class="card"><h2><a href={`/guides/${guide.slug}/`}>{guide.title}</a></h2><p>{guide.summary}</p></article>)}</div> : <p>No approved guides have been migrated to this site yet.</p>}
+</Layout>
