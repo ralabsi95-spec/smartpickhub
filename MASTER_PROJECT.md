@@ -357,3 +357,11 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 ## 16 November 2026 – CI trigger de-duplication
 - Adjusted the single QA workflow concurrency key to use `github.head_ref || github.ref_name`, so a push and its associated pull-request event for the same branch share one concurrency group. This prevents duplicate full Lighthouse/axe runs for the same commit while preserving both push and PR validation triggers.
 - No test logic, dependencies or site content changed. Latest full QA evidence remains Run #193 on code commit `6f27c02809827ce05bb2f04f7abc73da2e1d5daf`; this is a workflow scheduling-only adjustment.
+
+
+## 16 November 2026 — Catalogue expansion resumed
+- Created isolated content branch `content/cordless-vacuum-guide` from `automation/bootstrap` (base checkpoint `7bb3537249d700d06d5b4296af20c0939297428b`).
+- Added a draft buying guide for cordless stick vacuums with four manufacturer-documented candidates: Dyson V15 Detect, Shark Stratos, Samsung Bespoke Jet AI and Miele Triflex HX2. Catalogue is now 11 guides / 44 products on this content branch.
+- Model-name search phrases are used for Amazon US/UK destinations; no unverified ASINs, prices, ratings or stock claims. The new guide is explicitly marked as an unapproved research draft.
+- This content branch is independent of the Astro 7 security assessment. `automation/bootstrap` and the live site remain unchanged. No publication or production change.
+- Next: run the full QA workflow on the content branch, review copy and rendered page, then seek editorial approval before any publication.

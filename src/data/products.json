@@ -7,7 +7,7 @@
     "identifierPolicy": "Identifiers below are exact model-name search phrases, not ASINs. The affiliate URL helper therefore creates marketplace search URLs. Replace with a direct ASIN only after verifying the exact product and marketplace.",
     "editorialPolicy": "Manufacturer specifications and product documentation inform factual feature summaries. Pros and considerations are editorial analysis, not hands-on testing, user-review aggregation, rankings, price claims or availability claims.",
     "publicationPolicy": "Do not treat these research drafts as approved editorial content. Preview remains noindex.",
-    "productCount": 40
+    "productCount": 44
   },
   "guides": [
     {
@@ -877,6 +877,97 @@
           "verdict": "A flexible single-basket option for users who do not need separate cooking zones. Confirm the regional model and its electrical rating before purchase.",
           "source": "https://cosori.co.uk/products/cosori-turbo-blaze-6l-air-fryer",
           "sourceNote": "COSORI UK lists the 6L TurboBlaze, nine functions and 30–230°C range; COSORI US identifies model CAF-DC601-KUS as 120V, 1725W and 6qt: https://cosori.com/products/turboblaze-air-fryer"
+        }
+      ]
+    },
+    {
+      "slug": "cordless-vacuum-cleaners-us-uk",
+      "title": "Cordless Vacuum Cleaners: Comparing Stick Vacuums for US & UK Homes",
+      "category": "Cleaning & Floorcare",
+      "publishedAt": "2026-11-16",
+      "summary": "Compare cordless stick vacuums by suction claims, battery runtime, weight, dust capacity, filtration and included floor tools across US and UK model variants.",
+      "introduction": "Cordless vacuums are not directly comparable by headline runtime or suction figures alone. Maximum runtime is commonly measured in a low-power mode with a non-motorised tool, while powered floorheads and boost modes can reduce it substantially. Check the exact regional model, included batteries and floorheads, dust capacity, replacement-filter costs and warranty terms before buying. This guide uses manufacturer documentation and does not claim hands-on testing.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Dyson V15 Detect Absolute Cordless Vacuum",
+          "bestFor": "Homes that want a feature-rich cordless stick vacuum with particle sensing and illuminated hard-floor cleaning.",
+          "us_identifier": "Dyson V15 Detect Cordless Vacuum",
+          "uk_identifier": "Dyson V15 Detect Absolute Cordless Vacuum",
+          "pros": [
+            "Manufacturer lists up to 240 Air Watts of suction and up to 60 minutes of runtime",
+            "Fluffy Optic floorhead illuminates fine dust on hard floors",
+            "Particle sensor and LCD screen provide cleaning feedback",
+            "Click-in battery design supports battery replacement"
+          ],
+          "cons": [
+            "The 60-minute figure is a maximum and varies with power mode, floor type and attachments",
+            "At approximately 3.1 kg, the complete machine may feel heavy for some users",
+            "A 4.5-hour charge time means it is not a quick top-up device"
+          ],
+          "verdict": "A specification-led option for buyers who value dust-detection features and a broad tool set. Compare the exact US and UK package contents because floorheads and accessories can differ by variant.",
+          "source": "https://www.dyson.co.uk/vacuum-cleaners/cordless/v15/detect-yellow-nickel",
+          "sourceNote": "Dyson UK product documentation lists 240 AW, up to 60 minutes, 0.77 L bin volume, 3.1 kg weight and 4.5-hour charging. US model details should be checked against the selected US listing."
+        },
+        {
+          "name": "Shark Stratos Cordless Vacuum",
+          "bestFor": "Homes with mixed carpet and hard floors that want an anti-hair-wrap floorhead and a flexible wand.",
+          "us_identifier": "Shark Stratos Cordless Vacuum IZ862H",
+          "uk_identifier": "Shark Stratos Anti Hair Wrap Plus Pet Pro Cordless Vacuum IZ400UKT",
+          "pros": [
+            "DuoClean PowerFins floorhead is designed for carpet and hard-floor cleaning",
+            "Self-cleaning brushroll is designed to reduce hair wrap",
+            "MultiFLEX wand bends to reach beneath furniture and folds for compact storage",
+            "UK manufacturer specification lists up to 60 minutes of runtime and a 0.7 L dust capacity"
+          ],
+          "cons": [
+            "The UK IZ400UKT weighs approximately 4.1 kg, making it heavier than some competing stick vacuums",
+            "The stated 60-minute runtime is an Eco-mode maximum with a non-motorised tool",
+            "US and UK model numbers and included accessories are different"
+          ],
+          "verdict": "Worth comparing for households prioritising hair pickup features and flexible under-furniture access. Verify the exact model suffix and included tools in the marketplace you use.",
+          "source": "https://sharkclean.co.uk/product/shark-stratos-anti-hair-wrap-plus-pet-pro-cordless-vacuum-single-battery-iz400ukt-zidIZ400UKT",
+          "sourceNote": "Shark UK product details specify 4.1 kg, 0.7 L and up to 60 minutes. Shark US lists the IZ862H variant and its Clean Sense IQ, DuoClean PowerFins HairPro and MultiFLEX features."
+        },
+        {
+          "name": "Samsung Bespoke Jet AI Cordless Stick Vacuum",
+          "bestFor": "Buyers who want a premium cordless vacuum with an automatic dust-emptying and charging station.",
+          "us_identifier": "Samsung Bespoke Jet AI Cordless Stick Vacuum VS28C9762UK/AA",
+          "uk_identifier": "Samsung Bespoke Jet AI Cordless Stick Vacuum VS28C9784QK/EU",
+          "pros": [
+            "Manufacturer lists up to 280 W suction for the Bespoke Jet AI family",
+            "All-in-One Clean Station empties the dustbin and recharges the vacuum",
+            "AI cleaning mode uses floor sensing to adjust cleaning behaviour",
+            "UK model family documentation lists removable batteries and up to 160 minutes using two batteries"
+          ],
+          "cons": [
+            "The Clean Station needs additional floor space and uses disposable dust bags",
+            "The 160-minute UK claim uses two batteries; US documentation for its regional model lists up to 100 minutes in minimum mode",
+            "Runtime falls sharply at higher power settings, so headline figures should not be treated as typical powered-floorhead runtime"
+          ],
+          "verdict": "A premium convenience-focused option if automatic dust emptying matters. Compare the regional model code, number of batteries and included station before deciding; US and UK runtime figures are not directly interchangeable.",
+          "source": "https://www.samsung.com/uk/vacuum-cleaners/bespoke-jet/",
+          "sourceNote": "Samsung UK lists model VS28C9784QK/EU, 280 W suction and up to 160 minutes using both batteries. Samsung US model VS28C9762UK/AA documentation lists 280 AW and up to 100 minutes in minimum mode with a non-motorised tool."
+        },
+        {
+          "name": "Miele Triflex HX2 Cordless Stick Vacuum",
+          "bestFor": "Buyers who value a configurable 3-in-1 stick vacuum and a HEPA lifetime filter.",
+          "us_identifier": "Miele Triflex HX2 Cordless Stick Vacuum",
+          "uk_identifier": "Miele Triflex HX2 Cordless Stick Vacuum",
+          "pros": [
+            "Three-in-one design can be configured for different cleaning tasks",
+            "Manufacturer lists a HEPA lifetime filter and 99.999% dust-retention capability under its stated test method",
+            "Exchangeable lithium-ion battery",
+            "Up to 60 minutes of runtime in the specified low-power, PowerUnit-only configuration"
+          ],
+          "cons": [
+            "Runtime is listed as up to 60 minutes without the powered floorhead; manufacturer documentation lists 30 minutes with electrical accessories at low power",
+            "The 3.6 kg complete machine is relatively substantial",
+            "A full recharge is listed at approximately four hours"
+          ],
+          "verdict": "A flexible alternative for buyers who want different body configurations and a lifetime HEPA filter. Check the exact HX2 package and whether the powered floorhead is included in the selected regional listing.",
+          "source": "https://media.miele.com/downloads/n-/gb/FS_11819170_GBE_GB-en-GB.pdf",
+          "sourceNote": "Miele UK technical sheet lists 3-in-1 design, 3.6 kg weight, 60 minutes PowerUnit-only runtime, 30 minutes with electrical accessories at low power, 14 minutes at high power with electrical accessories and four-hour charging."
         }
       ]
     }

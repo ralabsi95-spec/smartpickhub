@@ -183,3 +183,12 @@ Do not ask the owner to repeat details already documented here.
 ## 16 November 2026 – CI trigger de-duplication
 - QA concurrency now groups push and pull-request events by `github.head_ref || github.ref_name`, avoiding duplicate runs for the same branch while keeping both triggers enabled.
 - This is scheduling-only; no test code or dependencies changed. The last complete QA evidence is Run #193, successful.
+
+
+## Session update — 2026-11-16 (resume catalogue expansion)
+- Resumed editorial catalogue work on a new isolated branch `content/cordless-vacuum-guide`, based on unchanged `automation/bootstrap` checkpoint `7bb3537249d700d06d5b4296af20c0939297428b`.
+- Added one research-draft guide, `cordless-vacuum-cleaners-us-uk`, with four manufacturer-sourced products (Dyson V15 Detect, Shark Stratos, Samsung Bespoke Jet AI and Miele Triflex HX2). Catalogue count increases from 10 guides / 40 products to 11 guides / 44 products.
+- Product identifiers remain marketplace-specific model-name search phrases, not verified ASINs. No prices, review scores, stock claims or hands-on test claims added. The guide remains `Research draft — requires human review before publication`.
+- Research sources include official Dyson, Shark, Samsung and Miele product documentation. Regional model codes, battery configurations and runtime test conditions are called out where relevant.
+- No public publishing, Amazon product import, live WordPress change, DNS change, or production modification performed.
+- **Next:** run catalogue validation, Astro checks, static build, smoke, axe and Lighthouse on this branch; review any findings and the guide copy before creating or promoting a PR. Keep the Astro 7 security assessment separate.
