@@ -1655,8 +1655,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A premium compact option for buyers prioritising detailed front-camera footage.",
-          "source": "https://www.garmin.com/en-US/newsroom/press-release/automotive/capture-detailed-eyewitness-video-with-the-new-garmin-dash-cam-x-series/",
-          "sourceNote": "Garmin's official X-series announcement identifies the Mini 3, X110, X210 and X310 models and their resolution family. Confirm regional package contents and power accessories."
+          "source": "https://support.garmin.com/en-US/enUS/?faq=K5Kkj7NNG59OMjVi1NwIl5",
+          "sourceNote": "Garmin's official model-comparison support page compares the X110, X210, X310 and Mini 3. Check the exact model's resolution, included accessories, power/parking-mode requirements and regional package."
         },
         {
           "name": "Garmin Dash Cam X210",
@@ -1672,8 +1672,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "Compare with the X310 if 4K is not essential to the buyer's requirements.",
-          "source": "https://www.garmin.com/en-US/newsroom/press-release/automotive/capture-detailed-eyewitness-video-with-the-new-garmin-dash-cam-x-series/",
-          "sourceNote": "Garmin's official X-series announcement identifies the Mini 3, X110, X210 and X310 models and their resolution family. Confirm regional package contents and power accessories."
+          "source": "https://support.garmin.com/en-US/enUS/?faq=K5Kkj7NNG59OMjVi1NwIl5",
+          "sourceNote": "Garmin's official model-comparison support page compares the X110, X210, X310 and Mini 3. Check the exact model's resolution, included accessories, power/parking-mode requirements and regional package."
         },
         {
           "name": "Garmin Dash Cam X110",
@@ -1689,8 +1689,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A simpler X-series candidate when core recording matters more than flagship specifications.",
-          "source": "https://www.garmin.com/en-US/newsroom/press-release/automotive/capture-detailed-eyewitness-video-with-the-new-garmin-dash-cam-x-series/",
-          "sourceNote": "Garmin's official X-series announcement identifies the Mini 3, X110, X210 and X310 models and their resolution family. Confirm regional package contents and power accessories."
+          "source": "https://support.garmin.com/en-US/enUS/?faq=K5Kkj7NNG59OMjVi1NwIl5",
+          "sourceNote": "Garmin's official model-comparison support page compares the X110, X210, X310 and Mini 3. Check the exact model's resolution, included accessories, power/parking-mode requirements and regional package."
         },
         {
           "name": "Garmin Dash Cam Mini 3",
@@ -1706,8 +1706,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A discreet option for buyers who prefer minimal windshield obstruction.",
-          "source": "https://www.garmin.com/en-US/newsroom/press-release/automotive/capture-detailed-eyewitness-video-with-the-new-garmin-dash-cam-x-series/",
-          "sourceNote": "Garmin's official X-series announcement identifies the Mini 3, X110, X210 and X310 models and their resolution family. Confirm regional package contents and power accessories."
+          "source": "https://support.garmin.com/en-US/enUS/?faq=K5Kkj7NNG59OMjVi1NwIl5",
+          "sourceNote": "Garmin's official model-comparison support page compares the X110, X210, X310 and Mini 3. Check the exact model's resolution, included accessories, power/parking-mode requirements and regional package."
         }
       ],
       "buyingChecklist": [
@@ -1826,8 +1826,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A flexible multi-bay option for growing shared storage and backup workloads.",
-          "source": "https://www.synology.com/en-us/products",
-          "sourceNote": "Synology's official product catalogue lists current DiskStation families, bay counts, networking and expansion details. Check the exact hardware spec sheet and drive compatibility list for each model."
+          "source": "https://www.synology.com/en-us/products/compare/DS725%2B/DS925%2B/DS1525%2B",
+          "sourceNote": "Synology's official comparison covers DS725+, DS925+ and DS1525+ hardware, memory, bays, network ports and expansion. Confirm supported drive models and current compatibility rules before purchase."
         },
         {
           "name": "Synology DiskStation DS925+",
@@ -1843,8 +1843,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A balanced four-bay platform for shared files and backup jobs.",
-          "source": "https://www.synology.com/en-us/products",
-          "sourceNote": "Synology's official product catalogue lists current DiskStation families, bay counts, networking and expansion details. Check the exact hardware spec sheet and drive compatibility list for each model."
+          "source": "https://www.synology.com/en-us/products/compare/DS725%2B/DS925%2B/DS1525%2B",
+          "sourceNote": "Synology's official comparison covers DS725+, DS925+ and DS1525+ hardware, memory, bays, network ports and expansion. Confirm supported drive models and current compatibility rules before purchase."
         },
         {
           "name": "Synology DiskStation DS725+",
@@ -1860,8 +1860,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A compact starting point where capacity and expansion needs are modest.",
-          "source": "https://www.synology.com/en-us/products",
-          "sourceNote": "Synology's official product catalogue lists current DiskStation families, bay counts, networking and expansion details. Check the exact hardware spec sheet and drive compatibility list for each model."
+          "source": "https://www.synology.com/en-us/products/compare/DS725%2B/DS925%2B/DS1525%2B",
+          "sourceNote": "Synology's official comparison covers DS725+, DS925+ and DS1525+ hardware, memory, bays, network ports and expansion. Confirm supported drive models and current compatibility rules before purchase."
         },
         {
           "name": "Synology DiskStation DS224+",
@@ -1878,7 +1878,7 @@
           ],
           "verdict": "A practical entry-level two-bay option for home file sharing and backup.",
           "source": "https://www.synology.com/en-us/products",
-          "sourceNote": "Synology's official product catalogue lists current DiskStation families, bay counts, networking and expansion details. Check the exact hardware spec sheet and drive compatibility list for each model."
+          "sourceNote": "Synology's official catalogue identifies DS224+ as a 2-bay model with two 1GbE ports and Btrfs support. It is an older generation than the other NAS candidates in this guide; verify lifecycle status, support and current drive compatibility."
         }
       ],
       "buyingChecklist": [
@@ -1996,8 +1996,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A premium competitive model to compare by shape and control preference.",
-          "source": "https://www.logitechg.com/en-us/shop/c/logig-mice",
-          "sourceNote": "Logitech G's official catalogue lists the PRO, G502 X and G309 families. Check exact model suffix, connectivity and regional bundle."
+          "source": "https://www.logitechg.com/en-us/shop/p/pro-x2-superstrike-mouse.910-007700",
+          "sourceNote": "Logitech G's official product page identifies PRO X2 SUPERSTRIKE and its Haptic Inductive Trigger System; verify the precise regional package and software support."
         },
         {
           "name": "Logitech PRO X SUPERLIGHT 2 LIGHTSPEED Wireless Gaming Mouse",
@@ -2013,8 +2013,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A streamlined option for users who prioritise a simple competitive layout.",
-          "source": "https://www.logitechg.com/en-us/shop/c/logig-mice",
-          "sourceNote": "Logitech G's official catalogue lists the PRO, G502 X and G309 families. Check exact model suffix, connectivity and regional bundle."
+          "source": "https://www.logitechg.com/en-us/shop/p/pro-x2-superlight-wireless-mouse.910-006628",
+          "sourceNote": "Logitech G's official product page documents the PRO X SUPERLIGHT 2, HERO 2 sensor and LIGHTSPEED wireless; check the exact edition and colour."
         },
         {
           "name": "Logitech G502 X PLUS LIGHTSPEED Wireless Gaming Mouse",
@@ -2030,8 +2030,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A versatile choice for users who value programmable controls over minimum weight.",
-          "source": "https://www.logitechg.com/en-us/shop/c/logig-mice",
-          "sourceNote": "Logitech G's official catalogue lists the PRO, G502 X and G309 families. Check exact model suffix, connectivity and regional bundle."
+          "source": "https://www.logitechg.com/en-us/shop/p/g502-x-plus-wireless-lightforce.910-006169",
+          "sourceNote": "Logitech G's official product page documents the G502 X PLUS, LIGHTFORCE switches, LIGHTSPEED wireless and LIGHTSYNC RGB; check the exact colour and regional SKU."
         },
         {
           "name": "Logitech G309 LIGHTSPEED Wireless Gaming Mouse",
@@ -2166,8 +2166,9 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A business-oriented colour multifunction option where duplex scanning and networking matter.",
-          "source": "https://www.brother-usa.com/c/shop/printers/laser-printers",
-          "sourceNote": "Brother's official US printer catalogue lists current laser and multifunction models. Product pages show print, scan, duplex, networking and toner-family details; regional SKUs can differ."
+          "source": "https://www.brother-usa.com/p/laser-printers/MFCL8395CDW",
+          "sourceNote": "Brother's official US product page documents 31ppm colour/mono print, duplex print/scan, a 50-sheet ADF, Gigabit Ethernet and dual-band Wi-Fi. The US page specifies 110–120V AC.",
+          "availabilityNote": "The cited manufacturer page is for the US electrical variant (110–120V AC). UK buyers must verify a UK-rated model, correct plug, local consumables and warranty; do not connect a 110–120V-only device directly to 230V mains."
         },
         {
           "name": "Brother MFC-L3780CDW Colour Laser All-in-One Printer",
@@ -2183,8 +2184,9 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A compact office multifunction option for mixed print and scan tasks.",
-          "source": "https://www.brother-usa.com/c/shop/printers/laser-printers",
-          "sourceNote": "Brother's official US printer catalogue lists current laser and multifunction models. Product pages show print, scan, duplex, networking and toner-family details; regional SKUs can differ."
+          "source": "https://www.brother-usa.com/p/laser-printers/MFCL3780CDW",
+          "sourceNote": "Brother's official US product page documents 31ppm print, single-pass duplex copy/scan, 50-sheet ADF, Gigabit Ethernet and dual-band Wi-Fi. The US page specifies 110–120V AC.",
+          "availabilityNote": "The cited manufacturer page is for the US electrical variant (110–120V AC). UK buyers must verify a UK-rated model, correct plug, local consumables and warranty; do not connect a 110–120V-only device directly to 230V mains."
         },
         {
           "name": "Brother HL-L3280CDW Colour Laser Printer",
@@ -2200,8 +2202,9 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A print-focused alternative when an all-in-one scanner is not required.",
-          "source": "https://www.brother-usa.com/c/shop/printers/laser-printers",
-          "sourceNote": "Brother's official US printer catalogue lists current laser and multifunction models. Product pages show print, scan, duplex, networking and toner-family details; regional SKUs can differ."
+          "source": "https://www.brother-usa.com/p/laser-printers/HLL3280CDW",
+          "sourceNote": "Brother's official US product page documents up to 27ppm colour printing, automatic duplex, dual-band Wi-Fi and Gigabit Ethernet. The US page specifies 110–120V AC.",
+          "availabilityNote": "The cited manufacturer page is for the US electrical variant (110–120V AC). UK buyers must verify a UK-rated model, correct plug, local consumables and warranty; do not connect a 110–120V-only device directly to 230V mains."
         },
         {
           "name": "Brother DCP-L2640DW Monochrome Laser Multifunction Printer",
@@ -2217,8 +2220,9 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A practical document-focused option for homes and small offices.",
-          "source": "https://www.brother-usa.com/c/shop/printers/laser-printers",
-          "sourceNote": "Brother's official US printer catalogue lists current laser and multifunction models. Product pages show print, scan, duplex, networking and toner-family details; regional SKUs can differ."
+          "source": "https://www.brother-usa.com/p/laser-printers/DCPL2640DW",
+          "sourceNote": "Brother's official US product page documents up to 36ppm monochrome printing, automatic duplex printing, 50-sheet ADF, Ethernet and dual-band Wi-Fi. The US page specifies 110–120V AC.",
+          "availabilityNote": "The cited manufacturer page is for the US electrical variant (110–120V AC). UK buyers must verify a UK-rated model, correct plug, local consumables and warranty; do not connect a 110–120V-only device directly to 230V mains."
         }
       ],
       "buyingChecklist": [
