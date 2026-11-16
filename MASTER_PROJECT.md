@@ -51,7 +51,10 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - No WordPress content was changed.
 - No production site deployment or DNS change was intentionally performed.
 - No products or guides have been imported.
-- Build/test status must be checked before any pull request or production switch.
+- 16 Nov 2026: Added a branded Astro 404 page and public/robots.txt referencing the generated sitemap.
+- 16 Nov 2026: GitHub Actions Astro Build Check passed on the PR head commit (before the 404/robots additions); rerun CI to validate the latest additions.
+- The scheduled GitHub Actions workflow is present on the development branch but GitHub scheduled runs execute from the default branch; it will not run on schedule until an approved merge to the default branch. Manual workflow dispatch can be used for controlled testing.
+- Build/test status must be checked before any pull request merge or production switch.
 
 ## Next steps
 1. Inspect Cloudflare Pages project and confirm production branch/domain before merging.
