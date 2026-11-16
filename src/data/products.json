@@ -7,7 +7,7 @@
     "identifierPolicy": "Identifiers below are exact model-name search phrases, not ASINs. The affiliate URL helper therefore creates marketplace search URLs. Replace with a direct ASIN only after verifying the exact product and marketplace.",
     "editorialPolicy": "Manufacturer specifications and product documentation inform factual feature summaries. Pros and considerations are editorial analysis, not hands-on testing, user-review aggregation, rankings, price claims or availability claims.",
     "publicationPolicy": "Do not treat these research drafts as approved editorial content. Preview remains noindex.",
-    "productCount": 32
+    "productCount": 36
   },
   "guides": [
     {
@@ -703,6 +703,93 @@
           "verdict": "A flexible option for mixed peripheral and display setups, especially where the extra video outputs are useful. Confirm the exact laptop's display architecture before assuming all outputs can be used.",
           "source": "https://plugable.com/products/tbt4-udz",
           "sourceNote": "Plugable's official product page documents port count, 100W/98W charging, 2.5Gb Ethernet, compatibility and display-output caveats."
+        }
+      ]
+    },
+    {
+      "slug": "portable-ssd-external-storage-us-uk",
+      "title": "Best Portable SSDs for Fast External Storage: US & UK Buying Guide",
+      "category": "Storage & Backup",
+      "publishedAt": "2026-11-16",
+      "summary": "Compare portable SSDs by interface bandwidth, real-world host compatibility, capacity, ruggedness and security before choosing external storage.",
+      "introduction": "Portable SSD performance depends on the drive and the port on the computer, phone or tablet. A USB 3.2 Gen 2x2 drive may not reach its advertised maximum on a host that supports only 10Gbps USB, and USB4 or Thunderbolt compatibility should be checked separately. Maximum sequential speeds are manufacturer test figures, not guaranteed everyday transfer rates. For important files, a portable SSD should supplement a tested backup strategy rather than serve as the only copy.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Samsung Portable SSD T9",
+          "bestFor": "Fast portable storage for creators and professionals whose computer supports USB 3.2 Gen 2x2.",
+          "us_identifier": "Samsung Portable SSD T9 2TB",
+          "uk_identifier": "Samsung Portable SSD T9 2TB",
+          "pros": [
+            "USB 3.2 Gen 2x2 interface with sequential read speeds up to 2,000MB/s",
+            "Available in 1TB, 2TB and 4TB capacities",
+            "AES 256-bit hardware encryption and drop resistance up to 3 metres"
+          ],
+          "cons": [
+            "Full 20Gbps performance requires a USB 3.2 Gen 2x2 host; many USB-C ports are slower",
+            "The manufacturer's 2,000MB/s figures are maximum sequential test results, not guaranteed sustained performance",
+            "Larger and heavier than some pocket-sized portable SSDs"
+          ],
+          "verdict": "A capable high-speed portable SSD when the host computer supports its 20Gbps interface. Check the laptop's exact USB specification before paying for the faster model.",
+          "source": "https://download.semiconductor.samsung.com/resources/data-sheet/samsung_portable_ssd_t9_datasheet_rev1_0.pdf",
+          "sourceNote": "Samsung's official T9 datasheet lists USB 3.2 Gen 2x2, up to 2,000MB/s, capacities, 122g weight, AES 256-bit hardware encryption and 3m drop resistance."
+        },
+        {
+          "name": "SanDisk Extreme PRO Portable SSD (USB 3.2 Gen 2x2)",
+          "bestFor": "Users who want a rugged portable drive with IP65 dust/water resistance and high transfer speeds.",
+          "us_identifier": "SanDisk Extreme PRO Portable SSD USB 3.2 Gen 2x2 2TB",
+          "uk_identifier": "SanDisk Extreme PRO Portable SSD USB 3.2 Gen 2x2 2TB",
+          "pros": [
+            "USB 3.2 Gen 2x2 with sequential read and write speeds up to 2,000MB/s",
+            "IP65 water and dust resistance with drop protection up to 3 metres",
+            "Aluminium chassis designed to help dissipate heat and a five-year limited warranty"
+          ],
+          "cons": [
+            "Maximum speed depends on a compatible 20Gbps host connection",
+            "IP65 is not an immersion rating; the drive must be clean and dry after exposure",
+            "The PRO USB 3.2 Gen 2x2 version should not be confused with other SanDisk Extreme or newer USB4 models"
+          ],
+          "verdict": "A rugged, high-speed choice for moving large files outdoors or between workstations. Confirm the precise model generation and host interface because SanDisk sells several similarly named portable SSDs.",
+          "source": "https://www.sandisk.com/products/ssd/external-ssd/portable-ssd-sandisk-extreme-pro-usb-3-2?sku=SDSSDE81",
+          "sourceNote": "SanDisk's official product specifications list USB 3.2 Gen 2x2, up to 2,000MB/s read/write, IP65, 3m drop protection and five-year limited warranty."
+        },
+        {
+          "name": "Crucial X10 Pro Portable SSD",
+          "bestFor": "Video professionals and creators transferring large media files who have a compatible high-speed USB-C host.",
+          "us_identifier": "Crucial X10 Pro Portable SSD 2TB",
+          "uk_identifier": "Crucial X10 Pro Portable SSD 2TB",
+          "pros": [
+            "Manufacturer-rated sequential speeds up to 2,100MB/s read and 2,000MB/s write",
+            "IP55 water and dust resistance and a compact aluminium design",
+            "USB-C connectivity and compatibility across supported Windows, Mac and Android devices"
+          ],
+          "cons": [
+            "Maximum speeds require the supported USB 3.2 Gen 2x2 interface; slower ports reduce throughput",
+            "IP55 protects against limited dust and water exposure but is not waterproof or submersible",
+            "Device compatibility and formatting requirements vary by host and operating system"
+          ],
+          "verdict": "A creator-oriented option for high-speed transfers and editing workflows. Check USB port bandwidth and the exact device compatibility notes before relying on it for direct editing.",
+          "source": "https://www.crucial.com/content/dam/crucial/ssd-products/x10-pro/flyer/crucial-X10-productflyer.pdf",
+          "sourceNote": "Crucial's official X10 Pro flyer lists up to 2,100/2,000MB/s, capacities up to 4TB, IP55 and supported device families."
+        },
+        {
+          "name": "Kingston XS2000 Portable SSD",
+          "bestFor": "Travellers who value a very small, lightweight drive with a removable protective sleeve.",
+          "us_identifier": "Kingston XS2000 Portable SSD 2TB",
+          "uk_identifier": "Kingston XS2000 Portable SSD 2TB",
+          "pros": [
+            "Pocket-sized design weighing approximately 28.9g",
+            "USB 3.2 Gen 2x2 with sequential read/write speeds up to 2,000MB/s",
+            "IP55 protection when used with the included removable rubber sleeve and capacities up to 4TB"
+          ],
+          "cons": [
+            "Full performance requires USB 3.2 Gen 2x2; a 10Gbps USB-C port will limit transfer speeds",
+            "The IP55 protective rating depends on using the included rubber sleeve",
+            "Small physical size makes it easier to misplace, so a protective carry case may be useful"
+          ],
+          "verdict": "A highly portable option for users who want a small drive for travel. Confirm the host's USB speed and keep the sleeve fitted when relying on its stated environmental protection.",
+          "source": "https://www.kingston.com/datasheets/SXS2000_en.pdf",
+          "sourceNote": "Kingston's official XS2000 datasheet lists USB 3.2 Gen 2x2, up to 2,000MB/s, 28.9g weight, capacities to 4TB and IP55 with the rubber sleeve."
         }
       ]
     }
