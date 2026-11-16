@@ -88,3 +88,32 @@ jobs:
           path: test-reports/
           if-no-files-found: warn
           retention-days: 14
+
+  commit-tested-lockfile:
+    needs: build-and-audit
+    if: github.event_name == 'push' && github.ref == 'refs/heads/security/astro7-upgrade-assessment' && needs.build-and-audit.result == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: security/astro7-upgrade-assessment
+      - uses: actions/download-artifact@v4
+        with:
+          name: smartpickhub-quality-reports
+          path: /tmp/smartpickhub-reports
+      - name: Commit the lockfile generated and tested by the successful QA run
+        shell: bash
+        run: |
+          cp /tmp/smartpickhub-reports/package-lock.json package-lock.json
+          node --input-type=module -e 'import fs from "node:fs"; const pkg=JSON.parse(fs.readFileSync("package.json","utf8")); const lock=JSON.parse(fs.readFileSync("package-lock.json","utf8")); const root=lock.packages?.[""]; if(lock.lockfileVersion!==3 || JSON.stringify(root?.dependencies)!==JSON.stringify(pkg.dependencies) || JSON.stringify(root?.devDependencies)!==JSON.stringify(pkg.devDependencies)) process.exit(1); console.log("Lockfile matches package.json and lockfileVersion 3");'
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add package-lock.json
+          if git diff --cached --quiet; then
+            echo "The tested lockfile is already committed."
+          else
+            git commit -m "chore: commit tested Astro 7 dependency lockfile"
+            git push origin HEAD:security/astro7-upgrade-assessment
+          fi
