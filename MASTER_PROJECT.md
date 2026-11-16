@@ -132,3 +132,11 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - The GitHub repository is private; a signed-out GitHub 404 page does not indicate that the public Cloudflare preview is down. The isolated preview remains https://smartpickhub-preview.pages.dev/.
 - The preview remains `noindex,nofollow` and crawl-disallowed. RSS intentionally excludes research drafts until editorial status is explicitly set to `Approved for publication`; therefore an RSS feed containing no guide items is expected at this stage.
 - No merge to `main`, no WordPress changes, no DNS/custom-domain changes, and no production deployment.
+
+## 16 November 2026 – Expanded home networking catalogue
+- Added a fourth research-draft guide, “Wi-Fi 7 Home Routers & Mesh Systems: Options for US and UK Homes”, with four additional products: TP-Link Deco BE63, ASUS RT-BE96U, eero Pro 7 and NETGEAR Orbi 770 Series RBE773. Catalogue total is now 4 guides and 16 product records.
+- Added official manufacturer technical documentation links and model-name search phrases for both Amazon marketplaces. All affiliate links remain separate Amazon US and Amazon UK search links; no direct ASINs, prices, ratings, review counts, stock claims or hands-on testing claims were introduced.
+- Added explicit cautions on region-specific hardware, Wi-Fi channel availability, mesh placement, broadband/client capability and subscription-dependent features. In particular, the TP-Link reference is a US BE63 datasheet, so UK hardware/SKU must be checked before any editorial approval.
+- Updated `scripts/validate-catalogue.mjs` to expect four research guides and 16 products, preserving the no-price/no-rating/no-review and draft-only safeguards.
+- All four guides remain research drafts and RSS-excluded until editorial approval. Preview remains noindex and crawl-disallowed. No WordPress, DNS, custom-domain, production or `main` changes.
+- Build validation for these latest catalogue and validator commits is pending; do not call this batch build-confirmed until GitHub Actions completes.
