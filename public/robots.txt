@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://smartpickhub.infinityfree.me/sitemap-index.xml
