@@ -140,3 +140,11 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Updated `scripts/validate-catalogue.mjs` to expect four research guides and 16 products, preserving the no-price/no-rating/no-review and draft-only safeguards.
 - All four guides remain research drafts and RSS-excluded until editorial approval. Preview remains noindex and crawl-disallowed. No WordPress, DNS, custom-domain, production or `main` changes.
 - Build validation for these latest catalogue and validator commits is pending; do not call this batch build-confirmed until GitHub Actions completes.
+
+## 16 November 2026 – USB-C charging guide expansion
+- Added a fifth research-draft guide, "USB-C GaN Chargers: Multi-Port Laptop and Phone Charging for US & UK", with four product records: Anker Prime A2688, UGREEN Nexode 100W SKU 40749, Belkin WCH015 200W and UGREEN Nexode 200W SKU 35539.
+- Catalogue now contains five draft guides and 20 product records. Every product retains separate US and UK marketplace search phrases; no direct ASIN, price, rating, review count or stock claim was introduced.
+- Used manufacturer documentation for output limits, port counts, input ranges and power-sharing limitations. Regional cautions are explicit where the detailed documentation reviewed was UK/EU-specific; the US SKU and exact retailer variant still need a separate final check.
+- Updated catalogue validation to require five guides and 20 product records. All guides remain editorial drafts, RSS-excluded until approval.
+- Preview remains noindex and crawl-disallowed. No merge to main, no WordPress/DNS/custom-domain/production changes.
+- Latest GitHub Actions runs for the prior 16-product head completed successfully (runs 43874492597 and 43874483513). The 20-product expansion and validator updates trigger new checks; latest head must complete successfully before build-confirmed status is recorded.
