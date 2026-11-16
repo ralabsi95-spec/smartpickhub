@@ -261,3 +261,19 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - The previous confirmed baseline remains: runs #154/#155 passed; axe zero violations across 12 pages; Lighthouse 100 Performance / 100 Accessibility / 100 Best Practices / 66 SEO (SEO reduction is expected for noindex preview).
 - No production, WordPress, DNS, custom domain or main-branch changes. PR #1 remains unmerged; preview remains non-indexable.
 - Next: inspect the latest matching CI artifact for homepage axe results, mobile/desktop Lighthouse, and npm audit JSON; remediate only confirmed issues with safe targeted dependency changes.
+
+
+## 16 November 2026 – Air fryer category expansion (research draft)
+- Added the tenth buying guide, `air-fryers-us-uk`, with four product-family records: Ninja Foodi MAX Dual Zone (UK AF400UK / US DZ550), Philips 5000 Series Dual-Basket with Steam (UK NA555/09 / US NA555/00), Instant Vortex Plus Dual-Basket with ClearCook (UK DAF8132BK / US 140-3090-01), and COSORI TurboBlaze (UK 6L / US 6-Quart CAF-DC601-KUS).
+- Catalogue now contains 10 research-draft guides and 40 product records. Each product has separate US and UK Amazon search phrases; these are not direct ASIN links and do not guarantee an exact marketplace listing.
+- Manufacturer references were used for capacity, voltage, wattage, basket configuration and cooking functions. Regional variants are called out explicitly: 120V US models must not be substituted for 220–240V UK models. Buyers must confirm exact local SKU, plug, dimensions and accessories.
+- Expanded the Kitchen Appliances keyword cluster with air-fryer, dual-zone, steam, capacity, comparison and regional compatibility terms. These remain unvalidated keyword opportunities; no search volume or CPC is claimed and no pages are generated from phrases.
+- Updated `scripts/validate-catalogue.mjs` to require 10 draft guides and 40 products while retaining the no-price/no-rating/no-review and no-premature-approval safeguards.
+- This update is committed only to `automation/bootstrap`. New GitHub Actions checks must complete against the latest branch head before this batch is marked build-confirmed. The content remains a research draft and is not approved for publication.
+- No WordPress, production, DNS, custom-domain or `main` changes. PR #1 remains draft and unmerged; Cloudflare preview remains isolated, noindex and crawl-disallowed.
+
+## Next work
+1. Verify CI for the 40-product catalogue and inspect the new report artifact, including axe-core, Lighthouse and npm audit details.
+2. Continue adding product categories only where regional model variants and manufacturer documentation can be verified.
+3. Review desktop and mobile preview visually; do not remove preview indexing protections.
+4. Keep all new guides as drafts until exact marketplace listings, product variants, links and editorial content receive human approval.
