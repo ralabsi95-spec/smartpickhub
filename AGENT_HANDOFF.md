@@ -193,3 +193,9 @@ Do not ask the owner to repeat details already documented here.
 - No lockfile has yet been committed, no dependency upgrade has been merged into `automation/bootstrap`, and no production or WordPress changes were made. Await the isolated CI run and inspect the generated lockfile, audit results, build, smoke, axe and Lighthouse reports before deciding whether to proceed.
 - Sources reviewed: official Astro upgrade guides and changelog; npm package metadata for Astro, RSS, Sitemap and Astro Check.
 - **Next:** inspect the isolated branch's Actions result and artifact; if it passes, retrieve and commit the tested lockfile on this branch, switch CI from `npm install` to `npm ci`, and run the full suite again. Keep the branch unmerged until owner review.
+
+
+## 16 November 2026 – Security assessment QA refinements
+- On `security/astro7-upgrade-assessment`, updated `scripts/accessibility-test.mjs` to retain details for axe-core `incomplete` checks (rule IDs, descriptions, help URLs, target selectors and check messages), rather than recording only their count. This makes manual accessibility review actionable and does not convert incomplete checks into violations.
+- Latest code change before this documentation entry: `20183ea2fba10de16994e35db79dad8cbd6d117a`. Isolated Astro 7 QA remains pending; inspect its workflow result and generated lockfile artifact before making any further dependency changes.
+- The baseline branch `automation/bootstrap` remains unchanged at the verified `7bb3537249d700d06d5b4296af20c0939297428b` checkpoint. PR #1 remains open and unmerged; preview deployment for that checkpoint succeeded.
