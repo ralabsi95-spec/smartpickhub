@@ -269,6 +269,93 @@
           "sourceNote": "Google Store specifications identify the battery model, 1080p HDR video, field of view, app requirement and event-history limits."
         }
       ]
+    },
+    {
+      "slug": "wifi-7-home-mesh-routers-us-uk",
+      "title": "Wi-Fi 7 Home Routers & Mesh Systems: Options for US and UK Homes",
+      "category": "Home Networking",
+      "publishedAt": "2026-11-16",
+      "summary": "Compare four Wi-Fi 7 router and mesh-system families by wireless standard, wired ports, coverage design and regional compatibility.",
+      "introduction": "Wi-Fi 7 equipment is not automatically faster in every home. Real results depend on the broadband plan, client devices, radio conditions, building materials and whether a mesh system uses wireless or wired backhaul. Compare the exact hardware kit and regional version before buying; the models below are research-led options, not hands-on test winners.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "TP-Link Deco BE63 Wi-Fi 7 Mesh System",
+          "bestFor": "Homes that need a multi-node mesh system with Wi-Fi 7 and multi-gigabit Ethernet ports.",
+          "us_identifier": "TP-Link Deco BE63 Wi-Fi 7 Mesh System",
+          "uk_identifier": "TP-Link Deco BE63 Wi-Fi 7 Mesh System",
+          "pros": [
+            "Tri-band Wi-Fi 7 across 2.4GHz, 5GHz and 6GHz bands",
+            "Four 2.5Gbps Ethernet ports per unit in the documented US hardware version",
+            "Mesh roaming support using 802.11k/v/r standards"
+          ],
+          "cons": [
+            "Coverage and speed vary with node placement, walls and client capabilities",
+            "The cited port and radio specifications are for the US BE63 hardware; confirm the exact UK kit and regional SKU",
+            "A multi-node system can be unnecessary for smaller homes with good single-router coverage"
+          ],
+          "verdict": "A mesh-system candidate for larger or multi-room homes where several access points and multi-gig wired connections are useful. Verify the exact regional package, node count and firmware feature set.",
+          "source": "https://static.tp-link.com/upload/product-overview/2026/202606/20260611/Deco%20BE63%20%28US%292.6_Datasheet.pdf",
+          "sourceNote": "TP-Link's BE63 US datasheet lists Wi-Fi 7 tri-band operation, four 2.5Gbps Ethernet ports per unit and mesh roaming standards; specifications may vary by region."
+        },
+        {
+          "name": "ASUS RT-BE96U Wi-Fi 7 Router",
+          "bestFor": "Advanced users who prefer a standalone high-performance router with 10Gbps networking and extensive configuration options.",
+          "us_identifier": "ASUS RT-BE96U Wi-Fi 7 Router",
+          "uk_identifier": "ASUS RT-BE96U Wi-Fi 7 Router",
+          "pros": [
+            "Tri-band Wi-Fi 7 with 2.4GHz, 5GHz and 6GHz radios",
+            "One 10Gbps WAN/LAN port and a separate 10Gbps LAN port",
+            "AiMesh support for compatible ASUS routers and nodes"
+          ],
+          "cons": [
+            "Large external-antenna design needs suitable placement",
+            "A single router may not cover every multi-storey or thick-wall home",
+            "To benefit from Wi-Fi 7 and 10Gbps ports, connected devices and broadband equipment must also support suitable speeds"
+          ],
+          "verdict": "A specification-rich standalone router to compare for users with multi-gig broadband, wired network equipment or a preference for ASUS configuration features. Check local regulatory and hardware variants.",
+          "source": "https://www.asus.com/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-be96u/techspec/",
+          "sourceNote": "ASUS technical specifications list Wi-Fi 7 tri-band support, two 10Gbps Ethernet interfaces, AiMesh modes and supported wireless standards."
+        },
+        {
+          "name": "Amazon eero Pro 7 Tri-Band Wi-Fi 7 Router",
+          "bestFor": "Households seeking a simple app-managed Wi-Fi 7 network with multi-gigabit wired connections and eero mesh expansion.",
+          "us_identifier": "Amazon eero Pro 7 Wi-Fi 7 Router",
+          "uk_identifier": "Amazon eero Pro 7 Wi-Fi 7 Router",
+          "pros": [
+            "Tri-band Wi-Fi 7 with Multi-Link Operation support",
+            "Two auto-sensing 5GbE ports",
+            "Supports eero mesh expansion and smart-home connectivity including Thread and Zigbee"
+          ],
+          "cons": [
+            "Advanced security and management features are offered through an optional eero Plus subscription",
+            "Best suited to users comfortable managing the network through the eero app",
+            "Coverage figures are manufacturer estimates and depend on building layout and interference"
+          ],
+          "verdict": "A practical ecosystem-led option for households that value app-based setup and mesh expansion. Confirm the local model, supported radio channels and any subscription features required.",
+          "source": "https://eero.com/shop/eero-pro-7",
+          "sourceNote": "eero's product and support documentation lists Wi-Fi 7, MLO, two 5GbE ports, mesh compatibility and smart-home connectivity; eero Plus adds optional advanced services."
+        },
+        {
+          "name": "NETGEAR Orbi 770 Series Wi-Fi 7 Mesh System (RBE773)",
+          "bestFor": "Larger homes that need a router-and-satellite mesh kit with multi-gigabit Ethernet on both router and satellite units.",
+          "us_identifier": "NETGEAR Orbi 770 Series RBE773 Wi-Fi 7 Mesh System",
+          "uk_identifier": "NETGEAR Orbi 770 Series RBE773 Wi-Fi 7 Mesh System",
+          "pros": [
+            "Tri-band Wi-Fi 7 mesh system supplied as one router and two satellites in the cited kit",
+            "2.5Gbps Ethernet ports on the router and satellites",
+            "Dedicated router-and-satellite layout designed to extend coverage across a home"
+          ],
+          "cons": [
+            "The three-unit kit needs more space and power outlets than a standalone router",
+            "Wireless throughput and coverage depend on placement, building materials and client devices",
+            "NETGEAR Armor and Smart Parental Controls Premium features require paid subscriptions after trial periods"
+          ],
+          "verdict": "A mesh-kit candidate for larger properties where multiple access points are needed. Confirm the exact RBE773 regional pack, included satellite count, local Wi-Fi channel support and optional subscription costs.",
+          "source": "https://www.downloads.netgear.com/files/GDC/RBE773/RBE773_TS-EU-AP-CA.pdf",
+          "sourceNote": "NETGEAR's RBE773 technical specification sheet identifies the router-plus-two-satellite pack, 2.5Gbps ports and subscription qualifications for optional security and parental-control services."
+        }
+      ]
     }
   ]
 }
