@@ -414,3 +414,12 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - That run completed successfully, including the generated lockfile verification, clean `npm ci`, zero-vulnerability dependency audit, Astro checks, catalogue validation, static build, smoke tests, axe-core and Lighthouse audits.
 - Simplified CI to use the committed lockfile with `npm ci` directly and removed the temporary lockfile-commit job. A new PR run must pass on the lockfile-backed workflow before promotion.
 - PR #2 remains Draft/open/unmerged; no merge to development or production deployment is performed in this step.
+
+
+## Session update — 2026-11-16 (100-product catalogue migrated onto Astro 7)
+- Astro 7 upgrade PR #2 was merged into `automation/bootstrap` at `5baea62d5b4a8fbd43d7360bf703d8d6a07dfb9a` after final lockfile-backed CI passed. `package-lock.json` is committed; the final workflow uses `npm ci` directly.
+- Created isolated content branch `content/catalogue-100-astro7` from the updated Astro 7 development branch and migrated the 100-product / 25-guide research catalogue from the separate content QA branch.
+- Catalogue includes 100 unique products across 25 guides; 56 new product records across 14 new guides were added. All entries remain unapproved research drafts. Amazon destinations remain model-name search links with the existing US/UK tracking IDs; no unverified ASINs, prices, ratings, stock claims or hands-on test claims.
+- Prior Astro 5-based content-branch QA passed, but its npm audit showed 5 findings (1 low, 3 high, 1 critical). To avoid carrying those dependencies forward, the catalogue was transplanted onto the now-upgraded Astro 7 development branch with the committed zero-vulnerability lockfile.
+- Cloudflare Pages preview for the 100-product branch was deployed successfully; it is noindex/nofollow and `robots.txt` disallows all. No live InfinityFree deployment, production DNS change, public content publication or Amazon product import.
+- **Next:** create a draft PR to `automation/bootstrap` and run the full QA again on the combined Astro 7 + 100-product tree. Review all 25 guides before editorial approval or any public publication.
