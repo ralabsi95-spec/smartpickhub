@@ -271,3 +271,16 @@ Do not ask the owner to repeat details already documented here.
 - Cloudflare Pages preview is isolated and noindex/nofollow with `robots.txt` disallowing crawling. Live WordPress on InfinityFree remains untouched.
 - Latest development improvement in progress: accessible client-side guide search and category filtering on the guide index. Verify the associated CI run before calling this change complete.
 - All product identifiers remain model-name Amazon search phrases, not verified direct ASINs. Do not publish, approve drafts, merge PR #1, or modify production without explicit owner approval.
+
+
+## Session update — 16 November 2026 (guide and product improvements)
+- Development commit `68c79f9` improved all 25 buying guides with guide-specific buyer checklists, clearer product-detail sections, on-page navigation, manufacturer-source links, and breadcrumb structured data. The guide template passes its canonical URL explicitly to the shared layout.
+- Product catalogue remains **25 guides / 100 product records**. All entries remain research drafts; no prices, ratings, reviews or hands-on tests were added.
+- Corrected product-level manufacturer references for Sony WF-1000XM6/XM5 and Apple AirPods Pro 3/AirPods 4 ANC; corrected Epson MoGo 4, EF21, EF-30 and CO-FH02 references; updated Apple Watch Series 12 and Ultra 4 names to match Apple's current comparison; corrected Garmin Forerunner 265 source; added direct Brother US product pages and model-specific Logitech/Synology references.
+- Added an explicit availability warning for Epson EF21 because Epson's US product page marks that listing discontinued. Added electrical safety/regional compatibility notes for the four Brother US printer variants because their cited manufacturer pages specify 110–120V AC; UK buyers must verify a UK-rated model.
+- Added 25 guide-specific `buyingChecklist` arrays covering product compatibility, model variants, total ownership cost, region/voltage, accessories, network/device support and other category-relevant purchase checks.
+- First test attempt on commit `68c79f9` found a TypeScript error: the inferred catalogue type did not include optional `updatedAt`. Corrected the guide template to use the existing `publishedAt` field in commit `f1ad24c`.
+- Latest combined quality workflow `43934409942` is still in progress at the Lighthouse audit stage at the time of this note. Astro checks, catalogue validation, static build, smoke/SEO/JSON-LD/affiliate checks and axe-core accessibility audit have completed without a reported failure; Lighthouse is not yet confirmed.
+- Cloudflare Pages preview check succeeded for the latest candidate commit; preview remains noindex and blocked in robots.txt. The separate Cloudflare Workers build check continues to fail and is not a Pages deployment.
+- Production `main` remains unchanged; PR #1 remains Draft/open/unmerged. No public site content, settings, DNS or production affiliate configuration was changed.
+- Next: complete Lighthouse verification; review/replace the legacy EF21 candidate before any public release; continue product-by-product UK/US variant and direct Amazon listing/ASIN verification; then review homepage discovery layout. No direct Amazon ASINs, prices or ratings should be added without verification and editorial approval.
