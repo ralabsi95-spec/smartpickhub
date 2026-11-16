@@ -104,3 +104,13 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Arlo: Essential Outdoor Camera 2K (2nd Generation) UK specifications/support.
 - Ring: Battery Doorbell 2K Plus (2nd Generation) official technical specifications.
 - Google: Nest Cam (outdoor or indoor, battery) official Google Store specifications.
+
+
+## 16 November 2026 – Catalogue QA and build safeguards
+- Confirmed GitHub Actions Astro Build Check completed successfully for the initial 12-product catalogue and JSON-LD commits (head SHA `8996cef91601bed3833fe8df2c1e6d1c894abffd`; two runs completed with `success`).
+- Independently reviewed current manufacturer/support references for Ring, Arlo, Google Nest Cam and EcoFlow RIVER 2. Updated the Ring listing to the current 2026 manufacturer name “Battery Doorbell 2K Plus”; Ring's support notice says the previous “Battery Doorbell Plus (2nd Gen)” name was changed without changing the device.
+- Updated JSON-LD ItemList order to `ItemListOrderAscending` to match the visible numbered product sequence.
+- Added `scripts/validate-catalogue.mjs` and wired it into `npm run validate` and the `prebuild` lifecycle. It checks the three expected draft guides, four products per guide, 12 total products, mandatory fields, source URLs, distinct non-ASIN model-name search phrases, and rejects price/rating/review/offer fields or premature editorial approval.
+- Expanded GitHub Actions CI to run `npm run check`, `npm run validate` and `npm run build` in sequence. The workflow triggered on the newest commits; final status must be confirmed separately.
+- Sources checked for current naming/specification context: Ring product-name change notice (August 2026); Ring Battery Doorbell 2K Plus product page; Arlo official product-lineup/spec-sheet pages; Google Nest Cam battery technical specifications; EcoFlow RIVER 2 UK specs and user manual.
+- Preview remains `noindex,nofollow` and blocked in `robots.txt`; WordPress, DNS, production domain, and `main` remain untouched. PR #1 remains unmerged.
