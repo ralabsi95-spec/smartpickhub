@@ -213,3 +213,13 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Gemini can be used as an optional reviewer of the Lighthouse JSON and smoke-test output. No Gemini API key, paid integration or automated code-writing permission has been added. Any future Gemini API use must rely on user-approved credentials stored as GitHub Secrets, with generated fixes requiring CI and human review.
 - Lighthouse audits provide lab measurements; they do not replace real-user Core Web Vitals, Search Console indexing data, manual usability testing or human accessibility review.
 - Current automated workflow has been updated; final success/failure on the newest commit remains to be verified.
+
+
+## 16 November 2026 – Lighthouse baseline review and accessibility refinements
+- Downloaded and inspected the successful Lighthouse artifact from workflow run #133 (artifact `smartpickhub-quality-reports`, 12 JSON reports; 5.2 MiB ZIP). Confirmed scores across homepage desktop/mobile and all guide/index pages: Performance 100 throughout; Best Practices 96 throughout; SEO 66 throughout; homepage Accessibility 100; guide/index Accessibility 95.
+- Lighthouse SEO 66 is expected for the isolated preview: `noindex,nofollow` and robots disallow are intentional preview safety controls. Do not remove them to improve a Lighthouse score; the preview must remain non-indexable.
+- Diagnosed the repeat Best Practices console error as a missing `/favicon.ico` request (404). Added a lightweight SVG favicon at `public/favicon.svg` and declared it in the shared layout.
+- Diagnosed the guide accessibility issue as manufacturer/source links inside muted text not being visually distinguishable except by colour. Added persistent underlining and offset to `.muted a` in global CSS.
+- Changes committed only to `automation/bootstrap`: CSS commit `28699a0dd9106db705771990af058ba205364ae6`; layout commit `e23027b359c1c9a508cf4edb01cb851f8fc635b4`; favicon commit `644471118292e19672232793a45fcf031401ec73`. A new CI run is required before these fixes can be marked verified.
+- No changes to WordPress, production, DNS, custom domains, or `main`; PR #1 remains unmerged. Preview noindex protections remain in place.
+- Next: inspect the new CI run and its Lighthouse artifact. Confirm the favicon 404 and guide link-in-text-block issue are gone; then add axe-core automated accessibility checks if the current workflow remains stable.
