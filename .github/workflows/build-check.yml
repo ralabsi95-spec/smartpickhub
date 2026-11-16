@@ -1,24 +1,60 @@
-name: Astro Build Check
+name: Astro Build and Quality Checks
 
 on:
   push:
     branches: [automation/bootstrap]
   pull_request:
     branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
-  build:
+  build-and-audit:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
       - run: npm install
       - run: npm run check
       - run: npm run validate
       - run: npm run keywords
       - run: npm run build
+      - name: Smoke-test generated site
+        run: npm run smoke
+      - name: Start local preview server
+        run: |
+          (npx --yes http-server dist -p 4321 -a 127.0.0.1 -s > /tmp/smartpickhub-preview.log 2>&1 &)
+          for attempt in {1..20}; do
+            if curl --fail --silent http://127.0.0.1:4321/ > /dev/null; then
+              echo "Preview server is ready"
+              exit 0
+            fi
+            sleep 2
+          done
+          cat /tmp/smartpickhub-preview.log
+          exit 1
+      - name: Lighthouse audit - mobile homepage
+        run: |
+          mkdir -p test-reports/lighthouse
+          npx --yes lighthouse http://127.0.0.1:4321/ --preset=desktop --only-categories=performance,accessibility,best-practices,seo --output=json --output-path=test-reports/lighthouse/home-desktop.json --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage"
+          npx --yes lighthouse http://127.0.0.1:4321/ --form-factor=mobile --only-categories=performance,accessibility,best-practices,seo --output=json --output-path=test-reports/lighthouse/home-mobile.json --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage"
+      - name: Lighthouse audit - guide pages
+        run: |
+          for page in /guides/ /guides/home-office-ergonomics-us-uk/ /guides/portable-power-travel-tech-us-uk/ /guides/smart-home-security-cameras-us-uk/ /guides/wifi-7-home-mesh-routers-us-uk/ /guides/usb-c-gan-chargers-us-uk/ /guides/webcams-video-calls-streaming-us-uk/ /guides/4k-usb-c-monitors-home-office-us-uk/ /guides/thunderbolt-usb-c-docking-stations-us-uk/ /guides/portable-ssd-external-storage-us-uk/; do
+            slug=$(echo "$page" | tr '/' '_' | sed 's/^_//;s/_$//')
+            npx --yes lighthouse "http://127.0.0.1:4321$page" --only-categories=performance,accessibility,best-practices,seo --output=json --output-path="test-reports/lighthouse/$slug.json" --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage"
+          done
+      - name: Upload automated test reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: smartpickhub-quality-reports
+          path: test-reports/
+          if-no-files-found: warn
+          retention-days: 14
