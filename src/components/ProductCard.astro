@@ -1,0 +1,18 @@
+---
+import { buildAffiliateUrl } from '../config/affiliate';
+interface Props {
+  name: string;
+  verdict?: string;
+  usIdentifier?: string;
+  ukIdentifier?: string;
+}
+const { name, verdict, usIdentifier, ukIdentifier } = Astro.props;
+---
+<article class="card">
+  <h3>{name}</h3>
+  {verdict && <p>{verdict}</p>}
+  <div class="product-actions">
+    {usIdentifier && <a class="button" href={buildAffiliateUrl('us', usIdentifier)} rel="sponsored nofollow noopener" target="_blank">Amazon US</a>}
+    {ukIdentifier && <a class="button secondary" href={buildAffiliateUrl('uk', ukIdentifier)} rel="sponsored nofollow noopener" target="_blank">Amazon UK</a>}
+  </div>
+</article>
