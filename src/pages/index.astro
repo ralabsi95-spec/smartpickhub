@@ -50,7 +50,7 @@ const productCount = guides.reduce((total, guide) => total + (guide.products?.le
             <div class="guide-card-top"><span class="guide-number">{String(index + 1).padStart(2, '0')}</span><span class="category-tag">{guide.category}</span></div>
             <h3><a href={`/guides/${guide.slug}/`}>{guide.title}</a></h3>
             <p>{guide.summary}</p>
-            <div class="guide-card-bottom"><span class="review-status">{guide.editorialStatus ?? 'Editorial review required before publication.'}</span><a class="card-arrow" href={`/guides/${guide.slug}/`} aria-label={`Read ${guide.title}`}>Explore <span aria-hidden="true">↗</span></a></div>
+            <div class="guide-card-bottom"><span class="review-status">{guide.editorialStatus ?? 'Editorial review required before publication.'}</span><a class="card-arrow" href={`/guides/${guide.slug}/`}>Read guide: {guide.title} <span aria-hidden="true">↗</span></a></div>
           </article>
         ))}
       </div>
