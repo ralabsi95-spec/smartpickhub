@@ -234,3 +234,11 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - npm audit output from an earlier Node 20 install reported 5 dependency vulnerabilities (1 low, 3 high, 1 critical), and engine warnings for packages requiring Node 22. This is not yet remediated or triaged. Node 22 was selected in CI for compatibility; inspect current dependency tree and audit output before changing package versions. Do not run `npm audit fix --force`.
 - No WordPress/live production, DNS, custom domain, or `main` changes. Preview remains noindex/nofollow. PR #1 remains unmerged.
 - Next: wait for CI on final branch HEAD; inspect axe JSON and Lighthouse outputs; remediate confirmed issues in development branch only; then assess dependency vulnerabilities and CI duplication/runtime before any release decision.
+
+## 16 November 2026 – axe-core Playwright context fix
+- Inspected failed GitHub Actions run #150 on head `9d1d1d1f6e181d376c34a9f74b8a8da5c91c76e6`. Astro check, catalogue validation (9 guides / 36 products), keyword generation, static build and smoke test all passed. The axe step failed before scanning because the script used `browser.newPage()`; `@axe-core/playwright` requires a page created from `browser.newContext()`.
+- Updated `scripts/accessibility-test.mjs` to create an explicit browser context, create the page from that context, and close both context and browser in cleanup.
+- Fix committed to `automation/bootstrap` as `801c7ec39209ab98b5f324cf0b0adfeecfab14cf`. CI runs #152 (push) and #153 (pull request) are running against this exact SHA; axe results and Lighthouse reports are not yet verified.
+- The same CI install reported 5 npm audit findings (1 low, 3 high, 1 critical). No automatic or force remediation was run; dependency tree and advisory details remain to be triaged.
+- No WordPress, production, DNS, custom domain or `main` changes. PR #1 remains unmerged; Cloudflare preview remains noindex/nofollow.
+- Next: inspect run #152/#153 and their axe JSON reports; triage npm audit advisories; then continue design, mobile UX, editorial quality and conversion improvements on the development branch only.
