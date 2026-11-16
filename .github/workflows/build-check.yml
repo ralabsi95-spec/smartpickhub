@@ -70,7 +70,7 @@ jobs:
           while IFS= read -r page; do
             slug=$(printf '%s' "$page" | tr '/' '_' | sed 's/^_//;s/_$//')
             npx --yes lighthouse "http://127.0.0.1:4321$page" --only-categories=performance,accessibility,best-practices,seo --output=json --output-path="test-reports/lighthouse/$slug.json" --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage"
-          done < <(node --input-type=module -e 'import fs from "node:fs"; const data=JSON.parse(fs.readFileSync("src/data/products.json","utf8")); console.log(["/guides/","/affiliate-disclosure/",...(data.guides ?? []).map(g => "/guides/"+g.slug+"/")].join("\\n"))')
+          done < <(node --input-type=module -e 'import fs from "node:fs"; const data=JSON.parse(fs.readFileSync("src/data/products.json","utf8")); const pages=["/guides/","/affiliate-disclosure/",...(data.guides ?? []).map(g => "/guides/"+g.slug+"/")]; for (const page of pages) console.log(page)')
       - name: Build consolidated JSON audit report
         if: always()
         run: node scripts/build-audit-report.mjs
