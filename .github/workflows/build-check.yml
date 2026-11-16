@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: smartpickhub-quality-${{ github.ref }}
+  group: smartpickhub-quality-final-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
