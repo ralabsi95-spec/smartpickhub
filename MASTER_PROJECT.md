@@ -184,3 +184,12 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Updated product data, keyword clusters, validator and this master log. No price/rating/review claims, no unverified ASINs and no hands-on testing claims.
 - Build validation is pending for the latest UI changes. Prior run 88 on the 24-product head passed; new 28-product and table changes must pass their own CI run.
 - Branch remains `automation/bootstrap`; PR #1 is not merged. Preview remains noindex. WordPress, DNS and production were not changed.
+
+## 16 November 2026 – Laptop docking station guide expansion
+- Added eighth research guide `thunderbolt-usb-c-docking-stations-us-uk` with CalDigit TS4, Anker Prime TB5 Docking Station, Kensington SD5780T and Plugable TBT4-UDZ.
+- Catalogue now contains 8 guides and 32 product records. New descriptions reference official manufacturer product/support specifications and explicitly explain host compatibility, display-output limits, Power Delivery and port selection.
+- Expanded computer-accessories keyword taxonomy for Thunderbolt 4/5, USB-C docks, dual-monitor docking and 2.5Gb Ethernet intent.
+- Updated catalogue validation to require eight guides and 32 products. Model-name search phrases are used independently for Amazon US and UK; no unverified ASIN or direct product URLs were fabricated.
+- Content remains editorial research draft. No current price, rating, availability or hands-on test claims were added. Human review is required before publication.
+- Latest known CI runs 100 and 101 passed for the preceding 28-product head. A fresh build check is required for this 32-product commit.
+- No WordPress, DNS, production or `main` changes; PR #1 remains unmerged; preview noindex policy remains in force.
