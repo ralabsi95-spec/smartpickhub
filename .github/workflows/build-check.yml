@@ -2,7 +2,7 @@ name: Astro Build and Quality Checks
 
 on:
   push:
-    branches: [automation/bootstrap]
+    branches: [automation/bootstrap, security/astro7-upgrade-assessment]
   pull_request:
     branches: [main]
   workflow_dispatch:
@@ -22,9 +22,13 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 22.23.4
       - name: Install project dependencies
         run: npm install
+      - name: Capture generated lockfile for review
+        run: |
+          mkdir -p test-reports
+          cp package-lock.json test-reports/package-lock.json
       - name: Capture dependency audit report
         if: always()
         run: |
