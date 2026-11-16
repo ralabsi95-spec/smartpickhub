@@ -37,7 +37,7 @@ try {
       .analyze();
 
     const report = { url: route, violations: results.violations, passes: results.passes.length, incomplete: results.incomplete.length };
-    const file = path.join('test-reports/axe', (route === '/' ? 'home' : route.replace(/^\\/+|\\/+$/g, '').replaceAll('/', '__')) + '.json');
+    const file = path.join('test-reports/axe', (route === '/' ? 'home' : route.split('/').filter(Boolean).join('__')) + '.json');
     fs.writeFileSync(file, JSON.stringify(report, null, 2));
     summaries.push({ route, passes: results.passes.length, violations: results.violations.length });
 
