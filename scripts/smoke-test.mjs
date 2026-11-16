@@ -22,14 +22,9 @@ function hasToken(value, token) {
 function writeReport(status) {
   fs.mkdirSync('test-reports', { recursive: true });
   fs.writeFileSync('test-reports/smoke-test.json', JSON.stringify({
-    status,
-    generatedAt: new Date().toISOString(),
-    scannedHtmlPages: htmlFiles.length,
-    guideCount: guides.length,
-    routes: routeResults,
-    robotsTxtDisallowAll,
-    errors,
-    warnings
+    status, generatedAt: new Date().toISOString(),
+    scannedHtmlPages: htmlFiles.length, guideCount: guides.length,
+    routes: routeResults, robotsTxtDisallowAll, errors, warnings
   }, null, 2));
 }
 
@@ -39,7 +34,6 @@ if (!fs.existsSync(root)) {
   console.error(errors.join('\n'));
   process.exit(1);
 }
-
 function walk(dir) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     const full = path.join(dir, entry.name);
@@ -60,14 +54,15 @@ for (const file of htmlFiles) {
   const label = path.relative(root, file).split(path.sep).join('/');
   const metaTags = [...html.matchAll(/<meta\b[^>]*>/gi)].map(match => match[0]);
   const linkTags = [...html.matchAll(/<link\b[^>]*>/gi)].map(match => match[0]);
+  const parts = label.split('/');
   const is404 = label === '404.html';
-  const guideMatch = label.match(/^guides\/([^/]+)\/index\.html$/);
-  const guide = guideMatch ? expectedGuideMap.get(guideMatch[1]) : null;
+  const guide = parts.length === 3 && parts[0] === 'guides' && parts[2] === 'index.html' ? expectedGuideMap.get(parts[1]) : null;
   const routeErrors = [];
   let amazonUsLinks = 0;
   let amazonUkLinks = 0;
 
-  if (!/<html\b[^>]*lang=/i.test(html)) routeErrors.push('missing HTML language attribute');
+  const htmlTag = html.match(/<html\b[^>]*>/i)?.[0] ?? '';
+  if (!attr(htmlTag, 'lang')) routeErrors.push('missing HTML language attribute');
   if (!/<title>[^<]{3,}<\/title>/i.test(html)) routeErrors.push('missing or empty title');
 
   const description = metaTags.find(tag => attr(tag, 'name').toLowerCase() === 'description');
@@ -77,16 +72,19 @@ for (const file of htmlFiles) {
     const robots = metaTags.find(tag => attr(tag, 'name').toLowerCase() === 'robots');
     if (!robots || !attr(robots, 'content').toLowerCase().includes('noindex')) routeErrors.push('preview page missing noindex');
     const canonical = linkTags.find(tag => hasToken(attr(tag, 'rel'), 'canonical'));
-    if (!canonical || !/^https:\/\//i.test(attr(canonical, 'href'))) routeErrors.push('missing HTTPS canonical URL');
+    if (!canonical || !attr(canonical, 'href').startsWith('https://')) routeErrors.push('missing HTTPS canonical URL');
   }
 
-  const jsonLdScripts = [...html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi)]
-    .filter(match => attr(match[0].split('>')[0] + '>', 'type').toLowerCase().includes('application/ld+json'));
+  const scriptTags = [...html.matchAll(/<script\b[^>]*>[\s\S]*?<\/script>/gi)].map(match => match[0]);
   const parsedJsonLd = [];
-  for (const match of jsonLdScripts) {
-    try { parsedJsonLd.push(JSON.parse(match[1])); }
+  for (const script of scriptTags) {
+    const openEnd = script.indexOf('>') + 1;
+    const openTag = script.slice(0, openEnd);
+    if (!attr(openTag, 'type').toLowerCase().includes('application/ld+json')) continue;
+    try { parsedJsonLd.push(JSON.parse(script.slice(openEnd, -9))); }
     catch { routeErrors.push('invalid JSON-LD syntax'); }
   }
+
   if (guide) {
     if (!parsedJsonLd.length) routeErrors.push('guide page missing JSON-LD structured data');
     const graph = parsedJsonLd.flatMap(item => Array.isArray(item['@graph']) ? item['@graph'] : [item]);
@@ -144,12 +142,9 @@ for (const file of htmlFiles) {
   for (const error of routeErrors) errors.push(label + ': ' + error + '.');
   routeResults.push({
     route: '/' + label.replace(/index\.html$/, ''),
-    isGuide: Boolean(guide),
-    jsonLdBlocks: parsedJsonLd.length,
-    amazonUsLinks,
-    amazonUkLinks,
-    status: routeErrors.length ? 'failed' : 'passed',
-    errors: routeErrors
+    isGuide: Boolean(guide), jsonLdBlocks: parsedJsonLd.length,
+    amazonUsLinks, amazonUkLinks,
+    status: routeErrors.length ? 'failed' : 'passed', errors: routeErrors
   });
 }
 
