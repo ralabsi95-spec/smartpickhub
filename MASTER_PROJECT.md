@@ -286,3 +286,16 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - npm audit: 5 findings (1 low, 3 high, 1 critical) across direct Astro and transitive esbuild, sharp, zod and zod-to-ts. The critical Astro advisory is GHSA-26w7-cxv4-gfx2 (remote code execution through AVIF image optimization; affected Astro versions below 7.2.8). The report indicates npm's proposed fix is Astro 7.4.12, a major-version jump from the current Astro 5 dependency range.
 - No `npm audit fix`, `--force`, dependency update or lockfile change was made. Treat this as a material dependency risk requiring a deliberate Astro 7 migration assessment and compatibility testing; do not apply a blind major upgrade.
 - The audit report is from run #166's installed dependency tree, not yet a refreshed audit after the latest catalogue additions. Re-run the audit against the current branch before release.
+
+
+## 16 November 2026 – Agent handoff and documentation reconciliation
+- Created `AGENT_HANDOFF.md` as the mandatory first-read operating guide for any future ChatGPT conversation, coding agent or contributor. It documents branch/environment safety, live WordPress preservation, catalogue state, affiliate-link rules, SEO/keyword caveats, CI/security risks, known documentation drift, ordered next actions and definition-of-done requirements.
+- Rewrote `README.md` to point to the handoff and master log, and to replace stale statements that the product catalogue is empty.
+- Current repository files confirm 10 research-draft guides and 40 product records; `scripts/validate-catalogue.mjs` enforces these counts.
+- Run #169 completed successfully for catalogue/code commit `5b29cb6df7186f7f62629ad58cb9f9f4ca4eb9ef`. The later documentation commits are not themselves represented by that run; verify the newest branch HEAD and matching Actions run before release.
+- Identified a QA coverage gap: `scripts/accessibility-test.mjs` and the Lighthouse guide-route list still enumerate only nine guide routes and omit the new air-fryer route. This is explicitly assigned as the next engineering task in `AGENT_HANDOFF.md`.
+- Identified a workflow runtime mismatch: `auto-publish.yml` uses Node 20 while `build-check.yml` uses Node 22. The scheduled workflow will not run from this feature branch until an approved default-branch change; do not merge solely to activate scheduling.
+- Security audit from Run #166 remains unresolved (5 findings, including critical Astro advisory GHSA-26w7-cxv4-gfx2). A fresh audit and compatibility-reviewed remediation plan are required; no force fix was run.
+- No WordPress/live site, `main`, PR merge, DNS, custom domain, production deployment, or editorial publication was changed or authorized.
+- Documentation commits: handoff `45c0d7d7c5a65cfaa9fa501f1c8fdce9d6569cf4`; README update recorded in Git history immediately before this entry.
+- **Next action:** make axe-core and Lighthouse route coverage derive dynamically from all guide slugs in `src/data/products.json`, then run CI and inspect the resulting artifact. Follow with fresh dependency audit and safe Astro upgrade assessment.
