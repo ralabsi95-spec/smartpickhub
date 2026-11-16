@@ -148,3 +148,13 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Updated catalogue validation to require five guides and 20 product records. All guides remain editorial drafts, RSS-excluded until approval.
 - Preview remains noindex and crawl-disallowed. No merge to main, no WordPress/DNS/custom-domain/production changes.
 - Latest GitHub Actions runs for the prior 16-product head completed successfully (runs 43874492597 and 43874483513). The 20-product expansion and validator updates trigger new checks; latest head must complete successfully before build-confirmed status is recorded.
+
+## 16 November 2026 – Scalable keyword research architecture
+- Added `src/data/keyword-clusters.json` with 12 buyer-intent topic clusters, 77 core topic phrases, US/UK market definitions and 10 commercial/informational modifiers.
+- Added `scripts/build-keyword-universe.mjs` and `npm run keywords`. The generator creates a deduplicated research-only opportunity inventory across market, topic, intent and audience combinations. Current taxonomy yields 13,846 distinct phrase/market opportunities.
+- These are candidate phrases only. Search volume, keyword difficulty, CPC and conversion data are intentionally null/not collected; no claim is made that these phrases have traffic or buyer demand.
+- Added keyword generation to GitHub Actions build checks. The generated inventory is not a page generator and does not create or publish URLs.
+- Strategy: grow towards a large, potentially million-scale opportunity map by adding verified topic seeds and real Search Console/keyword-tool evidence, not by multiplying near-duplicate pages. Group phrases by search intent and create one genuinely useful guide where multiple close variants share the same intent.
+- New content and products remain research drafts until human editorial approval. Product additions require exact model/variant verification, primary-source documentation, separate US/UK search phrases, and no fabricated ASINs, prices, ratings or availability.
+- Google policy guardrail: do not mass-publish unoriginal pages or create pages solely for keyword permutations. Google classifies large-scale low-value content as scaled content abuse; AI assistance is acceptable only when the result is genuinely useful and editorially controlled. Reference: https://developers.google.com/search/docs/essentials/spam-policies and https://developers.google.com/search/docs/fundamentals/using-gen-ai-content.
+- Preview remains noindex and crawl-disallowed. No WordPress, DNS, custom-domain, production or `main` changes. PR #1 remains open and unmerged.
