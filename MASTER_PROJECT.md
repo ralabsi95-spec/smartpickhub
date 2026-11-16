@@ -252,3 +252,12 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Homepage redesign commits: 17c87777fb76707e9b01c71f739992864514edbc and 0191b6cb6e1c657b54aedb004139a39428a26336. New CI runs #157/#158 were in progress at the time of this entry; do not mark redesign verified until the latest matching SHA completes and reports are reviewed.
 - Development branch only; PR #1 remains unmerged, main unchanged, preview remains noindex/nofollow, and no production/WordPress/DNS changes.
 - Next: verify runs #157/#158 (or the latest matching branch SHA); visually inspect homepage at desktop/mobile widths; then safely identify the five npm audit advisories and their dependency paths before considering targeted upgrades.
+
+## 16 November 2026 – Homepage accessibility correction and dependency audit reporting
+- Homepage redesign introduced nine guide-card links with an accessible label that did not match their visible text. axe-core run #157 correctly failed on `label-content-name-mismatch` for the nine links; all other 11 audited routes had zero violations.
+- Corrected the nine links in src/pages/index.astro so the visible link text includes the guide title and no conflicting aria-label is applied. Commit: 327f88ccd84bf60bd5400856da35d29d2496ee60.
+- Added a non-blocking npm audit JSON capture step to .github/workflows/build-check.yml, storing exact advisory and dependency-path information in test-reports/npm-audit.json and the existing artifact. This is diagnostic only; it does not auto-fix packages or weaken build checks. Commit: 268fb015ace339ad8d297cd33fa9e12fa3186050.
+- Latest validation for these changes is pending in CI runs #161/#162 and newer runs triggered by this workflow update. Do not mark the homepage redesign as fully verified until axe and Lighthouse pass on the matching latest SHA.
+- The previous confirmed baseline remains: runs #154/#155 passed; axe zero violations across 12 pages; Lighthouse 100 Performance / 100 Accessibility / 100 Best Practices / 66 SEO (SEO reduction is expected for noindex preview).
+- No production, WordPress, DNS, custom domain or main-branch changes. PR #1 remains unmerged; preview remains non-indexable.
+- Next: inspect the latest matching CI artifact for homepage axe results, mobile/desktop Lighthouse, and npm audit JSON; remediate only confirmed issues with safe targeted dependency changes.
