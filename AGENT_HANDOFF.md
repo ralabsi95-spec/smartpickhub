@@ -259,3 +259,15 @@ Do not ask the owner to repeat details already documented here.
 - **Preview and publication safeguards:** Cloudflare Pages development preview `https://8c4ac2dd.smartpickhub-preview.pages.dev/` deployed successfully. Verified `noindex, nofollow` and `robots.txt` `Disallow: /`. The separate Cloudflare Workers build check remains failing, as it did on the unchanged baseline; it is separate from the static Pages build. No live InfinityFree site, DNS, `main` branch or production publication was changed. PR #1 to `main` remains Draft/open/unmerged.
 - **Affiliate safeguards:** all product destinations are marketplace search URLs using existing US/UK tracking IDs. Product identifiers are model-name search phrases, not verified ASINs. No invented ASINs, prices, ratings, availability or hands-on testing claims. No Amazon product import.
 - **Next:** editorially verify exact regional variants and direct ASINs for the 56 new candidates; then improve guide-library search/filter navigation and internal linking. Do not publish the research drafts to `main` or the live site without user review and approval.
+
+
+## Latest verified state — 16 November 2026 (supersedes older counts above)
+- Development branch: `automation/bootstrap`, head `9051853d1164c03ba2e43920b641aca4c38a7abe` before the guide-library discovery change.
+- `main`: `2b7b9a82bd8a7fdf601b2add42d5612d04d3e3b4`; unchanged.
+- PR #1 remains Draft/open/unmerged. PR #2 Astro 7 and PR #3 100-product catalogue are merged into development.
+- Latest docs-only CI run #43920465690 passed on the branch head above.
+- Actual catalogue: **25 guides / 100 products**, all research drafts. This supersedes historical 10/40 counts and the old validator-count notes above. Validator dynamically counts the catalogue; do not hardcode 10/40.
+- Astro 7.4.12; committed lockfile; CI installs with `npm ci`. Final combined Astro7 + catalogue QA run #43918004027 passed with zero npm audit vulnerabilities.
+- Cloudflare Pages preview is isolated and noindex/nofollow with `robots.txt` disallowing crawling. Live WordPress on InfinityFree remains untouched.
+- Latest development improvement in progress: accessible client-side guide search and category filtering on the guide index. Verify the associated CI run before calling this change complete.
+- All product identifiers remain model-name Amazon search phrases, not verified direct ASINs. Do not publish, approve drafts, merge PR #1, or modify production without explicit owner approval.

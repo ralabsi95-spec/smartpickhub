@@ -164,3 +164,17 @@ main { min-height: 70vh; padding-block: 2.5rem; }
   .guide-card { transition: none; }
   .guide-card:hover { transform: none; }
 }
+
+
+/* Buying-guide library discovery controls */
+.guide-library > h1 { margin: 0 0 .4rem; font-size: clamp(2rem, 4vw, 2.75rem); letter-spacing: -.04em; }
+.guide-filters { display: grid; grid-template-columns: minmax(0, 2fr) minmax(220px, 1fr); gap: 1rem; margin: 1.5rem 0 .65rem; padding: 1.15rem; border: 1px solid #dbe3ee; border-radius: 1rem; background: #fff; }
+.guide-filters label { display: block; margin-bottom: .4rem; color: #334155; font-size: .875rem; font-weight: 750; }
+.guide-filters input, .guide-filters select { width: 100%; min-height: 46px; padding: .7rem .8rem; border: 1px solid #94a3b8; border-radius: .6rem; background: #fff; color: #172033; font: inherit; }
+.guide-filters input:focus-visible, .guide-filters select:focus-visible { outline: 3px solid #93c5fd; outline-offset: 2px; border-color: #155eef; }
+.guide-results-count { margin: .7rem 0 1rem; color: #475569; font-size: .9rem; font-weight: 650; }
+.guide-card[hidden] { display: none; }
+.guide-no-results { margin: 1rem 0; padding: 1.2rem; border: 1px dashed #94a3b8; border-radius: .85rem; background: #fff; color: #475569; }
+@media (max-width: 640px) {
+  .guide-filters { grid-template-columns: 1fr; padding: .9rem; }
+}

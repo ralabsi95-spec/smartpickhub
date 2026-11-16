@@ -433,3 +433,13 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - **Preview and publication safeguards:** Cloudflare Pages development preview `https://8c4ac2dd.smartpickhub-preview.pages.dev/` deployed successfully. Verified `noindex, nofollow` and `robots.txt` `Disallow: /`. The separate Cloudflare Workers build check remains failing, as it did on the unchanged baseline; it is separate from the static Pages build. No live InfinityFree site, DNS, `main` branch or production publication was changed. PR #1 to `main` remains Draft/open/unmerged.
 - **Affiliate safeguards:** all product destinations are marketplace search URLs using existing US/UK tracking IDs. Product identifiers are model-name search phrases, not verified ASINs. No invented ASINs, prices, ratings, availability or hands-on testing claims. No Amazon product import.
 - **Next:** editorially verify exact regional variants and direct ASINs for the 56 new candidates; then improve guide-library search/filter navigation and internal linking. Do not publish the research drafts to `main` or the live site without user review and approval.
+
+
+## Session update — 16 November 2026 (guide-library discovery improvement)
+- Verified the latest docs-only CI run **#43920465690** completed successfully on commit `9051853d1164c03ba2e43920b641aca4c38a7abe`.
+- Verified current development branch head is `9051853d1164c03ba2e43920b641aca4c38a7abe`; `main` remains at `2b7b9a82bd8a7fdf601b2add42d5612d04d3e3b4`.
+- PR #1 remains Draft/open/unmerged. PR #2 (Astro 7) and PR #3 (100-product catalogue) are merged into `automation/bootstrap`.
+- Current source-of-truth catalogue is **25 research-draft guides / 100 product records**. Older references in this document to 10 guides / 40 products are historical and superseded by the 16 Nov 2026 milestone above.
+- Implemented a guide-library search field and category selector on `src/pages/guides/index.astro`. Search covers guide title, category and summary; category choices are generated from catalogue data; result count and no-results message are announced accessibly. Added responsive styling in `src/styles/global.css`.
+- This change is development-only and awaits the full GitHub Actions quality workflow. No production publication, live WordPress change, DNS change, or merge to `main`.
+- Next: inspect CI and preview behaviour; then review regional product variants and direct Amazon listings for the new catalogue entries. Keep all guides unapproved until editorial review.
