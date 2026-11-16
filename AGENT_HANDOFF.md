@@ -70,7 +70,7 @@
 - `scripts/validate-catalogue.mjs` currently expects 10 guides and 40 products.
 - Latest catalogue build run checked during this handoff: [Run #169](https://github.com/ralabsi95-spec/smartpickhub/actions/runs/43891906353), conclusion **success**, for commit `5b29cb6df7186f7f62629ad58cb9f9f4ca4eb9ef`. A later documentation-only commit changed the branch head; this run validates the catalogue/code commit, not every later docs-only commit.
 - Earlier Run #166 quality artifact: axe-core found zero violations on all 12 configured routes, but the homepage had two incomplete checks needing manual review. Lighthouse reported Performance 100, Accessibility 100, Best Practices 100 and SEO 66. SEO 66 is expected because preview indexing is deliberately blocked.
-- Important coverage gap: `scripts/accessibility-test.mjs` and the guide-page Lighthouse route list in `.github/workflows/build-check.yml` still enumerate only the first 9 guides. They do **not** yet include the new air-fryer guide (and may omit the newest guide routes). Make these checks derive routes from `src/data/products.json` or update them explicitly before treating QA coverage as complete for all 10 guides.
+- QA coverage implementation: `scripts/accessibility-test.mjs` now loads guide slugs from `src/data/products.json`; Lighthouse now dynamically audits the guide index, affiliate disclosure and every catalogue guide. This is implemented but not yet CI-confirmed.
 - The latest audit artifact reviewed was from Run #166, not the newest dependency tree. Re-run `npm audit --json` on current branch and inspect the new report.
 
 ### Dependency security – unresolved
@@ -92,10 +92,10 @@ These issues must be reconciled; do not assume old prose is current:
 
 ## 4. Next actions – recommended order
 
-1. **Re-establish branch truth:** fetch current `automation/bootstrap` HEAD, PR #1 state and latest Actions runs. Read this file and `MASTER_PROJECT.md`.
-2. **Correct documentation drift:** update README to point here and state the 10-guide / 40-product draft status.
-3. **Close QA coverage gap:** make axe-core and Lighthouse test every guide route from the catalogue, including `air-fryers-us-uk`; run CI and inspect all reports.
-4. **Fresh dependency audit:** regenerate `npm audit --json`; verify advisory IDs and dependency paths; assess a compatible Astro upgrade in a separate safe change with lockfile and full CI. No force fix.
+1. **Verify dynamic QA coverage:** inspect CI on the newest head; confirm axe-core and Lighthouse cover all 10 guide routes plus the guides index and disclosure page.
+2. **Fresh dependency audit:** inspect the newest `npm audit --json` artifact; verify advisory IDs, fixed versions and dependency paths; assess a compatible Astro upgrade separately. No force fix.
+3. **Reconcile workflow runtime:** assess Node 20 vs 22 in `auto-publish.yml`; keep automation draft-only and do not enable scheduled production actions.
+4. **Manual visual review:** inspect preview desktop/mobile and key guide templates; record observations before UI changes.
 5. **Manual visual review:** inspect Cloudflare preview at desktop and mobile sizes, including homepage, guides index, all guide pages, affiliate disclosure, navigation, tables and Amazon link labels. Automated tests do not replace visual review.
 6. **Editorial verification:** verify exact US/UK product SKUs and marketplace search destinations, manufacturer claims, regional electrical differences and current listings. Keep drafts unapproved until owner review.
 7. **Marketing/measurement:** plan Search Console and analytics integration only after owner authorizes accounts/consent/privacy choices. Distinguish real visitors from owner/QA traffic. Build Pinterest/social distribution only around approved guide URLs and assets.
