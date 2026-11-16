@@ -7,7 +7,7 @@ const guides = data.guides ?? [];
   <section class="hero">
     <span class="pill">Buying Guides for US & UK Shoppers</span>
     <h1>Clear Buying Guides.<br />Smarter Product Choices.</h1>
-    <p class="muted">Practical, research-led comparisons for shoppers in the United States and United Kingdom. Where available, each product guide provides separate Amazon US and Amazon UK links so you can choose your local store.</p>
+    <p class="muted">Practical, research-led comparisons for shoppers in the United States and United Kingdom. Each product guide provides separate Amazon US and Amazon UK links so you can choose your local store.</p>
   </section>
   <section>
     <h2>Latest Buying Guides</h2>
@@ -18,13 +18,14 @@ const guides = data.guides ?? [];
             <span class="pill">{guide.category}</span>
             <h3><a href={`/guides/${guide.slug}/`}>{guide.title}</a></h3>
             <p class="muted">{guide.summary}</p>
+            <p class="disclosure">{guide.editorialStatus ?? 'Editorial review required before publication.'}</p>
           </article>
         ))}
       </div>
     ) : (
       <div class="card">
         <h3>Buying guides are being prepared</h3>
-        <p class="muted">Guides for both US and UK shoppers are being researched. Existing WordPress content remains separate while the new publishing workflow is reviewed. New guides will appear here only after editorial approval.</p>
+        <p class="muted">Guides for both US and UK shoppers are being researched. Existing WordPress content remains separate. New guides appear here in preview for editorial review before approval.</p>
       </div>
     )}
   </section>
