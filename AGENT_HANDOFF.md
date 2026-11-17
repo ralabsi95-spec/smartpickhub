@@ -440,3 +440,21 @@ Continue product catalogue audit (regional US/UK models, official sources, obsol
 - PR #1 remains Draft/open/unmerged; do not merge. Production Pages project `smartpickhub` remains disconnected and untouched. No production deployment, DNS/WordPress change, public publication, indexing, Amazon product import or guide approval. InfinityFree remains excluded permanently.
 - Catalogue remains 25 guides / 100 products, all research drafts; zero approved. RSS remains intentionally empty until approval.
 - Next: verify any CI run triggered by the continuity-doc commit, then continue the regional model/source/lifecycle audit on `automation/bootstrap` only. Do not remove noindex/robots or connect production without explicit owner approval.
+
+
+## 17 November 2026 — Authoritative design and CI checkpoint (supersedes older pending-status notes)
+- Current development branch head at the time of this checkpoint: `81d49bc4c6f69b9631c1a8a3cbbefae4c33194fa` — `Refresh friendly visual design and clarify paid affiliate links`.
+- Design batch changed `src/styles/global.css`, `src/pages/index.astro`, and `src/pages/guides/[slug].astro`: friendly teal/green, blue and coral palette; softer backgrounds, cards, buttons and navigation; focus-visible and reduced-motion support; mobile sizing; explicit “Affiliate links (paid links)” label above Amazon actions; clarified homepage count wording to “Product entries in our research library”.
+- Immutable Cloudflare Pages preview for this exact commit: https://fa10e958.smartpickhub-preview.pages.dev/ . The preview deployment check succeeded and the preview content fetch confirmed homepage, 25-guide index, paid-link label on a guide, and noindex/nofollow metadata.
+- GitHub Actions run #372 (ID `44095400567`) completed with conclusion `success`. All 17 workflow steps completed successfully, including locked dependency installation/audit, Astro checks, catalogue/affiliate validation, keyword generation, static build, smoke tests, axe-core accessibility audit on all catalogue routes, Lighthouse desktop/mobile homepage and guide/disclosure/every-guide sweep, consolidated JSON audit report and report artifact upload.
+- Quality/security artifact: `smartpickhub-quality-reports`, artifact ID `14334152208`, created 17 Nov 2026; expires 1 Dec 2026. The artifact exists; its full report contents have not yet been downloaded/reviewed in this checkpoint.
+- CI success means the tested checks passed; it does not constitute owner visual approval, production readiness, product editorial approval, or a launch authorization.
+- Current catalogue remains 25 guides / 100 products, all research drafts; zero approved for publication. Preview remains `noindex,nofollow` and `robots.txt` remains crawl-blocked.
+- Preview exact commit URL is confirmed. Do not assume the stable preview hostname has the same latest build without checking it.
+- PR #1 remains draft/open/unmerged. Production Pages project `smartpickhub` remains disconnected and untouched. No production deployment, DNS change, WordPress migration, publication, indexing, or product import occurred.
+- Hosting decision remains Cloudflare Pages target `https://smartpickhub.pages.dev/`; the legacy InfinityFree host is permanently excluded. Paid custom domain remains deferred.
+- Next: inspect the visual design on mobile and desktop with owner feedback; review Lighthouse/axe report details rather than relying only on pass status; verify stable preview against the immutable build; then continue catalogue source/lifecycle audit and pre-launch checklist. Do not connect production, merge PR #1, remove noindex/robots, or publish without explicit approval.
+
+
+## Continuity pointer — 100-step plan
+- Read `PROGRESS_100_STEPS.md` for the authoritative execution checklist and current step counts. It records completed work separately from partial and planned work; do not treat the 100-step roadmap as 100 completed tasks.
