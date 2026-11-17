@@ -371,3 +371,12 @@ Do not ask the owner to repeat details already documented here.
 - CI run #325 on `26f9c05` was cancelled during Chromium installation after build, catalogue validation and smoke tests passed. The subsequent run #328 on `f8a9ade` progressed through Chromium, axe-core, homepage Lighthouse and was still running the per-guide Lighthouse sweep at last poll. Do not treat it as completed yet. A fresh run for `72b5eb8` had not appeared at the time of this note.
 - PR #1 remains open/Draft/unmerged. No production, WordPress, DNS, publication or indexing changes. noindex and robots protections remain enabled.
 - Next: confirm CI on `72b5eb8`, check the newest Pages deployment, then continue reviewing remaining catalogue sources and legacy product candidates.
+
+
+## 17 November 2026 — Final search phrase validation
+- Re-scanned all 100 `uk_identifier` fields after preview review. Found one remaining semicolon/caveat in Brother MFC-L3780CDW's UK search phrase and removed it; the unconfirmed UK counterpart note remains in `availabilityNote`. Data commit: `d93e14b544a585195246c8e8830e70f4fc0c0295`.
+- Final catalogue check: 100 products; zero UK search phrases contain semicolon-delimited editorial caveats. The eight DEWALT/Roborock queries and Brother MFC-L3780CDW phrase are now clean search terms; caveats remain separately visible in the product notes.
+- The successful Pages preview for `f8a9ade` was inspected across homepage, guide index and three changed guide pages. The new search-cleanup commit and latest documentation head still require their own completed CI and Pages preview checks.
+- CI run #328 on `f8a9ade` was ultimately cancelled before final Lighthouse sweep completed; run #334 on later docs head was still in progress at last poll. Neither is counted as a full pass.
+- PR #1 remains open/Draft/unmerged. No production/WordPress/DNS changes, public publishing or indexing changes; noindex/robots protections remain enabled.
+- Next: verify a full successful quality workflow and Pages preview for the final head, then continue source-level review of the remaining 100-record catalogue and resolve the Cloudflare Workers integration only if its intended role is clarified.
