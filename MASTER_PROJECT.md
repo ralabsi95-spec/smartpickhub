@@ -779,3 +779,24 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Documentation commits: `8be21b801d82f5115cf7e04dba677a30b6cd78a8` (handoff) and `c7f2c4334bd4e5023d35d92508a3c26ec94a02a3` (roadmap).
 - PR #1 remains open, Draft and unmerged. Preview remains noindex/nofollow and crawl-blocked. No production deployment, DNS, WordPress, publication or indexing changes.
 - Remaining risks: latest npm audit artifact still needs review; product photo count remains zero; Commons candidate research has not yet run; 71 identical US/UK search phrases need manual regional review; visual acceptance remains outstanding.
+
+
+## 17 November 2026 — Full QA results and image-delivery optimization
+- CI run #453 / ID `44113630229` completed successfully on commit `9325de673ec932b95e40ba7a72d0b37436c4b257`. It covered 28 axe routes and 29 Lighthouse page profiles and uploaded artifact `smartpickhub-quality-reports` (artifact ID `14342661087`).
+- Reviewed the artifact rather than relying on the green status alone:
+  - Catalogue: 25 guides / 100 products; validation passed.
+  - Generated pages/SEO/JSON-LD/affiliate smoke tests: passed with no errors or warnings.
+  - axe-core: zero violations across 28 routes; 29 incomplete checks remained (28 gradient-related colour-contrast checks and one ARIA group-label check).
+  - Lighthouse: Accessibility 100 and Best Practices 100 across the audited pages. Performance was 100 on homepage desktop/mobile and all guide/detail pages except the guide index, which scored 76. SEO was 66–69 because the preview is intentionally noindex and crawl-blocked.
+  - npm audit: zero reported vulnerabilities in this run.
+- Lighthouse identified oversized PNG covers as a major image-delivery opportunity on the guide index, along with unused CSS and cache-lifetime opportunities.
+- Follow-up performance/accessibility changes on the development branch:
+  - `scripts/generate-pinterest-images.mjs` now keeps original 1000×1500 PNG Pinterest artwork and also generates 720×1080 WebP derivatives for site display.
+  - Homepage, guide index and guide detail cover images now use WebP for on-page display; Open Graph/social/Pinterest image paths continue to use PNG.
+  - `scripts/smoke-test.mjs` validates that each guide has a valid 720×1080 WebP cover and references it.
+  - Guide filter wrapper now has `role="group"` so its accessible label is associated with a valid role.
+  - Added Cloudflare Pages `public/_headers` cache policies: hashed Astro assets are immutable for one year; editorial images receive a one-day freshness window with stale-while-revalidate.
+- These follow-up changes are not yet confirmed by CI. Run #470 / ID `44115423685` was pending for commit `459b4481605558da5fcc265057f77de4e2f3563c`; docs commits after that may have triggered a newer run. Verify latest PR head/run before declaring them complete.
+- Roadmap checklist tally is 52 completed, with step 48 and steps 68–69 partial. Remaining steps include manual contrast/visual review, full product lifecycle/regional audit, image rights research, analytics and controlled release.
+- No product photos have been added; Commons research remains unexecuted. The 71 identical US/UK search phrases remain a manual review queue.
+- PR #1 remains Draft/open/unmerged; preview protections remain in place. No production deployment, DNS or WordPress changes, public publishing or indexing changes.
