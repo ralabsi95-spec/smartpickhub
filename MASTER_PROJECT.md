@@ -2,18 +2,17 @@
 
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Implementation branch:** `automation/bootstrap`  
-**Status:** Astro preview deployed on isolated Cloudflare Pages; development branch only, not merged to main and not approved for production deployment.  
+**Status:** Astro MVP production origin approved as https://smartpickhub.pages.dev; development branch only, not merged to main and still protected by noindex pending launch approval.  
 **Updated:** 16 November 2026
 
 ## Project purpose
 Build a trustworthy English-language affiliate buying-guide property for US and UK shoppers. Prioritise useful original guidance, verified product information, organic discovery and measurable conversions.
 
 ## Existing live property – preserve
-- Current site: https://smartpickhub.infinityfree.me/
-- Current platform: WordPress on InfinityFree, Astra theme.
-- Existing SmartPickHub WordPress plugins and 25 candidate products are not migrated or re-imported by this repository bootstrap.
-- Existing WordPress site remains the live reference until a separately approved migration plan and backup are confirmed.
-- Do not change, delete, redirect or replace the live WordPress site without explicit approval and a verified backup.
+- Approved MVP production URL: https://smartpickhub.pages.dev/ (Cloudflare Pages + Astro).
+- The paid custom domain (.com / .org) is deferred to phase two, after the MVP produces measurable results.
+- The legacy WordPress installation is outside this deployment plan and has not been modified, migrated, redirected or replaced by this repository bootstrap.
+- Do not change or migrate the legacy WordPress installation without a separately approved plan and verified backup.
 
 ## Affiliate identifiers
 - Amazon US: `smartpickh0bc-20` (source-provided; verify account status before use).
@@ -25,7 +24,7 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 ## Architecture in this branch
 - Astro static site foundation.
 - GitHub repository as source control and project record.
-- Isolated Cloudflare Pages preview: https://smartpickhub-preview.pages.dev/ (project `smartpickhub-preview`, branch `automation/bootstrap`). This is a preview only; no custom domain or production domain mapping.
+- Isolated Cloudflare Pages preview: https://smartpickhub-preview.pages.dev/ (project `smartpickhub-preview`, branch `automation/bootstrap`). This remains separate from the approved MVP production origin.
 - Current Astro catalogue contains 10 research-draft guides and 40 product records; none is approved for publication. Existing WordPress products were not imported and must not be duplicated.
 - RSS endpoint is generated only from guides explicitly approved for publication; it may remain empty while all guides are drafts.
 - JSON-LD is limited to Article metadata; no unverified Product/Review ratings are emitted.
@@ -421,7 +420,7 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Created isolated content branch `content/catalogue-100-astro7` from the updated Astro 7 development branch and migrated the 100-product / 25-guide research catalogue from the separate content QA branch.
 - Catalogue includes 100 unique products across 25 guides; 56 new product records across 14 new guides were added. All entries remain unapproved research drafts. Amazon destinations remain model-name search links with the existing US/UK tracking IDs; no unverified ASINs, prices, ratings, stock claims or hands-on test claims.
 - Prior Astro 5-based content-branch QA passed, but its npm audit showed 5 findings (1 low, 3 high, 1 critical). To avoid carrying those dependencies forward, the catalogue was transplanted onto the now-upgraded Astro 7 development branch with the committed zero-vulnerability lockfile.
-- Cloudflare Pages preview for the 100-product branch was deployed successfully; it is noindex/nofollow and `robots.txt` disallows all. No live InfinityFree deployment, production DNS change, public content publication or Amazon product import.
+- Cloudflare Pages preview for the 100-product branch was deployed successfully; it is noindex/nofollow and `robots.txt` disallows all. No legacy-host deployment, production DNS change, public content publication or Amazon product import.
 - **Next:** create a draft PR to `automation/bootstrap` and run the full QA again on the combined Astro 7 + 100-product tree. Review all 25 guides before editorial approval or any public publication.
 
 
@@ -430,7 +429,7 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - **100-product milestone completed on development:** PR #3 merged as `bacd8bf08add008654461d3c4f582ad3d3fad256`. Current catalogue is 25 guides / 100 unique product records (56 new products across 14 new guides). All new guides remain `Research draft — requires human review before publication`.
 - **Combined Astro 7 + 100-product QA passed before merge:** run #43918004027. `npm ci`, audit, Astro checks, catalogue validation, build, smoke, axe-core and Lighthouse all passed. `npm audit`: zero vulnerabilities / 362 dependency records. Catalogue validator: 25 guides, 100 products, 100 US and 100 UK Amazon URL constructions, zero validation errors. Smoke: 29 HTML pages, zero errors. axe: 28 routes, zero confirmed violations, one incomplete homepage contrast check. Lighthouse: 29 reports, all 100 Performance / Accessibility / Best Practices; SEO 66 due noindex. Preview safety verified.
 - **Post-merge verification:** run #43919470924 was triggered by the development-branch update and was still running at the time of this note; earlier combined PR QA #43918004027 already passed on the exact merged commit.
-- **Preview and publication safeguards:** Cloudflare Pages development preview `https://8c4ac2dd.smartpickhub-preview.pages.dev/` deployed successfully. Verified `noindex, nofollow` and `robots.txt` `Disallow: /`. The separate Cloudflare Workers build check remains failing, as it did on the unchanged baseline; it is separate from the static Pages build. No live InfinityFree site, DNS, `main` branch or production publication was changed. PR #1 to `main` remains Draft/open/unmerged.
+- **Preview and publication safeguards:** Cloudflare Pages development preview `https://8c4ac2dd.smartpickhub-preview.pages.dev/` deployed successfully. Verified `noindex, nofollow` and `robots.txt` `Disallow: /`. The separate Cloudflare Workers build check remains failing, as it did on the unchanged baseline; it is separate from the static Pages build. No legacy WordPress installation, DNS, `main` branch or production publication was changed. PR #1 to `main` remains Draft/open/unmerged.
 - **Affiliate safeguards:** all product destinations are marketplace search URLs using existing US/UK tracking IDs. Product identifiers are model-name search phrases, not verified ASINs. No invented ASINs, prices, ratings, availability or hands-on testing claims. No Amazon product import.
 - **Next:** editorially verify exact regional variants and direct ASINs for the 56 new candidates; then improve guide-library search/filter navigation and internal linking. Do not publish the research drafts to `main` or the live site without user review and approval.
 
@@ -479,7 +478,7 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Confirmed preview protection in `src/layouts/Layout.astro` (`<meta name="robots" content="noindex, nofollow">`) and `public/robots.txt` (`Disallow: /`). The shared layout footer includes the official Amazon Associate disclosure: “As an Amazon Associate I earn from qualifying purchases.”
 - Verified latest full CI run for the image-generator/catalogue code commit: **Run #43943510553**, workflow “Astro Build and Quality Checks”, branch `automation/bootstrap`, commit `76105fa678a952e960d3de9843fd76f6efe5d7c8`, conclusion **success**. All workflow steps completed successfully: locked `npm ci`, Astro checks, catalogue/affiliate validation, keyword generation, static build, smoke/SEO/JSON-LD checks, axe-core accessibility audit, homepage desktop/mobile Lighthouse, Lighthouse for guide index/disclosure/all 25 guide pages, consolidated report and artifact upload. Report artifact: `smartpickhub-quality-reports` (ID `14264617240`).
 - The later documentation-only branch-head commit `0b543fe...` did not trigger a new build; it has the successful full run above as its tested parent code commit. A separate PR-triggered run #43943521844 was cancelled; it does not negate the successful push run #43943510553.
-- No source files, product records, tracking IDs, production settings, `main`, live InfinityFree site, DNS or publication state were changed in this verification. Only this project log is updated.
+- No source files, product records, tracking IDs, production settings, `main`, legacy WordPress installation, DNS or publication state were changed in this verification. Only this project log is updated.
 - Status: the 100-product catalogue and generated-cover code have a successful full CI quality run. Do not describe this as proof that all product facts/listings have been editorially verified or that the site is “100% stable” in production. Preview remains noindex and all catalogue content remains research draft/unapproved.
 - Next: visually inspect the current Cloudflare Pages preview and representative generated covers; review the 25 guides and verify exact US/UK retailer variants/direct ASINs before any publication. Do not merge PR #1 to `main`, remove noindex, or publish without explicit approval.
 
@@ -497,7 +496,7 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Updated `src/pages/guides/index.astro` on `automation/bootstrap`: grouped card content, added a clear “Read guide” link, retained category labels, summaries and editorial-review status, and preserved the existing search/category filtering behavior.
 - Updated `src/styles/global.css`: explicit three-column desktop / two-column tablet / single-column narrow-screen grid; fixed-height cover stage with `object-fit: contain` to preserve the complete original 1000×1500 artwork; constrained title sizing and wrapping; clamped summaries to three lines; aligned status and action at the card bottom; added reduced-motion handling.
 - No guide/product records, cover source images, affiliate URLs, tracking IDs, SEO/noindex controls or publication statuses were changed.
-- No merge, no production deployment, no WordPress, DNS or live InfinityFree changes. PR #1 remains unmerged unless separately verified.
+- No merge, no production deployment, no WordPress, DNS or live legacy hosting provider changes. PR #1 remains unmerged unless separately verified.
 - Validation status: source edits committed to the development branch; CI and visual preview validation are pending. Do not call the redesign complete until the new build passes and the preview is inspected at mobile, tablet and desktop widths.
 - Next: inspect the latest GitHub Actions run and the updated Cloudflare Pages preview; adjust only if visual/QA evidence shows a remaining issue.
 
@@ -518,3 +517,15 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Extended `scripts/smoke-test.mjs` to verify the built RSS is RSS 2.0, includes Media RSS/Atom namespaces and self-link, has correct approved-item count, HTTPS guide links and both image tags, and never contains draft items.
 - Adjusted the existing GitHub Actions concurrency group to separate push-triggered and pull-request-triggered quality runs. Previously the two events shared one group and cancelled each other during rapid commits; the change allows both independent QA runs to complete.
 - Latest implementation commits include RSS feed `d10069d`, Pinterest verification metadata `51bd6e8`, IndexNow notifier `af00231`, smoke-test RSS validation `32ad2a8`, and CI concurrency fix `c98bc02`. All are on `automation/bootstrap`; no merge/deploy.
+
+
+## 17 November 2026 — Approved MVP production origin
+- Owner explicitly approved **https://smartpickhub.pages.dev/** as the first production/MVP URL on Cloudflare Pages.
+- This is the canonical production origin for Astro. The isolated development preview remains **https://smartpickhub-preview.pages.dev/** and must remain noindex/blocked from crawling.
+- The paid custom domain (.com or .org) is phase two only, after the MVP demonstrates initial results; do not configure or purchase it now.
+- `astro.config.mjs` selects the approved production origin by default and the isolated preview origin when `DEPLOYMENT_ENV=preview` or Cloudflare Pages builds a non-main branch. `PUBLIC_SITE_URL` can explicitly override the site URL for a controlled build.
+- `scripts/ping-indexnow.mjs` is now hard-allowlisted to the exact origin `https://smartpickhub.pages.dev`; arbitrary domains, preview subdomains, commit-specific Pages URLs, HTTP, path variants and other hosts are rejected. The existing noindex and robots.txt guards remain mandatory, so no IndexNow request can be sent while launch protection is active.
+- Preview protection remains enabled: shared layout emits `noindex, nofollow` and `public/robots.txt` disallows all crawlers. Do not remove either until the owner explicitly approves the first public release after reviewing the initial content batch.
+- No IndexNow API request, Pinterest feed connection, Google Search Console submission, DNS change, custom-domain purchase, PR merge or production deployment was performed as part of this configuration update.
+- Historical references to the previous host have been removed from the active deployment plan; the legacy WordPress installation remains outside this Astro MVP plan and is not modified.
+- Next: confirm the latest CI run passes, then separately prepare Cloudflare Pages production deployment settings for the approved MVP origin while preserving noindex until explicit launch approval.
