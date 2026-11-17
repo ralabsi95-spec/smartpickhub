@@ -1180,7 +1180,7 @@
           "us_identifier": "Roborock Qrevo Edge 2 Robot Vacuum and Mop",
           "uk_identifier": "Roborock Qrevo Edge 2 UK robot vacuum mop",
           "pros": [
-            "Official catalogue highlights a dual anti-tangle system and updated mopping features.",
+            "Roborock UK lists up to 25,000 Pa HyperForce suction and a dual anti-tangle system for this exact UK model.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
           ],
           "cons": [
@@ -1188,17 +1188,17 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A candidate for households comparing anti-tangle design and automated mop care.",
-          "source": "https://uk.roborock.com/pages/roborock-store",
-          "sourceNote": "UK official store lists Qrevo Edge 2. Confirm the exact model suffix, dock bundle, plug and warranty for the UK listing. Official UK range: https://uk.roborock.com/pages/roborock-store.",
-          "availabilityNote": "Regional product names and dock bundles can differ. Only buy the exact UK model shown by Roborock UK; verify the dock, voltage/plug, app region, consumables and warranty. This entry is not confirmation that a US model is sold unchanged in the UK."
+          "source": "https://uk.roborock.com/products/roborock-qrevo-edge-2-hyperforce-suction-dual-anti-tangle-system",
+          "sourceNote": "Exact UK Qrevo Edge 2 product page verified. Roborock UK advertises up to 25,000 Pa HyperForce suction and a dual anti-tangle system. Confirm the exact dock/accessory bundle, plug, warranty and app-region terms on the UK listing before ordering.",
+          "availabilityNote": "The exact Qrevo Edge 2 model is listed by Roborock UK. Verify the precise bundle, included accessories, plug, consumables and UK warranty on the retailer listing; do not assume every US package is identical."
         },
         {
           "name": "Roborock Qrevo 2 Pro Robot Vacuum and Mop",
           "bestFor": "Buyers seeking an automated dock and carpet-aware mop handling.",
           "us_identifier": "Roborock Qrevo 2 Pro Robot Vacuum and Mop",
-          "uk_identifier": "Roborock Qrevo 2 Pro UK robot vacuum mop",
+          "uk_identifier": "Roborock Qrevo 2 Pro Robot Vacuum and Mop",
           "pros": [
-            "Official listing describes 20,000 Pa advertised suction, dual anti-tangle system and automatic mop detachment for carpets.",
+            "Roborock UK lists up to 25,000 Pa HyperForce suction, automatic mop detachment for carpets and a multifunctional self-cleaning dock; the US source previously reviewed listed 20,000 Pa.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
           ],
           "cons": [
@@ -1206,9 +1206,9 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "Compare its dock automation and mop handling with the amount of carpet and hard flooring in your home.",
-          "source": "https://uk.roborock.com/pages/roborock-store",
-          "sourceNote": "No exact UK counterpart for this model name was confirmed in this pass. Do not treat Qrevo Curv 2 Pro or another Qrevo model as identical; compare model and dock specifications. Official UK range: https://uk.roborock.com/pages/roborock-store.",
-          "availabilityNote": "Regional product names and dock bundles can differ. Only buy the exact UK model shown by Roborock UK; verify the dock, voltage/plug, app region, consumables and warranty. This entry is not confirmation that a US model is sold unchanged in the UK."
+          "source": "https://uk.roborock.com/products/roborock-qrevo-2-pro-robot-vacuum-with-multifunctional-dock",
+          "sourceNote": "Exact UK Qrevo 2 Pro product page verified. Roborock UK advertises up to 25,000 Pa HyperForce suction, automatic mop detachment for carpets and a multifunctional self-cleaning dock. This differs from the 20,000 Pa figure previously recorded from the US product source; retain regional distinction and do not compare the variants as identical without checking the exact SKU.",
+          "availabilityNote": "An exact UK Qrevo 2 Pro listing is confirmed. UK and US source pages show different advertised suction figures (25,000 Pa UK versus 20,000 Pa US); verify the exact regional SKU, dock bundle, plug, consumables and warranty before ordering."
         }
       ],
       "buyingChecklist": [
