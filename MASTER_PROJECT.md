@@ -490,3 +490,13 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Confirmed the guide index exposes all 25 research-draft guide cards and 25 corresponding generated cover image URLs under `/images/pinterest/<slug>.png`. The preview HTML includes the cover `img` elements; image extraction returned 25 unique cover URLs.
 - Confirmed page metadata on both preview hostnames reports `noindex, nofollow`. The older 100-product preview deployment `8c4ac2dd...` predates the cover-grid implementation and should not be used to review the latest cover layout.
 - The preview content remains research draft/unapproved. No public production deployment or indexing change was made.
+
+
+## Session update — 17 November 2026 (Buying Guides card redesign)
+- Owner approved improvements after sharing a mobile-width screenshot showing three cramped columns, oversized/cropped card titles and oversized portrait covers.
+- Updated `src/pages/guides/index.astro` on `automation/bootstrap`: grouped card content, added a clear “Read guide” link, retained category labels, summaries and editorial-review status, and preserved the existing search/category filtering behavior.
+- Updated `src/styles/global.css`: explicit three-column desktop / two-column tablet / single-column narrow-screen grid; fixed-height cover stage with `object-fit: contain` to preserve the complete original 1000×1500 artwork; constrained title sizing and wrapping; clamped summaries to three lines; aligned status and action at the card bottom; added reduced-motion handling.
+- No guide/product records, cover source images, affiliate URLs, tracking IDs, SEO/noindex controls or publication statuses were changed.
+- No merge, no production deployment, no WordPress, DNS or live InfinityFree changes. PR #1 remains unmerged unless separately verified.
+- Validation status: source edits committed to the development branch; CI and visual preview validation are pending. Do not call the redesign complete until the new build passes and the preview is inspected at mobile, tablet and desktop widths.
+- Next: inspect the latest GitHub Actions run and the updated Cloudflare Pages preview; adjust only if visual/QA evidence shows a remaining issue.
