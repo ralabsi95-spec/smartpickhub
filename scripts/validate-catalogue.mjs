@@ -11,7 +11,7 @@ const markets = [
   { key: 'uk_identifier', market: 'uk', host: 'www.amazon.co.uk', tag: 'smartpickhubu-21' }
 ];
 const linkChecks = { us: 0, uk: 0 };
-const imageAudit = { verified: 0, pending: 0 };
+const imageAudit = { approved: 0, pending: 0, noImage: 0 };
 
 function buildExpectedUrl(market, identifier) {
   const host = market === 'us' ? 'https://www.amazon.com' : 'https://www.amazon.co.uk';
@@ -58,10 +58,10 @@ for (const guide of guides) {
       }
     }
     if (product.image == null) {
-      imageAudit.pending++;
+      imageAudit.noImage++;
     } else {
       const image = product.image;
-      for (const key of ['url', 'alt', 'sourcePage', 'license']) {
+      for (const key of ['url', 'alt', 'sourcePage', 'license', 'attribution', 'rightsBasis', 'reviewStatus', 'verifiedAt']) {
         if (typeof image[key] !== 'string' || !image[key].trim()) {
           errors.push('Product image metadata requires ' + key + ' for ' + product.name + '.');
         }
@@ -79,10 +79,14 @@ for (const guide of guides) {
       if (typeof image.alt === 'string' && /^(image|photo|picture)$/i.test(image.alt.trim())) {
         errors.push('Product image alt text is too generic for ' + product.name + '.');
       }
-      if (typeof image.attribution !== 'string' || !image.attribution.trim()) {
-        errors.push('Product image requires attribution or an explicit public-domain/creator statement for ' + product.name + '.');
+      if (!['pending', 'approved'].includes(image.reviewStatus)) {
+        errors.push('Product image reviewStatus must be pending or approved for ' + product.name + '.');
       }
-      imageAudit.verified++;
+      if (image.reviewStatus === 'approved' && !/^\\d{4}-\\d{2}-\\d{2}$/.test(image.verifiedAt ?? '')) {
+        errors.push('Approved product image requires verifiedAt in YYYY-MM-DD format for ' + product.name + '.');
+      }
+      if (image.reviewStatus === 'approved') imageAudit.approved++;
+      else imageAudit.pending++;
     }
     for (const spec of markets) {
       const identifier = product[spec.key];
@@ -126,4 +130,4 @@ if (errors.length) {
   for (const error of errors) console.error('- ' + error);
   process.exit(1);
 }
-console.log('Catalogue validation passed: ' + guides.length + ' dynamic guides, ' + productCount + ' products, ' + linkChecks.us + ' US and ' + linkChecks.uk + ' UK affiliate destination checks, ' + imageAudit.verified + ' verified product images and ' + imageAudit.pending + ' pending image slots.');
+console.log('Catalogue validation passed: ' + guides.length + ' dynamic guides, ' + productCount + ' products, ' + linkChecks.us + ' US and ' + linkChecks.uk + ' UK affiliate destination checks, ' + imageAudit.approved + ' approved product images, ' + imageAudit.pending + ' pending image candidates and ' + imageAudit.noImage + ' products without image records.');
