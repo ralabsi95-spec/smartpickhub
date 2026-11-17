@@ -161,7 +161,7 @@
 
 
 ## Current continuation checkpoint — 17 November 2026
-- Latest recorded branch commit: `f08348cf0dc921a6ccfe92d2205021174f93eb0c`.
+- Latest recorded branch commit: `957d5e3b9d2ee210f45918d97d68e975048d9d19` (handoff-only update after the image policy and audit work).
 - Product image display is gated on `reviewStatus: approved`; candidates cannot render until human verification.
 - Optional Wikimedia Commons discovery is available through `npm run research:commons`; image readiness audit is available through `npm run audit:images` and is included in prebuild.
 - The source catalogue audit currently shows 100 products, zero product-image records, and 71 identical US/UK search phrases. Identical phrases are review flags, not automatic errors or proof of wrong regional variants.
