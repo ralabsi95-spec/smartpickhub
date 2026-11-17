@@ -432,3 +432,11 @@ Continue product catalogue audit (regional US/UK models, official sources, obsol
 - The prior preview for commit `a71fd5f` rendered the homepage and selected guide routes successfully, and retained `noindex,nofollow` plus `robots.txt Disallow: /`. The displayed Garmin/Oral-B comparison bullets on that earlier immutable deployment predate this latest wording correction; verify the next deployment before treating the latest copy as visually confirmed.
 - GitHub Actions run #357 on docs head `6ca855b` was in progress when checked. The later product-data commit starts a newer run; check the newest head/run before asserting full CI pass.
 - No production action, PR merge, indexing, or guide approval.
+
+## 17 November 2026 — Latest handoff checkpoint
+- Current branch `automation/bootstrap`; product-data head verified: `9522202de8acae2e3d7788665a584b7f8c4550ab`. Continuity documentation was then updated in commit `783caf4bc8628f1ee66e75ae3a3842ca2e8aee21` (MASTER_PROJECT.md); this docs-only commit may trigger a new CI run, so verify its result before treating the new branch head as fully validated.
+- GitHub Actions run #367 / ID `44091029531` passed successfully on product-data commit `9522202`.
+- Stable preview inspection confirms the latest UK Roborock guide claims are visible: Qrevo Edge 2 and Qrevo 2 Pro up to 25,000 Pa on UK pages; Qrevo 2 Pro UK/US regional suction figures remain explicitly distinguished (25,000 Pa vs 20,000 Pa). Preview metadata is `noindex, nofollow`; robots.txt is `Disallow: /`.
+- PR #1 remains Draft/open/unmerged; do not merge. Production Pages project `smartpickhub` remains disconnected and untouched. No production deployment, DNS/WordPress change, public publication, indexing, Amazon product import or guide approval. InfinityFree remains excluded permanently.
+- Catalogue remains 25 guides / 100 products, all research drafts; zero approved. RSS remains intentionally empty until approval.
+- Next: verify any CI run triggered by the continuity-doc commit, then continue the regional model/source/lifecycle audit on `automation/bootstrap` only. Do not remove noindex/robots or connect production without explicit owner approval.
