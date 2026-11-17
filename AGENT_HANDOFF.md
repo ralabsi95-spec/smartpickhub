@@ -51,33 +51,34 @@
 - These are generated research phrases, not verified search volume, CPC, difficulty, traffic or demand.
 - Do not generate one page per phrase. Cluster by shared intent and produce genuinely useful guides only; avoid thin/duplicated scaled content.
 
-### Build and QA — current verified state (17 November 2026)
-- Workflow: `.github/workflows/build-check.yml`; Node.js 22.23.4; GitHub Actions run #453 / ID `44113630229` for commit `9325de673ec932b95e40ba7a72d0b37436c4b257`.
-- Run #453 is **still in progress** at the all-guide Lighthouse step. Do not describe the full workflow or consolidated artifact upload as complete until GitHub reports a terminal conclusion.
-- Verified successful steps in run #453: locked dependency install, dependency-audit capture step, Astro type/content checks, catalogue/affiliate validation, keyword generation, static build, smoke tests, local preview server startup, axe-core across all catalogue routes, and homepage Lighthouse desktop/mobile.
-- The remaining Lighthouse step audits the guide index, disclosure page and all 25 guides; the consolidated report and artifact upload are pending.
-- `scripts/validate-catalogue.mjs` validates the live catalogue (25 guides / 100 products); it does not expect the obsolete 10/40 count.
-- Current image audit: zero populated product-image records; generated Pinterest covers are editorial illustrations, not product photos. The Commons research script exists but has not yet been run against the live API.
-- 71 identical US/UK search phrases are review flags only, not proof of incorrect regional models.
-- Latest PR #1 head is `9325de673ec932b95e40ba7a72d0b37436c4b257`; PR remains open, Draft and unmerged.
-- No stable-preview verification is claimed for this exact commit. The preview must remain noindex/nofollow and crawl-blocked.
+### Build and QA — latest completed and pending runs (17 November 2026)
+- Workflow: `.github/workflows/build-check.yml`; Node.js 22.23.4.
+- CI run #453 / ID `44113630229` completed **successfully** on code commit `9325de673ec932b95e40ba7a72d0b37436c4b257`. It completed Astro/type checks, catalogue and affiliate validation, keyword generation, static build, smoke tests, axe-core on 28 routes, Lighthouse on 29 pages, consolidated report generation and artifact upload.
+- Run #453 artifact: `smartpickhub-quality-reports`, artifact ID `14342661087`, retained by GitHub Actions for 14 days. Reviewed locally in this session.
+- Run #453 report: 25 guides / 100 products; catalogue and smoke checks passed; 0 axe violations; 28 gradient-related contrast checks remained incomplete plus one ARIA group-label check; Lighthouse Accessibility 100 and Best Practices 100 across audited pages; Performance minimum 76 on the guide index and 90+ on all other audited pages; SEO 66–69 because preview is intentionally noindex and crawl-blocked; npm audit reported 0 vulnerabilities.
+- Run #453 is validation for commit `9325de6`, **not** for later WebP, ARIA-role, or cache-header changes.
+- Follow-up optimization commits now include WebP generation and rendering, WebP smoke assertions, and Cloudflare Pages cache headers. These are not yet CI-confirmed.
+- Latest known workflow run #470 / ID `44115423685` was pending for commit `459b4481605558da5fcc265057f77de4e2f3563c`; later documentation commits may have triggered a newer run. Always inspect the current PR head and latest run before stating final status.
+- Current catalogue is 25 research-draft guides / 100 products; zero approved for publication. `scripts/validate-catalogue.mjs` does not expect the obsolete 10/40 count.
+- Product-image status: zero populated product-image records. The Commons research script has not been executed against the live API. Generated Pinterest PNGs are original editorial cover artwork, not product photographs.
+- 71 identical US/UK search phrases are manual regional-review flags, not proof of incorrect variants.
+- Preview must remain noindex/nofollow and crawl-disallowed. PR #1 remains Draft/open/unmerged. No production deployment, DNS change, WordPress edit or publication is authorized.
 
-### Dependency security — fresh evidence required
-- A fresh `npm audit --json` capture is part of run #453, but its artifact/report has not yet been reviewed in this checkpoint.
-- Do not repeat older vulnerability counts or advisory ranges as current facts until the new report is downloaded and inspected.
-- Do not run `npm audit fix --force`, blind major upgrades, or destructive dependency changes. Retrieve the current audit report, verify advisory IDs and dependency paths, then prepare a tested, isolated remediation plan.
-- The Astro image pipeline and any transitive dependencies require special attention; verify the exact installed and locked versions rather than relying on historical notes.
+### Dependency security — latest report
+- npm audit in run #453 returned 0 vulnerabilities (0 low, moderate, high or critical). This is a point-in-time result for that run's lockfile, not a permanent guarantee; rerun after dependency changes.
+- Do not run `npm audit fix --force` or blind major upgrades. Review new advisories and dependency paths before changes.
 
 ## 3. Current QA architecture and known issues
 
 - The single QA workflow is `.github/workflows/build-check.yml`. The separate `.github/workflows/auto-publish.yml` is a draft-research writer and must not be manually dispatched without owner authorization.
 - QA route lists are derived dynamically from `src/data/products.json`; current coverage targets the homepage, guide index, affiliate disclosure and all 25 guide pages.
 - The workflow checks Astro types/content, catalogue and affiliate destinations, keyword generation, static build, generated HTML/SEO/JSON-LD/affiliate links, axe-core, Lighthouse, dependency audit and a consolidated JSON report.
-- The current run #453 has already passed axe-core and homepage Lighthouse; guide-wide Lighthouse and artifact upload remain in progress/pending.
-- The previous successful run #372 predates the current product-image, Commons research and source-refresh changes. It must not be cited as validation of the current head.
-- Lighthouse SEO scores may be reduced by design because preview indexing is deliberately blocked. Never weaken noindex/nofollow or robots protections to chase a higher score.
-- axe-core zero critical/serious violations is useful evidence but does not replace manual review of incomplete checks or real-device keyboard/touch testing.
-- Dependency security remains unresolved until the latest npm audit artifact is inspected.
+- Lighthouse SEO scores of 66–69 are expected during the protected preview phase because the site intentionally blocks indexing. Do not remove noindex/nofollow or robots restrictions to increase the score.
+- Lighthouse identified the guide index as the sole Performance score below 90 (76); the other 28 audited page profiles were 90 or higher. Major opportunities were oversized PNG cover images, unused CSS and cache lifetimes.
+- Follow-up changes create 720×1080 WebP site derivatives while preserving original 1000×1500 PNG covers for Pinterest/social use; home/guide cards and guide hero covers use WebP; smoke tests validate the derivatives; Cloudflare Pages `public/_headers` adds cache policies.
+- The axe report found zero violations. It left 28 contrast checks incomplete because the checker could not calculate text contrast over a gradient background, plus one ARIA group-label issue on the guide filter container. The guide filter now has `role="group"`; rerun axe and manually review gradient contrast.
+- These WebP and ARIA follow-up changes still need a successful CI run before being treated as validated. Latest known run #470 was pending when last checked.
+- Product-image policy remains rights-first. Do not scrape/cache Amazon product images; only show exact-model images with complete provenance and explicit human approval.
 
 ## 4. Next actions – recommended order
 
