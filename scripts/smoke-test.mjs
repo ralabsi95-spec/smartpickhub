@@ -167,6 +167,18 @@ for (const file of htmlFiles) {
     for (const product of guide.products) {
       if (!usLinks.some(link => matchesIdentifier(link.url, product.us_identifier))) routeErrors.push('Amazon US URL does not match catalogue identifier for ' + product.name);
       if (!ukLinks.some(link => matchesIdentifier(link.url, product.uk_identifier))) routeErrors.push('Amazon UK URL does not match catalogue identifier for ' + product.name);
+      const productSectionId = 'id="product-' + product.name.toLowerCase().replace(/[^a-z0-9]+/g, '-') + '"';
+      const productSectionStart = html.indexOf(productSectionId);
+      const productSectionEnd = productSectionStart >= 0 ? html.indexOf('</section>', productSectionStart) : -1;
+      const productSection = productSectionStart >= 0 && productSectionEnd >= 0 ? html.slice(productSectionStart, productSectionEnd) : '';
+      if (!productSection) {
+        routeErrors.push('missing product detail section for ' + product.name);
+      } else if (product.image?.url) {
+        if (!productSection.includes(product.image.url)) routeErrors.push('verified product image is not rendered for ' + product.name);
+        if (!productSection.includes(product.image.alt || product.name)) routeErrors.push('verified product image alt text is missing for ' + product.name);
+      } else if (!productSection.includes('Product photo under verification')) {
+        routeErrors.push('product image fallback notice is missing for ' + product.name);
+      }
     }
   }
 
