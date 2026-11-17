@@ -338,3 +338,16 @@ Do not ask the owner to repeat details already documented here.
 - Separate Cloudflare Workers check remains failed because the account has no Worker named `smartpickhub`; this does not affect the successful Pages preview deployment and has not been modified.
 - No merge to `main`, no production deployment, no WordPress/DNS changes, no public publication, and no removal of noindex/robots protections.
 - Next: continue the 100-record product/source audit, prioritising exact regional SKUs, electrical/voltage compatibility, stale models and model-specific manufacturer sources. Keep all guides as drafts pending review and approval.
+
+
+## 17 November 2026 — Regional product verification pass
+- Audited all 100 product records in `src/data/products.json`; identified 92 records whose US and UK marketplace search phrases were identical. Identical phrases are not automatically incorrect for globally shared USB/peripheral models, but they remain a regional verification backlog and must not be treated as confirmed market-specific SKUs.
+- Updated 7 higher-risk records with distinct US/UK search wording and explicit regional caveats, using official manufacturer documentation:
+  - EcoFlow RIVER 2: US 120V AC vs UK/EU 230V AC variant.
+  - Jackery Explorer 300 Plus JE-300B: same model code but US 100V/60Hz output vs European regional input/output specifications.
+  - Brother printers: US 110–120V SKUs separated from UK-rated alternatives/searches; UK models MFC-L8390CDW, HL-L3240CDW and DCP-L2660DW verified at 220–240V; no exact UK counterpart asserted for MFC-L3780CDW.
+  - COSORI TurboBlaze: US CAF-DC601-KUS 120V/60Hz explicitly distinguished from the UK 6L listing; UK voltage rating remains a buyer verification point because the captured UK product page did not expose it.
+- Sources checked: EcoFlow official regional manual and UK product page; Jackery official US and Europe support pages; Brother UK official store pages; COSORI US and UK official product pages. No pricing, rating, availability or direct ASIN claims added.
+- Data commit: `59b7f807054d92a28b2411ec16f537e32a296031` on `automation/bootstrap`. GitHub Actions build/audit and Cloudflare Pages preview were triggered and were pending/in progress at the time of this log update.
+- PR #1 remains Draft/open/unmerged. No production, WordPress, DNS or indexing changes. noindex and robots blocking remain enabled.
+- Next: inspect the new commit's validation and preview checks; continue the remaining regional model/source audit without guessing unverified counterparts.
