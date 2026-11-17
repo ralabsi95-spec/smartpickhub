@@ -1241,8 +1241,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A feature-rich candidate when noise cancellation and call clarity are priorities.",
-          "source": "https://www.sony.com/en-jo/headphones/headband",
-          "sourceNote": "Sony's official headphone catalogue lists the WH-1000X family and ULT Wear models. Check regional suffixes, colours and included accessories."
+          "source": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wh-1000xm6/specifications",
+          "sourceNote": "Sony's model-specific specifications list Bluetooth 5.3, SBC/AAC/LDAC/LC3 codecs, multipoint, and up to 30 hours playback with noise cancelling on (40 hours off). Battery and codec performance depend on settings and source-device support."
         },
         {
           "name": "Sony WH-1000XM5 Wireless Noise Cancelling Headphones",
@@ -1258,8 +1258,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "Worth comparing where the XM5's feature set and regional bundle meet the buyer's needs.",
-          "source": "https://www.sony.com/en-jo/headphones/headband",
-          "sourceNote": "Sony's official headphone catalogue lists the WH-1000X family and ULT Wear models. Check regional suffixes, colours and included accessories."
+          "source": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wh-1000xm5/specifications",
+          "sourceNote": "Sony's model-specific specifications list Bluetooth 5.2, SBC/AAC/LDAC codecs, and up to 30 hours playback with noise cancelling on (40 hours off). Confirm regional package and colour suffix on the retailer listing."
         },
         {
           "name": "Sony WH-1000XM4C Wireless Noise Cancelling Headphones",
@@ -1275,8 +1275,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A model to compare for buyers who prefer the XM4 family; check regional naming carefully.",
-          "source": "https://www.sony.com/en-jo/headphones/headband",
-          "sourceNote": "Sony's official headphone catalogue lists the WH-1000X family and ULT Wear models. Check regional suffixes, colours and included accessories."
+          "source": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wh-1000xm4c/specifications",
+          "sourceNote": "Sony's exact WH-1000XM4C specifications identify Bluetooth 6.0, LDAC/SBC/AAC, multipoint, approximately 253g weight and up to 27 hours playback with noise cancelling on (34 hours off). This 2026 refresh is distinct from the original WH-1000XM4; verify colour suffix and local bundle."
         },
         {
           "name": "Sony ULT WEAR Wireless Noise Cancelling Headphones",
@@ -1292,8 +1292,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "Consider if the ULT sound profile appeals and the fit is comfortable for longer sessions.",
-          "source": "https://www.sony.com/en-jo/headphones/headband",
-          "sourceNote": "Sony's official headphone catalogue lists the WH-1000X family and ULT Wear models. Check regional suffixes, colours and included accessories."
+          "source": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wh-ult900n/specifications",
+          "sourceNote": "Sony's WH-ULT900N model-specific specifications list the ULT button, 40mm driver, Bluetooth 5.2, SBC/AAC/LDAC and up to 30 hours with noise cancelling on (50 hours off)."
         }
       ],
       "buyingChecklist": [
@@ -1589,8 +1589,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A premium large-screen option for demanding tablet workflows.",
-          "source": "https://www.apple.com/ipad/compare/",
-          "sourceNote": "Apple's official iPad comparison lists current Pro, Air, standard iPad and mini models, display sizes and processor families. Check exact storage and cellular configurations."
+          "source": "https://support.apple.com/en-gb/125407",
+          "sourceNote": "Apple's model-specific UK technical specifications identify the 13-inch M5 iPad Pro with Tandem OLED Ultra Retina XDR, ProMotion up to 120Hz, Thunderbolt/USB 4, and storage options from 256GB to 2TB. CPU and memory configuration vary by storage tier; verify Wi-Fi/cellular model and regional eSIM bands."
         },
         {
           "name": "Apple iPad Air 11-inch (M4)",
@@ -1606,8 +1606,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A versatile middle-ground candidate for study, notes and general productivity.",
-          "source": "https://www.apple.com/ipad/compare/",
-          "sourceNote": "Apple's official iPad comparison lists current Pro, Air, standard iPad and mini models, display sizes and processor families. Check exact storage and cellular configurations."
+          "source": "https://support.apple.com/en-gb/126471",
+          "sourceNote": "Apple's model-specific UK specifications identify the 11-inch M4 iPad Air, 128GB–1TB storage, Liquid Retina display, 12MP landscape Center Stage camera, Wi-Fi 7 and Bluetooth 6. Cellular models use eSIM; verify supported bands and local carrier compatibility."
         },
         {
           "name": "Apple iPad (A16)",
@@ -1623,8 +1623,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A mainstream option for everyday tablet tasks.",
-          "source": "https://www.apple.com/ipad/compare/",
-          "sourceNote": "Apple's official iPad comparison lists current Pro, Air, standard iPad and mini models, display sizes and processor families. Check exact storage and cellular configurations."
+          "source": "https://support.apple.com/en-gb/122240",
+          "sourceNote": "Apple's model-specific UK specifications identify the A16 iPad with 128GB/256GB/512GB storage, 10.86-inch Liquid Retina display, A16 chip, Wi-Fi 6 and Bluetooth 5.3. Cellular models use eSIM; verify supported regional bands and Apple Pencil compatibility."
         },
         {
           "name": "Apple iPad mini (A20 Pro)",
