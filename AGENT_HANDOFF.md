@@ -12,8 +12,8 @@
 ## 1. Non-negotiable safety rules
 
 1. Work on `automation/bootstrap` only unless the owner explicitly authorizes another branch.
-2. Do not merge PR #1, push to `main`, publish content, connect a production domain, change DNS, or deploy over WordPress without explicit owner approval.
-3. The existing WordPress site on InfinityFree is the live property and must be preserved. No WordPress edits, deletions, imports, plugin/theme changes or migration actions without explicit approval and a verified backup.
+2. Do not merge PR #1, push to `main`, publish content, connect the production Pages project, change DNS, or modify the legacy WordPress installation without explicit owner approval.
+3. InfinityFree and smartpickhub.infinityfree.me are permanently excluded from the SmartPickHub plan. The approved MVP production target is https://smartpickhub.pages.dev/; its Cloudflare Pages project currently has no Git connection and must remain untouched until explicit release approval. The legacy WordPress installation is outside this deployment plan and must be preserved unchanged unless a separate plan and verified backup are approved.
 4. Never re-import the existing WordPress product catalogue. Existing candidate products were not migrated into this Astro catalogue.
 5. Do not invent ASINs, direct retailer URLs, prices, discounts, ratings, reviews, stock, search volume, CPC, testing experience or product availability.
 6. Model-name identifiers in the catalogue generate Amazon search URLs, not direct product links. A marketplace search result is not proof that the exact model/variant is available.
@@ -29,26 +29,14 @@
 - Astro static-site implementation lives on `automation/bootstrap`.
 - GitHub repository is private: `ralabsi95-spec/smartpickhub`.
 - PR #1 is open, Draft and unmerged. Base is `main`; do not merge without approval.
-- Existing live site remains WordPress/Astra on InfinityFree at https://smartpickhub.infinityfree.me/.
-- Astro preview is a separate Cloudflare Pages project `smartpickhub-preview` at https://smartpickhub-preview.pages.dev/.
-- Preview has no custom domain mapping and must remain non-indexable.
-- No WordPress migration or production cutover has been approved.
+- Approved MVP production target: Cloudflare Pages at https://smartpickhub.pages.dev/; production project remains disconnected and untouched.
+- InfinityFree and smartpickhub.infinityfree.me are permanently excluded.
+- Legacy WordPress is outside this Astro deployment plan and remains unchanged.
+- Astro preview is a separate Cloudflare Pages project `smartpickhub-preview` at https://smartpickhub-preview.pages.dev/ and must remain non-indexable.
 
 ### Catalogue and editorial status
 - Source of truth: `src/data/products.json`.
-- Current catalogue: **10 research-draft guides, 4 products per guide, 40 product records**.
-- Latest added guide: `air-fryers-us-uk`.
-- Other guide slugs:
-  - `home-office-ergonomics-us-uk`
-  - `portable-power-travel-tech-us-uk`
-  - `smart-home-security-cameras-us-uk`
-  - `wifi-7-home-mesh-routers-us-uk`
-  - `usb-c-gan-chargers-us-uk`
-  - `webcams-video-calls-streaming-us-uk`
-  - `4k-usb-c-monitors-home-office-us-uk`
-  - `thunderbolt-usb-c-docking-stations-us-uk`
-  - `portable-ssd-external-storage-us-uk`
-  - `air-fryers-us-uk`
+- Current catalogue: **25 research-draft guides and 100 product records**; zero guides are approved for publication.
 - Every product has separate US and UK model-name search phrases. These are not verified ASINs or guaranteed direct product links.
 - Do not imply hands-on testing. Feature summaries are research-led and manufacturer-source-based; suitability statements are editorial analysis.
 - No fixed prices, review counts, star ratings or availability claims are included.
