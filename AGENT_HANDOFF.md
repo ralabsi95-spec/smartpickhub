@@ -470,7 +470,7 @@ Continue product catalogue audit (regional US/UK models, official sources, obsol
 
 
 ## Latest verified continuity note — 17 November 2026
-- Current docs checkpoint: `6a542e6f8f326e6934773c2719ec37ebe64d2e0b`; latest roadmap checkpoint `bac6e3cde99b12ea595d9e3219e10f904bb8dc49`.
+- Current docs checkpoint: `b5495f82569425f1a504c312dc8075c2668b9508` (roadmap) following handoff correction `de34b53e9be74c1aaf96791c6766162ad690e602`.
 - Catalogue audit snapshot: 25 guides / 100 products; 0 real product-image records; 71 identical US/UK search phrases need manual review. Identical phrases may be valid for globally shared models/accessories and are not errors by themselves.
 - The optional Commons research script is available but has not been executed against the live API yet. No product image candidate has been verified or approved.
 - Latest full CI success remains run #372 on `81d49bc`; no successful CI run or Pages preview is confirmed for the current image-policy/research code.
