@@ -362,3 +362,12 @@ Do not ask the owner to repeat details already documented here.
 - Validation: the previous exact-head quality workflow on `9f822d8` passed all steps. The new data commit `26f9c05` has not yet returned a workflow run or check result at the time of this note; do not mark this new commit validated until a new run completes. The separate Cloudflare Workers missing-worker issue remains distinct from Pages.
 - Catalogue remains 25 guides / 100 products, all unapproved research drafts. No merge to `main`, production deployment, WordPress/DNS change, indexing/publication, Amazon import or change to noindex/robots protections.
 - Next: validate commit `26f9c05`, inspect the matching Pages preview, then continue the remaining records with emphasis on exact model-specific source URLs, legacy/discontinued candidates and regional variants.
+
+
+## 17 November 2026 — Preview review and search phrase cleanup
+- Cloudflare Pages posted a successful deployment for PR head `f8a9ade5737a7cd68bd5b28bf743143a2bdbdb9b`: https://bbb9d261.smartpickhub-preview.pages.dev/ .
+- Read the live preview homepage, guide index, and the cordless-drill, espresso-machine and robot-vacuum guide routes. All returned content. The index shows 25 guides and labels each as a research draft requiring human review. All inspected pages carry `noindex, nofollow`; canonical URLs resolve to the stable preview origin. Homepage and disclosure messaging explain research-led content and affiliate links; no hands-on testing is claimed.
+- Preview inspection identified 8 UK marketplace search phrases that had editorial caveats embedded in the query string. Cleaned those phrases in the four DEWALT and four Roborock records; unconfirmed counterpart caveats remain in the availability/source notes, not in the Amazon search phrase. Commit: `72b5eb8c5b909019f3271596822ba31098bb2a8f`.
+- CI run #325 on `26f9c05` was cancelled during Chromium installation after build, catalogue validation and smoke tests passed. The subsequent run #328 on `f8a9ade` progressed through Chromium, axe-core, homepage Lighthouse and was still running the per-guide Lighthouse sweep at last poll. Do not treat it as completed yet. A fresh run for `72b5eb8` had not appeared at the time of this note.
+- PR #1 remains open/Draft/unmerged. No production, WordPress, DNS, publication or indexing changes. noindex and robots protections remain enabled.
+- Next: confirm CI on `72b5eb8`, check the newest Pages deployment, then continue reviewing remaining catalogue sources and legacy product candidates.
