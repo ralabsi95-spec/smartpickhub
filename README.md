@@ -5,6 +5,7 @@ Research-led affiliate buying guides for US and UK shoppers.
 ## Read this first
 - **[Agent handoff and continuation rules](AGENT_HANDOFF.md)** – mandatory first read for every new ChatGPT conversation, coding agent or contributor.
 - **[Master project log](MASTER_PROJECT.md)** – chronological project history, decisions and implementation notes.
+- **[Latest session audit](docs/SESSION_AUDIT_2026-11-17.md)** – live preview verification, product-image candidate findings and release blockers.
 
 ## Current status (17 November 2026)
 - Astro implementation is on the development branch `automation/bootstrap`.
