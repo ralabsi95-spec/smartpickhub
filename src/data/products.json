@@ -1233,14 +1233,15 @@
           "us_identifier": "Sony WH-1000XM6 Wireless Noise Cancelling Headphones",
           "uk_identifier": "Sony WH-1000XM6 Wireless Noise Cancelling Headphones",
           "pros": [
-            "Sony lists adaptive noise cancellation, advanced processing, multi-microphone call pickup and up to 30-hour battery life.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Sony lists up to 30 hours of playback with noise cancelling on (40 hours off).",
+            "Bluetooth 5.3 with SBC, AAC, LDAC and LC3 codec support, plus multipoint connectivity.",
+            "Adaptive Noise Cancelling Optimizer and atmospheric-pressure optimisation are documented in Sony's model-specific specifications."
           ],
           "cons": [
-            "Premium over-ear fit is individual; verify weight, foldability, replacement-pad availability and the exact regional model.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Codec availability depends on the playback device and selected Bluetooth settings.",
+            "Premium over-ear fit and long-session comfort are individual; check weight, case and replacement-pad availability."
           ],
-          "verdict": "A feature-rich candidate when noise cancellation and call clarity are priorities.",
+          "verdict": "A current premium candidate for travellers who prioritise noise cancellation, multipoint and broad codec support; compare the exact regional bundle before purchase.",
           "source": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wh-1000xm6/specifications",
           "sourceNote": "Sony's model-specific specifications list Bluetooth 5.3, SBC/AAC/LDAC/LC3 codecs, multipoint, and up to 30 hours playback with noise cancelling on (40 hours off). Battery and codec performance depend on settings and source-device support."
         },
@@ -1250,14 +1251,15 @@
           "us_identifier": "Sony WH-1000XM5 Wireless Noise Cancelling Headphones",
           "uk_identifier": "Sony WH-1000XM5 Wireless Noise Cancelling Headphones",
           "pros": [
-            "Sony documents two high-performance processors, eight microphones and a 30 mm driver unit.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Sony lists up to 30 hours of playback with noise cancelling on (40 hours off).",
+            "Bluetooth 5.2 and SBC, AAC and LDAC codec support.",
+            "Sony documents the model's noise-cancelling and ambient-sound functions."
           ],
           "cons": [
-            "The non-folding headband design and fit may not suit every traveller; compare it directly with newer models.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "The non-folding headband design may be less convenient for compact travel storage.",
+            "Codec availability and battery life depend on the playback device and settings."
           ],
-          "verdict": "Worth comparing where the XM5's feature set and regional bundle meet the buyer's needs.",
+          "verdict": "A previous-generation premium candidate where the XM5's non-folding design, features and exact regional bundle suit the buyer.",
           "source": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wh-1000xm5/specifications",
           "sourceNote": "Sony's model-specific specifications list Bluetooth 5.2, SBC/AAC/LDAC codecs, and up to 30 hours playback with noise cancelling on (40 hours off). Confirm regional package and colour suffix on the retailer listing."
         },
@@ -1267,14 +1269,15 @@
           "us_identifier": "Sony WH-1000XM4C Wireless Noise Cancelling Headphones",
           "uk_identifier": "Sony WH-1000XM4C Wireless Noise Cancelling Headphones",
           "pros": [
-            "Sony's current catalogue continues to list the WH-1000XM4C variant in selected markets.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Sony lists Bluetooth 6.0, LDAC/SBC/AAC support and multipoint connectivity.",
+            "Sony specifies approximately 253g weight and up to 27 hours with noise cancelling on (34 hours off).",
+            "Foldable design and three colour options are described on Sony's product information."
           ],
           "cons": [
-            "Confirm whether the C suffix represents the exact colour/market variant and review current firmware/support details.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "The 27-hour noise-cancelling runtime is lower than the original WH-1000XM4's published 30-hour figure.",
+            "Check that the retailer listing is the refreshed WH-1000XM4C, not the original WH-1000XM4; verify colour and package."
           ],
-          "verdict": "A model to compare for buyers who prefer the XM4 family; check regional naming carefully.",
+          "verdict": "A refreshed XM4-family option for buyers who value the foldable design and updated connectivity; confirm the exact XM4C variant and battery expectations.",
           "source": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wh-1000xm4c/specifications",
           "sourceNote": "Sony's exact WH-1000XM4C specifications identify Bluetooth 6.0, LDAC/SBC/AAC, multipoint, approximately 253g weight and up to 27 hours playback with noise cancelling on (34 hours off). This 2026 refresh is distinct from the original WH-1000XM4; verify colour suffix and local bundle."
         },
