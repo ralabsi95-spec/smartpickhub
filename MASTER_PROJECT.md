@@ -739,3 +739,15 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - No product photographs have yet been populated; generated Pinterest covers are editorial artwork, not product photographs. Image research and rights verification remain outstanding.
 - The latest full CI pass is still run #372 on commit `81d49bc`; it predates this batch. The latest commit's CI and preview must be checked before declaring the batch validated.
 - No guide approvals, public publishing, indexing, PR merge, production deployment, DNS or WordPress changes. Keep all safety controls active.
+
+
+## 17 November 2026 — Rights-first image discovery pipeline
+- Added `PRODUCT_IMAGE_POLICY.md` to prevent unlicensed or incorrectly represented product photography. Only human-approved exact-model images with complete provenance and rights metadata may render.
+- Added optional `npm run research:commons` to search Wikimedia Commons for candidate images across the catalogue and retrieve file URLs, source pages, licence metadata and creator/credit fields. Search results are candidates only; no image is automatically downloaded, approved or published.
+- Added `npm run audit:images` to prebuild. It writes `test-reports/product-image-readiness.json`, including image coverage and identical US/UK marketplace search phrases requiring regional review.
+- The image renderer now requires `reviewStatus: approved`; pending or incomplete candidates continue to show the explicit fallback.
+- Amazon Product Advertising Content imagery is not to be scraped or cached as a shortcut. Any future Amazon image integration must follow the current Associates licence/API rules, including restrictions on image caching.
+- Commons API metadata helps discover licence and creator details, but each file page and non-copyright restrictions still require human verification.
+- Latest implementation and policy commits: `d1d9afa`, `5f5836a`, `2c087c7`, `3b6ab68`, `7a50963`, `d070cc8`, `acf363b`, `60f2e53`, `f105690`.
+- The latest branch head has not yet had a confirmed full CI run or Pages preview. Last confirmed full CI remains run #372 on `81d49bc`, which predates this workstream.
+- No product image has been approved or published. No PR merge, production deployment, DNS/WordPress change, public publishing or indexing change has occurred.
