@@ -696,3 +696,10 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Official sources consulted: Garmin UK product page https://www.garmin.com/en-GB/p/pn/010-02899-10/ ; Oral-B UK iO comparison https://www.oralb.co.uk/en-gb/oral-health/why-oral-b/electric-toothbrushes/which-oral-b-io-is-right-for-me ; Epson Middle East CO-FH02 discontinued page https://www.epson-middleeast.com/en/projectors/professional/business-education/co-fh02-v11ha85040 .
 - Latest GitHub Actions run #351 on the preceding docs head was in progress; this catalogue update triggers a newer run. Verify the latest head's CI and Pages preview before claiming full validation.
 - Next: continue lifecycle/source audit for projectors and vacuum cleaners, then inspect current CI, latest preview and update PR summary. Production project `smartpickhub.pages.dev` remains untouched; InfinityFree remains excluded.
+
+
+## 17 November 2026 – Follow-up content consistency fix
+- Commit `7a805f4da8a92da522b0014a0030e2fd4e991394` aligned the first comparison bullets for all four Garmin Dash Cam products and all four Oral-B iO toothbrushes with the newly verified exact model specifications. The initial preview review showed that source notes had updated but the comparison bullets still contained older generic wording; this follow-up corrected that inconsistency.
+- The prior preview for commit `a71fd5f` rendered the homepage and selected guide routes successfully, and retained `noindex,nofollow` plus `robots.txt Disallow: /`. The displayed Garmin/Oral-B comparison bullets on that earlier immutable deployment predate this latest wording correction; verify the next deployment before treating the latest copy as visually confirmed.
+- GitHub Actions run #357 on docs head `6ca855b` was in progress when checked. The later product-data commit starts a newer run; check the newest head/run before asserting full CI pass.
+- No production action, PR merge, indexing, or guide approval.
