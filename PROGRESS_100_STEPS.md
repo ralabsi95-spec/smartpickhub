@@ -147,3 +147,14 @@
 - Commits: `21a6769` (guide template), `08c0838` (responsive styling), `90f6c04` (catalogue image metadata validation), `0493e59` (smoke tests).
 - This is an implementation milestone, not a completed photo rollout. No actual product image was added because image rights and exact model identity must be confirmed first.
 - CI and the corresponding Pages preview are pending for the final commit. Do not describe this batch as fully tested or deployed until those checks pass.
+
+
+## 17 November 2026 — Rights-first image research pipeline
+- Added `PRODUCT_IMAGE_POLICY.md` defining permitted source paths, licence/attribution requirements, exact-model verification, and a strict rule that unapproved images never render.
+- Added an optional Wikimedia Commons candidate-research script (`npm run research:commons`). It searches the 100 catalogue product names, requests file metadata/licence/creator information from the Commons API, and writes a candidate report. It never downloads, approves or publishes images.
+- The script distinguishes public-domain/CC0 candidates, CC BY candidates, share-alike candidates and other/unclear licences; all results remain subject to human model-identity and rights review.
+- Added an image-readiness report command (`npm run audit:images`) to the prebuild checks. The report flags products with no image and identical US/UK search phrases for regional manual review.
+- Important policy finding: Amazon Product Advertising Content images have specific programme restrictions, including image-cache limitations. Do not scrape or locally cache Amazon product images as a shortcut; any Amazon-supplied imagery must use an explicitly permitted current integration and comply with the US/UK programme terms.
+- Wikimedia Commons search/API metadata is a discovery aid, not proof of permission. Verify each individual file page, exact licence and non-copyright restrictions.
+- Latest implementation commits include `d1d9afa` (Commons candidate research), `5f5836a` (optional command), `3892574` (image policy), `3b6ab68` (only approved images render), `7a50963` and `60f2e53` (rights evidence validation), `d070cc8` (smoke-test approval state), and `acf363b` (candidate report validation).
+- CI and preview for the newest branch head remain unconfirmed. The last fully verified workflow is still #372 on `81d49bc`, before this entire image workstream.
