@@ -1401,7 +1401,7 @@
           "name": "Levoit Core 300-P Air Purifier",
           "bestFor": "Buyers looking for a straightforward purifier for a medium-sized room.",
           "us_identifier": "Levoit Core 300-P Air Purifier",
-          "uk_identifier": "Levoit Core 300-P Air Purifier",
+          "uk_identifier": "Levoit Core 300 UK air purifier",
           "pros": [
             "Levoit lists the Core 300-P in its Core range for medium rooms; replaceable filter system.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -1411,14 +1411,15 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A simple model to compare when app controls are not essential.",
-          "source": "https://levoit.com/collections/air-purifiers",
-          "sourceNote": "Levoit's official product catalogue lists Core and Vital series models and intended room categories. Check the precise regional filter SKU and performance documentation."
+          "source": "https://levoit.com/products/core300-p-air-purifier",
+          "sourceNote": "Levoit US identifies Core 300-P and specifies AC 120V/60Hz; the UK store lists a Core 300 model. Treat US Core 300-P and UK Core 300 as regional listings, not a confirmed identical electrical SKU. Verify the UK rating plate and filter SKU.",
+          "availabilityNote": "The US Core 300-P is specified at AC 120V/60Hz. Levoit UK lists a Core 300 model, but do not assume the US P-suffix unit is electrically interchangeable. Buy only the UK-market version with its correct plug/rating and verify replacement filter compatibility. UK source: https://levoit.co.uk/collections/air-purifiers."
         },
         {
           "name": "Levoit Core 300S-P Smart Air Purifier",
           "bestFor": "Users who want a compact smart purifier with app-connected control.",
           "us_identifier": "Levoit Core 300S-P Smart Air Purifier",
-          "uk_identifier": "Levoit Core 300S-P Smart Air Purifier",
+          "uk_identifier": "Levoit Core 300S UK smart air purifier",
           "pros": [
             "Levoit lists the 300S-P as a smart Core model for medium rooms.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -1428,14 +1429,15 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "Compare it with the non-smart Core 300-P if remote control and scheduling matter.",
-          "source": "https://levoit.com/collections/air-purifiers",
-          "sourceNote": "Levoit's official product catalogue lists Core and Vital series models and intended room categories. Check the precise regional filter SKU and performance documentation."
+          "source": "https://levoit.com/products/core-300s-p-smart-air-purifier",
+          "sourceNote": "Levoit US identifies Core 300S-P and specifies AC 120V/60Hz. Levoit UK sells a Core 300S model. Regional package, electrical rating and filter suffix must be checked separately.",
+          "availabilityNote": "The US Core 300S-P specification is AC 120V/60Hz. Levoit UK lists a Core 300S model; choose the UK-market unit and verify rating plate, plug, filter compatibility and warranty. UK source: https://levoit.co.uk/products/levoit-core-300s-smart-air-purifier."
         },
         {
           "name": "Levoit Core 400S-P Smart Air Purifier",
           "bestFor": "Buyers comparing smart purification for larger rooms.",
           "us_identifier": "Levoit Core 400S-P Smart Air Purifier",
-          "uk_identifier": "Levoit Core 400S-P Smart Air Purifier",
+          "uk_identifier": "Levoit Core 400S UK smart air purifier",
           "pros": [
             "Levoit places the Core 400S-P in its smart Core series for larger rooms.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -1445,14 +1447,15 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A larger-room candidate for users who want connected controls.",
-          "source": "https://levoit.com/collections/air-purifiers",
-          "sourceNote": "Levoit's official product catalogue lists Core and Vital series models and intended room categories. Check the precise regional filter SKU and performance documentation."
+          "source": "https://levoit.com/products/core-400s-p-smart-air-purifier",
+          "sourceNote": "Levoit US identifies Core 400S-P; Levoit UK lists a Core 400S model. The US and UK pages describe the same family name, but exact regional electrical rating and filter compatibility must be verified before purchase.",
+          "availabilityNote": "Do not infer electrical compatibility from the shared Core 400S family name. Select the UK-market model and confirm its rating plate, plug, replacement filter and warranty. UK source: https://levoit.co.uk/products/levoit-core-400s-smart-air-purifier."
         },
         {
           "name": "Levoit Vital 200S-P Air Purifier",
           "bestFor": "Homes prioritising a purifier designed for pet hair and dander management.",
           "us_identifier": "Levoit Vital 200S-P Air Purifier",
-          "uk_identifier": "Levoit Vital 200S-P Air Purifier",
+          "uk_identifier": "Levoit Vital 200S UK air purifier",
           "pros": [
             "Levoit describes the Vital 200S-P for home use and pet hair/dander control; smart features are listed.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -1462,8 +1465,9 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "Compare for homes with pets, paying attention to filter upkeep and room-size guidance.",
-          "source": "https://levoit.com/collections/air-purifiers",
-          "sourceNote": "Levoit's official product catalogue lists Core and Vital series models and intended room categories. Check the precise regional filter SKU and performance documentation."
+          "source": "https://levoit.com/products/vital-200s-p-smart-air-purifier",
+          "sourceNote": "Levoit US identifies Vital 200S-P and model LAP-V201S-WUS. The current Levoit UK air-purifier collection did not list an exact Vital 200S counterpart in this review; do not treat the UK Vital 100S or another model as identical.",
+          "availabilityNote": "The US Vital 200S-P uses a power adapter and the cited US page does not establish a UK plug/adapter bundle. No exact UK counterpart was confirmed in the UK store collection reviewed. Do not buy the US package for UK/Jordan mains without confirming adapter input rating and local warranty. UK range: https://levoit.co.uk/collections/air-purifiers."
         }
       ],
       "buyingChecklist": [
