@@ -427,3 +427,57 @@ main { padding-block: clamp(1.5rem,4vw,3.2rem); }
 @media (max-width: 640px) {
   .home-featured-grid .guide-card-cover { height: 205px; }
 }
+
+/* Product imagery: show only explicitly sourced images; otherwise explain the verification gap. */
+.product-image {
+  margin: 1.25rem 0;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  background: #f8fafc;
+}
+.product-image img {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  padding: .75rem;
+  background: #fff;
+}
+.product-image figcaption {
+  padding: .65rem .85rem;
+  color: #64748b;
+  font-size: .75rem;
+  line-height: 1.5;
+}
+.product-image-pending {
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+  min-height: 112px;
+  margin: 1.1rem 0;
+  padding: 1rem 1.15rem;
+  border: 1px dashed #b8c9dc;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #f4f8fc, #eef6f4);
+  color: #334155;
+}
+.product-image-pending-icon {
+  display: grid;
+  flex: 0 0 3rem;
+  width: 3rem;
+  height: 3rem;
+  place-items: center;
+  border-radius: .8rem;
+  background: #e1edf4;
+  color: #276b70;
+  font-size: 1.6rem;
+}
+.product-image-pending strong,
+.product-image-pending small { display: block; }
+.product-image-pending small {
+  margin-top: .2rem;
+  color: #64748b;
+  font-size: .82rem;
+}
