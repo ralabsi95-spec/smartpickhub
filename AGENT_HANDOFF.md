@@ -308,3 +308,12 @@ Do not ask the owner to repeat details already documented here.
 - Known continuing review priorities: exact UK vs US electrical variants for power stations, air fryers, cordless tools and Brother printers; exact regional identifiers and listing matches; product sources that point only to brand catalogues instead of the exact model; and any stale/discontinued candidates. No direct ASINs, prices, ratings, availability claims or product photos were added.
 - No change to `main`, no PR merge, no production/WordPress changes, no removal of noindex/robots protections, and no Amazon import. All catalogue entries remain unapproved drafts.
 - **Next:** continue model-by-model checks across all 100 products, beginning with regional electrical/voltage compatibility and broad/generic source URLs; apply only corrections supported by exact manufacturer documentation, then run the full quality workflow and record its actual result.
+
+
+## 17 November 2026 — Safe editorial automation and documentation correction
+- Reviewed the current draft-research workflow and found it committed generated files on the checked-out default branch and ran `git push`. This could modify `main` directly once the workflow is active there, bypassing the intended editorial review gate.
+- Replaced that behavior with `peter-evans/create-pull-request@v7`: generated briefs are staged only from `content-drafts/` on the dedicated `automation/editorial-drafts` branch, and submitted as an editorial-review pull request to the repository default branch. The workflow requests only the required `contents: write` and `pull-requests: write` permissions. It does not merge or publish.
+- Changed dependency installation to `npm ci` using the committed lockfile and enabled npm cache. Missing `GEMINI_API_KEY` fails safely before any PR is created. Generated research remains unverified and requires human checks.
+- Corrected README's stale catalogue count from 10/40 to the verified 25 guides / 100 product records and updated the automation description to match the PR-only behavior.
+- Validation still required: run the full workflow and inspect the resulting GitHub Actions checks on the new commit. No merge to `main`, production deployment, WordPress change, public publication, or indexing change was performed.
+- Release gate remains: PR #1 is Draft/open/unmerged; do not merge or trigger production deployment without the required owner approval.
