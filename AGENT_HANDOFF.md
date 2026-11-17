@@ -1,10 +1,10 @@
 # SmartPickHub – Agent Handoff (READ THIS FIRST)
 
-**Last verified:** 16 November 2026  
+**Last verified:** 17 November 2026  
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `automation/bootstrap`  
 **Pull request:** [#1 – Draft Astro foundation and safe content workflow](https://github.com/ralabsi95-spec/smartpickhub/pull/1)  
-**Live WordPress site:** https://smartpickhub.infinityfree.me/  
+**Approved MVP production target:** https://smartpickhub.pages.dev/ (production Pages project remains disconnected; do not deploy without approval)  
 **Isolated Astro preview:** https://smartpickhub-preview.pages.dev/
 
 > This file is the operational handoff for every new ChatGPT conversation, coding agent or human contributor. Read it before proposing or changing anything. Then read `MASTER_PROJECT.md` for the chronological record. If older notes conflict with this handoff, the current repository files and the dated latest-status section here take precedence.
@@ -458,3 +458,13 @@ Continue product catalogue audit (regional US/UK models, official sources, obsol
 
 ## Continuity pointer — 100-step plan
 - Read `PROGRESS_100_STEPS.md` for the authoritative execution checklist and current step counts. It records completed work separately from partial and planned work; do not treat the 100-step roadmap as 100 completed tasks.
+
+
+## 17 November 2026 — Product image integrity update
+- Latest implementation batch on `automation/bootstrap`: `21a6769`, `08c0838`, `90f6c04`, `0493e59`; roadmap documentation updated in `542e725`.
+- Guide detail pages now support optional verified product-image metadata and show an explicit accessible placeholder when no rights-cleared image is available.
+- Image metadata validation requires HTTPS image/source URLs, useful alt text, licence information and attribution. Smoke tests require either the verified image or the fallback for each product section.
+- No real product photos have been added yet. Do not confuse generated Pinterest cover art with photographs of the listed products.
+- Latest code commit `0493e59` has not yet had a confirmed full CI run or Pages preview in this handoff. Verify the workflow for the newest branch head before claiming validation.
+- Current verified full CI remains run #372 on `81d49bc`; that run predates the image-slot batch.
+- Continue on `automation/bootstrap`; keep PR #1 draft/open/unmerged, all 25 guides draft-only, noindex/nofollow and robots crawl-blocking active. Production Pages remains disconnected. No DNS, WordPress, publishing or indexing action is authorised.
