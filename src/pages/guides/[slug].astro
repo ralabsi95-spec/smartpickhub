@@ -117,6 +117,21 @@ const jsonLd = JSON.stringify(structuredData).replace(/</g, '\\u003c');
             <span class="product-index">{String(index + 1).padStart(2, '0')}</span>
             <h3>{product.name}</h3>
           </div>
+          {product.image?.url ? (
+            <figure class="product-image">
+              <img src={product.image.url} alt={product.image.alt || product.name} width="640" height="480" loading="lazy" decoding="async" />
+              <figcaption>
+                Product image source: <a href={product.image.sourcePage} target="_blank" rel="noopener noreferrer">{product.image.sourceLabel || 'image source'}</a>
+                {product.image.license && <> · {product.image.license}</>}
+                {product.image.attribution && <> · {product.image.attribution}</>}
+              </figcaption>
+            </figure>
+          ) : (
+            <div class="product-image-pending" role="note" aria-label="Product photograph not yet verified">
+              <span class="product-image-pending-icon" aria-hidden="true">▧</span>
+              <span><strong>Product photo under verification</strong><small>We will show an image only after confirming its source and usage rights.</small></span>
+            </div>
+          )}
           {product.bestFor && <p><strong>Best for:</strong> {product.bestFor}</p>}
           {product.verdict && <p class="product-verdict">{product.verdict}</p>}
           <div class="pros-cons">
