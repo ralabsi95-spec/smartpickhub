@@ -391,3 +391,25 @@ Do not ask the owner to repeat details already documented here.
 - The final head now includes these data edits. CI and Pages checks must be re-confirmed for the final documentation head before marking this batch fully validated.
 - PR #1 remains Draft/open/unmerged; no production, WordPress, DNS, publication or indexing changes. noindex/robots protections remain active.
 - Next: confirm final CI/Pages checks, then continue regional verification of remaining appliances, vacuums, printers and product lifecycle/source freshness.
+
+## 17 November 2026 – CURRENT HANDOFF (read this first; supersedes older contradictory hosting notes)
+
+OWNER'S FINAL HOSTING DECISION: production/MVP address is https://smartpickhub.pages.dev/ on Cloudflare Pages. InfinityFree and smartpickhub.infinityfree.me are permanently excluded from the plan. A paid custom domain is deferred to phase two.
+
+ENVIRONMENTS
+- Preview project smartpickhub-preview: GitHub repo ralabsi95-spec/smartpickhub, branch automation/bootstrap, automatic deployments enabled. Stable preview hostname https://smartpickhub-preview.pages.dev/.
+- Latest confirmed immutable preview deployment: commit 9d06a1d95076ec79378d4e3f6740d285d65761ee, URL https://b6896e8e.smartpickhub-preview.pages.dev/. Owner confirmed it loads in a private window on 17 Nov 2026.
+- Preview Pages settings confirmed by screenshots: root directory blank, npm run build, output dist, build system v3, branch automation/bootstrap, automatic deploys on, Build cache enabled, Text build variable NODE_VERSION=22.23.4.
+- Production Pages project smartpickhub exists with hostname https://smartpickhub.pages.dev/ but currently has No Git connection. Do not connect or deploy it until release readiness and explicit approval.
+- Separate Workers app also named smartpickhub has a failed build / No active routes. This is unrelated to the successful Pages preview and is not required for static Astro Pages. Do not retry or configure routes to fix Pages.
+
+VERIFIED QUALITY / STATUS
+- GitHub Actions run #347 (44076188724) completed successfully on the checked branch head.
+- Cloudflare Pages deployment for 9d06a1d succeeded; the separate Workers build failure must not be confused with Pages.
+- 25 guides / 100 products currently exist as research drafts; zero approved for publication.
+- Preview retains noindex,nofollow; robots.txt disallows crawling; RSS only includes approved guides and may be empty.
+- PR #1 https://github.com/ralabsi95-spec/smartpickhub/pull/1 was last verified open, draft, unmerged. Do not merge without explicit approval.
+- No production deployment, DNS change, WordPress migration, InfinityFree action, product import or public publication has occurred.
+
+NEXT TASK
+Continue product catalogue audit (regional US/UK models, official sources, obsolete models, accurate marketplace search phrases), fixing on automation/bootstrap only. Then prepare a production launch checklist for smartpickhub.pages.dev and seek approval before connecting the production Pages project or deploying. Read MASTER_PROJECT.md's 17 Nov authoritative continuity section before doing work. Never suggest InfinityFree again.
