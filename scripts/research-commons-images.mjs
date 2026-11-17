@@ -8,7 +8,7 @@ const products = (catalogue.guides ?? []).flatMap(guide =>
 );
 const results = [];
 const failures = [];
-const concurrency = 3;
+const concurrency = 1;
 let cursor = 0;
 
 function readMeta(imageInfo, key) {
@@ -80,7 +80,7 @@ async function worker() {
       failures.push({ product: product.name, error: String(error) });
     }
     // Be courteous to the public API and keep concurrency low.
-    await new Promise(resolve => setTimeout(resolve, 180));
+    await new Promise(resolve => setTimeout(resolve, 350));
   }
 }
 
