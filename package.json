@@ -15,7 +15,8 @@
     "accessibility": "node scripts/accessibility-test.mjs",
     "audit-report": "node scripts/build-audit-report.mjs",
     "predev": "npm run images",
-    "images": "node scripts/generate-pinterest-images.mjs"
+    "images": "node scripts/generate-pinterest-images.mjs",
+    "indexnow": "node scripts/ping-indexnow.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",
