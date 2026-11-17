@@ -407,3 +407,23 @@ main { padding-block: clamp(1.5rem,4vw,3.2rem); }
   .button,nav[aria-label="Main navigation"] a { transition: none; }
   .button:hover { transform: none; }
 }
+
+
+/* Homepage featured guides use the same original artwork as the guide library. */
+.home-featured-grid .home-featured-card { overflow: hidden; padding: 0; }
+.home-featured-grid .guide-card-cover {
+  display: flex; height: 188px; align-items: center; justify-content: center;
+  margin: 0; padding: .7rem; border-radius: 0;
+  background: linear-gradient(145deg,#173d4a,#286e6b);
+}
+.home-featured-grid .guide-card-cover img {
+  display: block; width: auto; height: 100%; max-width: 100%;
+  aspect-ratio: auto; object-fit: contain; border-radius: .35rem;
+  box-shadow: 0 8px 22px rgb(0 0 0 / 18%);
+}
+.home-featured-content { display: flex; min-width: 0; flex: 1; flex-direction: column; padding: 1.15rem; }
+.home-featured-content h3 { margin-top: .9rem; }
+.home-featured-content > p { color: var(--sh-muted); font-size: .88rem; line-height: 1.65; }
+@media (max-width: 640px) {
+  .home-featured-grid .guide-card-cover { height: 205px; }
+}
