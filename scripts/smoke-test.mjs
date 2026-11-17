@@ -90,6 +90,14 @@ for (const file of htmlFiles) {
   let amazonUsLinks = 0;
   let amazonUkLinks = 0;
 
+  if (label === 'guides/index.html') {
+    if (!/class=["']guide-filters["'][^>]*role=["']group["']/i.test(html)) routeErrors.push('guide filter controls must expose a labelled group role');
+    if (!html.includes('/images/webp/')) routeErrors.push('guide index does not use optimized WebP card covers');
+  }
+  if (label === 'index.html' && guides.length > 0 && !html.includes('/images/webp/')) {
+    routeErrors.push('homepage featured guides do not use optimized WebP covers');
+  }
+
   const htmlTag = html.match(/<html\b[^>]*>/i)?.[0] ?? '';
   if (!attr(htmlTag, 'lang')) routeErrors.push('missing HTML language attribute');
   if (!/<title>[^<]{3,}<\/title>/i.test(html)) routeErrors.push('missing or empty title');
