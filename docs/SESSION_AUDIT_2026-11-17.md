@@ -86,3 +86,37 @@ The existing project pipeline remains the preferred bulk-discovery path:
 5. Complete analytics/conversion, image, accessibility and mobile visual acceptance before presenting the production release checklist.
 
 **Safety:** Continue on `automation/bootstrap` only. Keep preview crawl blocking enabled. Do not merge PRs, connect production Pages, change DNS, publish guides or modify WordPress without explicit owner approval.
+
+
+## Cloudflare Pages dashboard inspection (17 November 2026, 19:00 UTC)
+
+Read-only inspection was performed in the user's saved Cloudflare browser session. No settings were changed.
+
+Dashboard observations for the Pages project named `smartpickhub`:
+- Git integration currently appears disconnected; the dashboard presents a Connect action.
+- Production branch displayed as `main`.
+- Root directory, build command and output directory are not populated in the visible settings.
+- Variables/secrets section appears empty (no secret values were accessed or recorded).
+- No custom domains are configured; only the default `smartpickhub.pages.dev` hostname is listed.
+- Preview deployments are public by default, with Cloudflare Access offered as a restriction option.
+- The dashboard showed three successful production deployment entries with short identifiers `c5dca882`, `a42b7b24`, and `6da0c901`, each carrying the same initialization commit message. These short identifiers were not independently verified as Git commit SHAs.
+- A separate Workers project with the same name was visible and had a failed recent build; do not confuse it with the Pages project.
+
+A second read-only public availability pass produced:
+- `https://smartpickhub-preview.pages.dev/`: homepage rendered, reported 200 OK.
+- `https://smartpickhub.pages.dev/`: Cloudflare 404.
+- `https://c5dca882.smartpickhub.pages.dev/`: browser connection failure.
+This confirms that the preview hostname is currently usable while the Pages production hostname is not. The per-deployment URL result also means the dashboard's “successful” deployment status should not be interpreted as proof that its public URL is reachable.
+
+Important qualification:
+- The dashboard's missing Git/build configuration does not by itself prove the exact cause of the missing SEO tags in the preview HTML. The preview is demonstrably serving a site, so the preview deployment's actual build provenance and output still need to be traced.
+- The dashboard's production project and the working preview hostname may not represent the same deployment path. Determine whether preview is being deployed independently (for example, by a separate workflow/manual deployment) before reconnecting anything.
+- The earlier source-vs-served HTML discrepancy remains unresolved. Keep `robots.txt` crawl blocking in place; do not enable indexing or change production configuration as a diagnostic shortcut.
+
+## Updated status and next actions
+
+1. **Completed:** Cloudflare Pages dashboard inspected read-only; current project settings and visible deployment entries recorded.
+2. **Completed:** Preview, production hostname and latest listed deployment URL checked independently.
+3. **Confirmed issue:** Pages production hostname returns 404 while preview hostname renders.
+4. **Unresolved:** Why Git integration is disconnected, why build fields are blank, how preview is being published, and why served preview HTML differs from repository source.
+5. **Next:** Trace the GitHub Actions/workflow deployment path and correlate its exact commit/artifact with the working preview. Inspect Pages deployment/build logs if available. Then prepare a specific repair proposal for approval; do not reconnect Git, set build values, trigger deployment, merge, or change DNS without explicit approval.
