@@ -3,7 +3,7 @@
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Implementation branch:** `automation/bootstrap`  
 **Status:** Astro MVP production origin approved as https://smartpickhub.pages.dev; development branch only, not merged to main and still protected by noindex pending launch approval.  
-**Updated:** 16 November 2026
+**Updated:** 17 November 2026
 
 ## Project purpose
 Build a trustworthy English-language affiliate buying-guide property for US and UK shoppers. Prioritise useful original guidance, verified product information, organic discovery and measurable conversions.
@@ -25,7 +25,7 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Astro static site foundation.
 - GitHub repository as source control and project record.
 - Isolated Cloudflare Pages preview: https://smartpickhub-preview.pages.dev/ (project `smartpickhub-preview`, branch `automation/bootstrap`). This remains separate from the approved MVP production origin.
-- Current Astro catalogue contains 10 research-draft guides and 40 product records; none is approved for publication. Existing WordPress products were not imported and must not be duplicated.
+- Current Astro catalogue contains 25 research-draft guides and 100 product records; none is approved for publication. Existing WordPress products were not imported and must not be duplicated.
 - RSS endpoint is generated only from guides explicitly approved for publication; it may remain empty while all guides are drafts.
 - JSON-LD is limited to Article metadata; no unverified Product/Review ratings are emitted.
 
@@ -529,3 +529,16 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - No IndexNow API request, Pinterest feed connection, Google Search Console submission, DNS change, custom-domain purchase, PR merge or production deployment was performed as part of this configuration update.
 - Historical references to the previous host have been removed from the active deployment plan; the legacy WordPress installation remains outside this Astro MVP plan and is not modified.
 - Next: confirm the latest CI run passes, then separately prepare Cloudflare Pages production deployment settings for the approved MVP origin while preserving noindex until explicit launch approval.
+
+
+## 17 November 2026 — Production-origin configuration and full QA confirmation
+- Rechecked the current branch catalogue directly: 25 guides, 100 product records, 0 editorially approved guides. All records remain research drafts; RSS intentionally emits no items until explicit approval.
+- Confirmed the approved MVP canonical origin in `astro.config.mjs`: `https://smartpickhub.pages.dev/`. Preview builds use `https://smartpickhub-preview.pages.dev/` when `DEPLOYMENT_ENV=preview` or Cloudflare Pages builds a non-main branch. Explicit `PUBLIC_SITE_URL` override remains available for controlled build jobs.
+- Confirmed IndexNow notifier is hard-allowlisted to the exact production origin `https://smartpickhub.pages.dev`. It continues to skip when noindex or robots crawl disallow is present; no notification was sent.
+- Confirmed release protection remains on: shared layout outputs `noindex, nofollow`; `public/robots.txt` remains `Disallow: /`.
+- Full GitHub Actions quality run **#287** passed on commit `1cff7cc9adff2ca1bb16c07a8051366d9568786a`: dependency install, Astro checks, catalogue/affiliate validation, keyword generation, static build, smoke/SEO/JSON-LD, axe-core across catalogue routes, Lighthouse desktop/mobile and every guide, consolidated audit report and artifact upload all succeeded.
+- Quality artifact: `smartpickhub-quality-reports`, ID `14302522862`, SHA-256 `f99883b4bc89a72f67bd66860d02ea38cac46cee46951a6b5189326900563ebd`, retained until 1 December 2026.
+- The current branch has no Cloudflare production deployment workflow. Existing `auto-publish.yml` only generates unverified editorial drafts and commits them for review; it is not a site deployment workflow. Do not treat its scheduled action as a publishing/deployment process.
+- Deployment is therefore **prepared in configuration/documentation but not connected or executed**. Cloudflare account/project access, production project binding, build settings and deployment credentials have not been inspected or configured through a Cloudflare connection. No GitHub secrets were created.
+- Pull Request #1 remains open as Draft and unmerged. `main` and the public production host have not been changed. No Cloudflare production deployment was triggered.
+- Next: owner must review the initial 25 guides/100 products (and approve only suitable guides), then separately authorize a protected Cloudflare Pages production deployment while leaving noindex in place until the final release decision. Update the PR description to reflect the actual catalogue and QA state; do not merge.
