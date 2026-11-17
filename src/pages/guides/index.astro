@@ -9,7 +9,7 @@ const categories = [...new Set(guides.map((guide) => guide.category).filter(Bool
     <h1>Buying Guides</h1>
     <p class="muted">Research-led guides for US and UK shoppers. Find a topic or browse by category.</p>
 
-    <div class="guide-filters" aria-label="Filter buying guides">
+    <div class="guide-filters" role="group" aria-label="Filter buying guides">
       <div class="guide-search-field">
         <label for="guide-search">Search guides</label>
         <input id="guide-search" type="search" placeholder="Try headphones, home office, printers…" autocomplete="off" />
@@ -31,7 +31,7 @@ const categories = [...new Set(guides.map((guide) => guide.category).filter(Bool
           const searchText = [guide.title, guide.category, guide.summary].filter(Boolean).join(' ').toLocaleLowerCase();
           return (
             <article class="card guide-card" data-guide-card data-category={guide.category ?? ''} data-search={searchText}>
-              <a class="guide-card-cover" href={`/guides/${guide.slug}/`} tabindex="-1" aria-hidden="true"><img src={`/images/pinterest/${guide.slug}.png`} alt="" width="1000" height="1500" loading="lazy" decoding="async" /></a>
+              <a class="guide-card-cover" href={`/guides/${guide.slug}/`} tabindex="-1" aria-hidden="true"><img src={`/images/webp/${guide.slug}.webp`} alt="" width="1000" height="1500" loading="lazy" decoding="async" /></a>
               <div class="guide-card-content">
                 <span class="category-tag">{guide.category}</span>
                 <h2><a href={`/guides/${guide.slug}/`}>{guide.title}</a></h2>
