@@ -759,3 +759,11 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - The optional Commons research script has been added but has not yet been executed against the live API in the repository environment. Do not claim candidate photos have been found.
 - Latest full CI pass remains run #372 on `81d49bc`; the newer workstream has no confirmed full CI result or Pages preview yet.
 - Roadmap baseline remains 47 completed steps, step 77 partially complete. Image rights and real photo sourcing remain outstanding.
+
+
+## 17 November 2026 — Exact Apple and Sony source refresh
+- Replaced generic Apple comparison/catalogue source links with model-specific Apple Support technical specifications for iPad Pro 13-inch M5, iPad Air 11-inch M4 and iPad A16. iPad mini A20 Pro was already moved to its own technical specification page.
+- Replaced the generic Sony headphone category source with exact Sony Support specification pages for WH-1000XM6, WH-1000XM5, WH-1000XM4C and WH-ULT900N.
+- Updated the Sony XM6/XM5/XM4C comparison bullets and caveats to align with the exact model-specific specifications. The 2026 XM4C is distinct from the original XM4 and is not described as a simple colour suffix.
+- Data commit `0e6d68f`; editorial-copy commit `948c7d6`; roadmap entry `6697ea7`.
+- The catalogue remains 25 guides / 100 products, all drafts. No image records are populated. CI/preview for the image and source-refresh batches remain unconfirmed; last full CI pass remains run #372 on `81d49bc`.
