@@ -4,6 +4,7 @@ interface Props { title: string; description?: string; canonical?: string; socia
 const { title, description = 'Practical buying guides and product comparisons for shoppers in the United States and United Kingdom.', canonical, socialImage } = Astro.props;
 const canonicalUrl = canonical ?? Astro.url.href;
 const socialImageUrl = socialImage ? new URL(socialImage, Astro.site).toString() : undefined;
+const pinterestVerifyCode = import.meta.env.PINTEREST_VERIFY_CODE?.trim();
 ---
 <!doctype html>
 <html lang="en">
@@ -11,6 +12,7 @@ const socialImageUrl = socialImage ? new URL(socialImage, Astro.site).toString()
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex, nofollow" />
+    {pinterestVerifyCode && <meta name="p:domain_verify" content={pinterestVerifyCode} />}
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
