@@ -20,7 +20,7 @@ for (const guide of guides) {
     const hasAttribution = typeof image?.attribution === 'string' && Boolean(image.attribution.trim());
     const hasRightsBasis = typeof image?.rightsBasis === 'string' && Boolean(image.rightsBasis.trim());
     const hasReviewStatus = ['pending', 'approved'].includes(image?.reviewStatus);
-    const hasVerificationDate = typeof image?.verifiedAt === 'string' && /^\\d{4}-\\d{2}-\\d{2}$/.test(image.verifiedAt);
+    const hasVerificationDate = typeof image?.verifiedAt === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(image.verifiedAt);
     const metadataComplete = imageUrlValid && sourcePageValid && hasAlt && hasLicense && hasAttribution && hasRightsBasis && hasReviewStatus && (image?.reviewStatus !== 'approved' || hasVerificationDate);
     const approved = metadataComplete && image?.reviewStatus === 'approved';
 
