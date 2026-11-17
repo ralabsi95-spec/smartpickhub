@@ -351,3 +351,14 @@ Do not ask the owner to repeat details already documented here.
 - Data commit: `59b7f807054d92a28b2411ec16f537e32a296031` on `automation/bootstrap`. GitHub Actions build/audit and Cloudflare Pages preview were triggered and were pending/in progress at the time of this log update.
 - PR #1 remains Draft/open/unmerged. No production, WordPress, DNS or indexing changes. noindex and robots blocking remain enabled.
 - Next: inspect the new commit's validation and preview checks; continue the remaining regional model/source audit without guessing unverified counterparts.
+
+
+## 17 November 2026 — Regional SKU audit continuation
+- Continued the 100-product US/UK review using official manufacturer sources. Updated 12 product records in `src/data/products.json` (commit `26f9c0597dba6bf134eb7f4f09f56070faae843b`): four DEWALT cordless-drill records, four Breville/Sage espresso-machine records, and four Roborock robot-vacuum records.
+- DEWALT: separated US 20V MAX / 12V MAX model identifiers from UK 18V XR / 12V XR candidates. No one-to-one equivalent is claimed where the model/kit differs; the DCD703F1 5-in-1 system has no exact UK counterpart confirmed. UK candidates and source references are documented in each product record.
+- Sage/Breville: UK identifiers now use the Sage SES500, SES870, SES878 and SES985 families, with UK official pages/manuals and 220–240V regional caveats. Do not buy US electrical versions for UK/Jordan mains.
+- Roborock: replaced a generic US catalogue source with the official UK store. The UK store lists Saros 10, Qrevo Curv 2 Pro and Qrevo Edge 2; only Qrevo Edge 2 is an exact UK model name confirmed in this pass. Saros 10R, Qrevo CurvX and Qrevo 2 Pro remain explicitly unconfirmed; no model equivalence is invented.
+- Manufacturer sources checked: DEWALT UK drill-driver pages; Sage UK product pages and Oracle Jet manual; Roborock UK official store. Research refs include DEWALT DCD791NT-XJ/DCD708N-XJ/DCD701N-XJ, Sage SES500/SES878/SES985 and Roborock's UK product range.
+- Validation: the previous exact-head quality workflow on `9f822d8` passed all steps. The new data commit `26f9c05` has not yet returned a workflow run or check result at the time of this note; do not mark this new commit validated until a new run completes. The separate Cloudflare Workers missing-worker issue remains distinct from Pages.
+- Catalogue remains 25 guides / 100 products, all unapproved research drafts. No merge to `main`, production deployment, WordPress/DNS change, indexing/publication, Amazon import or change to noindex/robots protections.
+- Next: validate commit `26f9c05`, inspect the matching Pages preview, then continue the remaining records with emphasis on exact model-specific source URLs, legacy/discontinued candidates and regional variants.
