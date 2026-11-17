@@ -17,7 +17,8 @@
     "predev": "npm run images",
     "images": "node scripts/generate-pinterest-images.mjs",
     "indexnow": "node scripts/ping-indexnow.mjs",
-    "audit:images": "node scripts/audit-product-images.mjs"
+    "audit:images": "node scripts/audit-product-images.mjs",
+    "research:commons": "node scripts/research-commons-images.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",
