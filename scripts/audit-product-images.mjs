@@ -15,9 +15,9 @@ for (const guide of guides) {
     })();
     const imageUrlValid = Boolean(image?.url && /^https:\/\//i.test(image.url));
     const sourcePageValid = Boolean(image?.sourcePage && /^https:\/\//i.test(image.sourcePage));
-    const hasAlt = Boolean(image?.alt?.trim());
-    const hasLicense = Boolean(image?.license?.trim());
-    const hasAttribution = Boolean(image?.attribution?.trim());
+    const hasAlt = typeof image?.alt === 'string' && Boolean(image.alt.trim());
+    const hasLicense = typeof image?.license === 'string' && Boolean(image.license.trim());
+    const hasAttribution = typeof image?.attribution === 'string' && Boolean(image.attribution.trim());
     const verified = imageUrlValid && sourcePageValid && hasAlt && hasLicense && hasAttribution;
 
     if (image && !verified) {
