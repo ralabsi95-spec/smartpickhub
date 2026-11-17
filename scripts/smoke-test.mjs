@@ -51,7 +51,31 @@ if (!htmlFiles.length) errors.push('No HTML pages were generated.');
 const robotsPath = path.join(root, 'robots.txt');
 const robotsText = fs.existsSync(robotsPath) ? fs.readFileSync(robotsPath, 'utf8') : '';
 robotsTxtDisallowAll = /User-agent:\s*\*/i.test(robotsText) && /Disallow:\s*\//i.test(robotsText);
+
 if (!robotsTxtDisallowAll) errors.push('Preview robots.txt must disallow crawling (User-agent: * / Disallow: /).');
+
+// Pinterest must receive a parseable RSS 2.0 feed, never Atom-only or unapproved drafts.
+const rssPath = path.join(root, 'rss.xml');
+if (!fs.existsSync(rssPath)) {
+  errors.push('Pinterest RSS feed dist/rss.xml is missing.');
+} else {
+  const rss = fs.readFileSync(rssPath, 'utf8');
+  if (!/<rss\\b[^>]*version=["']2\\.0["']/i.test(rss)) errors.push('Pinterest feed must use RSS 2.0.');
+  if (!rss.includes('xmlns:media="http://search.yahoo.com/mrss/"')) errors.push('Pinterest feed is missing the Media RSS namespace.');
+  if (!rss.includes('xmlns:atom="http://www.w3.org/2005/Atom"')) errors.push('Pinterest feed is missing the Atom self-link namespace.');
+  if (!/<atom:link\\b[^>]*rel=["']self["'][^>]*\\/>/i.test(rss)) errors.push('Pinterest feed is missing its RSS self link.');
+  const rssItems = [...rss.matchAll(/<item>([\\s\\S]*?)<\\/item>/gi)].map(match => match[1]);
+  const approvedGuides = guides.filter(guide => guide.editorialStatus === 'Approved for publication');
+  if (rssItems.length !== approvedGuides.length) errors.push('Pinterest RSS item count does not match approved guide count.');
+  for (const item of rssItems) {
+    if (!/<title>[^<]+<\\/title>/i.test(item) || !/<link>https:\\/\\//i.test(item)) errors.push('Pinterest RSS item is missing a title or absolute HTTPS guide link.');
+    if (!/<enclosure\\b[^>]*type=["']image\\/png["'][^>]*\\/>/i.test(item)) errors.push('Pinterest RSS item is missing its PNG enclosure.');
+    if (!/<media:content\\b[^>]*medium=["']image["'][^>]*\\/>/i.test(item)) errors.push('Pinterest RSS item is missing Media RSS image content.');
+    if (!/<description>[^<]+<\\/description>/i.test(item)) errors.push('Pinterest RSS item is missing its description.');
+    if (/Research draft|requires human review/i.test(item)) errors.push('Unapproved research draft was included in Pinterest RSS.');
+  }
+}
+
 
 for (const file of htmlFiles) {
   const html = fs.readFileSync(file, 'utf8');
