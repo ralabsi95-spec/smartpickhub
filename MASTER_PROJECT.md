@@ -767,3 +767,15 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Updated the Sony XM6/XM5/XM4C comparison bullets and caveats to align with the exact model-specific specifications. The 2026 XM4C is distinct from the original XM4 and is not described as a simple colour suffix.
 - Data commit `0e6d68f`; editorial-copy commit `948c7d6`; roadmap entry `6697ea7`.
 - The catalogue remains 25 guides / 100 products, all drafts. No image records are populated. CI/preview for the image and source-refresh batches remain unconfirmed; last full CI pass remains run #372 on `81d49bc`.
+
+
+## 17 November 2026 — CI repair and full-catalogue QA continuation
+- Repaired the TypeScript contract for optional product-image metadata in `src/pages/guides/[slug].astro`. The prior CI failure was caused by TypeScript inferring JSON product records without the optional `image` property; the page now uses an explicit intersection type with optional image metadata while preserving the approved-only render gate.
+- Repair commit: `9325de673ec932b95e40ba7a72d0b37436c4b257`.
+- CI run #453 / ID `44113630229` on that code commit passed locked dependency installation, Astro/type checks, catalogue and affiliate validation, keyword generation, static build, smoke tests, axe-core across every catalogue route, and homepage Lighthouse desktop/mobile.
+- At this checkpoint, the full-catalogue Lighthouse step (guide index, affiliate disclosure and all 25 guides) was still running. Consolidated report generation and artifact upload had not yet completed. Do not claim overall CI success until the run reaches a terminal successful conclusion.
+- Corrected stale operational handoff statements that incorrectly referred to a 10-guide/40-product catalogue and old dependency-audit findings. Current authoritative catalogue is 25 guides / 100 products.
+- Updated the 100-step roadmap to distinguish completed checks from in-progress Lighthouse and pending report/artifact steps. Baseline roadmap count remains 47 completed and step 48 partial; no artificial completion count was added.
+- Documentation commits: `8be21b801d82f5115cf7e04dba677a30b6cd78a8` (handoff) and `c7f2c4334bd4e5023d35d92508a3c26ec94a02a3` (roadmap).
+- PR #1 remains open, Draft and unmerged. Preview remains noindex/nofollow and crawl-blocked. No production deployment, DNS, WordPress, publication or indexing changes.
+- Remaining risks: latest npm audit artifact still needs review; product photo count remains zero; Commons candidate research has not yet run; 71 identical US/UK search phrases need manual regional review; visual acceptance remains outstanding.
