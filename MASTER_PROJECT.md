@@ -572,3 +572,5 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Updated PR #1 description with the verified 25-guide / 100-product state, the successful earlier full QA run #297, and the fact that the latest full QA run #305 is still in progress. Cloudflare Pages preview build is also in progress. The separate Cloudflare Workers check is not a Pages build and reports that the named Worker does not exist.
 - PR #1 remains Draft/open/unmerged. `main` remains unchanged. No production deployment, WordPress edit, public publication or removal of noindex/robots protections occurred.
 - Next: wait for run #305 and the Cloudflare Pages preview check to complete; inspect their actual results before marking this revision validated. Keep the release/merge gate closed until owner approval.
+
+- Renamed the workflow file from the misleading `.github/workflows/auto-publish.yml` to `.github/workflows/draft-research.yml`; workflow behavior remains review-PR-only with no direct main push, merge or publication.
