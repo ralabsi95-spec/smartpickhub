@@ -487,3 +487,11 @@ Continue product catalogue audit (regional US/UK models, official sources, obsol
 - The optional Commons research script is available but has not been executed against the live API yet. No product image candidate has been verified or approved.
 - Latest full CI success remains run #372 on `81d49bc`; no successful CI run or Pages preview is confirmed for the current image-policy/research code.
 - Roadmap baseline remains 47 completed steps and step 77 partially complete. Continue without claiming the full 100 steps are complete.
+
+
+## 17 November 2026 — Latest manufacturer-source work
+- Updated official model-specific sources for Apple iPad Pro 13-inch M5, iPad Air 11-inch M4, iPad A16 and Sony WH-1000XM6, WH-1000XM5, WH-1000XM4C, WH-ULT900N.
+- Sony comparison copy now distinguishes the 2026 WH-1000XM4C from the original WH-1000XM4 and reflects the model-specific battery and Bluetooth information.
+- Relevant commits: `0e6d68f` (seven source records), `948c7d6` (three Sony comparison records), `6697ea7` (roadmap), `b0557bc` (master log).
+- No guide is approved; no product photo is populated; all image sourcing remains subject to the rights-first policy.
+- Latest full CI pass is still #372 on `81d49bc`; no full CI or Pages preview is confirmed for the latest source/image changes.
