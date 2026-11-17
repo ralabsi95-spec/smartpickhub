@@ -85,11 +85,11 @@
 62. [x] Run smoke tests for generated pages, SEO, JSON-LD and affiliate links.
 63. [x] Run axe-core accessibility checks across catalogue routes.
 64. [x] Run Lighthouse for desktop and mobile homepage.
-65. [~] Run Lighthouse for guide index, disclosure and every guide (running in CI; homepage desktop/mobile passed).
-66. [ ] Generate consolidated JSON quality/security report (waiting for full Lighthouse step).
-67. [ ] Upload the unified quality/security report artifact (waiting for consolidated report).
-68. [ ] Review the numeric Lighthouse scores and detailed opportunities from the artifact.
-69. [ ] Review axe findings and document any exclusions or residual issues.
+65. [x] Run Lighthouse for guide index, disclosure and every guide (verified in CI run #453).
+66. [x] Generate consolidated JSON quality/security report (verified in CI run #453).
+67. [x] Upload the unified quality/security report artifact (verified in CI run #453).
+68. [~] Review Lighthouse scores and opportunities; guide index scored 76 Performance, with unused CSS and large PNG covers identified.
+69. [~] Review axe findings; zero violations, but 28 gradient-related contrast checks need manual confirmation and one ARIA warning was corrected in the next code batch.
 70. [ ] Re-test after any performance/accessibility remediation.
 
 ## Phase 6 — Analytics and conversion readiness
@@ -129,16 +129,17 @@
 100. [ ] Deploy only after approval, then verify live pages, SEO controls, links, analytics and rollback readiness.
 
 ## Current checkpoint — 17 November 2026
-- Roadmap baseline: 47 completed steps; step 48 partially complete. Do not inflate the completed count while CI steps 65–67 remain pending.
+- Roadmap tally from the current checklist: 52 completed steps; steps 48, 68 and 69 partially complete. Remaining work is still substantial; do not describe the 100-step roadmap as finished.
 - Current catalogue: 25 research-draft guides / 100 products; 0 guides approved for publication.
-- Current branch head before this documentation update: `9325de673ec932b95e40ba7a72d0b37436c4b257`; PR #1 remains open, Draft and unmerged.
-- CI run #453 / ID `44113630229` is still running on that code commit. Confirmed passing: Astro/type checks, catalogue and affiliate validation, keyword generation, build, smoke tests, axe-core across every catalogue route, and homepage Lighthouse desktop/mobile.
-- Lighthouse for guide index, disclosure and all guides is still running; consolidated report and artifact upload are pending. The latest full workflow result is therefore not yet known.
+- CI run #453 / ID `44113630229` completed successfully on code commit `9325de673ec932b95e40ba7a72d0b37436c4b257`. It audited 28 accessibility routes and 29 Lighthouse pages, generated the consolidated report and uploaded artifact `smartpickhub-quality-reports`.
+- Run #453 results: zero axe violations; 29 incomplete checks (28 gradient-related colour-contrast checks and one ARIA-label/role issue on the guide filter container); Lighthouse all pages scored 100 Accessibility and 100 Best Practices; SEO scores 66–69 because preview indexing is intentionally blocked; Performance minimum 76 on the guide index, all other pages at least 90. npm audit reported zero vulnerabilities in that run.
+- Follow-up code improvements are now on the branch: generate 720×1080 WebP derivatives for site display while retaining 1000×1500 PNGs for Pinterest/social metadata; switch homepage/guide cards and guide covers to WebP; add WebP smoke checks; add a valid group role to the guide filters; add Cloudflare Pages cache headers.
+- These follow-up changes are **not yet CI-confirmed**. Latest known workflow is run #470 / ID `44115423685`, pending for commit `459b4481605558da5fcc265057f77de4e2f3563c`. Recheck it and any newer run before claiming the performance improvement works.
 - Image status: 0 actual product-image records; Commons research script has not yet been run. Do not claim real product images or candidates have been found.
 - 71 identical US/UK search phrases are regional review flags, not automatic errors.
-- Latest source refresh covers selected Apple and Sony products; the remaining 100-product lifecycle, exact-model and regional-marketplace audit remains open.
+- Remaining product work: full 100-product lifecycle, exact-model, source and regional-marketplace audit.
 - Preview remains non-indexable. No PR merge, production deployment, DNS change, public publishing, WordPress modification or removal of crawl protections has occurred.
-- Next: inspect the final #453 run and quality artifact, resolve any Lighthouse/axe/dependency issues, run Commons candidate research if a suitable controlled execution environment is available, then continue the product-by-product US/UK source and model audit.
+- Next: verify run #470, inspect new WebP file sizes and Lighthouse results, manually resolve the gradient-related contrast review, then continue product-by-product source/model verification and controlled Commons candidate research.
 
 ## 17 November 2026 — Product-image integrity implementation
 - Added optional `product.image` metadata support to guide product detail pages. The image is rendered only when the record supplies an image URL, useful alt text, source page, licence statement and attribution.
