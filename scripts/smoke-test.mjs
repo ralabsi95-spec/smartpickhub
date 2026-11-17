@@ -173,7 +173,7 @@ for (const file of htmlFiles) {
       const productSection = productSectionStart >= 0 && productSectionEnd >= 0 ? html.slice(productSectionStart, productSectionEnd) : '';
       if (!productSection) {
         routeErrors.push('missing product detail section for ' + product.name);
-      } else if (product.image?.url) {
+      } else if (product.image?.reviewStatus === 'approved' && product.image?.url) {
         if (!productSection.includes(product.image.url)) routeErrors.push('verified product image is not rendered for ' + product.name);
         if (!productSection.includes(product.image.alt || product.name)) routeErrors.push('verified product image alt text is missing for ' + product.name);
       } else if (!productSection.includes('Product photo under verification')) {
