@@ -1,6 +1,6 @@
 # SmartPickHub – Agent Handoff (READ THIS FIRST)
 
-**Last verified:** 17 November 2026  
+**Last verified:** 17 November 2026, after CI run #453 progress check  
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `automation/bootstrap`  
 **Pull request:** [#1 – Draft Astro foundation and safe content workflow](https://github.com/ralabsi95-spec/smartpickhub/pull/1)  
@@ -51,36 +51,33 @@
 - These are generated research phrases, not verified search volume, CPC, difficulty, traffic or demand.
 - Do not generate one page per phrase. Cluster by shared intent and produce genuinely useful guides only; avoid thin/duplicated scaled content.
 
-### Build and QA
-- Workflow: `.github/workflows/build-check.yml`.
-- Node 22 is configured in this workflow.
-- Checks include Astro check, catalogue validation, keyword generation, build, smoke tests, Playwright/axe-core and Lighthouse; reports are uploaded as `smartpickhub-quality-reports` for 14 days.
-- `scripts/validate-catalogue.mjs` currently expects 10 guides and 40 products.
-- Latest catalogue build run checked during this handoff: [Run #169](https://github.com/ralabsi95-spec/smartpickhub/actions/runs/43891906353), conclusion **success**, for commit `5b29cb6df7186f7f62629ad58cb9f9f4ca4eb9ef`. A later documentation-only commit changed the branch head; this run validates the catalogue/code commit, not every later docs-only commit.
-- Earlier Run #166 quality artifact: axe-core found zero violations on all 12 configured routes, but the homepage had two incomplete checks needing manual review. Lighthouse reported Performance 100, Accessibility 100, Best Practices 100 and SEO 66. SEO 66 is expected because preview indexing is deliberately blocked.
-- QA coverage implementation: `scripts/accessibility-test.mjs` now loads guide slugs from `src/data/products.json`; Lighthouse now dynamically audits the guide index, affiliate disclosure and every catalogue guide. This is implemented but not yet CI-confirmed.
-- The latest audit artifact reviewed was from Run #166, not the newest dependency tree. Re-run `npm audit --json` on current branch and inspect the new report.
+### Build and QA — current verified state (17 November 2026)
+- Workflow: `.github/workflows/build-check.yml`; Node.js 22.23.4; GitHub Actions run #453 / ID `44113630229` for commit `9325de673ec932b95e40ba7a72d0b37436c4b257`.
+- Run #453 is **still in progress** at the all-guide Lighthouse step. Do not describe the full workflow or consolidated artifact upload as complete until GitHub reports a terminal conclusion.
+- Verified successful steps in run #453: locked dependency install, dependency-audit capture step, Astro type/content checks, catalogue/affiliate validation, keyword generation, static build, smoke tests, local preview server startup, axe-core across all catalogue routes, and homepage Lighthouse desktop/mobile.
+- The remaining Lighthouse step audits the guide index, disclosure page and all 25 guides; the consolidated report and artifact upload are pending.
+- `scripts/validate-catalogue.mjs` validates the live catalogue (25 guides / 100 products); it does not expect the obsolete 10/40 count.
+- Current image audit: zero populated product-image records; generated Pinterest covers are editorial illustrations, not product photos. The Commons research script exists but has not yet been run against the live API.
+- 71 identical US/UK search phrases are review flags only, not proof of incorrect regional models.
+- Latest PR #1 head is `9325de673ec932b95e40ba7a72d0b37436c4b257`; PR remains open, Draft and unmerged.
+- No stable-preview verification is claimed for this exact commit. The preview must remain noindex/nofollow and crawl-blocked.
 
-### Dependency security – unresolved
-- Run #166 audit reported 5 findings: 1 low, 3 high, 1 critical.
-- Critical advisory recorded: `GHSA-26w7-cxv4-gfx2`, related to Astro AVIF image optimization / remote code execution; the recorded affected range was Astro versions below 7.2.8.
-- Other affected dependency paths included Astro/transitive `esbuild`, `sharp`, `zod` and `zod-to-ts`.
-- The suggested npm fix involved a major Astro upgrade to 7.4.12 from the current Astro 5 range. No automatic fix or package upgrade was applied.
-- Next agent must retrieve a fresh audit report, verify each advisory against current installed/lockfile versions and official advisories, inspect `npm explain` paths, and prepare a tested upgrade plan. Do not blindly jump major versions or force-install.
+### Dependency security — fresh evidence required
+- A fresh `npm audit --json` capture is part of run #453, but its artifact/report has not yet been reviewed in this checkpoint.
+- Do not repeat older vulnerability counts or advisory ranges as current facts until the new report is downloaded and inspected.
+- Do not run `npm audit fix --force`, blind major upgrades, or destructive dependency changes. Retrieve the current audit report, verify advisory IDs and dependency paths, then prepare a tested, isolated remediation plan.
+- The Astro image pipeline and any transitive dependencies require special attention; verify the exact installed and locked versions rather than relying on historical notes.
 
 ## 3. Current QA architecture and known issues
 
-- There is one QA workflow: `.github/workflows/build-check.yml`. Gemini's reference commit `ef55e105` used this same workflow; no separate test workflow needs importing or merging.
-- `.github/workflows/auto-publish.yml` is a separate draft-research writer that saves unverified drafts to `content-drafts/`; it is not a QA workflow and must not be manually dispatched without owner authorization.
-- Both workflow Node runtimes are aligned to Node 22. The quality workflow uses concurrency cancellation to avoid spending CI time on superseded commits.
-- The QA suite derives guide routes from `src/data/products.json`. Current data is 10 guides / 40 products, but future guides are included without hard-coded route lists.
-- The unified checks cover catalogue structure, Amazon US/UK URL construction and tracking tags, generated HTML noindex/robots/canonical/internal links, required guide JSON-LD Article/ItemList, sponsored/nofollow affiliate anchors, axe-core, Lighthouse and npm audit.
-- Individual JSON reports are saved under `test-reports/`; the consolidated `test-reports/latest-audit.json` is uploaded in the `smartpickhub-quality-reports` artifact for 14 days.
-- Historical Gemini Actions #129 and #130 at `ef55e105` failed at the smoke-test step because the older rendered-HTML checks falsely reported missing noindex/canonical tags. Lighthouse did not run and no artifact was produced. Later test revisions fixed the parser; see Run #179.
-- Runs #174 and #175 succeeded but were documentation-change runs, not Gemini test runs.
-- Run #179 passed the dynamic QA workflow on commit `6a2f61e2faca5927093afcfbfe0d8b92be1e8d4f`: axe-core 13 routes, zero violations, two incomplete homepage checks; Lighthouse 14 pages with Performance/Accessibility/Best Practices 100 and SEO 66 (expected for noindex preview).
-- Run #179 npm audit: 5 findings (1 low, 3 high, 1 critical). Astro is the direct critical package; transitive affected paths include esbuild, sharp, zod and zod-to-ts. No package upgrade has been applied.
-- The latest unified report run is still pending CI verification. Treat this handoff as the intended implementation state until the latest branch run confirms it.
+- The single QA workflow is `.github/workflows/build-check.yml`. The separate `.github/workflows/auto-publish.yml` is a draft-research writer and must not be manually dispatched without owner authorization.
+- QA route lists are derived dynamically from `src/data/products.json`; current coverage targets the homepage, guide index, affiliate disclosure and all 25 guide pages.
+- The workflow checks Astro types/content, catalogue and affiliate destinations, keyword generation, static build, generated HTML/SEO/JSON-LD/affiliate links, axe-core, Lighthouse, dependency audit and a consolidated JSON report.
+- The current run #453 has already passed axe-core and homepage Lighthouse; guide-wide Lighthouse and artifact upload remain in progress/pending.
+- The previous successful run #372 predates the current product-image, Commons research and source-refresh changes. It must not be cited as validation of the current head.
+- Lighthouse SEO scores may be reduced by design because preview indexing is deliberately blocked. Never weaken noindex/nofollow or robots protections to chase a higher score.
+- axe-core zero critical/serious violations is useful evidence but does not replace manual review of incomplete checks or real-device keyboard/touch testing.
+- Dependency security remains unresolved until the latest npm audit artifact is inspected.
 
 ## 4. Next actions – recommended order
 
