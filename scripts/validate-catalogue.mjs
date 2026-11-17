@@ -82,7 +82,7 @@ for (const guide of guides) {
       if (!['pending', 'approved'].includes(image.reviewStatus)) {
         errors.push('Product image reviewStatus must be pending or approved for ' + product.name + '.');
       }
-      if (image.reviewStatus === 'approved' && !/^\\d{4}-\\d{2}-\\d{2}$/.test(image.verifiedAt ?? '')) {
+      if (image.reviewStatus === 'approved' && !/^\d{4}-\d{2}-\d{2}$/.test(image.verifiedAt ?? '')) {
         errors.push('Approved product image requires verifiedAt in YYYY-MM-DD format for ' + product.name + '.');
       }
       if (image.reviewStatus === 'approved') imageAudit.approved++;
