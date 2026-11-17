@@ -468,3 +468,14 @@ Continue product catalogue audit (regional US/UK models, official sources, obsol
 - Latest code commit `0493e59` has not yet had a confirmed full CI run or Pages preview in this handoff. Verify the workflow for the newest branch head before claiming validation.
 - Current verified full CI remains run #372 on `81d49bc`; that run predates the image-slot batch.
 - Continue on `automation/bootstrap`; keep PR #1 draft/open/unmerged, all 25 guides draft-only, noindex/nofollow and robots crawl-blocking active. Production Pages remains disconnected. No DNS, WordPress, publishing or indexing action is authorised.
+
+
+## 17 November 2026 — Rights-first image research pipeline
+- Latest documentation checkpoint: `8b0e60957c7b483adf413816df3d5e0a355d93fd`. Latest product-image research pipeline includes `scripts/research-commons-images.mjs` and `scripts/audit-product-images.mjs`.
+- Run `npm run research:commons` manually to generate candidate results in `test-reports/wikimedia-image-candidates.json`. The script searches exact catalogue product names, collects Commons file metadata/licence/creator/credit information, and categorises candidate licence families. It never auto-approves or downloads images.
+- Run `npm run audit:images` to generate `test-reports/product-image-readiness.json`. This is included in prebuild.
+- Read `PRODUCT_IMAGE_POLICY.md` before adding product images. Only `product.image.reviewStatus === 'approved'` renders. Approved records require source page, licence, attribution, rights basis, descriptive alt text and human verification date.
+- Amazon Product Advertising Content images must not be scraped or locally cached as a shortcut; check current US and UK Associates programme terms before any integration. Commons licence metadata is a lead, not legal clearance; inspect each individual file page and non-copyright restrictions.
+- The current catalogue has 100 product records and, at the time of this audit, zero populated product-image records. Do not report Pinterest cover illustrations as product photographs.
+- Latest full CI remains run #372 on `81d49bc`; no completed CI or preview is confirmed for this new branch head. Verify current workflow and preview before asserting tests pass.
+- Keep all product guides draft-only, preview noindex and robots crawl-blocked. PR #1 remains draft/open/unmerged. Production Pages remains disconnected; do not merge, deploy, index or publish without explicit owner approval.
