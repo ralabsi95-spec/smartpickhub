@@ -751,3 +751,11 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Latest implementation and policy commits: `d1d9afa`, `5f5836a`, `2c087c7`, `3b6ab68`, `7a50963`, `d070cc8`, `acf363b`, `60f2e53`, `f105690`.
 - The latest branch head has not yet had a confirmed full CI run or Pages preview. Last confirmed full CI remains run #372 on `81d49bc`, which predates this workstream.
 - No product image has been approved or published. No PR merge, production deployment, DNS/WordPress change, public publishing or indexing change has occurred.
+
+
+## 17 November 2026 — Latest continuation checkpoint
+- Latest code/policy/handoff checkpoint before this entry: `f08348cf0dc921a6ccfe92d2205021174f93eb0c`; roadmap refreshed in `bac6e3cde99b12ea595d9e3219e10f904bb8dc49`.
+- Catalogue inspection: 25 guides, 100 products, 0 populated product-image records. 71 products currently use identical US/UK search phrases; treat these as manual review flags, not automatic evidence of a regional mismatch.
+- The optional Commons research script has been added but has not yet been executed against the live API in the repository environment. Do not claim candidate photos have been found.
+- Latest full CI pass remains run #372 on `81d49bc`; the newer workstream has no confirmed full CI result or Pages preview yet.
+- Roadmap baseline remains 47 completed steps, step 77 partially complete. Image rights and real photo sourcing remain outstanding.
