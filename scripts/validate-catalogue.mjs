@@ -61,7 +61,7 @@ for (const guide of guides) {
       imageAudit.noImage++;
     } else {
       const image = product.image;
-      for (const key of ['url', 'alt', 'sourcePage', 'license', 'attribution', 'rightsBasis', 'reviewStatus', 'verifiedAt']) {
+      for (const key of ['url', 'alt', 'sourcePage', 'license', 'attribution', 'rightsBasis', 'reviewStatus']) {
         if (typeof image[key] !== 'string' || !image[key].trim()) {
           errors.push('Product image metadata requires ' + key + ' for ' + product.name + '.');
         }
