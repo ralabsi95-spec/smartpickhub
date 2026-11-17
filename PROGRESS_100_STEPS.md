@@ -168,3 +168,13 @@
 - The image research pipeline has not yet been run against the live Commons API from the repository environment. No candidate or real product image is claimed as found.
 - Latest full CI remains run #372 on `81d49bc`; no CI result is currently visible for `f08348c`. A preview for this batch is also not confirmed.
 - Roadmap completed count remains 47; step 77 is partially complete. New image-integrity sub-tasks are implementation work supporting step 77, not extra counted roadmap steps.
+
+
+## 17 November 2026 — Exact manufacturer source refresh
+- Replaced generic catalogue links with model-specific official sources for three Apple products: iPad Pro 13-inch (M5), iPad Air 11-inch (M4) and iPad (A16). The iPad mini (A20 Pro) source was already upgraded in the prior batch.
+- Replaced the generic Sony headphone category page with exact official support specifications for WH-1000XM6, WH-1000XM5, WH-1000XM4C and WH-ULT900N.
+- Updated comparison copy for WH-1000XM6, XM5 and XM4C to reflect the exact model's codec/connectivity and manufacturer battery estimates; the XM4C is explicitly distinguished from the original XM4.
+- Official model evidence checked: Apple Support specifications for the iPad models; Sony Support specifications for the four headphone models. The 2026 WH-1000XM4C has its own Sony specification page and should not be treated as simply a colour name for the original XM4.
+- Data commit: `0e6d68f`; Sony comparison-copy commit: `948c7d6`.
+- The 71 identical US/UK marketplace phrases remain a manual review queue. No claim is made that they are all wrong; global models may legitimately share phrases.
+- CI and preview for this batch remain unconfirmed. The last full successful workflow remains #372 on `81d49bc`.
