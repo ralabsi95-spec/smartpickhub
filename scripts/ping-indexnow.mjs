@@ -70,13 +70,23 @@ if (pageUrls.length > 10000) throw new Error('IndexNow accepts at most 10,000 UR
 
 const keyFile = path.join(distDir, `${apiKey}.txt`);
 await fs.writeFile(keyFile, apiKey, 'utf8');
+if (process.env.INDEXNOW_PREPARE_ONLY === 'true') {
+  console.log(`IndexNow key file prepared at dist/${apiKey}.txt. Deploy this build before running the notification step.`);
+  process.exit(0);
+}
+
+const keyLocation = new URL(`/${apiKey}.txt`, site);
+const keyResponse = await fetch(keyLocation);
+if (!keyResponse.ok || (await keyResponse.text()).trim() !== apiKey) {
+  skip('the deployed production key file is not publicly reachable yet; deploy the prepared dist/ before notifying IndexNow.');
+}
 const response = await fetch('https://api.indexnow.org/indexnow', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json; charset=utf-8' },
   body: JSON.stringify({
     host: site.hostname,
     key: apiKey,
-    keyLocation: new URL(`/${apiKey}.txt`, site).href,
+    keyLocation: keyLocation.href,
     urlList: pageUrls,
   }),
 });
