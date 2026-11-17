@@ -998,7 +998,7 @@
           "us_identifier": "Samsung Bespoke Jet AI Cordless Stick Vacuum VS28C9762UK/AA",
           "uk_identifier": "Samsung Bespoke Jet AI Cordless Stick Vacuum VS28C9784QK/EU",
           "pros": [
-            "Manufacturer lists up to 280 W suction for the Bespoke Jet AI family",
+            "Samsung UK lists 280 W for model VS28C9784QK/EU; the US model VS28C9762UK/AA is specified as 280 AW. These differently expressed regional specifications must not be compared as the same unit.",
             "All-in-One Clean Station empties the dustbin and recharges the vacuum",
             "AI cleaning mode uses floor sensing to adjust cleaning behaviour",
             "UK model family documentation lists removable batteries and up to 160 minutes using two batteries"
@@ -1010,7 +1010,7 @@
           ],
           "verdict": "A premium convenience-focused option if automatic dust emptying matters. Compare the regional model code, number of batteries and included station before deciding; US and UK runtime figures are not directly interchangeable.",
           "source": "https://www.samsung.com/uk/vacuum-cleaners/bespoke-jet/",
-          "sourceNote": "Samsung UK lists model VS28C9784QK/EU, 280 W suction and up to 160 minutes using both batteries. Samsung US model VS28C9762UK/AA documentation lists 280 AW and up to 100 minutes in minimum mode with a non-motorised tool."
+          "sourceNote": "Samsung UK lists model VS28C9784QK/EU and 280 W suction, with up to 160 minutes using two batteries. Samsung US model VS28C9762UK/AA documentation lists 280 AW, 120 V / 60 Hz and up to 100 minutes in minimum mode with a non-motorised tool. W and AW are not interchangeable labels; compare each regional model only using its own manufacturer specification and confirm the exact included battery bundle."
         },
         {
           "name": "Miele Triflex HX2 Cordless Stick Vacuum",
@@ -1030,7 +1030,7 @@
           ],
           "verdict": "A flexible alternative for buyers who want different body configurations and a lifetime HEPA filter. Check the exact HX2 package and whether the powered floorhead is included in the selected regional listing.",
           "source": "https://media.miele.com/downloads/n-/gb/FS_11819170_GBE_GB-en-GB.pdf",
-          "sourceNote": "Miele UK technical sheet lists 3-in-1 design, 3.6 kg weight, 60 minutes PowerUnit-only runtime, 30 minutes with electrical accessories at low power, 14 minutes at high power with electrical accessories and four-hour charging."
+          "sourceNote": "Miele's UK technical sheet identifies material number 11819170 / EAN 4002516449959 and lists 3-in-1 design, 3.6 kg weight, 60 minutes PowerUnit-only runtime, 30 minutes with electrical accessories at low power, 14 minutes at high power with electrical accessories and four-hour charging. Miele's US sheet identifies a different material number (11827000 / EAN 4002516453017). Treat these as regional package records and verify included floorhead, charger and warranty on the exact retailer listing."
         }
       ],
       "buyingChecklist": [
@@ -1755,8 +1755,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A portable choice when battery operation and integrated streaming are important.",
-          "source": "https://global.xgimi.com/products/mogo-4",
-          "sourceNote": "XGIMI's official product page lists native 1080p, 450 ISO lumens, Google TV, 71.28Wh battery and up to 2.5 hours of video playback in Eco mode."
+          "source": "https://uk.xgimi.com/products/mogo-4",
+          "sourceNote": "XGIMI UK's official product page identifies model WK08K and lists native 1080p, 450 ISO lumens, Google TV, 71.28Wh battery and up to 2.5 hours video playback in Eco mode. The UK page specifies AC 200–240V, 50/60Hz; PowerBase Stand is sold separately. Confirm the exact bundle and plug before purchase."
         },
         {
           "name": "Epson EpiqVision Mini EF21 Laser Projector",
@@ -1791,7 +1791,7 @@
           ],
           "verdict": "A compact smart projector for controlled-light environments.",
           "source": "https://epson.com/For-Home/Projectors/Streaming-Entertainment/EF-30-Smart-Personal-Projector/p/V11HC43920",
-          "sourceNote": "Epson's official US page identifies model V11HC43920 and lists Full HD, 350 lumens, built-in Google TV and Dolby Audio. Brightness is modest; compare room-light requirements."
+          "sourceNote": "Epson's official US page identifies model V11HC43920 and lists Full HD 1080p, 350 lumens, built-in Google TV and Dolby Audio. This is a US manufacturer source; an exact UK regional SKU and current UK availability have not yet been verified. Do not assume regional bundle, electrical rating, warranty or app availability are identical."
         },
         {
           "name": "Epson EpiqVision Flex CO-FH02 Smart Portable Projector",
