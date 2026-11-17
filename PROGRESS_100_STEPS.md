@@ -3,7 +3,7 @@
 **Last updated:** 17 November 2026  
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `automation/bootstrap`  
-**Current verified commit:** `81d49bc4c6f69b9631c1a8a3cbbefae4c33194fa`  
+**Latest implementation commits:** `21a6769`, `08c0838`, `90f6c04`, `0493e59` (image-slot batch; CI pending)  
 **Current preview:** https://fa10e958.smartpickhub-preview.pages.dev/  
 **Overall status:** Development and verification in progress. This is a 100-step roadmap, not a claim that all 100 steps are complete.
 
@@ -136,3 +136,14 @@
 - Latest exact preview: https://fa10e958.smartpickhub-preview.pages.dev/
 - Next action: visual review on mobile and desktop, then inspect the quality-report artifact details and continue the remaining catalogue audit.
 - No production launch, PR merge, indexing, public publication, DNS update or WordPress modification has been performed.
+
+
+## 17 November 2026 — Product-image integrity implementation
+- Added optional `product.image` metadata support to guide product detail pages. The image is rendered only when the record supplies an image URL, useful alt text, source page, licence statement and attribution.
+- Added a clear, accessible “Product photo under verification” fallback when no approved image metadata exists. This intentionally avoids displaying unrelated images as if they depict the named product.
+- Added responsive image sizing, intrinsic dimensions, lazy loading and source/attribution caption styling.
+- Extended `scripts/validate-catalogue.mjs` to validate HTTPS image and source-page URLs, alt text, licence metadata and attribution for any populated image record. Existing products remain valid with image slots pending.
+- Extended `scripts/smoke-test.mjs` to require either the verified product image or the explicit fallback for each product detail section.
+- Commits: `21a6769` (guide template), `08c0838` (responsive styling), `90f6c04` (catalogue image metadata validation), `0493e59` (smoke tests).
+- This is an implementation milestone, not a completed photo rollout. No actual product image was added because image rights and exact model identity must be confirmed first.
+- CI and the corresponding Pages preview are pending for the final commit. Do not describe this batch as fully tested or deployed until those checks pass.
