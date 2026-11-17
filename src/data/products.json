@@ -1640,8 +1640,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A compact option when portability matters more than screen area.",
-          "source": "https://www.apple.com/ipad/compare/",
-          "sourceNote": "Apple's official iPad comparison lists current Pro, Air, standard iPad and mini models, display sizes and processor families. Check exact storage and cellular configurations."
+          "source": "https://support.apple.com/en-us/149482",
+          "sourceNote": "Apple's 2026 technical specifications identify the A20 Pro chip, 8.5-inch OLED display, 128GB/256GB/512GB capacities, IP67 rating and 255g Wi-Fi model weight. Storage configuration changes the GPU/Neural Engine core count; check regional cellular bands and included power adapter."
         }
       ],
       "buyingChecklist": [
@@ -2094,8 +2094,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A general-purpose option for buyers already using an iPhone.",
-          "source": "https://www.apple.com/watch/compare/",
-          "sourceNote": "Apple's official Series 12 technical specifications list the S11 chip, 42mm/46mm sizes, Always-On Retina wide-angle OLED display and up to 2,000 nits. Battery life is an Apple estimate and varies by use and configuration."
+          "source": "https://support.apple.com/en-mide/148589",
+          "sourceNote": "Apple's model-specific technical specifications identify 42mm and 46mm case options, S11 chip, 2,000-nit display and up to 24 hours of normal-use battery life (up to 38 hours in Low Power Mode). GPS/cellular, case material and regional feature availability vary by configuration and country."
         },
         {
           "name": "Apple Watch SE 3",
@@ -2129,8 +2129,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A rugged premium candidate for users who need its larger case and outdoor feature set.",
-          "source": "https://www.apple.com/watch/compare/",
-          "sourceNote": "Apple's official Ultra 4 technical specifications list the 49mm titanium case, 3,000-nit display and battery estimates of up to 50 hours normal use or 84 hours in Low Power Mode. Actual battery life varies by use and configuration."
+          "source": "https://www.apple.com/jo/apple-watch-ultra-4/specs/",
+          "sourceNote": "Apple Jordan's model-specific specifications identify the 49mm titanium case, S11 chip, 3,000-nit display and battery estimates of up to 50 hours normal use or 84 hours in Low Power Mode. Actual battery life varies by use and configuration; satellite/cellular features vary by country and model."
         },
         {
           "name": "Garmin Forerunner 265",
