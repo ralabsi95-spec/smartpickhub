@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import sharp from 'sharp';
 
 const root = 'dist';
 const errors = [];
@@ -120,7 +121,14 @@ for (const file of htmlFiles) {
       const png = fs.readFileSync(coverPath);
       if (png.length < 24 || png.toString('hex', 0, 8) !== '89504e470d0a1a0a' || png.readUInt32BE(16) !== 1000 || png.readUInt32BE(20) !== 1500) routeErrors.push('Pinterest image must be a valid 1000×1500 PNG');
     }
-    if (!html.includes('/images/pinterest/' + guide.slug + '.png')) routeErrors.push('guide page does not reference its generated Pinterest cover');
+    if (!html.includes('/images/pinterest/' + guide.slug + '.png')) routeErrors.push('guide page does not reference its generated Pinterest cover in social metadata');
+    const webpPath = path.join(root, 'images', 'webp', guide.slug + '.webp');
+    if (!fs.existsSync(webpPath)) routeErrors.push('missing optimized WebP cover ' + webpPath);
+    else {
+      const webpMetadata = await sharp(webpPath).metadata();
+      if (webpMetadata.format !== 'webp' || webpMetadata.width !== 720 || webpMetadata.height !== 1080) routeErrors.push('optimized guide cover must be a valid 720×1080 WebP');
+    }
+    if (!html.includes('/images/webp/' + guide.slug + '.webp')) routeErrors.push('guide page does not use its optimized WebP cover');
     if (!html.includes('og:image')) routeErrors.push('guide page missing Open Graph image metadata');
     if (!parsedJsonLd.length) routeErrors.push('guide page missing JSON-LD structured data');
     const graph = parsedJsonLd.flatMap(item => Array.isArray(item['@graph']) ? item['@graph'] : [item]);
