@@ -726,3 +726,16 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - PR #1 remains draft/open/unmerged. Production Pages project `smartpickhub` remains disconnected and untouched. No production deployment, DNS change, WordPress migration, publication, indexing, or product import occurred.
 - Hosting decision remains Cloudflare Pages target `https://smartpickhub.pages.dev/`; the legacy InfinityFree host is permanently excluded. Paid custom domain remains deferred.
 - Next: inspect the visual design on mobile and desktop with owner feedback; review Lighthouse/axe report details rather than relying only on pass status; verify stable preview against the immutable build; then continue catalogue source/lifecycle audit and pre-launch checklist. Do not connect production, merge PR #1, remove noindex/robots, or publish without explicit approval.
+
+
+## 17 November 2026 — Product image integrity milestone
+- Added optional, rights-aware product-image metadata rendering to individual guide product sections.
+- A product photo is rendered only when a record supplies an HTTPS image URL, descriptive alt text, HTTPS source page, licence statement and attribution. Missing imagery displays an accessible “Product photo under verification” fallback.
+- Added responsive image styling, lazy loading and intrinsic dimensions.
+- Catalogue validation now audits image URL/source URL protocols, alt text, licence and attribution for populated image records.
+- Smoke tests now verify each product section renders either its verified image or the explicit fallback.
+- Implementation commits: `21a676978e19dd87cccfbff65ae56b7751511d30`, `08c083846550fac9b5fd47737da5cc05e78830a1`, `90f6c04d8af09f8e53a5f136ce9f81676a9bee81`, `0493e596870aa43fd8b8b7ac23388b7b5970d8f3`.
+- Documentation commits: `542e7259d30c1db033d9100f9e69f1a9942a5a0c` (100-step roadmap), `e13f531eb47592f393cda2160838833032f2b954` (agent handoff).
+- No product photographs have yet been populated; generated Pinterest covers are editorial artwork, not product photographs. Image research and rights verification remain outstanding.
+- The latest full CI pass is still run #372 on commit `81d49bc`; it predates this batch. The latest commit's CI and preview must be checked before declaring the batch validated.
+- No guide approvals, public publishing, indexing, PR merge, production deployment, DNS or WordPress changes. Keep all safety controls active.
