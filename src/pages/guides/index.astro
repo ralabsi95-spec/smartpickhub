@@ -32,10 +32,15 @@ const categories = [...new Set(guides.map((guide) => guide.category).filter(Bool
           return (
             <article class="card guide-card" data-guide-card data-category={guide.category ?? ''} data-search={searchText}>
               <a class="guide-card-cover" href={`/guides/${guide.slug}/`} tabindex="-1" aria-hidden="true"><img src={`/images/pinterest/${guide.slug}.png`} alt="" width="1000" height="1500" loading="lazy" decoding="async" /></a>
-              <span class="pill">{guide.category}</span>
-              <h2><a href={`/guides/${guide.slug}/`}>{guide.title}</a></h2>
-              <p>{guide.summary}</p>
-              <p class="disclosure">{guide.editorialStatus ?? 'Editorial review required before publication.'}</p>
+              <div class="guide-card-content">
+                <span class="category-tag">{guide.category}</span>
+                <h2><a href={`/guides/${guide.slug}/`}>{guide.title}</a></h2>
+                <p class="guide-card-summary">{guide.summary}</p>
+                <div class="guide-card-bottom">
+                  <span class="guide-card-status">{guide.editorialStatus ?? 'Editorial review required before publication.'}</span>
+                  <a class="card-arrow" href={`/guides/${guide.slug}/`}>Read guide <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
             </article>
           );
         })}
