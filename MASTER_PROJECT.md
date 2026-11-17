@@ -482,3 +482,11 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - No source files, product records, tracking IDs, production settings, `main`, live InfinityFree site, DNS or publication state were changed in this verification. Only this project log is updated.
 - Status: the 100-product catalogue and generated-cover code have a successful full CI quality run. Do not describe this as proof that all product facts/listings have been editorially verified or that the site is “100% stable” in production. Preview remains noindex and all catalogue content remains research draft/unapproved.
 - Next: visually inspect the current Cloudflare Pages preview and representative generated covers; review the 25 guides and verify exact US/UK retailer variants/direct ASINs before any publication. Do not merge PR #1 to `main`, remove noindex, or publish without explicit approval.
+
+
+## Preview inspection — 17 November 2026
+
+- Inspected the deployed Cloudflare Pages preview at `https://61142a59.smartpickhub-preview.pages.dev/guides/` and the canonical preview domain `https://smartpickhub-preview.pages.dev/guides/`.
+- Confirmed the guide index exposes all 25 research-draft guide cards and 25 corresponding generated cover image URLs under `/images/pinterest/<slug>.png`. The preview HTML includes the cover `img` elements; image extraction returned 25 unique cover URLs.
+- Confirmed page metadata on both preview hostnames reports `noindex, nofollow`. The older 100-product preview deployment `8c4ac2dd...` predates the cover-grid implementation and should not be used to review the latest cover layout.
+- The preview content remains research draft/unapproved. No public production deployment or indexing change was made.
