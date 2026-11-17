@@ -380,3 +380,14 @@ Do not ask the owner to repeat details already documented here.
 - CI run #328 on `f8a9ade` was ultimately cancelled before final Lighthouse sweep completed; run #334 on later docs head was still in progress at last poll. Neither is counted as a full pass.
 - PR #1 remains open/Draft/unmerged. No production/WordPress/DNS changes, public publishing or indexing changes; noindex/robots protections remain enabled.
 - Next: verify a full successful quality workflow and Pages preview for the final head, then continue source-level review of the remaining 100-record catalogue and resolve the Cloudflare Workers integration only if its intended role is clarified.
+
+
+## 17 November 2026 — Air purifier and NAS source audit
+- Continued manufacturer-source review and updated five records in `src/data/products.json`:
+  - Four Levoit air purifiers now use model-specific US manufacturer pages and distinct UK-market search phrases. Official UK listings confirm Core 300, Core 300S and Core 400S names; the exact UK Vital 200S counterpart was not confirmed. US Core 300-P and 300S-P pages specify 120V/60Hz, so the catalogue now warns against assuming electrical interchangeability and asks buyers to verify the UK rating plate/filter/warranty.
+  - Synology DS224+ now links to its exact official specification page rather than a general product catalogue; its PSU input is specified as 100–240V AC, 50/60Hz. Legacy-platform and drive-compatibility caveats remain.
+- Data commits: `74445de212c4afdfd2403723c7d13b2dc99f5511` (Levoit) and `44e45d6a758e090ae1949fe843893af3a6d2ebf2` (Synology).
+- Official references reviewed: Levoit US model pages and Levoit UK air-purifier collection/product pages; Synology DS224+ hardware specifications. The UK store currently lists Core 300, Core 300S and Core 400S; no exact Vital 200S UK counterpart was verified. Do not claim exact electrical equivalence from shared model-family names.
+- The final head now includes these data edits. CI and Pages checks must be re-confirmed for the final documentation head before marking this batch fully validated.
+- PR #1 remains Draft/open/unmerged; no production, WordPress, DNS, publication or indexing changes. noindex/robots protections remain active.
+- Next: confirm final CI/Pages checks, then continue regional verification of remaining appliances, vacuums, printers and product lifecycle/source freshness.
