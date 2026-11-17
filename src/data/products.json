@@ -153,8 +153,8 @@
         {
           "name": "EcoFlow RIVER 2 Portable Power Station",
           "bestFor": "Short trips, small electronics and portable backup where AC output is needed.",
-          "us_identifier": "EcoFlow RIVER 2 Portable Power Station",
-          "uk_identifier": "EcoFlow RIVER 2 Portable Power Station",
+          "us_identifier": "EcoFlow RIVER 2 EFR600 US 120V AC output",
+          "uk_identifier": "EcoFlow RIVER 2 EFR600 UK EU 230V AC output",
           "pros": [
             "256Wh LFP battery capacity",
             "300W pure-sine-wave AC output with stated surge capability",
@@ -167,13 +167,14 @@
           ],
           "verdict": "A compact power-station candidate for small electronics and low-wattage equipment. Select the correct US or UK electrical version; never assume the socket voltage is interchangeable.",
           "source": "https://uk.ecoflow.com/products/river-2-portable-power-station",
-          "sourceNote": "EcoFlow UK specifications list 256Wh LFP capacity, 300W AC output, 230V regional output and approximately 3.5kg weight."
+          "sourceNote": "EcoFlow UK specifications list 256Wh LFP capacity, 300W AC output, 230V regional output and approximately 3.5kg weight.",
+          "availabilityNote": "The RIVER 2 is a region-specific electrical product despite the shared EFR600 family name. EcoFlow's manual specifies US AC input 100–120V and output 120V, while EU/UK input is 220–240V and output 230V. Do not use a US unit on UK/Jordan mains or assume the AC output is interchangeable. Official regional specifications: https://manuals.ecoflow.com/eu/product/river-2-portable-power-station?lang=en_US&source=desktop and https://uk.ecoflow.com/products/river-2-portable-power-station."
         },
         {
           "name": "Jackery Explorer 300 Plus Portable Power Station",
           "bestFor": "Travellers and campers seeking a compact power station for small electronics.",
-          "us_identifier": "Jackery Explorer 300 Plus Portable Power Station",
-          "uk_identifier": "Jackery Explorer 300 Plus Portable Power Station",
+          "us_identifier": "Jackery Explorer 300 Plus JE-300B US 100-120V 100V AC output",
+          "uk_identifier": "Jackery Explorer 300 Plus JE-300B UK 220-240V 230V regional version",
           "pros": [
             "288Wh LiFePO4 battery capacity",
             "300W rated AC output with pure-sine-wave output",
@@ -186,7 +187,8 @@
           ],
           "verdict": "A small power-station option for camping and portable electronics. Choose the correct regional version and check the appliance's continuous and startup power needs.",
           "source": "https://helpcenter.eu.jackery.com/hc/en-gb/articles/52682971950363-Explorer-300-Plus-Basic-Information",
-          "sourceNote": "Jackery Europe identifies model JE-300B, 288Wh LiFePO4 battery, approximately 3.75kg weight and regional AC specifications."
+          "sourceNote": "Jackery Europe identifies model JE-300B, 288Wh LiFePO4 battery, approximately 3.75kg weight and regional AC specifications.",
+          "availabilityNote": "Jackery's official US and Europe support pages show the same JE-300B model code but different regional electrical specifications: US AC input 100–120V and AC output 100V/60Hz; Europe AC input 220–240V/50Hz. Verify the exact country-specific package and output voltage before purchase. Sources: https://faq.jackery.com/hc/en-us/articles/52303549157787-Explorer-300-Plus-Basic-Information and https://helpcenter.eu.jackery.com/hc/en-gb/articles/52682971950363-Explorer-300-Plus-Basic-Information."
         }
       ],
       "buyingChecklist": [
@@ -916,8 +918,8 @@
         {
           "name": "COSORI TurboBlaze Air Fryer (UK 6L / US 6-Quart)",
           "bestFor": "Users who prefer a single spacious basket and a broad temperature range over dual cooking zones.",
-          "us_identifier": "COSORI TurboBlaze 6 Quart Air Fryer CAF-DC601-KUS",
-          "uk_identifier": "COSORI TurboBlaze 6L Air Fryer",
+          "us_identifier": "COSORI TurboBlaze CAF-DC601-KUS US 120V 60Hz 1725W 6qt",
+          "uk_identifier": "COSORI TurboBlaze UK 6L model 220-240V regional version",
           "pros": [
             "Single-basket format offers a simpler footprint than many dual-zone models",
             "Nine cooking functions cover air frying, roasting, baking, broiling, dehydrating, proofing and reheating",
@@ -930,7 +932,8 @@
           ],
           "verdict": "A flexible single-basket option for users who do not need separate cooking zones. Confirm the regional model and its electrical rating before purchase.",
           "source": "https://cosori.co.uk/products/cosori-turbo-blaze-6l-air-fryer",
-          "sourceNote": "COSORI UK lists the 6L TurboBlaze, nine functions and 30–230°C range; COSORI US identifies model CAF-DC601-KUS as 120V, 1725W and 6qt: https://cosori.com/products/turboblaze-air-fryer"
+          "sourceNote": "COSORI UK lists the 6L TurboBlaze, nine functions and 30–230°C range; COSORI US identifies model CAF-DC601-KUS as 120V, 1725W and 6qt: https://cosori.com/products/turboblaze-air-fryer",
+          "availabilityNote": "The US CAF-DC601-KUS is specified for AC 120V, 60Hz and 1,725W. The UK product page is a separate 6L regional listing; its current public specification page does not expose a clear voltage line in the captured data, so confirm the rating plate/manual before ordering. Never assume the US 120V unit is suitable for UK/Jordan mains. Sources: https://cosori.com/products/turboblaze-air-fryer and https://cosori.co.uk/products/cosori-turbo-blaze-6l-air-fryer."
         }
       ],
       "buyingChecklist": [
@@ -2158,7 +2161,7 @@
           "name": "Brother MFC-L8395CDW Colour Laser All-in-One Printer",
           "bestFor": "Small offices needing colour printing, copying, scanning and fax in one device.",
           "us_identifier": "Brother MFC-L8395CDW Colour Laser All-in-One Printer",
-          "uk_identifier": "Brother MFC-L8395CDW Colour Laser All-in-One Printer",
+          "uk_identifier": "Brother MFC-L8390CDW UK 220-240V colour LED all-in-one printer",
           "pros": [
             "Brother lists duplex print/scan/copy, Gigabit Ethernet, dual-band wireless and a 50-sheet ADF.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -2170,13 +2173,13 @@
           "verdict": "A business-oriented colour multifunction option where duplex scanning and networking matter.",
           "source": "https://www.brother-usa.com/p/laser-printers/MFCL8395CDW",
           "sourceNote": "Brother's official US product page documents 31ppm colour/mono print, duplex print/scan, a 50-sheet ADF, Gigabit Ethernet and dual-band Wi-Fi. The US page specifies 110–120V AC.",
-          "availabilityNote": "The cited manufacturer page is for the US electrical variant (110–120V AC). UK buyers must verify a UK-rated model, correct plug, local consumables and warranty; do not connect a 110–120V-only device directly to 230V mains."
+          "availabilityNote": "The cited MFC-L8395CDW page is the US electrical variant (110–120V AC). Brother UK lists the distinct MFC-L8390CDW with 220–240V AC input; it is a regional counterpart, not the identical model number. Verify features, consumables and warranty against the UK listing before purchase. UK source: https://store.brother.co.uk/devices/laser/mfc/mfcl8390cdw."
         },
         {
           "name": "Brother MFC-L3780CDW Colour Laser All-in-One Printer",
           "bestFor": "Small workgroups needing colour multifunction capability and network sharing.",
           "us_identifier": "Brother MFC-L3780CDW Colour Laser All-in-One Printer",
-          "uk_identifier": "Brother MFC-L3780CDW Colour Laser All-in-One Printer",
+          "uk_identifier": "Brother UK 220-240V colour laser all-in-one printer; verify current regional model",
           "pros": [
             "Brother lists up to 31 ppm print speed, duplex copy/scan and dual-band Wi-Fi plus Gigabit Ethernet.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -2188,13 +2191,13 @@
           "verdict": "A compact office multifunction option for mixed print and scan tasks.",
           "source": "https://www.brother-usa.com/p/laser-printers/MFCL3780CDW",
           "sourceNote": "Brother's official US product page documents 31ppm print, single-pass duplex copy/scan, 50-sheet ADF, Gigabit Ethernet and dual-band Wi-Fi. The US page specifies 110–120V AC.",
-          "availabilityNote": "The cited manufacturer page is for the US electrical variant (110–120V AC). UK buyers must verify a UK-rated model, correct plug, local consumables and warranty; do not connect a 110–120V-only device directly to 230V mains."
+          "availabilityNote": "The cited MFC-L3780CDW page is the US electrical variant (110–120V AC). This audit has not yet confirmed an exact UK counterpart for this model. Do not buy the US unit for UK/Jordan mains; select only a Brother UK model explicitly rated 220–240V and verify whether its duplex scanning, ADF and networking match. Current UK range: https://www.brother.co.uk/printers/laser-printers/colour-laser-all-in-one."
         },
         {
           "name": "Brother HL-L3280CDW Colour Laser Printer",
           "bestFor": "Home offices wanting colour laser printing without a scanner.",
           "us_identifier": "Brother HL-L3280CDW Colour Laser Printer",
-          "uk_identifier": "Brother HL-L3280CDW Colour Laser Printer",
+          "uk_identifier": "Brother HL-L3240CDW UK 220-240V colour LED printer",
           "pros": [
             "Brother lists up to 27 ppm, a colour touchscreen and dual-band wireless/Gigabit Ethernet.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -2206,13 +2209,13 @@
           "verdict": "A print-focused alternative when an all-in-one scanner is not required.",
           "source": "https://www.brother-usa.com/p/laser-printers/HLL3280CDW",
           "sourceNote": "Brother's official US product page documents up to 27ppm colour printing, automatic duplex, dual-band Wi-Fi and Gigabit Ethernet. The US page specifies 110–120V AC.",
-          "availabilityNote": "The cited manufacturer page is for the US electrical variant (110–120V AC). UK buyers must verify a UK-rated model, correct plug, local consumables and warranty; do not connect a 110–120V-only device directly to 230V mains."
+          "availabilityNote": "The cited HL-L3280CDW page is the US electrical variant (110–120V AC). Brother UK lists the distinct HL-L3240CDW with 220–240V AC input. Treat these as regional models, not identical SKUs, and compare print speed, connectivity, consumables and warranty before purchase. UK source: https://store.brother.co.uk/devices/laser/hl/hll3240cdw."
         },
         {
           "name": "Brother DCP-L2640DW Monochrome Laser Multifunction Printer",
           "bestFor": "Users who mostly print black-and-white documents and need scan/copy functions.",
           "us_identifier": "Brother DCP-L2640DW Monochrome Laser Multifunction Printer",
-          "uk_identifier": "Brother DCP-L2640DW Monochrome Laser Multifunction Printer",
+          "uk_identifier": "Brother DCP-L2660DW UK 220-240V mono laser multifunction printer",
           "pros": [
             "Brother lists this as a wireless compact monochrome laser multifunction model.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -2224,7 +2227,7 @@
           "verdict": "A practical document-focused option for homes and small offices.",
           "source": "https://www.brother-usa.com/p/laser-printers/DCPL2640DW",
           "sourceNote": "Brother's official US product page documents up to 36ppm monochrome printing, automatic duplex printing, 50-sheet ADF, Ethernet and dual-band Wi-Fi. The US page specifies 110–120V AC.",
-          "availabilityNote": "The cited manufacturer page is for the US electrical variant (110–120V AC). UK buyers must verify a UK-rated model, correct plug, local consumables and warranty; do not connect a 110–120V-only device directly to 230V mains."
+          "availabilityNote": "The cited DCP-L2640DW page is the US electrical variant (110–120V AC). Brother UK lists the distinct DCP-L2660DW with 220–240V AC input. Treat these as regional models, not identical SKUs; compare print/scan speed, connectivity, toner family and warranty. UK source: https://store.brother.co.uk/devices/laser/dcp/dcpl2660dw."
         }
       ],
       "buyingChecklist": [
