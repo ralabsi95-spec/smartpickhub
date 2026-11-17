@@ -564,3 +564,11 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Corrected README's stale catalogue count from 10/40 to the verified 25 guides / 100 product records and updated the automation description to match the PR-only behavior.
 - Validation still required: run the full workflow and inspect the resulting GitHub Actions checks on the new commit. No merge to `main`, production deployment, WordPress change, public publication, or indexing change was performed.
 - Release gate remains: PR #1 is Draft/open/unmerged; do not merge or trigger production deployment without the required owner approval.
+
+
+## 17 November 2026 — Latest branch and PR verification
+- Finalized the safe editorial workflow on development branch `automation/bootstrap`; latest head at this checkpoint: `8095d8632688957533385f627b4987e70ff79a64`.
+- Removed optional PR labels from the workflow so it does not assume repository labels exist. The workflow now only stages `content-drafts/` and uses the dedicated review branch; no direct push to `main` and no automatic merge.
+- Updated PR #1 description with the verified 25-guide / 100-product state, the successful earlier full QA run #297, and the fact that the latest full QA run #305 is still in progress. Cloudflare Pages preview build is also in progress. The separate Cloudflare Workers check is not a Pages build and reports that the named Worker does not exist.
+- PR #1 remains Draft/open/unmerged. `main` remains unchanged. No production deployment, WordPress edit, public publication or removal of noindex/robots protections occurred.
+- Next: wait for run #305 and the Cloudflare Pages preview check to complete; inspect their actual results before marking this revision validated. Keep the release/merge gate closed until owner approval.
