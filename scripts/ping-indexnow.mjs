@@ -14,8 +14,12 @@ if (!siteValue || !apiKey) skip('PUBLIC_SITE_URL/SITE_URL or INDEXNOW_KEY is not
 if (!/^[A-Za-z0-9-]{8,128}$/.test(apiKey)) throw new Error('INDEXNOW_KEY must be 8–128 letters, numbers or hyphens.');
 
 const site = new URL(siteValue);
-if (site.protocol !== 'https:' || site.hostname.endsWith('.pages.dev') || site.hostname === 'localhost') {
-  skip('the configured host is not an approved HTTPS production host.');
+const approvedProductionOrigin = 'https://smartpickhub.pages.dev';
+if (site.origin !== approvedProductionOrigin || site.pathname !== '/' || site.search || site.hash) {
+  skip('IndexNow is permitted only for the exact approved MVP origin https://smartpickhub.pages.dev.');
+}
+if (site.protocol !== 'https:' || site.hostname !== 'smartpickhub.pages.dev') {
+  skip('the configured host is not the approved HTTPS production host.');
 }
 
 const robotsPath = path.join(distDir, 'robots.txt');
