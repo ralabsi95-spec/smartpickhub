@@ -1053,7 +1053,7 @@
           "name": "DEWALT 20V MAX XR Brushless 1/2-in Drill/Driver DCD801B",
           "bestFor": "Buyers already using DEWALT 20V MAX batteries who want a compact brushless drill-driver.",
           "us_identifier": "DEWALT 20V MAX XR Brushless 1/2-in Drill/Driver DCD801B",
-          "uk_identifier": "DEWALT 20V MAX XR Brushless 1/2-in Drill/Driver DCD801B",
+          "uk_identifier": "DEWALT UK 18V XR brushless drill driver DCD791NT-XJ or DCD708N-XJ; compare exact features",
           "pros": [
             "Brushless motor platform; 1/2-inch chuck; tool-only option can suit owners of compatible batteries.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -1064,13 +1064,14 @@
           ],
           "verdict": "A flexible candidate for buyers already invested in the DEWALT 20V MAX platform. Confirm the SKU and battery bundle.",
           "source": "https://www.dewalt.com/en-us/products/power-tools/drills/drill-drivers",
-          "sourceNote": "DEWALT's official drill-driver catalogue lists the model families and kit/tool-only variants. Check the exact regional SKU and included battery/charger before buying."
+          "sourceNote": "DEWALT US lists the DCD801B in its 20V MAX range. DEWALT UK lists separate 18V XR models DCD791NT-XJ and DCD708N-XJ. These are regional candidates, not asserted one-to-one equivalents; compare torque, chuck, dimensions and tool-only/kit contents.",
+          "availabilityNote": "The US DCD801B identifier is not a confirmed UK SKU. DEWALT's UK range uses 18V XR naming and separate model numbers. Verify the exact UK model, battery platform, charger, included accessories and warranty before purchase. Official UK examples: https://www.dewalt.co.uk/en-gb/product/dcd791nt-xj/18v-xr-brushless-drill-driver-tool-only and https://www.dewalt.co.uk/en-gb/product/dcd708n-xj/18v-xr-brushless-drill-driver-tool-only."
         },
         {
           "name": "DEWALT ATOMIC 20V MAX Compact Drill/Driver DCD794D1",
           "bestFor": "DIY users who prioritise a compact tool for furniture, fittings and general household work.",
           "us_identifier": "DEWALT ATOMIC 20V MAX Compact Drill/Driver DCD794D1",
-          "uk_identifier": "DEWALT ATOMIC 20V MAX Compact Drill/Driver DCD794D1",
+          "uk_identifier": "DEWALT UK 18V XR compact brushless drill driver DCD708N-XJ; compare exact features",
           "pros": [
             "Compact ATOMIC family; supplied as a kit in the DCD794D1 configuration; part of the 20V MAX platform.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -1081,13 +1082,14 @@
           ],
           "verdict": "Compare its compact form with full-size drill-drivers and choose based on access, material and existing batteries.",
           "source": "https://www.dewalt.com/en-us/products/power-tools/drills/drill-drivers",
-          "sourceNote": "DEWALT's official drill-driver catalogue lists the model families and kit/tool-only variants. Check the exact regional SKU and included battery/charger before buying."
+          "sourceNote": "DEWALT UK lists the DCD708N-XJ as an 18V XR compact brushless drill driver. It is a regional candidate, not a verified identical DCD794D1 counterpart; compare torque, dimensions and kit contents.",
+          "availabilityNote": "The US DCD794D1 is a US-market kit identifier. Do not assume the same model number or kit is sold in the UK. DEWALT UK lists DCD708N-XJ as an 18V XR brushless drill driver (tool only); verify battery, charger, torque and included accessories: https://www.dewalt.co.uk/en-gb/product/dcd708n-xj/18v-xr-brushless-drill-driver-tool-only."
         },
         {
           "name": "DEWALT 20V MAX Compact Drill/Driver DCD777D1",
           "bestFor": "Home users wanting a straightforward compact drill-driver kit.",
           "us_identifier": "DEWALT 20V MAX Compact Drill/Driver DCD777D1",
-          "uk_identifier": "DEWALT 20V MAX Compact Drill/Driver DCD777D1",
+          "uk_identifier": "DEWALT UK 18V XR drill driver DCD776C1-GB; compare kit contents",
           "pros": [
             "Compact 20V MAX drill-driver; kit configuration identified by DCD777D1; suited to general drilling and fastening tasks.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -1098,13 +1100,14 @@
           ],
           "verdict": "A straightforward option to compare for routine household jobs and light workshop use.",
           "source": "https://www.dewalt.com/en-us/products/power-tools/drills/drill-drivers",
-          "sourceNote": "DEWALT's official drill-driver catalogue lists the model families and kit/tool-only variants. Check the exact regional SKU and included battery/charger before buying."
+          "sourceNote": "DEWALT UK lists DCD776C1-GB as an 18V XR drill-driver kit. It is a regional model candidate, not an asserted identical DCD777D1 SKU; compare motor type, torque, battery capacity, charger and case.",
+          "availabilityNote": "The US DCD777D1 and UK DCD776C1-GB are different regional model numbers. Confirm the motor specification and exact kit contents before comparing; never assume batteries/chargers or model features are identical. UK catalogue: https://www.dewalt.co.uk/en-gb/products/power-tools/drills/drill-drivers."
         },
         {
           "name": "DEWALT 12V MAX 5-in-1 Brushless Drill/Driver DCD703F1",
           "bestFor": "Users who need a small multi-head tool for tight spaces and varied fastening access.",
           "us_identifier": "DEWALT 12V MAX 5-in-1 Brushless Drill/Driver DCD703F1",
-          "uk_identifier": "DEWALT 12V MAX 5-in-1 Brushless Drill/Driver DCD703F1",
+          "uk_identifier": "DEWALT UK 12V XR brushless drill driver DCD701N-XJ; not a confirmed 5-in-1 equivalent",
           "pros": [
             "12V MAX platform; brushless motor; interchangeable head concept supports different access angles.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -1115,7 +1118,8 @@
           ],
           "verdict": "Consider when access and compactness matter more than using the larger 20V battery platform.",
           "source": "https://www.dewalt.com/en-us/products/power-tools/drills/drill-drivers",
-          "sourceNote": "DEWALT's official drill-driver catalogue lists the model families and kit/tool-only variants. Check the exact regional SKU and included battery/charger before buying."
+          "sourceNote": "DEWALT UK's DCD701N-XJ is a 12V XR brushless drill driver, but it is not described as the same 5-in-1 head system as the US DCD703F1. Do not present it as a feature-equivalent replacement.",
+          "availabilityNote": "No exact UK 5-in-1 counterpart for DCD703F1 was confirmed in this pass. DCD701N-XJ is a separate 12V XR drill-driver model, not a verified equivalent. UK source: https://www.dewalt.co.uk/en-gb/product/dcd701n-xj/12v-xr-brushless-drill-driver-tool-only."
         }
       ],
       "buyingChecklist": [
@@ -1138,7 +1142,7 @@
           "name": "Roborock Saros 10R Robot Vacuum",
           "bestFor": "Homes comparing a premium robot with automated floor-care and navigation features.",
           "us_identifier": "Roborock Saros 10R Robot Vacuum",
-          "uk_identifier": "Roborock Saros 10R Robot Vacuum",
+          "uk_identifier": "Roborock UK Saros range; exact Saros 10R UK listing not confirmed",
           "pros": [
             "Saros family design; manufacturer describes advanced navigation and automated cleaning features; integrated dock ecosystem.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -1148,14 +1152,15 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A premium model family to compare when navigation and dock automation are key priorities.",
-          "source": "https://us.roborock.com/collections/robot-vacuums",
-          "sourceNote": "Roborock's official US catalogue lists the Saros and Qrevo model families and their advertised system features. Check regional model availability and dock bundle details."
+          "source": "https://uk.roborock.com/pages/roborock-store",
+          "sourceNote": "The UK official store lists Saros 10, but this pass did not verify that it is identical to Saros 10R. Do not substitute one model for the other; confirm dock, navigation and regional bundle. Official UK range: https://uk.roborock.com/pages/roborock-store.",
+          "availabilityNote": "Regional product names and dock bundles can differ. Only buy the exact UK model shown by Roborock UK; verify the dock, voltage/plug, app region, consumables and warranty. This entry is not confirmation that a US model is sold unchanged in the UK."
         },
         {
           "name": "Roborock Qrevo CurvX Robot Vacuum and Mop",
           "bestFor": "Buyers looking for a robot-and-dock system with a low-profile body design.",
           "us_identifier": "Roborock Qrevo CurvX Robot Vacuum and Mop",
-          "uk_identifier": "Roborock Qrevo CurvX Robot Vacuum and Mop",
+          "uk_identifier": "Roborock UK Qrevo range; exact CurvX UK listing not confirmed",
           "pros": [
             "Official listing highlights an ultra-slim 3.14-inch design and AdaptiLift chassis; dual anti-tangle system is advertised.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -1165,14 +1170,15 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "Compare its low-profile dimensions and dock features against the actual clearance and floor mix at home.",
-          "source": "https://us.roborock.com/collections/robot-vacuums",
-          "sourceNote": "Roborock's official US catalogue lists the Saros and Qrevo model families and their advertised system features. Check regional model availability and dock bundle details."
+          "source": "https://uk.roborock.com/pages/roborock-store",
+          "sourceNote": "The UK store currently surfaces Qrevo Curv 2 Pro; that is a different model name and is not asserted as the same CurvX. Verify exact model and dock bundle. Official UK range: https://uk.roborock.com/pages/roborock-store.",
+          "availabilityNote": "Regional product names and dock bundles can differ. Only buy the exact UK model shown by Roborock UK; verify the dock, voltage/plug, app region, consumables and warranty. This entry is not confirmation that a US model is sold unchanged in the UK."
         },
         {
           "name": "Roborock Qrevo Edge 2 Robot Vacuum and Mop",
           "bestFor": "Homes prioritising hair management and high advertised suction in a robot-and-mop package.",
           "us_identifier": "Roborock Qrevo Edge 2 Robot Vacuum and Mop",
-          "uk_identifier": "Roborock Qrevo Edge 2 Robot Vacuum and Mop",
+          "uk_identifier": "Roborock Qrevo Edge 2 UK regional listing",
           "pros": [
             "Official catalogue highlights a dual anti-tangle system and updated mopping features.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -1182,14 +1188,15 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A candidate for households comparing anti-tangle design and automated mop care.",
-          "source": "https://us.roborock.com/collections/robot-vacuums",
-          "sourceNote": "Roborock's official US catalogue lists the Saros and Qrevo model families and their advertised system features. Check regional model availability and dock bundle details."
+          "source": "https://uk.roborock.com/pages/roborock-store",
+          "sourceNote": "UK official store lists Qrevo Edge 2. Confirm the exact model suffix, dock bundle, plug and warranty for the UK listing. Official UK range: https://uk.roborock.com/pages/roborock-store.",
+          "availabilityNote": "Regional product names and dock bundles can differ. Only buy the exact UK model shown by Roborock UK; verify the dock, voltage/plug, app region, consumables and warranty. This entry is not confirmation that a US model is sold unchanged in the UK."
         },
         {
           "name": "Roborock Qrevo 2 Pro Robot Vacuum and Mop",
           "bestFor": "Buyers seeking an automated dock and carpet-aware mop handling.",
           "us_identifier": "Roborock Qrevo 2 Pro Robot Vacuum and Mop",
-          "uk_identifier": "Roborock Qrevo 2 Pro Robot Vacuum and Mop",
+          "uk_identifier": "Roborock UK Qrevo range; exact Qrevo 2 Pro UK listing not confirmed",
           "pros": [
             "Official listing describes 20,000 Pa advertised suction, dual anti-tangle system and automatic mop detachment for carpets.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -1199,8 +1206,9 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "Compare its dock automation and mop handling with the amount of carpet and hard flooring in your home.",
-          "source": "https://us.roborock.com/collections/robot-vacuums",
-          "sourceNote": "Roborock's official US catalogue lists the Saros and Qrevo model families and their advertised system features. Check regional model availability and dock bundle details."
+          "source": "https://uk.roborock.com/pages/roborock-store",
+          "sourceNote": "No exact UK counterpart for this model name was confirmed in this pass. Do not treat Qrevo Curv 2 Pro or another Qrevo model as identical; compare model and dock specifications. Official UK range: https://uk.roborock.com/pages/roborock-store.",
+          "availabilityNote": "Regional product names and dock bundles can differ. Only buy the exact UK model shown by Roborock UK; verify the dock, voltage/plug, app region, consumables and warranty. This entry is not confirmation that a US model is sold unchanged in the UK."
         }
       ],
       "buyingChecklist": [
@@ -1478,7 +1486,7 @@
           "name": "Breville Bambino Plus Espresso Machine BES500",
           "bestFor": "Buyers who want a compact espresso machine and are happy to use a separate grinder.",
           "us_identifier": "Breville Bambino Plus Espresso Machine BES500",
-          "uk_identifier": "Breville Bambino Plus Espresso Machine BES500",
+          "uk_identifier": "Sage Bambino Plus UK SES500 / SES500BS 220–240V",
           "pros": [
             "Compact Bambino platform; automatic milk texturing workflow is a key model-family feature.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -1488,14 +1496,15 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A compact starting point when a separate grinder is acceptable.",
-          "source": "https://www.breville.com/en-us/support/categories/espresso-machines",
-          "sourceNote": "Breville's official support catalogue confirms the BES model families for Bambino Plus, Barista Express, Barista Pro and Oracle Jet. Regional names, plugs and voltage must be checked."
+          "source": "https://www.sageappliances.com/en-gb/product/bes500",
+          "sourceNote": "Sage UK lists the Bambino Plus under the SES500 family; its UK manual specifies 220–240V. The US Breville BES500 and UK Sage SES500 are regional identifiers; verify package and warranty.",
+          "availabilityNote": "The US Breville and UK Sage listings use region-specific product identifiers and electrical packages. Select the UK SES model with a UK plug and 220–240V rating; do not order a US electrical unit for UK/Jordan mains. Confirm model suffix, included accessories and local warranty on the official UK listing."
         },
         {
           "name": "Breville Barista Express Espresso Machine BES870",
           "bestFor": "Buyers wanting an integrated grinder and manual espresso workflow.",
           "us_identifier": "Breville Barista Express Espresso Machine BES870",
-          "uk_identifier": "Breville Barista Express Espresso Machine BES870",
+          "uk_identifier": "Sage Barista Express UK SES870 220–240V",
           "pros": [
             "Integrated conical burr grinder and manual control over espresso preparation are central to this model.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -1505,14 +1514,15 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "Compare as an all-in-one route into home espresso where manual control is welcome.",
-          "source": "https://www.breville.com/en-us/support/categories/espresso-machines",
-          "sourceNote": "Breville's official support catalogue confirms the BES model families for Bambino Plus, Barista Express, Barista Pro and Oracle Jet. Regional names, plugs and voltage must be checked."
+          "source": "https://www.sageappliances.com/en-gb/product/bes870",
+          "sourceNote": "Sage UK lists the Barista Express as SES870. Treat the US Breville BES870 and UK Sage SES870 as regional listings and verify the exact suffix, plug, voltage and warranty.",
+          "availabilityNote": "The US Breville and UK Sage listings use region-specific product identifiers and electrical packages. Select the UK SES model with a UK plug and 220–240V rating; do not order a US electrical unit for UK/Jordan mains. Confirm model suffix, included accessories and local warranty on the official UK listing."
         },
         {
           "name": "Breville Barista Pro Espresso Machine BES878",
           "bestFor": "Users wanting an integrated grinder with a faster, guided workflow.",
           "us_identifier": "Breville Barista Pro Espresso Machine BES878",
-          "uk_identifier": "Breville Barista Pro Espresso Machine BES878",
+          "uk_identifier": "Sage Barista Pro UK SES878 220–240V",
           "pros": [
             "Barista Pro family combines an integrated grinder with a digital interface and steam wand.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -1522,14 +1532,15 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A mid-range integrated option for users who want more guided controls.",
-          "source": "https://www.breville.com/en-us/support/categories/espresso-machines",
-          "sourceNote": "Breville's official support catalogue confirms the BES model families for Bambino Plus, Barista Express, Barista Pro and Oracle Jet. Regional names, plugs and voltage must be checked."
+          "source": "https://www.sageappliances.com/en-gb/product/bes878",
+          "sourceNote": "Sage UK lists the Barista Pro as SES878 and specifies 220–240V. Verify the exact colour/model suffix and UK warranty.",
+          "availabilityNote": "The US Breville and UK Sage listings use region-specific product identifiers and electrical packages. Select the UK SES model with a UK plug and 220–240V rating; do not order a US electrical unit for UK/Jordan mains. Confirm model suffix, included accessories and local warranty on the official UK listing."
         },
         {
           "name": "Breville Oracle Jet Espresso Machine BES985",
           "bestFor": "Buyers looking for a more automated premium espresso workflow.",
           "us_identifier": "Breville Oracle Jet Espresso Machine BES985",
-          "uk_identifier": "Breville Oracle Jet Espresso Machine BES985",
+          "uk_identifier": "Sage Oracle Jet UK SES985 220–240V",
           "pros": [
             "Oracle Jet is listed in Breville's current espresso-machine product support catalogue.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -1539,8 +1550,9 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "Consider when workflow automation matters more than a compact footprint or fully manual control.",
-          "source": "https://www.breville.com/en-us/support/categories/espresso-machines",
-          "sourceNote": "Breville's official support catalogue confirms the BES model families for Bambino Plus, Barista Express, Barista Pro and Oracle Jet. Regional names, plugs and voltage must be checked."
+          "source": "https://www.sageappliances.com/en-gb/product/BES985",
+          "sourceNote": "Sage UK Oracle Jet documentation identifies the SES985 family and 220–240V, 50–60Hz electrical rating. Verify the precise suffix and UK package.",
+          "availabilityNote": "The US Breville and UK Sage listings use region-specific product identifiers and electrical packages. Select the UK SES model with a UK plug and 220–240V rating; do not order a US electrical unit for UK/Jordan mains. Confirm model suffix, included accessories and local warranty on the official UK listing."
         }
       ],
       "buyingChecklist": [
