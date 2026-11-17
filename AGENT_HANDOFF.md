@@ -479,3 +479,11 @@ Continue product catalogue audit (regional US/UK models, official sources, obsol
 - The current catalogue has 100 product records and, at the time of this audit, zero populated product-image records. Do not report Pinterest cover illustrations as product photographs.
 - Latest full CI remains run #372 on `81d49bc`; no completed CI or preview is confirmed for this new branch head. Verify current workflow and preview before asserting tests pass.
 - Keep all product guides draft-only, preview noindex and robots crawl-blocked. PR #1 remains draft/open/unmerged. Production Pages remains disconnected; do not merge, deploy, index or publish without explicit owner approval.
+
+
+## Latest verified continuity note — 17 November 2026
+- Current docs checkpoint: `6a542e6f8f326e6934773c2719ec37ebe64d2e0b`; latest roadmap checkpoint `bac6e3cde99b12ea595d9e3219e10f904bb8dc49`.
+- Catalogue audit snapshot: 25 guides / 100 products; 0 real product-image records; 71 identical US/UK search phrases need manual review. Identical phrases may be valid for globally shared models/accessories and are not errors by themselves.
+- The optional Commons research script is available but has not been executed against the live API yet. No product image candidate has been verified or approved.
+- Latest full CI success remains run #372 on `81d49bc`; no successful CI run or Pages preview is confirmed for the current image-policy/research code.
+- Roadmap baseline remains 47 completed steps and step 77 partially complete. Continue without claiming the full 100 steps are complete.
