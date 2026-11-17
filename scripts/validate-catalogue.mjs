@@ -11,6 +11,7 @@ const markets = [
   { key: 'uk_identifier', market: 'uk', host: 'www.amazon.co.uk', tag: 'smartpickhubu-21' }
 ];
 const linkChecks = { us: 0, uk: 0 };
+const imageAudit = { verified: 0, pending: 0 };
 
 function buildExpectedUrl(market, identifier) {
   const host = market === 'us' ? 'https://www.amazon.com' : 'https://www.amazon.co.uk';
@@ -56,6 +57,33 @@ for (const guide of guides) {
         errors.push('Invalid manufacturer source URL for ' + product.name + '.');
       }
     }
+    if (product.image == null) {
+      imageAudit.pending++;
+    } else {
+      const image = product.image;
+      for (const key of ['url', 'alt', 'sourcePage', 'license']) {
+        if (typeof image[key] !== 'string' || !image[key].trim()) {
+          errors.push('Product image metadata requires ' + key + ' for ' + product.name + '.');
+        }
+      }
+      for (const key of ['url', 'sourcePage']) {
+        if (typeof image[key] === 'string' && image[key].trim()) {
+          try {
+            const imageUrl = new URL(image[key]);
+            if (imageUrl.protocol !== 'https:') errors.push('Product image ' + key + ' must use HTTPS for ' + product.name + '.');
+          } catch {
+            errors.push('Invalid product image ' + key + ' for ' + product.name + '.');
+          }
+        }
+      }
+      if (typeof image.alt === 'string' && /^(image|photo|picture)$/i.test(image.alt.trim())) {
+        errors.push('Product image alt text is too generic for ' + product.name + '.');
+      }
+      if (typeof image.attribution !== 'string' || !image.attribution.trim()) {
+        errors.push('Product image requires attribution or an explicit public-domain/creator statement for ' + product.name + '.');
+      }
+      imageAudit.verified++;
+    }
     for (const spec of markets) {
       const identifier = product[spec.key];
       if (typeof identifier !== 'string' || !identifier.trim()) continue;
@@ -86,6 +114,7 @@ const result = {
   guideCount: guides.length,
   productCount,
   marketplaceLinkChecks: linkChecks,
+  productImageAudit: imageAudit,
   trackingTags: { us: 'smartpickh0bc-20', uk: 'smartpickhubu-21' },
   identifierPolicy: '10-character ASIN-shaped identifiers are treated as direct product URLs; all other identifiers are search phrases. This validates URL construction, not live listing availability.',
   errors
@@ -97,4 +126,4 @@ if (errors.length) {
   for (const error of errors) console.error('- ' + error);
   process.exit(1);
 }
-console.log('Catalogue validation passed: ' + guides.length + ' dynamic guides, ' + productCount + ' products, ' + linkChecks.us + ' US and ' + linkChecks.uk + ' UK affiliate destination checks.');
+console.log('Catalogue validation passed: ' + guides.length + ' dynamic guides, ' + productCount + ' products, ' + linkChecks.us + ' US and ' + linkChecks.uk + ' UK affiliate destination checks, ' + imageAudit.verified + ' verified product images and ' + imageAudit.pending + ' pending image slots.');
