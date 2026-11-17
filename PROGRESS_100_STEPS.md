@@ -3,7 +3,7 @@
 **Last updated:** 17 November 2026  
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `automation/bootstrap`  
-**Latest implementation commits:** `21a6769`, `08c0838`, `90f6c04`, `0493e59` (image-slot batch; CI pending)  
+**Latest recorded branch checkpoint:** `f08348c` (rights-first Commons research pipeline, image policy and handoff; CI pending)  
 **Current preview:** https://fa10e958.smartpickhub-preview.pages.dev/  
 **Overall status:** Development and verification in progress. This is a 100-step roadmap, not a claim that all 100 steps are complete.
 
@@ -158,3 +158,13 @@
 - Wikimedia Commons search/API metadata is a discovery aid, not proof of permission. Verify each individual file page, exact licence and non-copyright restrictions.
 - Latest implementation commits include `d1d9afa` (Commons candidate research), `5f5836a` (optional command), `3892574` (image policy), `3b6ab68` (only approved images render), `7a50963` and `60f2e53` (rights evidence validation), `d070cc8` (smoke-test approval state), and `acf363b` (candidate report validation).
 - CI and preview for the newest branch head remain unconfirmed. The last fully verified workflow is still #372 on `81d49bc`, before this entire image workstream.
+
+
+## Current continuation checkpoint — 17 November 2026
+- Latest recorded branch commit: `f08348cf0dc921a6ccfe92d2205021174f93eb0c`.
+- Product image display is gated on `reviewStatus: approved`; candidates cannot render until human verification.
+- Optional Wikimedia Commons discovery is available through `npm run research:commons`; image readiness audit is available through `npm run audit:images` and is included in prebuild.
+- The source catalogue audit currently shows 100 products, zero product-image records, and 71 identical US/UK search phrases. Identical phrases are review flags, not automatic errors or proof of wrong regional variants.
+- The image research pipeline has not yet been run against the live Commons API from the repository environment. No candidate or real product image is claimed as found.
+- Latest full CI remains run #372 on `81d49bc`; no CI result is currently visible for `f08348c`. A preview for this batch is also not confirmed.
+- Roadmap completed count remains 47; step 77 is partially complete. New image-integrity sub-tasks are implementation work supporting step 77, not extra counted roadmap steps.
