@@ -126,6 +126,7 @@ const jsonLd = JSON.stringify(structuredData).replace(/</g, '\\u003c');
           {product.availabilityNote && <p class="availability-note"><strong>Availability check:</strong> {product.availabilityNote}</p>}
           {product.source && <p class="manufacturer-source"><strong>Manufacturer source:</strong> <a href={product.source} target="_blank" rel="noopener noreferrer">View official specifications</a>. {product.sourceNote}</p>}
           <p class="affiliate-context">Amazon links below open marketplace search results for the model phrase, not a verified direct product listing. Confirm the exact model, seller, regional variant and current terms before ordering.</p>
+          <p class="affiliate-link-label">Affiliate links (paid links):</p>
           <div class="product-actions">
             {product.us_identifier && <a class="button" href={buildAffiliateUrl('us', product.us_identifier)} rel="sponsored nofollow noopener" target="_blank" aria-label={`Search Amazon US for ${product.name}`}>Search Amazon US</a>}
             {product.uk_identifier && <a class="button secondary" href={buildAffiliateUrl('uk', product.uk_identifier)} rel="sponsored nofollow noopener" target="_blank" aria-label={`Search Amazon UK for ${product.name}`}>Search Amazon UK</a>}
