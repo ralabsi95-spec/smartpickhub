@@ -413,3 +413,15 @@ VERIFIED QUALITY / STATUS
 
 NEXT TASK
 Continue product catalogue audit (regional US/UK models, official sources, obsolete models, accurate marketplace search phrases), fixing on automation/bootstrap only. Then prepare a production launch checklist for smartpickhub.pages.dev and seek approval before connecting the production Pages project or deploying. Read MASTER_PROJECT.md's 17 Nov authoritative continuity section before doing work. Never suggest InfinityFree again.
+
+
+## 17 November 2026 – Catalogue audit continuation
+- Latest working commit before this note: `a71fd5fc67284e9484d2bee77721224dc63964ac`.
+- Reviewed the remaining Dash Cam, electric-toothbrush, cordless-vacuum, printer and portable-projector records against manufacturer sources.
+- Updated all four Garmin Dash Cam records to Garmin's UK product documentation, replacing the US-locale generic comparison link. Source now distinguishes X310 4K, X210 1440p, X110 1080p and Mini 3 1080p; Mini 3 has no display while X110 includes a 2.4-inch display. Regional package/accessory checks remain required.
+- Updated all four Oral-B iO records to the official Oral-B UK model comparison. Added model-tier details: iO3 (3 modes), iO6 (5 modes and display), iO9 (7 modes and 3D tracking) and iO10 (7 modes, 3D tracking and iO Sense live coaching). Regional charger/bundle verification remains required.
+- Expanded Epson CO-FH02 note to state that Epson's regional listing identifies it as discontinued; it must be treated as a legacy candidate, not a current-buy recommendation, until current UK/US availability and support are verified.
+- No direct ASINs, current prices, stock or reviews were invented. No guide was approved or published.
+- Official sources consulted: Garmin UK product page https://www.garmin.com/en-GB/p/pn/010-02899-10/ ; Oral-B UK iO comparison https://www.oralb.co.uk/en-gb/oral-health/why-oral-b/electric-toothbrushes/which-oral-b-io-is-right-for-me ; Epson Middle East CO-FH02 discontinued page https://www.epson-middleeast.com/en/projectors/professional/business-education/co-fh02-v11ha85040 .
+- Latest GitHub Actions run #351 on the preceding docs head was in progress; this catalogue update triggers a newer run. Verify the latest head's CI and Pages preview before claiming full validation.
+- Next: continue lifecycle/source audit for projectors and vacuum cleaners, then inspect current CI, latest preview and update PR summary. Production project `smartpickhub.pages.dev` remains untouched; InfinityFree remains excluded.
