@@ -2,7 +2,7 @@
   "_meta": {
     "purpose": "Research-led buying guide catalogue for US and UK shoppers.",
     "status": "research-draft-unapproved",
-    "lastResearched": "2026-11-16",
+    "lastResearched": "2026-11-17",
     "marketStrategy": "Serve both US and UK shoppers with separate Amazon marketplace links.",
     "identifierPolicy": "Identifiers below are exact model-name search phrases, not ASINs. The affiliate URL helper therefore creates marketplace search URLs. Replace with a direct ASIN only after verifying the exact product and marketplace.",
     "editorialPolicy": "Manufacturer specifications and product documentation inform factual feature summaries. Pros and considerations are editorial analysis, not hands-on testing, user-review aggregation, rankings, price claims or availability claims.",
@@ -2073,8 +2073,9 @@
           "us_identifier": "Apple Watch Series 12",
           "uk_identifier": "Apple Watch Series 12",
           "pros": [
-            "Apple lists Series 11 with 42 mm and 46 mm case options and an always-on display.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "42mm or 46mm case options; Apple lists aluminium, titanium and ceramic finishes",
+            "Always-On Retina wide-angle OLED display with LTPO3 and up to 2,000 nits peak brightness",
+            "Apple lists the S11 chip and up to 24 hours of normal-use battery life"
           ],
           "cons": [
             "Requires iPhone for full experience; battery life varies with cellular, workouts and settings.",
@@ -2082,7 +2083,7 @@
           ],
           "verdict": "A general-purpose option for buyers already using an iPhone.",
           "source": "https://www.apple.com/watch/compare/",
-          "sourceNote": "Apple's current official comparison lists Series 12 alongside SE 3 and Ultra 4. Confirm case size, material, GPS/cellular configuration and local feature availability."
+          "sourceNote": "Apple's official Series 12 technical specifications list the S11 chip, 42mm/46mm sizes, Always-On Retina wide-angle OLED display and up to 2,000 nits. Battery life is an Apple estimate and varies by use and configuration."
         },
         {
           "name": "Apple Watch SE 3",
@@ -2099,7 +2100,7 @@
           ],
           "verdict": "A simpler Apple Watch option for everyday use.",
           "source": "https://www.apple.com/jo/watch/compare/",
-          "sourceNote": "Apple's official comparison lists Series 11, SE 3 and Ultra 3, including case sizes and materials. Garmin's official running smartwatch catalogue lists Forerunner 265 and current multisport families."
+          "sourceNote": "Apple's official comparison lists SE 3 as a current model with 40mm or 44mm aluminium case options and an Always-On Retina display. Check GPS versus GPS + Cellular configuration and regional feature availability."
         },
         {
           "name": "Apple Watch Ultra 4",
@@ -2107,8 +2108,9 @@
           "us_identifier": "Apple Watch Ultra 4",
           "uk_identifier": "Apple Watch Ultra 4",
           "pros": [
-            "Apple lists Ultra 3 with a 49 mm titanium case and expanded outdoor-focused design.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "49mm Grade 5 titanium case in Natural or Black finishes",
+            "Always-On Retina wide-angle OLED display with up to 3,000 nits peak brightness",
+            "Apple estimates up to 50 hours of normal use and up to 84 hours in Low Power Mode"
           ],
           "cons": [
             "Larger case is not comfortable for every wrist; cellular and battery performance vary with use and region.",
@@ -2116,7 +2118,7 @@
           ],
           "verdict": "A rugged premium candidate for users who need its larger case and outdoor feature set.",
           "source": "https://www.apple.com/watch/compare/",
-          "sourceNote": "Apple's current official comparison lists Ultra 4; confirm case finish, cellular configuration, band size and feature availability in the buyer's country."
+          "sourceNote": "Apple's official Ultra 4 technical specifications list the 49mm titanium case, 3,000-nit display and battery estimates of up to 50 hours normal use or 84 hours in Low Power Mode. Actual battery life varies by use and configuration."
         },
         {
           "name": "Garmin Forerunner 265",
