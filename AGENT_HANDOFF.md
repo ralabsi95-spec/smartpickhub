@@ -327,3 +327,14 @@ Do not ask the owner to repeat details already documented here.
 - Next: wait for run #305 and the Cloudflare Pages preview check to complete; inspect their actual results before marking this revision validated. Keep the release/merge gate closed until owner approval.
 
 - Renamed the workflow file from the misleading `.github/workflows/auto-publish.yml` to `.github/workflows/draft-research.yml`; workflow behavior remains review-PR-only with no direct main push, merge or publication.
+
+
+## 17 November 2026 — Latest CI and preview verification
+- Verified PR #1 head commit `42ae75ad9221a07bcad0a43de02d1f858254b45e`; PR #1 remains Draft/open/unmerged and targets `main` at `2b7b9a82bd8a7fdf601b2add42d5612d04d3e3b4`.
+- Both `build-and-audit` checks on the latest head completed successfully (GitHub Actions run #44054042191 and its paired run #44054047662). The latest head therefore has a completed successful quality workflow.
+- Cloudflare Pages preview deployment completed successfully for the exact latest head. Commit-specific preview: https://34a42ab1.smartpickhub-preview.pages.dev/ .
+- Fetched and inspected the preview homepage, guide index, one guide detail page, affiliate disclosure and RSS. All HTML routes returned content; the guide index displays 25 guides, each marked as a research draft requiring human review. The guide detail page clearly distinguishes Amazon US/UK marketplace search links from direct product listings and disclaims hands-on testing. Affiliate disclosure is present. RSS contains no guide items because none are approved.
+- Confirmed preview page metadata reports `noindex, nofollow`; canonical URLs point to the stable preview origin https://smartpickhub-preview.pages.dev/. Preview protections remain active.
+- Separate Cloudflare Workers check remains failed because the account has no Worker named `smartpickhub`; this does not affect the successful Pages preview deployment and has not been modified.
+- No merge to `main`, no production deployment, no WordPress/DNS changes, no public publication, and no removal of noindex/robots protections.
+- Next: continue the 100-record product/source audit, prioritising exact regional SKUs, electrical/voltage compatibility, stale models and model-specific manufacturer sources. Keep all guides as drafts pending review and approval.
