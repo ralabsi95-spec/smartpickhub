@@ -56,6 +56,3 @@ jobs:
             - Do not add invented ASINs, prices, ratings, reviews, stock or
               hands-on testing claims.
             - Merge only after explicit editorial approval.
-          labels: |
-            editorial-review
-            unverified-draft
