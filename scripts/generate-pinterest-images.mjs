@@ -3,6 +3,7 @@ import path from 'node:path';
 import sharp from 'sharp';
 
 const outputDirectory = 'public/images/pinterest';
+const webpDirectory = 'public/images/webp';
 const width = 1000;
 const height = 1500;
 const palettes = [
@@ -81,6 +82,7 @@ const catalogue = JSON.parse(await fs.readFile('src/data/products.json', 'utf8')
 const guides = catalogue.guides ?? [];
 if (!guides.length) throw new Error('No guides found; cannot generate Pinterest images.');
 await fs.mkdir(outputDirectory, { recursive: true });
+await fs.mkdir(webpDirectory, { recursive: true });
 for (const guide of guides) {
   if (!guide.slug || !guide.title || !guide.summary) throw new Error('Guide is missing slug, title or summary.');
   const palette = palettes[hash(guide.category ?? guide.slug) % palettes.length];
@@ -88,5 +90,9 @@ for (const guide of guides) {
   await sharp(Buffer.from(makeSvg(guide, palette))).png({ compressionLevel: 9, adaptiveFiltering: true }).toFile(destination);
   const metadata = await sharp(destination).metadata();
   if (metadata.width !== width || metadata.height !== height || metadata.format !== 'png') throw new Error('Invalid image: ' + destination);
+  const webpDestination = path.join(webpDirectory, guide.slug + '.webp');
+  await sharp(destination).resize({ width: 720, height: 1080, fit: 'cover' }).webp({ quality: 78, effort: 5 }).toFile(webpDestination);
+  const webpMetadata = await sharp(webpDestination).metadata();
+  if (webpMetadata.width !== 720 || webpMetadata.height !== 1080 || webpMetadata.format !== 'webp') throw new Error('Invalid WebP derivative: ' + webpDestination);
 }
-console.log('Generated ' + guides.length + ' original Pinterest cover images (1000×1500) locally. No external image service, stock image, API key or paid asset was used.');
+console.log('Generated ' + guides.length + ' original Pinterest PNG covers (1000×1500) plus optimized WebP site derivatives (720×1080) locally. No external image service, stock image, API key or paid asset was used.');
