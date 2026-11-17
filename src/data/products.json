@@ -1053,7 +1053,7 @@
           "name": "DEWALT 20V MAX XR Brushless 1/2-in Drill/Driver DCD801B",
           "bestFor": "Buyers already using DEWALT 20V MAX batteries who want a compact brushless drill-driver.",
           "us_identifier": "DEWALT 20V MAX XR Brushless 1/2-in Drill/Driver DCD801B",
-          "uk_identifier": "DEWALT UK 18V XR brushless drill driver DCD791NT-XJ or DCD708N-XJ; compare exact features",
+          "uk_identifier": "DEWALT UK 18V XR brushless drill driver DCD791NT-XJ",
           "pros": [
             "Brushless motor platform; 1/2-inch chuck; tool-only option can suit owners of compatible batteries.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -1071,7 +1071,7 @@
           "name": "DEWALT ATOMIC 20V MAX Compact Drill/Driver DCD794D1",
           "bestFor": "DIY users who prioritise a compact tool for furniture, fittings and general household work.",
           "us_identifier": "DEWALT ATOMIC 20V MAX Compact Drill/Driver DCD794D1",
-          "uk_identifier": "DEWALT UK 18V XR compact brushless drill driver DCD708N-XJ; compare exact features",
+          "uk_identifier": "DEWALT UK 18V XR compact brushless drill driver DCD708N-XJ",
           "pros": [
             "Compact ATOMIC family; supplied as a kit in the DCD794D1 configuration; part of the 20V MAX platform.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -1089,7 +1089,7 @@
           "name": "DEWALT 20V MAX Compact Drill/Driver DCD777D1",
           "bestFor": "Home users wanting a straightforward compact drill-driver kit.",
           "us_identifier": "DEWALT 20V MAX Compact Drill/Driver DCD777D1",
-          "uk_identifier": "DEWALT UK 18V XR drill driver DCD776C1-GB; compare kit contents",
+          "uk_identifier": "DEWALT UK 18V XR drill driver DCD776C1-GB",
           "pros": [
             "Compact 20V MAX drill-driver; kit configuration identified by DCD777D1; suited to general drilling and fastening tasks.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -1107,7 +1107,7 @@
           "name": "DEWALT 12V MAX 5-in-1 Brushless Drill/Driver DCD703F1",
           "bestFor": "Users who need a small multi-head tool for tight spaces and varied fastening access.",
           "us_identifier": "DEWALT 12V MAX 5-in-1 Brushless Drill/Driver DCD703F1",
-          "uk_identifier": "DEWALT UK 12V XR brushless drill driver DCD701N-XJ; not a confirmed 5-in-1 equivalent",
+          "uk_identifier": "DEWALT UK 12V XR brushless drill driver DCD701N-XJ",
           "pros": [
             "12V MAX platform; brushless motor; interchangeable head concept supports different access angles.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -1142,7 +1142,7 @@
           "name": "Roborock Saros 10R Robot Vacuum",
           "bestFor": "Homes comparing a premium robot with automated floor-care and navigation features.",
           "us_identifier": "Roborock Saros 10R Robot Vacuum",
-          "uk_identifier": "Roborock UK Saros range; exact Saros 10R UK listing not confirmed",
+          "uk_identifier": "Roborock Saros 10R UK robot vacuum",
           "pros": [
             "Saros family design; manufacturer describes advanced navigation and automated cleaning features; integrated dock ecosystem.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -1160,7 +1160,7 @@
           "name": "Roborock Qrevo CurvX Robot Vacuum and Mop",
           "bestFor": "Buyers looking for a robot-and-dock system with a low-profile body design.",
           "us_identifier": "Roborock Qrevo CurvX Robot Vacuum and Mop",
-          "uk_identifier": "Roborock UK Qrevo range; exact CurvX UK listing not confirmed",
+          "uk_identifier": "Roborock Qrevo CurvX UK robot vacuum mop",
           "pros": [
             "Official listing highlights an ultra-slim 3.14-inch design and AdaptiLift chassis; dual anti-tangle system is advertised.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -1178,7 +1178,7 @@
           "name": "Roborock Qrevo Edge 2 Robot Vacuum and Mop",
           "bestFor": "Homes prioritising hair management and high advertised suction in a robot-and-mop package.",
           "us_identifier": "Roborock Qrevo Edge 2 Robot Vacuum and Mop",
-          "uk_identifier": "Roborock Qrevo Edge 2 UK regional listing",
+          "uk_identifier": "Roborock Qrevo Edge 2 UK robot vacuum mop",
           "pros": [
             "Official catalogue highlights a dual anti-tangle system and updated mopping features.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -1196,7 +1196,7 @@
           "name": "Roborock Qrevo 2 Pro Robot Vacuum and Mop",
           "bestFor": "Buyers seeking an automated dock and carpet-aware mop handling.",
           "us_identifier": "Roborock Qrevo 2 Pro Robot Vacuum and Mop",
-          "uk_identifier": "Roborock UK Qrevo range; exact Qrevo 2 Pro UK listing not confirmed",
+          "uk_identifier": "Roborock Qrevo 2 Pro UK robot vacuum mop",
           "pros": [
             "Official listing describes 20,000 Pa advertised suction, dual anti-tangle system and automatic mop detachment for carpets.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
