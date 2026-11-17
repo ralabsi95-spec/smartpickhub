@@ -1896,8 +1896,9 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A practical entry-level two-bay option for home file sharing and backup.",
-          "source": "https://www.synology.com/en-us/products",
-          "sourceNote": "Synology's official catalogue identifies DS224+ as a 2-bay model with two 1GbE ports and Btrfs support. It is an older generation than the other NAS candidates in this guide; verify lifecycle status, support and current drive compatibility."
+          "source": "https://www.synology.com/en-us/products/DS224%2B?tab=specs",
+          "sourceNote": "Synology's official DS224+ specifications identify a 2-bay NAS with Intel Celeron J4125, 2GB DDR4 (expandable to 6GB), two 1GbE LAN ports, Btrfs support and a 100–240V AC, 50/60Hz power input. This is an older platform; verify lifecycle, DSM support and drive compatibility before purchase.",
+          "availabilityNote": "The DS224+ power supply is specified for 100–240V AC and 50/60Hz, but regional package, warranty and supported-drive policy may differ. Check the exact UK listing and current compatibility list before purchase."
         }
       ],
       "buyingChecklist": [
