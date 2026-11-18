@@ -13,7 +13,7 @@
         "2.3.2"
       ],
       "severity": "high",
-      "status": "proposed-time-boxed-exception-pending-owner-review",
+      "status": "owner-approved-temporary-risk-acceptance-advisory-watch-open",
       "expiresOn": "2026-12-02",
       "rationale": "The current lockfile resolves picomatch 4.0.7 through Astro/Vite and a nested 2.3.2 through anymatch. GitHub's reviewed advisory currently lists no patched release. The published site is a static Astro build; repository inspection shows picomatch only as a transitive build-tool dependency, with no direct application import or request-time glob parsing. This reduces exposure but does not remediate the vulnerable code.",
       "mitigations": [
@@ -24,10 +24,19 @@
         "Monitor the upstream picomatch advisory and release; PR #238 is an upstream proposal, not a merged or released fix.",
         "Reassess immediately when an upstream patched version is published and no later than the expiry date."
       ],
-      "ownerApprovalRequired": true,
-      "remediationStatus": "unfixed-upstream-patch-not-published",
+      "ownerApprovalRequired": false,
+      "remediationStatus": "not-remediated-advisory-watch-open",
       "relatedUpstreamPullRequest": "https://github.com/micromatch/picomatch/pull/238",
-      "cvss": 7.5
+      "cvss": 7.5,
+      "lastNpmAuditObserved": {
+        "run": 656,
+        "headSha": "a71be853fa7424444e384ba4bea39b745506ead0",
+        "generatedAt": "2026-11-18T19:31:44.768Z",
+        "status": "clean",
+        "totalVulnerabilities": 0,
+        "note": "A clean npm audit result does not prove installed picomatch copies are patched; the project lockfile was not remediated and the upstream advisory remains published."
+      },
+      "advisoryMetadataNote": "The GitHub advisory page currently displays package/affected-version metadata as unknown and no patched version; do not interpret npm audit zero findings as proof of a patched package."
     }
   ]
 }
