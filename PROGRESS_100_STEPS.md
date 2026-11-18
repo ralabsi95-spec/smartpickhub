@@ -3,8 +3,8 @@
 **Last updated:** 17 November 2026  
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `automation/bootstrap`  
-**Latest recorded branch checkpoint:** `8bb6cb6` (WebP dimension semantics and smoke-test guard; CI pending)  
-**Last fully verified preview:** https://d8a304d5.smartpickhub-preview.pages.dev/ (commit `f336ac5`; newer preview for `8bb6cb6` pending verification)  
+**Latest recorded branch checkpoint:** `8c1090f` (exact DEWALT/Garmin model sources; CI pending)  
+**Last fully verified preview:** https://d8a304d5.smartpickhub-preview.pages.dev/ (commit `f336ac5`; stable preview host was confirmed stale for newer source edits)  
 **Overall status:** Development and verification in progress. This is a 100-step roadmap, not a claim that all 100 steps are complete.
 
 ## Status key
@@ -201,3 +201,10 @@
 - Catalogue source-data commit: `8c1090f2eee5382829caaca7f8c6d832f6e89cfa`.
 - Ran 56 explicit catalogue/configuration/keyword-map integrity assertions against the current branch data: 56 passed, zero failed. Coverage included 25/100 counts, uniqueness, draft-only state, content fields, HTTPS sources, affiliate IDs/tags/marketplace hosts, ASIN safeguards, image absence, regional phrase queue (71), 12 keyword clusters and exact model-source patterns.
 - The latest code head and documentation commits have not yet received a fresh full CI run or immutable Pages preview. The last fully verified code remains `f336ac5` / run #477. Verify a new CI run and preview before treating these latest code changes as deployment-tested.
+
+
+## 18 November 2026 — Preview freshness check
+- Fetched the stable preview guide pages `/guides/cordless-drills-us-uk/` and `/guides/dash-cams-us-uk/` after the exact-source catalogue update. Both pages still display the older shared manufacturer sources, confirming the stable preview has not yet picked up commit `8c1090f`.
+- The pages still correctly show `noindex, nofollow`; noindex/robots protections remain intact.
+- Do not claim the source changes are live on preview. Await a Cloudflare Pages deployment for the latest branch head and inspect its immutable deployment URL before treating the new source references as visible.
+- Latest code commit: `8c1090f2eee5382829caaca7f8c6d832f6e89cfa`; latest docs commit: pending this note. CI/preview for the latest code remain unconfirmed.
