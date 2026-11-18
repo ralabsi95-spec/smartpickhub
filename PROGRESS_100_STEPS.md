@@ -3,8 +3,8 @@
 **Last updated:** 17 November 2026  
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `automation/bootstrap`  
-**Latest recorded branch checkpoint:** `f08348c` (rights-first Commons research pipeline, image policy and handoff; CI pending)  
-**Current preview:** https://fa10e958.smartpickhub-preview.pages.dev/  
+**Latest recorded branch checkpoint:** `8bb6cb6` (WebP dimension semantics and smoke-test guard; CI pending)  
+**Last fully verified preview:** https://d8a304d5.smartpickhub-preview.pages.dev/ (commit `f336ac5`; newer preview for `8bb6cb6` pending verification)  
 **Overall status:** Development and verification in progress. This is a 100-step roadmap, not a claim that all 100 steps are complete.
 
 ## Status key
@@ -85,11 +85,11 @@
 62. [x] Run smoke tests for generated pages, SEO, JSON-LD and affiliate links.
 63. [x] Run axe-core accessibility checks across catalogue routes.
 64. [x] Run Lighthouse for desktop and mobile homepage.
-65. [x] Run Lighthouse for guide index, disclosure and every guide (verified in CI run #453).
-66. [x] Generate consolidated JSON quality/security report (verified in CI run #453).
-67. [x] Upload the unified quality/security report artifact (verified in CI run #453).
-68. [~] Review Lighthouse scores and opportunities; guide index scored 76 Performance, with unused CSS and large PNG covers identified.
-69. [~] Review axe findings; zero violations, but 28 gradient-related contrast checks need manual confirmation and one ARIA warning was corrected in the next code batch.
+65. [x] Run Lighthouse for guide index, disclosure and every guide (verified in CI run #477).
+66. [x] Generate consolidated JSON quality/security report (verified in CI run #477).
+67. [x] Upload the unified quality/security report artifact (verified in CI run #477).
+68. [x] Review Lighthouse scores and opportunities; after WebP delivery, all 29 audited pages scored 100 Performance in CI run #477.
+69. [~] Review axe findings; zero violations across 28 routes; the ARIA group warning is resolved, while 28 gradient-related contrast checks still require manual confirmation.
 70. [ ] Re-test after any performance/accessibility remediation.
 
 ## Phase 6 — Analytics and conversion readiness
@@ -131,10 +131,10 @@
 ## Current checkpoint — 17 November 2026
 - Roadmap tally from the current checklist: 52 completed steps; steps 48, 68 and 69 partially complete. Remaining work is still substantial; do not describe the 100-step roadmap as finished.
 - Current catalogue: 25 research-draft guides / 100 products; 0 guides approved for publication.
-- CI run #453 / ID `44113630229` completed successfully on code commit `9325de673ec932b95e40ba7a72d0b37436c4b257`. It audited 28 accessibility routes and 29 Lighthouse pages, generated the consolidated report and uploaded artifact `smartpickhub-quality-reports`.
-- Run #453 results: zero axe violations; 29 incomplete checks (28 gradient-related colour-contrast checks and one ARIA-label/role issue on the guide filter container); Lighthouse all pages scored 100 Accessibility and 100 Best Practices; SEO scores 66–69 because preview indexing is intentionally blocked; Performance minimum 76 on the guide index, all other pages at least 90. npm audit reported zero vulnerabilities in that run.
+- CI run #477 / ID `44115712224` completed successfully on code commit `f336ac5fb954b03dc1411051f53d92b7bbd5a1c3`. It audited 28 accessibility routes and 29 Lighthouse pages, generated the consolidated report and uploaded artifact `smartpickhub-quality-reports` (artifact ID `14343891465`).
+- Run #477 results: zero axe violations; 28 incomplete checks, all gradient-related colour-contrast checks; the guide-filter ARIA role warning is gone. All 29 Lighthouse pages scored 100 Performance, 100 Accessibility and 100 Best Practices; SEO scores 66–69 because preview indexing is intentionally blocked. npm audit reported zero vulnerabilities across 362 dependencies.
 - Follow-up code improvements are now on the branch: generate 720×1080 WebP derivatives for site display while retaining 1000×1500 PNGs for Pinterest/social metadata; switch homepage/guide cards and guide covers to WebP; add WebP smoke checks; add a valid group role to the guide filters; add Cloudflare Pages cache headers.
-- These follow-up changes are **not yet CI-confirmed**. Latest known workflow is run #470 / ID `44115423685`, pending for commit `459b4481605558da5fcc265057f77de4e2f3563c`. Recheck it and any newer run before claiming the performance improvement works.
+- WebP implementation and caching changes are now CI-confirmed by run #477. A subsequent small code refinement on `8bb6cb6` corrects HTML width/height attributes to match the 720×1080 WebP assets and adds a smoke assertion; this latest refinement is pending CI and preview verification.
 - Image status: 0 actual product-image records; Commons research script has not yet been run. Do not claim real product images or candidates have been found.
 - 71 identical US/UK search phrases are regional review flags, not automatic errors.
 - Remaining product work: full 100-product lifecycle, exact-model, source and regional-marketplace audit.
@@ -181,3 +181,14 @@
 - Data commit: `0e6d68f`; Sony comparison-copy commit: `948c7d6`.
 - The 71 identical US/UK marketplace phrases remain a manual review queue. No claim is made that they are all wrong; global models may legitimately share phrases.
 - CI and preview for this batch remain unconfirmed. The last full successful workflow remains #372 on `81d49bc`.
+
+
+## 18 November 2026 — CI #477 review and WebP dimension refinement
+- Reviewed the complete `smartpickhub-quality-reports` artifact from run #477 (artifact ID `14343891465`, commit `f336ac5fb954b03dc1411051f53d92b7bbd5a1c3`).
+- Confirmed 29 Lighthouse pages all scored 100 Performance, 100 Accessibility and 100 Best Practices; SEO 66–69 remains expected while noindex and robots crawl-blocking are active.
+- Confirmed axe audited 28 routes with zero violations. Its 28 incomplete checks are gradient-background contrast calculations; the previous guide-filter ARIA group issue is no longer present.
+- Confirmed `npm audit` has zero vulnerabilities across 362 dependencies; catalogue validation and 29-page smoke tests passed; 25 guides / 100 products remain drafts; zero product photos are approved or pending; 71 identical US/UK search phrases remain a manual regional review queue.
+- Follow-up code commits `e6862a5`, `3262be4`, `73f9f0e` and `d8729bc` align all rendered WebP image dimension attributes with the generated 720×1080 assets and add a smoke assertion. The smoke matcher was corrected in `8bb6cb6` after source inspection.
+- Latest code head `8bb6cb67cb0bacd8452dbe8e05170ee30fdb3cb4`; CI and immutable Pages preview for this refinement are not yet confirmed. Do not claim the new smoke assertion has passed until a fresh run completes.
+- The 100-step roadmap now records 53 completed, 2 partial and 45 not yet completed; this is a checklist tally, not a claim of 50 completed steps in this session.
+- No merge, production deployment, DNS change, indexing, publication, WordPress modification or removal of crawl protections occurred.
