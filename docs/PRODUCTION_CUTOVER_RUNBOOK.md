@@ -106,3 +106,18 @@ No Cloudflare setting, repository integration, DNS record, deployment, route, or
 - The earlier Cloudflare overview label about NAS, Oral-B and Roborock was not sufficient to identify the deployed SHA. The individual deployment detail resolves the current deployed version.
 - No new deployment was triggered. No Cloudflare settings, Git connections, domains, DNS, environment variables, secrets, routing, or indexing policies were changed. A transient delete-confirmation dialog was dismissed without confirming any deletion.
 - **Next safe action:** Review the existing preview's content/data readiness (especially exact retailer product destinations, image rights and editorial approval) before proposing a release candidate. Production remains blocked pending those gates and explicit owner approval.
+
+
+## 10. Preview content and affiliate-readiness spot check (2026-11-18 08:33 UTC)
+
+Read-only fetch of the live preview homepage, guides index, two representative guides (Wi-Fi 7 routers and home-office ergonomics), and affiliate disclosure returned successfully.
+
+- Homepage, guides index, both sample guides, and disclosure all expose `noindex, nofollow` in page metadata. Preview indexing protection is intact.
+- The guides index lists 25 guides; each displayed entry is explicitly labelled "Research draft — requires human review before publication". No guide should be treated as approved or production-ready.
+- The two sampled guide pages include clear statements that the comparisons are research-based and not hands-on test rankings. The disclosure explains US and UK Amazon programmes and commission relationships.
+- In both sampled guides, Amazon destinations are marketplace search URLs (not verified direct product listings). The pages explicitly warn readers to verify exact model, seller, regional variant and terms. This is transparent, but exact product-level destination verification remains a release gate; do not present these search URLs as confirmed listings.
+- The sampled UK links use the configured UK tracking ID `smartpickhubu-21`. US links use `smartpickh0bc-20`. This spot check is not a complete audit of all 25 guides or every outbound link.
+- The guide cover images are hosted locally under `/images/webp/` and social preview artwork under `/images/pinterest/`; this fetch alone does not establish source licensing/rights or prove these are retailer product photos.
+- No content, link, image, source file, Cloudflare setting, deployment, or production page was changed.
+
+**Decision / next action:** keep all 25 guides as drafts. Prioritize a full product-link and model/region verification for a single UK-first guide, then obtain human editorial approval before any indexing or production cutover. Do not bulk-approve or convert search links to guessed ASIN URLs.
