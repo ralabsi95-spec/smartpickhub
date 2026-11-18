@@ -89,10 +89,9 @@ Continue the 69-record queue by priority:
 - Sources: https://www.benq.eu/en-uk/monitor/creative-pro/pd2705u.html and https://www.benq.eu/en-uk/monitor/creative-pro/pd2705u/spec.html
 
 ### Apple iPad mini
-- Apple UK identifies the current iPad mini generation as iPad mini (A17 Pro), introduced in 2024, with 128/256/512GB options and Wi-Fi / Wi-Fi + Cellular variants.
-- If the catalogue label says “A20 Pro”, treat it as a likely model-name error requiring correction; do not silently replace it until the product record and guide context are checked.
-- Apple UK specifications list USB-C charge cable in the box. The UK page should be the canonical UK source.
-- Sources: https://www.apple.com/uk/ipad-mini/specs/ and https://support.apple.com/en-gb/121456
+- Correction after a current 2026 check: Apple announced iPad mini (A20 Pro) in October 2026, and its UK store listing confirms UK configurations. The catalogue's “A20 Pro” model name is correct, not an error. The earlier A17 Pro result was a previous generation and must not be used as the current UK reference.
+- Apple UK pre-order/product page lists 128GB, 256GB and 512GB, Wi-Fi and Wi-Fi + Cellular variants, Midnight and Starlight. Apple says UK availability began 6 November 2026. The 2026 technical specifications list 8.5-inch OLED, Wi-Fi 7, Bluetooth 6 and IP67; verify cellular bands and configuration-specific GPU/Neural Engine before comparing variants.
+- Sources: https://www.apple.com/uk/shop/buy-ipad/ipad-mini/128gb-starlight-wifi-standard-glass and https://www.apple.com/uk/newsroom/2026/10/apple-gives-ipad-mini-its-biggest-update-ever/ ; current technical spec source: https://support.apple.com/en-us/149482
 
 ### Synology DS224+
 - Synology has an official UK-region announcement for DS224+ and DS124, confirming UK-region product family and availability through Synology resellers at launch.
@@ -104,3 +103,10 @@ Continue the 69-record queue by priority:
 - Confirmed UK official product page but currently unavailable: Dell U2723QE (part 210-BCXK).
 - Confirmed UK-region product-family launch evidence only: Synology DS224+; current stock and detailed regional warranty remain unverified.
 - No catalogue record was modified. These findings are audit evidence only.
+
+
+### Important correction — Apple iPad mini A20 Pro (18 November 2026)
+- A previous search surfaced the 2024 A17 Pro generation, which is superseded. A fresh search of Apple's October 2026 UK launch material confirms the catalogue's A20 Pro name is correct.
+- Apple UK store page confirms UK A20 Pro configurations and UK availability from 6 November 2026. The model is therefore not a US-only/invalid model; replace the older US-only source reference with current UK Apple material during a separately approved catalogue edit.
+- Official UK sources: https://www.apple.com/uk/shop/buy-ipad/ipad-mini/128gb-starlight-wifi-standard-glass and https://www.apple.com/uk/newsroom/2026/10/apple-gives-ipad-mini-its-biggest-update-ever/
+- This correction demonstrates why regional and model-year claims must be rechecked against current manufacturer pages before changing catalogue data.
