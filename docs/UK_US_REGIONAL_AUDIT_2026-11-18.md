@@ -72,3 +72,35 @@ Continue the 69-record queue by priority:
 - X210: UK Declaration of Conformity confirms a UK compliance document for model X210; exact UK sales part number and live UK product listing remain unverified.
 - Package caution: Garmin support says microSD is not included for X110, X210, X310 and Mini 3. This must be reflected accurately in product comparison content.
 - Decision: do not modify catalogue identifiers yet. We have reliable UK source material for X110/X310 support and X210 regulatory status, but not a complete exact UK SKU+commercial page set for all four models.
+
+
+## Follow-up regional-source checks — monitors, tablet and NAS (18 November 2026)
+
+### Dell UltraSharp U2723QE
+- Dell UK has an official page for U2723QE and identifies Dell part 210-BCXK / manufacturer part X649V.
+- The page currently marks the model unavailable, despite exposing its UK technical specifications and historic price information.
+- Decision: do not present it as currently purchasable. Keep as a legacy/alternative comparison candidate only if editorially useful, and verify replacement model before recommending.
+- Source: https://www.dell.com/en-gb/shop/dell-ultrasharp-27-4k-usb-c-hub-monitor-u2723qe/apd/210-bcxk/
+
+### BenQ PD2705U
+- BenQ UK has a current UK product page and specification sheet for PD2705U.
+- Confirmed UK-relevant specs: 27-inch 4K UHD (3840×2160), IPS, 99% sRGB/Rec.709, USB-C Power Delivery 65W, built-in 100–240V power supply.
+- This supports UK product identity and key specs, but does not alone prove current retailer inventory or exact box contents for every seller.
+- Sources: https://www.benq.eu/en-uk/monitor/creative-pro/pd2705u.html and https://www.benq.eu/en-uk/monitor/creative-pro/pd2705u/spec.html
+
+### Apple iPad mini
+- Apple UK identifies the current iPad mini generation as iPad mini (A17 Pro), introduced in 2024, with 128/256/512GB options and Wi-Fi / Wi-Fi + Cellular variants.
+- If the catalogue label says “A20 Pro”, treat it as a likely model-name error requiring correction; do not silently replace it until the product record and guide context are checked.
+- Apple UK specifications list USB-C charge cable in the box. The UK page should be the canonical UK source.
+- Sources: https://www.apple.com/uk/ipad-mini/specs/ and https://support.apple.com/en-gb/121456
+
+### Synology DS224+
+- Synology has an official UK-region announcement for DS224+ and DS124, confirming UK-region product family and availability through Synology resellers at launch.
+- The retrieved detailed hardware spec page was US-region; do not cite that as UK-specific stock or warranty proof. Check current UK reseller inventory and regional warranty before a recommendation.
+- Source: https://www.synology.com/en-uk/company/news/article/DS224p_DS124/Synology%C2%AE%20%E6%8E%A8%E5%87%BA%20DiskStation%C2%AE%20DS224%2B%20%E5%92%8C%20DS124%20小型存储设备，协助提升生产力
+
+## Decisions from this batch
+- Confirmed UK official product/spec evidence: BenQ PD2705U; Apple iPad mini A17 Pro (not A20 Pro).
+- Confirmed UK official product page but currently unavailable: Dell U2723QE (part 210-BCXK).
+- Confirmed UK-region product-family launch evidence only: Synology DS224+; current stock and detailed regional warranty remain unverified.
+- No catalogue record was modified. These findings are audit evidence only.
