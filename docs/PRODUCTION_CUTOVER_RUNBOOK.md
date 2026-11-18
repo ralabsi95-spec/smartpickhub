@@ -56,9 +56,9 @@ If a release causes errors:
 
 | Item | State | Next action |
 |---|---|---|
-| Preview project | Verified previously | Keep isolated and noindex |
+| Preview project | Latest deployment verified successful at commit `f9fde7a` | Keep isolated and noindex |
 | Production Pages Git connection | Not configured at last inspection | Await explicit production authorization |
-| Release branch / SHA | Not approved | Select exact candidate after content/security gates |
+| Release branch / SHA | Not approved for production | Select exact candidate after content/security gates |
 | Editorial approvals | 0 approved guides in last audit | Review and approve content before indexing |
 | Product images | No approved product images in last audit | Gather rights evidence or use compliant alternatives |
 | Affiliate listings | Search URLs, not verified exact listings | Verify retailer destination and UK relevance |
@@ -91,16 +91,18 @@ Sources:
 
 Read-only inspection of the currently open Cloudflare Workers & Pages account dashboard confirms three separate resources:
 
-1. **Pages preview project `smartpickhub-preview`** — listed with the `smartpickhub-preview.pages.dev` hostname and GitHub repository `ralabsi95-spec/smartpickhub`. The dashboard showed a recent deployment description: "Replace generic family sources with exact model pages for NAS, Oral-B and Roborock" (listed as about 1 hour old at inspection). This is evidence of a recent preview deployment, but this dashboard list alone does not establish the exact deployed commit SHA or whether all branch-head changes are deployed.
+1. **Pages preview project `smartpickhub-preview`** — listed with the `smartpickhub-preview.pages.dev` hostname and GitHub repository `ralabsi95-spec/smartpickhub`. The dashboard showed a recent deployment description: "Replace generic family sources with exact model pages for NAS, Oral-B and Roborock" (listed as about 1 hour old at inspection). This was an overview-list observation; it did not expose the source SHA.
 2. **Pages production project `smartpickhub`** — listed separately with `smartpickhub.pages.dev` and the status "No Git connection". This remains the intended production Pages project with no verified source connection.
 3. **Workers service `smartpickhub`** — a different resource from the Pages project, shown with "Latest build failed" and "No active routes". Do not confuse this Worker with the Pages production project; no action is needed on it for the Pages cutover unless a separate architecture decision is made.
 
 No Cloudflare setting, repository integration, DNS record, deployment, route, or indexing policy was changed during this inspection. This observation supersedes earlier assumptions that the Worker and Pages project are one resource; they are distinct dashboard entries.
 
-## 9. Branch-head and preview-deployment correlation (2026-11-18 08:28 UTC)
+## 9. Branch-head and preview-deployment correlation (2026-11-18 08:32 UTC)
 
-- GitHub's branch history confirms the current `automation/bootstrap` head is `9dda898ff24b9c4c1b28c45f6fb6e806e5061e1e` (`docs: record latest Cloudflare resource state`, 2026-11-18 08:24:15 UTC).
-- That head changes only `docs/PRODUCTION_CUTOVER_RUNBOOK.md`; it is a documentation commit, not the NAS/Oral-B/Roborock content change named in the Cloudflare deployment list.
-- A direct commit search for the exact deployment description did not return a matching commit. The Cloudflare account-list view exposes the deployment description and age but not its exact source SHA. Therefore the preview deployment SHA and its relationship to the branch head remain **unverified**.
-- No deployment was triggered and no Cloudflare setting was changed. Do not infer that the preview is at `9dda898` merely because it is the branch head.
-- Next safe action: inspect the individual `smartpickhub-preview` deployment detail in Cloudflare and record its source commit SHA, then compare that SHA with the GitHub branch history before deciding whether a fresh preview build is needed.
+- GitHub branch head before the new documentation update was `9dda898ff24b9c4c1b28c45f6fb6e806e5061e1e` (`docs: record latest Cloudflare resource state`).
+- A follow-up documentation commit was created: `f9fde7afed583871c1dc0285ff7cb5dd44097f06` (`docs: correlate preview deployment with branch head`). It only updates this runbook.
+- **Cloudflare deployment detail has now been opened and verified:** project `smartpickhub-preview`, branch `automation/bootstrap`, status `success`, deployment ID `435d8370-2d9b-4846-a385-9f99e48c9f5f`, source commit `f9fde7a`, timestamp `2026-11-18T08:29:52.704354Z`.
+- The deployment's short SHA `f9fde7a` matches the full GitHub commit `f9fde7afed583871c1dc0285ff7cb5dd44097f06`. Therefore the latest preview deployment includes the runbook-only documentation update; it is not evidence of a new application-code or guide-content change.
+- The earlier Cloudflare overview label about NAS, Oral-B and Roborock was not sufficient to identify the deployed SHA. The individual deployment detail resolves the current deployed version.
+- No new deployment was triggered. No Cloudflare settings, Git connections, domains, DNS, environment variables, secrets, routing, or indexing policies were changed. A transient delete-confirmation dialog was dismissed without confirming any deletion.
+- **Next safe action:** Review the existing preview's content/data readiness (especially exact retailer product destinations, image rights and editorial approval) before proposing a release candidate. Production remains blocked pending those gates and explicit owner approval.
