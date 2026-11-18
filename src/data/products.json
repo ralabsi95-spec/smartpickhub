@@ -1724,19 +1724,23 @@
           "sourceNote": "XGIMI UK's official product page identifies model WK08K and lists native 1080p, 450 ISO lumens, Google TV, 71.28Wh battery and up to 2.5 hours video playback in Eco mode. The UK page specifies AC 200–240V, 50/60Hz; PowerBase Stand is sold separately. Confirm the exact bundle and plug before purchase."
         },
         {
-          "name": "Epson EpiqVision Mini EF21 Laser Projector",
-          "bestFor": "Buyers comparing a compact laser projector for flexible home use.",
+          "name": "Epson EF-21G Mini Laser Projector",
+          "bestFor": "Buyers wanting a compact Full HD laser projector with Google TV and a portable form factor.",
           "us_identifier": "Epson EpiqVision Mini EF21 Laser Projector",
-          "uk_identifier": "Epson EpiqVision Mini EF21 Laser Projector",
+          "uk_identifier": "Epson EF-21G",
           "pros": [
-            "Epson lists EF21 in its portable laser projector family and provides regional product documentation."
+            "Full HD 1080p projection with 1,000 lumens white and colour light output",
+            "Built-in Google TV, Bluetooth speakers and screen sizes up to 150 inches",
+            "Compact 2.3kg design with automatic focus, keystone correction and obstacle avoidance"
           ],
           "cons": [
-            "Check brightness, resolution, smart-TV bundle and regional warranty; external power is needed for portable placement."
+            "Brightness is below larger mains-powered home-cinema projectors and suits controlled lighting better",
+            "No built-in battery; portable placement still requires mains power",
+            "Check exact colour, UK SKU and retailer warranty; EF-21G and EF-21W have different availability status"
           ],
-          "verdict": "Compare with battery-powered DLP projectors if built-in battery operation is a priority.",
-          "source": "https://epson.com/For-Home/Projectors/Home-Cinema/Epson-EpiqVision-Mini-EF21-Portable-Smart-Laser-Projector-%E2%80%93-Diamond-White/p/V11HB35020",
-          "sourceNote": "Epson's US product page lists model V11HB35020 as discontinued. Treat EF21 as a legacy comparison candidate and verify current regional stock, warranty and support before publication.",
+          "verdict": "A compact UK-listed laser projector for buyers who want Google TV and flexible placement. The EF-21G is the currently listed UK variant; do not assume the EF-21W has the same stock status.",
+          "source": "https://www.epson.co.uk/en_GB/products/projector/home-cinema/epson-ef-21g%2C-mini-laser-projector%2C-1%2C000-lumens%2C-up-to-150-inch-display%2C-google-tv%E2%84%A2-and-bluetooth-speaker%2C-portable/p/46374",
+          "sourceNote": "Epson UK's exact EF-21G page identifies UK SKU V11HB35340 and lists Full HD resolution enhancement, 1,000-lumen white and colour output, 3LCD laser projection, Google TV, Bluetooth speakers, up to 150-inch screen size, 2.3kg weight and AC 100–240V, 50/60Hz input. Epson UK currently lists EF-21G as in stock; the EF-21W page is marked discontinued, so do not conflate the two colour/SKU variants.",
           "availabilityNote": "Epson currently marks this US EF21 listing as discontinued. Do not present it as a currently available recommendation without checking a live regional listing."
         },
         {
