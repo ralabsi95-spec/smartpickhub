@@ -491,3 +491,12 @@ Continue product catalogue audit (regional US/UK models, official sources, obsol
 - Current source review confirms 100/100 products have HTTPS manufacturer source URLs across 50 hostnames; five sets of repeated manufacturer pages are used for product families (DEWALT drills, Roborock store, Garmin Dash Cam family, Synology comparison, Oral-B iO comparison) and should be reviewed for model-level specificity, not automatically rejected.
 - Keep branch `automation/bootstrap`; PR #1 Draft/open/unmerged; all guides draft-only; noindex/nofollow and robots disallow remain mandatory. Production Pages stays disconnected. InfinityFree remains permanently excluded. No WordPress/DNS/production/publishing changes without explicit owner approval.
 - Next: confirm CI and preview for `8bb6cb6`; then review repeated source pages for exact model-level specificity and manually resolve the contrast audit; continue 100-product US/UK lifecycle and compatibility checks.
+
+
+## 18 November 2026 — Exact model-source audit batch
+- Replaced generic DEWALT drill-category references with exact official US model pages for DCD801B, DCD794D1, DCD777D1 and DCD703F1. Updated each source note with the manufacturer-confirmed kit/platform details and retained explicit warnings that UK model numbers/battery systems are regional candidates, not automatic equivalents.
+- Replaced the shared Garmin dash-cam source with exact official model pages for X310 (4K), X210 (1440p), X110 (1080p) and Mini 3 (ultracompact 1080p). Notes retain regional package/accessory verification caveats.
+- Source pages were fetched and checked against model titles and manufacturer descriptions before the catalogue edit. No manufacturer product images were downloaded or added.
+- Catalogue source-data commit: `8c1090f2eee5382829caaca7f8c6d832f6e89cfa`.
+- Ran 56 explicit catalogue/configuration/keyword-map integrity assertions against the current branch data: 56 passed, zero failed. Coverage included 25/100 counts, uniqueness, draft-only state, content fields, HTTPS sources, affiliate IDs/tags/marketplace hosts, ASIN safeguards, image absence, regional phrase queue (71), 12 keyword clusters and exact model-source patterns.
+- The latest code head and documentation commits have not yet received a fresh full CI run or immutable Pages preview. The last fully verified code remains `f336ac5` / run #477. Verify a new CI run and preview before treating these latest code changes as deployment-tested.
