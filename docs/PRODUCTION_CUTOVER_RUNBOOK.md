@@ -121,3 +121,38 @@ Read-only fetch of the live preview homepage, guides index, two representative g
 - No content, link, image, source file, Cloudflare setting, deployment, or production page was changed.
 
 **Decision / next action:** keep all 25 guides as drafts. Prioritize a full product-link and model/region verification for a single UK-first guide, then obtain human editorial approval before any indexing or production cutover. Do not bulk-approve or convert search links to guessed ASIN URLs.
+
+
+## 11. UK-first pilot guide selection and source verification (2026-11-18)
+
+A read-only catalogue comparison was performed against `src/data/products.json` to select one pilot guide. The air-fryer candidate was not selected: live source checks found the Philips URL redirecting to a generic kitchen page, the Instant UK URL returning 404, and the COSORI UK page currently showing the product as sold out. These findings make that guide a weaker first pilot.
+
+**Selected pilot candidate (not approved for publication):** `espresso-coffee-machines-us-uk`.
+
+Why this is the strongest current candidate:
+- Four products have explicit UK identifiers in the catalogue.
+- All four supplied Sage UK source URLs were fetched successfully on 2026-11-18 and returned model-specific UK product pages:
+  - Bambino Plus: https://www.sageappliances.com/en-gb/product/bes500 — page title identifies Bambino Plus; UK description identifies SES500.
+  - Barista Express: https://www.sageappliances.com/en-gb/product/bes870 — page title identifies Barista Express; UK description identifies SES870.
+  - Barista Pro: https://www.sageappliances.com/en-gb/product/bes878 — page title identifies Barista Pro; UK description identifies SES878.
+  - Oracle Jet: https://www.sageappliances.com/en-gb/product/BES985 — page title identifies Oracle Jet; UK description identifies SES985.
+- The source pages expose useful model-specific facts and accessories. The guide already distinguishes US Breville BES identifiers from UK Sage SES identifiers and warns about regional electrical packages.
+
+### Pilot readiness matrix
+
+| Gate | Observed result | Status |
+|---|---|---|
+| Product identity | Four named model families; UK Sage pages resolve to SES500, SES870, SES878 and SES985 families | Partially verified; exact colour/package suffix still needs per-product review |
+| UK market relevance | All four primary sources are Sage GB pages and identify UK model families | Verified at family/page level |
+| UK electrical variant | Catalogue notes state 220–240V; source pages fetched here do not expose a complete electrical-rating line for every model | Re-check each model manual/rating plate before final copy |
+| Manufacturer evidence | 4/4 supplied Sage UK product pages fetched successfully; page content includes features, dimensions/accessories and product identity | Verified source reachability and page identity; claim-by-claim audit still required |
+| Amazon UK destination | Current `buildAffiliateUrl('uk', identifier)` creates an Amazon.co.uk search URL for these descriptive identifiers, not a direct ASIN listing | Search destination only; no exact listing verified |
+| Tracking tag | Affiliate helper maps UK to `smartpickhubu-21` | Verified in source code |
+| Product image | No product image records are present for these catalogue products; rendered page therefore shows the pending-image placeholder | No approved product photos |
+| Image rights | Manufacturer page Open Graph images are visible, but no licence/permission evidence was reviewed or recorded | Unknown; do not copy or hotlink as approved assets |
+| Editorial approval | Guide remains `Research draft — requires human review before publication` | Not approved |
+| Prices / availability / ratings | Live manufacturer pages may display changing commercial data; the catalogue does not currently rely on those as approved claims | Do not copy into guide without a separate permitted, dated verification process |
+
+**Decision:** use the espresso guide as the first controlled verification pilot, not as a publish-ready page. Next, perform a claim-by-claim comparison of the four guide records against the exact UK manuals/specification pages, confirm the model suffix/voltage and warranty/package differences, and separately verify Amazon UK listings if direct product links are desired. Keep the current search links labelled as search links unless verified direct listings are recorded. Image permission remains a separate human gate.
+
+No product data, guide copy, affiliate URLs, image assets, publication status, application code, Cloudflare configuration, deployment, DNS, indexing or production resource was changed during this audit.
