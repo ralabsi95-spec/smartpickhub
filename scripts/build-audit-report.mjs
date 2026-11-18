@@ -47,6 +47,43 @@ const vulnerabilities = Object.entries(npmAudit?.vulnerabilities ?? {}).map(([na
   }))
 }));
 
+const securityPolicy = readJson('SECURITY_EXCEPTIONS.json');
+const advisoryMap = new Map();
+for (const item of vulnerabilities) {
+  for (const advisory of item.advisories) {
+    const entry = advisoryMap.get(advisory.url) ?? { ...advisory, affectedPackages: [] };
+    entry.affectedPackages.push(item.package);
+    advisoryMap.set(advisory.url, entry);
+  }
+}
+const uniqueAdvisories = [...advisoryMap.values()].map(item => ({
+  ...item,
+  affectedPackages: [...new Set(item.affectedPackages)].sort()
+}));
+const exceptionReview = uniqueAdvisories.map(item => {
+  const exception = securityPolicy?.exceptions?.find(candidate => candidate.advisoryUrl === item.url);
+  return {
+    advisoryUrl: item.url,
+    status: exception ? 'pending-owner-review' : 'unaccepted',
+    expiresOn: exception?.expiresOn ?? null,
+    rationale: exception?.rationale ?? null
+  };
+});
+
+  package: name,
+  severity: item.severity ?? null,
+  direct: item.isDirect ?? false,
+  range: item.range ?? null,
+  fixAvailable: item.fixAvailable ?? null,
+  advisories: (item.via ?? []).filter(via => typeof via === 'object').map(via => ({
+    title: via.title,
+    severity: via.severity,
+    url: via.url,
+    range: via.range,
+    cvss: via.cvss?.score ?? null
+  }))
+}));
+
 const expectedAxeRoutes = guides.length + 3;
 const expectedLighthousePages = guides.length + 4;
 const axeStatus = axeSummary?.status ?? (axeFiles.length ? 'partial' : 'missing');
@@ -88,6 +125,8 @@ const report = {
     npmAudit: {
       status: vulnerabilitySummary?.total ? 'review-required' : (vulnerabilitySummary ? 'clean' : 'missing'),
       vulnerabilities: vulnerabilitySummary,
+      uniqueAdvisories,
+      exceptionReview,
       packages: vulnerabilities
     }
   },
