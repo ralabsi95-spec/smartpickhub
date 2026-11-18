@@ -1482,91 +1482,100 @@
     },
     {
       "slug": "espresso-coffee-machines-us-uk",
-      "title": "Home Espresso Machines: Manual Control, Assisted Brewing and Milk Workflow",
+      "title": "Home Espresso Machines: UK Sage Models Compared (US Breville Equivalents)",
       "category": "Coffee & Kitchen Appliances",
       "publishedAt": "2026-11-16",
-      "summary": "Compare home espresso machines by grinder inclusion, milk steaming, control level, warm-up workflow and cleaning requirements.",
-      "introduction": "Espresso machines vary from compact manual machines to integrated grinder and assisted systems. Compare whether a grinder is included, how milk is steamed, portafilter size, water-tank access, cleaning cycles and counter clearance. Model suffixes and voltage differ between US and UK markets.",
-      "editorialStatus": "Research draft — requires human review before publication.",
+      "summary": "A UK-first comparison of Sage espresso machines, using UK SES model identifiers and electrical specifications while identifying the corresponding US Breville BES families.",
+      "introduction": "This guide compares four home espresso machines using the UK Sage versions as the primary reference: Bambino Plus SES500, Barista Express SES870, Barista Pro SES878 and Oracle Jet SES985. The corresponding US listings use Breville BES identifiers. Names, suffixes, plugs, voltage, accessories and warranty can vary by region, so UK buyers should verify the exact SES model and UK package before ordering. These are research-led summaries based on manufacturer documentation, not hands-on test results.",
+      "editorialStatus": "Research draft — UK-first regional naming updated; requires human editorial review before publication.",
       "products": [
         {
-          "name": "Breville Bambino Plus Espresso Machine BES500",
-          "bestFor": "Buyers who want a compact espresso machine and are happy to use a separate grinder.",
+          "name": "Sage Bambino Plus (UK SES500) / Breville Bambino Plus (US BES500)",
+          "bestFor": "UK buyers who want a compact machine with automatic milk texturing and are comfortable choosing and using a separate grinder.",
           "us_identifier": "Breville Bambino Plus Espresso Machine BES500",
           "uk_identifier": "Sage Bambino Plus UK SES500 / SES500BS 220–240V",
           "pros": [
-            "Compact Bambino platform; automatic milk texturing workflow is a key model-family feature.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Sage UK documentation identifies a 54mm portafilter, 1.9L removable water tank and automatic milk texturing.",
+            "Automatic milk texturing offers three milk-temperature and three milk-foam settings.",
+            "The UK model-family manual specifies 220–240V, 50–60Hz and 1300–1600W."
           ],
           "cons": [
-            "A separate grinder adds cost and counter space; manual espresso preparation still requires practice.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "No integrated grinder is listed in the machine's documented components, so espresso-capable grinding equipment must be budgeted separately.",
+            "Automatic milk texturing reduces manual steaming work but does not remove the need to learn dosing, tamping, cleaning and milk handling.",
+            "Check the exact SES500 colour/package suffix, included baskets and local warranty before ordering."
           ],
-          "verdict": "A compact starting point when a separate grinder is acceptable.",
+          "verdict": "A compact UK-market option for buyers who value assisted milk texturing and are happy to pair the machine with a separate grinder.",
           "source": "https://www.sageappliances.com/en-gb/product/bes500",
-          "sourceNote": "Sage UK lists the Bambino Plus under the SES500 family; its UK manual specifies 220–240V. The US Breville BES500 and UK Sage SES500 are regional identifiers; verify package and warranty.",
-          "availabilityNote": "The US Breville and UK Sage listings use region-specific product identifiers and electrical packages. Select the UK SES model with a UK plug and 220–240V rating; do not order a US electrical unit for UK/Jordan mains. Confirm model suffix, included accessories and local warranty on the official UK listing."
+          "sourceNote": "Primary reference: Sage UK Bambino Plus product page and SES500 UK instruction booklet. The UK family is identified as Sage SES500; the corresponding US family is sold as Breville BES500. UK manual rating: 220–240V, 50–60Hz, 1300–1600W. Verify the full model suffix and package.",
+          "availabilityNote": "UK-first naming is used here. Choose the Sage SES500 UK electrical package with the correct plug and 220–240V rating. Breville BES500 is the US regional identifier and must not be assumed electrically or commercially identical. Confirm colour suffix, accessories, seller and warranty on the retailer/manufacturer listing."
         },
         {
-          "name": "Breville Barista Express Espresso Machine BES870",
-          "bestFor": "Buyers wanting an integrated grinder and manual espresso workflow.",
+          "name": "Sage Barista Express (UK SES870) / Breville Barista Express (US BES870)",
+          "bestFor": "UK buyers who want an integrated conical-burr grinder and a hands-on espresso workflow.",
           "us_identifier": "Breville Barista Express Espresso Machine BES870",
           "uk_identifier": "Sage Barista Express UK SES870 220–240V",
           "pros": [
-            "Integrated conical burr grinder and manual control over espresso preparation are central to this model.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Integrated conical-burr grinder with 16 grind settings.",
+            "54mm portafilter and an 18g dose reference in the manufacturer's product guidance.",
+            "Manual steam wand for hands-on milk texturing, with PID temperature control; UK manual rating is 220–240V, 50–60Hz and 1560–1850W."
           ],
           "cons": [
-            "Integrated grinder limits upgrade flexibility; dial-in and cleaning take time and practice.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Grind adjustment, espresso dial-in and manual milk texturing require practice.",
+            "The integrated grinder is convenient but offers less flexibility than choosing a separate grinder.",
+            "Regular grinder, group-head and steam-wand cleaning should be included in the ownership routine."
           ],
-          "verdict": "Compare as an all-in-one route into home espresso where manual control is welcome.",
+          "verdict": "An all-in-one UK-market option for buyers who want an integrated grinder but still prefer control over espresso preparation and milk steaming.",
           "source": "https://www.sageappliances.com/en-gb/product/bes870",
-          "sourceNote": "Sage UK lists the Barista Express as SES870. Treat the US Breville BES870 and UK Sage SES870 as regional listings and verify the exact suffix, plug, voltage and warranty.",
-          "availabilityNote": "The US Breville and UK Sage listings use region-specific product identifiers and electrical packages. Select the UK SES model with a UK plug and 220–240V rating; do not order a US electrical unit for UK/Jordan mains. Confirm model suffix, included accessories and local warranty on the official UK listing."
+          "sourceNote": "Primary reference: Sage UK Barista Express product page and SES870 UK instruction booklet. UK family identifier: Sage SES870; corresponding US family: Breville BES870. Sage documentation describes the 16-setting integrated grinder, 54mm portafilter, 18g dose reference and PID temperature control. UK manual rating: 220–240V, 50–60Hz, 1560–1850W.",
+          "availabilityNote": "Choose the Sage SES870 UK package for UK mains and warranty. Breville BES870 is the US regional identifier; do not assume the plug, electrical package, included accessories or warranty are interchangeable. Check the full model suffix and retailer listing."
         },
         {
-          "name": "Breville Barista Pro Espresso Machine BES878",
-          "bestFor": "Users wanting an integrated grinder with a faster, guided workflow.",
+          "name": "Sage Barista Pro (UK SES878) / Breville Barista Pro (US BES878)",
+          "bestFor": "UK buyers who want an integrated grinder, digital controls and a rapid-heating workflow while retaining manual milk texturing.",
           "us_identifier": "Breville Barista Pro Espresso Machine BES878",
           "uk_identifier": "Sage Barista Pro UK SES878 220–240V",
           "pros": [
-            "Barista Pro family combines an integrated grinder with a digital interface and steam wand.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Integrated conical-burr grinder with 30 grind settings.",
+            "ThermoJet heating system; Sage UK states a 3-second heat-up time for this model.",
+            "Digital interface and volumetric shot control, with a manual steam wand; UK manual rating is 220–240V, 50–60Hz and 1380–1650W."
           ],
           "cons": [
-            "Still requires grinder adjustment and regular cleaning; verify regional model and power specification.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "The integrated grinder still needs adjustment and routine cleaning to suit different beans.",
+            "Milk texturing remains a manual task, unlike the more automated milk workflow on Oracle Jet.",
+            "Confirm the exact colour/model suffix, included accessories and UK warranty."
           ],
-          "verdict": "A mid-range integrated option for users who want more guided controls.",
+          "verdict": "A more digitally guided integrated-grinder option for buyers who want a quick-start workflow but still want to texture milk manually.",
           "source": "https://www.sageappliances.com/en-gb/product/bes878",
-          "sourceNote": "Sage UK lists the Barista Pro as SES878 and specifies 220–240V. Verify the exact colour/model suffix and UK warranty.",
-          "availabilityNote": "The US Breville and UK Sage listings use region-specific product identifiers and electrical packages. Select the UK SES model with a UK plug and 220–240V rating; do not order a US electrical unit for UK/Jordan mains. Confirm model suffix, included accessories and local warranty on the official UK listing."
+          "sourceNote": "Primary reference: Sage UK Barista Pro product page and SES878 UK instruction booklet. UK family identifier: Sage SES878; corresponding US family: Breville BES878. Sage UK documents 30 grinder settings, ThermoJet and a stated 3-second heat-up. UK manual rating: 220–240V, 50–60Hz, 1380–1650W.",
+          "availabilityNote": "Choose the Sage SES878 UK electrical package for UK mains. Breville BES878 is the US regional identifier and may differ in plug, electrical package, suffix, accessories and warranty. Verify the exact UK variant with the seller."
         },
         {
-          "name": "Breville Oracle Jet Espresso Machine BES985",
-          "bestFor": "Buyers looking for a more automated premium espresso workflow.",
+          "name": "Sage Oracle Jet (UK SES985) / Breville Oracle Jet (US BES985)",
+          "bestFor": "UK buyers who prioritise assisted grinding, dosing, tamping and automated milk texturing over a compact or fully manual setup.",
           "us_identifier": "Breville Oracle Jet Espresso Machine BES985",
           "uk_identifier": "Sage Oracle Jet UK SES985 220–240V",
           "pros": [
-            "Oracle Jet is listed in Breville's current espresso-machine product support catalogue.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Automates grinding, dosing and tamping, reducing several manual preparation steps.",
+            "58mm portafilter with a 22g dose reference and 45 grind settings in Sage's product documentation.",
+            "Auto MilQ provides hands-free milk texturing with settings for dairy, soy, almond and oat milk; touchscreen guidance supports the workflow. UK manual rating is 220–240V, 50–60Hz and 1400–1600W."
           ],
           "cons": [
-            "Premium automated systems are larger and more complex; verify water, milk and cleaning routines before purchase.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "The more automated system is a larger and more complex countertop appliance; check dimensions and clearance.",
+            "Automated milk and cleaning routines still require setup, maintenance and regular care.",
+            "Do not assume it is a dual-boiler machine; use only the architecture and feature claims stated in the exact current regional documentation."
           ],
-          "verdict": "Consider when workflow automation matters more than a compact footprint or fully manual control.",
+          "verdict": "A highly assisted UK-market workflow candidate for buyers who value automated preparation and milk texturing more than compact size or fully manual control.",
           "source": "https://www.sageappliances.com/en-gb/product/BES985",
-          "sourceNote": "Sage UK Oracle Jet documentation identifies the SES985 family and 220–240V, 50–60Hz electrical rating. Verify the precise suffix and UK package.",
-          "availabilityNote": "The US Breville and UK Sage listings use region-specific product identifiers and electrical packages. Select the UK SES model with a UK plug and 220–240V rating; do not order a US electrical unit for UK/Jordan mains. Confirm model suffix, included accessories and local warranty on the official UK listing."
+          "sourceNote": "Primary reference: Sage UK Oracle Jet product page and SES985 UK instruction booklet. UK family identifier: Sage SES985; corresponding US family: Breville BES985. Sage documentation describes automatic grind/dose/tamp, 58mm portafilter, 22g dose reference, 45 grind settings, Auto MilQ and touchscreen guidance. UK manual rating: 220–240V, 50–60Hz, 1400–1600W.",
+          "availabilityNote": "Choose the Sage SES985 UK electrical package for UK mains and confirm the exact suffix, accessories and warranty. Breville BES985 is the US regional identifier; do not assume electrical or package equivalence. Verify that a retailer listing is for a new UK-market unit rather than an Amazon Renewed or other used/refurbished offer."
         }
       ],
       "buyingChecklist": [
-        "Decide whether you want manual control, assisted dosing or an integrated grinder.",
-        "Check grinder adjustment, basket size, temperature control, steam workflow and warm-up time.",
-        "Confirm voltage, plug, water-filter compatibility and regional service support.",
-        "Include grinder, tamper, cleaning supplies and maintenance costs in the total ownership decision."
+        "UK buyers: prioritise the Sage SES model identifier, UK plug and 220–240V rating; Breville BES names are the corresponding US regional identifiers.",
+        "Decide whether you want a separate grinder, an integrated grinder or automated grinding, dosing and tamping.",
+        "Compare manual versus automatic milk texturing, portafilter size, dose reference, controls and cleaning routines.",
+        "Check counter dimensions, water-tank access, included accessories, model suffix, retailer seller and regional warranty.",
+        "Treat manufacturer heat-up and feature claims as model-specific published specifications, not independent performance testing."
       ]
     },
     {
