@@ -156,3 +156,19 @@ Why this is the strongest current candidate:
 **Decision:** use the espresso guide as the first controlled verification pilot, not as a publish-ready page. Next, perform a claim-by-claim comparison of the four guide records against the exact UK manuals/specification pages, confirm the model suffix/voltage and warranty/package differences, and separately verify Amazon UK listings if direct product links are desired. Keep the current search links labelled as search links unless verified direct listings are recorded. Image permission remains a separate human gate.
 
 No product data, guide copy, affiliate URLs, image assets, publication status, application code, Cloudflare configuration, deployment, DNS, indexing or production resource was changed during this audit.
+
+
+## 12. Pilot electrical-variant evidence follow-up (2026-11-18)
+
+A follow-up search of Sage's official asset domain found UK instruction-booklet PDFs for all four selected model families. The indexed manual excerpts identify the following rating information:
+
+| UK model family | Official UK manual | Rating shown in indexed manual |
+|---|---|---|
+| SES500 (Bambino Plus) | https://assets.sageappliances.com/BES500/SES500_UK_UG2_A25_LR.pdf | 220–240V, 50–60Hz, 1300–1600W |
+| SES870 (Barista Express) | https://assets.sageappliances.com/BES870/SES870_UK_SG2_A24_LR.pdf | 220–240V, 50–60Hz, 1560–1850W |
+| SES878 (Barista Pro) | https://assets.sageappliances.com/BES878/SES878_UK_UG2_A25_LR.pdf | 220–240V, 50–60Hz, 1380–1650W |
+| SES985 (Oracle Jet) | https://assets.sageappliances.com/BES985/SES985_UK_UG2_E26.pdf | 220–240V, 50–60Hz, 1400–1600W |
+
+This strengthens the UK regional/electrical evidence from partial to **official-manual corroborated at model-family level**. The manuals are hosted on Sage's official asset domain and the SES model identifiers appear in their filenames/snippets. Before final editorial approval, inspect the complete PDF for each exact model/colour package and retain the model-to-manual mapping with the guide's claim evidence. Do not generalize these UK ratings to US Breville variants.
+
+The earlier matrix entry stating that a complete rating line had not yet been exposed by the product pages is superseded by this manual search. Product pages and manuals were inspected read-only; no guide content or product record was changed.
