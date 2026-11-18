@@ -602,3 +602,10 @@ Continue product catalogue audit (regional US/UK models, official sources, obsol
 - Additional US-region source URLs flagged for Dell U2723QE, BenQ PD2705U, iPad mini A20 Pro, Synology DS224+, and Logitech G gaming mice; source-region flag does not prove UK unavailability.
 - Documentation commits: `956ab1b` (initial audit note), `5f033ad` (corrected exact Epson URLs). Check current branch-head CI after these documentation commits before claiming latest branch checks passed.
 - Next: finish exact Garmin UK X210/X310 product-page evidence, then proceed through the remaining regional-source flags. No catalogue changes without owner approval. No Amazon ASIN/listing verification, publication, merge, deployment, DNS or indexing action was performed.
+
+
+### Garmin follow-up evidence (18 Nov 2026)
+- Added exact follow-up to `docs/UK_US_REGIONAL_AUDIT_2026-11-18.md` in commit `34181c1`.
+- Garmin UK X110 page: part number 010-02900-10. Garmin UK support page resolves X310 part number 010-02860-00; the same part number appears on Garmin Canada product page. X210 has a UK Declaration of Conformity, but its exact UK sales SKU/current UK retail page remains unverified.
+- Garmin says microSD is not included for X110/X210/X310/Mini 3; note this in any future guide comparison.
+- CI for prior handoff commit `5250d06` completed successfully on both push run 44250825102 and PR run 44250831133. New commit `34181c1` needs its own push/PR CI checks before claiming current HEAD green.
