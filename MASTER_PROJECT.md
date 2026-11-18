@@ -925,3 +925,37 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - PR CI run #573 / ID `44257057465` is in progress on that exact SHA. Do not call this documentation batch CI-verified until the run completes.
 - The preceding code/documentation commit `5294826` did pass push CI run #564 / ID `44252571083` (all 19 main steps successful).
 - No catalogue edits, merge, deployment, publishing, DNS or indexing changes were made.
+
+
+## 18 November 2026 — CI #650 verification and continuation checkpoint (16:02 UTC)
+
+### Exact verification evidence
+- PR #1 remains Draft/open/unmerged. Its branch head at this checkpoint is `56f7ab458483e3ec7788e26679726baf6b604c06` on `automation/bootstrap`.
+- GitHub Actions PR run #650 / run ID `44336718338` completed successfully. GitHub created test merge commit `9eb35cd2094508428d40ff789730076f56e5502b` to validate the PR head against base `2b7b9a82bd8a7fdf601b2add42d5612d04d3e3b4`; the merge commit is a CI test ref, not a merge to main. Its content includes PR head `56f7ab4`.
+- The single `build-and-audit` job and all 18 substantive workflow steps completed successfully: locked npm install, audit capture, Astro checks, importer self-test and isolated integration test, catalogue/affiliate validation, keyword generation, static build, 29-page smoke test, local preview server, axe audit across 28 routes, five Lighthouse samples, consolidated audit report and artifact upload.
+- Artifact `smartpickhub-quality-reports-650.zip`, ID `14442111616`, was downloaded and inspected. Consolidated report generated 18 Nov 2026 15:34:57 UTC.
+- Report confirms 25 guides / 100 products; 100 US and 100 UK marketplace-link constructions; 0 catalogue errors; 29 HTML pages smoke-tested with zero errors/warnings; preview `noindex`, `robots.txt Disallow: /`, and public publication disabled.
+- Accessibility: 28/28 routes audited, zero axe violations, 27 incomplete checks. These are not proven failures, but require manual contrast review where gradients prevent automated calculation; do not state WCAG conformance as fully verified.
+- Lighthouse: five representative samples (home desktop, home mobile, guide index, disclosure, one guide) each scored 100 Performance, Accessibility and Best Practices; SEO 66–69 while the preview is intentionally blocked from indexing. Example LCP: desktop home 0.3s, mobile home 0.9s, guide index 1.4s. This is representative sampling, not every route.
+- Product imagery readiness: 0 approved, 0 pending, 100 with no product image. Original guide-cover artwork is separate from product photographs.
+- npm audit artifact reports 12 high-severity affected package nodes. The dependency paths trace to the known picomatch advisory `GHSA-fc5q-39xc-vjpf` / `CVE-2026-112366`; affected nodes include Astro/Vite dependency chain packages. This is one underlying advisory represented across multiple package nodes, not 12 independent CVEs. Preserve the owner-approved temporary exception and review by 2 Dec 2026; this is not a clean audit or remediation.
+
+### Deployment and publication state
+- No Cloudflare configuration was changed. Production Pages project `smartpickhub` remains disconnected/unconfigured; no production deploy, DNS change, indexing change or publication occurred.
+- Preview freshness for the latest tested ref remains unverified; do not infer a Pages deployment from successful GitHub Actions CI.
+- All 25 guides remain editorial drafts; none approved. No Amazon direct ASIN/listing, current stock, price, rating or live Associates account status is newly verified by this CI.
+- PR #1 remains open/Draft/unmerged. No approval to merge or deploy is implied by the CI success.
+- InfinityFree remains excluded from this project scope.
+
+### Next work
+1. Continue read-only release-readiness work on the approved development branch: verify preview deployment freshness using the Pages deployment evidence if available; do not modify Cloudflare production settings.
+2. Manually review homepage gradient contrast/incomplete axe nodes and record actual colour-ratio results before any accessibility claim.
+3. Prioritise a rights-compliant product-image research workflow with provenance/licence/attribution fields; do not scrape Amazon images or mark candidates approved automatically.
+4. Continue UK/US SKU verification and editorial review; keep publication flags unchanged.
+5. Inspect the latest head and CI again after this documentation commit; do not claim this new documentation head has passed until a run for it completes.
+
+### Files and versions
+- Branch: `automation/bootstrap`; PR: https://github.com/ralabsi95-spec/smartpickhub/pull/1
+- CI artifact: `smartpickhub-quality-reports-650.zip` (run ID `44336718338`, artifact ID `14442111616`).
+- Node.js used in CI: `22.23.4`; dependencies installed with `npm ci` from committed lockfile.
+- No product catalogue, guide copy, affiliate identifiers, publication flags, images, site settings or production configuration changed in this checkpoint; documentation only.
