@@ -1050,3 +1050,21 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 3. Continue lawful product-image candidate research and UK/US SKU verification without auto-approval or catalogue import.
 4. Recheck latest branch head/CI after this documentation update.
 5. Review picomatch advisory and temporary exception by 2 Dec 2026.
+
+
+## 19 November 2026 — UK-first launch progress
+
+- Owner direction: complete all 25 guides / 100 products and move toward launch without exhaustive UK/US model parity or excessive micro-verification. UK is primary; US is secondary. Material safety/compatibility distinctions remain mandatory.
+- Updated catalogue metadata accordingly (policy commit `5c9a2527a1d5b99d920a0034072e3789b9061be7`).
+- Removed 39 repeated generic pros bullets and 49 repeated generic cons bullets from the 100 products. All 25 guides / 100 products remain; each record retains source URL and both marketplace identifiers. No products or source records were deleted.
+- Guide #25 changed to UK-listed Brother models MFC-L8390CDW, MFC-L3740CDW, HL-L3240CDW and DCP-L2660DW, with matching UK sources and 220–240V specs; US identifiers retained as secondary search phrases.
+- Guide #20 Epson CO-FH02 updated to UK-listed SKU V11HA85040, Full HD 1080p, 3,000 lumens, 3LCD and Android TV; no price/current retailer-stock claim is displayed.
+- Data commits: `5727e5d414ed34db491a5b4e7220b9c1f84566dc`, `0609a73eb8af1517c21c0eb76aed09e3b8e361af`, `3bb10606a361ed5136d75dbfdc187074b8f5a8b6`. Documentation commits: `7df951f16ccd524ef3f413a79d749c98621c38e4`, `b9000e1b694cdbd720f428bea6c26ee5760f32d7`.
+- CI #681 and #683 were cancelled during overlapping PR activity; no complete passing CI for the latest head yet. Avoid overlapping commits and obtain a full successful run before declaring the candidate validated.
+- PR #1 remains Draft/open/unmerged. All 25 guides remain drafts; zero approved guides and zero approved product images. No production deploy, indexing, Pinterest publishing, DNS or public release action.
+
+### Next steps
+1. Complete one successful full CI run for the current PR head.
+2. Continue the practical UK-first editorial pass on the remaining guides, with focus on dated/legacy models, useful verdicts, sources and shopping clarity.
+3. Verify preview rendering, SEO safeguards and affiliate destinations.
+4. Present the consolidated launch candidate for explicit release sign-off.
