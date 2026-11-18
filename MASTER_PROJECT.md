@@ -800,3 +800,11 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Roadmap checklist tally is 52 completed, with step 48 and steps 68–69 partial. Remaining steps include manual contrast/visual review, full product lifecycle/regional audit, image rights research, analytics and controlled release.
 - No product photos have been added; Commons research remains unexecuted. The 71 identical US/UK search phrases remain a manual review queue.
 - PR #1 remains Draft/open/unmerged; preview protections remain in place. No production deployment, DNS or WordPress changes, public publishing or indexing changes.
+
+
+## 18 November 2026 — Latest verified project checkpoint
+- CI #477 passed on `f336ac5fb954b03dc1411051f53d92b7bbd5a1c3`; report artifact `14343891465` reviewed. All 29 Lighthouse pages scored 100 Performance, Accessibility and Best Practices; SEO 66–69 is intentionally constrained by preview noindex. axe: zero violations on 28 routes; 28 gradient contrast checks remain incomplete for manual review. npm audit: zero vulnerabilities across 362 dependencies.
+- Latest verified preview for that code: `https://d8a304d5.smartpickhub-preview.pages.dev/`.
+- Subsequent dimension and smoke-test refinement currently at `8bb6cb67cb0bacd8452dbe8e05170ee30fdb3cb4`: WebP HTML attributes now match actual 720×1080 derivatives; CI and preview for this new head remain pending.
+- Catalogue snapshot: 25 guides / 100 products, none approved; 100 manufacturer source URLs across 50 hosts; no product-image records; 71 identical US/UK search phrases flagged for manual review. Repeated generic/family source URLs remain targeted review candidates.
+- Preserve all safety boundaries: no PR merge, production deployment, DNS change, public publishing/indexing, WordPress change, or removal of noindex/robots without explicit owner approval. InfinityFree is permanently excluded.
