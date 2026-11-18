@@ -763,3 +763,20 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 3. Continue lawful product-image candidate research and UK/US SKU verification without auto-approval or catalogue import.
 4. Recheck latest branch head/CI after this documentation update.
 5. Review picomatch advisory and temporary exception by 2 Dec 2026.
+
+
+## 19 November 2026 — UK-first launch direction
+
+- Owner clarified the priority: complete all 25 buying guides / 100 products and move toward launch; exhaustive US-vs-UK SKU parity and exceptionally granular verification are not desired launch blockers.
+- Adopted UK-first policy in `src/data/products.json`: Amazon UK primary, US secondary/optional. Minor regional differences do not block a guide; material safety/compatibility distinctions (voltage, plug, battery platform, radio/regulatory limits) must not be misstated.
+- Policy metadata commit: `5c9a2527a1d5b99d920a0034072e3789b9061be7`.
+- Audit ledger decision recorded in commit: `dd4f213cb9bb1c66c6231f1d2febeb78f8d2b602` (current known head at this checkpoint).
+- CI #675 (run ID `44394492800`) passed for the preceding audit-ledger head `949e9103fd2504b479810380b6c4321b13ba01f9`; it does NOT validate commits `5c9a252` or `dd4f213`. A run for the current head has not yet been observed through the available PR-triggered run lookup.
+- Product data still contains 25 guides / 100 products, all research drafts; 0 guides approved, 0 product images approved. No product records/claims/links were changed in the policy update.
+- PR #1 remains Draft/open/unmerged. No production deploy, indexing, Pinterest publishing, Amazon account change or public release occurred. Do not infer approval from “continue” or this policy change.
+
+### Immediate execution plan
+1. Perform a practical editorial pass over the full 25-guide batch: obvious inaccuracies, readability, duplicated content, broken/weak sources, Amazon UK search destination quality, and material safety/compatibility only. Do not spend time proving exhaustive regional equivalents.
+2. Make supported corrections in one or more bounded batches, preserving existing records and never inventing ASINs, prices, ratings, stock or image rights.
+3. Run/inspect CI on the resulting branch head; verify PR #1 still points at the intended head and remains Draft/unmerged.
+4. Prepare one consolidated launch-candidate report and list only genuine blockers for owner approval. Publication, merge, production and indexing remain gated on explicit approval.
