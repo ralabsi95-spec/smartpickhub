@@ -280,3 +280,13 @@
 - Artifact `14403925308` confirms 5/5 Lighthouse samples, consolidated status `quality-passed-security-review-and-manual-accessibility-review-required`, 0 axe violations and 27 manual contrast checks incomplete.
 - Report generation now fails CI when required checks are missing/incomplete; this closes the stale 29-vs-5 sample-count defect.
 - Security exception remains pending owner approval. No production deployment, PR merge, publication, indexing or preview freshness claim.
+
+
+## 18 November 2026 — UK/US regional audit continuation
+- Read-only review of all 100 catalogue records reconfirmed 69 identical US/UK identifier phrases. These are triage flags, not proven data errors; identifiers are search phrases, not verified ASINs.
+- Added `docs/UK_US_REGIONAL_AUDIT_2026-11-18.md` with source-region flags and findings for Garmin, Logitech, Epson and additional US-region source URLs.
+- Garmin follow-up: UK X110 product page confirms part number 010-02900-10; Garmin UK support resolves X310 part number 010-02860-00; X210 has UK Declaration of Conformity but exact UK sales SKU/current UK product page remains unverified. Garmin confirms microSD is not included for X110/X210/X310/Mini 3.
+- Previous handoff commit `5250d06` passed both push CI `44250825102` and PR CI `44250831133`.
+- Latest audit/handoff commits: `34181c1` (regional audit evidence) and `62f8610` (handoff note). Their push/PR CI runs `44252404888` and `44252411611` were in progress at the time of this entry; verify before claiming latest HEAD is green.
+- No catalogue data or affiliate URLs changed. No ASIN/listing verification, product image approval, guide approval, publication, merge, deployment, DNS or indexing change. PR #1 remains Draft/open/unmerged; crawl protection remains active.
+- Next: finish exact UK Garmin X210 commercial SKU evidence; then investigate UK product sources for Dell U2723QE, BenQ PD2705U, iPad mini, Synology DS224+ and Logitech gaming mice. Only update catalogue after evidence review.
