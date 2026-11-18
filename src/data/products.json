@@ -316,8 +316,8 @@
             "A multi-node system can be unnecessary for smaller homes with good single-router coverage"
           ],
           "verdict": "A mesh-system candidate for larger or multi-room homes where several access points and multi-gig wired connections are useful. Verify the exact regional package, node count and firmware feature set.",
-          "source": "https://static.tp-link.com/upload/product-overview/2026/202606/20260611/Deco%20BE63%20%28US%292.6_Datasheet.pdf",
-          "sourceNote": "TP-Link's BE63 US datasheet lists Wi-Fi 7 tri-band operation, four 2.5Gbps Ethernet ports per unit and mesh roaming standards; specifications may vary by region."
+          "source": "https://www.tp-link.com/us/deco-mesh-wifi/product-family/deco-be63/",
+          "sourceNote": "TP-Link's official BE63 product page documents tri-band Wi-Fi 7, BE10000 radio rates and four 2.5Gbps WAN/LAN ports per unit for the listed configuration. TP-Link UK support lists hardware revisions V3.60, V2.60 and V2 and explicitly warns that model and hardware-version availability varies by region. Do not assume the US datasheet's exact hardware or radio configuration applies to every UK kit; check the hardware-version label and matching regional support page before purchase: https://www.tp-link.com/uk/support/download/deco-be63/."
         },
         {
           "name": "ASUS RT-BE96U Wi-Fi 7 Router",
@@ -354,8 +354,8 @@
             "Coverage figures are manufacturer estimates and depend on building layout and interference"
           ],
           "verdict": "A practical ecosystem-led option for households that value app-based setup and mesh expansion. Confirm the local model, supported radio channels and any subscription features required.",
-          "source": "https://eero.com/shop/eero-pro-7",
-          "sourceNote": "eero's product and support documentation lists Wi-Fi 7, MLO, two 5GbE ports, mesh compatibility and smart-home connectivity; eero Plus adds optional advanced services."
+          "source": "https://eero.com/en-GB/shop/eero-pro-7/buy",
+          "sourceNote": "eero's UK product page identifies Pro 7 as a tri-band Wi-Fi 7 system, supports internet plans up to 5Gbps through two auto-sensing 5GbE ports, lists wireless speeds up to 3.9Gbps and coverage up to 190m² per unit, and supports 200+ devices. The page offers different pack sizes; verify selected pack contents, local power adapter/plug and regional radio availability. Optional eero Plus services are subscription-based."
         },
         {
           "name": "NETGEAR Orbi 770 Series Wi-Fi 7 Mesh System (RBE773)",
@@ -373,8 +373,8 @@
             "NETGEAR Armor and Smart Parental Controls Premium features require paid subscriptions after trial periods"
           ],
           "verdict": "A mesh-kit candidate for larger properties where multiple access points are needed. Confirm the exact RBE773 regional pack, included satellite count, local Wi-Fi channel support and optional subscription costs.",
-          "source": "https://www.downloads.netgear.com/files/GDC/RBE773/RBE773_TS-EU-AP-CA.pdf",
-          "sourceNote": "NETGEAR's RBE773 technical specification sheet identifies the router-plus-two-satellite pack, 2.5Gbps ports and subscription qualifications for optional security and parental-control services."
+          "source": "https://www.netgear.com/uk/home/wifi/mesh/rbe773",
+          "sourceNote": "NETGEAR's UK RBE773 page identifies the Orbi 770 Series Wi-Fi 7 3-pack (router plus two satellites), tri-band speeds up to 11Gbps, coverage claims up to 6,750 sq. ft. and 2.5Gbps multi-gig connectivity. Coverage and throughput are manufacturer estimates; confirm the exact pack contents, regional radio settings and any optional Armor/parental-control subscription before purchase."
         }
       ],
       "buyingChecklist": [
@@ -1015,8 +1015,8 @@
         {
           "name": "Miele Triflex HX2 Cordless Stick Vacuum",
           "bestFor": "Buyers who value a configurable 3-in-1 stick vacuum and a HEPA lifetime filter.",
-          "us_identifier": "Miele Triflex HX2 Cordless Stick Vacuum",
-          "uk_identifier": "Miele Triflex HX2 Cordless Stick Vacuum",
+          "us_identifier": "Miele Triflex HX2 Lotus White US material number 11827000",
+          "uk_identifier": "Miele Triflex HX2 Lotus White UK material number 11819170",
           "pros": [
             "Three-in-one design can be configured for different cleaning tasks",
             "Manufacturer lists a HEPA lifetime filter and 99.999% dust-retention capability under its stated test method",
@@ -1030,7 +1030,7 @@
           ],
           "verdict": "A flexible alternative for buyers who want different body configurations and a lifetime HEPA filter. Check the exact HX2 package and whether the powered floorhead is included in the selected regional listing.",
           "source": "https://media.miele.com/downloads/n-/gb/FS_11819170_GBE_GB-en-GB.pdf",
-          "sourceNote": "Miele's UK technical sheet identifies material number 11819170 / EAN 4002516449959 and lists 3-in-1 design, 3.6 kg weight, 60 minutes PowerUnit-only runtime, 30 minutes with electrical accessories at low power, 14 minutes at high power with electrical accessories and four-hour charging. Miele's US sheet identifies a different material number (11827000 / EAN 4002516453017). Treat these as regional package records and verify included floorhead, charger and warranty on the exact retailer listing."
+          "sourceNote": "Miele's UK technical sheet identifies material number 11819170 / EAN 4002516449959 and lists 3-in-1 design, 3.6 kg weight, up to 60 minutes PowerUnit-only runtime, 30 minutes with electrical accessories at low power, 14 minutes at high power with electrical accessories and four-hour charging. Miele's US product page identifies a different material number 11827000 / EAN 4002516453017. Treat these as distinct regional package records; verify included floorhead, charger, colour and warranty against the exact retailer listing. UK technical sheet: https://media.miele.com/downloads/n-/gb/FS_11819170_GBE_GB-en-GB.pdf. US product page: https://www.mieleusa.com/product/11827000/cordless-stick-vacuum-cleaner-triflex-hx2-lotus-white."
         }
       ],
       "buyingChecklist": [
@@ -1207,8 +1207,8 @@
           ],
           "verdict": "Compare its dock automation and mop handling with the amount of carpet and hard flooring in your home.",
           "source": "https://uk.roborock.com/products/roborock-qrevo-2-pro-robot-vacuum-with-multifunctional-dock",
-          "sourceNote": "Exact UK Qrevo 2 Pro product page verified. Roborock UK advertises up to 25,000 Pa HyperForce suction, automatic mop detachment for carpets and a multifunctional self-cleaning dock. This differs from the 20,000 Pa figure previously recorded from the US product source; retain regional distinction and do not compare the variants as identical without checking the exact SKU.",
-          "availabilityNote": "An exact UK Qrevo 2 Pro listing is confirmed. UK and US source pages show different advertised suction figures (25,000 Pa UK versus 20,000 Pa US); verify the exact regional SKU, dock bundle, plug, consumables and warranty before ordering."
+          "sourceNote": "Roborock's UK product page advertises up to 25,000 Pa HyperForce suction, automatic mop detachment for carpets and a multifunctional self-cleaning dock. The US product page for the same named family advertises 20,000 Pa; retain this regional distinction rather than presenting one number as universal. UK source: https://uk.roborock.com/pages/roborock-qrevo-2-pro. US source: https://us.roborock.com/pages/roborock-qrevo-2-pro. Verify exact regional SKU, dock bundle, plug, consumables and warranty before ordering.",
+          "availabilityNote": "Official UK and US product pages are available but advertise different suction figures: 25,000 Pa for the UK page and 20,000 Pa for the US page. This is a regional specification difference in the manufacturer's published material; check exact SKU and bundle before comparing or purchasing."
         }
       ],
       "buyingChecklist": [
@@ -2052,7 +2052,7 @@
           "name": "Logitech G309 LIGHTSPEED Wireless Gaming Mouse",
           "bestFor": "Buyers seeking a wireless mouse with a more accessible feature set.",
           "us_identifier": "Logitech G309 LIGHTSPEED Wireless Gaming Mouse",
-          "uk_identifier": "Logitech G309 LIGHTSPEED Wireless Gaming Mouse",
+          "uk_identifier": "Logitech G309 LIGHTSPEED Wireless Gaming Mouse Black UK SKU 910-007200",
           "pros": [
             "Logitech lists G309 LIGHTSPEED with LIGHTFORCE switches in its current catalogue.",
             "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
@@ -2062,8 +2062,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "Compare it as a flexible wireless option for gaming and everyday use.",
-          "source": "https://www.logitechg.com/en-us/shop/c/logig-mice",
-          "sourceNote": "Logitech G's official catalogue lists the PRO, G502 X and G309 families. Check exact model suffix, connectivity and regional bundle."
+          "source": "https://www.logitechg.com/en-gb/shop/p/g309-lightspeed-gaming-mouse.910-007200",
+          "sourceNote": "Logitech G's UK product page identifies the black G309 LIGHTSPEED as SKU 910-007200 and documents dual LIGHTSPEED/Bluetooth connectivity, LIGHTFORCE hybrid switches, HERO 25K sensor, six programmable buttons, up to 300+ hours on one AA battery, 86g with AA or 68g with POWERPLAY. Verify colour and SKU on the retailer listing; the 68g figure requires the separate POWERPLAY charging system."
         }
       ],
       "buyingChecklist": [
