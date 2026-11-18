@@ -1152,8 +1152,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A premium model family to compare when navigation and dock automation are key priorities.",
-          "source": "https://uk.roborock.com/pages/roborock-store",
-          "sourceNote": "The UK official store lists Saros 10, but this pass did not verify that it is identical to Saros 10R. Do not substitute one model for the other; confirm dock, navigation and regional bundle. Official UK range: https://uk.roborock.com/pages/roborock-store.",
+          "source": "https://global.roborock.com/pages/roborock-saros-10r",
+          "sourceNote": "Roborock's exact global Saros 10R page confirms the StarSight Autonomous System 2.0, 7.98cm ultra-slim body, dual anti-tangle system and 10-in-1 Multifunctional Dock 4.0. A matching UK robot product listing was not confirmed in this pass; the UK store's Saros 10 page is a different named model. Do not treat it as a UK-equivalent SKU; verify dock, drainage option, plug, warranty and app-region terms.",
           "availabilityNote": "Regional product names and dock bundles can differ. Only buy the exact UK model shown by Roborock UK; verify the dock, voltage/plug, app region, consumables and warranty. This entry is not confirmation that a US model is sold unchanged in the UK."
         },
         {
@@ -1170,8 +1170,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "Compare its low-profile dimensions and dock features against the actual clearance and floor mix at home.",
-          "source": "https://uk.roborock.com/pages/roborock-store",
-          "sourceNote": "The UK store currently surfaces Qrevo Curv 2 Pro; that is a different model name and is not asserted as the same CurvX. Verify exact model and dock bundle. Official UK range: https://uk.roborock.com/pages/roborock-store.",
+          "source": "https://us.roborock.com/products/roborock-qrevo-curv-x",
+          "sourceNote": "Roborock's exact US Qrevo CurvX product page confirms the 22,000Pa HyperForce system, AdaptiLift chassis, dual anti-tangle brush system and Multifunctional Dock 3.0 Thermo+. The UK site has a Qrevo CurvX information page and compatible accessories, but a direct UK robot listing was not confirmed in this pass; do not assume the US bundle, plug, warranty or app-region terms are identical.",
           "availabilityNote": "Regional product names and dock bundles can differ. Only buy the exact UK model shown by Roborock UK; verify the dock, voltage/plug, app region, consumables and warranty. This entry is not confirmation that a US model is sold unchanged in the UK."
         },
         {
@@ -1844,8 +1844,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A flexible multi-bay option for growing shared storage and backup workloads.",
-          "source": "https://www.synology.com/en-us/products/compare/DS725%2B/DS925%2B/DS1525%2B",
-          "sourceNote": "Synology's official comparison covers DS725+, DS925+ and DS1525+ hardware, memory, bays, network ports and expansion. Confirm supported drive models and current compatibility rules before purchase."
+          "source": "https://www.synology.com/en-uk/products/DS1525%2B",
+          "sourceNote": "Synology's exact UK-region DS1525+ product page identifies the five-bay DiskStation with dual 2.5GbE ports, two M.2 NVMe slots and optional 10GbE upgrade support. Check the current Synology drive compatibility list, memory configuration, expansion-unit requirements and local warranty before purchase."
         },
         {
           "name": "Synology DiskStation DS925+",
@@ -1861,8 +1861,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A balanced four-bay platform for shared files and backup jobs.",
-          "source": "https://www.synology.com/en-us/products/compare/DS725%2B/DS925%2B/DS1525%2B",
-          "sourceNote": "Synology's official comparison covers DS725+, DS925+ and DS1525+ hardware, memory, bays, network ports and expansion. Confirm supported drive models and current compatibility rules before purchase."
+          "source": "https://www.synology.com/en-uk/products/DS925%2B",
+          "sourceNote": "Synology's exact UK-region DS925+ product page covers the four-bay DS925+ family, dual 2.5GbE networking and two M.2 NVMe slots; the page also presents a separate DS925neo+ variant. Confirm the exact DS925+ SKU, memory type, supported drives, expansion unit and warranty rather than assuming DS925neo+ is identical."
         },
         {
           "name": "Synology DiskStation DS725+",
@@ -1878,8 +1878,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A compact starting point where capacity and expansion needs are modest.",
-          "source": "https://www.synology.com/en-us/products/compare/DS725%2B/DS925%2B/DS1525%2B",
-          "sourceNote": "Synology's official comparison covers DS725+, DS925+ and DS1525+ hardware, memory, bays, network ports and expansion. Confirm supported drive models and current compatibility rules before purchase."
+          "source": "https://www.synology.com/en-uk/products/DS725%2B",
+          "sourceNote": "Synology's exact UK-region DS725+ product page identifies the two-bay DiskStation with 2.5GbE networking and two M.2 NVMe slots, with expansion capability. Check supported drives, memory limits, expansion-unit requirements and local warranty before purchase."
         },
         {
           "name": "Synology DiskStation DS224+",
@@ -1929,8 +1929,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A premium guided-brushing option for users who will use its feedback features.",
-          "source": "https://www.oralb.co.uk/en-gb/oral-health/why-oral-b/electric-toothbrushes/which-oral-b-io-is-right-for-me",
-          "sourceNote": "Oral-B UK's range comparison lists seven brushing modes, 3D Teeth Tracking and real-time coaching through the iO Sense smart charger. Oral-B states that iO replacement heads fit all iO handles; verify the exact charger, plug, travel case and bundle in each regional retailer listing."
+          "source": "https://www.oralb.co.uk/en-gb/products/electric-toothbrushes/oral-b-io10-lunar-gold-special-edition-electric-toothbrush",
+          "sourceNote": "Oral-B UK's exact iO10 product page identifies the iO Sense smart charger with live time and pressure feedback and a charging travel case for the listed Lunar Gold package. Colours, replacement-head bundles, charger and travel-case contents vary by retailer SKU; confirm the exact bundle and UK plug."
         },
         {
           "name": "Oral-B iO Series 9 Electric Toothbrush",
@@ -1945,8 +1945,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "Compare with iO10 by included accessories rather than assuming the handle alone differs.",
-          "source": "https://www.oralb.co.uk/en-gb/oral-health/why-oral-b/electric-toothbrushes/which-oral-b-io-is-right-for-me",
-          "sourceNote": "Oral-B UK's range comparison lists seven brushing modes, an interactive colour display, 3D Teeth Tracking and a charging travel case. Oral-B states that iO replacement heads fit all iO handles; verify the exact charger, plug, travel case and bundle in each regional retailer listing."
+          "source": "https://www.oralb.co.uk/en-gb/products/electric-toothbrushes/oral-b-io9-black-electric-toothbrush-with-black-travel-charger-case",
+          "sourceNote": "Oral-B UK's exact iO9 product page identifies the Black Onyx handle and travel-charger case package. The iO9 feature set and included heads/case may vary by retailer bundle; verify the exact SKU, charger, plug and replacement-head count before purchase."
         },
         {
           "name": "Oral-B iO Series 6 Electric Toothbrush",
@@ -1961,8 +1961,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A middle-tier option when guided feedback is useful but flagship accessories are unnecessary.",
-          "source": "https://www.oralb.co.uk/en-gb/oral-health/why-oral-b/electric-toothbrushes/which-oral-b-io-is-right-for-me",
-          "sourceNote": "Oral-B UK's range comparison lists five modes, an interactive display, Smart Pressure Sensor and brushing recognition across six zones. Oral-B states that iO replacement heads fit all iO handles; verify the exact charger, plug, travel case and bundle in each regional retailer listing."
+          "source": "https://www.oralb.co.uk/en-gb/products/electric-toothbrushes/oral-b-io-series-6-electric-toothbrush",
+          "sourceNote": "Oral-B UK's exact iO6 product page identifies the Series 6 handle and its model-specific product details. Retailer bundles may differ in colour, travel case and included brush heads; verify the exact SKU, charger, plug and replacement-head count."
         },
         {
           "name": "Oral-B iO Series 3 Electric Toothbrush",
@@ -1977,8 +1977,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A simpler iO entry point when pressure guidance matters more than connected features.",
-          "source": "https://www.oralb.co.uk/en-gb/oral-health/why-oral-b/electric-toothbrushes/which-oral-b-io-is-right-for-me",
-          "sourceNote": "Oral-B UK's range comparison lists three modes, a pressure sensor and LightRing feedback. Oral-B states that iO replacement heads fit all iO handles; verify the exact charger, plug, travel case and bundle in each regional retailer listing."
+          "source": "https://www.oralb.co.uk/en-gb/products/electric-toothbrushes/oral-b-io-series-3-electric-toothbrush",
+          "sourceNote": "Oral-B UK's exact iO3 product page identifies the Series 3 rechargeable toothbrush. Colour and travel-case bundles vary by retailer SKU; confirm the exact handle, charger, plug and included brush heads before purchase."
         }
       ],
       "buyingChecklist": [
