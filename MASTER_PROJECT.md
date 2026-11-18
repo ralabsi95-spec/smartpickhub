@@ -1033,3 +1033,20 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 2. Download and inspect artifact `14467226284` before recording its detailed quality/security metrics.
 3. Continue manual contrast review and evidence-backed editorial/SKU verification; do not change publication flags.
 4. Keep PR merge and production release gated on explicit owner approval.
+
+## 18 November 2026 — CI #664 artifact inspected and contrast pre-check (20:11 UTC)
+
+- Downloaded and inspected artifact `smartpickhub-quality-reports` ID `14467226284` from run #664. Consolidated report generated at `2026-11-18T20:05:53.777Z`; it records the workflow's synthetic test commit `ee90ba30d687c16c9711900ff42afdfd5239b2c8`, while artifact metadata correctly binds the run to PR head `ecc2498386e3ed8012161d3460951fb242ef8bf9`. Do not confuse the synthetic test commit with the branch head.
+- Detailed results: 25 guides / 100 products; 100 US and 100 UK marketplace URL-construction checks; zero catalogue errors; 29 HTML pages smoke-tested with zero errors/warnings; 28/28 axe routes, zero violations, 27 incomplete color-contrast checks; five Lighthouse samples each score 100 Performance, Accessibility and Best Practices (SEO 66–69 while intentional noindex/robots protections remain active).
+- Preview safety verified in the report: `noindexVerified=true`, `robotsTxtDisallowAll=true`, `publicPublicationEnabled=false`.
+- npm audit artifact is clean at this run (`total=0`, empty vulnerabilities object). This is a point-in-time npm feed result only; do not treat it as proof picomatch is patched or close the owner-approved advisory watch. The lockfile still references the known affected package versions; review deadline remains 2 Dec 2026.
+- Product imagery: 0 approved, 0 complete candidates pending human review, 100 without images; 69 identical US/UK search phrases remain manual regional-review flags.
+- Began manual contrast pre-check using exact CSS color declarations in `src/styles/global.css`. Against the declared light gradient stops (#f8fbff, #edf4ff, #dceafe), text colors #2457a7, #12213b and #475569 calculate at least 5.75:1, 13.20:1 and 6.22:1 respectively. White on primary button #155eef calculates 5.41:1. These static endpoint calculations are encouraging but are not browser pixel sampling of the combined radial/linear gradient, so the 27 axe incomplete checks remain open pending rendered-state verification.
+- No source code, product data, guide approval, image record or site configuration was changed in this review. PR remains Draft/open/unmerged; preview deployment freshness and production Pages configuration remain unverified/untouched.
+
+### Next actions
+1. Verify Cloudflare Pages deployment metadata for exact PR head using authorized read-only evidence; no setting changes.
+2. Complete rendered-state contrast verification for hero gradient and representative guide headers; keep axe incomplete status open until verified.
+3. Continue lawful product-image candidate research and UK/US SKU verification without auto-approval or catalogue import.
+4. Recheck latest branch head/CI after this documentation update.
+5. Review picomatch advisory and temporary exception by 2 Dec 2026.
