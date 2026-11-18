@@ -959,3 +959,39 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - CI artifact: `smartpickhub-quality-reports-650.zip` (run ID `44336718338`, artifact ID `14442111616`).
 - Node.js used in CI: `22.23.4`; dependencies installed with `npm ci` from committed lockfile.
 - No product catalogue, guide copy, affiliate identifiers, publication flags, images, site settings or production configuration changed in this checkpoint; documentation only.
+
+
+## 18 November 2026 — release-readiness checkpoint (16:07 UTC; CI #654)
+
+### Verified current branch and CI
+- PR #1 head is `c8785bb4d56b886e51dae7b30220b939ca1c1e83` on `automation/bootstrap`; PR remains Draft/open/unmerged.
+- GitHub Actions run #654 / ID `44342783693` completed successfully for that exact PR head. The artifact metadata identifies branch `automation/bootstrap` and head SHA `c8785bb4d56b886e51dae7b30220b939ca1c1e83`. Its consolidated audit records the GitHub synthetic merge commit `58c2c34c96eef2d749600e51e8cc3ae8d48805f9` (merge of PR head into base for testing only); this is not a merge to main.
+- The single `build-and-audit` job and all 19 substantive workflow steps succeeded, including locked dependency install, npm audit capture, Astro checks, importer tests, catalogue/affiliate validation, keyword generation, static build, smoke tests, axe, Lighthouse, report generation and artifact upload.
+- Artifact `smartpickhub-quality-reports`, ID `14444966746`, size 1,722,056 bytes, generated 18 Nov 2026 16:07 UTC, downloaded and inspected.
+- Report confirms 25 guides / 100 products; 100 US and 100 UK marketplace-link constructions; 0 catalogue errors; 29 HTML pages smoke-tested with zero errors/warnings. Preview safeguards remain `noindex`, `robots.txt Disallow: /`, and `publicPublicationEnabled=false`.
+- Accessibility: 28/28 routes audited, zero axe violations, 27 incomplete checks and no recorded failures in the summary. Incomplete checks include contrast cases the tool cannot calculate reliably (including decorative/non-text arrow glyphs); this is not proof of a WCAG failure or proof of full WCAG conformance. Manual review remains open.
+- Lighthouse sample: desktop homepage Performance 98, mobile homepage 100; guide index, affiliate disclosure and sampled guide each 100 Performance. All five samples score 100 Accessibility and Best Practices. SEO 66 on non-guide samples and 69 on sampled guide while indexing is intentionally blocked; do not interpret as production SEO readiness.
+- npm audit remains `review-required`: 12 high-severity affected dependency nodes associated with the single underlying picomatch advisory `GHSA-fc5q-39xc-vjpf` / `CVE-2026-112366`. The owner-approved, time-boxed exception is not remediation or a clean audit; review by 2 Dec 2026.
+- Product image readiness: 0 approved, 0 complete candidates pending human review, 100 products without product images. The original guide-cover graphics are not product photography. No image was approved or added.
+
+### Source inspection and launch implications
+- Inspected current branch source for `src/layouts/Layout.astro`, `src/styles/global.css`, `src/pages/index.astro`, and `src/pages/guides/index.astro`. The site retains the noindex safeguard and displays the catalogue as work in development / editorial review required. Featured guide cards link to their draft pages; publication remains blocked by site-level crawl controls and owner-controlled release gates.
+- The homepage currently has six featured guide cards and the library exposes all 25 research drafts. These should not be treated as approved editorial content merely because they build and render.
+- Current preview URL `https://smartpickhub-preview.pages.dev/` remains inaccessible to the web inspection tool; successful CI is not evidence of a fresh Cloudflare Pages deployment. No immutable Pages deployment for head `c8785bb` has been independently verified.
+- Production Pages project `smartpickhub` remains disconnected/unconfigured and untouched. No Cloudflare settings, DNS, production deployment, merge, indexing, publication, or crawl-protection settings were changed. InfinityFree remains excluded.
+
+### Next release work
+1. Obtain a reliable read-only Pages deployment record for the current branch head, or clearly retain preview freshness as unverified.
+2. Complete human accessibility review of the homepage, guide index, and representative guide contrast states; document actual ratios and fix only confirmed defects.
+3. Select an initial small set of guides for substantive editorial review and approval; do not publish all 25 drafts by default.
+4. Continue SKU/marketplace checks and validate the live Amazon Associates UK account and actual retailer destinations before launch claims.
+5. Build a lawful product-image candidate workflow with source page, exact model, direct asset URL, rights/licence basis, attribution, and human approval. No Amazon image scraping or automatic approval.
+6. Prepare production cutover, analytics/privacy, Search Console, sitemap/RSS and Pinterest verification steps, but do not configure or activate them without owner approval.
+7. Check CI after this documentation commit; run #654 validates the prior PR head, not this new documentation commit.
+
+### Files and versions
+- Node.js `22.23.4`; dependencies installed using `npm ci` and the committed lockfile.
+- PR: https://github.com/ralabsi95-spec/smartpickhub/pull/1
+- CI run: https://github.com/ralabsi95-spec/smartpickhub/actions/runs/44342783693
+- Artifact ID: `14444966746`.
+- This checkpoint is documentation-only; no product catalogue, guide copy, affiliate identifiers, images, publication flags, or production configuration were changed.
