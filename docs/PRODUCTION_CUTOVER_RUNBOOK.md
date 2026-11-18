@@ -267,3 +267,34 @@ A read-only implementation assessment was added at `docs/ESPRESSO_DRAFT_TO_SITE_
 - **No implementation was performed:** no JSON, Astro page, affiliate helper, images, routes, metadata, deployment, Cloudflare, DNS or indexing was changed.
 
 **Next gate:** owner approval of the combined-market adaptation approach before editing the existing product records. Publication and production release remain separate approvals.
+
+
+## 18. UK-first espresso guide catalogue adaptation (2026-11-18)
+
+Following owner approval, the existing combined US/UK espresso guide record was updated in place on `automation/bootstrap` in `src/data/products.json`. No new product records were created.
+
+### Changes made
+
+- Guide title and summary now identify the UK Sage models as the primary comparison and explain the corresponding US Breville BES identifiers.
+- Introduction now clearly establishes the UK-first scope, four UK model families (SES500, SES870, SES878, SES985), regional suffix/electrical/package cautions, and research-led—not hands-on—editorial status.
+- Updated the four existing product records with explicit dual-region display names:
+  - Sage Bambino Plus (UK SES500) / Breville Bambino Plus (US BES500)
+  - Sage Barista Express (UK SES870) / Breville Barista Express (US BES870)
+  - Sage Barista Pro (UK SES878) / Breville Barista Pro (US BES878)
+  - Sage Oracle Jet (UK SES985) / Breville Oracle Jet (US BES985)
+- Replaced generic feature summaries with model-specific manufacturer-documented information, including grinder inclusion/settings, portafilter/dose references, milk workflow and UK manual electrical ratings.
+- Updated the buying checklist to prioritise UK electrical variant, model suffix, warranty, accessories and seller verification.
+- Preserved the existing UK and US descriptive search identifiers. They remain search phrases, not ASINs; the affiliate helper continues to create marketplace search destinations.
+- Preserved the draft editorial status and existing no-approved-image state. No prices, ratings, stock statements, direct ASINs or product image claims were added.
+
+### Validation and boundaries
+
+- Re-fetched the current catalogue immediately before editing and used its then-current blob SHA; the existing guide and four product records were confirmed present.
+- The updated `products.json` was parsed successfully after the write, and the espresso guide was re-read to confirm the title and four regional display names.
+- The existing catalogue still contains 100 product records; the four espresso product families were updated in place, not re-imported.
+- This was a catalogue-content-only change. No Astro renderer, affiliate helper, image asset, route, SEO/indexing setting, Cloudflare configuration, DNS, production resource or deployment was changed.
+- The guide remains a research draft and is **not approved for publication**. Preview remains noindex. PR #1 remains draft/open/unmerged; no merge to `main`.
+
+**Commit:** `515a24a0cdcb064d180c5e066636adc15f85d2f8`.
+
+**Next step:** run the repository's targeted catalogue validation/build checks, then inspect the preview rendering on desktop and mobile. Keep publication, indexing and production cutover behind separate explicit approval.
