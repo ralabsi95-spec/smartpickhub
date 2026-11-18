@@ -995,3 +995,25 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - CI run: https://github.com/ralabsi95-spec/smartpickhub/actions/runs/44342783693
 - Artifact ID: `14444966746`.
 - This checkpoint is documentation-only; no product catalogue, guide copy, affiliate identifiers, images, publication flags, or production configuration were changed.
+
+
+## 18 November 2026 — follow-up after CI #656 (20:02 UTC)
+
+- Latest PR head before this checkpoint was `a71be853fa7424444e384ba4bea39b745506ead0`; PR #1 remains Draft/open/unmerged.
+- CI #656 / run ID `44381000301` completed successfully on that exact head. All 19 substantive steps in the build-and-audit job passed. Artifact ID `14462454753` was downloaded and inspected.
+- The CI #655 run on the prior documentation commit was cancelled by concurrency when #656 started; do not treat it as a failed code test. #656 is the authoritative completed run for `a71be85`.
+- CI #656 confirms 25 guides / 100 products, 100 US and 100 UK marketplace link constructions, 0 catalogue errors, 29 HTML pages smoke-tested with zero errors/warnings, and preview crawl safeguards active (`noindexVerified=true`, `robotsTxtDisallowAll=true`, `publicPublicationEnabled=false`).
+- Accessibility: 28/28 routes, zero axe violations, 27 incomplete checks. These are not confirmed violations, but manual contrast review remains required; no full WCAG conformance claim.
+- Lighthouse: five samples all score 100 Accessibility and Best Practices; Performance 100 on all five samples. SEO 66 while the preview is intentionally blocked from indexing.
+- Product images: 0 approved, 0 pending, 100 without images. All 25 guides remain drafts and none are approved for publication.
+- **Security reconciliation:** raw npm audit in artifact #656 reports zero vulnerabilities (`vulnerabilities={}`, total 0). This is the current npm audit feed result, not proof that installed picomatch is patched. The reviewed GitHub advisory still exists, currently has incomplete/unknown package metadata and lists no patched version; project lockfile resolutions previously inspected remain 4.0.7 and nested 2.3.2. The owner-approved temporary risk acceptance remains open as an advisory watch until fresh dependency/advisory verification; review deadline 2 December 2026. Updated `SECURITY_EXCEPTIONS.md` and `.json` to remove stale “pending owner approval / 12 findings currently in npm audit” wording and record the CI #656 evidence without claiming remediation.
+- Security documentation commits: `d005773ac1e830e7b1171e8c9732db4679cf9fac` and `4362f1a6cda2094107efa3b42c921344e0b4cf35`. These commits are documentation-only; CI #656 does not validate them.
+- The current preview deployment for latest branch head remains unverified. The preview hostname was inaccessible to web inspection; no Cloudflare deployment detail or Pages connector was available. Production Pages project remains unconfigured/disconnected.
+- No merge, deployment, Cloudflare/DNS/indexing change, guide publication, Amazon account change, or production action occurred. InfinityFree remains excluded.
+
+### Next work
+1. Verify the newest CI run for documentation head `4362f1a`.
+2. Reconcile the security advisory against the exact current lockfile and npm/GitHub advisory feeds before considering closure; do not suppress or downgrade dependencies.
+3. Continue human accessibility contrast review and select an initial small editorial batch for substantive review.
+4. Establish current Cloudflare preview deployment SHA using an authorized read-only dashboard/session; do not change settings.
+5. Keep production cutover gated on content, images, affiliate destination, privacy/analytics and explicit owner authorization.
