@@ -1068,3 +1068,8 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 2. Continue the practical UK-first editorial pass on the remaining guides, with focus on dated/legacy models, useful verdicts, sources and shopping clarity.
 3. Verify preview rendering, SEO safeguards and affiliate destinations.
 4. Present the consolidated launch candidate for explicit release sign-off.
+
+
+## 19 November 2026 — Epson EF-21G correction
+- Guide #20 updated to the UK-listed Epson EF-21G (SKU V11HB35340), with UK source, identifier, specs and clear distinction from discontinued EF-21W. Source URL is recorded in the catalogue and audit ledger. Commit: `c64145e14d07686b1c54b34c645c3e097ac9d909`.
+- CI has not yet completed successfully for the current content head; #681/#683 were cancelled. Keep validation open.
