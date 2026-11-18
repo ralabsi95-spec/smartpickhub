@@ -2,11 +2,11 @@
 
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Implementation branch:** `automation/bootstrap`  
-**Status:** Astro MVP production origin approved as https://smartpickhub.pages.dev; development branch only, not merged to main and still protected by noindex pending launch approval.  
-**Updated:** 17 November 2026
+**Status:** Astro implementation on development branch only; production target https://smartpickhub.pages.dev is disconnected and not deployed. Preview remains noindex and crawl-disallowed pending explicit launch approval.  
+**Updated:** 18 November 2026
 
 ## Project purpose
-Build a trustworthy English-language affiliate buying-guide property for US and UK shoppers. Prioritise useful original guidance, verified product information, organic discovery and measurable conversions.
+Build a trustworthy UK-first English-language affiliate buying-guide property, with a secondary US marketplace track. Prioritise useful original guidance, verified product information, organic discovery and measurable conversions.
 
 ## Existing live property – preserve
 - Approved MVP production URL: https://smartpickhub.pages.dev/ (Cloudflare Pages + Astro).

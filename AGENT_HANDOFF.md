@@ -1,10 +1,10 @@
 # SmartPickHub – Agent Handoff (READ THIS FIRST)
 
-**Last verified:** 18 November 2026, product intake/scalability playbook and CI workflow optimization committed; latest CI pending  
+**Last verified:** 18 November 2026 06:01 UTC; latest branch CI push + PR runs passed on commit `90df53a`; audit report expectation bug identified and being corrected  
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `automation/bootstrap`  
 **Pull request:** [#1 – Draft Astro foundation and safe content workflow](https://github.com/ralabsi95-spec/smartpickhub/pull/1)  
-**Approved MVP production target:** https://smartpickhub.pages.dev/ (production Pages project remains disconnected; do not deploy without approval)  
+**Production target (not deployed):** https://smartpickhub.pages.dev/ (Pages project remains disconnected; do not deploy without approval)  
 **Isolated Astro preview:** https://smartpickhub-preview.pages.dev/
 
 > This file is the operational handoff for every new ChatGPT conversation, coding agent or human contributor. Read it before proposing or changing anything. Then read `MASTER_PROJECT.md` for the chronological record. If older notes conflict with this handoff, the current repository files and the dated latest-status section here take precedence.
@@ -560,3 +560,16 @@ Continue product catalogue audit (regional US/UK models, official sources, obsol
 - Added the isolated end-to-end test to `.github/workflows/build-check.yml` immediately after the importer self-test. This new change is committed but its CI result is pending until the new workflow run completes.
 - Importer remains dry-run only. No candidate batch has been imported into the real catalogue, no review UI/database exists, and no publication path was added.
 - Current head/CI must be refreshed by the next agent before relying on the new end-to-end test. PR #1 remains Draft/open/unmerged; production remains untouched and preview safeguards remain in place.
+
+
+## 18 November 2026 — Full release-readiness review (06:04 UTC)
+- Verified branch head `90df53a4edb4e5b68ae1f32bce3fd6b83207a268`.
+- Both CI runs passed on that exact commit: push run `44247915528` and PR run `44247922103`. Push artifact `smartpickhub-quality-reports` ID `14402309129` was downloaded and inspected.
+- Verified report facts: 25 guides / 100 products; 29 HTML pages smoke-tested with zero errors/warnings; 100 US and 100 UK Amazon URL constructions; preview robots disallow-all and noindex verified; 28 axe routes, zero violations, 27 incomplete contrast checks; five representative Lighthouse pages all scored 100 Performance/Accessibility/Best Practices and SEO 66–69 (expected under noindex).
+- **Audit-report defect found:** workflow sampled five Lighthouse pages by design, but `scripts/build-audit-report.mjs` still expected `guides.length + 4` (29), causing `latest-audit.json` to report `incomplete-or-failed` despite all workflow steps passing. The report generator did not fail CI on incomplete consolidated checks. This is being corrected in the current follow-up commit: expected sample count=5, manual accessibility and security-review states explicit, and incomplete report generation exits non-zero.
+- npm audit remains review-required: 12 affected dependency nodes trace to one high-severity picomatch advisory `GHSA-fc5q-39xc-vjpf` / `CVE-2026-112366`; artifact CVSS is 7.5. No patched upstream release in the reviewed report. Exception expiry 2026-12-02, owner approval pending; do not call this accepted or clean.
+- Image readiness: 0 approved, 0 pending, 100 products without product images. 69 US/UK search phrases identical and require regional review (not necessarily errors).
+- All 25 guides remain drafts; no public publication; no verified direct ASINs; affiliate links are search-link constructions and live listing/commission/account status is unverified.
+- Production Pages project remains disconnected. Preview freshness for commit `90df53a` was not independently verified in Cloudflare; no deploy/merge/DNS change was performed.
+- PR #1 remains open, Draft and unmerged. Old InfinityFree property is excluded from this project.
+- Full priority gaps and next actions: see `docs/RELEASE_READINESS_AUDIT_2026-11-18.md`.

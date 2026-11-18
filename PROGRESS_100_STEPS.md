@@ -3,8 +3,8 @@
 **Last updated:** 18 November 2026  
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `automation/bootstrap`  
-**Latest recorded branch checkpoint:** `57b322d` (regional product-source refinement and accessibility background fix; CI pending)  
-**Last fully verified preview:** https://1702b700.smartpickhub-preview.pages.dev/ (commit `5a996eb`; newer catalogue/CSS commits still await a matching preview)  
+**Latest verified branch checkpoint:** `90df53a4edb4e5b68ae1f32bce3fd6b83207a268` (both push and PR CI passed; follow-up audit-report correction in progress)  
+**Last confirmed preview:** `https://1702b700.smartpickhub-preview.pages.dev/` (commit `5a996eb`; deployment freshness for the current head is not verified)  
 **Overall status:** Development and verification in progress. This is a 100-step roadmap, not a claim that all 100 steps are complete.
 
 ## Status key
@@ -259,3 +259,12 @@
 - Added isolated integration test `scripts/test-import-products.mjs` and command `npm run import:integration-test`; CI now executes it after the importer self-test.
 - Test covers four deterministic CSV outcomes and asserts the staged dry-run leaves the isolated catalogue file byte-for-byte unchanged.
 - Status: implementation committed in the next branch commit; new CI verification pending. No real product data imported. Existing roadmap tally is unchanged until the next numbered roadmap item is explicitly mapped and verified.
+
+
+## 18 November 2026 — Release-readiness review
+- CI push run `44247915528` and PR run `44247922103` passed on `90df53a`; the quality artifact was inspected (ID `14402309129`).
+- Verified: 25 guides / 100 products; 29 HTML smoke pages, zero errors/warnings; 28 axe routes, zero violations / 27 incomplete contrast checks; five Lighthouse samples with 100 Performance, Accessibility and Best Practices; preview remains noindex and robots-disallowed.
+- Audit report falsely expected 29 Lighthouse files although workflow now deliberately generates five; `latest-audit.json` therefore showed `incomplete-or-failed` despite green CI. Correcting expected sample count and making incomplete consolidated reports fail the workflow.
+- Security remains review-required for one high picomatch advisory (12 dependency nodes), owner exception approval pending by 2 Dec 2026.
+- 100 products have no approved product imagery; 69 identical US/UK phrases remain for regional review; all 25 guides remain unapproved drafts.
+- Production is not deployed; preview freshness for current head is unverified; PR #1 remains Draft/open/unmerged. Roadmap tally is not recalculated in this review; do not inflate completed count.

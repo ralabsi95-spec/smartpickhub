@@ -71,7 +71,7 @@ const exceptionReview = uniqueAdvisories.map(item => {
 });
 
 const expectedAxeRoutes = guides.length + 3;
-const expectedLighthousePages = guides.length + 4;
+// Five deliberate samples: homepage desktop/mobile, guide index, disclosure and one guide.\nconst expectedLighthousePages = 5;
 const axeStatus = axeSummary?.status ?? (axeFiles.length ? 'partial' : 'missing');
 const lighthouseStatus = lighthousePages.length === expectedLighthousePages ? 'completed' : 'partial';
 const checksPassed = validation?.status === 'passed' && smoke?.status === 'passed' && axeStatus === 'passed' && lighthouseStatus === 'completed';
@@ -116,7 +116,7 @@ const report = {
       packages: vulnerabilities
     }
   },
-  overall: checksPassed ? (vulnerabilitySummary?.total ? 'quality-passed-security-review-required' : 'passed') : 'incomplete-or-failed'
+  overall: checksPassed\n    ? (vulnerabilitySummary?.total && (axeSummary?.totalIncomplete ?? 0) > 0\n        ? 'quality-passed-security-review-and-manual-accessibility-review-required'\n        : vulnerabilitySummary?.total ? 'quality-passed-security-review-required'\n          : (axeSummary?.totalIncomplete ?? 0) > 0 ? 'quality-passed-manual-accessibility-review-required' : 'passed')\n    : 'incomplete-or-failed'
 };
 
 fs.mkdirSync(root, { recursive: true });

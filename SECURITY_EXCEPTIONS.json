@@ -26,7 +26,8 @@
       ],
       "ownerApprovalRequired": true,
       "remediationStatus": "unfixed-upstream-patch-not-published",
-      "relatedUpstreamPullRequest": "https://github.com/micromatch/picomatch/pull/238"
+      "relatedUpstreamPullRequest": "https://github.com/micromatch/picomatch/pull/238",
+      "cvss": 7.5
     }
   ]
 }

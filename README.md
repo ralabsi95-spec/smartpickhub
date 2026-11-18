@@ -1,34 +1,46 @@
 # SmartPickHub
 
-Research-led affiliate buying guides for US and UK shoppers.
+UK-first, research-led affiliate buying guides, with a secondary US marketplace track.
 
 ## Read this first
 - **[Agent handoff and continuation rules](AGENT_HANDOFF.md)** – mandatory first read for every new ChatGPT conversation, coding agent or contributor.
 - **[Master project log](MASTER_PROJECT.md)** – chronological project history, decisions and implementation notes.
-- **[Latest session audit](docs/SESSION_AUDIT_2026-11-17.md)** – live preview verification, product-image candidate findings and release blockers.
+- **[Release-readiness audit (18 Nov 2026)](docs/RELEASE_READINESS_AUDIT_2026-11-18.md)** – verified quality results, launch blockers and next actions.
+- **[Product ingestion playbook](PRODUCT_INGESTION_PLAYBOOK.md)** – safe product research and intake procedure.
 
-## Current status (17 November 2026)
-- Astro implementation is on the development branch `automation/bootstrap`.
-- Catalogue contains **25 research-draft guides and 100 product records**. None is approved for publication.
-- Amazon US and UK links are generated from separate model-name search phrases; these are search links, not verified direct ASIN links.
-- Preview: https://smartpickhub-preview.pages.dev/ (isolated Cloudflare Pages deployment; intentionally noindex and crawl-disallowed).
-- Existing live WordPress site: https://smartpickhub.infinityfree.me/ – preserve it. No migration, DNS change, production deployment or WordPress edit has been approved.
-- PR #1 remains Draft and unmerged. Do not merge without explicit owner approval.
+## Current status (18 November 2026)
+- Astro implementation is on development branch `automation/bootstrap`, latest verified code commit before this documentation correction: `90df53a4edb4e5b68ae1f32bce3fd6b83207a268`.
+- Catalogue: **25 research-draft guides / 100 product records**. None is approved for publication.
+- Amazon US/UK link generation is configured with tracking IDs, but current model-name links are marketplace search links, not verified direct ASIN links or proof of live listing availability.
+- Preview project: https://smartpickhub-preview.pages.dev/; it must remain `noindex,nofollow` and crawl-disallowed. Freshness for the latest commit must be checked before visual sign-off.
+- Production target: https://smartpickhub.pages.dev/; its Pages project remains disconnected and no production deployment is authorized.
+- The old InfinityFree property is excluded from the SmartPickHub implementation plan. Do not edit, migrate, reconnect or rely on it.
+- PR #1 remains Draft/open/unmerged. Do not merge without explicit owner approval.
+
+## Verified quality snapshot
+- CI push run [#44247915528](https://github.com/ralabsi95-spec/smartpickhub/actions/runs/44247915528) and PR run [#44247922103](https://github.com/ralabsi95-spec/smartpickhub/actions/runs/44247922103) passed on commit `90df53a`.
+- 29 generated HTML pages passed smoke checks; 25 guides; 100 US and 100 UK affiliate URL constructions.
+- axe checked 28 routes: zero violations; 27 incomplete contrast checks remain for manual review because of gradient backgrounds.
+- Lighthouse intentionally samples five representative pages: all five scored 100 Performance, Accessibility and Best Practices; SEO 66–69 is expected while noindex/robots protections remain enabled.
+- npm audit remains security-review-required for one high-severity picomatch advisory affecting 12 dependency nodes; no patched upstream release was listed in the reviewed report. This is not a clean security audit.
 
 ## Development commands
 ```bash
-npm install
+npm ci
 npm run dev
 npm run check
 npm run validate
 npm run keywords
+npm run import:self-test
+npm run import:integration-test
 npm run build
 npm run smoke
 npm run accessibility
+npm run audit-report
 ```
 
 ## Editorial and safety rules
 All catalogue entries are research drafts. Verify exact local product variants, manufacturer claims and marketplace destinations before editorial approval. Do not invent ASINs, direct links, prices, ratings, reviews, stock or hands-on testing. Do not publish automatically. See `AGENT_HANDOFF.md` for mandatory operating rules and next actions.
 
 ## Draft research automation
-The GitHub Actions draft-research workflow creates unverified research briefs for human review only. It uses a dedicated `automation/editorial-drafts` branch and opens/updates a pull request to `main`; it must never push generated drafts directly to `main`. Scheduled workflows run from the default branch, so the schedule becomes active only after the workflow itself is approved and merged to `main`. A missing Gemini secret causes generation to fail safely.
+The GitHub Actions draft-research workflow creates unverified research briefs for human review only. It uses a dedicated `automation/editorial-drafts` branch and opens/updates a pull request to the default branch; it must never push generated drafts directly to the default branch. Scheduled workflows run from the default branch, so the schedule becomes active only after the workflow itself is approved and merged. A missing Gemini secret causes generation to fail safely.

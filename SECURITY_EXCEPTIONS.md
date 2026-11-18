@@ -10,7 +10,7 @@
 - Advisory: [GHSA-fc5q-39xc-vjpf](https://github.com/advisories/GHSA-fc5q-39xc-vjpf)
 - CVE: CVE-2026-112366
 - Package: `picomatch`
-- Severity: High (CVSS 8.7)
+- Severity: High (CVSS 7.5 per the latest inspected npm audit artifact)
 - Affected range: `<=4.0.7`
 - Locked resolutions in this project: `4.0.7` and nested `2.3.2`
 - Published patched version: **None listed by the reviewed GitHub advisory as of 18 November 2026**
