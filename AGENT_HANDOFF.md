@@ -609,3 +609,11 @@ Continue product catalogue audit (regional US/UK models, official sources, obsol
 - Garmin UK X110 page: part number 010-02900-10. Garmin UK support page resolves X310 part number 010-02860-00; the same part number appears on Garmin Canada product page. X210 has a UK Declaration of Conformity, but its exact UK sales SKU/current UK retail page remains unverified.
 - Garmin says microSD is not included for X110/X210/X310/Mini 3; note this in any future guide comparison.
 - CI for prior handoff commit `5250d06` completed successfully on both push run 44250825102 and PR run 44250831133. New commit `34181c1` needs its own push/PR CI checks before claiming current HEAD green.
+
+
+### Additional regional-source findings and correction (18 Nov 2026)
+- Dell U2723QE: Dell UK page identifies part 210-BCXK / manufacturer part X649V but currently marks the model unavailable. Do not recommend as currently purchasable without fresh stock evidence.
+- BenQ PD2705U: BenQ UK official page/specs confirm 27-inch 4K IPS, 99% sRGB/Rec.709, 65W USB-C PD and 100–240V supply. UK product identity confirmed; live retailer inventory not confirmed.
+- Synology DS224+: official UK-region launch evidence found, but current UK stock/warranty and exact regional package remain unverified.
+- Important correction: catalogue's Apple iPad mini (A20 Pro) is valid. Apple announced the A20 Pro model in October 2026 and UK availability began 6 November 2026. Earlier A17 Pro search result was previous generation; use current UK Apple store/newsroom sources, not A17 Pro specs.
+- Full evidence and citations/URLs are in `docs/UK_US_REGIONAL_AUDIT_2026-11-18.md`. No catalogue records changed.
