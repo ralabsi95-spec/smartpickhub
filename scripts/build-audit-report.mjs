@@ -71,7 +71,8 @@ const exceptionReview = uniqueAdvisories.map(item => {
 });
 
 const expectedAxeRoutes = guides.length + 3;
-// Five deliberate samples: homepage desktop/mobile, guide index, disclosure and one guide.\nconst expectedLighthousePages = 5;
+// Five deliberate samples: homepage desktop/mobile, guide index, disclosure and one guide.
+const expectedLighthousePages = 5;
 const axeStatus = axeSummary?.status ?? (axeFiles.length ? 'partial' : 'missing');
 const lighthouseStatus = lighthousePages.length === expectedLighthousePages ? 'completed' : 'partial';
 const checksPassed = validation?.status === 'passed' && smoke?.status === 'passed' && axeStatus === 'passed' && lighthouseStatus === 'completed';
@@ -140,3 +141,6 @@ console.log(JSON.stringify({
   lighthousePages: report.checks.lighthouse.auditedPages,
   npmAudit: report.checks.npmAudit.vulnerabilities
 }, null, 2));
+
+// Preserve the audit artifact but fail CI if required checks are missing or incomplete.
+if (!checksPassed) process.exitCode = 1;
