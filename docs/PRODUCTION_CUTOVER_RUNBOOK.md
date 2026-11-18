@@ -172,3 +172,42 @@ A follow-up search of Sage's official asset domain found UK instruction-booklet 
 This strengthens the UK regional/electrical evidence from partial to **official-manual corroborated at model-family level**. The manuals are hosted on Sage's official asset domain and the SES model identifiers appear in their filenames/snippets. Before final editorial approval, inspect the complete PDF for each exact model/colour package and retain the model-to-manual mapping with the guide's claim evidence. Do not generalize these UK ratings to US Breville variants.
 
 The earlier matrix entry stating that a complete rating line had not yet been exposed by the product pages is superseded by this manual search. Product pages and manuals were inspected read-only; no guide content or product record was changed.
+
+
+## 13. Espresso pilot claim and Amazon UK listing audit (2026-11-18)
+
+Read-only claim-level review was performed against Sage GB product pages, four official UK manuals, and candidate Amazon UK product pages. This is evidence collection only; no product record, affiliate destination, guide copy, image, publication state or deployment was changed.
+
+### Manufacturer-claim evidence and editorial corrections
+
+| Catalogue product | Claims supported by Sage UK evidence | Editorial correction / improvement needed |
+|---|---|---|
+| Bambino Plus (SES500 family) | 54mm portafilter; 1.9L removable tank; automatic milk texturing; 3 milk-temperature and 3 foam settings; dual/single-wall baskets; UK manual rating 220–240V, 50–60Hz, 1300–1600W | Existing copy is generic. Add separate-grinder requirement clearly (no integrated grinder is listed in components), tank/portafilter and automatic milk workflow. Avoid saying "fast" or quoting heat-up seconds unless tied to a source and exact model version. |
+| Barista Express (SES870 family) | Integrated conical burr grinder with 16 grind settings; 54mm portafilter; 18g dose reference; manual milk microfoam; PID temperature control at 93°C; UK manual rating 220–240V, 50–60Hz, 1560–1850W | Replace generic "manual workflow" wording with concrete grinder, settings and manual steaming. Clarify integrated grinder reduces the need for a separate grinder but does not remove dial-in/cleaning work. |
+| Barista Pro (SES878 family) | Integrated conical burr grinder with 30 settings; ThermoJet heating system; Sage GB states 3-second heat-up; manual milk microfoam; digital interface and volumetric shot control; UK manual rating 220–240V, 50–60Hz, 1380–1650W | Current "faster, guided workflow" is vague. Use 30 settings, ThermoJet and digital interface; distinguish manual milk texturing from Oracle Jet automatic milk texturing. Keep any comparative energy-efficiency claim out unless its benchmark basis/date is included. |
+| Oracle Jet (SES985 family) | Automatic grind, dose and tamp; 58mm portafilter and 22g dose; 45 grind settings; Auto MilQ hands-free milk texturing with dairy/soy/almond/oat settings; Barista Guidance; touchscreen; UK manual rating 220–240V, 50–60Hz, 1400–1600W | Current copy says only "more automated premium workflow", missing the defining features. Add the automation and 58mm/22g facts. Do not call it a dual-boiler machine: the Sage GB source page and current manual evidence reviewed here do not support that description. |
+
+All four official UK manuals were successfully fetched and expose model-family identity and rating information. Manufacturer source pages were also fetched. These sources substantiate the factual claims above; editorial suitability/comfort claims remain analysis, not manufacturer guarantees or hands-on testing.
+
+### Amazon UK destination verification
+
+Candidate product pages were inspected, but **none is approved yet for insertion as a direct affiliate URL**:
+
+| Product | Candidate ASIN/page | Exact identity evidence | Current finding |
+|---|---|---|---|
+| Bambino Plus | B07GB2JVD7 — https://www.amazon.co.uk/dp/B07GB2JVD7 | Amazon product details show model/part number SES500BSS4GUK1 and Sage Bambino Plus | Candidate matches UK model family; listing fetch displayed no image and a delivery-location restriction in the current session. Confirm live UK delivery/offer and exact colour/package before use. |
+| Barista Express | B0FQNYG8CV — https://www.amazon.co.uk/dp/B0FQNYG8CV | Amazon product details show SES870BSS4GUK1; title and features identify Sage Barista Express, integrated 16-setting grinder and manual steam wand | Strong candidate identity match; current page showed no featured offer and a delivery-location restriction in this session. Re-check active new offer and seller before use. |
+| Barista Pro | B07PY42BRC — https://www.amazon.co.uk/dp/B07PY42BRC | Page title/manufacturer content identify Sage Barista Pro SES878 | Page showed currently unavailable / no featured offers; do not use as a live buy destination until availability and exact colour/package are re-verified. |
+| Oracle Jet | B0GS2K6WQC — https://www.amazon.co.uk/dp/B0GS2K6WQC | Amazon details identify SES985BSS4GUK1 | This is explicitly an Amazon Renewed listing and currently unavailable; exclude it as the standard new-product destination. Search results also surfaced other Oracle Jet references, but none has been validated as a currently buyable new UK listing. |
+
+Amazon search results can surface accessories, replacement parts, older variants, bundles or renewed stock even when the search phrase is exact. Therefore no ASIN has been added to `products.json`. The affiliate helper correctly treats non-10-character model phrases as search terms and only constructs `/dp/{ASIN}` for a 10-character alphanumeric identifier. UK tracking tag in helper remains `smartpickhubu-21`.
+
+### Pilot decision after this pass
+
+- Manufacturer specification evidence: strong enough to prepare an improved factual draft after editorial review.
+- Direct Amazon product links: not yet complete for all four products; do not convert all links at this stage.
+- Current safe approach: retain the existing labelled Amazon UK search links until a new, exact, currently buyable UK listing is verified for each model; then consider direct ASIN insertion with the correct tracking tag.
+- Product photography: still not approved. Sage Open Graph images were observed on product pages, but no reuse licence/permission was established. Do not copy these images into the site based solely on their public availability.
+- The guide remains research draft / not approved for publication. Preview remains noindex.
+
+No application source, product JSON, affiliate helper, images, Cloudflare settings, production resource, DNS, indexing state or live deployment was modified.
