@@ -812,3 +812,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 2. Continue practical UK-first editorial review and current-buy checks.
 3. Verify rendered preview and affiliate URLs while preview remains noindex.
 4. Present a consolidated release candidate for explicit release approval.
+
+
+## 19 November 2026 — Epson EF-21G UK model correction
+
+- Guide #20 now uses UK-listed Epson EF-21G (SKU V11HB35340) instead of the US EF21 record. Updated UK search identifier, source URL, pros/cons and verdict. Epson UK lists Full HD, 1,000-lumen output, 3LCD laser, Google TV, Bluetooth speakers, up to 150-inch display, 2.3kg and 100–240V input. EF-21G and discontinued EF-21W are distinguished.
+- Source: https://www.epson.co.uk/en_GB/products/projector/home-cinema/epson-ef-21g%2C-mini-laser-projector%2C-1%2C000-lumens%2C-up-to-150-inch-display%2C-google-tv%E2%84%A2-and-bluetooth-speaker%2C-portable/p/46374 . Commit `c64145e14d07686b1c54b34c645c3e097ac9d909`.
+- CI still not fully passed for current head; previous #681/#683 cancelled. Need one full CI pass.
+- All guides remain drafts; no merge/deploy/indexing/Pinterest publishing.
