@@ -591,3 +591,14 @@ Continue product catalogue audit (regional US/UK models, official sources, obsol
 - Product readiness: 0 approved product images, 0 pending image candidates, 100 without photos; 69 identical US/UK search phrases remain for manual regional review. All 25 guides remain unapproved drafts.
 - Production Pages remains disconnected; current public preview deployment was not verifiable via the available browser check, so its freshness for this commit is unknown. PR #1 remains open/Draft/unmerged. No production deploy, merge, DNS, indexing, publishing or legacy-site change.
 - Continue from `docs/RELEASE_READINESS_AUDIT_2026-11-18.md`; first next task is verify current preview deployment and start the UK regional SKU/evidence review. No need to repeat the CI/report bug investigation.
+
+
+## 18 November 2026 — UK/US regional audit continuation (06:2x UTC)
+- Read-only audit of all 100 records found 69 identical US/UK search-phrase identifiers. Identical phrases are triage flags, not automatic errors.
+- Added `docs/UK_US_REGIONAL_AUDIT_2026-11-18.md` with evidence-backed first-pass findings. No product records or site settings were changed.
+- Garmin UK evidence now identified for X110 and Mini 3; UK family support evidence covers X110/X210/X310/Mini 3. Exact UK X210/X310 product-page SKU evidence still needs completion.
+- Logitech UK catalogue evidence exists for MX Vertical, Lift, MX Ergo S and ERGO K860; exact regional SKU/layout/package still needs review.
+- Epson status requires correction/refresh: CO-FH02 UK page surfaced as current UK listing (SKU V11HA85040); EF-21 variants differ by colour/SKU and have mixed UK availability; EF-30 remains unverified for UK. Do not treat one regional variant as the whole product family.
+- Additional US-region source URLs flagged for Dell U2723QE, BenQ PD2705U, iPad mini A20 Pro, Synology DS224+, and Logitech G gaming mice; source-region flag does not prove UK unavailability.
+- Documentation commits: `956ab1b` (initial audit note), `5f033ad` (corrected exact Epson URLs). Check current branch-head CI after these documentation commits before claiming latest branch checks passed.
+- Next: finish exact Garmin UK X210/X310 product-page evidence, then proceed through the remaining regional-source flags. No catalogue changes without owner approval. No Amazon ASIN/listing verification, publication, merge, deployment, DNS or indexing action was performed.
