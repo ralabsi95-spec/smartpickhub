@@ -20,7 +20,8 @@
     "audit:images": "node scripts/audit-product-images.mjs",
     "research:commons": "node scripts/research-commons-images.mjs",
     "import:dry-run": "node scripts/import-products.mjs",
-    "import:self-test": "node scripts/import-products.mjs --self-test"
+    "import:self-test": "node scripts/import-products.mjs --self-test",
+    "import:integration-test": "node scripts/test-import-products.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",

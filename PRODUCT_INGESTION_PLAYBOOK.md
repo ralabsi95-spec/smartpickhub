@@ -287,3 +287,12 @@ Safety properties:
 - The importer does not fetch remote URLs or claim that a source/listing is live.
 
 **Not yet implemented:** a persistent staging database, visual review UI, manufacturer source verification, keyword-volume integrations, image-rights approval workflow, bulk commit/rollback, or production publication. This is the first safe intake component, not a complete product automation platform.
+
+
+## 17. Importer integration test — 18 November 2026
+- Command: `npm run import:integration-test`.
+- The test copies the importer into a temporary workspace, creates an isolated minimal catalogue and synthetic CSV, then executes the actual CLI process.
+- Expected classification coverage: one new candidate, one exact catalogue-name match, one repeated batch identity, and one invalid HTTP source.
+- Also asserts the ASIN candidate remains flagged as unverified, both JSON and CSV reports are produced, and the catalogue SHA-256 is identical before and after the dry run.
+- CI runs this integration test after `npm run import:self-test`. The test does not write to the repository catalogue or publish anything.
+- This raises test coverage, not importer capability: remote source reachability, fuzzy duplicates, persistence, approval, rollback and real catalogue writes remain unimplemented.

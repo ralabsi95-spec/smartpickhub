@@ -550,3 +550,13 @@ Continue product catalogue audit (regional US/UK models, official sources, obsol
 - Importer never mutates `src/data/products.json`, never publishes and does not verify remote listing availability. ASIN candidates are untrusted until manual verification.
 - CI runs importer self-tests before catalogue validation.
 - Must inspect CI #534/#535 for this commit before calling the importer validated. No PR merge, production deploy, DNS, indexing or content publication.
+
+
+## 18 November 2026 — verified importer CI and isolated end-to-end test
+- Latest branch head before this follow-up: `de02aafffbbb185ee0ffce1545c9da6458d7ceca`.
+- Push CI run #534 / ID `44244444701` completed successfully on that exact commit. All job steps passed: Astro checks, importer self-tests, catalogue/affiliate validation, keyword generation, build, smoke tests, axe audit, representative Lighthouse checks, consolidated report and artifact upload.
+- PR CI run #535 / ID `44244452207` also completed successfully on the same commit.
+- Added `scripts/test-import-products.mjs` and `npm run import:integration-test`. It runs the importer in a temporary isolated workspace against a synthetic four-row CSV and verifies: one new candidate, one exact catalogue match, one within-batch duplicate, one invalid HTTP source, unverified-ASIN warning, JSON/CSV report creation, and unchanged catalogue SHA-256. It does not use or alter the real product catalogue.
+- Added the isolated end-to-end test to `.github/workflows/build-check.yml` immediately after the importer self-test. This new change is committed but its CI result is pending until the new workflow run completes.
+- Importer remains dry-run only. No candidate batch has been imported into the real catalogue, no review UI/database exists, and no publication path was added.
+- Current head/CI must be refreshed by the next agent before relying on the new end-to-end test. PR #1 remains Draft/open/unmerged; production remains untouched and preview safeguards remain in place.

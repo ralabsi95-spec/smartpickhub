@@ -858,3 +858,10 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - No importer, database, queue, API, image pipeline, production deployment or publishing was implemented by this documentation change.
 - CI speed improvement: Lighthouse now audits representative templates (homepage desktop/mobile, guide index, disclosure and one guide) instead of re-running Lighthouse across every near-identical guide route. Smoke tests and axe checks still cover all generated routes. This reduces redundant Lighthouse runtime without dropping route-level smoke/accessibility coverage.
 - PR #1 remains Draft/open/unmerged; preview remains noindex/nofollow and crawl-disallowed. No production/DNS/WordPress changes.
+
+
+## 18 November 2026 — importer verification and test hardening
+- CI #534 (run ID `44244444701`) and PR CI #535 (run ID `44244452207`) both completed successfully on commit `de02aafffbbb185ee0ffce1545c9da6458d7ceca`; every reported workflow step passed.
+- Added an isolated end-to-end importer test in `scripts/test-import-products.mjs`. It uses a temporary workspace and synthetic data to verify candidate classification, existing-catalogue match, in-batch duplicate, invalid HTTP source, unverified ASIN warning, JSON/CSV reports and catalogue hash preservation.
+- Added command `npm run import:integration-test` and made CI run it before catalogue validation. The new test itself is not yet CI-verified; check the next run on the new branch head.
+- The real catalogue remains unchanged by the test. Importer is still dry-run only; no database/review UI/evidence collector or production publication was introduced.

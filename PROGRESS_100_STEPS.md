@@ -252,3 +252,10 @@
 - The importer validates required identity fields, UK/US market, HTTPS source, deterministic candidate ID, exact-name and in-batch duplicates, and outputs JSON/CSV reports. It does not mutate the catalogue or publish.
 - Added importer self-test to CI. Awaiting workflow verification for this commit.
 - Still planned: persistent staging/review UI, evidence collector, keyword evidence, image rights workflow, safe batch approval/rollback, database/search architecture.
+
+
+## 18 November 2026 — importer end-to-end test added
+- Verified: CI #534 and #535 passed on `de02aafffbbb185ee0ffce1545c9da6458d7ceca`.
+- Added isolated integration test `scripts/test-import-products.mjs` and command `npm run import:integration-test`; CI now executes it after the importer self-test.
+- Test covers four deterministic CSV outcomes and asserts the staged dry-run leaves the isolated catalogue file byte-for-byte unchanged.
+- Status: implementation committed in the next branch commit; new CI verification pending. No real product data imported. Existing roadmap tally is unchanged until the next numbered roadmap item is explicitly mapped and verified.
