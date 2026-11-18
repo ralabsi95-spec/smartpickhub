@@ -174,8 +174,8 @@ for (const file of htmlFiles) {
     const ukLinks = amazonLinks.filter(link => link.market === 'uk');
     amazonUsLinks = usLinks.length;
     amazonUkLinks = ukLinks.length;
-    if (usLinks.length !== guide.products.length) routeErrors.push('expected ' + guide.products.length + ' Amazon US links; found ' + usLinks.length);
-    if (ukLinks.length !== guide.products.length) routeErrors.push('expected ' + guide.products.length + ' Amazon UK links; found ' + ukLinks.length);
+    if (usLinks.length !== guide.products.length * 2) routeErrors.push('expected early and lower Amazon US links (' + (guide.products.length * 2) + '); found ' + usLinks.length);
+    if (ukLinks.length !== guide.products.length * 2) routeErrors.push('expected early and lower Amazon UK links (' + (guide.products.length * 2) + '); found ' + ukLinks.length);
     for (const link of usLinks) {
       if (link.url.searchParams.get('tag') !== 'smartpickh0bc-20') routeErrors.push('Amazon US tracking ID mismatch; expected smartpickh0bc-20, received ' + String(link.url.searchParams.get('tag')));
       if (!hasToken(link.rel, 'sponsored') || !hasToken(link.rel, 'nofollow')) routeErrors.push('Amazon US affiliate link missing sponsored/nofollow rel attributes');
@@ -195,7 +195,22 @@ for (const file of htmlFiles) {
       const productSection = productSectionStart >= 0 && productSectionEnd >= 0 ? html.slice(productSectionStart, productSectionEnd) : '';
       if (!productSection) {
         routeErrors.push('missing product detail section for ' + product.name);
-      } else if (product.image?.reviewStatus === 'approved' && product.image?.url) {
+      } else {
+        const earlyActionsStart = productSection.indexOf('class="early-product-actions"');
+        const earlyActionsEnd = productSection.indexOf('class="product-verdict"', earlyActionsStart);
+        const earlyActions = earlyActionsStart >= 0
+          ? productSection.slice(earlyActionsStart, earlyActionsEnd >= 0 ? earlyActionsEnd : undefined)
+          : '';
+        if (!earlyActions.includes('Search Amazon US') || !earlyActions.includes('Search Amazon UK')) {
+          routeErrors.push('early Amazon US/UK buttons are missing before the product verdict for ' + product.name);
+        }
+        const lowerActionsStart = productSection.indexOf('class="affiliate-context"');
+        const lowerActions = lowerActionsStart >= 0 ? productSection.slice(lowerActionsStart) : '';
+        if (!lowerActions.includes('Search Amazon US') || !lowerActions.includes('Search Amazon UK')) {
+          routeErrors.push('original lower Amazon US/UK buttons are missing for ' + product.name);
+        }
+      }
+      if (productSection && product.image?.reviewStatus === 'approved' && product.image?.url) {
         if (!productSection.includes(product.image.url)) routeErrors.push('verified product image is not rendered for ' + product.name);
         if (!productSection.includes(product.image.alt || product.name)) routeErrors.push('verified product image alt text is missing for ' + product.name);
       } else if (!productSection.includes('Product photo under verification')) {
