@@ -87,7 +87,7 @@ for (const file of htmlFiles) {
   const is404 = label === '404.html';
   const guide = parts.length === 3 && parts[0] === 'guides' && parts[2] === 'index.html' ? expectedGuideMap.get(parts[1]) : null;
   const routeErrors = [];
-  const webpImageTags = [...html.matchAll(/<img\\b[^>]*src=[\"'][^\"']*\\/images\\/webp\\/[^\"']+[\"'][^>]*>/gi)].map(match => match[0]);
+  const webpImageTags = [...html.matchAll(/<img\b[^>]*src=["'][^"']*\/images\/webp\/[^"']+["'][^>]*>/gi)].map(match => match[0]);
   for (const imageTag of webpImageTags) {
     if (attr(imageTag, 'width') !== '720' || attr(imageTag, 'height') !== '1080') {
       routeErrors.push('WebP cover HTML dimensions must match the generated 720×1080 asset');
