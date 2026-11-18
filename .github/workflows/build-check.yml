@@ -63,14 +63,19 @@ jobs:
           mkdir -p test-reports/lighthouse
           npx --yes lighthouse http://127.0.0.1:4321/ --preset=desktop --only-categories=performance,accessibility,best-practices,seo --output=json --output-path=test-reports/lighthouse/home-desktop.json --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage"
           npx --yes lighthouse http://127.0.0.1:4321/ --form-factor=mobile --only-categories=performance,accessibility,best-practices,seo --output=json --output-path=test-reports/lighthouse/home-mobile.json --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage"
-      - name: Lighthouse audit - guide index, disclosure and every guide
+      - name: Lighthouse audit - representative page templates
         shell: bash
         run: |
           mkdir -p test-reports/lighthouse
-          while IFS= read -r page; do
+          # Lighthouse is a performance/template sample, not a per-product content validator.
+          # Smoke tests and axe still cover every generated guide route.
+          pages=("/guides/" "/affiliate-disclosure/")
+          first_guide=$(node --input-type=module -e 'import fs from "node:fs"; const d=JSON.parse(fs.readFileSync("src/data/products.json","utf8")); console.log("/guides/"+(d.guides?.[0]?.slug ?? "")+"/")')
+          pages+=("$first_guide")
+          for page in "${pages[@]}"; do
             slug=$(printf '%s' "$page" | tr '/' '_' | sed 's/^_//;s/_$//')
             npx --yes lighthouse "http://127.0.0.1:4321$page" --only-categories=performance,accessibility,best-practices,seo --output=json --output-path="test-reports/lighthouse/$slug.json" --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage"
-          done < <(node --input-type=module -e 'import fs from "node:fs"; const data=JSON.parse(fs.readFileSync("src/data/products.json","utf8")); const pages=["/guides/","/affiliate-disclosure/",...(data.guides ?? []).map(g => "/guides/"+g.slug+"/")]; for (const page of pages) console.log(page)')
+          done
       - name: Build consolidated JSON audit report
         if: always()
         run: node scripts/build-audit-report.mjs

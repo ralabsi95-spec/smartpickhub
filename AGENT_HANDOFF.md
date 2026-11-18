@@ -1,6 +1,6 @@
 # SmartPickHub – Agent Handoff (READ THIS FIRST)
 
-**Last verified:** 17 November 2026, after CI run #453 progress check  
+**Last verified:** 18 November 2026, product intake/scalability playbook and CI workflow optimization committed; latest CI pending  
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `automation/bootstrap`  
 **Pull request:** [#1 – Draft Astro foundation and safe content workflow](https://github.com/ralabsi95-spec/smartpickhub/pull/1)  
@@ -533,3 +533,12 @@ Continue product catalogue audit (regional US/UK models, official sources, obsol
 - PR #1 remains Draft/open/unmerged. Production remains disconnected. All 25 guides remain research drafts; zero approved. Product image count remains zero. Preview noindex/nofollow and robots disallow all remain required.
 - Roadmap checklist tally: 52 completed, 2 partial (steps 48 and 69), 46 planned. Step 68 is completed, not partial. The roadmap is not finished.
 - Next: complete CI #525 and inspect its artifact, especially axe incomplete count and npmAudit status; verify the latest Pages preview; then update the roadmap/handoff with confirmed results. Continue the remaining 100-product regional SKU/lifecycle audit. Do not merge, publish, index, deploy production, change DNS or modify WordPress without explicit owner approval.
+
+
+## 18 November 2026 — Current checkpoint and product-scale plan
+- Read `PRODUCT_INGESTION_PLAYBOOK.md` before adding products. It is the canonical intake, evidence, keyword, image-rights, affiliate, QA, review and scaling procedure.
+- Product intake playbook is a documented plan, not an implemented importer. Current catalogue remains 25 guides / 100 research-draft products; zero guides approved.
+- Current JSON catalogue is adequate for the current small curated dataset, not for millions. Do not build millions of static pages. Future scale requires a relational catalogue, object storage, background queue, indexed search and paginated API, selected only after benchmark and owner approval.
+- CI optimization: Lighthouse samples representative templates only; smoke tests and axe continue to cover all generated routes. This avoids repeated Lighthouse runs on near-identical guide pages.
+- Latest branch commit before this checkpoint: `71b6fb85c7a57e638489c319c24b1f8c59389f74`. CI #530 (push) and #531 (PR) were still in progress at checkpoint; inspect current head/runs before relying on results.
+- No merge, production deployment, DNS change, public indexing, content publication, paid integration, or WordPress edit is authorized.

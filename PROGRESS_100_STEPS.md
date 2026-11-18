@@ -235,3 +235,12 @@
 - PR #1 remains Draft/open/unmerged. Production remains disconnected. All 25 guides remain research drafts; zero approved. Product image count remains zero. Preview noindex/nofollow and robots disallow all remain required.
 - Roadmap checklist tally: 52 completed, 2 partial (steps 48 and 69), 46 planned. Step 68 is completed, not partial. The roadmap is not finished.
 - Next: complete CI #525 and inspect its artifact, especially axe incomplete count and npmAudit status; verify the latest Pages preview; then update the roadmap/handoff with confirmed results. Continue the remaining 100-product regional SKU/lifecycle audit. Do not merge, publish, index, deploy production, change DNS or modify WordPress without explicit owner approval.
+
+
+## 18 November 2026 — Product scale and intake workflow
+- Added `PRODUCT_INGESTION_PLAYBOOK.md` as the canonical end-to-end process for single and bulk product intake, normalization, duplicate detection, regional identity, manufacturer evidence, keyword intent, image rights, Amazon US/UK links, automated QA, human review, refresh and retirement.
+- Explicitly separates today's 25-guide/100-product JSON catalogue from a future scalable architecture. PostgreSQL, object storage (R2 candidate), queues and a dedicated search index are options for measured future thresholds, not deployed services or selected paid commitments.
+- Key scale decision: do not generate millions of static product pages. Keep curated guides/category landing pages indexable only after approval; serve long-tail catalogue/search through paginated data APIs and indexed search when scale warrants it.
+- No importer, database, queue, API, image pipeline, production deployment or publishing was implemented by this documentation change.
+- CI speed improvement: Lighthouse now audits representative templates (homepage desktop/mobile, guide index, disclosure and one guide) instead of re-running Lighthouse across every near-identical guide route. Smoke tests and axe checks still cover all generated routes. This reduces redundant Lighthouse runtime without dropping route-level smoke/accessibility coverage.
+- PR #1 remains Draft/open/unmerged; preview remains noindex/nofollow and crawl-disallowed. No production/DNS/WordPress changes.
