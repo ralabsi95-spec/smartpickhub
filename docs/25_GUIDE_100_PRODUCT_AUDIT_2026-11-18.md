@@ -111,3 +111,18 @@ Legend:
 - No product records or editorial statuses were changed in this pass.
 - No product was approved, no image was approved, no Amazon link was upgraded to a direct ASIN, and no public publication or indexing occurred.
 - Continue with evidence-backed corrections in controlled commits; keep unresolved records visibly unapproved.
+
+
+## 19 November 2026 — Owner-directed launch scope adjustment
+
+- The project owner clarified that exhaustive UK/US model-by-model parity and exceptionally high-granularity verification are not launch goals; the priority is to complete the full 25-guide / 100-product batch and move toward launch.
+- Adopted a practical **UK-first** catalogue policy: Amazon UK is the primary shopping destination; US fields remain secondary/optional and do not require exhaustive parity checks.
+- Minor regional SKU differences no longer block a guide. Material safety and compatibility distinctions (for example voltage, plug, battery platform, radio/regulatory constraints) must still not be misrepresented.
+- Updated only the catalogue metadata/policy in `src/data/products.json`; all 25 guides and 100 product records remain present. No product names, claims, affiliate destinations, image records or editorial approval states were changed in this policy update.
+- CI #675 for the prior audit-ledger commit `949e9103fd2504b479810380b6c4321b13ba01f9` completed successfully (run ID `44394492800`). This result predates the current policy metadata change; a new CI run is required for the new head.
+- This is a workflow-scope decision, not publication approval. Guides remain research drafts; PR #1 remains Draft/open/unmerged; no production, indexing, Pinterest or Amazon account action occurred.
+
+### Next actions
+1. Apply a practical editorial pass across all 25 guides, focusing on clarity, obvious errors, broken links and material safety/compatibility issues rather than exhaustive regional SKU parity.
+2. Run CI on the updated catalogue head and inspect the result.
+3. Prepare a consolidated release candidate and concise launch checklist for owner review; keep all public release actions gated on explicit approval.
