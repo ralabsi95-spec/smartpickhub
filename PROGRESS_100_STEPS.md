@@ -1,10 +1,10 @@
 # SmartPickHub — 100-step execution roadmap
 
-**Last updated:** 17 November 2026  
+**Last updated:** 18 November 2026  
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `automation/bootstrap`  
-**Latest recorded branch checkpoint:** `8c1090f` (exact DEWALT/Garmin model sources; CI pending)  
-**Last fully verified preview:** https://d8a304d5.smartpickhub-preview.pages.dev/ (commit `f336ac5`; stable preview host was confirmed stale for newer source edits)  
+**Latest recorded branch checkpoint:** `57b322d` (regional product-source refinement and accessibility background fix; CI pending)  
+**Last fully verified preview:** https://1702b700.smartpickhub-preview.pages.dev/ (commit `5a996eb`; newer catalogue/CSS commits still await a matching preview)  
 **Overall status:** Development and verification in progress. This is a 100-step roadmap, not a claim that all 100 steps are complete.
 
 ## Status key
@@ -221,3 +221,17 @@
 - Latest verified Cloudflare Pages preview for commit `70802e5`: `https://020ddb01.smartpickhub-preview.pages.dev/`. Checked homepage, drill guide, dash-cam guide and robots.txt. Both guides now show exact model-specific DEWALT/Garmin manufacturer sources; preview metadata is `noindex, nofollow`; robots.txt still disallows all crawling.
 - PR #1 remains Draft/open/unmerged. The Cloudflare Pages preview deployment succeeded. A separate Cloudflare Workers build check still reports a missing `smartpickhub` Worker; this is not the Pages deployment and must not be conflated with it.
 - No production deployment, PR merge, DNS change, public publishing/indexing, WordPress modification or removal of crawl protections occurred.
+
+
+
+
+## 18 November 2026 — continuation checkpoint (05:05 UTC)
+- Branch: `automation/bootstrap`; latest code head `57b322d3ef3ea45d6aa429ff406aaf51e8ea40da`. The immediately preceding catalogue commit is `550d5cc9ac2e460a3ee3f3e2d3bcc0e79c7fb0ac`.
+- CI #522 / run ID `44239103560` completed successfully on PR head `5a996eb6661b0d2369aebded56ecf39b86063049`; artifact `smartpickhub-quality-reports` ID `14398618860` was downloaded and inspected. All 29 Lighthouse pages scored 100 Performance, Accessibility and Best Practices; SEO 66–69 is expected because preview indexing is intentionally blocked. axe checked 28 routes: zero violations and 28 incomplete contrast checks caused by gradient backgrounds. Catalogue and smoke checks passed: 25 guides, 100 products, 100 US and 100 UK marketplace link constructions, 29 HTML pages, zero smoke errors/warnings, correct US/UK tracking IDs, zero approved images and 100 products without approved image metadata. Preview safeguards were confirmed: robots disallow all, noindex verified, publication disabled.
+- npm audit remains `review-required`: 12 high-severity package nodes trace to one picomatch advisory `GHSA-fc5q-39xc-vjpf` / `CVE-2026-112366`; this is one underlying advisory, not 12 independent CVEs. The audit report now exposes one unique advisory and the pending-owner-review exception (deadline 2026-12-02). No owner risk acceptance is implied.
+- Product catalogue commit `550d5cc` refined six records: TP-Link Deco BE63, NETGEAR Orbi 770 RBE773, eero Pro 7, Logitech G309, Miele Triflex HX2 regional material numbers, and Roborock Qrevo 2 Pro US/UK suction discrepancy. Miele UK material 11819170 and US 11827000 are kept distinct. Exact manufacturer URLs and notes are stored in `src/data/products.json`.
+- Accessibility remediation commit `57b322d` removes the page-level body gradient and makes the site header opaque, while retaining local editorial-card/hero styling. This is a targeted attempt to let axe calculate contrast; it is **not yet verified**. CI run #525 / ID `44241601543` is running on this head. PR-triggered run #524 / ID `44241559354` for the preceding catalogue commit was superseded/cancelled after its initial build steps; do not count it as a full pass.
+- Last verified immutable Pages preview remains `https://1702b700.smartpickhub-preview.pages.dev/` for commit `5a996eb`. Do not claim that the newer catalogue/CSS commits are visible in preview until a new deployment URL and affected routes are checked.
+- PR #1 remains Draft/open/unmerged. Production remains disconnected. All 25 guides remain research drafts; zero approved. Product image count remains zero. Preview noindex/nofollow and robots disallow all remain required.
+- Roadmap checklist tally: 52 completed, 2 partial (steps 48 and 69), 46 planned. Step 68 is completed, not partial. The roadmap is not finished.
+- Next: complete CI #525 and inspect its artifact, especially axe incomplete count and npmAudit status; verify the latest Pages preview; then update the roadmap/handoff with confirmed results. Continue the remaining 100-product regional SKU/lifecycle audit. Do not merge, publish, index, deploy production, change DNS or modify WordPress without explicit owner approval.
