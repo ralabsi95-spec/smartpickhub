@@ -298,3 +298,17 @@ Following owner approval, the existing combined US/UK espresso guide record was 
 **Commit:** `515a24a0cdcb064d180c5e066636adc15f85d2f8`.
 
 **Next step:** run the repository's targeted catalogue validation/build checks, then inspect the preview rendering on desktop and mobile. Keep publication, indexing and production cutover behind separate explicit approval.
+
+
+## 19. CI result for the UK-first espresso catalogue commit (2026-11-18)
+
+GitHub Actions run #619 (`44272436670`) was triggered for catalogue commit `515a24a0cdcb064d180c5e066636adc15f85d2f8` through PR #1.
+
+- Run URL: https://github.com/ralabsi95-spec/smartpickhub/actions/runs/44272436670
+- The runner checked out the PR merge ref containing the catalogue commit and installed Node.js 22.23.4.
+- `npm ci` reported 12 high-severity audit findings (0 critical) and then the operation was cancelled.
+- The later report-generation step recorded `overall: incomplete-or-failed`, with 0 axe routes and 0 Lighthouse pages. The Astro check, catalogue/affiliate validation, build, smoke, accessibility and Lighthouse steps were skipped; therefore this run does **not** validate the content change.
+- The report step exited with code 1. The uploaded quality artifact is attached to run #619. The log shows the existing dependency-audit findings; this content-only change did not update dependencies or package lock.
+- Do not infer that the catalogue validation or build passed from the JSON parse/re-fetch check. The file was syntactically valid JSON and the four expected product records were confirmed, but the repository's scripted validation remains unverified.
+
+**Decision:** record CI as incomplete/failed, not passed. Do not modify dependencies or suppress audit findings as part of this editorial change. Next, diagnose the workflow cancellation and audit baseline separately, then run targeted catalogue validation and build checks on the same branch. No deployment or production action was performed.
