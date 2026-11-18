@@ -662,3 +662,23 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - PR CI run #573 / ID `44257057465` is in progress on that exact SHA. Do not call this documentation batch CI-verified until the run completes.
 - The preceding code/documentation commit `5294826` did pass push CI run #564 / ID `44252571083` (all 19 main steps successful).
 - No catalogue edits, merge, deployment, publishing, DNS or indexing changes were made.
+
+
+## 18 November 2026 — latest continuation checkpoint (16:02 UTC)
+
+- PR #1 remains Draft/open/unmerged; PR branch head before this documentation checkpoint: `56f7ab458483e3ec7788e26679726baf6b604c06`.
+- PR CI run #650 / ID `44336718338` succeeded on GitHub's test merge commit `9eb35cd2094508428d40ff789730076f56e5502b`, which combines PR head `56f7ab4` with base `2b7b9a8`. This is a synthetic CI merge ref only; PR was not merged to main.
+- All 18 substantive build-and-audit steps succeeded, including npm ci, audit capture, Astro checks, both importer tests, catalogue and affiliate validation, keyword generation, static build, smoke tests, axe, Lighthouse, consolidated report and artifact upload.
+- Artifact `smartpickhub-quality-reports-650.zip` ID `14442111616` inspected. Report: 25 guides / 100 products; 29 smoke-tested HTML pages with zero errors/warnings; 28 axe routes / zero violations / 27 incomplete contrast checks; five Lighthouse samples all 100 Performance/Accessibility/Best Practices; SEO 66–69 due intentional preview noindex/robots block.
+- Image readiness: 0 approved, 0 pending, 100 without product images. All 25 guides remain drafts; public publication disabled.
+- npm audit: 12 high-severity affected package nodes trace to one underlying picomatch advisory `GHSA-fc5q-39xc-vjpf` / `CVE-2026-112366`, not 12 independent CVEs. Owner-approved temporary exception remains in force until review date 2 Dec 2026; do not call audit clean or advisory fixed.
+- Preview safety confirmed in generated build report: noindex true, robots disallow-all true, public publication false.
+- Cloudflare Pages preview freshness for this exact ref is still unverified. Production Pages project remains disconnected and untouched. No merge, production deployment, DNS/indexing change or publishing occurred. InfinityFree remains excluded.
+- Documentation update commit: `f642da68732f76ff28d6b7fbbb4d156cbef0364e` (MASTER_PROJECT.md). A follow-on handoff documentation commit is being recorded. CI for these documentation commits must be checked separately; do not assume run #650 validates them.
+
+### Next exact actions
+1. Check latest branch head and CI after documentation commits.
+2. Continue read-only preview freshness verification; no Cloudflare production changes.
+3. Manually assess homepage contrast where axe cannot compute gradient backgrounds.
+4. Build product image candidate provenance/licence/attribution workflow; no Amazon image scraping or auto-approval.
+5. Continue exact UK/US SKU verification and editorial review; keep guides as drafts.
