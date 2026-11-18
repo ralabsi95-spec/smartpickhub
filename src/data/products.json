@@ -2,7 +2,7 @@
   "_meta": {
     "purpose": "Research-led buying guide catalogue for US and UK shoppers.",
     "status": "research-draft-unapproved",
-    "lastResearched": "2026-11-17",
+    "lastResearched": "2026-11-19",
     "marketStrategy": "UK-first launch. Prioritise useful UK buying guidance and Amazon UK search destinations; US marketplace fields are optional secondary support and do not require exhaustive model-by-model regional parity.",
     "identifierPolicy": "Identifiers are product/model search phrases, not ASINs. Affiliate links use marketplace search URLs unless an exact product ASIN and destination have been verified. Never invent ASINs, live prices, ratings, stock or seller claims.",
     "editorialPolicy": "Practical editorial guidance based on available manufacturer/product information. Keep claims proportionate to evidence; avoid hands-on testing claims, fabricated rankings, current price/availability claims, and unsafe electrical or compatibility advice. Minor regional differences do not block a guide; clearly material safety, voltage, plug, battery-platform or compatibility differences must not be misrepresented.",
@@ -1056,12 +1056,10 @@
           "us_identifier": "DEWALT 20V MAX XR Brushless 1/2-in Drill/Driver DCD801B",
           "uk_identifier": "DEWALT UK 18V XR brushless drill driver DCD791NT-XJ",
           "pros": [
-            "Brushless motor platform; 1/2-inch chuck; tool-only option can suit owners of compatible batteries.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Brushless motor platform; 1/2-inch chuck; tool-only option can suit owners of compatible batteries."
           ],
           "cons": [
-            "Tool-only package does not include battery or charger; verify the exact kit contents and regional battery system.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Tool-only package does not include battery or charger; verify the exact kit contents and regional battery system."
           ],
           "verdict": "A flexible candidate for buyers already invested in the DEWALT 20V MAX platform. Confirm the SKU and battery bundle.",
           "source": "https://www.dewalt.com/en-us/product/dcd801b/20v-max-xr-brushless-cordless-12-drilldriver-tool-only",
@@ -1074,12 +1072,10 @@
           "us_identifier": "DEWALT ATOMIC 20V MAX Compact Drill/Driver DCD794D1",
           "uk_identifier": "DEWALT UK 18V XR compact brushless drill driver DCD708N-XJ",
           "pros": [
-            "Compact ATOMIC family; supplied as a kit in the DCD794D1 configuration; part of the 20V MAX platform.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Compact ATOMIC family; supplied as a kit in the DCD794D1 configuration; part of the 20V MAX platform."
           ],
           "cons": [
-            "Compact size does not replace a higher-capacity hammer drill for demanding masonry work; kit contents are SKU-specific.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Compact size does not replace a higher-capacity hammer drill for demanding masonry work; kit contents are SKU-specific."
           ],
           "verdict": "Compare its compact form with full-size drill-drivers and choose based on access, material and existing batteries.",
           "source": "https://www.dewalt.com/en-us/product/dcd794d1/20v-max-atomic-brushless-cordless-12-drilldriver-1-20ah-battery",
@@ -1092,12 +1088,10 @@
           "us_identifier": "DEWALT 20V MAX Compact Drill/Driver DCD777D1",
           "uk_identifier": "DEWALT UK 18V XR drill driver DCD776C1-GB",
           "pros": [
-            "Compact 20V MAX drill-driver; kit configuration identified by DCD777D1; suited to general drilling and fastening tasks.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Compact 20V MAX drill-driver; kit configuration identified by DCD777D1; suited to general drilling and fastening tasks."
           ],
           "cons": [
-            "Check whether the included battery capacity meets longer work sessions; not every kit includes the same accessories.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Check whether the included battery capacity meets longer work sessions; not every kit includes the same accessories."
           ],
           "verdict": "A straightforward option to compare for routine household jobs and light workshop use.",
           "source": "https://www.dewalt.com/en-us/product/dcd777d1/20v-max-compact-brushless-drilldriver-kit",
@@ -1110,12 +1104,10 @@
           "us_identifier": "DEWALT 12V MAX 5-in-1 Brushless Drill/Driver DCD703F1",
           "uk_identifier": "DEWALT UK 12V XR brushless drill driver DCD701N-XJ",
           "pros": [
-            "12V MAX platform; brushless motor; interchangeable head concept supports different access angles.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "12V MAX platform; brushless motor; interchangeable head concept supports different access angles."
           ],
           "cons": [
-            "12V ecosystem differs from 20V MAX; the multi-head design is specialised and not a like-for-like replacement for a full-size drill.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "12V ecosystem differs from 20V MAX; the multi-head design is specialised and not a like-for-like replacement for a full-size drill."
           ],
           "verdict": "Consider when access and compactness matter more than using the larger 20V battery platform.",
           "source": "https://www.dewalt.com/en-us/product/dcd703f1/12v-max-5-1-brushless-drilldriver-kit",
@@ -1145,12 +1137,10 @@
           "us_identifier": "Roborock Saros 10R Robot Vacuum",
           "uk_identifier": "Roborock Saros 10R UK robot vacuum",
           "pros": [
-            "Saros family design; manufacturer describes advanced navigation and automated cleaning features; integrated dock ecosystem.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Saros family design; manufacturer describes advanced navigation and automated cleaning features; integrated dock ecosystem."
           ],
           "cons": [
-            "Dock size and maintenance needs can be substantial; performance depends on room layout, cables and floor transitions.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Dock size and maintenance needs can be substantial; performance depends on room layout, cables and floor transitions."
           ],
           "verdict": "A premium model family to compare when navigation and dock automation are key priorities.",
           "source": "https://global.roborock.com/pages/roborock-saros-10r",
@@ -1163,12 +1153,10 @@
           "us_identifier": "Roborock Qrevo CurvX Robot Vacuum and Mop",
           "uk_identifier": "Roborock Qrevo CurvX UK robot vacuum mop",
           "pros": [
-            "Official listing highlights an ultra-slim 3.14-inch design and AdaptiLift chassis; dual anti-tangle system is advertised.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Official listing highlights an ultra-slim 3.14-inch design and AdaptiLift chassis; dual anti-tangle system is advertised."
           ],
           "cons": [
-            "Confirm the exact dock and accessory bundle; slim-body clearance does not guarantee access under every item of furniture.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Confirm the exact dock and accessory bundle; slim-body clearance does not guarantee access under every item of furniture."
           ],
           "verdict": "Compare its low-profile dimensions and dock features against the actual clearance and floor mix at home.",
           "source": "https://us.roborock.com/products/roborock-qrevo-curv-x",
@@ -1181,12 +1169,10 @@
           "us_identifier": "Roborock Qrevo Edge 2 Robot Vacuum and Mop",
           "uk_identifier": "Roborock Qrevo Edge 2 UK robot vacuum mop",
           "pros": [
-            "Roborock UK lists up to 25,000 Pa HyperForce suction and a dual anti-tangle system for this exact UK model.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Roborock UK lists up to 25,000 Pa HyperForce suction and a dual anti-tangle system for this exact UK model."
           ],
           "cons": [
-            "High suction claims are manufacturer-specific; dock footprint, maintenance and obstacle handling still need consideration.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "High suction claims are manufacturer-specific; dock footprint, maintenance and obstacle handling still need consideration."
           ],
           "verdict": "A candidate for households comparing anti-tangle design and automated mop care.",
           "source": "https://uk.roborock.com/products/roborock-qrevo-edge-2-hyperforce-suction-dual-anti-tangle-system",
@@ -1199,12 +1185,10 @@
           "us_identifier": "Roborock Qrevo 2 Pro Robot Vacuum and Mop",
           "uk_identifier": "Roborock Qrevo 2 Pro Robot Vacuum and Mop",
           "pros": [
-            "Roborock UK lists up to 25,000 Pa HyperForce suction, automatic mop detachment for carpets and a multifunctional self-cleaning dock; the US source previously reviewed listed 20,000 Pa.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Roborock UK lists up to 25,000 Pa HyperForce suction, automatic mop detachment for carpets and a multifunctional self-cleaning dock; the US source previously reviewed listed 20,000 Pa."
           ],
           "cons": [
-            "Advertised suction is not a standard cross-brand test; check carpet detection and mop-lift/detachment details in the regional SKU.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Advertised suction is not a standard cross-brand test; check carpet detection and mop-lift/detachment details in the regional SKU."
           ],
           "verdict": "Compare its dock automation and mop handling with the amount of carpet and hard flooring in your home.",
           "source": "https://uk.roborock.com/products/roborock-qrevo-2-pro-robot-vacuum-with-multifunctional-dock",
@@ -1288,12 +1272,10 @@
           "us_identifier": "Sony ULT WEAR Wireless Noise Cancelling Headphones",
           "uk_identifier": "Sony ULT WEAR Wireless Noise Cancelling Headphones",
           "pros": [
-            "Part of Sony's ULT Wear wireless headphone family with dedicated bass-oriented sound modes.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Part of Sony's ULT Wear wireless headphone family with dedicated bass-oriented sound modes."
           ],
           "cons": [
-            "Sound preference is subjective; compare ANC, fit and control layout rather than relying on a bass label alone.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Sound preference is subjective; compare ANC, fit and control layout rather than relying on a bass label alone."
           ],
           "verdict": "Consider if the ULT sound profile appeals and the fit is comfortable for longer sessions.",
           "source": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wh-ult900n/specifications",
@@ -1322,12 +1304,10 @@
           "us_identifier": "Sony WF-1000XM6 Truly Wireless Noise Cancelling Earbuds",
           "uk_identifier": "Sony WF-1000XM6 Truly Wireless Noise Cancelling Earbuds",
           "pros": [
-            "Sony lists the WF-1000XM6 in its current wireless headphone catalogue; model family focuses on ANC and wireless audio.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Sony lists the WF-1000XM6 in its current wireless headphone catalogue; model family focuses on ANC and wireless audio."
           ],
           "cons": [
-            "Ear-tip seal is individual; check phone codec support, case size and regional warranty before choosing.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Ear-tip seal is individual; check phone codec support, case size and regional warranty before choosing."
           ],
           "verdict": "A premium earbud candidate for users who want to compare Sony's current ANC platform.",
           "source": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wf-1000xm6/specifications",
@@ -1339,12 +1319,10 @@
           "us_identifier": "Sony WF-1000XM5 Truly Wireless Noise Cancelling Earbuds",
           "uk_identifier": "Sony WF-1000XM5 Truly Wireless Noise Cancelling Earbuds",
           "pros": [
-            "Sony documents advanced noise cancellation, high-resolution audio support and call-quality features for this model family.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Sony documents advanced noise cancellation, high-resolution audio support and call-quality features for this model family."
           ],
           "cons": [
-            "Fit and ear-tip comfort vary; compare the case size and current generation before purchase.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Fit and ear-tip comfort vary; compare the case size and current generation before purchase."
           ],
           "verdict": "Compare the XM5 when its size, feature mix and price positioning suit the buyer.",
           "source": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wf-1000xm5/specifications",
@@ -1356,12 +1334,10 @@
           "us_identifier": "Apple AirPods Pro 3",
           "uk_identifier": "Apple AirPods Pro 3",
           "pros": [
-            "Apple's official comparison lists AirPods Pro 3 with H2 features, adaptive audio and active noise cancellation.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Apple's official comparison lists AirPods Pro 3 with H2 features, adaptive audio and active noise cancellation."
           ],
           "cons": [
-            "Some features are ecosystem-dependent; verify compatibility and fit, and do not assume identical support on Android.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Some features are ecosystem-dependent; verify compatibility and fit, and do not assume identical support on Android."
           ],
           "verdict": "A strong ecosystem candidate for buyers already using compatible Apple devices.",
           "source": "https://www.apple.com/airpods-pro/specs/",
@@ -1373,12 +1349,10 @@
           "us_identifier": "Apple AirPods 4 with Active Noise Cancellation",
           "uk_identifier": "Apple AirPods 4 with Active Noise Cancellation",
           "pros": [
-            "Apple lists an ANC version of AirPods 4 and H2-based features in its model comparison.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Apple lists an ANC version of AirPods 4 and H2-based features in its model comparison."
           ],
           "cons": [
-            "Open-fit designs do not seal like silicone-tip earbuds; noise isolation and comfort differ by ear shape.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Open-fit designs do not seal like silicone-tip earbuds; noise isolation and comfort differ by ear shape."
           ],
           "verdict": "Compare against AirPods Pro if the buyer prefers an open-fit style over sealed ear tips.",
           "source": "https://support.apple.com/en-gb/121204",
@@ -1407,12 +1381,10 @@
           "us_identifier": "Levoit Core 300-P Air Purifier",
           "uk_identifier": "Levoit Core 300 UK air purifier",
           "pros": [
-            "Levoit lists the Core 300-P in its Core range for medium rooms; replaceable filter system.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Levoit lists the Core 300-P in its Core range for medium rooms; replaceable filter system."
           ],
           "cons": [
-            "No smart control on this base model; room coverage depends on the specified clean-air rate and usage conditions.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "No smart control on this base model; room coverage depends on the specified clean-air rate and usage conditions."
           ],
           "verdict": "A simple model to compare when app controls are not essential.",
           "source": "https://levoit.com/products/core300-p-air-purifier",
@@ -1425,12 +1397,10 @@
           "us_identifier": "Levoit Core 300S-P Smart Air Purifier",
           "uk_identifier": "Levoit Core 300S UK smart air purifier",
           "pros": [
-            "Levoit lists the 300S-P as a smart Core model for medium rooms.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Levoit lists the 300S-P as a smart Core model for medium rooms."
           ],
           "cons": [
-            "Smart features add setup and app dependence; filter replacement remains a recurring cost.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Smart features add setup and app dependence; filter replacement remains a recurring cost."
           ],
           "verdict": "Compare it with the non-smart Core 300-P if remote control and scheduling matter.",
           "source": "https://levoit.com/products/core-300s-p-smart-air-purifier",
@@ -1443,12 +1413,10 @@
           "us_identifier": "Levoit Core 400S-P Smart Air Purifier",
           "uk_identifier": "Levoit Core 400S UK smart air purifier",
           "pros": [
-            "Levoit places the Core 400S-P in its smart Core series for larger rooms.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Levoit places the Core 400S-P in its smart Core series for larger rooms."
           ],
           "cons": [
-            "Check the stated room-size assumptions and noise at the required fan speed; replacement filters must match the exact model.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Check the stated room-size assumptions and noise at the required fan speed; replacement filters must match the exact model."
           ],
           "verdict": "A larger-room candidate for users who want connected controls.",
           "source": "https://levoit.com/products/core-400s-p-smart-air-purifier",
@@ -1461,12 +1429,10 @@
           "us_identifier": "Levoit Vital 200S-P Air Purifier",
           "uk_identifier": "Levoit Vital 200S UK air purifier",
           "pros": [
-            "Levoit describes the Vital 200S-P for home use and pet hair/dander control; smart features are listed.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Levoit describes the Vital 200S-P for home use and pet hair/dander control; smart features are listed."
           ],
           "cons": [
-            "Pet-hair pre-filter maintenance and replacement filter availability should be considered; do not treat filtration as a substitute for cleaning.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Pet-hair pre-filter maintenance and replacement filter availability should be considered; do not treat filtration as a substitute for cleaning."
           ],
           "verdict": "Compare for homes with pets, paying attention to filter upkeep and room-size guidance.",
           "source": "https://levoit.com/products/vital-200s-p-smart-air-purifier",
@@ -1594,12 +1560,10 @@
           "us_identifier": "Apple iPad Pro 13-inch (M5)",
           "uk_identifier": "Apple iPad Pro 13-inch (M5)",
           "pros": [
-            "Apple lists an M5 processor and Ultra Retina XDR display for the current Pro family.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Apple lists an M5 processor and Ultra Retina XDR display for the current Pro family."
           ],
           "cons": [
-            "Large size and accessory costs reduce portability; some professional workflows still require desktop software.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Large size and accessory costs reduce portability; some professional workflows still require desktop software."
           ],
           "verdict": "A premium large-screen option for demanding tablet workflows.",
           "source": "https://support.apple.com/en-gb/125407",
@@ -1611,12 +1575,10 @@
           "us_identifier": "Apple iPad Air 11-inch (M4)",
           "uk_identifier": "Apple iPad Air 11-inch (M4)",
           "pros": [
-            "Apple lists the current Air family with M4 processor and Liquid Retina display.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Apple lists the current Air family with M4 processor and Liquid Retina display."
           ],
           "cons": [
-            "Keyboard, stylus and storage upgrades affect total cost; confirm compatibility of older accessories.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Keyboard, stylus and storage upgrades affect total cost; confirm compatibility of older accessories."
           ],
           "verdict": "A versatile middle-ground candidate for study, notes and general productivity.",
           "source": "https://support.apple.com/en-gb/126471",
@@ -1628,12 +1590,10 @@
           "us_identifier": "Apple iPad (A16)",
           "uk_identifier": "Apple iPad (A16)",
           "pros": [
-            "Apple's comparison lists the standard iPad with A16 processor and Liquid Retina display.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Apple's comparison lists the standard iPad with A16 processor and Liquid Retina display."
           ],
           "cons": [
-            "Fewer premium display and performance features than Pro; accessory support differs from other iPad lines.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Fewer premium display and performance features than Pro; accessory support differs from other iPad lines."
           ],
           "verdict": "A mainstream option for everyday tablet tasks.",
           "source": "https://support.apple.com/en-gb/122240",
@@ -1645,12 +1605,10 @@
           "us_identifier": "Apple iPad mini (A20 Pro)",
           "uk_identifier": "Apple iPad mini (A20 Pro)",
           "pros": [
-            "Apple lists the current mini with an 8.5-inch class display and A20 Pro processor.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Apple lists the current mini with an 8.5-inch class display and A20 Pro processor."
           ],
           "cons": [
-            "Smaller screen can constrain split-screen work and long document editing; check the exact generation and regional launch availability.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Smaller screen can constrain split-screen work and long document editing; check the exact generation and regional launch availability."
           ],
           "verdict": "A compact option when portability matters more than screen area.",
           "source": "https://support.apple.com/en-us/149482",
@@ -1682,8 +1640,7 @@
             "Garmin's UK comparison lists 4K Ultra HD recording; X310 is the 4K tier in the X series."
           ],
           "cons": [
-            "High-resolution recording uses more storage; parking features may need additional wiring and setup.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "High-resolution recording uses more storage; parking features may need additional wiring and setup."
           ],
           "verdict": "A premium compact option for buyers prioritising detailed front-camera footage.",
           "source": "https://www.garmin.com/en-US/p/1391409/",
@@ -1698,8 +1655,7 @@
             "Garmin's UK comparison lists 1440p recording; X210 sits between the 1080p X110/Mini 3 and 4K X310."
           ],
           "cons": [
-            "Confirm exact recording resolution and feature set for the selected regional package; accessories may be separate.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Confirm exact recording resolution and feature set for the selected regional package; accessories may be separate."
           ],
           "verdict": "Compare with the X310 if 4K is not essential to the buyer's requirements.",
           "source": "https://www.garmin.com/en-US/p/1033231/",
@@ -1714,8 +1670,7 @@
             "Garmin's UK comparison lists 1080p recording and a 2.4-inch display."
           ],
           "cons": [
-            "Check the exact resolution tier, GPS availability and included power cable before purchase.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Check the exact resolution tier, GPS availability and included power cable before purchase."
           ],
           "verdict": "A simpler X-series candidate when core recording matters more than flagship specifications.",
           "source": "https://www.garmin.com/en-US/p/1222949/",
@@ -1730,8 +1685,7 @@
             "Garmin's UK comparison lists 1080p recording, a 140-degree field of view and no built-in display."
           ],
           "cons": [
-            "Small size means checking screenless setup, app workflow and whether GPS/parking functions meet the intended use.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Small size means checking screenless setup, app workflow and whether GPS/parking functions meet the intended use."
           ],
           "verdict": "A discreet option for buyers who prefer minimal windshield obstruction.",
           "source": "https://www.garmin.com/en-US/p/1223369/",
@@ -1760,12 +1714,10 @@
           "us_identifier": "XGIMI MoGo 4 Portable Projector",
           "uk_identifier": "XGIMI MoGo 4 Portable Projector",
           "pros": [
-            "Official specifications list 1080p, 450 ISO lumens, Google TV and up to 2.5 hours of video playback in Eco mode.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Official specifications list 1080p, 450 ISO lumens, Google TV and up to 2.5 hours of video playback in Eco mode."
           ],
           "cons": [
-            "Battery runtime is a manufacturer maximum in a defined mode; brightness is limited for bright rooms and PowerBase is separate.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Battery runtime is a manufacturer maximum in a defined mode; brightness is limited for bright rooms and PowerBase is separate."
           ],
           "verdict": "A portable choice when battery operation and integrated streaming are important.",
           "source": "https://uk.xgimi.com/products/mogo-4",
@@ -1777,12 +1729,10 @@
           "us_identifier": "Epson EpiqVision Mini EF21 Laser Projector",
           "uk_identifier": "Epson EpiqVision Mini EF21 Laser Projector",
           "pros": [
-            "Epson lists EF21 in its portable laser projector family and provides regional product documentation.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Epson lists EF21 in its portable laser projector family and provides regional product documentation."
           ],
           "cons": [
-            "Check brightness, resolution, smart-TV bundle and regional warranty; external power is needed for portable placement.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Check brightness, resolution, smart-TV bundle and regional warranty; external power is needed for portable placement."
           ],
           "verdict": "Compare with battery-powered DLP projectors if built-in battery operation is a priority.",
           "source": "https://epson.com/For-Home/Projectors/Home-Cinema/Epson-EpiqVision-Mini-EF21-Portable-Smart-Laser-Projector-%E2%80%93-Diamond-White/p/V11HB35020",
@@ -1795,12 +1745,10 @@
           "us_identifier": "Epson EF-30 Smart Personal Projector",
           "uk_identifier": "Epson EF-30 Smart Personal Projector",
           "pros": [
-            "Epson lists Full HD 1080p, built-in Google TV and Dolby Audio stereo speakers for EF-30.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Epson lists Full HD 1080p, built-in Google TV and Dolby Audio stereo speakers for EF-30."
           ],
           "cons": [
-            "Manufacturer lists 350 lumens; room darkening and screen size are important for perceived brightness.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Manufacturer lists 350 lumens; room darkening and screen size are important for perceived brightness."
           ],
           "verdict": "A compact smart projector for controlled-light environments.",
           "source": "https://epson.com/For-Home/Projectors/Streaming-Entertainment/EF-30-Smart-Personal-Projector/p/V11HC43920",
@@ -1812,12 +1760,10 @@
           "us_identifier": "Epson EpiqVision Flex CO-FH02 Smart Portable Projector",
           "uk_identifier": "Epson EpiqVision Flex CO-FH02 Smart Portable Projector",
           "pros": [
-            "Epson lists Full HD 1080p, 3,000 lumens and an Android TV streaming stick for this model.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Epson lists Full HD 1080p, 3,000 lumens and an Android TV streaming stick for this model."
           ],
           "cons": [
-            "The included streaming stick and model bundle should be checked by region; it is not a battery-powered projector.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "The included streaming stick and model bundle should be checked by region; it is not a battery-powered projector."
           ],
           "verdict": "A brighter portable option where mains power is available.",
           "source": "https://epson.com/For-Home/Projectors/Streaming-Entertainment/EpiqVision%C2%AE-Flex-CO-FH02-Full-HD-1080p-Smart-Portable-Projector/p/V11HA85020",
@@ -1846,12 +1792,10 @@
           "us_identifier": "Synology DiskStation DS1525+",
           "uk_identifier": "Synology DiskStation DS1525+",
           "pros": [
-            "Official catalogue lists five bays, dual 2.5GbE and expansion capacity up to 15 drives.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Official catalogue lists five bays, dual 2.5GbE and expansion capacity up to 15 drives."
           ],
           "cons": [
-            "Drive costs are additional; verify RAM and drive compatibility and plan a separate backup destination.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Drive costs are additional; verify RAM and drive compatibility and plan a separate backup destination."
           ],
           "verdict": "A flexible multi-bay option for growing shared storage and backup workloads.",
           "source": "https://www.synology.com/en-uk/products/DS1525%2B",
@@ -1863,12 +1807,10 @@
           "us_identifier": "Synology DiskStation DS925+",
           "uk_identifier": "Synology DiskStation DS925+",
           "pros": [
-            "Synology lists four bays, dual 2.5GbE and built-in M.2 NVMe slots for cache/storage pools.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Synology lists four bays, dual 2.5GbE and built-in M.2 NVMe slots for cache/storage pools."
           ],
           "cons": [
-            "M.2 and drive compatibility restrictions should be checked; RAID is not a backup.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "M.2 and drive compatibility restrictions should be checked; RAID is not a backup."
           ],
           "verdict": "A balanced four-bay platform for shared files and backup jobs.",
           "source": "https://www.synology.com/en-uk/products/DS925%2B",
@@ -1880,12 +1822,10 @@
           "us_identifier": "Synology DiskStation DS725+",
           "uk_identifier": "Synology DiskStation DS725+",
           "pros": [
-            "Official product list identifies two bays, 2.5GbE plus 1GbE connectivity and expansion support.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Official product list identifies two bays, 2.5GbE plus 1GbE connectivity and expansion support."
           ],
           "cons": [
-            "Two bays limit drive-layout flexibility compared with four- or five-bay systems.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Two bays limit drive-layout flexibility compared with four- or five-bay systems."
           ],
           "verdict": "A compact starting point where capacity and expansion needs are modest.",
           "source": "https://www.synology.com/en-uk/products/DS725%2B",
@@ -1897,12 +1837,10 @@
           "us_identifier": "Synology DiskStation DS224+",
           "uk_identifier": "Synology DiskStation DS224+",
           "pros": [
-            "Synology lists two bays, dual 1GbE and Btrfs support for this model.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Synology lists two bays, dual 1GbE and Btrfs support for this model."
           ],
           "cons": [
-            "Gigabit networking is slower than newer 2.5GbE models; it has limited expansion compared with larger units.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Gigabit networking is slower than newer 2.5GbE models; it has limited expansion compared with larger units."
           ],
           "verdict": "A practical entry-level two-bay option for home file sharing and backup.",
           "source": "https://www.synology.com/en-us/products/DS224%2B?tab=specs",
@@ -1935,8 +1873,7 @@
             "Oral-B UK lists seven brushing modes, 3D Teeth Tracking and real-time coaching via the iO Sense smart charger."
           ],
           "cons": [
-            "Premium charging accessories and replacement brush heads add ongoing cost; bundle contents vary.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Premium charging accessories and replacement brush heads add ongoing cost; bundle contents vary."
           ],
           "verdict": "A premium guided-brushing option for users who will use its feedback features.",
           "source": "https://www.oralb.co.uk/en-gb/products/electric-toothbrushes/oral-b-io10-lunar-gold-special-edition-electric-toothbrush",
@@ -1951,8 +1888,7 @@
             "Oral-B UK lists seven brushing modes, an interactive colour display, 3D Teeth Tracking and a charging travel case."
           ],
           "cons": [
-            "Check the exact charging case and accessory bundle; replacement-head compatibility is specific to iO.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Check the exact charging case and accessory bundle; replacement-head compatibility is specific to iO."
           ],
           "verdict": "Compare with iO10 by included accessories rather than assuming the handle alone differs.",
           "source": "https://www.oralb.co.uk/en-gb/products/electric-toothbrushes/oral-b-io9-black-electric-toothbrush-with-black-travel-charger-case",
@@ -1967,8 +1903,7 @@
             "Oral-B UK lists five modes, an interactive display, Smart Pressure Sensor and six-zone brushing recognition."
           ],
           "cons": [
-            "Fewer advanced modes than top iO tiers; app features require a compatible phone and regular use.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Fewer advanced modes than top iO tiers; app features require a compatible phone and regular use."
           ],
           "verdict": "A middle-tier option when guided feedback is useful but flagship accessories are unnecessary.",
           "source": "https://www.oralb.co.uk/en-gb/products/electric-toothbrushes/oral-b-io-series-6-electric-toothbrush",
@@ -1983,8 +1918,7 @@
             "Oral-B UK lists three modes, a pressure sensor and LightRing feedback."
           ],
           "cons": [
-            "No interactive display or app coaching at this tier; confirm included heads and charging accessories.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "No interactive display or app coaching at this tier; confirm included heads and charging accessories."
           ],
           "verdict": "A simpler iO entry point when pressure guidance matters more than connected features.",
           "source": "https://www.oralb.co.uk/en-gb/products/electric-toothbrushes/oral-b-io-series-3-electric-toothbrush",
@@ -2013,12 +1947,10 @@
           "us_identifier": "Logitech PRO X2 SUPERSTRIKE LIGHTSPEED Wireless Gaming Mouse",
           "uk_identifier": "Logitech PRO X2 SUPERSTRIKE LIGHTSPEED Wireless Gaming Mouse",
           "pros": [
-            "Listed in Logitech G's current mouse catalogue; PRO family targets low-distraction competitive play.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Listed in Logitech G's current mouse catalogue; PRO family targets low-distraction competitive play."
           ],
           "cons": [
-            "Symmetrical lightweight shapes do not suit every hand; verify dimensions, switches and software compatibility.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Symmetrical lightweight shapes do not suit every hand; verify dimensions, switches and software compatibility."
           ],
           "verdict": "A premium competitive model to compare by shape and control preference.",
           "source": "https://www.logitechg.com/en-us/shop/p/pro-x2-superstrike-mouse.910-007700",
@@ -2030,12 +1962,10 @@
           "us_identifier": "Logitech PRO X SUPERLIGHT 2 LIGHTSPEED Wireless Gaming Mouse",
           "uk_identifier": "Logitech PRO X SUPERLIGHT 2 LIGHTSPEED Wireless Gaming Mouse",
           "pros": [
-            "Logitech lists the PRO X SUPERLIGHT 2 in its current wireless mouse range.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Logitech lists the PRO X SUPERLIGHT 2 in its current wireless mouse range."
           ],
           "cons": [
-            "Minimal button count and compact shape may not suit productivity or users who want many controls.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Minimal button count and compact shape may not suit productivity or users who want many controls."
           ],
           "verdict": "A streamlined option for users who prioritise a simple competitive layout.",
           "source": "https://www.logitechg.com/en-us/shop/p/pro-x2-superlight-wireless-mouse.910-006628",
@@ -2047,12 +1977,10 @@
           "us_identifier": "Logitech G502 X PLUS LIGHTSPEED Wireless Gaming Mouse",
           "uk_identifier": "Logitech G502 X PLUS LIGHTSPEED Wireless Gaming Mouse",
           "pros": [
-            "Logitech lists G502 X PLUS as a wireless gaming mouse in its current range.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Logitech lists G502 X PLUS as a wireless gaming mouse in its current range."
           ],
           "cons": [
-            "More buttons and a larger body can add weight and complexity; confirm hand fit.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "More buttons and a larger body can add weight and complexity; confirm hand fit."
           ],
           "verdict": "A versatile choice for users who value programmable controls over minimum weight.",
           "source": "https://www.logitechg.com/en-us/shop/p/g502-x-plus-wireless-lightforce.910-006169",
@@ -2064,12 +1992,10 @@
           "us_identifier": "Logitech G309 LIGHTSPEED Wireless Gaming Mouse",
           "uk_identifier": "Logitech G309 LIGHTSPEED Wireless Gaming Mouse Black UK SKU 910-007200",
           "pros": [
-            "Logitech lists G309 LIGHTSPEED with LIGHTFORCE switches in its current catalogue.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Logitech lists G309 LIGHTSPEED with LIGHTFORCE switches in its current catalogue."
           ],
           "cons": [
-            "Check battery type, weight with the chosen power source and grip comfort before buying.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Check battery type, weight with the chosen power source and grip comfort before buying."
           ],
           "verdict": "Compare it as a flexible wireless option for gaming and everyday use.",
           "source": "https://www.logitechg.com/en-gb/shop/p/g309-lightspeed-gaming-mouse.910-007200",
@@ -2103,8 +2029,7 @@
             "Apple lists the S11 chip and up to 24 hours of normal-use battery life"
           ],
           "cons": [
-            "Requires iPhone for full experience; battery life varies with cellular, workouts and settings.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Requires iPhone for full experience; battery life varies with cellular, workouts and settings."
           ],
           "verdict": "A general-purpose option for buyers already using an iPhone.",
           "source": "https://support.apple.com/en-mide/148589",
@@ -2116,12 +2041,10 @@
           "us_identifier": "Apple Watch SE 3",
           "uk_identifier": "Apple Watch SE 3",
           "pros": [
-            "Apple lists SE 3 with 40 mm and 44 mm case options and an always-on display.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Apple lists SE 3 with 40 mm and 44 mm case options and an always-on display."
           ],
           "cons": [
-            "Fewer premium display and sensor features than higher-tier models; compare exact GPS/cellular configuration.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Fewer premium display and sensor features than higher-tier models; compare exact GPS/cellular configuration."
           ],
           "verdict": "A simpler Apple Watch option for everyday use.",
           "source": "https://www.apple.com/jo/watch/compare/",
@@ -2138,8 +2061,7 @@
             "Apple estimates up to 50 hours of normal use and up to 84 hours in Low Power Mode"
           ],
           "cons": [
-            "Larger case is not comfortable for every wrist; cellular and battery performance vary with use and region.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Larger case is not comfortable for every wrist; cellular and battery performance vary with use and region."
           ],
           "verdict": "A rugged premium candidate for users who need its larger case and outdoor feature set.",
           "source": "https://www.apple.com/jo/apple-watch-ultra-4/specs/",
@@ -2151,12 +2073,10 @@
           "us_identifier": "Garmin Forerunner 265",
           "uk_identifier": "Garmin Forerunner 265",
           "pros": [
-            "Garmin lists Forerunner 265 with an AMOLED display and advanced training/recovery features.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Garmin lists Forerunner 265 with an AMOLED display and advanced training/recovery features."
           ],
           "cons": [
-            "Training metrics have a learning curve; check phone notifications, music and payment support by region.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Training metrics have a learning curve; check phone notifications, music and payment support by region."
           ],
           "verdict": "A sport-focused alternative for users who prioritise training data over a general app ecosystem.",
           "source": "https://www.garmin.com/en-GB/compare/?compareProduct=886785",
@@ -2185,12 +2105,10 @@
           "us_identifier": "Brother MFC-L8395CDW Colour Laser All-in-One Printer",
           "uk_identifier": "Brother MFC-L8390CDW UK 220-240V colour LED all-in-one printer",
           "pros": [
-            "Brother lists duplex print/scan/copy, Gigabit Ethernet, dual-band wireless and a 50-sheet ADF.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Brother lists duplex print/scan/copy, Gigabit Ethernet, dual-band wireless and a 50-sheet ADF."
           ],
           "cons": [
-            "Larger than a basic home printer; colour toner, drum and waste components create ongoing costs.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Larger than a basic home printer; colour toner, drum and waste components create ongoing costs."
           ],
           "verdict": "A business-oriented colour multifunction option where duplex scanning and networking matter.",
           "source": "https://www.brother-usa.com/p/laser-printers/MFCL8395CDW",
@@ -2203,12 +2121,10 @@
           "us_identifier": "Brother MFC-L3780CDW Colour Laser All-in-One Printer",
           "uk_identifier": "Brother UK colour laser all-in-one printer 220-240V",
           "pros": [
-            "Brother lists up to 31 ppm print speed, duplex copy/scan and dual-band Wi-Fi plus Gigabit Ethernet.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Brother lists up to 31 ppm print speed, duplex copy/scan and dual-band Wi-Fi plus Gigabit Ethernet."
           ],
           "cons": [
-            "Check toner yields and drum/belt replacement costs; confirm ADF capacity and regional power variant.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Check toner yields and drum/belt replacement costs; confirm ADF capacity and regional power variant."
           ],
           "verdict": "A compact office multifunction option for mixed print and scan tasks.",
           "source": "https://www.brother-usa.com/p/laser-printers/MFCL3780CDW",
@@ -2221,12 +2137,10 @@
           "us_identifier": "Brother HL-L3280CDW Colour Laser Printer",
           "uk_identifier": "Brother HL-L3240CDW UK 220-240V colour LED printer",
           "pros": [
-            "Brother lists up to 27 ppm, a colour touchscreen and dual-band wireless/Gigabit Ethernet.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Brother lists up to 27 ppm, a colour touchscreen and dual-band wireless/Gigabit Ethernet."
           ],
           "cons": [
-            "Print-only model does not scan or copy; toner and paper costs should be compared over expected monthly volume.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "Print-only model does not scan or copy; toner and paper costs should be compared over expected monthly volume."
           ],
           "verdict": "A print-focused alternative when an all-in-one scanner is not required.",
           "source": "https://www.brother-usa.com/p/laser-printers/HLL3280CDW",
@@ -2239,12 +2153,10 @@
           "us_identifier": "Brother DCP-L2640DW Monochrome Laser Multifunction Printer",
           "uk_identifier": "Brother DCP-L2660DW UK 220-240V mono laser multifunction printer",
           "pros": [
-            "Brother lists this as a wireless compact monochrome laser multifunction model.",
-            "Manufacturer documentation provides a model-family reference for checking the exact regional configuration."
+            "Brother lists this as a wireless compact monochrome laser multifunction model."
           ],
           "cons": [
-            "No colour printing; verify duplex scanning and ADF features on the exact regional version.",
-            "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
+            "No colour printing; verify duplex scanning and ADF features on the exact regional version."
           ],
           "verdict": "A practical document-focused option for homes and small offices.",
           "source": "https://www.brother-usa.com/p/laser-printers/DCPL2640DW",
