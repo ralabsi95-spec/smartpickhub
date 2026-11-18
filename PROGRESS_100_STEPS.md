@@ -192,3 +192,12 @@
 - Latest code head `8bb6cb67cb0bacd8452dbe8e05170ee30fdb3cb4`; CI and immutable Pages preview for this refinement are not yet confirmed. Do not claim the new smoke assertion has passed until a fresh run completes.
 - The 100-step roadmap now records 53 completed, 2 partial and 45 not yet completed; this is a checklist tally, not a claim of 50 completed steps in this session.
 - No merge, production deployment, DNS change, indexing, publication, WordPress modification or removal of crawl protections occurred.
+
+
+## 18 November 2026 — Exact model-source audit batch
+- Replaced generic DEWALT drill-category references with exact official US model pages for DCD801B, DCD794D1, DCD777D1 and DCD703F1. Updated each source note with the manufacturer-confirmed kit/platform details and retained explicit warnings that UK model numbers/battery systems are regional candidates, not automatic equivalents.
+- Replaced the shared Garmin dash-cam source with exact official model pages for X310 (4K), X210 (1440p), X110 (1080p) and Mini 3 (ultracompact 1080p). Notes retain regional package/accessory verification caveats.
+- Source pages were fetched and checked against model titles and manufacturer descriptions before the catalogue edit. No manufacturer product images were downloaded or added.
+- Catalogue source-data commit: `8c1090f2eee5382829caaca7f8c6d832f6e89cfa`.
+- Ran 56 explicit catalogue/configuration/keyword-map integrity assertions against the current branch data: 56 passed, zero failed. Coverage included 25/100 counts, uniqueness, draft-only state, content fields, HTTPS sources, affiliate IDs/tags/marketplace hosts, ASIN safeguards, image absence, regional phrase queue (71), 12 keyword clusters and exact model-source patterns.
+- The latest code head and documentation commits have not yet received a fresh full CI run or immutable Pages preview. The last fully verified code remains `f336ac5` / run #477. Verify a new CI run and preview before treating these latest code changes as deployment-tested.
