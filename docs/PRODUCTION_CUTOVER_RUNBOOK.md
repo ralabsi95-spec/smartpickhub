@@ -254,3 +254,16 @@ A separate research record was added: `docs/ESPRESSO_IMAGE_AND_AFFILIATE_VERIFIC
 - No image assets, product records, affiliate URLs/helper, guide pages, publication state, Cloudflare configuration, DNS, production deployment or indexing settings were changed.
 
 **Next action:** continue the guide-readiness review without altering production. A direct-link or image change requires its own positive evidence and review; publication still requires explicit owner authorization.
+
+
+## 17. Espresso draft-to-site mapping assessment (2026-11-18)
+
+A read-only implementation assessment was added at `docs/ESPRESSO_DRAFT_TO_SITE_MAPPING.md`.
+
+- The current guide is one existing record in `src/data/products.json`; the renderer already supports the draft's main content through existing fields (`bestFor`, `pros`, `cons`, `verdict`, `source`, `sourceNote`, `availabilityNote`, and `buyingChecklist`). No renderer change appears necessary for a concise version of the draft.
+- Important decision: the existing slug is a combined US/UK guide and product display names currently use Breville BES names with Sage SES UK search identifiers. The new draft is UK-first and Sage-branded. Blindly replacing the names could confuse US links and regional product identity.
+- Recommended safe adaptation: retain the combined guide and use explicit regional display naming (Sage UK SES / Breville US BES), with UK specifications as the primary comparison and a clear regional-variant warning. A separate UK-only guide is an alternative but would create a new SEO/content task.
+- Four product families already exist in the catalogue. Do not import duplicates. Current descriptive identifiers remain search phrases, not ASINs; no direct ASIN or image is approved.
+- **No implementation was performed:** no JSON, Astro page, affiliate helper, images, routes, metadata, deployment, Cloudflare, DNS or indexing was changed.
+
+**Next gate:** owner approval of the combined-market adaptation approach before editing the existing product records. Publication and production release remain separate approvals.
