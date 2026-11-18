@@ -82,3 +82,13 @@ The latest authoritative Cloudflare notes and dashboard inspection establish:
 4. Resolve or document the picomatch security exception and complete manual accessibility contrast review.
 5. Continue exact-model US/UK catalogue review and owner editorial approval; verify Amazon account/link readiness and image rights.
 6. Prepare a production release checklist and rollback plan. Request explicit approval before connecting or deploying the production Pages project or removing any crawl protection.
+
+
+## Fast follow-up — live preview content inspection
+
+- Read the currently open live preview homepage at https://smartpickhub-preview.pages.dev/ (no settings or content changed).
+- The page is rendering the expected SmartPickHub Astro homepage and links to the guide index, RSS and affiliate disclosure.
+- The homepage clearly labels featured guides as "Research draft — requires human review before publication" and shows the research-library counts (25 guides / 100 product entries). This is appropriate for a noindex preview, but it is not publication-ready copy for production.
+- The homepage contains image elements for featured guide covers. The approved product-photo count remains zero; do not describe these cover illustrations as product photography.
+- No additional automated tests were run in this follow-up, in line with the request to avoid unnecessary testing. No application changes were made.
+- Production hostname was not changed; no deployment, merge, indexing or DNS action was performed.
