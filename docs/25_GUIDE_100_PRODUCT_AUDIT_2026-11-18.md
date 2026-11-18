@@ -126,3 +126,22 @@ Legend:
 1. Apply a practical editorial pass across all 25 guides, focusing on clarity, obvious errors, broken links and material safety/compatibility issues rather than exhaustive regional SKU parity.
 2. Run CI on the updated catalogue head and inspect the result.
 3. Prepare a consolidated release candidate and concise launch checklist for owner review; keep all public release actions gated on explicit approval.
+
+
+## 19 November 2026 — Practical editorial cleanup batch 1
+
+- Owner gave advance approval to continue the implementation work. This authorises ongoing development-branch content and documentation corrections within the agreed UK-first scope; it does not override the standing release safeguards for merge, public deployment, indexing, Pinterest publishing or production configuration.
+- Re-read the live `src/data/products.json` on `automation/bootstrap` before editing. Confirmed 25 guides / 100 product records and all 100 records retain a source URL, UK identifier and US identifier.
+- Removed 39 instances of the repeated generic positive bullet “Manufacturer documentation provides a model-family reference for checking the exact regional configuration.” and 49 instances of the repeated generic caution “Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents.” These statements added no product-specific value. No product was left with an empty pros or cons array; the minimum remaining count is one bullet per field, and many retain several.
+- Updated catalogue `lastResearched` date to 2026-11-19. No product names, product claims, source URLs, marketplace identifiers, affiliate destinations, image metadata or publication flags were changed in this batch.
+- Data cleanup commit: `5727e5d414ed34db491a5b4e7220b9c1f84566dc`.
+- CI #683 (run ID `44398134402`) was created for that exact commit and was queued/pending at the last check. It has not yet been confirmed successful.
+- Earlier CI #681 (run ID `44397730335`) was in progress for the previous documentation/policy head and does not validate this content cleanup.
+- Catalogue remains 25 drafts / 100 products; zero guides approved, zero product images approved. No publication, merge, production deployment, indexing or Pinterest action occurred.
+
+### Next actions
+1. Recheck CI #683 and inspect job outcome; resolve any failures before more catalogue edits.
+2. Continue practical editorial cleanup of the 25 guides, prioritising material inaccuracies, outdated/discontinued items, vague verdicts, readability and UK buying usefulness. Avoid exhaustive US/UK parity checks.
+3. Where a product is clearly legacy/discontinued or unsuitable as a current-buy recommendation, replace or reframe only when the source supports the change; do not invent current stock or prices.
+4. Recheck affiliate link construction and generated guide pages after data edits. Keep product imagery in the approved/licensed workflow.
+5. Update handoff and launch-readiness checklist; keep PR #1 Draft/open/unmerged and production/indexing/Pinterest gated for explicit release approval.
