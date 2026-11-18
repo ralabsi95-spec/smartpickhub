@@ -87,7 +87,6 @@ Sources:
 - NVD: https://nvd.nist.gov/vuln/detail/CVE-2026-112366
 
 
-
 ## 8. Cloudflare dashboard re-check (2026-11-18 08:24 UTC)
 
 Read-only inspection of the currently open Cloudflare Workers & Pages account dashboard confirms three separate resources:
@@ -97,3 +96,11 @@ Read-only inspection of the currently open Cloudflare Workers & Pages account da
 3. **Workers service `smartpickhub`** — a different resource from the Pages project, shown with "Latest build failed" and "No active routes". Do not confuse this Worker with the Pages production project; no action is needed on it for the Pages cutover unless a separate architecture decision is made.
 
 No Cloudflare setting, repository integration, DNS record, deployment, route, or indexing policy was changed during this inspection. This observation supersedes earlier assumptions that the Worker and Pages project are one resource; they are distinct dashboard entries.
+
+## 9. Branch-head and preview-deployment correlation (2026-11-18 08:28 UTC)
+
+- GitHub's branch history confirms the current `automation/bootstrap` head is `9dda898ff24b9c4c1b28c45f6fb6e806e5061e1e` (`docs: record latest Cloudflare resource state`, 2026-11-18 08:24:15 UTC).
+- That head changes only `docs/PRODUCTION_CUTOVER_RUNBOOK.md`; it is a documentation commit, not the NAS/Oral-B/Roborock content change named in the Cloudflare deployment list.
+- A direct commit search for the exact deployment description did not return a matching commit. The Cloudflare account-list view exposes the deployment description and age but not its exact source SHA. Therefore the preview deployment SHA and its relationship to the branch head remain **unverified**.
+- No deployment was triggered and no Cloudflare setting was changed. Do not infer that the preview is at `9dda898` merely because it is the branch head.
+- Next safe action: inspect the individual `smartpickhub-preview` deployment detail in Cloudflare and record its source commit SHA, then compare that SHA with the GitHub branch history before deciding whether a fresh preview build is needed.
