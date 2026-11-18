@@ -162,3 +162,14 @@ Legend:
 2. Continue practical UK-first editorial review, particularly current-buy status and material electrical/compatibility issues.
 3. Inspect rendered pages and final affiliate URLs on preview; keep noindex/robots protections in place.
 4. Prepare launch candidate and approval checkpoint; public release still requires explicit release approval.
+
+
+## 19 November 2026 — Projector guide UK model corrections
+
+- Replaced the US EF21 legacy record in guide #20 with the UK-listed Epson EF-21G Mini Laser Projector, UK SKU V11HB35340. Updated UK identifier, source URL, pros, cons, verdict and source note. Epson UK lists Full HD, 1,000-lumen white/colour output, 3LCD laser, Google TV, Bluetooth speakers, up to 150-inch display, 2.3kg and 100–240V input. Epson UK lists EF-21G in stock; the EF-21W page is marked discontinued, so the variants are explicitly distinguished.
+- Source: https://www.epson.co.uk/en_GB/products/projector/home-cinema/epson-ef-21g%2C-mini-laser-projector%2C-1%2C000-lumens%2C-up-to-150-inch-display%2C-google-tv%E2%84%A2-and-bluetooth-speaker%2C-portable/p/46374 .
+- Data commit: `c64145e14d07686b1c54b34c645c3e097ac9d909`.
+- Catalogue still contains 25 guides / 100 products; all records retain source URL and UK/US marketplace identifiers. All products retain non-empty pros and cons.
+- No prices or guaranteed retailer stock are displayed; source stock labels are recorded only as point-in-time evidence.
+- CI #681 and #683 remain cancelled during overlapping PR workflow activity. No complete successful CI run has been observed for the latest catalogue commits. Obtain a clean full run before declaring the release candidate validated.
+- No publication approval, merge, production deployment, indexing or Pinterest publishing occurred.
