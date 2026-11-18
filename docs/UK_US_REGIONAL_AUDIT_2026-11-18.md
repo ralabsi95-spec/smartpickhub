@@ -51,8 +51,8 @@ These are source-region flags, not proof that the product is unavailable in the 
 - Garmin UK Mini 3 page: https://www.garmin.com/en-GB/p/pn/010-02899-10/
 - Logitech UK Ergo product catalogue and K860 page (see URLs above).
 - Epson UK CO-FH02 page (see URL above).
-- Epson UK EF-21G page: https://www.epson.co.uk/en_GB/products/projector/home-cinema/epson-ef-21g-mini-laser-projector/p/46374
-- Epson UK EF-21W page: https://www.epson.co.uk/en_GB/products/projector/home-cinema/epson-ef-21w-mini-laser-projector/p/46371
+- Epson UK EF-21G page: https://www.epson.co.uk/en_GB/products/projector/home-cinema/epson-ef-21g%2C-mini-laser-projector%2C-1%2C000-lumens%2C-up-to-150-inch-display%2C-google-tv%E2%84%A2-and-bluetooth-speaker%2C-portable/p/46374
+- Epson UK EF-21W page: https://www.epson.co.uk/en_GB/products/projector/home-cinema/epson-ef-21w%2C-mini-laser-projector%2C-1%2C000-lumens%2C-up-to-150-inch-display%2C-google-tv%E2%84%A2-and-bluetooth-speaker%2C-portable/p/46371
 
 ## Next action
 Continue the 69-record queue by priority:
