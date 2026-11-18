@@ -244,3 +244,11 @@
 - No importer, database, queue, API, image pipeline, production deployment or publishing was implemented by this documentation change.
 - CI speed improvement: Lighthouse now audits representative templates (homepage desktop/mobile, guide index, disclosure and one guide) instead of re-running Lighthouse across every near-identical guide route. Smoke tests and axe checks still cover all generated routes. This reduces redundant Lighthouse runtime without dropping route-level smoke/accessibility coverage.
 - PR #1 remains Draft/open/unmerged; preview remains noindex/nofollow and crawl-disallowed. No production/DNS/WordPress changes.
+
+
+## 18 November 2026 — Intake automation implementation
+- Implemented first safe product intake component: CSV/JSON dry-run importer at `scripts/import-products.mjs`.
+- Added `npm run import:self-test` and `npm run import:dry-run -- --input ./products.csv`.
+- The importer validates required identity fields, UK/US market, HTTPS source, deterministic candidate ID, exact-name and in-batch duplicates, and outputs JSON/CSV reports. It does not mutate the catalogue or publish.
+- Added importer self-test to CI. Awaiting workflow verification for this commit.
+- Still planned: persistent staging/review UI, evidence collector, keyword evidence, image rights workflow, safe batch approval/rollback, database/search architecture.

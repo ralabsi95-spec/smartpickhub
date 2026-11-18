@@ -18,7 +18,9 @@
     "images": "node scripts/generate-pinterest-images.mjs",
     "indexnow": "node scripts/ping-indexnow.mjs",
     "audit:images": "node scripts/audit-product-images.mjs",
-    "research:commons": "node scripts/research-commons-images.mjs"
+    "research:commons": "node scripts/research-commons-images.mjs",
+    "import:dry-run": "node scripts/import-products.mjs",
+    "import:self-test": "node scripts/import-products.mjs --self-test"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",

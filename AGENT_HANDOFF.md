@@ -542,3 +542,11 @@ Continue product catalogue audit (regional US/UK models, official sources, obsol
 - CI optimization: Lighthouse samples representative templates only; smoke tests and axe continue to cover all generated routes. This avoids repeated Lighthouse runs on near-identical guide pages.
 - Latest branch commit before this checkpoint: `71b6fb85c7a57e638489c319c24b1f8c59389f74`. CI #530 (push) and #531 (PR) were still in progress at checkpoint; inspect current head/runs before relying on results.
 - No merge, production deployment, DNS change, public indexing, content publication, paid integration, or WordPress edit is authorized.
+
+
+## 18 November 2026 — Product intake importer component
+- Added `scripts/import-products.mjs` on `automation/bootstrap`; dry-run only, accepts CSV/JSON, validates minimum identity/market/source fields, deterministic candidate IDs, exact-name and batch duplicate flags, and writes JSON + CSV reports under `test-reports/`.
+- Commands: `npm run import:self-test`; `npm run import:dry-run -- --input ./products.csv`.
+- Importer never mutates `src/data/products.json`, never publishes and does not verify remote listing availability. ASIN candidates are untrusted until manual verification.
+- CI runs importer self-tests before catalogue validation.
+- Must inspect CI #534/#535 for this commit before calling the importer validated. No PR merge, production deploy, DNS, indexing or content publication.

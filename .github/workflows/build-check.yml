@@ -32,6 +32,8 @@ jobs:
           npm audit --json > test-reports/npm-audit.json || echo "npm audit reported findings; inspect the JSON report."
       - name: Astro type and content checks
         run: npm run check
+      - name: Test product intake dry-run importer
+        run: npm run import:self-test
       - name: Validate catalogue and affiliate destinations
         run: npm run validate
       - name: Generate keyword research universe

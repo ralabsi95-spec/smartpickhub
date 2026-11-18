@@ -265,3 +265,25 @@ A product is ready for editorial approval only when it has a stable identity, ve
 - Current product-image records remain empty unless separately verified.
 - Current keyword universe contains generated candidate phrases only; do not describe them as measured successful keywords.
 - No paid services, external APIs, public publishing, production deployment, DNS changes, PR merge or WordPress changes are authorized by this playbook.
+
+
+## 16. Implemented first intake component — 18 November 2026
+
+**Implemented on the development branch:** `scripts/import-products.mjs`.
+
+Commands:
+- `npm run import:self-test` — parser and safety self-tests; no input file or catalogue write.
+- `npm run import:dry-run -- --input ./products.csv` — accepts CSV or JSON candidate batches and creates:
+  - `test-reports/product-import-dry-run.json`
+  - `test-reports/product-import-errors.csv`
+
+Safety properties:
+- Dry-run only. The script never writes to `src/data/products.json`, never publishes, and never changes the approved catalogue.
+- 20 MB and 100,000-row input limits; CSV quoted fields supported; JSON array or `products` array supported.
+- Required brand/model/market/source URL checks; UK/US market allowlist; HTTPS source requirement.
+- Deterministic candidate IDs; exact catalogue-name/model match and within-batch duplicate flags.
+- ASIN-shaped candidates remain explicitly unverified and require human verification before direct-link use.
+- Invalid rows are reported with row-level reasons. Fuzzy matches are not auto-merged.
+- The importer does not fetch remote URLs or claim that a source/listing is live.
+
+**Not yet implemented:** a persistent staging database, visual review UI, manufacturer source verification, keyword-volume integrations, image-rights approval workflow, bulk commit/rollback, or production publication. This is the first safe intake component, not a complete product automation platform.
