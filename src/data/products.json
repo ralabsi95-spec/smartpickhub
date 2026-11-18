@@ -2092,75 +2092,91 @@
     },
     {
       "slug": "home-printers-us-uk",
-      "title": "Home and Small-Office Printers: Laser, Colour and All-in-One Choices",
+      "title": "Home and Small-Office Printers: UK Buying Guide to Colour and Mono Laser Models",
       "category": "Printers & Office Equipment",
       "publishedAt": "2026-11-16",
-      "summary": "Compare compact laser printers and multifunction devices by colour needs, duplexing, scanning, networking and consumable costs.",
+      "summary": "Compare UK-focused Brother laser and LED printers for home offices and small businesses, including colour or mono output, duplex printing, scanning, networking and toner costs.",
       "introduction": "Printer purchase price is only one part of total cost. Compare toner/ink yield, drum and waste components, duplex printing and scanning, ADF capacity, wired/wireless networking, paper sizes and regional consumables. Check the exact voltage and suffix for US versus UK variants.",
       "editorialStatus": "Research draft — requires human review before publication.",
       "products": [
         {
-          "name": "Brother MFC-L8395CDW Colour Laser All-in-One Printer",
+          "name": "Brother MFC-L8390CDW Colour LED All-in-One Printer",
           "bestFor": "Small offices needing colour printing, copying, scanning and fax in one device.",
           "us_identifier": "Brother MFC-L8395CDW Colour Laser All-in-One Printer",
-          "uk_identifier": "Brother MFC-L8390CDW UK 220-240V colour LED all-in-one printer",
+          "uk_identifier": "Brother MFC-L8390CDW",
           "pros": [
-            "Brother lists duplex print/scan/copy, Gigabit Ethernet, dual-band wireless and a 50-sheet ADF."
+            "Prints up to 30 pages per minute in mono and colour on the UK specification",
+            "Supports duplex printing and duplex scanning, with a 50-sheet 2-sided ADF",
+            "Gigabit Ethernet, 5GHz Wi-Fi and USB connectivity"
           ],
           "cons": [
-            "Larger than a basic home printer; colour toner, drum and waste components create ongoing costs."
+            "Large office-oriented multifunction device; check desk space and paper handling needs",
+            "Colour toner, drum, belt and waste-toner components contribute to ongoing running costs",
+            "Check the exact toner bundle and page yields included by the retailer"
           ],
-          "verdict": "A business-oriented colour multifunction option where duplex scanning and networking matter.",
-          "source": "https://www.brother-usa.com/p/laser-printers/MFCL8395CDW",
-          "sourceNote": "Brother's official US product page documents 31ppm colour/mono print, duplex print/scan, a 50-sheet ADF, Gigabit Ethernet and dual-band Wi-Fi. The US page specifies 110–120V AC.",
+          "verdict": "A UK-focused colour multifunction option for small offices that need duplex scanning, networking and fax. Check the exact bundle and consumable costs before buying.",
+          "source": "https://store.brother.co.uk/devices/laser/mfc/mfcl8390cdw",
+          "sourceNote": "Brother UK's MFC-L8390CDW page lists up to 30ppm mono/colour, duplex print, duplex scan up to 56 images per minute, a 50-sheet 2-sided ADF, Gigabit Ethernet and 5GHz Wi-Fi. UK electrical rating: 220–240V AC, 50/60Hz. Confirm the retailer's toner bundle and exact warranty.",
           "availabilityNote": "The cited MFC-L8395CDW page is the US electrical variant (110–120V AC). Brother UK lists the distinct MFC-L8390CDW with 220–240V AC input; it is a regional counterpart, not the identical model number. Verify features, consumables and warranty against the UK listing before purchase. UK source: https://store.brother.co.uk/devices/laser/mfc/mfcl8390cdw."
         },
         {
-          "name": "Brother MFC-L3780CDW Colour Laser All-in-One Printer",
+          "name": "Brother MFC-L3740CDW Colour LED All-in-One Printer",
           "bestFor": "Small workgroups needing colour multifunction capability and network sharing.",
           "us_identifier": "Brother MFC-L3780CDW Colour Laser All-in-One Printer",
-          "uk_identifier": "Brother UK colour laser all-in-one printer 220-240V",
+          "uk_identifier": "Brother MFC-L3740CDW",
           "pros": [
-            "Brother lists up to 31 ppm print speed, duplex copy/scan and dual-band Wi-Fi plus Gigabit Ethernet."
+            "Colour print, copy, scan and fax in one A4 LED multifunction device",
+            "Up to 18ppm mono and colour print speed, with automatic duplex printing",
+            "8.8cm colour touchscreen, 50-sheet ADF, Gigabit Ethernet and 5GHz Wi-Fi"
           ],
           "cons": [
-            "Check toner yields and drum/belt replacement costs; confirm ADF capacity and regional power variant."
+            "Print speed is lower than the MFC-L8390CDW business tier",
+            "Duplex scan speed and paper handling should be matched to the expected workload",
+            "Check the included toner yields and ongoing TN248 replacement costs"
           ],
-          "verdict": "A compact office multifunction option for mixed print and scan tasks.",
-          "source": "https://www.brother-usa.com/p/laser-printers/MFCL3780CDW",
-          "sourceNote": "Brother's official US product page documents 31ppm print, single-pass duplex copy/scan, 50-sheet ADF, Gigabit Ethernet and dual-band Wi-Fi. The US page specifies 110–120V AC.",
+          "verdict": "A more compact UK colour multifunction choice for home offices and small workgroups that need copy, scan and fax without the higher speed tier.",
+          "source": "https://store.brother.co.uk/devices/laser/mfc/mfcl3740cdw",
+          "sourceNote": "Brother UK's MFC-L3740CDW specifications list 18ppm mono/colour, automatic duplex printing, up to 7 sides per minute duplex print, 50-sheet ADF, 8.8cm touchscreen, Gigabit Ethernet and 5GHz Wi-Fi. UK electrical rating: 220–240V AC, 50/60Hz. Verify toner bundle and retailer warranty.",
           "availabilityNote": "The cited MFC-L3780CDW page is the US electrical variant (110–120V AC). This audit has not yet confirmed an exact UK counterpart for this model. Do not buy the US unit for UK/Jordan mains; select only a Brother UK model explicitly rated 220–240V and verify whether its duplex scanning, ADF and networking match. Current UK range: https://www.brother.co.uk/printers/laser-printers/colour-laser-all-in-one."
         },
         {
-          "name": "Brother HL-L3280CDW Colour Laser Printer",
+          "name": "Brother HL-L3240CDW Colour LED Printer",
           "bestFor": "Home offices wanting colour laser printing without a scanner.",
           "us_identifier": "Brother HL-L3280CDW Colour Laser Printer",
-          "uk_identifier": "Brother HL-L3240CDW UK 220-240V colour LED printer",
+          "uk_identifier": "Brother HL-L3240CDW",
           "pros": [
-            "Brother lists up to 27 ppm, a colour touchscreen and dual-band wireless/Gigabit Ethernet."
+            "Print-only colour LED device with automatic duplex printing",
+            "Up to 26ppm mono and colour print speed",
+            "Gigabit Ethernet, 5GHz Wi-Fi and USB connectivity"
           ],
           "cons": [
-            "Print-only model does not scan or copy; toner and paper costs should be compared over expected monthly volume."
+            "Print-only model has no scanner or copier",
+            "One-line LCD is simpler than the touchscreen on multifunction models",
+            "Check the included TN248 toner yields and replacement costs"
           ],
-          "verdict": "A print-focused alternative when an all-in-one scanner is not required.",
-          "source": "https://www.brother-usa.com/p/laser-printers/HLL3280CDW",
-          "sourceNote": "Brother's official US product page documents up to 27ppm colour printing, automatic duplex, dual-band Wi-Fi and Gigabit Ethernet. The US page specifies 110–120V AC.",
+          "verdict": "A straightforward UK colour printer for users who do not need scanning or copying and want wired and wireless network options.",
+          "source": "https://store.brother.co.uk/devices/laser/hl/hll3240cdw",
+          "sourceNote": "Brother UK's HL-L3240CDW page lists up to 26ppm mono/colour, automatic duplex printing up to 10 sides per minute, Gigabit Ethernet, 5GHz Wi-Fi and USB. UK electrical rating: 220–240V AC, 50/60Hz. Confirm the included toner and exact retailer warranty.",
           "availabilityNote": "The cited HL-L3280CDW page is the US electrical variant (110–120V AC). Brother UK lists the distinct HL-L3240CDW with 220–240V AC input. Treat these as regional models, not identical SKUs, and compare print speed, connectivity, consumables and warranty before purchase. UK source: https://store.brother.co.uk/devices/laser/hl/hll3240cdw."
         },
         {
-          "name": "Brother DCP-L2640DW Monochrome Laser Multifunction Printer",
+          "name": "Brother DCP-L2660DW Monochrome Laser Multifunction Printer",
           "bestFor": "Users who mostly print black-and-white documents and need scan/copy functions.",
           "us_identifier": "Brother DCP-L2640DW Monochrome Laser Multifunction Printer",
-          "uk_identifier": "Brother DCP-L2660DW UK 220-240V mono laser multifunction printer",
+          "uk_identifier": "Brother DCP-L2660DW",
           "pros": [
-            "Brother lists this as a wireless compact monochrome laser multifunction model."
+            "Mono laser multifunction device with print, copy and scan",
+            "Up to 34ppm mono printing and automatic duplex print",
+            "50-sheet ADF, 6.8cm colour touchscreen, Ethernet and 5GHz Wi-Fi"
           ],
           "cons": [
-            "No colour printing; verify duplex scanning and ADF features on the exact regional version."
+            "Monochrome-only output does not support colour documents",
+            "No fax function on the DCP-L2660DW",
+            "Check TN2510/TN2510XL toner and drum replacement costs"
           ],
-          "verdict": "A practical document-focused option for homes and small offices.",
-          "source": "https://www.brother-usa.com/p/laser-printers/DCPL2640DW",
-          "sourceNote": "Brother's official US product page documents up to 36ppm monochrome printing, automatic duplex printing, 50-sheet ADF, Ethernet and dual-band Wi-Fi. The US page specifies 110–120V AC.",
+          "verdict": "A practical UK document-focused printer for home offices and small businesses that need fast black-and-white printing with scanning and copying.",
+          "source": "https://store.brother.co.uk/devices/laser/dcp/dcpl2660dw",
+          "sourceNote": "Brother UK's DCP-L2660DW page lists up to 34ppm mono print, automatic duplex printing, print/copy/scan, a 50-sheet ADF, 6.8cm colour touchscreen, Ethernet and 5GHz Wi-Fi. UK electrical rating: 220–240V AC, 50/60Hz. Check toner yield and the separate drum replacement cost.",
           "availabilityNote": "The cited DCP-L2640DW page is the US electrical variant (110–120V AC). Brother UK lists the distinct DCP-L2660DW with 220–240V AC input. Treat these as regional models, not identical SKUs; compare print/scan speed, connectivity, toner family and warranty. UK source: https://store.brother.co.uk/devices/laser/dcp/dcpl2660dw."
         }
       ],
