@@ -573,3 +573,9 @@ Continue product catalogue audit (regional US/UK models, official sources, obsol
 - Production Pages project remains disconnected. Preview freshness for commit `90df53a` was not independently verified in Cloudflare; no deploy/merge/DNS change was performed.
 - PR #1 remains open, Draft and unmerged. Old InfinityFree property is excluded from this project.
 - Full priority gaps and next actions: see `docs/RELEASE_READINESS_AUDIT_2026-11-18.md`.
+
+
+## 18 November 2026 — audit-report correction follow-up
+- First attempt at the consolidated-report fix on commit `a767ad0` exposed a JavaScript syntax error caused by literal newline escape sequences; CI correctly failed `astro check` and the report step. No production or catalogue data was changed.
+- Corrected by moving report-state selection into a normal `overallStatus` variable and assigning that value in the report object. Expected Lighthouse sample count remains five.
+- New commit and CI must be checked before treating this correction as complete. Latest failed run: `44249173209` on `a767ad0`; failure was limited to the audit-report script syntax.

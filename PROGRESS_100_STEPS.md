@@ -268,3 +268,8 @@
 - Security remains review-required for one high picomatch advisory (12 dependency nodes), owner exception approval pending by 2 Dec 2026.
 - 100 products have no approved product imagery; 69 identical US/UK phrases remain for regional review; all 25 guides remain unapproved drafts.
 - Production is not deployed; preview freshness for current head is unverified; PR #1 remains Draft/open/unmerged. Roadmap tally is not recalculated in this review; do not inflate completed count.
+
+
+## 18 November 2026 — audit-report syntax correction
+- Commit `a767ad0` failed CI because the first consolidated-report status expression contained literal escaped newlines. The failure was detected by Astro checks; do not treat it as complete.
+- Replaced that expression with a separate `overallStatus` variable. New CI run is required to verify the corrected report.

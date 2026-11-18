@@ -865,3 +865,9 @@ Build a trustworthy UK-first English-language affiliate buying-guide property, w
 - Added an isolated end-to-end importer test in `scripts/test-import-products.mjs`. It uses a temporary workspace and synthetic data to verify candidate classification, existing-catalogue match, in-batch duplicate, invalid HTTP source, unverified ASIN warning, JSON/CSV reports and catalogue hash preservation.
 - Added command `npm run import:integration-test` and made CI run it before catalogue validation. The new test itself is not yet CI-verified; check the next run on the new branch head.
 - The real catalogue remains unchanged by the test. Importer is still dry-run only; no database/review UI/evidence collector or production publication was introduced.
+
+
+## 18 November 2026 — release audit report correction
+- The review found a stale Lighthouse sample expectation (29 expected vs five intentionally collected) and the audit report did not fail CI for incomplete reports.
+- Commit `a767ad0` attempted the correction but CI caught a JavaScript syntax error from escaped newlines; the failed run was `44249173209`. This is explicitly not treated as a passing change.
+- Follow-up commit separates `overallStatus` into a valid JavaScript variable, retains the five-page sample expectation, surfaces security/manual-accessibility review states, and fails the report step when required automated checks are incomplete.

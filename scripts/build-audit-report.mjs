@@ -76,6 +76,16 @@ const axeStatus = axeSummary?.status ?? (axeFiles.length ? 'partial' : 'missing'
 const lighthouseStatus = lighthousePages.length === expectedLighthousePages ? 'completed' : 'partial';
 const checksPassed = validation?.status === 'passed' && smoke?.status === 'passed' && axeStatus === 'passed' && lighthouseStatus === 'completed';
 
+const overallStatus = !checksPassed
+  ? 'incomplete-or-failed'
+  : vulnerabilitySummary?.total && (axeSummary?.totalIncomplete ?? 0) > 0
+    ? 'quality-passed-security-review-and-manual-accessibility-review-required'
+    : vulnerabilitySummary?.total
+      ? 'quality-passed-security-review-required'
+      : (axeSummary?.totalIncomplete ?? 0) > 0
+        ? 'quality-passed-manual-accessibility-review-required'
+        : 'passed';
+
 const report = {
   schemaVersion: 1,
   generatedAt: new Date().toISOString(),
@@ -116,7 +126,7 @@ const report = {
       packages: vulnerabilities
     }
   },
-  overall: checksPassed\n    ? (vulnerabilitySummary?.total && (axeSummary?.totalIncomplete ?? 0) > 0\n        ? 'quality-passed-security-review-and-manual-accessibility-review-required'\n        : vulnerabilitySummary?.total ? 'quality-passed-security-review-required'\n          : (axeSummary?.totalIncomplete ?? 0) > 0 ? 'quality-passed-manual-accessibility-review-required' : 'passed')\n    : 'incomplete-or-failed'
+  overall: overallStatus
 };
 
 fs.mkdirSync(root, { recursive: true });

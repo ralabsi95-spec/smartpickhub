@@ -81,3 +81,8 @@ The follow-up correction:
 6. Prepare a release checklist for owner sign-off; only then consider merge/deployment/indexing.
 
 **Roadmap tally:** not recalculated by this audit. Keep the last reconciled tally until each numbered step is checked against evidence.
+
+
+## Audit report implementation note
+- The first correction commit `a767ad0` failed CI due to a syntax error in the status expression (literal escaped newlines); this was detected before merge or deployment.
+- A follow-up syntax-safe implementation now uses a separate `overallStatus` variable. Verify the next CI run and inspect `latest-audit.json` before marking the report correction complete.
