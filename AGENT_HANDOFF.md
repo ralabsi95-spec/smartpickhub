@@ -780,3 +780,19 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 2. Make supported corrections in one or more bounded batches, preserving existing records and never inventing ASINs, prices, ratings, stock or image rights.
 3. Run/inspect CI on the resulting branch head; verify PR #1 still points at the intended head and remains Draft/unmerged.
 4. Prepare one consolidated launch-candidate report and list only genuine blockers for owner approval. Publication, merge, production and indexing remain gated on explicit approval.
+
+
+## 19 November 2026 — Practical editorial cleanup batch 1
+
+- Owner gave advance approval to continue implementation work under the UK-first launch direction. Proceed with development-branch catalogue/documentation corrections; this does not authorise merging, public deployment, indexing, Pinterest publication or production setting changes.
+- Re-read current `src/data/products.json`: 25 guides / 100 products, all 100 with a source URL and both marketplace search identifiers.
+- Removed 39 repeated generic pros bullets and 49 repeated generic cons bullets across the catalogue. No product was left with an empty pros/cons field. No product claims, model names, source URLs, identifiers, affiliate destinations, image records or approval states were changed.
+- Updated `lastResearched` to 2026-11-19. Data cleanup commit: `5727e5d414ed34db491a5b4e7220b9c1f84566dc`.
+- CI #683 / run ID `44398134402` was queued/pending for that exact commit at last check; not yet verified successful. CI #681 / run ID `44397730335` relates to the previous head only.
+- All guides remain research drafts; zero guides and zero product images are approved. PR #1 remains Draft/open/unmerged. No release/indexing/Pinterest action.
+
+### Next
+1. Verify CI #683 result.
+2. Continue practical editorial cleanup, especially dated/legacy products, weak verdicts and UK buying usefulness; do not pursue exhaustive US/UK parity.
+3. Recheck generated guide pages and affiliate URL construction.
+4. Record the release candidate and remaining genuine blockers for owner review.
