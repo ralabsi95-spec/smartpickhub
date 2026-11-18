@@ -682,3 +682,29 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 3. Manually assess homepage contrast where axe cannot compute gradient backgrounds.
 4. Build product image candidate provenance/licence/attribution workflow; no Amazon image scraping or auto-approval.
 5. Continue exact UK/US SKU verification and editorial review; keep guides as drafts.
+
+
+## 18 November 2026 — release-readiness handoff (16:07 UTC)
+
+- Verified PR #1 head: `c8785bb4d56b886e51dae7b30220b939ca1c1e83`; branch `automation/bootstrap`; PR remains Draft/open/unmerged.
+- CI #654 / run ID `44342783693` completed successfully. Artifact ID `14444966746` was downloaded and inspected. Workflow artifact metadata is for the exact PR head SHA; its audit JSON identifies synthetic merge commit `58c2c34c96eef2d749600e51e8cc3ae8d48805f9` used only for CI validation.
+- All 19 substantive build-and-audit steps passed. 25 guides / 100 products; 100 US and 100 UK link constructions; 29 smoke-tested HTML pages, zero errors/warnings; 28 axe routes, zero violations, 27 incomplete checks; five Lighthouse samples (desktop home performance 98, mobile home 100, other sampled pages performance 100; all accessibility and best-practices scores 100). SEO 66–69 is expected while preview indexing is blocked.
+- npm audit is still `review-required` for 12 affected dependency nodes linked to one picomatch advisory. Owner-approved temporary exception ends at review date 2 Dec 2026; it is not a fix.
+- Product image audit: 0 approved / 0 pending / 100 without images. All 25 guides remain editorial drafts.
+- Preview safeguards confirmed in CI: noindex true, robots disallow-all true, public publication false.
+- Manual source inspection: `Layout.astro`, `global.css`, homepage and guide-index source checked. Draft status is visible in site copy, but guides are rendered and navigable in the build; do not remove crawl protections or publish before editorial approval.
+- The 27 axe incomplete checks are not confirmed violations. Some relate to contrast evaluation of decorative glyphs; manual contrast review is still required. Do not claim full WCAG conformance.
+- Stable preview hostname remains inaccessible to web inspection; Pages deployment freshness for this exact head is unverified. Production Pages project remains disconnected/unconfigured.
+- No merge, deploy, DNS, Cloudflare production change, publication, indexing, Amazon account modification or crawl-protection removal occurred. InfinityFree remains excluded.
+
+### Next exact actions
+1. Verify Pages deployment for exact current head using read-only deployment evidence; do not change Cloudflare.
+2. Manually assess actual text/background contrast and remediate confirmed defects.
+3. Editorially approve a small launch batch of guides; keep remaining guides drafts.
+4. Validate exact UK/US product identity and live Amazon Associates/account destinations; no invented ASIN, price, stock or rating.
+5. Define compliant image sourcing with provenance/licence/attribution and human approval.
+6. Prepare privacy/analytics, sitemap, Search Console and Pinterest launch checklist; do not activate until authorised.
+7. Check CI for the documentation commits below; CI #654 does not validate later documentation changes.
+
+- CI run: https://github.com/ralabsi95-spec/smartpickhub/actions/runs/44342783693
+- Artifact: `smartpickhub-quality-reports`, ID `14444966746`.
