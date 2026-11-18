@@ -70,20 +70,6 @@ const exceptionReview = uniqueAdvisories.map(item => {
   };
 });
 
-  package: name,
-  severity: item.severity ?? null,
-  direct: item.isDirect ?? false,
-  range: item.range ?? null,
-  fixAvailable: item.fixAvailable ?? null,
-  advisories: (item.via ?? []).filter(via => typeof via === 'object').map(via => ({
-    title: via.title,
-    severity: via.severity,
-    url: via.url,
-    range: via.range,
-    cvss: via.cvss?.score ?? null
-  }))
-}));
-
 const expectedAxeRoutes = guides.length + 3;
 const expectedLighthousePages = guides.length + 4;
 const axeStatus = axeSummary?.status ?? (axeFiles.length ? 'partial' : 'missing');
