@@ -500,3 +500,9 @@ Continue product catalogue audit (regional US/UK models, official sources, obsol
 - Catalogue source-data commit: `8c1090f2eee5382829caaca7f8c6d832f6e89cfa`.
 - Ran 56 explicit catalogue/configuration/keyword-map integrity assertions against the current branch data: 56 passed, zero failed. Coverage included 25/100 counts, uniqueness, draft-only state, content fields, HTTPS sources, affiliate IDs/tags/marketplace hosts, ASIN safeguards, image absence, regional phrase queue (71), 12 keyword clusters and exact model-source patterns.
 - The latest code head and documentation commits have not yet received a fresh full CI run or immutable Pages preview. The last fully verified code remains `f336ac5` / run #477. Verify a new CI run and preview before treating these latest code changes as deployment-tested.
+
+
+## Preview freshness warning — 18 November 2026
+- Stable preview routes for the cordless-drill and dash-cam guides were fetched after commit `8c1090f`; they still show the previous generic shared source URLs. The preview deployment is stale relative to the branch's latest model-specific source edits.
+- Do not tell the owner the exact-source edits are visible on preview. Wait for a new Cloudflare Pages deployment, inspect its immutable URL and verify the affected guide pages before declaring deployment success.
+- Latest source code commit `8c1090f2eee5382829caaca7f8c6d832f6e89cfa`; CI and a matching preview are pending. No production Pages action or DNS change is authorised.
