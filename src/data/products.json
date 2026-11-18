@@ -1063,8 +1063,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A flexible candidate for buyers already invested in the DEWALT 20V MAX platform. Confirm the SKU and battery bundle.",
-          "source": "https://www.dewalt.com/en-us/products/power-tools/drills/drill-drivers",
-          "sourceNote": "DEWALT US lists the DCD801B in its 20V MAX range. DEWALT UK lists separate 18V XR models DCD791NT-XJ and DCD708N-XJ. These are regional candidates, not asserted one-to-one equivalents; compare torque, chuck, dimensions and tool-only/kit contents.",
+          "source": "https://www.dewalt.com/en-us/product/dcd801b/20v-max-xr-brushless-cordless-12-drilldriver-tool-only",
+          "sourceNote": "DEWALT's exact US model page identifies DCD801B as a 20V MAX XR brushless 1/2-in drill/driver, tool-only, with a two-speed transmission and three-position LED. DEWALT UK lists separate 18V XR model numbers; these are regional candidates, not one-to-one equivalents. Compare torque, chuck, dimensions, battery platform and kit contents.",
           "availabilityNote": "The US DCD801B identifier is not a confirmed UK SKU. DEWALT's UK range uses 18V XR naming and separate model numbers. Verify the exact UK model, battery platform, charger, included accessories and warranty before purchase. Official UK examples: https://www.dewalt.co.uk/en-gb/product/dcd791nt-xj/18v-xr-brushless-drill-driver-tool-only and https://www.dewalt.co.uk/en-gb/product/dcd708n-xj/18v-xr-brushless-drill-driver-tool-only."
         },
         {
@@ -1081,8 +1081,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "Compare its compact form with full-size drill-drivers and choose based on access, material and existing batteries.",
-          "source": "https://www.dewalt.com/en-us/products/power-tools/drills/drill-drivers",
-          "sourceNote": "DEWALT UK lists the DCD708N-XJ as an 18V XR compact brushless drill driver. It is a regional candidate, not a verified identical DCD794D1 counterpart; compare torque, dimensions and kit contents.",
+          "source": "https://www.dewalt.com/en-us/product/dcd794d1/20v-max-atomic-brushless-cordless-12-drilldriver-1-20ah-battery",
+          "sourceNote": "DEWALT's exact US DCD794D1 page identifies the ATOMIC 20V MAX brushless 1/2-in kit and lists its included 2.0Ah battery and charger, 404 UWO and compact 5.88-in tool-head length. The UK DCD708N-XJ is a separate regional model, not a verified identical SKU; compare torque, dimensions and kit contents.",
           "availabilityNote": "The US DCD794D1 is a US-market kit identifier. Do not assume the same model number or kit is sold in the UK. DEWALT UK lists DCD708N-XJ as an 18V XR brushless drill driver (tool only); verify battery, charger, torque and included accessories: https://www.dewalt.co.uk/en-gb/product/dcd708n-xj/18v-xr-brushless-drill-driver-tool-only."
         },
         {
@@ -1099,8 +1099,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A straightforward option to compare for routine household jobs and light workshop use.",
-          "source": "https://www.dewalt.com/en-us/products/power-tools/drills/drill-drivers",
-          "sourceNote": "DEWALT UK lists DCD776C1-GB as an 18V XR drill-driver kit. It is a regional model candidate, not an asserted identical DCD777D1 SKU; compare motor type, torque, battery capacity, charger and case.",
+          "source": "https://www.dewalt.com/en-us/product/dcd777d1/20v-max-compact-brushless-drilldriver-kit",
+          "sourceNote": "DEWALT's exact US DCD777D1 page identifies the 20V MAX compact brushless 1/2-in drill/driver kit and states 340 UWO, a two-speed transmission and included 2.0Ah battery/charger. The UK DCD776C1-GB is a different regional model number; verify motor specification and kit contents before comparison.",
           "availabilityNote": "The US DCD777D1 and UK DCD776C1-GB are different regional model numbers. Confirm the motor specification and exact kit contents before comparing; never assume batteries/chargers or model features are identical. UK catalogue: https://www.dewalt.co.uk/en-gb/products/power-tools/drills/drill-drivers."
         },
         {
@@ -1117,8 +1117,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "Consider when access and compactness matter more than using the larger 20V battery platform.",
-          "source": "https://www.dewalt.com/en-us/products/power-tools/drills/drill-drivers",
-          "sourceNote": "DEWALT UK's DCD701N-XJ is a 12V XR brushless drill driver, but it is not described as the same 5-in-1 head system as the US DCD703F1. Do not present it as a feature-equivalent replacement.",
+          "source": "https://www.dewalt.com/en-us/product/dcd703f1/12v-max-5-1-brushless-drilldriver-kit",
+          "sourceNote": "DEWALT's exact US DCD703F1 page confirms a 12V MAX brushless 5-in-1 drill/driver kit with four dedicated attachment solutions, two speeds and 15 clutch settings. The UK DCD701N-XJ is a separate 12V XR drill-driver, not a verified equivalent with the same multi-head system.",
           "availabilityNote": "No exact UK 5-in-1 counterpart for DCD703F1 was confirmed in this pass. DCD701N-XJ is a separate 12V XR drill-driver model, not a verified equivalent. UK source: https://www.dewalt.co.uk/en-gb/product/dcd701n-xj/12v-xr-brushless-drill-driver-tool-only."
         }
       ],
@@ -1676,8 +1676,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A premium compact option for buyers prioritising detailed front-camera footage.",
-          "source": "https://www.garmin.com/en-GB/p/pn/010-02899-10/",
-          "sourceNote": "Garmin UK lists X310 as 4K Ultra HD; its model comparison distinguishes it from X210 (1440p), X110 (1080p) and Mini 3 (1080p). This is a UK manufacturer product page; confirm exact package, microSD card, power cable and parking-mode accessories for each Amazon marketplace listing."
+          "source": "https://www.garmin.com/en-US/p/1391409/",
+          "sourceNote": "Garmin's exact US product page identifies the Dash Cam X310 as a 4K touchscreen camera with a 140-degree field of view and built-in Clarity polarizer. Confirm the local package, microSD card, power cable and parking-mode accessories for the selected marketplace."
         },
         {
           "name": "Garmin Dash Cam X210",
@@ -1692,8 +1692,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "Compare with the X310 if 4K is not essential to the buyer's requirements.",
-          "source": "https://www.garmin.com/en-GB/p/pn/010-02899-10/",
-          "sourceNote": "Garmin UK lists X210 at 1440p; X110 and Mini 3 are 1080p, while X310 is 4K Ultra HD. This is a UK manufacturer product page; confirm exact package, microSD card, power cable and parking-mode accessories for each Amazon marketplace listing."
+          "source": "https://www.garmin.com/en-US/p/1033231/",
+          "sourceNote": "Garmin's exact US product page identifies the Dash Cam X210 as a 1440p camera with a 140-degree field of view and built-in Clarity polarizer. Confirm the local package, microSD card, power cable and parking-mode accessories for the selected marketplace."
         },
         {
           "name": "Garmin Dash Cam X110",
@@ -1708,8 +1708,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A simpler X-series candidate when core recording matters more than flagship specifications.",
-          "source": "https://www.garmin.com/en-GB/p/pn/010-02899-10/",
-          "sourceNote": "Garmin UK lists X110 at 1080p with a 2.4-inch display; X210 is 1440p and X310 is 4K Ultra HD. This is a UK manufacturer product page; confirm exact package, microSD card, power cable and parking-mode accessories for each Amazon marketplace listing."
+          "source": "https://www.garmin.com/en-US/p/1222949/",
+          "sourceNote": "Garmin's exact US product page identifies the Dash Cam X110 as a 1080p camera with a 140-degree field of view and built-in Clarity polarizer. Confirm the local package, microSD card, power cable and parking-mode accessories for the selected marketplace."
         },
         {
           "name": "Garmin Dash Cam Mini 3",
@@ -1724,8 +1724,8 @@
             "Do not compare advertised figures across brands without checking the manufacturer's test method and bundle contents."
           ],
           "verdict": "A discreet option for buyers who prefer minimal windshield obstruction.",
-          "source": "https://www.garmin.com/en-GB/p/pn/010-02899-10/",
-          "sourceNote": "Garmin UK lists Mini 3 at 1080p with a 140-degree field of view and no display; X110 is also 1080p but has a 2.4-inch display. This is a UK manufacturer product page; confirm exact package, microSD card, power cable and parking-mode accessories for each Amazon marketplace listing."
+          "source": "https://www.garmin.com/en-US/p/1223369/",
+          "sourceNote": "Garmin's exact US product page identifies the Dash Cam Mini 3 as an ultracompact 1080p camera with a 140-degree field of view and built-in Clarity polarizer. Its screenless design differs from the X110; confirm local package, microSD card, power cable and parking-mode accessories."
         }
       ],
       "buyingChecklist": [
