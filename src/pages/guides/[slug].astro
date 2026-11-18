@@ -85,7 +85,7 @@ const jsonLd = JSON.stringify(structuredData).replace(/</g, '\\u003c');
       {guide.editorialStatus && <p class="disclosure">{guide.editorialStatus}</p>}
       {guide.introduction && <p class="guide-introduction">{guide.introduction}</p>}
       <figure class="guide-cover">
-        <img src={coverImage} alt={'Original SmartPickHub editorial cover for ' + guide.title} width="1000" height="1500" fetchpriority="high" decoding="async" />
+        <img src={coverImage} alt={'Original SmartPickHub editorial cover for ' + guide.title} width="720" height="1080" fetchpriority="high" decoding="async" />
         <figcaption>Original editorial cover generated from this guide’s title and summary. It is an illustration, not a product photograph.</figcaption>
       </figure>
     </header>
