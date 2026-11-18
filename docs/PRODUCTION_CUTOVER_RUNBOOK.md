@@ -312,3 +312,22 @@ GitHub Actions run #619 (`44272436670`) was triggered for catalogue commit `515a
 - Do not infer that the catalogue validation or build passed from the JSON parse/re-fetch check. The file was syntactically valid JSON and the four expected product records were confirmed, but the repository's scripted validation remains unverified.
 
 **Decision:** record CI as incomplete/failed, not passed. Do not modify dependencies or suppress audit findings as part of this editorial change. Next, diagnose the workflow cancellation and audit baseline separately, then run targeted catalogue validation and build checks on the same branch. No deployment or production action was performed.
+
+
+## 20. CI cancellation root-cause analysis and clean rerun (2026-11-18)
+
+The workflow definition at `.github/workflows/build-check.yml` uses this concurrency policy:
+
+```yaml
+concurrency:
+  group: smartpickhub-quality-${{ github.event_name }}-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
+```
+
+Run #619 was triggered by the catalogue commit `515a24a0cdcb064d180c5e066636adc15f85d2f8`. The subsequent runbook documentation commit `6d6f248e5655930f1eb58b1cfc2fd8cc10300619` updated the same PR branch and triggered another pull-request workflow in the same concurrency group. GitHub's `cancel-in-progress: true` policy therefore cancelled the earlier run while `npm ci` was executing. The cancellation is not evidence that the catalogue edit caused an npm installation failure.
+
+The run did complete the audit-capture and report-upload steps. Its partial audit reported 12 high vulnerabilities (0 critical); the quality checks after dependency installation were skipped. This remains a security-review item, not a pass.
+
+**Action:** the present runbook-only commit triggers a fresh PR workflow after the prior run has completed. Avoid additional commits to this PR branch until the new run finishes, otherwise the concurrency policy will cancel it again. Do not change the workflow concurrency policy or dependency versions merely to avoid this cancellation.
+
+**Scope:** documentation-only; no application, catalogue, dependency, preview, production, DNS or deployment changes.
