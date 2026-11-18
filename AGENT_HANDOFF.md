@@ -481,3 +481,13 @@ Continue product catalogue audit (regional US/UK models, official sources, obsol
 - Relevant commits: `0e6d68f` (seven source records), `948c7d6` (three Sony comparison records), `6697ea7` (roadmap), `b0557bc` (master log).
 - No guide is approved; no product photo is populated; all image sourcing remains subject to the rights-first policy.
 - Latest full CI pass is still #372 on `81d49bc`; no full CI or Pages preview is confirmed for the latest source/image changes.
+
+
+## 18 November 2026 — Current continuation handoff
+- Latest fully audited code commit: `f336ac5fb954b03dc1411051f53d92b7bbd5a1c3`; CI run #477 (`44115712224`) completed successfully and artifact `14343891465` was reviewed.
+- All 29 Lighthouse pages: Performance 100, Accessibility 100, Best Practices 100; SEO 66–69 intentionally reflects preview noindex/crawl-blocking. axe: 28 routes, zero violations, 28 incomplete gradient contrast calculations only; no remaining guide-filter ARIA warning. npm audit: zero vulnerabilities across 362 dependencies. Catalogue 25/100; zero guides approved; zero real product images; 71 matching US/UK search phrases remain review flags.
+- WebP cover delivery has proven performance improvement: prior guide-index Performance 76, latest all pages 100. Preview for `f336ac5`: `https://d8a304d5.smartpickhub-preview.pages.dev/`.
+- Subsequent refinement head `8bb6cb67cb0bacd8452dbe8e05170ee30fdb3cb4` aligns HTML dimensions with 720×1080 WebP and extends smoke tests. Its CI/preview are pending; verify before further changes.
+- Current source review confirms 100/100 products have HTTPS manufacturer source URLs across 50 hostnames; five sets of repeated manufacturer pages are used for product families (DEWALT drills, Roborock store, Garmin Dash Cam family, Synology comparison, Oral-B iO comparison) and should be reviewed for model-level specificity, not automatically rejected.
+- Keep branch `automation/bootstrap`; PR #1 Draft/open/unmerged; all guides draft-only; noindex/nofollow and robots disallow remain mandatory. Production Pages stays disconnected. InfinityFree remains permanently excluded. No WordPress/DNS/production/publishing changes without explicit owner approval.
+- Next: confirm CI and preview for `8bb6cb6`; then review repeated source pages for exact model-level specificity and manually resolve the contrast audit; continue 100-product US/UK lifecycle and compatibility checks.
