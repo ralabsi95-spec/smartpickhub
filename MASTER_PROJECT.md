@@ -906,3 +906,22 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Cloudflare's PR bot recorded a failed build for commit `5294826` under its Workers/service preview-build endpoint and provided no deployment URL. This is **not** evidence that the separate Cloudflare Pages preview successfully deployed or failed. Latest Pages preview freshness therefore remains unverified; do not treat the stable preview hostname as updated to this commit.
 - No product records, affiliate URLs, guide content, images or publication flags were changed in this batch. No merge, production deployment, DNS change, publication, indexing or crawl-protection change occurred.
 - Existing open gates remain: picomatch high-severity advisory requires owner security review (deadline 2 Dec 2026); gradient contrast checks require manual review; all 25 guides remain drafts; 100 products have no approved product images; Amazon account/live listing validity remains unverified.
+
+
+## Follow-up evidence — Garmin X210 and Epson EF-30 (18 November 2026)
+
+### Garmin Dash Cam X210 — UK compliance evidence, commercial SKU still open
+- Garmin UK X110 page explicitly lists X210 in the UK product family and describes it as a 1440p model, but does not expose an X210-specific UK part number or individual sales page: https://www.garmin.com/en-GB/p/1222949/ .
+- Garmin's UK Declaration of Conformity identifies model B04684 / Dash Cam X210 and was revised 31 July 2025: https://static.garmin.com/pumac/Dash%20Cam%20x210_DoC-UK.pdf . This is strong evidence of UK regulatory conformity, not proof of UK retail listing, commercial SKU or current stock.
+- Garmin support comparison confirms the X210 model feature family and resolution; exact product package contents remain subject to the SKU: https://support.garmin.com/en-US/enUS/?faq=K5Kkj7NNG59OMjVi1NwIl5 .
+- Decision: keep X210 exact UK sales SKU marked unverified. Do not invent a part number or treat the UK DoC as a sales listing.
+
+### Epson EF-30 — exact UK manufacturer listing not located
+- Targeted search of Epson UK did not return an exact EF-30 product page or UK SKU. This does not prove the model is unavailable; it means this audit cannot confirm a UK commercial identity or stock state.
+- Decision: retain EF-30 as unverified for UK. Do not infer an EF-30 UK SKU from another EF-series model or retailer text alone. Revisit only with an exact Epson UK page or documented UK retailer SKU and manufacturer spec cross-check.
+
+### Current CI state after documentation batch
+- Documentation commits were pushed to `automation/bootstrap`; the latest head at this check is `576e11163361bec06b5dafdda243841a5adab40d`.
+- PR CI run #573 / ID `44257057465` is in progress on that exact SHA. Do not call this documentation batch CI-verified until the run completes.
+- The preceding code/documentation commit `5294826` did pass push CI run #564 / ID `44252571083` (all 19 main steps successful).
+- No catalogue edits, merge, deployment, publishing, DNS or indexing changes were made.
