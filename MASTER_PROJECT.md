@@ -1017,3 +1017,19 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 3. Continue human accessibility contrast review and select an initial small editorial batch for substantive review.
 4. Establish current Cloudflare preview deployment SHA using an authorized read-only dashboard/session; do not change settings.
 5. Keep production cutover gated on content, images, affiliate destination, privacy/analytics and explicit owner authorization.
+
+## 18 November 2026 — CI #664 verified on latest documentation head (20:07 UTC)
+
+- Current branch head: `ecc2498386e3ed8012161d3460951fb242ef8bf9` on `automation/bootstrap`; commit message: `docs: handoff latest CI and release blockers`.
+- GitHub Actions PR-triggered run #664 / ID `44386731142` completed successfully on this exact head. Artifact metadata confirms `head_branch=automation/bootstrap` and `head_sha=ecc2498386e3ed8012161d3460951fb242ef8bf9`.
+- The `build-and-audit` job succeeded; all 19 substantive steps completed successfully: locked dependency install, npm audit capture, Astro checks, importer tests, catalogue/affiliate validation, keyword generation, static build, smoke tests, axe, Lighthouse, consolidated report and artifact upload.
+- Artifact `smartpickhub-quality-reports`, ID `14467226284`, was created at 20:05:55 UTC (1,720,936 bytes; expires 2 Dec 2026). Artifact contents have not yet been downloaded/inspected in this checkpoint; do not infer its detailed audit metrics from the job success alone.
+- This confirms CI on the latest branch head, superseding the earlier “no run for documentation head” status. It does not establish a Cloudflare Pages deployment for this SHA.
+- PR #1 remains open/Draft/unmerged. No merge, production deploy, Cloudflare/DNS/indexing change, guide publication, Amazon account change or production action occurred. InfinityFree remains excluded.
+- Existing launch gates remain: preview deployment SHA unverified; 25 guides remain drafts / zero approved; 100 products have no approved product photos; manual contrast review remains open; Amazon live account and exact product destinations remain unverified; temporary picomatch advisory watch review deadline remains 2 Dec 2026.
+
+### Next actions
+1. Obtain read-only Cloudflare Pages deployment evidence for exact head `ecc2498`; do not alter settings.
+2. Download and inspect artifact `14467226284` before recording its detailed quality/security metrics.
+3. Continue manual contrast review and evidence-backed editorial/SKU verification; do not change publication flags.
+4. Keep PR merge and production release gated on explicit owner approval.
