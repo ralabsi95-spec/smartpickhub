@@ -110,3 +110,29 @@ Continue the 69-record queue by priority:
 - Apple UK store page confirms UK A20 Pro configurations and UK availability from 6 November 2026. The model is therefore not a US-only/invalid model; replace the older US-only source reference with current UK Apple material during a separately approved catalogue edit.
 - Official UK sources: https://www.apple.com/uk/shop/buy-ipad/ipad-mini/128gb-starlight-wifi-standard-glass and https://www.apple.com/uk/newsroom/2026/10/apple-gives-ipad-mini-its-biggest-update-ever/
 - This correction demonstrates why regional and model-year claims must be rechecked against current manufacturer pages before changing catalogue data.
+
+
+## Follow-up evidence — Logitech gaming mice and Synology DS224+ (18 November 2026, 07:10 UTC)
+
+### Logitech G gaming mice — UK manufacturer pages confirmed
+The gaming-mice guide's three Logitech models that previously pointed to US pages now have matching UK-region manufacturer evidence:
+- PRO X2 SUPERSTRIKE: Logitech G UK product page https://www.logitechg.com/en-gb/shop/p/pro-x2-superstrike-mouse — UK page displays the model, £159.99 at the time checked, and in-stock/ready-to-ship status. The Haptic Inductive Trigger System (HITS) is described on the product page. Treat price and stock as volatile; this audit records only the observed page state, not a permanent availability claim.
+- PRO X SUPERLIGHT 2: Logitech G UK product page https://www.logitechg.com/en-gb/shop/p/pro-x2-superlight-wireless-mouse — UK page identifies the model and states 60g; colour/edition-specific page variants exist, so verify exact colour/SKU before using a retailer link.
+- G502 X PLUS: Logitech G UK product page https://www.logitechg.com/en-gb/shop/p/g502-x-plus-wireless-lightforce.910-007808 — UK page identifies the product, LIGHTFORCE hybrid switches, LIGHTSPEED wireless and LIGHTSYNC RGB. A second colour/SKU page also exists; do not conflate the SKUs.
+- UK gaming-mice category page lists all three models in the UK storefront: https://www.logitechg.com/en-gb/shop/c/gaming-mice .
+Decision: UK product identity and manufacturer-page support are now confirmed for all three. Exact regional part number/colour package and software/receiver details still need a per-variant check. These findings are evidence only; no catalogue records were edited.
+
+### Synology DS224+ — UK-region evidence strengthened; current supply mixed
+- Synology UK download centre has a model-specific DS224+ page and current DSM download listing: https://www.synology.com/en-uk/products/DS224%2B .
+- Synology UK Store currently labels its refurbished DS224+ offer sold out; this is not evidence that all new retail stock is unavailable: https://www.synology.com/en-uk/store .
+- UK reseller evidence is mixed but includes listings showing stock: LambdaTek lists DS224+ with 7 units at the time checked (https://www.lambda-tek.com/shop/?catid=932&region=GB); Ballicom lists 2 units (https://www.ballicom.co.uk/manufacturers/synology/?filters%5Battributes%5D%5B0%5D=58069&filters%5Bcategories%5D%5B%2Fhardware%2Fstorage-memory%2Fnetwork-storage%2Fnas%2F%5D=591&page=1&page_count=100&sort=price-asc). These are volatile reseller stock snapshots, not Synology warranty confirmation.
+- Synology's official product specification PDF was updated 6 August 2026 and identifies DS224+; the model has 2 drive bays, Intel Celeron J4125, 2GB memory and 100–240V AC input (manufacturer spec): https://global.download.synology.com/download/Document/Hardware/ProductSpec/DiskStation/24-year/DS224%2B/enu/Product_Spec_DS224%2B_enu.pdf . The official UK-region launch announcement states 2-year warranty, extendable to 4 years in select regions, but exact UK warranty entitlement must be checked by seller/serial and region.
+Decision: retain DS224+ as a UK-market model, but do not state universal current stock or a UK warranty period without retailer/serial confirmation. Also assess newer successor models before treating DS224+ as a lead recommendation.
+
+## CI and preview status correction — 18 November 2026, 07:10 UTC
+- Branch head remains `5294826a594590d1dc46fa95bbbb7c9dead3779e` on `automation/bootstrap`.
+- GitHub Actions run #564 / ID `44252571083` completed successfully on this exact SHA. All 19 main job steps passed, including locked dependency install, dependency audit capture, Astro checks, importer self-test, importer isolated integration test, catalogue/affiliate validation, static build, smoke tests, axe audit, Lighthouse samples, consolidated audit and artifact upload.
+- PR #1 remains open, Draft, unmerged.
+- Cloudflare's PR bot recorded a failed build for commit `5294826` under its Workers/service preview-build endpoint and provided no deployment URL. This is **not** evidence that the separate Cloudflare Pages preview successfully deployed or failed. Latest Pages preview freshness therefore remains unverified; do not treat the stable preview hostname as updated to this commit.
+- No product records, affiliate URLs, guide content, images or publication flags were changed in this batch. No merge, production deployment, DNS change, publication, indexing or crawl-protection change occurred.
+- Existing open gates remain: picomatch high-severity advisory requires owner security review (deadline 2 Dec 2026); gradient contrast checks require manual review; all 25 guides remain drafts; 100 products have no approved product images; Amazon account/live listing validity remains unverified.
