@@ -211,3 +211,18 @@ Amazon search results can surface accessories, replacement parts, older variants
 - The guide remains research draft / not approved for publication. Preview remains noindex.
 
 No application source, product JSON, affiliate helper, images, Cloudflare settings, production resource, DNS, indexing state or live deployment was modified.
+
+
+## 14. Existing product-image workflow review (2026-11-18)
+
+Inspected the existing image-related scripts without running imports or modifying assets:
+
+- `scripts/audit-product-images.mjs` checks image URL, source page, alt text, licence, attribution, rights basis, review status and verification date. It only considers an image render-approved when metadata is complete and `reviewStatus: "approved"`; it explicitly warns that metadata completeness is not legal clearance.
+- `scripts/research-commons-images.mjs` queries Wikimedia Commons, records source/author/licence metadata and classifies CC0/public-domain as commercial-reuse candidates, CC BY as attribution/manual-review candidates, and CC BY-SA as share-alike/manual-review candidates. It marks every result candidate-only and requires exact model and rights review; it does not auto-publish.
+- The guide renderer displays product photography only when `image.reviewStatus === "approved"` and an image URL exists. Otherwise it shows the transparent "Product photo under verification" placeholder. This is the correct fail-closed behaviour.
+- Sage product-page Open Graph images were observed during this audit, but public visibility is not a licence. No evidence of permission for commercial reuse was established, so those images must not be copied into the site as approved product photographs.
+- A Wikimedia Commons search hit is not automatically a photograph of the exact model or a legally cleared commercial asset. Each candidate must be checked on its original file page for exact model/variant, licence terms, attribution, share-alike obligations, and non-copyright restrictions. No candidate was imported or approved during this session.
+
+**Image decision for the espresso pilot:** keep all four product-image slots in pending/placeholder state until an exact-model image with documented commercial-use rights is found. If no suitable lawful image exists, use an original editorial illustration that is clearly labelled as an illustration rather than presenting it as a product photograph.
+
+No image search script was run, no image file was downloaded, no product image metadata was changed, and no assets were published.
