@@ -796,3 +796,19 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 2. Continue practical editorial cleanup, especially dated/legacy products, weak verdicts and UK buying usefulness; do not pursue exhaustive US/UK parity.
 3. Recheck generated guide pages and affiliate URL construction.
 4. Record the release candidate and remaining genuine blockers for owner review.
+
+
+## 19 November 2026 — UK-first printer/projector corrections
+
+- Guide #25 now uses UK-listed Brother models MFC-L8390CDW, MFC-L3740CDW, HL-L3240CDW and DCP-L2660DW for UK searches and manufacturer sources. These pages confirm UK electrical rating 220–240V AC, 50/60Hz. The US search identifiers retain the previous US model phrases as secondary marketplace searches. The guide title and summary are UK-first.
+- Guide #20 Epson CO-FH02 record corrected to a UK-listed product (SKU V11HA85040); Epson UK lists Full HD 1080p, 3,000 lumens, 3LCD and Android TV. Removed the incorrect discontinued status; no price or guaranteed stock claim is made.
+- Data commits: `0609a73eb8af1517c21c0eb76aed09e3b8e361af` and `3bb10606a361ed5136d75dbfdc187074b8f5a8b6`.
+- Latest catalogue check: 25 guides / 100 products, all with source URLs and UK/US identifiers; no empty pros/cons arrays.
+- CI #681 and #683 were cancelled during overlapping PR runs, not passed. A full successful CI run on the latest content head is still required.
+- No guide approvals, merge, production deployment, indexing, Pinterest publishing or image approvals.
+
+### Next
+1. Secure one complete CI pass on the latest PR head without overlapping commits.
+2. Continue practical UK-first editorial review and current-buy checks.
+3. Verify rendered preview and affiliate URLs while preview remains noindex.
+4. Present a consolidated release candidate for explicit release approval.
