@@ -3,11 +3,12 @@
     "purpose": "Research-led buying guide catalogue for US and UK shoppers.",
     "status": "research-draft-unapproved",
     "lastResearched": "2026-11-17",
-    "marketStrategy": "Serve both US and UK shoppers with separate Amazon marketplace links.",
-    "identifierPolicy": "Identifiers below are exact model-name search phrases, not ASINs. The affiliate URL helper therefore creates marketplace search URLs. Replace with a direct ASIN only after verifying the exact product and marketplace.",
-    "editorialPolicy": "Manufacturer specifications and product documentation inform factual feature summaries. Pros and considerations are editorial analysis, not hands-on testing, user-review aggregation, rankings, price claims or availability claims.",
+    "marketStrategy": "UK-first launch. Prioritise useful UK buying guidance and Amazon UK search destinations; US marketplace fields are optional secondary support and do not require exhaustive model-by-model regional parity.",
+    "identifierPolicy": "Identifiers are product/model search phrases, not ASINs. Affiliate links use marketplace search URLs unless an exact product ASIN and destination have been verified. Never invent ASINs, live prices, ratings, stock or seller claims.",
+    "editorialPolicy": "Practical editorial guidance based on available manufacturer/product information. Keep claims proportionate to evidence; avoid hands-on testing claims, fabricated rankings, current price/availability claims, and unsafe electrical or compatibility advice. Minor regional differences do not block a guide; clearly material safety, voltage, plug, battery-platform or compatibility differences must not be misrepresented.",
     "publicationPolicy": "Do not treat these research drafts as approved editorial content. Preview remains noindex.",
-    "productCount": 100
+    "productCount": 100,
+    "marketPriority": "UK primary; US secondary where useful. No exhaustive UK/US SKU equivalence audit is required for launch."
   },
   "guides": [
     {
