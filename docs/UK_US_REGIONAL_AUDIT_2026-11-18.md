@@ -19,7 +19,7 @@ The four Garmin records (X310, X210, X110 and Mini 3) currently cite US-region G
 - Garmin UK Mini 3 page: https://www.garmin.com/en-GB/p/pn/010-02899-10/ — part number 010-02899-10.
 - Garmin UK comparison page identifies the X110, X210, X310 and Mini 3 product family and their resolution distinctions: https://support.garmin.com/en-GB/
 - UK retailer search results list all four models, including X210 and X310, but retailer evidence should not replace exact manufacturer SKU evidence.
-Action: before changing records, locate exact UK Garmin product URLs/part numbers for X210 and X310, then replace the four US-only source references with the corresponding UK pages where available. Verify package contents (microSD, power cable, parking-mode accessories) by regional SKU.
+Additional evidence check (18 Nov): Garmin UK support resolves X310 part number 010-02860-00 (https://support.garmin.com/en-GB/?partNumber=010-02860-00&tab=manuals), while the Garmin Canada product page identifies the same X310 part number (https://www.garmin.com/en-CA/p/pn/010-02860-00/). Garmin UK product page for X110 confirms the X-series model family but is not an individual X210/X310 product URL. A UK Declaration of Conformity exists for X210 (https://static.garmin.com/pumac/Dash%20Cam%20x210_DoC-UK.pdf), proving UK regulatory documentation, not current UK stock or an exact UK sales SKU. Therefore X310 part number is corroborated by UK support, but X210 exact UK sales SKU and product page remain unconfirmed. Action: retain the current catalogue data as unapproved until exact UK commercial SKU/page is established. Verify package contents (microSD, power cable, parking-mode accessories) by regional SKU; Garmin support explicitly notes microSD is not included for X110/X210/X310/Mini 3 (https://support.garmin.com/en-AU/?faq=mr26cy19u79JQgWJ0EtpM9).
 
 ### 2. Logitech ergonomic products: UK catalogue support exists
 The first guide has four identical US/UK phrases and currently US-only manufacturer sources. Logitech UK catalogue pages show UK-market availability/catalogue entries for MX Vertical, Lift, MX Ergo S and ERGO K860:
@@ -64,3 +64,11 @@ Continue the 69-record queue by priority:
 ## Status
 - Executed: read-only audit of all 100 records; 69 identical US/UK identifier strings identified; first high-risk source clusters researched.
 - Not executed: no catalogue edits, Amazon listing verification, live ASIN confirmation, product-image sourcing, guide approval, publication or deployment.
+
+
+## Follow-up evidence — Garmin UK (18 November 2026)
+- X110: UK product page identifies part number 010-02900-10 and confirms X110/X210/X310/Mini 3 model family.
+- X310: UK Garmin support page identifies part number 010-02860-00; the same part number appears on Garmin's Canada product page. This is cross-checkable model identity, but not proof of UK retail stock.
+- X210: UK Declaration of Conformity confirms a UK compliance document for model X210; exact UK sales part number and live UK product listing remain unverified.
+- Package caution: Garmin support says microSD is not included for X110, X210, X310 and Mini 3. This must be reflected accurately in product comparison content.
+- Decision: do not modify catalogue identifiers yet. We have reliable UK source material for X110/X310 support and X210 regulatory status, but not a complete exact UK SKU+commercial page set for all four models.
