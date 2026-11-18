@@ -1755,19 +1755,23 @@
           "sourceNote": "Epson's official US page identifies model V11HC43920 and lists Full HD 1080p, 350 lumens, built-in Google TV and Dolby Audio. This is a US manufacturer source; an exact UK regional SKU and current UK availability have not yet been verified. Do not assume regional bundle, electrical rating, warranty or app availability are identical."
         },
         {
-          "name": "Epson EpiqVision Flex CO-FH02 Smart Portable Projector",
-          "bestFor": "Users seeking a portable Full HD projector with an included streaming device.",
+          "name": "Epson CO-FH02 Full HD Smart Projector",
+          "bestFor": "Users seeking a Full HD home projector with built-in Android TV and high stated brightness.",
           "us_identifier": "Epson EpiqVision Flex CO-FH02 Smart Portable Projector",
           "uk_identifier": "Epson EpiqVision Flex CO-FH02 Smart Portable Projector",
           "pros": [
-            "Epson lists Full HD 1080p, 3,000 lumens and an Android TV streaming stick for this model."
+            "Full HD 1080p resolution with 3,000-lumen white and colour light output",
+            "3LCD projection technology and built-in Android TV",
+            "UK manufacturer listing shows the model available through Epson UK; confirm retailer stock and warranty at purchase"
           ],
           "cons": [
-            "The included streaming stick and model bundle should be checked by region; it is not a battery-powered projector."
+            "Not battery-powered; requires mains power during use",
+            "Larger and less travel-focused than compact battery projectors",
+            "Check the streaming app support and included accessories for the exact retailer bundle"
           ],
-          "verdict": "A brighter portable option where mains power is available.",
-          "source": "https://epson.com/For-Home/Projectors/Streaming-Entertainment/EpiqVision%C2%AE-Flex-CO-FH02-Full-HD-1080p-Smart-Portable-Projector/p/V11HA85020",
-          "sourceNote": "Epson's official product listing identifies the CO-FH02 as discontinued in the regional catalogue. Treat this as a legacy comparison candidate, not a current-buy recommendation; confirm remaining stock, warranty, support and regional bundle before any publication. The US model page lists Full HD 1080p and 3,000 lumens; regional SKU V11HA85040 is shown on Epson Middle East's discontinued page."
+          "verdict": "A mains-powered Full HD option for brighter rooms than small battery projectors can typically handle. Epson UK currently lists the CO-FH02; check the retailer's bundle and warranty.",
+          "source": "https://www.epson.co.uk/en_GB/products/projector/home-cinema/co-fh02/p/35475",
+          "sourceNote": "Epson UK's CO-FH02 product page identifies UK SKU V11HA85040 and lists Full HD 1080p, 3,000-lumen brightness, 3LCD technology and Android TV. The UK product page currently shows the model as in stock; live retailer stock can change. It is mains-powered, not a battery projector."
         }
       ],
       "buyingChecklist": [
