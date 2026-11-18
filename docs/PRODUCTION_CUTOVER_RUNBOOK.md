@@ -242,3 +242,15 @@ A separate editorial working draft has been created at `docs/EDITORIAL_DRAFT_ESP
 - **Change boundary:** Only documentation files were added/updated. `src/data/products.json`, guide rendering, application source, images, affiliate helper, Cloudflare settings, DNS, production resources and indexing were not changed. No deployment was triggered.
 
 **Next action:** obtain the owner's editorial review of the draft. Only after explicit approval may a separate change be proposed to transfer approved copy into the guide catalogue. Direct ASIN links and product images remain separate verification/rights gates.
+
+
+## 16. Espresso pilot image and Amazon destination re-check (2026-11-18)
+
+A separate research record was added: `docs/ESPRESSO_IMAGE_AND_AFFILIATE_VERIFICATION.md`.
+
+- Model-specific Wikimedia Commons searches for SES500, SES870, SES878 and SES985 returned generic coffee scenes, barista photographs or internal machine-component photographs; no exact-model product image was identified. No image was downloaded or approved. Keep the four product-image placeholders.
+- Amazon UK candidate pages were re-fetched. The previous Bambino Plus, Barista Express, Barista Pro and Oracle Jet candidates did not provide a currently verifiable new-product offer suitable for approval. Alternative exact-family Bambino and Barista Pro candidates also had no featured offers / delivery restrictions or were unavailable. The Oracle Jet result remains an Amazon Renewed listing and unavailable; no new exact UK Oracle Jet offer was verified.
+- **Decision:** approve no direct ASIN. Retain existing UK Amazon search links, with the understanding that they are search destinations, not confirmed product listings. UK tracking ID remains `smartpickhubu-21`.
+- No image assets, product records, affiliate URLs/helper, guide pages, publication state, Cloudflare configuration, DNS, production deployment or indexing settings were changed.
+
+**Next action:** continue the guide-readiness review without altering production. A direct-link or image change requires its own positive evidence and review; publication still requires explicit owner authorization.
