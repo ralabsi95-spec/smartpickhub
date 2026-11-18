@@ -808,3 +808,12 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Subsequent dimension and smoke-test refinement currently at `8bb6cb67cb0bacd8452dbe8e05170ee30fdb3cb4`: WebP HTML attributes now match actual 720×1080 derivatives; CI and preview for this new head remain pending.
 - Catalogue snapshot: 25 guides / 100 products, none approved; 100 manufacturer source URLs across 50 hosts; no product-image records; 71 identical US/UK search phrases flagged for manual review. Repeated generic/family source URLs remain targeted review candidates.
 - Preserve all safety boundaries: no PR merge, production deployment, DNS change, public publishing/indexing, WordPress change, or removal of noindex/robots without explicit owner approval. InfinityFree is permanently excluded.
+
+
+## 18 November 2026 — Exact model-source audit batch
+- Replaced generic DEWALT drill-category references with exact official US model pages for DCD801B, DCD794D1, DCD777D1 and DCD703F1. Updated each source note with the manufacturer-confirmed kit/platform details and retained explicit warnings that UK model numbers/battery systems are regional candidates, not automatic equivalents.
+- Replaced the shared Garmin dash-cam source with exact official model pages for X310 (4K), X210 (1440p), X110 (1080p) and Mini 3 (ultracompact 1080p). Notes retain regional package/accessory verification caveats.
+- Source pages were fetched and checked against model titles and manufacturer descriptions before the catalogue edit. No manufacturer product images were downloaded or added.
+- Catalogue source-data commit: `8c1090f2eee5382829caaca7f8c6d832f6e89cfa`.
+- Ran 56 explicit catalogue/configuration/keyword-map integrity assertions against the current branch data: 56 passed, zero failed. Coverage included 25/100 counts, uniqueness, draft-only state, content fields, HTTPS sources, affiliate IDs/tags/marketplace hosts, ASIN safeguards, image absence, regional phrase queue (71), 12 keyword clusters and exact model-source patterns.
+- The latest code head and documentation commits have not yet received a fresh full CI run or immutable Pages preview. The last fully verified code remains `f336ac5` / run #477. Verify a new CI run and preview before treating these latest code changes as deployment-tested.
