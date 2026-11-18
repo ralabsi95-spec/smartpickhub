@@ -145,3 +145,20 @@ Legend:
 3. Where a product is clearly legacy/discontinued or unsuitable as a current-buy recommendation, replace or reframe only when the source supports the change; do not invent current stock or prices.
 4. Recheck affiliate link construction and generated guide pages after data edits. Keep product imagery in the approved/licensed workflow.
 5. Update handoff and launch-readiness checklist; keep PR #1 Draft/open/unmerged and production/indexing/Pinterest gated for explicit release approval.
+
+
+## 19 November 2026 — UK-first corrections: printers and projector
+
+- **Printer guide (#25):** replaced four US 110–120V product recommendations with UK-listed Brother models: MFC-L8390CDW, MFC-L3740CDW, HL-L3240CDW and DCP-L2660DW. The UK search identifiers and source URLs now point to the matching UK models; US identifiers retain the previous US model phrases as secondary marketplace searches. Updated the guide title and summary to UK-first. Manufacturer UK pages confirm 220–240V AC, 50/60Hz and the respective print/scan/network features.
+- Official sources used: MFC-L8390CDW https://store.brother.co.uk/devices/laser/mfc/mfcl8390cdw ; MFC-L3740CDW https://store.brother.co.uk/devices/laser/mfc/mfcl3740cdw ; HL-L3240CDW https://store.brother.co.uk/devices/laser/hl/hll3240cdw ; DCP-L2660DW https://store.brother.co.uk/devices/laser/dcp/dcpl2660dw .
+- **Projector guide (#20):** corrected Epson CO-FH02 from “discontinued” to UK-listed product. Updated its product name, UK manufacturer source, pros/cons and verdict. Epson UK lists SKU V11HA85040, Full HD 1080p, 3,000 lumens, 3LCD, Android TV and current UK listing availability. Source: https://www.epson.co.uk/en_GB/products/projector/home-cinema/co-fh02/p/35475 . Do not display live price or guarantee stock; retailer availability can change.
+- Data commits: printer correction `0609a73eb8af1517c21c0eb76aed09e3b8e361af`; projector correction `3bb10606a361ed5136d75dbfdc187074b8f5a8b6`.
+- Revalidated catalogue structure after these edits: 25 guides / 100 products; all 100 retain source URL and both market identifiers; no empty pros/cons arrays.
+- CI #681 (run ID `44397730335`) and #683 (run ID `44398134402`) were cancelled during overlapping PR workflow activity. On #681, type/content checks, importer tests, catalogue/affiliate validation, keyword generation, static build, smoke tests, axe and desktop/mobile Lighthouse completed successfully before cancellation during representative template Lighthouse. #683 was cancelled during Astro type/content checks. Neither is a passing full CI result for the current head. A complete successful run on the latest content head remains required.
+- No guide approval, merge, production deploy, indexing, Pinterest publishing or image approval occurred.
+
+### Next actions
+1. Obtain one complete successful CI run on the current PR head; avoid overlapping commits while it runs.
+2. Continue practical UK-first editorial review, particularly current-buy status and material electrical/compatibility issues.
+3. Inspect rendered pages and final affiliate URLs on preview; keep noindex/robots protections in place.
+4. Prepare launch candidate and approval checkpoint; public release still requires explicit release approval.
