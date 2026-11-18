@@ -226,3 +226,19 @@ Inspected the existing image-related scripts without running imports or modifyin
 **Image decision for the espresso pilot:** keep all four product-image slots in pending/placeholder state until an exact-model image with documented commercial-use rights is found. If no suitable lawful image exists, use an original editorial illustration that is clearly labelled as an illustration rather than presenting it as a product photograph.
 
 No image search script was run, no image file was downloaded, no product image metadata was changed, and no assets were published.
+
+
+## 15. UK espresso pilot editorial draft (2026-11-18)
+
+A separate editorial working draft has been created at `docs/EDITORIAL_DRAFT_ESPRESSO_UK.md`.
+
+- **Status:** Draft only; not approved for publication.
+- **Scope:** UK-first comparison of Sage Bambino Plus SES500, Barista Express SES870, Barista Pro SES878 and Oracle Jet SES985.
+- **Evidence:** The draft links the four Sage GB product pages and four official UK manuals. It records the documented workflow/features and model-family UK electrical ratings, and distinguishes factual manufacturer claims from editorial interpretation.
+- **Editorial safeguards:** It explicitly states that the guide is research-led and not hands-on testing. It contains no live prices, ratings, stock claims or performance ranking.
+- **Affiliate status:** No candidate ASIN was approved or inserted. Existing catalogue search links remain the safe fallback until exact new UK listings, active offers and sellers are re-verified.
+- **Image status:** No product images were approved or copied. The current pending-image placeholder remains the required behaviour until commercial-use rights are documented.
+- **Review still required:** Human claim review against full manuals and exact suffixes; confirm accessories, dimensions, warranty and retailer listing details; desktop/mobile review; explicit editorial approval.
+- **Change boundary:** Only documentation files were added/updated. `src/data/products.json`, guide rendering, application source, images, affiliate helper, Cloudflare settings, DNS, production resources and indexing were not changed. No deployment was triggered.
+
+**Next action:** obtain the owner's editorial review of the draft. Only after explicit approval may a separate change be proposed to transfer approved copy into the guide catalogue. Direct ASIN links and product images remain separate verification/rights gates.
