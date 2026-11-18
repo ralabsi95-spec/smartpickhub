@@ -68,3 +68,21 @@ If a release causes errors:
 ## 6. Change log
 
 - 2026-11-18: Runbook created as documentation only. No Cloudflare settings, DNS, repository application code, content, products, deployment, or indexing settings were changed.
+
+
+## 7. Dependency advisory assessment (2026-11-18)
+
+A read-only inspection of the current `automation/bootstrap` `package-lock.json` found two installed picomatch copies:
+
+- `picomatch@4.0.7` at `node_modules/picomatch`, reached directly through the dependency ranges of `@astrojs/internal-helpers@0.13.2`, `astro@7.4.12`, `tinyglobby@0.2.17`, and `vite@8.3.8`.
+- `picomatch@2.3.2` at `node_modules/anymatch/node_modules/picomatch`, required by `anymatch@3.1.3`.
+
+The GitHub advisory GHSA-fc5q-39xc-vjpf / CVE-2026-112366 describes a high-severity ReDoS in picomatch through 4.0.7. The advisory was updated on 2026-11-17; available public advisory records currently do not state a patched version. The issue is therefore not safely remediated by simply changing the lockfile to another currently published picomatch release.
+
+**Decision:** Do not apply an npm override, force a package version, or run a broad dependency update at this stage. Such a change could violate upstream dependency expectations and would not establish a fixed version. Keep the finding open, restrict exposure of any feature that evaluates attacker-controlled glob patterns, and re-check the upstream advisory/maintainer fix before choosing a compatible remediation. The dependency tree inspection did not install packages, modify `package.json`, modify `package-lock.json`, or run tests.
+
+Sources:
+- GitHub Advisory: https://github.com/advisories/GHSA-fc5q-39xc-vjpf
+- Upstream picomatch issue: https://github.com/micromatch/picomatch/issues/247
+- NVD: https://nvd.nist.gov/vuln/detail/CVE-2026-112366
+
