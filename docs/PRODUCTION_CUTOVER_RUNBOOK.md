@@ -86,3 +86,14 @@ Sources:
 - Upstream picomatch issue: https://github.com/micromatch/picomatch/issues/247
 - NVD: https://nvd.nist.gov/vuln/detail/CVE-2026-112366
 
+
+
+## 8. Cloudflare dashboard re-check (2026-11-18 08:24 UTC)
+
+Read-only inspection of the currently open Cloudflare Workers & Pages account dashboard confirms three separate resources:
+
+1. **Pages preview project `smartpickhub-preview`** — listed with the `smartpickhub-preview.pages.dev` hostname and GitHub repository `ralabsi95-spec/smartpickhub`. The dashboard showed a recent deployment description: "Replace generic family sources with exact model pages for NAS, Oral-B and Roborock" (listed as about 1 hour old at inspection). This is evidence of a recent preview deployment, but this dashboard list alone does not establish the exact deployed commit SHA or whether all branch-head changes are deployed.
+2. **Pages production project `smartpickhub`** — listed separately with `smartpickhub.pages.dev` and the status "No Git connection". This remains the intended production Pages project with no verified source connection.
+3. **Workers service `smartpickhub`** — a different resource from the Pages project, shown with "Latest build failed" and "No active routes". Do not confuse this Worker with the Pages production project; no action is needed on it for the Pages cutover unless a separate architecture decision is made.
+
+No Cloudflare setting, repository integration, DNS record, deployment, route, or indexing policy was changed during this inspection. This observation supersedes earlier assumptions that the Worker and Pages project are one resource; they are distinct dashboard entries.
