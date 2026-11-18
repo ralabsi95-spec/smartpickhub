@@ -817,3 +817,8 @@ Build a trustworthy English-language affiliate buying-guide property for US and 
 - Catalogue source-data commit: `8c1090f2eee5382829caaca7f8c6d832f6e89cfa`.
 - Ran 56 explicit catalogue/configuration/keyword-map integrity assertions against the current branch data: 56 passed, zero failed. Coverage included 25/100 counts, uniqueness, draft-only state, content fields, HTTPS sources, affiliate IDs/tags/marketplace hosts, ASIN safeguards, image absence, regional phrase queue (71), 12 keyword clusters and exact model-source patterns.
 - The latest code head and documentation commits have not yet received a fresh full CI run or immutable Pages preview. The last fully verified code remains `f336ac5` / run #477. Verify a new CI run and preview before treating these latest code changes as deployment-tested.
+
+
+## 18 November 2026 — Preview freshness warning
+- The stable preview's cordless-drill and dash-cam routes were checked after the model-source update and still render the old manufacturer source links. Treat the preview as stale relative to branch commit `8c1090f`; do not claim these updates are visible until a new immutable Pages deployment is confirmed.
+- Preview noindex/nofollow remains present. No production connection, deployment, DNS, indexing or publishing changes occurred.
