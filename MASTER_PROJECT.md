@@ -27,7 +27,7 @@ Build a trustworthy UK-first English-language affiliate buying-guide property, w
 - Isolated Cloudflare Pages preview: https://smartpickhub-preview.pages.dev/ (project `smartpickhub-preview`, branch `automation/bootstrap`). This remains separate from the approved MVP production origin.
 - Current Astro catalogue contains 25 research-draft guides and 100 product records; none is approved for publication. Existing WordPress products were not imported and must not be duplicated.
 - RSS endpoint is generated only from guides explicitly approved for publication; it may remain empty while all guides are drafts.
-- JSON-LD is limited to Article metadata; no unverified Product/Review ratings are emitted.
+- JSON-LD includes Article and ItemList/Product identity structure; no unverified prices, offers, ratings or reviews are emitted.
 
 ## Automation safety
 - Scheduled workflow, when added, must create reviewable drafts only.
@@ -871,3 +871,12 @@ Build a trustworthy UK-first English-language affiliate buying-guide property, w
 - The review found a stale Lighthouse sample expectation (29 expected vs five intentionally collected) and the audit report did not fail CI for incomplete reports.
 - Commit `a767ad0` attempted the correction but CI caught a JavaScript syntax error from escaped newlines; the failed run was `44249173209`. This is explicitly not treated as a passing change.
 - Follow-up commit separates `overallStatus` into a valid JavaScript variable, retains the five-page sample expectation, surfaces security/manual-accessibility review states, and fails the report step when required automated checks are incomplete.
+
+
+## 18 November 2026 — release-readiness review final result
+- Latest verified branch commit: `3f49a59ed44c8385ce41b63e94365e4c6161fda1`; push CI `44249569378` and PR CI `44249577388` both passed.
+- Artifact `14403925308` consolidated result: `quality-passed-security-review-and-manual-accessibility-review-required`. Five Lighthouse samples are correctly recognized; the former 29-vs-5 report mismatch is fixed and incomplete reports now fail CI.
+- Quality evidence: 25 guides / 100 products; 29 smoke pages with zero errors/warnings; 28 axe routes, zero violations / 27 incomplete contrast checks; all five Lighthouse samples 100 Performance, Accessibility and Best Practices; SEO 66–69 while indexing is blocked.
+- Outstanding: one high picomatch advisory across 12 dependency nodes, owner exception pending; 100 products without imagery; 69 identical US/UK phrases for manual regional review; zero guides approved; no analytics or verified conversion reporting in the current repository.
+- Production remains disconnected, preview freshness for this commit unknown, PR #1 Draft/unmerged. No launch or publication performed.
+- Full prioritised blockers and continuation sequence are in `docs/RELEASE_READINESS_AUDIT_2026-11-18.md`.

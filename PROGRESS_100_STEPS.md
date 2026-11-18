@@ -273,3 +273,10 @@
 ## 18 November 2026 — audit-report syntax correction
 - Commit `a767ad0` failed CI because the first consolidated-report status expression contained literal escaped newlines. The failure was detected by Astro checks; do not treat it as complete.
 - Replaced that expression with a separate `overallStatus` variable. New CI run is required to verify the corrected report.
+
+
+## 18 November 2026 — audit-report fix verified
+- Latest head `3f49a59ed44c8385ce41b63e94365e4c6161fda1`; push CI `44249569378` and PR CI `44249577388` both Success.
+- Artifact `14403925308` confirms 5/5 Lighthouse samples, consolidated status `quality-passed-security-review-and-manual-accessibility-review-required`, 0 axe violations and 27 manual contrast checks incomplete.
+- Report generation now fails CI when required checks are missing/incomplete; this closes the stale 29-vs-5 sample-count defect.
+- Security exception remains pending owner approval. No production deployment, PR merge, publication, indexing or preview freshness claim.

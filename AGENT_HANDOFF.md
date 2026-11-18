@@ -1,6 +1,6 @@
 # SmartPickHub – Agent Handoff (READ THIS FIRST)
 
-**Last verified:** 18 November 2026 06:01 UTC; latest branch CI push + PR runs passed on commit `90df53a`; audit report expectation bug identified and being corrected  
+**Last verified:** 18 November 2026 06:15 UTC; branch push + PR CI passed on commit `3f49a59`; consolidated audit status verified from artifact  
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `automation/bootstrap`  
 **Pull request:** [#1 – Draft Astro foundation and safe content workflow](https://github.com/ralabsi95-spec/smartpickhub/pull/1)  
@@ -579,3 +579,15 @@ Continue product catalogue audit (regional US/UK models, official sources, obsol
 - First attempt at the consolidated-report fix on commit `a767ad0` exposed a JavaScript syntax error caused by literal newline escape sequences; CI correctly failed `astro check` and the report step. No production or catalogue data was changed.
 - Corrected by moving report-state selection into a normal `overallStatus` variable and assigning that value in the report object. Expected Lighthouse sample count remains five.
 - New commit and CI must be checked before treating this correction as complete. Latest failed run: `44249173209` on `a767ad0`; failure was limited to the audit-report script syntax.
+
+
+## 18 November 2026 — Full review final verification (06:15 UTC)
+- Latest branch head: `3f49a59ed44c8385ce41b63e94365e4c6161fda1`.
+- Both latest workflows passed on this exact commit: push run `44249569378`; PR run `44249577388`.
+- Inspected quality artifact `smartpickhub-quality-reports` ID `14403925308`. Consolidated result is `quality-passed-security-review-and-manual-accessibility-review-required` (not a clean security audit).
+- Consolidated audit defect is fixed: expected Lighthouse sample count is five, actual five, status completed. The report step now exits non-zero if required automated checks are missing/incomplete.
+- Final artifact: 25 guides / 100 products; 29 HTML smoke pages, zero errors/warnings; 28 axe routes, zero violations, 27 incomplete contrast checks; five Lighthouse pages, all Performance/Accessibility/Best Practices 100, SEO 66–69 due noindex; robots disallow-all and noindex verified.
+- Security: npm audit reports 12 high affected dependency nodes tracing to one picomatch advisory (CVSS 7.5); no patched upstream release listed in the inspected artifact. Temporary exception remains pending owner approval, deadline 2 Dec 2026.
+- Product readiness: 0 approved product images, 0 pending image candidates, 100 without photos; 69 identical US/UK search phrases remain for manual regional review. All 25 guides remain unapproved drafts.
+- Production Pages remains disconnected; current public preview deployment was not verifiable via the available browser check, so its freshness for this commit is unknown. PR #1 remains open/Draft/unmerged. No production deploy, merge, DNS, indexing, publishing or legacy-site change.
+- Continue from `docs/RELEASE_READINESS_AUDIT_2026-11-18.md`; first next task is verify current preview deployment and start the UK regional SKU/evidence review. No need to repeat the CI/report bug investigation.
