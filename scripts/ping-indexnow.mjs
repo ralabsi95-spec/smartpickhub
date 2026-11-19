@@ -104,7 +104,7 @@ if (/Disallow:\s*\/\s*(?:\\r?\\n|$)/i.test(liveRobots)) skip('the live productio
 if (/<meta[^>]+name=["']robots["'][^>]+content=["'][^"']*noindex/i.test(liveHome)) {
   skip('the live production homepage still contains a noindex directive.');
 }
-const liveNestedSitemaps = parseLocs(liveSitemapIndex).filter((url) => /sitemap[^/]*\.xml(?:$|\\?)/i.test(url));
+const liveNestedSitemaps = parseLocs(liveSitemapIndex).filter((url) => /sitemap[^/]*\.xml(?:$|\?)/i.test(url));
 const liveSitemapPages = new Set(liveNestedSitemaps.length ? [] : parseLocs(liveSitemapIndex));
 for (const nestedUrl of liveNestedSitemaps) {
   const nestedResponse = await fetch(nestedUrl);
