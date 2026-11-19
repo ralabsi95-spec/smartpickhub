@@ -2,7 +2,7 @@
 
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Implementation branch:** `main` (production)  
-**Status:** Owner-authorised release PR #9 is merged to `main` at `2619626e51e023a906876cebe5632bd84f97ef53`. All 25 guides / 100 product records are approved and published in the repository. Main-branch quality CI #816 is queued; guarded IndexNow must wait for that exact main commit to pass and for Cloudflare Pages to serve the same commit.  
+**Status:** 25 approved guides / 100 product records are published on Cloudflare Pages production. PR #10 fixed the guarded IndexNow descendant-deploy check and is merged; PR #11 reconciled the search/discovery lifecycle. Five populated Pinterest RSS feeds (25 entries total) are connected to their matching boards per owner confirmation; Pinterest-side saved state and any automatic Pin ingestion still require verification.  
 **Updated:** 19 November 2026
 
 ## Project purpose
@@ -1601,3 +1601,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Feed URLs: `/rss/home-office.xml`, `/rss/smart-home.xml`, `/rss/kitchen-home-tech.xml`, `/rss/travel-tech.xml`, `/rss/computing-gaming.xml` on the production host.
 - Pinterest remains unconnected: no board/feed mapping has been saved, no Pins created, and no Pins published. RSS availability does not mean Pinterest connection.
 - Next: use an authenticated Pinterest session to inspect existing boards, connect each matching feed, verify all five, and only then commence distribution. Do not create duplicate boards or publish prematurely.
+
+
+## 19 November 2026 13:24 UTC — owner confirms Pinterest RSS connections
+- Owner explicitly confirmed that all five previously supplied RSS feed URLs were successfully connected to their corresponding Pinterest boards; record this as owner-confirmed, not independently verified through an authenticated Pinterest session.
+- Feed mapping remains: Home Office & Ergonomics → `/rss/home-office.xml` (5 guides); Smart Home & Security → `/rss/smart-home.xml` (5); Kitchen & Home Tech → `/rss/kitchen-home-tech.xml` (6); Travel & Tech Gear → `/rss/travel-tech.xml` (6); Computing & Gaming → `/rss/computing-gaming.xml` (3). Total: 25 published guide entries.
+- Do not repeat the connection steps or ask the owner to reconnect. Next verify the five saved mappings and inspect whether Pinterest automatically ingested/published Pins as a consequence of RSS connection. No additional Pin creation or distribution campaign is authorised by this confirmation alone; obtain separate approval before initiating any new publication.
+- Preserve distinction: RSS feed endpoints and entries were independently checked live; board connections are owner-confirmed; Pinterest-side saved state and any resulting Pin ingestion/publication remain unverified.
