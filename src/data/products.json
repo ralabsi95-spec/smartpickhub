@@ -190,7 +190,7 @@
           "verdict": "A small power-station option for camping and portable electronics. Choose the correct regional version and check the appliance's continuous and startup power needs.",
           "source": "https://helpcenter.eu.jackery.com/hc/en-gb/articles/52682971950363-Explorer-300-Plus-Basic-Information",
           "sourceNote": "Jackery Europe identifies model JE-300B, 288Wh LiFePO4 battery, approximately 3.75kg weight and regional AC specifications.",
-          "availabilityNote": "Jackery's official US and Europe support pages show the same JE-300B model code but different regional electrical specifications: US AC input 100–120V and AC output 100V/60Hz; Europe AC input 220–240V/50Hz. Verify the exact country-specific package and output voltage before purchase. Sources: https://faq.jackery.com/hc/en-us/articles/52303549157787-Explorer-300-Plus-Basic-Information and https://helpcenter.eu.jackery.com/hc/en-gb/articles/52682971950363-Explorer-300-Plus-Basic-Information."
+          "availabilityNote": "Jackery's official US and Europe support pages show model JE-300B but materially different electrical variants: US AC input 100–120V and AC output 100V/60Hz; Europe AC input 220–240V and AC output 230V/50Hz. Select the correct regional unit for the destination country; do not assume the same model code means the same AC voltage. Confirm seller bundle and warranty. Sources: https://faq.jackery.com/hc/en-us/articles/52303549157787-Explorer-300-Plus-Basic-Information and https://helpcenter.eu.jackery.com/hc/en-gb/articles/52682971950363-Explorer-300-Plus-Basic-Information."
         }
       ],
       "buyingChecklist": [
@@ -414,8 +414,8 @@
             "A suitable E-Marker USB-C cable is recommended for 100W charging"
           ],
           "verdict": "A compact option for users who need to charge a laptop and smaller devices from one wall outlet. Check the port power split, plug format and cable rating before purchase.",
-          "source": "https://www.anker.com/products/a2688-anker-prime-charger-100w-3-ports-gan",
-          "sourceNote": "Anker's A2688 product specifications list 100W maximum output, two USB-C ports, one USB-A port, 100–240V input and 89W maximum when all three ports are used."
+          "source": "https://www.anker.com/eu-en/products/a2688-anker-prime-charger-100w-3-ports-gan",
+          "sourceNote": "Anker's official EU A2688 page confirms 100W maximum from one USB-C port, two USB-C plus one USB-A, 100W max when two ports are used, and 89W max across all three ports. Use the upper USB-C port for laptop charging when both USB-C ports are occupied. Input is 100–240V; check the UK plug supplied by the seller. Charging cables are not included; an E-Marker cable is recommended for 100W. Source: https://www.anker.com/eu-en/products/a2688-anker-prime-charger-100w-3-ports-gan."
         },
         {
           "name": "UGREEN Nexode 100W 4-Port Charger — SKU 40749",
@@ -715,8 +715,8 @@
             "Check the exact display modes and macOS/Windows compatibility for the laptop before purchase"
           ],
           "verdict": "A forward-looking option for compatible Thunderbolt 5 systems. It is unlikely to be a sensible upgrade for a laptop limited to basic USB-C or older Thunderbolt; verify host support first.",
-          "source": "https://www.anker.com/products/a83b5-anker-prime-thunderbolt5-docking-station-14-in-1-140w-8k",
-          "sourceNote": "Anker's official product specification lists Thunderbolt 5, 140W upstream power, downstream ports, display output selection, Ethernet and OS compatibility."
+          "source": "https://app.anker.com/uk/products/a83b5-anker-prime-thunderbolt5-docking-station-14-in-1-140w-8k",
+          "sourceNote": "Anker UK identifies the A83B5 Thunderbolt 5 dock and 140W maximum upstream PD. The dock supports one display up to 8K60 or two up to 6K+4K60 on compatible hosts; HDMI 2.1 and DP 2.1 are alternatives, not simultaneous. Windows USB-C Alt Mode hosts are limited to one external display; base M1/M2/M3 Apple Silicon Macs are limited to one; Mac M1/M2/M3 Pro/Max and M4 models can support two. Requires Windows 10/11 or macOS 15+, Thunderbolt 4/5 host; no Thunderbolt 3, Linux or ChromeOS support. Confirm host compatibility before purchase. Source: https://app.anker.com/uk/products/a83b5-anker-prime-thunderbolt5-docking-station-14-in-1-140w-8k."
         },
         {
           "name": "Kensington SD5780T Thunderbolt 4 Dock",
@@ -735,7 +735,7 @@
           ],
           "verdict": "A practical dock for users who need 96W charging and a mix of HDMI, Thunderbolt and 2.5Gb Ethernet. Check the manufacturer's compatibility table, especially for MacBook chip variants.",
           "source": "https://www.kensington.com/p/products/device-docking-connectivity-products/laptop-docks-usb-accessories/sd5780t-thunderbolt-4-dual-4k-docking-station-with-96w-pd-winmac/",
-          "sourceNote": "Kensington's official product page documents 96W PD, Thunderbolt 4, HDMI 2.1, Ethernet and host-dependent monitor limitations."
+          "sourceNote": "Kensington's official SD5780T page confirms 96W PD, Thunderbolt 4, HDMI 2.1, three downstream TB4 ports, 2.5Gb Ethernet and three-year limited warranty. Dual 4K/60Hz or supported dual 6K/60Hz requires compatible host/monitor DSC and DP 1.4 HBR3; base M1/M2/M3 MacBooks and USB-C Alt Mode-only hosts support one external display. Do not promise dual monitors without checking the host. Source: https://www.kensington.com/p/products/device-docking-connectivity-products/laptop-docks-usb-accessories/sd5780t-thunderbolt-4-dual-4k-docking-station-with-96w-pd-winmac/."
         },
         {
           "name": "Plugable TBT4-UDZ Thunderbolt 4 Dock",
@@ -754,7 +754,7 @@
           ],
           "verdict": "A flexible option for mixed peripheral and display setups, especially where the extra video outputs are useful. Confirm the exact laptop's display architecture before assuming all outputs can be used.",
           "source": "https://plugable.com/products/tbt4-udz",
-          "sourceNote": "Plugable's official product page documents port count, 100W/98W charging, 2.5Gb Ethernet, compatibility and display-output caveats."
+          "sourceNote": "Plugable's official TBT4-UDZ page confirms 16 ports, 100W advertised/98W certified host charging and 2.5Gb Ethernet. Its support article clarifies display support: compatible Thunderbolt 4/USB4 Windows systems with DP 1.4 HBR3 DSC may drive up to four 4K60 displays; base M1/M2 Macs are limited to one external display; M1/M2/M3/M4 Pro/Max and M4/M5 supported Macs can drive two. USB-C-only hosts require DP Alt Mode and have lower display limits; USB-C monitors, Linux and ChromeOS are not supported. Confirm exact laptop GPU/USB-C capabilities before buying. Sources: https://plugable.com/products/tbt4-udz ; https://kb.plugable.com/en_US/what-are-the-display-output-capabilities-for-the-tbt4-udz."
         }
       ],
       "buyingChecklist": [
