@@ -1442,3 +1442,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - No guide has been approved; all 25 remain `publicationStatus: draft`. No product data, live pages, feeds or production settings changed.
 - Next phase: consolidate unresolved source checks into a product-level matrix; finish high-risk mismatches (Apple iPad mini A20 Pro source, Samsung vacuum runtime, Levoit Vital 200S UK counterpart, UK/US power variants, exact Brother printer bundles, Garmin dashcam part numbers, model-specific dock/charger port tables); revise only proven catalogue errors on the review branch; then fix the validator to allow approved-but-unpublished drafts while preserving the RSS/publishing gate and run full CI.
 - PR #8 remains a documentation/review branch; do not merge or publish without owner authorization. Deferred IndexNow changed-URL detection, deletion notifications and durable send/receipt logging remain explicitly deferred until separately scheduled and fully CI-tested.
+
+
+## 19 November 2026 — product-level source resolution follow-up
+- Corrected Samsung Bespoke Jet AI guide 11 record against Samsung's exact UK model page for VS28C9784QK/EU: 160-minute maximum is conditional on minimum power, two batteries and a non-motorised tool; 280 W UK and 280 AW US units are not comparable. Catalogue source/pros/cons/regional notes updated on editorial review branch, commit 74ca554d8ec839e104f964414e08fd463ae4d52.
+- Official Apple Support now confirms iPad mini (A20 Pro), introduced 2026, with 8.5-inch OLED and A20 Pro specifications. This resolves model-existence uncertainty but not the whole guide's approval gate.
+- Retrieved model-specific Brother UK pages for all four guide 25 models. Confirmed MFC-L8390CDW duplex scan and 50-sheet two-sided ADF; MFC-L3740CDW 50-sheet ADF and duplex printing but do not infer duplex scanning; HL-L3240CDW print-only 26ppm and duplex print; DCP-L2660DW 34ppm, 50-sheet ADF and separate drum.
+- Garmin Mini 3 UK retail part number 010-02899-10 is confirmed; X210/X310 exact UK retail SKUs remain open.
+- Evidence and detailed source URLs recorded in EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md. All guide statuses remain draft; no publishing, IndexNow submission, Pinterest post or production change.
+- CI passed on pre-correction head 1b994672d4e09a57d1b53b75222c9976ac3062f2 (Astro Build and Quality Checks run #766); run must be repeated for the changed catalogue commit before claiming current-head validation.
