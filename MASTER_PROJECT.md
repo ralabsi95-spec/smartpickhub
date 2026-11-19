@@ -1581,3 +1581,13 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - No IndexNow submission is claimed. No production content, product records, DNS, Cloudflare settings or Pinterest publishing changed during this review.
 - Security advisory status: GitHub's GHSA-fc5q-39xc-vjpf / CVE-2026-112366 advisory was withdrawn on 18 November 2026 after the upstream maintainer disputed the vulnerability claim. Do not treat the previous 2 December waiver as an active advisory exception or change dependencies solely for this withdrawn notice; retain npm audit / CI as the dependency-security evidence.
 - Next: verify PR #10 CI, merge after green checks, verify main CI/deployment, then confirm IndexNow result; connect GSC/GA4 and reconcile the stale PR #7 lifecycle documentation.
+
+
+## 19 November 2026 13:03 UTC — IndexNow guard merged and production deployment confirmed
+- PR #10 merged to `main`: `88f7f86d6083e2546f229d0ba4c6258df30dc62b`.
+- PR-head CI run #825 passed on `a73e54640f5de070a717a4ec066c4d2a733cdad3` across build, catalogue, affiliate, intake dry-run, RSS, smoke, axe-core and Lighthouse checks.
+- Live production deployment marker confirms `88f7f86d6083e2546f229d0ba4c6258df30dc62b`, branch main, production environment. Live robots and sitemap index were rechecked.
+- The IndexNow exact-SHA deadlock fix is deployed. Post-merge notification acceptance remains unverified; do not claim submission until its workflow run/receipt is inspected.
+- PR #7 remains stale and must not be merged as-is. Its lifecycle text says the 25 guides are drafts and references the superseded notifier. A corrected lifecycle document is being prepared on branch `docs/reconcile-search-discovery-lifecycle-20261119`.
+- No production catalogue/content change, product re-import, Pinterest Pin, or paid service action was made.
+- Next: confirm main CI and post-merge IndexNow outcome; review/CI the replacement lifecycle document; connect GSC/GA4 and investigate the known sitemap fetch issue.
