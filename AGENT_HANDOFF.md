@@ -1,6 +1,6 @@
 # SmartPickHub – Agent Handoff (READ THIS FIRST)
 
-**Last verified:** 19 November 2026 12:40 UTC; production serves main commit `2fc29d32067a0b654b1f4e4a8133835002f45513`; PR #10 IndexNow guard repair open; PR #7 lifecycle documentation stale and not to be merged as-is
+**Last verified:** 19 November 2026 21:45 Asia/Amman; current production baseline remains main SHA `806e231665dd398e9a2935a0854c65afa3a30857`; PRs #27–#30 open/unmerged (exact-head CI: #27/#28/#29 passed; #30 pending)
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `main` (production)  
 **Pull requests:** PR #8 merged; PR #9 merged; no open release PR  
@@ -10,6 +10,19 @@
 > This file is the operational handoff for every new ChatGPT conversation, coding agent or human contributor. Read it before proposing or changing anything. Then read `MASTER_PROJECT.md` for the chronological record. The current dated status at the top supersedes older historical entries below.
 >
 > **Permanent scope boundary (19 Nov 2026):** The former InfinityFree domain/hosting and former WordPress site are cancelled and completely outside SmartPickHub. They are not a target, fallback, migration source, catalogue source, or integration. Do not access, connect, edit, migrate, redirect, import from, or spend project effort on them. The approved environment is GitHub + Astro + Cloudflare Pages on `pages.dev`.
+
+## Current authoritative checkpoint — 19 November 2026 21:45 Asia/Amman
+
+- Production remains the approved Cloudflare Pages site on main; no production deployment or public content change was made in this session.
+- Catalogue remains 25 owner-approved/published guides / 100 product records. Do not re-import or repeat the release.
+- OpenSEO context now records a separate US research track, global event-trend radar and civil-preparedness research lane. Last known credit balance: 28; fresh keyword research costs about 54 credits per seed, so paid US keyword research remains deferred.
+- GTA VI is officially available on PS5 and Xbox Series X|S as of 19 Nov 2026. Google Trends showed a major short-term US/UK spike. Do not infer a PC release, and do not confuse trend-feed bands with monthly keyword metrics.
+- Official preparedness evidence: UK Be Ready three-day guidance, US FEMA/Ready.gov emergency-kit guidance and the EU 72-hour preparedness objective. This is civil resilience guidance, not evidence of imminent war.
+- PR #27 exact-head CI #867 passed; PR #28 exact-head CI #869 passed; PR #29 exact-head CI #870 passed. PR #30 exact-head CI #871 was in progress at last check. All remain open/unmerged pending owner approval.
+- PR #29 maps buyer intent across the existing 25 guides. PR #30 adds US seed keywords, event-trend handling, preparedness product clusters and safe scoring/cadence.
+- No product records, pages, metadata, images, affiliate links, analytics, crawler settings, DNS, Cloudflare settings or production deployment changed. No paid research, subscription, AI tracking or scheduled automation was activated.
+- Continue from PR #30, verify its exact-head CI, then validate emergency-radio and backup-power models from primary manufacturer sources before proposing products or pages. No new indexable page without measured intent, distinct SERP need and owner approval.
+
 
 ## Current authoritative checkpoint — 19 November 2026 16:00 UTC
 
