@@ -951,3 +951,40 @@ This batch checked selected manufacturer pages for Wi-Fi 7 routers/mesh, GaN cha
 - Guides 9–13 remain **not approved** pending remaining product/source and compatibility checks. Guide 11 has a concrete unresolved runtime discrepancy (Samsung 160 minutes vs current UK product page up to 120 minutes with spare battery).
 - No catalogue product records, editorial statuses, publication statuses, site pages, feeds or production settings were changed. All guides remain drafts.
 - Key source pages checked: https://download.semiconductor.samsung.com/resources/data-sheet/samsung_portable_ssd_t9_datasheet_rev1_0.pdf ; https://www.kingston.com/datasheets/XS2000_en.pdf ; https://www.kingston.com/en/support/technical/products/sxs2000 ; https://www.samsung.com/uk/vacuum-cleaners/bespoke-jet/ ; https://media.miele.com/downloads/n-/gb/FS_11819170_GBE_GB-en-GB.pdf ; https://global.roborock.com/pages/roborock-saros-10r ; https://uk.roborock.com/products/roborock-qrevo-edge-2-hyperforce-suction-dual-anti-tangle-system ; https://uk.roborock.com/pages/roborock-qrevo-2-pro
+
+
+## Supplemental live source checks — batch 4 (guides 14–18), 19 November 2026
+
+### Guide 14 — noise-cancelling headphones
+- Sony UK model-specific pages confirm WH-1000XM6: Bluetooth 5.3, SBC/AAC/LDAC/LC3, multipoint, up to 30h with NC on / 40h off, approximately 254g. The existing model summary is aligned with the official UK spec.
+- Sony UK confirms the refreshed WH-1000XM4C is a distinct model: Bluetooth 6.0, SBC/AAC/LDAC, multipoint, approximately 253g, up to 27h NC on / 34h off, foldable design. Do not confuse XM4C with the original WH-1000XM4.
+- Sony WH-1000XM6 and XM4C have UK support pages; ULT WEAR and WH-1000XM5 still need full model-specific live verification in the same pass. Hold guide approval until all four products are checked and the guide's product titles/claims remain consistent.
+
+### Guide 15 — wireless earbuds
+- Sony UK WF-1000XM6 specifications confirm approximately 6.5g per earbud, IPX4, multipoint, SBC/AAC/LDAC/LC3, up to 8h music with noise cancelling on / 12h off, and wireless charging through the case.
+- Apple AirPods Pro 3 official technical specs confirm H2, ANC, Adaptive Audio, Conversation Awareness, IP57 dust/sweat/water resistance for earbuds and case, and heart-rate sensor. Avoid implying that every feature is supported on Android; Apple-device/software dependencies remain important.
+- Sony WF-1000XM5 and Apple AirPods 4 ANC exact current battery/codec/IP claims were not fully re-fetched in this batch. Keep guide provisional.
+
+### Guide 16 — home air purifiers
+- Existing regional cautions are appropriate: Levoit US Core 300-P/300S-P/400S-P pages use US model suffixes and 120V/60Hz assumptions, while Levoit UK sells UK-specific Core models. Do not use US model suffixes as UK buy links or assume filters are interchangeable.
+- No exact UK counterpart for Vital 200S-P was confirmed in the current UK collection during this pass. The guide's current UK identifier “Vital 200S UK” is not sufficiently substantiated; remove it or replace it only after finding a precise official UK model page and compatible filter record.
+- This batch did not fully verify CADR/room coverage, noise, filter part numbers, voltage and replacement-filter availability for all four entries. Guide remains on hold.
+
+### Guide 17 — espresso machines
+- Sage UK Barista Pro page confirms 220–240V, integrated conical burr grinder with 30 settings, 54mm portafilter, ThermoJet with stated 3-second heat-up, PID temperature control and manual milk texturing.
+- Sage UK Oracle Jet page confirms 45 grinder settings, 58mm portafilter and 22g dose reference, and automatic grind/dose/tamp workflow. Preserve its correct product architecture; do not call it a dual-boiler machine unless exact current documentation says so.
+- Existing UK Sage SES500/SES870/SES878/SES985 vs US Breville BES500/BES870/BES878/BES985 regional naming and electrical cautions are appropriate. Do not treat US and UK packages as interchangeable.
+- Bambino Plus and Barista Express detailed current specs still need a full re-fetch; also confirm package suffixes/accessories. Guide remains provisional.
+
+### Guide 18 — tablets
+- Apple UK iPad Pro M5 specifications confirm the 13-inch model's Tandem OLED Ultra Retina XDR, ProMotion up to 120Hz and Thunderbolt/USB 4. CPU/RAM configuration differs by storage tier; the guide should not present a single uniform configuration.
+- Apple UK iPad Air M4 specifications confirm Wi-Fi 7, Bluetooth 6, eSIM for cellular models and country/carrier-dependent band support. Keep the cellular compatibility caveat.
+- Apple UK iPad A16 specs confirm 128GB/256GB/512GB, 10.86-inch measured display and A16. The current product family is an 11-inch class tablet; describe screen measurement accurately.
+- **High-priority verification hold:** the catalogue's “Apple iPad mini (A20 Pro)” claims an 8.5-inch OLED and 2026 model identity, but this batch did not find a matching official Apple UK technical specification page. Do not describe this as an official released model or approve this guide until the exact Apple source and regional launch/availability are confirmed. If the source is absent, remove or replace the record through a reviewed content change; do not invent a successor model.
+- Guide remains provisional pending verification of all four products and exact current UK models.
+
+### Batch 4 disposition
+- Selected manufacturer source checks completed for guides 14–18; not all 20 product entries have been verified.
+- Guides 14–18 remain **not approved**. Specific holds: ULT WEAR/XM5 final checks; WF-1000XM5/AirPods 4; Levoit Vital 200S UK identifier/filter compatibility; Sage Bambino/Barista Express packages; and Apple iPad mini A20 Pro official model/source confirmation.
+- No catalogue data, editorial statuses, publication statuses, live pages, Pinterest feeds or production settings changed. All 25 guides remain drafts.
+- Key sources checked: https://www.sony.co.uk/electronics/support/wireless-headphones-bluetooth-headphones/wh-1000xm6/specifications ; https://www.sony.co.uk/electronics/support/wireless-headphones-bluetooth-headphones/wh-1000xm4c/specifications ; https://www.sony.co.uk/electronics/support/wireless-headphones-bluetooth-headphones/wf-1000xm6/specifications ; https://www.apple.com/airpods-pro/specs/ ; https://www.sageappliances.com/en-gb/product/bes878 ; https://www.sageappliances.com/en-gb/product/bes985 ; https://support.apple.com/en-gb/122240 ; https://support.apple.com/en-gb/126471 ; https://www.apple.com/uk/ipad-pro/specs/
