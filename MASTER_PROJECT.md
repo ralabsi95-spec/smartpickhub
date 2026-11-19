@@ -1759,3 +1759,13 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Current strategic baseline remains 25 guides / 100 product records. No new catalogue entries were created. UK marketplace search destinations are not direct verified ASIN links. Product images remain optional and must have documented commercial reuse rights; retain current text cards where no suitable licensed image exists.
 - No paid OpenSEO keyword batch, AI visibility check, TinyFish task, subscription, recurring paid automation, or paid service was started. Last-known OpenSEO balance is 28 credits; approximate research cost is 54 credits per seed. Do not spend credits without explicit approval.
 - Next: poll main-SHA checks/deployment for `8f6a95a328c7d131e94b7de0de6f0bf4702c4dae`; then continue free, non-mutating official-source research for emergency radios/backup power and evidence-led updates to existing Tier-1 guides. Do not add products/pages or publish content without the existing evidence and owner-approval gates.
+
+
+## 19 November 2026 20:24 UTC — Main CI and deployment verified; handoff refreshed
+- Rechecked GitHub main ref and latest commit `ddf8f636fb8493ba6a6d087d2c1864e9bbfd3e00`. PR #31 remains merged/closed; its squash merge SHA is `8f6a95a328c7d131e94b7de0de6f0bf4702c4dae`.
+- Exact-main build-and-audit run `44604477800` completed successfully on `ddf8f636fb8493ba6a6d087d2c1864e9bbfd3e00`.
+- Exact-main Cloudflare Pages production and preview checks completed successfully. The separate Workers check also completed successfully on this SHA; earlier failed Workers results belong to older commits and should not be represented as the current state.
+- IndexNow notification-related checks on this SHA were skipped/conditional; no new IndexNow accepted URL batch was confirmed. Do not claim a new submission.
+- No application/catalogue/public content change occurred in this verification. Existing 25 guides / 100 products remain protected. PR #31 is a research plan, not a product/page release.
+- Updated `AGENT_HANDOFF.md` to put this verified state first and to direct future agents to re-check current main/checks. The handoff update creates a new docs-only main commit; its own deployment status must be checked separately. No paid service, keyword credit, subscription or TinyFish task was used.
+- Next: verify the post-handoff commit checks, then continue free official-source research for emergency radios/backup power and evidence-led improvement opportunities within existing Tier-1 guides. Preserve all product/page approval gates.
