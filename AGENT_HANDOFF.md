@@ -1362,3 +1362,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
   - `https://smartpickhub.pages.dev/rss/computing-gaming.xml`
 - No Pinterest board has been connected, no Pins have been created, and no Pinterest publication has started. RSS feed availability is not proof of Pinterest connection.
 - Next: obtain an authenticated Pinterest browser session, inspect the existing board names, map each board to its corresponding feed, connect all five, verify each connection, and only then start any Pin distribution. Do not create duplicate boards or publish Pins before the five mappings are verified.
+
+
+## 19 November 2026 13:24 UTC — owner confirms Pinterest RSS connections
+- Owner explicitly confirmed that all five previously supplied RSS feed URLs were successfully connected to their corresponding Pinterest boards; record this as owner-confirmed, not independently verified through an authenticated Pinterest session.
+- Feed mapping remains: Home Office & Ergonomics → `/rss/home-office.xml` (5 guides); Smart Home & Security → `/rss/smart-home.xml` (5); Kitchen & Home Tech → `/rss/kitchen-home-tech.xml` (6); Travel & Tech Gear → `/rss/travel-tech.xml` (6); Computing & Gaming → `/rss/computing-gaming.xml` (3). Total: 25 published guide entries.
+- Do not repeat the connection steps or ask the owner to reconnect. Next verify the five saved mappings and inspect whether Pinterest automatically ingested/published Pins as a consequence of RSS connection. No additional Pin creation or distribution campaign is authorised by this confirmation alone; obtain separate approval before initiating any new publication.
+- Preserve distinction: RSS feed endpoints and entries were independently checked live; board connections are owner-confirmed; Pinterest-side saved state and any resulting Pin ingestion/publication remain unverified.
