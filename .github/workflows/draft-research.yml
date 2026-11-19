@@ -21,18 +21,33 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ github.event.repository.default_branch }}
+      - name: Check draft research configuration
+        id: config
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          if [ -n "$GEMINI_API_KEY" ]; then
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Setup Node
+        if: steps.config.outputs.configured == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: 22.23.4
           cache: npm
       - name: Install locked dependencies
+        if: steps.config.outputs.configured == 'true'
         run: npm ci
       - name: Generate unverified draft brief
+        if: steps.config.outputs.configured == 'true'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/generate-guide.mjs
       - name: Open or update editorial review pull request
+        if: steps.config.outputs.configured == 'true'
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -56,3 +71,8 @@ jobs:
             - Do not add invented ASINs, prices, ratings, reviews, stock or
               hands-on testing claims.
             - Merge only after explicit editorial approval.
+
+      - name: Report safe skip when AI credentials are not configured
+        if: steps.config.outputs.configured != 'true'
+        run: |
+          echo "Draft research skipped: GEMINI_API_KEY is not configured. No draft or pull request was created." >> "$GITHUB_STEP_SUMMARY"
