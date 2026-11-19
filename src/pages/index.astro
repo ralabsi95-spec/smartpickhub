@@ -34,8 +34,8 @@ const productCount = guides.reduce((total, guide) => total + (guide.products?.le
   </section>
 
   <section class="stats-strip" aria-label="Site coverage">
-    <div><strong>{guideCount}</strong><span>Buying guides in development</span></div>
-    <div><strong>{productCount}</strong><span>Product entries in our research library</span></div>
+    <div><strong>{guideCount}</strong><span>Buying guides</span></div>
+    <div><strong>{productCount}</strong><span>Products compared in our research library</span></div>
     <div><strong>US + UK</strong><span>Two marketplaces considered</span></div>
   </section>
 
@@ -55,7 +55,7 @@ const productCount = guides.reduce((total, guide) => total + (guide.products?.le
               <div class="guide-card-top"><span class="guide-number">{String(index + 1).padStart(2, '0')}</span><span class="category-tag">{guide.category}</span></div>
               <h3><a href={`/guides/${guide.slug}/`}>{guide.title}</a></h3>
               <p>{guide.summary}</p>
-              <div class="guide-card-bottom"><span class="review-status">{guide.editorialStatus ?? 'Editorial review required before publication.'}</span><a class="card-arrow" href={`/guides/${guide.slug}/`}>Explore guide <span aria-hidden="true">↗</span></a></div>
+              <div class="guide-card-bottom"><span class="review-status">{guide.editorialStatus ?? 'Research-led guide — verify the exact model and current retailer listing before purchase.'}</span><a class="card-arrow" href={`/guides/${guide.slug}/`}>Explore guide <span aria-hidden="true">↗</span></a></div>
             </div>
           </article>
         ))}
