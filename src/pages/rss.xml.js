@@ -49,7 +49,6 @@ export function GET(context) {
     <link>${escapeXml(site.href)}</link>
     <description>Approved buying guides with original vertical cover artwork and region-aware product comparisons.</description>
     <language>en-gb</language>
-    <link rel="self" type="application/rss+xml">${escapeXml(feedUrl)}</link>
 ${items.join('\n')}
   </channel>
 </rss>`;
