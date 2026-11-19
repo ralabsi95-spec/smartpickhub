@@ -18,7 +18,7 @@
       "publishedAt": "2026-11-16",
       "summary": "A practical comparison of ergonomic keyboards and pointing devices, focusing on shape, connection options, hand fit and desk-work habits.",
       "introduction": "Ergonomic accessories can change how your hands and arms are positioned at a desk, but no single shape suits everyone. Compare the layout, grip style, adjustment options and computer compatibility before choosing. These are research-led product summaries based on manufacturer documentation, not hands-on test results.",
-      "editorialStatus": "Research draft — requires human review before publication.",
+      "editorialStatus": "Research-led guide — verify the exact model and current retailer listing before purchase.",
       "products": [
         {
           "name": "Logitech MX Vertical Advanced Ergonomic Mouse",
@@ -111,7 +111,7 @@
       "publishedAt": "2026-11-16",
       "summary": "Compare high-capacity USB-C power banks and compact portable power stations for mobile work, travel and backup use.",
       "introduction": "Portable power products vary significantly in capacity, output, weight, charging method and transport restrictions. A USB power bank is not interchangeable with a mains-output power station. Check device charging requirements, airline rules, regional plug versions and the manufacturer's current specifications before purchase.",
-      "editorialStatus": "Research draft — requires human review before publication.",
+      "editorialStatus": "Research-led guide — verify the exact model and current retailer listing before purchase.",
       "products": [
         {
           "name": "Anker 737 Power Bank (PowerCore 24K, A1289)",
@@ -206,7 +206,7 @@
       "publishedAt": "2026-11-16",
       "summary": "A practical comparison of wire-free and connected home security cameras, including storage, subscriptions, Wi-Fi and installation considerations.",
       "introduction": "A security camera should be selected around its installation location, power source, Wi-Fi coverage, recording needs and ongoing service costs. Resolution alone does not determine whether a camera is right for a home. Check regional availability, subscription terms, privacy settings and compatibility before purchase.",
-      "editorialStatus": "Research draft — requires human review before publication.",
+      "editorialStatus": "Research-led guide — verify the exact model and current retailer listing before purchase.",
       "products": [
         {
           "name": "eufy SoloCam S340",
@@ -299,7 +299,7 @@
       "publishedAt": "2026-11-16",
       "summary": "Compare four Wi-Fi 7 router and mesh-system families by wireless standard, wired ports, coverage design and regional compatibility.",
       "introduction": "Wi-Fi 7 equipment is not automatically faster in every home. Real results depend on the broadband plan, client devices, radio conditions, building materials and whether a mesh system uses wireless or wired backhaul. Compare the exact hardware kit and regional version before buying; the models below are research-led options, not hands-on test winners.",
-      "editorialStatus": "Research draft — requires human review before publication.",
+      "editorialStatus": "Research-led guide — verify the exact model and current retailer listing before purchase.",
       "products": [
         {
           "name": "TP-Link Deco BE63 Wi-Fi 7 Mesh System",
@@ -392,7 +392,7 @@
       "publishedAt": "2026-11-16",
       "summary": "A practical comparison of multi-port USB-C GaN wall chargers, focusing on power sharing, port mix, supported charging standards and regional plug versions.",
       "introduction": "Choose a USB-C charger by checking the maximum output of the port you will use, how total power is shared when several devices are connected, and whether your laptop supports the charger's charging protocol. A 100W label does not mean every port supplies 100W simultaneously. Check the exact regional plug, cable rating and device requirements before buying.",
-      "editorialStatus": "Research draft — requires human review before publication.",
+      "editorialStatus": "Research-led guide — verify the exact model and current retailer listing before purchase.",
       "products": [
         {
           "name": "Anker Prime Charger (100W, 3 Ports, GaN) — A2688",
@@ -485,7 +485,7 @@
       "publishedAt": "2026-11-16",
       "summary": "A specification-led comparison of webcams for remote work, online meetings and streaming, covering resolution, framing, focus, mounting and software requirements.",
       "introduction": "Webcam choice depends on more than headline resolution. Check the maximum frame rate at the resolution you intend to use, the field of view, focus behaviour, connection type, privacy controls and software compatibility. The options below are research summaries based on manufacturer documentation, not hands-on tests.",
-      "editorialStatus": "Research draft — requires human review before publication.",
+      "editorialStatus": "Research-led guide — verify the exact model and current retailer listing before purchase.",
       "products": [
         {
           "name": "Insta360 Link 2 4K AI Webcam",
@@ -578,7 +578,7 @@
       "publishedAt": "2026-11-16",
       "summary": "Compare four 27-inch 4K monitor options for desk productivity and creative workflows, focusing on USB-C power delivery, colour coverage, connectivity and ergonomic adjustment.",
       "introduction": "A 4K monitor is not automatically the best choice for every desk. Compare USB-C power delivery against your laptop's requirements, the colour space needed for your work, refresh rate, stand adjustment and available video inputs. Check the exact regional model and included cables before ordering. These summaries use manufacturer specifications and are not hands-on test results.",
-      "editorialStatus": "Research draft — requires human review before publication.",
+      "editorialStatus": "Research-led guide — verify the exact model and current retailer listing before purchase.",
       "products": [
         {
           "name": "Dell UltraSharp U2723QE 27-inch 4K USB-C Hub Monitor",
@@ -671,7 +671,7 @@
       "publishedAt": "2026-11-16",
       "summary": "A specification-led guide to laptop docking stations, comparing host connectivity, display support, charging power, ports and operating-system limitations.",
       "introduction": "Choose a dock only after checking the laptop's exact USB-C capabilities. USB-C connector shape alone does not guarantee Thunderbolt, USB4, video output or high-wattage charging. Multi-monitor support also depends on the computer's processor, graphics architecture and operating system. Confirm the exact model revision and regional power supply before buying. This guide is based on manufacturer documentation, not hands-on testing.",
-      "editorialStatus": "Research draft — requires human review before publication.",
+      "editorialStatus": "Research-led guide — verify the exact model and current retailer listing before purchase.",
       "products": [
         {
           "name": "CalDigit TS4 Thunderbolt 4 Dock",
@@ -764,7 +764,7 @@
       "publishedAt": "2026-11-16",
       "summary": "Compare portable SSDs by interface bandwidth, real-world host compatibility, capacity, ruggedness and security before choosing external storage.",
       "introduction": "Portable SSD performance depends on the drive and the port on the computer, phone or tablet. A USB 3.2 Gen 2x2 drive may not reach its advertised maximum on a host that supports only 10Gbps USB, and USB4 or Thunderbolt compatibility should be checked separately. Maximum sequential speeds are manufacturer test figures, not guaranteed everyday transfer rates. For important files, a portable SSD should supplement a tested backup strategy rather than serve as the only copy.",
-      "editorialStatus": "Research draft — requires human review before publication.",
+      "editorialStatus": "Research-led guide — verify the exact model and current retailer listing before purchase.",
       "products": [
         {
           "name": "Samsung Portable SSD T9",
@@ -857,7 +857,7 @@
       "publishedAt": "2026-11-16",
       "summary": "Compare single-basket and dual-zone air fryers by usable capacity, cooking flexibility, cleaning, counter footprint and regional electrical specifications.",
       "introduction": "Air fryers differ in basket layout, usable cooking space, controls and electrical requirements. A large headline capacity does not guarantee that a model will fit your counter or cook every food evenly. This guide compares four manufacturer-documented product families. US and UK variants are not interchangeable: check the exact model number, voltage, plug, capacity and included accessories on the local listing before ordering. These are research-led summaries, not hands-on test results.",
-      "editorialStatus": "Research draft — requires human review before publication.",
+      "editorialStatus": "Research-led guide — verify the exact model and current retailer listing before purchase.",
       "products": [
         {
           "name": "Ninja Foodi MAX Dual Zone Air Fryer (AF400UK / DZ550)",
@@ -951,7 +951,7 @@
       "publishedAt": "2026-11-16",
       "summary": "Compare cordless stick vacuums by suction claims, battery runtime, weight, dust capacity, filtration and included floor tools across US and UK model variants.",
       "introduction": "Cordless vacuums are not directly comparable by headline runtime or suction figures alone. Maximum runtime is commonly measured in a low-power mode with a non-motorised tool, while powered floorheads and boost modes can reduce it substantially. Check the exact regional model, included batteries and floorheads, dust capacity, replacement-filter costs and warranty terms before buying. This guide uses manufacturer documentation and does not claim hands-on testing.",
-      "editorialStatus": "Research draft — requires human review before publication.",
+      "editorialStatus": "Research-led guide — verify the exact model and current retailer listing before purchase.",
       "products": [
         {
           "name": "Dyson V15 Detect Absolute Cordless Vacuum",
@@ -1048,7 +1048,7 @@
       "publishedAt": "2026-11-16",
       "summary": "Compare cordless drill-drivers by battery platform, size, brushless motor options, chuck capacity and the type of work you plan to tackle.",
       "introduction": "Cordless drill selection depends on the work, not just voltage. Compare the battery ecosystem you already own, tool-only versus kit bundles, chuck capacity, torque settings, weight and whether a hammer-drill mode is needed. Model suffixes and included batteries vary by market.",
-      "editorialStatus": "Research draft — requires human review before publication.",
+      "editorialStatus": "Research-led guide — verify the exact model and current retailer listing before purchase.",
       "products": [
         {
           "name": "DEWALT 20V MAX XR Brushless 1/2-in Drill/Driver DCD801B",
@@ -1129,7 +1129,7 @@
       "publishedAt": "2026-11-16",
       "summary": "Compare robot vacuum and mop systems by navigation, dock automation, obstacle handling, carpet behaviour and ongoing maintenance.",
       "introduction": "Robot vacuum and mop systems differ most in dock functions, mop design, obstacle avoidance and how they handle rugs and thresholds. Suction figures are manufacturer claims and are not directly comparable across brands. Measure the dock footprint, check replacement consumables and confirm local app and voice-assistant support.",
-      "editorialStatus": "Research draft — requires human review before publication.",
+      "editorialStatus": "Research-led guide — verify the exact model and current retailer listing before purchase.",
       "products": [
         {
           "name": "Roborock Saros 10R Robot Vacuum",
@@ -1222,7 +1222,7 @@
       "publishedAt": "2026-11-16",
       "summary": "Compare over-ear wireless headphones by active noise cancellation, call microphones, comfort, battery claims and device compatibility.",
       "introduction": "Over-ear headphones are personal-fit products. Before choosing, compare clamp force and ear-cup dimensions, controls, multipoint support, wired listening options, codec compatibility and replacement ear pads. Battery and noise-cancellation claims come from manufacturers and vary with settings.",
-      "editorialStatus": "Research draft — requires human review before publication.",
+      "editorialStatus": "Research-led guide — verify the exact model and current retailer listing before purchase.",
       "products": [
         {
           "name": "Sony WH-1000XM6 Wireless Noise Cancelling Headphones",
@@ -1308,7 +1308,7 @@
       "publishedAt": "2026-11-16",
       "summary": "Compare true-wireless earbuds by fit options, active noise cancellation, ecosystem features, battery claims and water resistance.",
       "introduction": "Earbud comfort and seal affect sound and noise cancellation. Check the supplied tip sizes, case dimensions, single-charge versus case-inclusive battery figures, water-resistance rating and which features require a particular phone ecosystem. Confirm model generation because names can be similar.",
-      "editorialStatus": "Research draft — requires human review before publication.",
+      "editorialStatus": "Research-led guide — verify the exact model and current retailer listing before purchase.",
       "products": [
         {
           "name": "Sony WF-1000XM6 Truly Wireless Noise Cancelling Earbuds",
@@ -1385,7 +1385,7 @@
       "publishedAt": "2026-11-16",
       "summary": "Compare home air purifiers by intended room size, filter replacement, particle filtration, noise modes and connected controls.",
       "introduction": "Choose an air purifier by the room's measured floor area and the manufacturer's clean-air delivery guidance, not by model name alone. Check replacement filter cost and availability, operating noise at the speed you will actually use, sensor features and whether the unit's filter claims match your needs.",
-      "editorialStatus": "Research draft — requires human review before publication.",
+      "editorialStatus": "Research-led guide — verify the exact model and current retailer listing before purchase.",
       "products": [
         {
           "name": "Levoit Core 300-P Air Purifier",
@@ -1466,7 +1466,7 @@
       "publishedAt": "2026-11-16",
       "summary": "A UK-first comparison of Sage espresso machines, using UK SES model identifiers and electrical specifications while identifying the corresponding US Breville BES families.",
       "introduction": "This guide compares four home espresso machines using the UK Sage versions as the primary reference: Bambino Plus SES500, Barista Express SES870, Barista Pro SES878 and Oracle Jet SES985. The corresponding US listings use Breville BES identifiers. Names, suffixes, plugs, voltage, accessories and warranty can vary by region, so UK buyers should verify the exact SES model and UK package before ordering. These are research-led summaries based on manufacturer documentation, not hands-on test results.",
-      "editorialStatus": "Research draft — UK-first regional naming updated; requires human editorial review before publication.",
+      "editorialStatus": "Research-led guide — verify the exact model and current retailer listing before purchase.",
       "products": [
         {
           "name": "Sage Bambino Plus (UK SES500) / Breville Bambino Plus (US BES500)",
@@ -1564,7 +1564,7 @@
       "publishedAt": "2026-11-16",
       "summary": "Compare current iPad families by screen size, processor tier, accessories, portability and intended workload.",
       "introduction": "A tablet's value depends on the tasks and accessories it must support. Compare display size, storage, keyboard and stylus compatibility, cellular options and the cost of the complete setup. Current chip generations and available configurations vary by country.",
-      "editorialStatus": "Research draft — requires human review before publication.",
+      "editorialStatus": "Research-led guide — verify the exact model and current retailer listing before purchase.",
       "products": [
         {
           "name": "Apple iPad Pro 13-inch (M5)",
@@ -1641,7 +1641,7 @@
       "publishedAt": "2026-11-16",
       "summary": "Compare compact dash cameras by video resolution, lens field of view, glare handling, GPS features and installation needs.",
       "introduction": "Dash-camera selection should start with front-only versus multi-camera coverage, video resolution, field of view, GPS, parking mode and storage-card requirements. Some features require a hardwire kit or cloud subscription. Check local privacy and recording rules before installation.",
-      "editorialStatus": "Research draft — requires human review before publication.",
+      "editorialStatus": "Research-led guide — verify the exact model and current retailer listing before purchase.",
       "products": [
         {
           "name": "Garmin Dash Cam X310",
@@ -1718,7 +1718,7 @@
       "publishedAt": "2026-11-16",
       "summary": "Compare portable projectors by native resolution, brightness claims, battery operation, smart TV platform and connectivity.",
       "introduction": "Projector brightness claims use different measurement standards, so do not compare ANSI lumens and ISO lumens as if identical. Consider ambient light, screen size, throw distance, autofocus, keystone correction, battery runtime and whether streaming apps are licensed on the device.",
-      "editorialStatus": "Research draft — requires human review before publication.",
+      "editorialStatus": "Research-led guide — verify the exact model and current retailer listing before purchase.",
       "products": [
         {
           "name": "XGIMI MoGo 4 Portable Projector",
@@ -1804,7 +1804,7 @@
       "publishedAt": "2026-11-16",
       "summary": "Compare network-attached storage systems by drive-bay count, network connectivity, expansion, backup workflows and software support.",
       "introduction": "A NAS is a storage platform, not a backup by itself. Choose bay count based on capacity and redundancy plans, then compare network speed, memory upgradeability, expansion, supported drives, snapshots and off-site backup. Check the manufacturer's current compatibility list before buying disks.",
-      "editorialStatus": "Research draft — requires human review before publication.",
+      "editorialStatus": "Research-led guide — verify the exact model and current retailer listing before purchase.",
       "products": [
         {
           "name": "Synology DiskStation DS1525+",
@@ -1882,7 +1882,7 @@
       "publishedAt": "2026-11-16",
       "summary": "Compare electric toothbrush families by pressure feedback, brushing modes, app features, display and replacement-head ecosystem.",
       "introduction": "Choose an electric toothbrush by comfort, pressure feedback, brush-head cost and replacement availability. App coaching and displays are optional conveniences, not substitutes for good technique. Check compatible brush-head models and the charging/travel accessories included in each regional bundle.",
-      "editorialStatus": "Research draft — requires human review before publication.",
+      "editorialStatus": "Research-led guide — verify the exact model and current retailer listing before purchase.",
       "products": [
         {
           "name": "Oral-B iO Series 10 Electric Toothbrush",
@@ -1959,7 +1959,7 @@
       "publishedAt": "2026-11-16",
       "summary": "Compare wireless gaming mice by shape, weight class, sensor platform, switch design, battery and button layout.",
       "introduction": "Gaming mice are strongly dependent on hand size and grip style. Compare dimensions and shape first, then weight, sensor features, polling rate, battery, connectivity and software. A lighter mouse is not automatically better for every user, and model suffixes may identify different regional or special-edition versions.",
-      "editorialStatus": "Research draft — requires human review before publication.",
+      "editorialStatus": "Research-led guide — verify the exact model and current retailer listing before purchase.",
       "products": [
         {
           "name": "Logitech PRO X2 SUPERSTRIKE LIGHTSPEED Wireless Gaming Mouse",
@@ -2036,7 +2036,7 @@
       "publishedAt": "2026-11-16",
       "summary": "Compare smartwatch families by phone compatibility, display, battery expectations, sport features and case design.",
       "introduction": "Start with phone compatibility and the activities you actually track. Compare case size, battery life under your own usage pattern, GPS needs, cellular availability, app ecosystem and regional feature support. Health and fitness metrics are consumer features, not medical diagnoses.",
-      "editorialStatus": "Research draft — requires human review before publication.",
+      "editorialStatus": "Research-led guide — verify the exact model and current retailer listing before purchase.",
       "products": [
         {
           "name": "Apple Watch Series 12",
@@ -2117,7 +2117,7 @@
       "publishedAt": "2026-11-16",
       "summary": "Compare UK-focused Brother laser and LED printers for home offices and small businesses, including colour or mono output, duplex printing, scanning, networking and toner costs.",
       "introduction": "Printer purchase price is only one part of total cost. Compare toner/ink yield, drum and waste components, duplex printing and scanning, ADF capacity, wired/wireless networking, paper sizes and regional consumables. Check the exact voltage and suffix for US versus UK variants.",
-      "editorialStatus": "Research draft — requires human review before publication.",
+      "editorialStatus": "Research-led guide — verify the exact model and current retailer listing before purchase.",
       "products": [
         {
           "name": "Brother MFC-L8390CDW Colour LED All-in-One Printer",
