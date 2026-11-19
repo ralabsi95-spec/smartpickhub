@@ -25,7 +25,7 @@ Build a trustworthy UK-first English-language affiliate buying-guide property, w
 - Astro static site foundation.
 - GitHub repository as source control and project record.
 - Isolated Cloudflare Pages preview: https://smartpickhub-preview.pages.dev/ (project `smartpickhub-preview`, branch `automation/bootstrap`). This remains separate from the approved MVP production origin.
-- Current Astro catalogue contains 25 research-draft guides and 100 product records; none is approved for publication. Existing WordPress products were not imported and must not be duplicated.
+- Catalogue contains 25 guides and 100 product records. The current release branch marks all 25 as owner-approved/published; production remains on the previous main commit until PR #9 passes CI and is merged. Existing WordPress products were not imported and must not be duplicated.
 - RSS endpoint is generated only from guides explicitly approved for publication; it may remain empty while all guides are drafts.
 - JSON-LD includes Article and ItemList/Product identity structure; no unverified prices, offers, ratings or reviews are emitted.
 
@@ -1529,3 +1529,16 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 ## 19 November 2026 — CI status correction
 - Run #794 on `50ecc2ddd389e127fb65df0a7b9850b0b6af6ca6` was later observed as cancelled. Current PR head `9fa3deeb3eccf8c5c179ac9e02ed951eeb57baec` has no associated run in the commit-run lookup.
 - CI #781 passed on historical SHA `89edd10e2ad3df3c5c923aceb1fb8805d0498685` only. Latest-head CI remains an open gate. Connected GitHub actions in this session do not expose workflow_dispatch; trigger/verify a quality run for the current head before closure.
+
+
+## 19 November 2026 — owner-authorised guide release and indexing preparation
+
+- Owner explicitly instructed to merge, approve and allow indexing for the full 25-guide catalogue; confirmed product-image policy: use exact-model images only where commercial-use rights are documented, otherwise keep the existing text-based product information card with no substitute image or empty placeholder. Product imagery is optional and not a launch blocker.
+- PR #8 was squash-merged to `main` at `4a6b67a5c60f93bfeb58b5f792c08825a0ad1706`. Its latest-head CI #798 succeeded on head `174b332551f79f21281d509b565b2ec19ff5f331`.
+- Live production verification after PR #8 merge: `/deployment.json` reported commit `4a6b67a5c60f93bfeb58b5f792c08825a0ad1706`, branch `main`, environment `production`; robots allows crawling; homepage robots meta is `index, follow`; sitemap index and child sitemap are live with 28 URLs (homepage, disclosure, guides hub and 25 guides).
+- The IndexNow key file `/smartpickhub-20261119-7f3c9a2d4b6e8a1c.txt` is publicly reachable and matches the configured key.
+- Release branch `release/approve-guides-indexing-20261119` sets all 25 guides to `editorialStatus: Approved for publication` and `publicationStatus: published`; the catalogue validator now enforces the valid status pairing rather than rejecting all approvals. Product cards retain their existing information when no legally cleared exact-model photo exists.
+- A guarded workflow `.github/workflows/indexnow-after-production.yml` runs only after successful main-branch Astro quality CI, checks that Cloudflare serves the exact tested commit, then runs the existing IndexNow script. It does not claim Google indexing, and does not yet implement changed/deleted URL detection or durable send/receipt logging.
+- No Pinterest RSS connection or Pin publication is included in this release. Do not infer permission to connect the feeds from indexing approval.
+- Google Search Console property `https://smartpickhub.pages.dev/` was previously owner-verified, but its sitemap fetch issue remains unresolved. The OpenSEO SmartPickHub project currently has no connected Search Console account, and browser automation could not start because the TinyFish wallet balance is negative. No Google sitemap submission is claimed.
+- Evidence scope remains proportionate and UK-first: 25/100 structural inventory and targeted high-risk corrections, not a claim that every specification or current Amazon listing has been independently re-fetched. Regional/compatibility caveats remain in product records; no hands-on testing, live prices, ratings, stock or direct ASIN claims are made.
