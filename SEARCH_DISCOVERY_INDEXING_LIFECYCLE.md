@@ -1,5 +1,7 @@
 # SmartPickHub — Search Discovery & Indexing Lifecycle
 
+> **Current-state correction — 19 November 2026:** The historical baseline below is superseded where it says the 25 guides are drafts, Pinterest is unconnected, or post-merge IndexNow acceptance is unconfirmed. Current verified state: 25 owner-approved/published guides and 100 product records; five live RSS feeds with 25 entries; owner confirms all five feeds connected to matching Pinterest boards; the main-branch IndexNow workflow accepted notification for 28 production URLs on 19 November (GitHub run #94). Pinterest account-side automation and ingestion remain to be verified. See `PINTEREST_RSS_BOARD_MAPPING.md` and the latest `MASTER_PROJECT.md` checkpoint. The detailed historical sections below are retained as audit history, not current status.
+
 **Status:** operational baseline + scale-up design, verified 19 November 2026  
 **Canonical production:** https://smartpickhub.pages.dev/ (Cloudflare Pages + Astro)  
 **Preview:** https://smartpickhub-preview.pages.dev/ (must remain non-indexable)  
@@ -154,3 +156,33 @@ A page can be deployed and discoverable without being indexed. A notification ca
 - Google Search Console Sitemaps: https://support.google.com/webmasters/answer/7451001
 - OpenAI crawler documentation: https://platform.openai.com/docs/bots
 - OpenAI Publishers FAQ: https://help.openai.com/en/articles/12627856-publishers-and-developers-faq
+
+
+## 10. AI search and crawler access — verified policy
+
+AI discovery is not one universal indexing service. Keep each provider's documented crawler and purpose separate.
+
+### OpenAI / ChatGPT Search
+- `OAI-SearchBot` is the crawler used to surface public websites in ChatGPT search features. Keep it allowed in production robots policy if ChatGPT Search visibility is desired.
+- `GPTBot` is a separate crawler for content that may be used to improve OpenAI foundation models. Allowing OAI-SearchBot does not require allowing GPTBot, and the two policies are independent.
+- `ChatGPT-User` is for user-triggered page visits and is not the automatic search crawler.
+- The current production robots response is a generic `User-agent: * / Allow: /`, which permits both OAI-SearchBot and GPTBot by inheritance. No separate GPTBot policy has been set. Do not silently change this policy; a future decision to restrict model-training crawling must preserve OAI-SearchBot access.
+- OpenAI documents that robots policy changes may take around 24 hours to be reflected in its systems. Robots permission enables crawling eligibility; it does not guarantee citation or inclusion.
+
+### Bing, Copilot and other AI experiences
+- Bing states that its search and Copilot grounding experiences rely on the same crawl/index/ranking foundation. Keep canonical pages crawlable, accurate, useful, internally linked and sitemap-discoverable.
+- IndexNow helps notify Bing and participating engines about added, updated and deleted URLs. The confirmed HTTP acceptance receipt is not proof of crawl or indexation.
+- Do not assume there is a universal submission endpoint for ChatGPT, Copilot or every AI answer engine. Use only provider-documented crawler controls or submission mechanisms.
+
+### Content readiness for search and AI answers
+- Keep server-rendered/static HTML with visible, complete guide content; do not hide essential facts behind client-only scripts.
+- Maintain one canonical URL per guide, descriptive page titles/H1s, concise accurate summaries, author/publisher identity, last-updated dates where genuine, and useful internal links.
+- Keep structured data consistent with visible content; do not add fake reviews, product ratings, prices or unsupported Product rich-result properties.
+- Cite manufacturer specifications, distinguish UK/US variants, disclose affiliate relationships, and clearly state research-led rather than hands-on testing where applicable.
+- Keep a crawlable sitemap and robots policy, avoid duplicate/near-duplicate thin pages, and monitor server errors and crawl anomalies.
+- `llms.txt` is optional and not a substitute for robots.txt, sitemap, Search Console, Bing Webmaster Tools or high-quality content. Do not claim that adding it indexes a site in AI systems.
+
+### Measurement
+- Track OAI-SearchBot and other verified crawler requests in Cloudflare analytics/logs if available; crawler visits do not equal search impressions or citations.
+- Track ChatGPT Search referral visits separately in GA4 once connected; do not conflate them with organic Google/Bing sessions.
+- Periodically test representative SmartPickHub guide queries in ChatGPT Search and Copilot as qualitative visibility checks, not authoritative index coverage.
