@@ -1,12 +1,18 @@
 # Dependency security exception review
 
-**Status:** Owner-approved, temporary risk acceptance — finding remains open and review-required  
+**Status:** Closed for this advisory — GitHub withdrew GHSA-fc5q-39xc-vjpf on 18 November 2026 because it is not a security issue.  
 **Approved by project owner:** 18 November 2026 (explicit approval in project conversation)  
-**Last reviewed:** 18 November 2026, after CI #656  
-**Review deadline:** 2 December 2026  
+**Last reviewed:** 19 November 2026 — advisory withdrawal verified; latest locked install in run #129 reported zero npm vulnerabilities.  
+**Review deadline:** Not applicable to the withdrawn advisory; reopen only if a new advisory or credible new evidence appears.  
 **Do not treat this exception as remediation or a clean security audit.**
 
-## Finding
+## Current status — 19 November 2026
+
+GitHub's reviewed advisory page now explicitly marks GHSA-fc5q-39xc-vjpf / CVE-2026-112366 as **withdrawn on 18 November 2026 because it is not a security issue**. This supersedes the temporary risk-acceptance decision below. The package versions were not changed as part of this status update; this is not a claim of a dependency patch. No downgrade, override, vendored fork or other dependency change is warranted solely to address this withdrawn advisory. Preserve normal dependency hygiene and re-open review only if a new advisory or materially new evidence is published.
+
+The 2 December review deadline and temporary exception are historical and no longer apply to this withdrawn advisory.
+
+## Historical finding and exception record (18 November 2026)
 
 - Advisory: [GHSA-fc5q-39xc-vjpf](https://github.com/advisories/GHSA-fc5q-39xc-vjpf)
 - CVE: CVE-2026-112366
@@ -35,7 +41,7 @@ SmartPickHub is built as a static Astro site. The locked picomatch packages are 
 
 This limits the likely attack surface for the published static site, but does not make the vulnerable package safe. A compromised build input, future server adapter, or new code path that processes untrusted glob patterns could change the assessment.
 
-## Required controls while unresolved
+## Historical controls while the advisory was open
 
 1. Keep the site static; do not add a Node.js runtime/server or user-controlled glob matching without reassessment and fresh owner approval.
 2. Never feed visitor input or external product/catalogue text into glob patterns in build tooling.
@@ -45,7 +51,7 @@ This limits the likely attack surface for the published static site, but does no
 6. Do not install an unofficial fork or cherry-pick an unmerged patch as a silent dependency override.
 7. Recheck the official advisory and upstream release at each dependency update and no later than 2 December 2026.
 
-## Approval and exit criteria
+## Historical approval and exit criteria (superseded by advisory withdrawal)
 
 The temporary exception is owner-approved as described above. It expires for decision purposes on **2 December 2026** and must not roll forward silently. At that date, explicitly renew or reject it based on a fresh review.
 
