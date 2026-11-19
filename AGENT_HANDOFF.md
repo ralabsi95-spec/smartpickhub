@@ -1510,3 +1510,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - PR #24 exact head `61939c038d0a527ca563a656375cb754535c87d1` passed workflow #861; Cloudflare preview succeeded, but a separate Cloudflare Pages production deployment attempt for that PR head reported a build failure. No merge occurred. Inspect failure logs and two Garmin sourceNote references before considering it ready.
 - Do not merge either PR without owner approval. No production content, catalogue, tracking, analytics, paid SEO, automation or deploy action was performed in this continuation.
 - Next: diagnose PR #24's Cloudflare production-build attempt and sourceNote references; continue free, non-mutating work. OpenSEO paid research remains blocked pending credit top-up approval.
+
+
+## 19 November 2026 19:05 UTC — Garmin source correction handoff
+- Corrected only the two X210/X310 sourceNote links that incorrectly pointed to Garmin's X110 product page; both now cite Garmin's official X-series comparison. Kept the actual X110 record's X110 page intact.
+- PR #24 head `6ce8bcc840e6cd989a6bb6cb0bf4b02e88beb58c`; exact-head CI #874 / run `44594385780` is in progress. Prior CI #861 passed before this fix.
+- PR #24 is open/unmerged. A pre-correction Cloudflare production Pages build attempt reported failure although preview deployment succeeded; authenticated Cloudflare logs are not available here. No merge or production change.
+- Next: wait for exact-head CI #874, then resolve the Cloudflare build anomaly before considering PR #24 ready. PR #30 documentation CI #873 is also in progress on head `daa1d68e1f74562c4a03ca851fee0cc7c52b1e3c`.
