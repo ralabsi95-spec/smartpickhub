@@ -1184,3 +1184,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Guides 19–23 remain not approved; several model-specific product records still require full verification, including Garmin X210/X310 part numbers, Epson UK variants, Synology compatibility policy, Oral-B exact packages and Logitech sensor/weight/polling specifications.
 - No catalogue records, editorial statuses, publication statuses, site pages, feeds or production settings changed. All guides remain drafts.
 - Next: final catalogue batch, guides 24–25 (smartwatches and home printers), then consolidate the 25-guide gate matrix, fix the test validator only on the review branch, correct proven content errors and run CI. Deferred IndexNow engineering remains deferred.
+
+
+## 19 November 2026 — editorial source review batch 6 (guides 24–25) and catalogue-wide checkpoint
+
+- Completed a selective official-source pass for smartwatch and home-printer guides. Apple UK confirms current Watch Series 12, Ultra 4 and SE 3 families and Ultra 4 model-specific case/display/battery/connectivity details; Garmin Forerunner 265 details remain pending. Brother UK catalogue records distinguish UK 220–240V models from separate US 110–120V model numbers; full four-model UK spec/consumables checks remain pending.
+- All 25 guide categories have now received a structured first-pass source review. This is **not** a complete 100-product live-source audit and does not justify blanket editorial approval. Current explicit holds and confirmed discrepancies are recorded in `EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md`.
+- No guide has been approved; all 25 remain `publicationStatus: draft`. No product data, live pages, feeds or production settings changed.
+- Next phase: consolidate unresolved source checks into a product-level matrix; finish high-risk mismatches (Apple iPad mini A20 Pro source, Samsung vacuum runtime, Levoit Vital 200S UK counterpart, UK/US power variants, exact Brother printer bundles, Garmin dashcam part numbers, model-specific dock/charger port tables); revise only proven catalogue errors on the review branch; then fix the validator to allow approved-but-unpublished drafts while preserving the RSS/publishing gate and run full CI.
+- PR #8 remains a documentation/review branch; do not merge or publish without owner authorization. Deferred IndexNow changed-URL detection, deletion notifications and durable send/receipt logging remain explicitly deferred until separately scheduled and fully CI-tested.
