@@ -1122,3 +1122,14 @@ This batch checked selected manufacturer pages for Wi-Fi 7 routers/mesh, GaN cha
 
 ### Next gate
 - Continue manufacturer evidence checks on remaining records, one exact model/SKU at a time. Then run latest CI on the final branch head, complete editorial approval checklist for each guide, and keep all guides draft until owner launch decision. PR #8 stays open/unmerged. No production, Pinterest or IndexNow action.
+
+
+## 19 November 2026 — focused product corrections (Garmin UK SKUs and Logitech PRO X2)
+
+- Owner clarified that review should focus on material issues (product identity, UK/US compatibility, purchase links, and publication readiness), not low-value micro-detail checks.
+- Garmin UK X-series official comparison continues to support X310 4K, X210 1440p, X110 1080p, and the X110/X210/X310 family’s 140° field of view. UK retail part numbers are now corroborated by AO Business UK listings: X110 `010-02900-10`, X210 `010-02859-10`, X310 `010-02860-10`. This is retailer SKU evidence, not a Garmin-hosted product-specific spec sheet. Do not substitute regulatory model identifiers or dealer dummy SKUs. Product records now state the distinction and retain the Garmin UK official comparison as the specification source.
+- Logitech PRO X2 SUPERSTRIKE source updated to the official Logitech G UK product page. Logitech Support's model-specific specification confirms 60g, HERO 2, up to 44,000 DPI, 8,000Hz report rate, LIGHTSPEED 2 and up to 90 hours constant-motion battery life. Regional P/N varies; confirm retailer SKU.
+- Product data correction commit: `1c8bc4d2b1f95f10102979641757cc1fa1d2e509` (four records updated: three Garmin dashcams and one Logitech mouse). No approval/publication status changed.
+- Sources: https://www.garmin.com/en-GB/p/pn/010-02899-10/ ; https://www.ao-business.com/l/home_and_outdoors-garmin_in_stock/1-6-270/676/ ; https://www.logitechg.com/en-gb/shop/p/pro-x2-superstrike-mouse ; https://support.logi.com/hc/en-sg/articles/35026563405591-Specification-PRO-X2-SUPERSTRIKE.
+- All 25 guides / 100 products remain structurally present; this is targeted evidence verification, not a claim that all 100 have been fully manufacturer-verified. All guides remain drafts. PR #8 remains open/unmerged; no production changes, Pinterest publishing or IndexNow submissions.
+- Next: complete a proportionate high-risk pass on regional electrical variants, charger/dock compatibility, exact bundle/consumables and model identity; finish CI on the final branch head. Do not block approval on immaterial descriptive differences. Deferred changed-URL/deletion detection and durable IndexNow send/receipt logging remains scheduled for later, not implemented.
