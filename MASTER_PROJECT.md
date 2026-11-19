@@ -1266,3 +1266,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - No obvious clipping or overlapping is visible in the captured product-card region. This is a visual spot-check only, not a full mobile QA pass: mobile navigation, guide comparison table, full page, footer, and other viewport widths remain to be checked.
 - No CSS or application changes were made. Do not change button sizing based on this screenshot alone; current stacked full-width buttons appear usable.
 - Next action: at the same 390px viewport, inspect the top navigation and guide comparison table (especially horizontal overflow), then optionally check a narrow 320–360px viewport.
+
+
+## 19 November 2026 — mobile header check and editorial draft-label decision
+
+- Owner supplied a Chrome responsive screenshot of the production guide header at the 390px mobile viewport. Logo/brand, all four navigation links (Home, Buying Guides, RSS, Affiliate Disclosure), breadcrumb, category pill, title, summary, metadata and draft notice are visible and wrap without obvious horizontal overflow in the captured area. This is a visual spot-check, not a complete mobile accessibility or interaction test.
+- Decision: retain the visible `Research draft — requires human review before publication` notice for now. The catalogue still contains 25 guides with zero editorially approved guides. Removing the notice before review would imply an approval status that has not been granted. After a guide is fact-checked and explicitly editorially approved, remove the draft notice only for that guide; keep it on all unapproved guides. This is a temporary editorial-state indicator, not a permanent design element.
+- No site code, guide status, content, DNS, indexing or deployment settings were changed in this checkpoint.
+- Next: continue mobile QA (especially comparison table and navigation interactions), then verify production robots/canonical metadata and affiliate destination behavior. Keep noindex/crawl protection until editorial release is separately approved.
