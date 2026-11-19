@@ -360,7 +360,8 @@
           ],
           "verdict": "A practical ecosystem-led option for households that value app-based setup and mesh expansion. Confirm the local model, supported radio channels and any subscription features required.",
           "source": "https://eero.com/en-GB/shop/eero-pro-7/buy",
-          "sourceNote": "eero's UK product page identifies Pro 7 as a tri-band Wi-Fi 7 system, supports internet plans up to 5Gbps through two auto-sensing 5GbE ports, lists wireless speeds up to 3.9Gbps and coverage up to 190m² per unit, and supports 200+ devices. The page offers different pack sizes; verify selected pack contents, local power adapter/plug and regional radio availability. Optional eero Plus services are subscription-based."
+          "sourceNote": "eero's UK product page identifies Pro 7 as a tri-band Wi-Fi 7 system, supports internet plans up to 5Gbps through two auto-sensing 5GbE ports, lists wireless speeds up to 3.9Gbps and coverage up to 190m² per unit, and supports 200+ devices. eero's UK safety/compliance page specifies a 27W USB-C power adapter with 100–240V AC, 50/60Hz input. Verify the supplied UK plug and selected pack contents on the retailer listing. Optional eero Plus services are subscription-based. Official compliance: https://www.eero.com/en-GB/legal/compliance",
+          "availabilityNote": "The Pro 7 power adapter is specified for universal 100–240V AC, 50/60Hz input by eero's UK compliance page, so the electrical input range is suitable for UK mains. The compliance page does not itself guarantee which physical plug/adapter is included in every marketplace bundle; check the exact UK retail pack. Source: https://www.eero.com/en-GB/legal/compliance"
         },
         {
           "name": "NETGEAR Orbi 770 Series Wi-Fi 7 Mesh System (RBE773)",
@@ -379,7 +380,8 @@
           ],
           "verdict": "A mesh-kit candidate for larger properties where multiple access points are needed. Confirm the exact RBE773 regional pack, included satellite count, local Wi-Fi channel support and optional subscription costs.",
           "source": "https://www.netgear.com/uk/home/wifi/mesh/rbe773",
-          "sourceNote": "NETGEAR's UK RBE773 page identifies the Orbi 770 Series Wi-Fi 7 3-pack (router plus two satellites), tri-band speeds up to 11Gbps, coverage claims up to 6,750 sq. ft. and 2.5Gbps multi-gig connectivity. Coverage and throughput are manufacturer estimates; confirm the exact pack contents, regional radio settings and any optional Armor/parental-control subscription before purchase."
+          "sourceNote": "NETGEAR's UK RBE773 page identifies the Orbi 770 Series Wi-Fi 7 3-pack (router plus two satellites), tri-band speeds up to 11Gbps, coverage claims up to 6,750 sq. ft. and 2.5Gbps multi-gig connectivity. Coverage and throughput are manufacturer estimates; confirm the exact pack contents, regional radio settings and any optional Armor/parental-control subscription before purchase.",
+          "availabilityNote": "NETGEAR's UK page confirms the RBE773 3-pack contains one RBE771 router, two RBE770 satellites and three power adapters. The product page does not state the adapters' AC input range in the captured specifications; verify the rating label on the supplied UK adapters and exact regional pack before purchase. Do not infer electrical input voltage solely from the UK page URL. Official UK product page: https://www.netgear.com/uk/home/wifi/mesh/rbe773"
         }
       ],
       "buyingChecklist": [
@@ -605,8 +607,8 @@
             "Confirm regional SKU, included cable and exact port configuration"
           ],
           "verdict": "A productivity-oriented monitor for compatible laptops where display, data and charging over one USB-C connection simplify a desk. Verify the laptop's power needs and display-output support.",
-          "source": "https://www.dell.com/en-us/shop/dell-ultrasharp-27-4k-usb-c-hub-monitor-u2723qe/apd/210-bdpf/monitors-monitor-accessories",
-          "sourceNote": "Dell's official U2723QE listing documents 27-inch 4K at 60Hz, IPS Black, USB-C hub, 90W Power Delivery and display connectivity."
+          "source": "https://www.dell.com/en-uk/shop/dell-ultrasharp-27-4k-usb-c-hub-monitor-u2723qe/apd/210-bcxk/",
+          "sourceNote": "Dell's official UK listing for U2723QE SKU 210-BCXK documents 27-inch 4K at 60Hz, USB-C hub with up to 90W Power Delivery, integrated Ethernet and included power/USB/display cables. Dell UK specifies AC 100–240V, 50/60Hz input. Confirm exact seller SKU and package. Source: https://www.dell.com/en-uk/shop/dell-ultrasharp-27-4k-usb-c-hub-monitor-u2723qe/apd/210-bcxk/"
         },
         {
           "name": "ASUS ProArt Display PA279CRV 27-inch 4K HDR Monitor",
@@ -624,8 +626,8 @@
             "Check regional SKU, USB-C cable and host-device compatibility"
           ],
           "verdict": "A creator-focused option when wide colour-gamut coverage and high USB-C power delivery matter. Match the monitor's colour workflow to the software and calibration process you use.",
-          "source": "https://www.asus.com/displays-desktops/monitors/proart/proart-display-pa279crv/",
-          "sourceNote": "ASUS official product information lists 27-inch 4K, 99% DCI-P3, 99% Adobe RGB, Delta E below 2 and USB-C 96W Power Delivery."
+          "source": "https://www.asus.com/me-en/displays-desktops/monitors/proart/proart-display-pa279crv/techspec/",
+          "sourceNote": "ASUS official regional specifications list 27-inch 4K, 99% DCI-P3, 99% Adobe RGB, Delta E below 2, USB-C 96W Power Delivery and AC input 100–240V, 50/60Hz. Accessories and power cord can vary by region; check the exact local package. Source: https://www.asus.com/me-en/displays-desktops/monitors/proart/proart-display-pa279crv/techspec/"
         },
         {
           "name": "BenQ DesignVue PD2705U 27-inch 4K Designer Monitor",
@@ -643,8 +645,8 @@
             "Check the exact regional package and cable contents"
           ],
           "verdict": "A practical design-workflow candidate for users who value sRGB/Rec.709 coverage, KVM and USB-C docking. Confirm that 65W is sufficient for the connected laptop.",
-          "source": "https://www.benq.com/en-us/monitor/creative-pro/pd2705u/spec.html",
-          "sourceNote": "BenQ's official US specifications list 27-inch 4K IPS, 99% sRGB/Rec.709, 65W USB-C PD, KVM, PIP/PBP and ergonomic adjustments."
+          "source": "https://www.benq.eu/en-uk/monitor/creative-pro/pd2705u/spec.html",
+          "sourceNote": "BenQ's official UK specifications list 27-inch 4K IPS, 99% sRGB/Rec.709, 65W USB-C Power Delivery, KVM, PIP/PBP and built-in power supply rated 100–240V. Cable/accessory contents may vary by region. Source: https://www.benq.eu/en-uk/monitor/creative-pro/pd2705u/spec.html"
         },
         {
           "name": "Dell 27 4K USB-C Hub Monitor P2723QE",
