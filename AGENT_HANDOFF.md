@@ -860,3 +860,21 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 3. Keep PR #4 Draft/unmerged and all guides unapproved pending review; do not merge or publish.
 4. Continue next bounded UK-first guide correction only after the current PR's CI/preview evidence is stable; do not overlap commits or repeat the 25/100 catalogue import.
 5. Keep 27 axe incomplete contrast findings open for manual rendered-state review and retain the existing security-exception review checkpoint.
+
+
+## 19 November 2026 — CI #711 and live preview check
+
+- CI #711 / run ID `44461860982` completed successfully on PR #4 branch head `700b8981d03c9f5859cbe492429920433963f98a`. All 19 substantive QA steps passed, including Astro checks, importer unit/integration tests, catalogue and affiliate validation, static build, 29-page smoke tests, axe on all 28 routes, Lighthouse sample audits, consolidated report and artifact upload.
+- Artifact `smartpickhub-quality-reports`, ID `14500636930`, downloaded and reviewed. It reports 25 guides / 100 products; 100 US and 100 UK URL-construction checks; 29 generated HTML pages passing smoke checks; 28 axe routes with zero violations and 27 incomplete contrast/glyph checks; five Lighthouse samples with 100 Performance, Accessibility and Best Practices; npm audit with zero reported vulnerabilities in this run. Overall report status: `quality-passed-manual-accessibility-review-required`.
+- Audit report `commit` is synthetic PR merge SHA `027985d34cd0a0972996fbe3e349a1dffb180a90`; GitHub workflow/artifact metadata bind the run to PR source head `700b8981d03c9f5859cbe492429920433963f98a`. This is expected for the pull_request merge ref and is recorded distinctly.
+- Cloudflare Pages preview deployment for commit `700b898` succeeded: https://0ee68840.smartpickhub-preview.pages.dev/ . Branch preview: https://research-robot-vacuum-uk-cor.smartpickhub-preview.pages.dev/ . The separate Cloudflare Workers build check failed for the same commit; do not confuse it with the successful Pages preview.
+- Live browser inspection confirmed the homepage and robot-vacuum guide render and all four Roborock product sections are visible. `robots.txt` returned `User-agent: * / Disallow: /`. One browser inspection reported no robots meta tag, while a second described `index, follow`; this conflicts with source `src/layouts/Layout.astro` which explicitly emits `<meta name="robots" content="noindex, nofollow" />`, and with CI smoke-test code/report, which explicitly checks for noindex on every non-404 page and passed. Treat this as an unresolved live-response/inspection discrepancy; do not remove the source noindex or robots disallow. Recheck exact deployed HTML before launch.
+- Homepage counts are data-driven from catalogue length; current source says 25 guides and 100 products. This is the intended live count; no static 30+ count should be introduced.
+- PR #4 remains Draft/open/unmerged. No production deployment, indexing, merge, DNS, WordPress or publication changes occurred.
+
+### Launch-focused next actions
+1. Verify exact live HTML robots meta on the successful Pages deployment and confirm noindex/nofollow plus robots disallow agree. Keep launch indexing disabled until explicit launch approval.
+2. Complete the next practical UK-first content batch using sensible research thresholds; prioritize buyer usefulness and material compatibility rather than exhaustive regional SKU parity.
+3. Run a single full CI and Pages preview check after that coherent batch.
+4. Prepare launch checklist covering production Pages connection, canonical domain, sitemap/Search Console, affiliate disclosure, live Amazon UK link spot checks, analytics and rollback/backup. Do not activate production, indexing or public publishing without explicit owner approval.
+5. Keep PR #1 and PR #4 Draft/unmerged until the owner approves the release candidate.
