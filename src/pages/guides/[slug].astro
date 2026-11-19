@@ -4,6 +4,7 @@ import data from '../../data/products.json';
 import { buildAffiliateUrl } from '../../config/affiliate';
 
 type ProductWithOptionalImage = (typeof data.guides)[number]['products'][number] & {
+  availabilityNote?: string;
   image?: {
     url?: string;
     alt?: string;
