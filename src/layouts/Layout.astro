@@ -4,7 +4,7 @@ interface Props { title: string; description?: string; canonical?: string; socia
 const { title, description = 'Practical buying guides and product comparisons for shoppers in the United States and United Kingdom.', canonical, socialImage } = Astro.props;
 const canonicalUrl = canonical ?? Astro.url.href;
 const socialImageUrl = socialImage ? new URL(socialImage, Astro.site).toString() : undefined;
-const pinterestVerifyCode = import.meta.env.PINTEREST_VERIFY_CODE?.trim();
+const pinterestVerifyCode = import.meta.env.PINTEREST_VERIFY_CODE?.trim() || 'd630453baec97d1224b9a2d33d955c49';
 const isPreviewBuild = process.env.DEPLOYMENT_ENV === 'preview' || (Boolean(process.env.CF_PAGES_BRANCH) && process.env.CF_PAGES_BRANCH !== 'main') || Astro.site?.hostname !== 'smartpickhub.pages.dev';
 ---
 <!doctype html>
