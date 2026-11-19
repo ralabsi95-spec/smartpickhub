@@ -1503,3 +1503,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Google says no special AI schema, no `llms.txt` requirement for Google, and no need for artificial chunking; focus on crawlability and original helpful content. Bing AI Performance reports citations and grounding phrases, not visits or clicks. Microsoft AI Training/Grounding controls begin taking effect from 1 February 2027; recheck official guidance before then.
 - No public content/catalogue/crawler/WAF/DNS/analytics/Pinterest change, paid service or TinyFish task was performed. User will be mobile for two days; defer account connection, GA4 Measurement ID, consent decision and crawler training preference until desktop access returns. Do not ask for credentials.
 - Next: verify PR exact-head CI, then prepare Tier-1 guide content improvement proposals in a branch without publishing. After owner desktop access: connect GSC/GA4/Bing and make the training-permission decision.
+
+
+## 19 November 2026 19:10 UTC — Continuation update
+- PR #30 exact latest head `1d949a5609a06925fd50e99f891fdbae68a70caf` passed workflow #872 (run ID `44590981976`); all steps succeeded, including axe-core and Lighthouse. PR remains open/unmerged.
+- PR #24 exact head `61939c038d0a527ca563a656375cb754535c87d1` passed workflow #861; Cloudflare preview succeeded, but a separate Cloudflare Pages production deployment attempt for that PR head reported a build failure. No merge occurred. Inspect failure logs and two Garmin sourceNote references before considering it ready.
+- Do not merge either PR without owner approval. No production content, catalogue, tracking, analytics, paid SEO, automation or deploy action was performed in this continuation.
+- Next: diagnose PR #24's Cloudflare production-build attempt and sourceNote references; continue free, non-mutating work. OpenSEO paid research remains blocked pending credit top-up approval.
