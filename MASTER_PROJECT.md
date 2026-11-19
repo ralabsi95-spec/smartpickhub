@@ -1500,3 +1500,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 ## 19 November 2026 — regional router compatibility
 - Commit `68ae210e216909ac6ddf669a9c5f2e6a0b508feb` records TP-Link Deco BE63 regional hardware-revision caution. TP-Link UK documents multiple supported hardware versions and says regional availability varies; US datasheet figures are not proof of identical UK radio/firmware/adapter package.
 - PR #8 remains open/unmerged; all 25 guides remain draft. No production, Pinterest or IndexNow action.
+
+
+## 19 November 2026 — UK regional hardware and monitor source checkpoint
+- Commit `27be358f9413ed808752a09e080ac4aecfff2eec` improves regional evidence for eero Pro 7, NETGEAR Orbi RBE773, Dell U2723QE, ASUS PA279CRV and BenQ PD2705U.
+- eero UK compliance confirms 27W adapter input 100–240V/50–60Hz. NETGEAR UK confirms three adapters are included with RBE773 3-pack but does not expose their input voltage in the captured spec; buyer verification remains explicit.
+- Dell UK model/order code 210-BCXK and 100–240V input confirmed; its current Dell page indicates unavailable, so catalogue does not imply stock. ASUS and BenQ regional pages confirm universal input and USB-C PD levels (96W and 65W respectively).
+- PR #8 remains open/unmerged; all 25 guides remain draft. No production, Pinterest or IndexNow action.
