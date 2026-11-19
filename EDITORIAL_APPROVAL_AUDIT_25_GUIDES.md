@@ -1161,3 +1161,14 @@ This batch checked selected manufacturer pages for Wi-Fi 7 routers/mesh, GaN cha
 - Commit `68ae210e216909ac6ddf669a9c5f2e6a0b508feb` adds a regional hardware caveat to TP-Link Deco BE63. TP-Link UK lists multiple BE63 hardware revisions and explicitly says model/hardware availability varies by region. The US datasheet must not be treated as proof of identical UK retail hardware, radio configuration, firmware branch or included adapter.
 - UK buyers should select the hardware revision shown on TP-Link's UK support page and confirm the adapter rating and pack contents on the exact retailer listing: https://www.tp-link.com/uk/support/download/deco-be63/.
 - This is a targeted regional caveat, not a full radio-certification audit. All guides remain drafts.
+
+
+## 19 November 2026 — UK router and monitor electrical/source review
+- Product-data commit `27be358f9413ed808752a09e080ac4aecfff2eec` updates five catalogue records.
+- eero Pro 7: eero UK compliance material confirms model ME10001 uses a 27W USB-C adapter rated 100–240V AC, 50/60Hz. The note still tells buyers to verify the exact physical plug and pack contents.
+- NETGEAR Orbi RBE773: UK manufacturer listing confirms 3-pack contents (RBE771 router, two RBE770 satellites and three adapters), but the captured UK specification does not state adapter input voltage; listing now explicitly requires checking the adapter rating rather than assuming it.
+- Dell U2723QE: source changed to Dell UK; UK part/order code 210-BCXK and 100–240V, 50/60Hz input confirmed. Dell page currently marks this listing unavailable, so no live availability claim is made.
+- ASUS PA279CRV: regional ASUS technical source confirms 100–240V, 50/60Hz and USB-C PD up to 96W; accessories may vary regionally.
+- BenQ PD2705U: UK source confirms 100–240V built-in supply and 65W USB-C PD; accessories may vary.
+- Sources: https://www.eero.com/en-GB/legal/compliance ; https://www.netgear.com/uk/home/wifi/mesh/rbe773 ; https://www.dell.com/en-gb/shop/u2723qe-monitor/apd/210-bcxk/monitors-monitor-accessories ; https://www.asus.com/me-en/displays-desktops/monitors/proart/proart-display-pa279crv/techspec/ ; https://www.benq.eu/en-uk/monitor/creative-pro/pd2705u/spec.html.
+- No guide status or production content changed; all 25 guides remain drafts.
