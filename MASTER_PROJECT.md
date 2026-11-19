@@ -1566,3 +1566,18 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Current catalogue: 25 approved/published guides / 100 product records. Product images remain optional; use only exact-model images with documented commercial reuse rights, otherwise retain the existing text product card. No fabricated ASINs, direct listings, prices, ratings, availability or hands-on testing claims.
 - RSS is generated from approved guides; Pinterest connection and Pin publishing remain out of scope for this release. Google Search Console sitemap submission remains outstanding. Changed/deleted URL detection and durable IndexNow send/receipt logging remain deferred.
 - Next action: verify main CI #816 on the merge SHA, then verify the guarded IndexNow workflow and live Cloudflare Pages deployment for the same SHA; only after those checks update this status again.
+
+
+
+## 19 November 2026 12:40 UTC — full production and SEO review
+- Repository main is at `2fc29d32067a0b654b1f4e4a8133835002f45513`; live Cloudflare Pages deployment marker confirms the same commit. Production host is `https://smartpickhub.pages.dev/`; former InfinityFree/WordPress hosting and domain are cancelled and completely out of scope.
+- Live robots allows crawling; sitemap index and child sitemap are readable; sitemap contains 28 URLs. IndexNow key file is publicly reachable and matches the configured key.
+- Fresh OpenSEO audit `a9580b1b-cc76-4572-82a6-f6fe069a3448`: all 28/28 pages crawled, HTTP 200, indexable and in sitemap; no critical crawl issues. 25 informational recommendations remain (21 title tags longer than 60 characters; 4 meta descriptions longer than 160 characters). No title/H1 changes were made.
+- Main catalogue remains 25 published/approved guides and 100 products. Every guide has four products; all records have manufacturer sources and US/UK Amazon marketplace search phrases; no duplicate product names. All 100 products intentionally have no product photo pending exact-model identity and documented commercial reuse rights.
+- Five category RSS feeds are live and populated. Pinterest RSS connection and Pin publication remain unperformed.
+- OpenSEO has 24 saved UK commercial/transactional keyword records with volume/KD/CPC estimates. No Google Search Console or GA4 accounts are currently connected to OpenSEO; Google verification meta is present, but GSC sitemap processing/submission remains unconfirmed.
+- PR #7 is open but stale/diverged (3 commits ahead, 4 behind main); its lifecycle text still says the 25 guides are drafts and references the old IndexNow workflow. Do not merge as-is.
+- PR #10 adds a safe IndexNow guard for exact production commit or verified documentation-only descendant. This addresses production advancing from release SHA `2619626e` to docs-only SHA `2fc29d3`; non-Markdown changes still require their own successful CI. PR #10 CI #820 pending at checkpoint.
+- No IndexNow submission is claimed. No production content, product records, DNS, Cloudflare settings or Pinterest publishing changed during this review.
+- Security exception for the unresolved picomatch advisory remains owner-approved only through 2 December 2026 and remains review-required.
+- Next: verify PR #10 CI, merge after green checks, verify main CI/deployment, then confirm IndexNow result; connect GSC/GA4 and reconcile the stale PR #7 lifecycle documentation.
