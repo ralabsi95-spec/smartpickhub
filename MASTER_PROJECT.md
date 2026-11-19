@@ -1,18 +1,20 @@
 # SmartPickHub – Master Project
 
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
-**Implementation branch:** `main` (production) with release work on `release/approve-guides-indexing-20261119`  
-**Status:** Cloudflare Pages production is live at https://smartpickhub.pages.dev; PR #8 is merged. Owner-authorised 25-guide publication and guarded IndexNow automation are in open PR #9; CI #810 passed on tested head `df6a5d2`. Merge is held pending canonical host confirmation.  
+**Implementation branch:** `main` (production)  
+**Status:** Owner-authorised release PR #9 is merged to `main` at `2619626e51e023a906876cebe5632bd84f97ef53`. All 25 guides / 100 product records are approved and published in the repository. Main-branch quality CI #816 is queued; guarded IndexNow must wait for that exact main commit to pass and for Cloudflare Pages to serve the same commit.  
 **Updated:** 19 November 2026
 
 ## Project purpose
 Build a trustworthy UK-first English-language affiliate buying-guide property, with a secondary US marketplace track. Prioritise useful original guidance, verified product information, organic discovery and measurable conversions.
 
-## Existing live property – preserve
-- Approved MVP production URL: https://smartpickhub.pages.dev/ (Cloudflare Pages + Astro).
-- The paid custom domain (.com / .org) is deferred to phase two, after the MVP produces measurable results.
-- The legacy WordPress installation is outside this deployment plan and has not been modified, migrated, redirected or replaced by this repository bootstrap.
-- Do not change or migrate the legacy WordPress installation without a separately approved plan and verified backup.
+## Production environment and scope boundary
+- Approved production URL: https://smartpickhub.pages.dev/ (Cloudflare Pages + Astro).
+- Preview URL: https://smartpickhub-preview.pages.dev/; preview remains noindex/nofollow and crawl-disallowed.
+- GitHub repository `ralabsi95-spec/smartpickhub`, default branch `main`.
+- The former InfinityFree domain/hosting and former WordPress site are cancelled and completely outside SmartPickHub. They are not a production target, preview, fallback, migration source, catalogue source, analytics source, or integration. Do not connect, access, edit, migrate, redirect, import from, or spend project effort on them.
+- The paid custom domain (.com / .org) remains deferred to phase two, after the MVP produces measurable results.
+- Any older references to legacy hosting/CMS below are historical records only and are superseded by this scope boundary.
 
 ## Affiliate identifiers
 - Amazon US: `smartpickh0bc-20` (source-provided; verify account status before use).
@@ -25,7 +27,7 @@ Build a trustworthy UK-first English-language affiliate buying-guide property, w
 - Astro static site foundation.
 - GitHub repository as source control and project record.
 - Isolated Cloudflare Pages preview: https://smartpickhub-preview.pages.dev/ (project `smartpickhub-preview`, branch `automation/bootstrap`). This remains separate from the approved MVP production origin.
-- Catalogue contains 25 guides and 100 product records. The current release branch marks all 25 as owner-approved/published; production remains on the previous main commit until PR #9 passes CI and is merged. Existing WordPress products were not imported and must not be duplicated.
+- Catalogue contains 25 guides and 100 product records. All 25 are owner-approved/published following PR #9 merge. No data is to be imported from any out-of-scope legacy site.
 - The release branch marks 25 guides approved/published, so the RSS endpoint will contain those guides after merge. RSS is not connected to Pinterest; no Pins are published by this release.
 - JSON-LD includes Article and ItemList/Product identity structure; no unverified prices, offers, ratings or reviews are emitted.
 
@@ -1552,3 +1554,15 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - PR #9 remains open/unmerged because the permanent project brief names InfinityFree, while the Astro release and IndexNow workflow target Pages.dev. Do not merge or notify IndexNow until the owner confirms the canonical indexing target.
 - InfinityFree `/sitemap_index.xml` is a 404; its robots file points to WordPress `/wp-sitemap.xml`. The latter XML could not be read by available fetchers, so do not claim its sitemap has been fetched/submitted.
 - Google Search Console submission remains outstanding. The OpenSEO project has no connected Search Console account; TinyFish browser automation could not start because wallet balance is `-$0.47`. No Google indexing request or IndexNow notification has been confirmed.
+
+
+## 19 November 2026 — authoritative continuation and hosting-scope correction
+- Owner reaffirmed that the former InfinityFree hosting/domain is cancelled and completely outside SmartPickHub. This supersedes every earlier operational note suggesting preservation, monitoring, migration, redirects, imports, or fallback use of that property. Do not use or access it for project work.
+- The approved hosting/domain family is Cloudflare Pages `pages.dev`: production `https://smartpickhub.pages.dev/`; isolated preview `https://smartpickhub-preview.pages.dev/`. GitHub remains source control; Astro remains the static-site framework.
+- Owner-authorised release PR #9 was merged to `main` using expected head SHA `3d49b7d2e1c918b41c2fde101a684712ed1e6155`. Merge commit: `2619626e51e023a906876cebe5632bd84f97ef53`.
+- PR #9 exact-head checks: Astro quality run #815 passed; Cloudflare Pages production-project branch preview and isolated preview both deployed successfully for commit `3d49b7d`. The separate Cloudflare Workers Builds check failed; it is not the Astro Pages deployment check and must not be described as a Pages failure.
+- Main-branch quality run #816 for merge commit `2619626e` was queued at the latest check. Do not treat the merge commit as fully CI-verified until #816 completes successfully.
+- Guarded IndexNow run is intentionally gated behind successful main-branch quality CI and Cloudflare serving the exact tested commit. It has not yet been confirmed submitted for merge commit `2619626e`; verify its workflow run and result before claiming notification.
+- Current catalogue: 25 approved/published guides / 100 product records. Product images remain optional; use only exact-model images with documented commercial reuse rights, otherwise retain the existing text product card. No fabricated ASINs, direct listings, prices, ratings, availability or hands-on testing claims.
+- RSS is generated from approved guides; Pinterest connection and Pin publishing remain out of scope for this release. Google Search Console sitemap submission remains outstanding. Changed/deleted URL detection and durable IndexNow send/receipt logging remain deferred.
+- Next action: verify main CI #816 on the merge SHA, then verify the guarded IndexNow workflow and live Cloudflare Pages deployment for the same SHA; only after those checks update this status again.
