@@ -864,3 +864,18 @@ Audit date: 19 November 2026. Source: `src/data/products.json` on `main`.
 ## Status
 
 **Not yet approved for publication.** This report is a complete structural inventory and a prioritised review queue. It does not claim that all 100 manufacturer URLs were independently re-fetched or that every product is currently sold in both markets.
+
+## Supplemental live source checks — 19 November 2026
+
+The following manufacturer-page checks were performed after the initial structural inventory. These are source-derived corrections/cautions, not blanket approval of their guides:
+
+- eufy SoloCam S340 official product page: dual cameras; wide lens 3K and telephoto 2K; hybrid 8x zoom; built-in 8GB eMMC local storage; 2.4GHz Wi-Fi only; no monthly fee for listed local storage; battery life estimate depends on 300 seconds recording/day. Do not describe as dual-band Wi-Fi or 24/7 recording.
+- Ring official Battery Doorbell 2K Plus page: 2026 release, 2K video, 140° horizontal × 140° vertical field of view, Wi-Fi 6 dual-band 2.4/5GHz, IP55; Ring confirms Battery Doorbell Plus (2nd Gen) is the same device under its updated name.
+- Google Nest Cam (Battery) official specifications: 1080p at 30fps HDR, 130° diagonal field of view, 6x digital zoom, included 3-hour event history; longer history depends on Google Home Premium subscription. Distinguish the US product page from UK package/availability and subscription terms.
+- TP-Link UK support page lists Deco BE63 hardware revisions V3.60, V2.60 and V2, and explicitly warns availability differs by region. Do not transfer exact US hardware revision/specification assumptions to UK listings; use the local purchase-region support page.
+- ASUS RT-BE96U official specifications confirm Wi-Fi 7, tri-band rates, 10GbE interfaces and other ports. When summarising, distinguish WAN/LAN port roles from LAN-only ports rather than simplifying as “two 10GbE WAN ports”.
+- Arlo UK support documentation distinguishes multiple Essential generations and model identifiers (including VMC3080/VMC2080 3rd Gen and VMC3050/VMC2050 2nd Gen). Existing guide source naming should be checked against exact model generation before retaining the generic “Essential 3 2K” wording.
+
+Primary source URLs: https://us.eufy.com/products/t81701w1 ; https://ring.com/products/battery-doorbell-plus-2nd-gen ; https://store.google.com/product/nest_cam_battery_specs?hl=en-US ; https://www.tp-link.com/uk/support/download/deco-be63/ ; https://www.asus.com/networking-iot-servers/wifi-7/all-series/rt-be96u/techspec/ ; https://www.arlo.com/en_gb/support/faq/device-features/what-is-the-difference-between-the-three-arlo-essential-wire-free-cameras
+
+All guide publication statuses remain draft; no product records or editorial approval statuses were changed by these checks.
