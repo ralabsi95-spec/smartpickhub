@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewedAt": "2026-11-18",
+  "reviewedAt": "2026-11-19",
   "exceptions": [
     {
       "advisory": "GHSA-fc5q-39xc-vjpf",
@@ -13,9 +13,9 @@
         "2.3.2"
       ],
       "severity": "high",
-      "status": "owner-approved-temporary-risk-acceptance-advisory-watch-open",
-      "expiresOn": "2026-12-02",
-      "rationale": "The current lockfile resolves picomatch 4.0.7 through Astro/Vite and a nested 2.3.2 through anymatch. GitHub's reviewed advisory currently lists no patched release. The published site is a static Astro build; repository inspection shows picomatch only as a transitive build-tool dependency, with no direct application import or request-time glob parsing. This reduces exposure but does not remediate the vulnerable code.",
+      "status": "withdrawn-by-publisher-closed",
+      "expiresOn": null,
+      "rationale": "GitHub withdrew GHSA-fc5q-39xc-vjpf / CVE-2026-112366 on 18 November 2026 and explicitly states it was withdrawn because it is not a security issue. This supersedes the temporary owner-approved risk acceptance. No package patch is claimed or required solely for this withdrawn advisory; retain normal dependency hygiene and reopen only if a new advisory or credible new evidence appears.",
       "mitigations": [
         "Keep SmartPickHub as a static build with no Node.js request-time server or runtime glob processing.",
         "Do not pass visitor-controlled values, catalogue content, or external inputs into glob patterns during builds.",
@@ -25,7 +25,7 @@
         "Reassess immediately when an upstream patched version is published and no later than the expiry date."
       ],
       "ownerApprovalRequired": false,
-      "remediationStatus": "not-remediated-advisory-watch-open",
+      "remediationStatus": "not-required-advisory-withdrawn",
       "relatedUpstreamPullRequest": "https://github.com/micromatch/picomatch/pull/238",
       "cvss": 7.5,
       "lastNpmAuditObserved": {
@@ -36,7 +36,20 @@
         "totalVulnerabilities": 0,
         "note": "A clean npm audit result does not prove installed picomatch copies are patched; the project lockfile was not remediated and the upstream advisory remains published."
       },
-      "advisoryMetadataNote": "The GitHub advisory page currently displays package/affected-version metadata as unknown and no patched version; do not interpret npm audit zero findings as proof of a patched package."
+      "advisoryMetadataNote": "The advisory is withdrawn as of 18 November 2026 because it is not a security issue. Historical lockfile versions remain recorded for traceability; do not treat the prior temporary exception as active.",
+      "withdrawal": {
+        "withdrawnAt": "2026-11-18",
+        "reason": "GitHub Advisory Database states that the advisory was withdrawn because it is not a security issue.",
+        "source": "https://github.com/advisories/GHSA-fc5q-39xc-vjpf"
+      },
+      "latestCleanInstallObservation": {
+        "run": 129,
+        "headSha": "806e231665dd398e9a2935a0854c65afa3a30857",
+        "generatedAt": "2026-11-19T17:09:47Z",
+        "status": "clean",
+        "totalVulnerabilities": 0,
+        "note": "npm ci audited 292 packages and reported 0 vulnerabilities; this is a clean install-time audit observation, separate from the advisory withdrawal."
+      }
     }
   ]
 }
