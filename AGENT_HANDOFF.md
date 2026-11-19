@@ -1472,3 +1472,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 
 ## 19 November 2026 16:03 UTC — PR #19 audit retry passed
 - GitHub Actions run #853 (ID `44559641852`) attempt 2 completed successfully. All 22 steps passed, including type/content checks, importer dry-runs, catalogue/affiliate validation, keyword generation, static build, RSS, smoke tests, axe-core, Lighthouse desktop/mobile and representative templates, consolidated report and artifact upload. The first attempt's `ETARGET` dependency-resolution failure did not recur.
+
+
+## 19 November 2026 16:44 UTC — Continuation handoff
+- Current `main` is exactly `b28e67a5529576011c8705330ca2f3f95792bdcc` (compared against the known SHA; identical). The GitHub Actions main push run for this SHA completed successfully. PR #21 merge is verified; Cloudflare production deployment for this merge SHA is **not independently confirmed**. Public web-reader errors on homepage/robots/sitemap are tool-access failures, not proof of site outage.
+- A small qualitative UK SERP sample reviewed air-fryer, robot vacuum/mop and dash-cam buyer-intent results. Competitive content commonly offers exact UK model/SKU, “best for” segmentation, concise comparison, date-stamped retailer checks, and concrete decision factors (air fryer capacity/footprint; robot mop-lift/dock/thresholds; dash-cam front/rear resolution/night/parking/storage). This is not quantitative keyword research or measured ranking/volume data. No site content was changed.
+- Existing 25 approved guides / 100 product records remain unchanged. Do not create duplicates or expand product counts without evidence. Keep UK buyer intent first; improve existing Tier-1 guide specificity after checking the actual catalogue models and sources.
+- No GSC/GA4/Bing data or Amazon outbound event tracking has been connected. No GA4 code until a valid Measurement ID and consent/privacy approach are supplied. Do not ask for passwords or 2FA. No paid tools or TinyFish.
+- Next: owner connects GSC and GA4; provide only GA4 Measurement ID and consent approach. Then implement outbound click event in a branch/PR, run exact-head CI, and compare GSC queries/clicks with GA4 events and Amazon Associates reports (separate metrics).
