@@ -72,7 +72,7 @@ const structuredData = {
 };
 const jsonLd = JSON.stringify(structuredData).replace(/</g, '\\u003c');
 ---
-<Layout title={guide.title} description={guide.summary} canonical={canonicalUrl} socialImage={socialImage}>
+<Layout title={guide.seoTitle ?? guide.title} description={guide.seoDescription ?? guide.summary} canonical={canonicalUrl} socialImage={socialImage}>
   <article class="buying-guide">
     <nav class="breadcrumbs" aria-label="Breadcrumb">
       <a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Buying Guides</a><span aria-hidden="true">/</span><span aria-current="page">{guide.category}</span>
