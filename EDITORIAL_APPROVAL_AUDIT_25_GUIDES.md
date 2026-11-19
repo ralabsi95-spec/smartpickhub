@@ -1215,3 +1215,11 @@ This batch checked selected manufacturer pages for Wi-Fi 7 routers/mesh, GaN cha
 - Amazon links remain model-name search URLs, not direct verified ASINs. No prices, ratings, reviews, stock or hands-on testing claims were added.
 - PR #8 has been merged; release PR #9 must pass the latest CI before merge. The guarded IndexNow workflow is designed to run after successful main CI and exact production deployment verification.
 - Search Console sitemap submission is still outstanding; no Google indexing request has been confirmed. IndexNow acceptance, when triggered, is not a guarantee of crawling or indexing.
+
+
+## 19 November 2026 — CI passed; domain confirmation required
+
+- PR #9 CI #810 passed on tested head `df6a5d20918c04be131ad3519dc7c2a0a0e0d353`. 25 guides / 100 products; distribution and smoke checks passed; 28 axe routes with zero violations and 27 incomplete contrast checks; five Lighthouse samples completed; npm audit zero vulnerabilities.
+- The release branch's all-25 approved/published status is prepared but not merged. Do not merge or send IndexNow until the owner confirms whether `smartpickhub.infinityfree.me` or `smartpickhub.pages.dev` is the canonical destination for these 25 guides.
+- The two live domains are separate properties with different guide libraries. The PR #9 IndexNow workflow is hard-coded to Pages.dev; it is not appropriate for InfinityFree without a separate deployment and verification-key setup.
+- Google Search Console sitemap submission and any IndexNow notification remain unconfirmed.
