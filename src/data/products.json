@@ -434,7 +434,8 @@
           ],
           "verdict": "A useful multi-port comparison candidate for a shared desk or travel bag. Confirm the actual port-by-port power allocation and regional listing before relying on it for a high-wattage laptop.",
           "source": "https://uk.ugreen.com/products/ugreen-nexode-100w-usb-c-gan-charger-4-ports-wall-charger",
-          "sourceNote": "UGREEN UK lists SKU 40749, three USB-C plus one USB-A port, 100W total output, 100–240V input and supported charging protocols."
+          "sourceNote": "UGREEN UK lists SKU 40749, three USB-C plus one USB-A port, 100W total output, 100–240V input and supported charging protocols.",
+          "availabilityNote": "UGREEN UK lists SKU 40749 with universal 100–240V, 50/60Hz input, three USB-C ports and one USB-A port, and 100W maximum total output. The 100W figure is the charger's overall ceiling, not 100W guaranteed to every connected device simultaneously; actual USB-C/USB-A allocation depends on which ports are used and the connected devices. The public specification page does not provide a complete simultaneous multi-port power-allocation table, so do not promise four devices each receive full rated power. Confirm the exact UK plug supplied by the retailer. Official UK specifications: https://uk.ugreen.com/products/ugreen-nexode-100w-usb-c-gan-charger-4-ports-wall-charger"
         },
         {
           "name": "Belkin BoostCharge Pro 200W 4-Port USB-C GaN Charger — WCH015",
@@ -472,7 +473,8 @@
           ],
           "verdict": "A powerful multi-device charging station candidate for a home office. Compare the exact regional version and its port-sharing table against the devices you intend to charge.",
           "source": "https://eu.ugreen.com/en-ch/pages/nexode",
-          "sourceNote": "UGREEN's EU Nexode specification table lists SKU 35539, 200W maximum, four ports, USB-C1 up to 140W, USB-C2 up to 100W and approximate 502g weight."
+          "sourceNote": "UGREEN's EU Nexode comparison identifies SKU 35539, 100–240V~ 50/60Hz 3A max input, 200W maximum combined output, three USB-C ports and one USB-A port. Individual port maxima are USB-C1 140W, USB-C2 100W, USB-C3 30W and USB-A 22.5W; these are port-specific ceilings, not additive simultaneous output. The charger's combined output remains capped at 200W, with power allocation depending on the ports in use. Official EU specifications: https://eu.ugreen.com/en-es/pages/nexode",
+          "availabilityNote": "The EU specification lists universal 100–240V~ 50/60Hz input, but check the supplied mains lead/plug for the UK retailer and use an appropriate UK-rated lead where needed. Do not add the individual port maxima (140W + 100W + 30W + 22.5W) as simultaneous power: the unit is rated 200W maximum combined output. Port allocation changes with the connected devices and active ports. Official specification: https://eu.ugreen.com/en-es/pages/nexode"
         }
       ],
       "buyingChecklist": [
