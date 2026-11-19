@@ -1481,3 +1481,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - PR #8 remains open and unmerged. All 25 guides remain drafts; no production/site changes, no Pinterest posts, no IndexNow submissions.
 - CI run #773 remains associated with older product-data SHA `726f6266e1f06214eb431fba6d4d897cdbd3fb1f`; early steps and axe accessibility checks passed, Lighthouse/report steps were still running at last check. It does not validate the latest branch head.
 - Next: complete a proportionate high-risk review, then run/confirm the quality workflow against the final PR head. Keep the deferred IndexNow changed-URL/deletion/receipt-log work in the future queue.
+
+
+## 19 November 2026 — focused compatibility review checkpoint
+- Broad owner approval received for consolidated review; scope remains non-production review and branch changes. User preference is proportionate checks focused on material correctness, not minor copy differences.
+- Product-data commit `ff1fff9a5f85609060c799a7a791bd8eb77c00a6` updates five high-impact records: Anker A2688 shared-port output; Anker A83B5 Thunderbolt 5 host/display limits; Kensington SD5780T host-dependent monitor limits; Plugable TBT4-UDZ display compatibility; Jackery JE-300B regional AC voltage/frequency split.
+- All 25 guides / 100 products remain in the catalogue; all guides remain draft. PR #8 open/unmerged. No live site update, Pinterest publication or IndexNow submission.
+- CI #778 was observed running on prior head `2137a66d`; it is not evidence for commit `ff1fff9a`. Confirm new workflow run on the final head before marking checks complete.
+- Next: proportionate review of remaining product identity/regional power/bundle risks; wait for final-head CI; preserve deferred IndexNow changed-URL/deletion detection and send/receipt log as future scope.
