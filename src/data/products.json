@@ -1674,8 +1674,9 @@
             "High-resolution recording uses more storage; parking features may need additional wiring and setup."
           ],
           "verdict": "A premium compact option for buyers prioritising detailed front-camera footage.",
-          "source": "https://www.garmin.com/en-US/p/1391409/",
-          "sourceNote": "Garmin's exact US product page identifies the Dash Cam X310 as a 4K touchscreen camera with a 140-degree field of view and built-in Clarity polarizer. Confirm the local package, microSD card, power cable and parking-mode accessories for the selected marketplace."
+          "source": "https://www.garmin.com/en-GB/p/pn/010-02899-10/",
+          "sourceNote": "Garmin UK's official Dash Cam Mini 3 product page includes the manufacturer's X-series comparison: X310 is 4K Ultra HD, 140-degree field of view, built-in Clarity polariser and the same feature family as X110. The Garmin UK comparison page is used here for resolution-tier evidence; exact UK retail part number and bundle for X310 were not exposed in the source captured for this review. Do not treat the EU declaration model identifier A04684 or a Canadian SKU as a UK retail part number.",
+          "availabilityNote": "UK retail SKU and exact in-box bundle remain to be confirmed from a UK X310 product listing. The resolution tier is manufacturer-confirmed. Verify local microSD, power cable, parking-mode accessories and warranty before purchase."
         },
         {
           "name": "Garmin Dash Cam X210",
@@ -1689,8 +1690,9 @@
             "Confirm exact recording resolution and feature set for the selected regional package; accessories may be separate."
           ],
           "verdict": "Compare with the X310 if 4K is not essential to the buyer's requirements.",
-          "source": "https://www.garmin.com/en-US/p/1033231/",
-          "sourceNote": "Garmin's exact US product page identifies the Dash Cam X210 as a 1440p camera with a 140-degree field of view and built-in Clarity polarizer. Confirm the local package, microSD card, power cable and parking-mode accessories for the selected marketplace."
+          "source": "https://www.garmin.com/en-GB/p/pn/010-02899-10/",
+          "sourceNote": "Garmin UK's official Dash Cam Mini 3 product page includes the manufacturer's X-series comparison: X210 is 1440p, 140-degree field of view and the same feature family as X110. A UK Declaration of Conformity identifies regulatory model family B04684; that is not a retail part number. Exact UK retail SKU and bundle remain unconfirmed.",
+          "availabilityNote": "Do not use B04684 as a retail SKU. Confirm the UK retail part number, package, microSD, power cable, parking-mode accessories and warranty before purchase."
         },
         {
           "name": "Garmin Dash Cam X110",
@@ -1704,8 +1706,9 @@
             "Check the exact resolution tier, GPS availability and included power cable before purchase."
           ],
           "verdict": "A simpler X-series candidate when core recording matters more than flagship specifications.",
-          "source": "https://www.garmin.com/en-US/p/1222949/",
-          "sourceNote": "Garmin's exact US product page identifies the Dash Cam X110 as a 1080p camera with a 140-degree field of view and built-in Clarity polarizer. Confirm the local package, microSD card, power cable and parking-mode accessories for the selected marketplace."
+          "source": "https://www.garmin.com/en-GB/p/pn/010-02899-10/",
+          "sourceNote": "Garmin UK's official Dash Cam Mini 3 product page includes the manufacturer's X-series comparison: X110 is 1080p with 140-degree field of view, 2.4-inch LCD and built-in Clarity polariser. The same page distinguishes X210 1440p and X310 4K. Exact UK retail SKU and package details still need verification.",
+          "availabilityNote": "Confirm UK retail part number and in-box package, including microSD and power accessories, before purchase."
         },
         {
           "name": "Garmin Dash Cam Mini 3",
@@ -1719,8 +1722,9 @@
             "Small size means checking screenless setup, app workflow and whether GPS/parking functions meet the intended use."
           ],
           "verdict": "A discreet option for buyers who prefer minimal windshield obstruction.",
-          "source": "https://www.garmin.com/en-US/p/1223369/",
-          "sourceNote": "Garmin's exact US product page identifies the Dash Cam Mini 3 as an ultracompact 1080p camera with a 140-degree field of view and built-in Clarity polarizer. Its screenless design differs from the X110; confirm local package, microSD card, power cable and parking-mode accessories."
+          "source": "https://www.garmin.com/en-GB/p/pn/010-02899-10/",
+          "sourceNote": "Garmin UK exact product listing confirms Dash Cam Mini 3 part number 010-02899-10, 1080p video, 140-degree field of view and built-in Clarity polariser. Garmin's same page compares X110, X210 and X310 resolution tiers. Confirm the exact package and whether a microSD card is included before purchase.",
+          "availabilityNote": "UK retail part number 010-02899-10 is manufacturer-confirmed. Some jurisdictions regulate or prohibit dash cams or recording; buyers must check local privacy and road-use rules."
         }
       ],
       "buyingChecklist": [
@@ -2109,7 +2113,8 @@
           ],
           "verdict": "A rugged premium candidate for users who need its larger case and outdoor feature set.",
           "source": "https://www.apple.com/jo/apple-watch-ultra-4/specs/",
-          "sourceNote": "Apple Jordan's model-specific specifications identify the 49mm titanium case, S11 chip, 3,000-nit display and battery estimates of up to 50 hours normal use or 84 hours in Low Power Mode. Actual battery life varies by use and configuration; satellite/cellular features vary by country and model."
+          "sourceNote": "Apple Jordan's model-specific specifications identify the 49mm titanium case, S11 chip, 3,000-nit display and battery estimates of up to 50 hours normal use or 84 hours in Low Power Mode. Actual battery life varies by use and configuration. Cellular model compatibility and carrier support vary by country. Do not attribute Apple Watch Ultra 3 satellite messaging features to Ultra 4; verify any carrier-provided satellite capability against the exact model, carrier and country.",
+          "availabilityNote": "Apple's carrier compatibility documentation lists country-specific Watch model numbers and supported carriers. Do not assume a GPS + Cellular model purchased in one country will support cellular service in another. Apple satellite support documentation currently distinguishes Ultra 3's Apple-provided satellite feature from carrier-provided features; do not market Ultra 4 as having Ultra 3 satellite SOS/messaging."
         },
         {
           "name": "Garmin Forerunner 265",
