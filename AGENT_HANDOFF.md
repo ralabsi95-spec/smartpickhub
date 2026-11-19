@@ -1347,3 +1347,52 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - PR #7 remains open but stale; its content incorrectly describes the 25 guides as drafts and refers to the superseded workflow. Do not merge it. A corrected lifecycle document is being ported to `docs/reconcile-search-discovery-lifecycle-20261119`.
 - Current verified catalogue remains 25 approved/published guides / 100 products. No product import, content publication, Pinterest Pin, or production content edit occurred in this continuation.
 - Next: verify the post-merge main CI and IndexNow workflow outcome; complete review/CI of the reconciled lifecycle PR; then connect GSC/GA4 and diagnose the sitemap fetch discrepancy.
+
+
+## 19 November 2026 13:11 UTC — lifecycle docs merged; Pinterest RSS connection prerequisite confirmed
+- PR #11 (production-reconciled search/discovery lifecycle) merged to main as `960c32597d7bdcb6119a7d8bcd657d0818e4b251`. Its CI run #827 passed on exact PR head `4c407247cef17bab1e0cb425cd30bb945717bc58`.
+- PR #11 is documentation-only. Live production marker still reports `88f7f86d6083e2546f229d0ba4c6258df30dc62b`; no new deployed site code is claimed from the docs merge.
+- Prior owner discussion confirmed the five Pinterest RSS feeds were deliberately left unconnected while the 25-guide approval/publication batch was incomplete. The required sequence is: complete and verify the 25 approved guide entries, then connect each RSS feed to its matching Pinterest board, and only then begin Pinterest distribution.
+- Live verification now confirms five populated RSS feeds with 25 entries total: Home Office & Ergonomics (5), Smart Home & Security (5), Kitchen & Home Tech (6), Travel & Tech Gear (6), Computing & Gaming (3).
+- Exact feed URLs:
+  - `https://smartpickhub.pages.dev/rss/home-office.xml`
+  - `https://smartpickhub.pages.dev/rss/smart-home.xml`
+  - `https://smartpickhub.pages.dev/rss/kitchen-home-tech.xml`
+  - `https://smartpickhub.pages.dev/rss/travel-tech.xml`
+  - `https://smartpickhub.pages.dev/rss/computing-gaming.xml`
+- No Pinterest board has been connected, no Pins have been created, and no Pinterest publication has started. RSS feed availability is not proof of Pinterest connection.
+- Next: obtain an authenticated Pinterest browser session, inspect the existing board names, map each board to its corresponding feed, connect all five, verify each connection, and only then start any Pin distribution. Do not create duplicate boards or publish Pins before the five mappings are verified.
+
+
+## 19 November 2026 13:24 UTC — owner confirms Pinterest RSS connections
+- Owner explicitly confirmed that all five previously supplied RSS feed URLs were successfully connected to their corresponding Pinterest boards; record this as owner-confirmed, not independently verified through an authenticated Pinterest session.
+- Feed mapping remains: Home Office & Ergonomics → `/rss/home-office.xml` (5 guides); Smart Home & Security → `/rss/smart-home.xml` (5); Kitchen & Home Tech → `/rss/kitchen-home-tech.xml` (6); Travel & Tech Gear → `/rss/travel-tech.xml` (6); Computing & Gaming → `/rss/computing-gaming.xml` (3). Total: 25 published guide entries.
+- Do not repeat the connection steps or ask the owner to reconnect. Next verify the five saved mappings and inspect whether Pinterest automatically ingested/published Pins as a consequence of RSS connection. No additional Pin creation or distribution campaign is authorised by this confirmation alone; obtain separate approval before initiating any new publication.
+- Preserve distinction: RSS feed endpoints and entries were independently checked live; board connections are owner-confirmed; Pinterest-side saved state and any resulting Pin ingestion/publication remain unverified.
+
+
+## 19 November 2026 13:30 UTC — Pinterest automatic distribution goal clarified
+- Owner clarified the intended outcome: Pinterest should publish Pins automatically from the five connected RSS feeds to their corresponding boards when new approved guide entries are added. Treat RSS-driven automatic publishing as the approved project goal, not a manual-only workflow.
+- Existing feed inventory remains 5 feeds / 25 current guide entries. Owner confirmed all five feeds were connected to matching boards at 13:24 UTC; this connection is owner-confirmed but not independently inspected in Pinterest.
+- Outstanding verification: inspect Pinterest's RSS automation settings and account activity to establish whether connections are active for automatic Pin creation/publication, whether the existing 25 feed items were ingested, and whether future new entries will auto-publish. Do not claim automation is active until verified.
+- Pinterest authenticated browser access is not currently established in the available browser profile. A safe sign-in session is required for independent account-side verification. Do not ask the owner to share credentials in chat.
+- No new manual Pins have been created by the assistant. Once Pinterest settings are verified, RSS-triggered automatic publishing of approved feed entries is within the owner's stated goal. Keep the feed restricted to approved/published guides; never feed drafts or unverified products.
+
+
+## 19 November 2026 13:35 UTC — production discovery and SEO metadata checkpoint
+- Live production `deployment.json` confirms Cloudflare Pages serves main commit `960c32597d7bdcb6119a7d8bcd657d0818e4b251` (generated 13:12:29 UTC). Robots allows crawling and points to the production sitemap index; sitemap index and all five board RSS feeds fetch successfully.
+- The main-branch IndexNow notification workflow run #94 (GitHub run ID `44531574582`) completed successfully on commit `960c32597d7bdcb6119a7d8bcd657d0818e4b251`. Its log confirms: "IndexNow accepted notification for 28 URLs on smartpickhub.pages.dev." This is endpoint acceptance only, not a guarantee of crawling or search indexing.
+- The duplicate/alternate "IndexNow after production release" run #10 was skipped; the successful #94 notification above is the verified submission receipt.
+- OpenSEO audit `a9580b1b-cc76-4572-82a6-f6fe069a3448` remains the latest technical crawl: 28/28 pages crawled, HTTP 200/indexable/in sitemap, no critical issues; remaining issues are informational metadata length only (21 titles, 4 descriptions).
+- PR #13 `https://github.com/ralabsi95-spec/smartpickhub/pull/13` prepares concise SEO metadata for all 25 guides and shorter descriptions for the four flagged pages. Full visible H1s, JSON-LD headlines, RSS titles and Pinterest cover text remain unchanged. Initial CI #833 exposed a missing optional TypeScript declaration for `availabilityNote`; the PR adds the explicit optional type and a fresh exact-head CI run is required. PR #13 is not merged or deployed.
+- OpenSEO currently has no connected Google Search Console or GA4 accounts; no first-party impressions, clicks, organic sessions or conversion results can yet be read. Connection requires the owner to connect Google in the OpenSEO project integrations.
+- Pinterest auto-publishing is the owner's approved objective. Feed XML includes RSS 2.0 title, description, claimed-domain link, and original 1000×1500 PNG covers via enclosure/media:content. The owner confirms the five feeds are connected; account-side saved settings and Pin ingestion remain to be verified through authenticated Pinterest access.
+
+
+## 19 November 2026 13:54 UTC — future product intake and AI visibility planning
+- Added `PRODUCT_INTAKE_AND_CATALOGUE_GROWTH.md` describing the verified current dry-run importer and the future gated workflow for candidate intake, identity/duplicate resolution, manufacturer evidence, editorial mapping, human approval, PR-based catalogue integration, release and indexing.
+- Confirmed current importer supports CSV/JSON, brand/model/market/HTTPS source validation, candidate IDs, normalized-name matching, within-batch duplicate detection, unverified-ASIN warnings, JSON/CSV reports and non-mutating dry-run behavior. It does not write to the catalogue or publish. Existing 100 products remain untouched.
+- Updated `SEARCH_DISCOVERY_INDEXING_LIFECYCLE.md` with current-state correction and explicit AI crawler distinctions: OAI-SearchBot for ChatGPT Search, GPTBot for possible model training, ChatGPT-User for user-triggered visits. Production wildcard robots policy currently permits all three by inheritance; no crawler policy was changed.
+- OpenSEO AI visibility tracker is not configured. Cost estimate only (no prompts saved, no paid check started): 5 UK-English prompts across ChatGPT, Google AI Overviews and Gemini = 15 observations, 30 credits / $0.03 per weekly check, estimated $0.12/month (4 checks). One-off baseline would be 90 credits / $0.09. Do not activate recurring checks until owner approves the spend.
+- PR #13 SEO metadata refinement passed exact-head CI run #835 on head `5744925b99965c1e1d95b5e399be22f210e1b8b2`; it is still unmerged and undeployed pending production-change approval.
+- PR #12 documentation branch contains the refreshed lifecycle, Pinterest RSS mapping, product intake/growth specification and supersession notice for historical governance text. Latest CI run #837 is in progress on head `935aa7f5f797ef25df7e8a3329b142abe43806e2`; no merge until it succeeds.

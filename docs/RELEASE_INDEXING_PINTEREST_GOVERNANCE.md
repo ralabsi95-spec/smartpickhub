@@ -1,5 +1,7 @@
 # SmartPickHub — Release, Indexing & Pinterest Governance
 
+> **Supersession note — 19 November 2026:** This document records the earlier pre-launch plan and its historical gate decisions. Its section 6 baseline (25 drafts / zero approved guides) and its former statement that Pinterest RSS auto-publishing was only a future optional workflow are superseded by the current approved production state. All 25 guides / 100 product records are now approved and published on `https://smartpickhub.pages.dev/`; the five board-specific RSS feeds are live and contain 25 approved entries. The owner confirmed all five feeds were connected to their matching Pinterest boards and clarified that RSS-driven automatic Pin creation/publication is the intended operating goal. Account-side automation status and initial Pin ingestion still require authenticated verification. The current authoritative details are in `MASTER_PROJECT.md`, `AGENT_HANDOFF.md` and `PINTEREST_RSS_BOARD_MAPPING.md`. Historical text below is retained for audit trail, not as current operational state.
+
 **Status:** Approved operating plan; execution is gated.  
 **Recorded:** 18 November 2026  
 **Branch:** `automation/bootstrap`  
