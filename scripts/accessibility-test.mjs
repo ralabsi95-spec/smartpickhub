@@ -1,0 +1,88 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { chromium } from 'playwright';
+import AxeBuilder from '@axe-core/playwright';
+
+const baseUrl = process.env.BASE_URL || 'http://127.0.0.1:4321';
+const catalogue = JSON.parse(fs.readFileSync('src/data/products.json', 'utf8'));
+const guides = catalogue.guides ?? [];
+if (guides.length === 0) throw new Error('No guide routes found in src/data/products.json.');
+
+const pages = [
+  '/',
+  '/guides/',
+  '/affiliate-disclosure/',
+  ...guides.map(({ slug }) => '/guides/' + slug + '/')
+];
+if (new Set(pages).size !== pages.length) throw new Error('Duplicate route detected in accessibility test list.');
+
+fs.mkdirSync('test-reports/axe', { recursive: true });
+const browser = await chromium.launch({ headless: true });
+const context = await browser.newContext();
+const failures = [];
+const summaries = [];
+
+try {
+  const page = await context.newPage();
+  for (const route of pages) {
+    const response = await page.goto(baseUrl + route, { waitUntil: 'networkidle' });
+    if (!response || !response.ok()) {
+      failures.push(route + ': page did not return a successful HTTP response.');
+      summaries.push({ route, status: 'failed', error: 'non-success HTTP response' });
+      continue;
+    }
+    const results = await new AxeBuilder({ page })
+      .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'])
+      .analyze();
+
+    const incompleteDetails = results.incomplete.map((check) => ({
+      id: check.id,
+      impact: check.impact,
+      description: check.description,
+      help: check.help,
+      helpUrl: check.helpUrl,
+      nodes: check.nodes.map((node) => ({
+        target: node.target,
+        failureSummary: node.failureSummary,
+        any: node.any.map(({ id, message }) => ({ id, message })),
+        all: node.all.map(({ id, message }) => ({ id, message })),
+        none: node.none.map(({ id, message }) => ({ id, message }))
+      }))
+    }));
+    const report = { url: route, violations: results.violations, passes: results.passes.length, incomplete: results.incomplete.length, incompleteDetails };
+    const file = path.join('test-reports/axe', (route === '/' ? 'home' : route.split('/').filter(Boolean).join('__')) + '.json');
+    fs.writeFileSync(file, JSON.stringify(report, null, 2));
+    summaries.push({ route, status: 'passed', passes: results.passes.length, violations: results.violations.length, incomplete: results.incomplete.length, incompleteDetails });
+
+    for (const violation of results.violations) {
+      console.log(route + ' | ' + violation.impact + ' | ' + violation.id + ' | ' + violation.nodes.length + ' node(s)');
+      if (violation.impact === 'critical' || violation.impact === 'serious') {
+        failures.push(route + ': ' + violation.id + ' (' + violation.impact + ')');
+      }
+    }
+  }
+} finally {
+  await context.close();
+  await browser.close();
+}
+
+const totalViolations = summaries.reduce((sum, item) => sum + (item.violations ?? 0), 0);
+const totalIncomplete = summaries.reduce((sum, item) => sum + (item.incomplete ?? 0), 0);
+const summary = {
+  status: failures.length ? 'failed' : 'passed',
+  generatedAt: new Date().toISOString(),
+  auditedRoutes: pages.length,
+  guideCount: guides.length,
+  totalViolations,
+  totalIncomplete,
+  results: summaries,
+  failures
+};
+fs.writeFileSync('test-reports/axe/summary.json', JSON.stringify(summary, null, 2));
+console.log(JSON.stringify(summary, null, 2));
+if (failures.length) {
+  console.error('Accessibility audit failed:');
+  for (const failure of failures) console.error('- ' + failure);
+  process.exit(1);
+}
+console.log('axe-core audit passed: no serious or critical WCAG violations.');

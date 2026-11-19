@@ -1,0 +1,410 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Editorial keyword opportunity map for US and UK buying intent. These are seed ideas, not measured search-volume claims and not pages to publish automatically.",
+  "markets": [
+    {
+      "code": "us",
+      "label": "United States",
+      "amazonDomain": "amazon.com"
+    },
+    {
+      "code": "uk",
+      "label": "United Kingdom",
+      "amazonDomain": "amazon.co.uk"
+    }
+  ],
+  "clusters": [
+    {
+      "id": "home-office",
+      "name": "Home Office & Ergonomics",
+      "topics": [
+        "ergonomic office chairs",
+        "standing desks",
+        "ergonomic keyboards",
+        "vertical mice",
+        "monitor arms",
+        "desk lamps",
+        "webcams",
+        "USB microphones",
+        "4K webcams",
+        "1080p webcams",
+        "AI tracking webcams",
+        "conference speakerphones",
+        "USB capture cards"
+      ],
+      "audiences": [
+        "for home offices",
+        "for remote work",
+        "for small desks",
+        "for video calls",
+        "for streaming and content creation"
+      ],
+      "needs": [
+        "comfort and posture",
+        "small spaces",
+        "long work sessions",
+        "resolution versus frame rate",
+        "field of view and autofocus",
+        "privacy shutter and software compatibility"
+      ]
+    },
+    {
+      "id": "portable-power",
+      "name": "Portable Power & Charging",
+      "topics": [
+        "USB C power banks",
+        "portable power stations",
+        "GaN chargers",
+        "wireless charging stands",
+        "solar power banks",
+        "laptop power banks",
+        "multiport USB C chargers"
+      ],
+      "audiences": [
+        "for travel",
+        "for laptops and phones",
+        "for camping"
+      ],
+      "needs": [
+        "airline travel limits",
+        "fast charging",
+        "power capacity and output"
+      ]
+    },
+    {
+      "id": "smart-home-security",
+      "name": "Smart Home & Security",
+      "topics": [
+        "outdoor security cameras",
+        "video doorbells",
+        "indoor security cameras",
+        "smart locks",
+        "motion sensors",
+        "smart alarm systems",
+        "solar security cameras"
+      ],
+      "audiences": [
+        "for renters",
+        "for family homes",
+        "for apartments"
+      ],
+      "needs": [
+        "local storage versus cloud",
+        "no subscription options",
+        "easy installation"
+      ]
+    },
+    {
+      "id": "home-networking",
+      "name": "Home Networking",
+      "topics": [
+        "Wi Fi 7 routers",
+        "mesh Wi Fi systems",
+        "Wi Fi extenders",
+        "gaming routers",
+        "2.5 gigabit switches",
+        "whole home Wi Fi"
+      ],
+      "audiences": [
+        "for large homes",
+        "for gaming",
+        "for fibre broadband"
+      ],
+      "needs": [
+        "coverage dead zones",
+        "wired backhaul",
+        "multi gig internet"
+      ]
+    },
+    {
+      "id": "computer-accessories",
+      "name": "Computer & Laptop Accessories",
+      "topics": [
+        "USB C docking stations",
+        "Thunderbolt docks",
+        "laptop stands",
+        "portable monitors",
+        "mechanical keyboards",
+        "wireless mice",
+        "KVM switches",
+        "4K USB-C monitors",
+        "27 inch 4K monitors",
+        "monitors with USB C power delivery",
+        "colour accurate monitors",
+        "USB C hub monitors",
+        "dual monitor setups",
+        "Thunderbolt 4 docking stations",
+        "Thunderbolt 5 docks",
+        "USB C docking stations",
+        "dual monitor laptop docks",
+        "laptop docking stations with 2.5Gb Ethernet",
+        "portable SSDs",
+        "external SSD drives",
+        "USB4 portable SSDs",
+        "rugged external SSDs",
+        "portable SSDs for video editing",
+        "2TB portable SSD",
+        "4TB external SSD"
+      ],
+      "audiences": [
+        "for MacBook",
+        "for Windows laptops",
+        "for dual monitor setups",
+        "for photo editing",
+        "for graphic design",
+        "for laptop docking",
+        "for dual 4K monitors",
+        "for Thunderbolt 5 laptops",
+        "for multi-peripheral workstations",
+        "for photographers and videographers",
+        "for laptop backups",
+        "for travel and field work"
+      ],
+      "needs": [
+        "port compatibility",
+        "multiple displays",
+        "desk cable management",
+        "USB-C power delivery wattage",
+        "colour gamut and calibration",
+        "stand ergonomics and refresh rate",
+        "host laptop Thunderbolt and USB4 support",
+        "USB-C Power Delivery wattage",
+        "macOS versus Windows multi-display limits",
+        "port selection and Ethernet speed",
+        "USB 3.2 Gen 2 versus Gen 2x2 bandwidth",
+        "USB4 and Thunderbolt host compatibility",
+        "IP water and dust protection ratings",
+        "hardware encryption and backup strategy"
+      ]
+    },
+    {
+      "id": "kitchen-appliances",
+      "name": "Kitchen Appliances",
+      "topics": [
+        "air fryers",
+        "dual zone air fryers",
+        "espresso machines",
+        "coffee grinders",
+        "blenders",
+        "food processors",
+        "rice cookers",
+        "single basket air fryers",
+        "steam air fryers",
+        "air fryer with viewing window",
+        "large capacity air fryers",
+        "compact air fryers",
+        "air fryer comparison",
+        "air fryer for families"
+      ],
+      "audiences": [
+        "for small kitchens",
+        "for families",
+        "for beginners"
+      ],
+      "needs": [
+        "capacity and counter space",
+        "cleaning and maintenance",
+        "energy use",
+        "single versus dual basket",
+        "usable cooking capacity",
+        "countertop footprint and dimensions",
+        "regional voltage and plug compatibility",
+        "dishwasher-safe components and cleaning",
+        "steam functions and water maintenance"
+      ]
+    },
+    {
+      "id": "cleaning-floorcare",
+      "name": "Cleaning & Floorcare",
+      "topics": [
+        "cordless vacuum cleaners",
+        "robot vacuum cleaners",
+        "wet dry floor cleaners",
+        "handheld vacuums",
+        "carpet cleaners",
+        "air purifiers"
+      ],
+      "audiences": [
+        "for pet owners",
+        "for apartments",
+        "for allergy-conscious homes"
+      ],
+      "needs": [
+        "hard floors and carpets",
+        "pet hair pickup",
+        "filters and replacement costs"
+      ]
+    },
+    {
+      "id": "home-comfort",
+      "name": "Home Comfort & Climate",
+      "topics": [
+        "air purifiers",
+        "dehumidifiers",
+        "humidifiers",
+        "tower fans",
+        "portable air conditioners",
+        "space heaters"
+      ],
+      "audiences": [
+        "for bedrooms",
+        "for damp homes",
+        "for large rooms"
+      ],
+      "needs": [
+        "room size coverage",
+        "noise at night",
+        "filter replacement"
+      ]
+    },
+    {
+      "id": "travel-gear",
+      "name": "Travel & Everyday Carry",
+      "topics": [
+        "carry on luggage",
+        "travel backpacks",
+        "packing cubes",
+        "universal travel adapters",
+        "noise cancelling headphones",
+        "Bluetooth trackers"
+      ],
+      "audiences": [
+        "for frequent flyers",
+        "for business travel",
+        "for weekend trips"
+      ],
+      "needs": [
+        "airline cabin size rules",
+        "weight and durability",
+        "device compatibility"
+      ]
+    },
+    {
+      "id": "audio-video",
+      "name": "Audio & Video",
+      "topics": [
+        "noise cancelling headphones",
+        "wireless earbuds",
+        "Bluetooth speakers",
+        "soundbars",
+        "4K monitors",
+        "portable projectors"
+      ],
+      "audiences": [
+        "for commuting",
+        "for home cinema",
+        "for video calls"
+      ],
+      "needs": [
+        "battery life",
+        "connectivity and codecs",
+        "room size and placement"
+      ]
+    },
+    {
+      "id": "smart-lighting",
+      "name": "Smart Lighting & Energy",
+      "topics": [
+        "smart light bulbs",
+        "smart plugs energy monitoring",
+        "smart LED light strips",
+        "motion sensor lights",
+        "solar garden lights"
+      ],
+      "audiences": [
+        "for smart homes",
+        "for renters",
+        "for outdoor spaces"
+      ],
+      "needs": [
+        "Matter and hub compatibility",
+        "energy monitoring",
+        "installation without rewiring"
+      ]
+    },
+    {
+      "id": "gaming",
+      "name": "Gaming & Streaming",
+      "topics": [
+        "gaming monitors",
+        "gaming headsets",
+        "gaming keyboards",
+        "gaming mice",
+        "capture cards",
+        "streaming microphones"
+      ],
+      "audiences": [
+        "for PC gaming",
+        "for console gaming",
+        "for streaming setups"
+      ],
+      "needs": [
+        "refresh rate and response time",
+        "platform compatibility",
+        "desk and room setup"
+      ]
+    }
+  ],
+  "intentModifiers": [
+    {
+      "value": "buying guide",
+      "intent": "commercial-investigation"
+    },
+    {
+      "value": "best options",
+      "intent": "commercial-investigation"
+    },
+    {
+      "value": "comparison",
+      "intent": "commercial-investigation"
+    },
+    {
+      "value": "what to look for",
+      "intent": "informational-commercial"
+    },
+    {
+      "value": "features explained",
+      "intent": "informational"
+    },
+    {
+      "value": "for beginners",
+      "intent": "commercial-investigation"
+    },
+    {
+      "value": "for small spaces",
+      "intent": "commercial-investigation"
+    },
+    {
+      "value": "without subscription",
+      "intent": "commercial-investigation"
+    },
+    {
+      "value": "with USB C",
+      "intent": "commercial-investigation"
+    },
+    {
+      "value": "with local storage",
+      "intent": "commercial-investigation"
+    }
+  ],
+  "generationPolicy": {
+    "status": "unvalidated-opportunity",
+    "doNotPublishAutomatically": true,
+    "searchVolume": "not-collected",
+    "requiredBeforePrioritisation": [
+      "Google Search Console query/impression data or a documented keyword-tool export",
+      "SERP intent review in both target markets",
+      "competition and ranking-difficulty review",
+      "clear non-duplicate user need",
+      "editorial evidence plan"
+    ],
+    "requiredBeforePublication": [
+      "verified exact products and market-specific variants",
+      "manufacturer or primary-source citations",
+      "original comparison and decision criteria",
+      "human editorial approval",
+      "working US and UK affiliate destinations"
+    ],
+    "indexingPolicy": "Only genuinely useful, distinct editorial pages may be indexable after approval. Do not create one page per phrase variation."
+  }
+}

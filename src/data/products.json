@@ -1,0 +1,2211 @@
+{
+  "_meta": {
+    "purpose": "Research-led buying guide catalogue for US and UK shoppers.",
+    "status": "research-draft-unapproved",
+    "lastResearched": "2026-11-19",
+    "marketStrategy": "UK-first launch. Prioritise useful UK buying guidance and Amazon UK search destinations; US marketplace fields are optional secondary support and do not require exhaustive model-by-model regional parity.",
+    "identifierPolicy": "Identifiers are product/model search phrases, not ASINs. Affiliate links use marketplace search URLs unless an exact product ASIN and destination have been verified. Never invent ASINs, live prices, ratings, stock or seller claims.",
+    "editorialPolicy": "Practical editorial guidance based on available manufacturer/product information. Keep claims proportionate to evidence; avoid hands-on testing claims, fabricated rankings, current price/availability claims, and unsafe electrical or compatibility advice. Minor regional differences do not block a guide; clearly material safety, voltage, plug, battery-platform or compatibility differences must not be misrepresented.",
+    "publicationPolicy": "Do not treat these research drafts as approved editorial content. Preview remains noindex.",
+    "productCount": 100,
+    "marketPriority": "UK primary; US secondary where useful. No exhaustive UK/US SKU equivalence audit is required for launch."
+  },
+  "guides": [
+    {
+      "slug": "home-office-ergonomics-us-uk",
+      "title": "Home Office Ergonomics: Practical Keyboard and Mouse Options for US & UK Buyers",
+      "category": "Home Office Ergonomics",
+      "publishedAt": "2026-11-16",
+      "summary": "A practical comparison of ergonomic keyboards and pointing devices, focusing on shape, connection options, hand fit and desk-work habits.",
+      "introduction": "Ergonomic accessories can change how your hands and arms are positioned at a desk, but no single shape suits everyone. Compare the layout, grip style, adjustment options and computer compatibility before choosing. These are research-led product summaries based on manufacturer documentation, not hands-on test results.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Logitech MX Vertical Advanced Ergonomic Mouse",
+          "bestFor": "Users who prefer a full-size vertical mouse with a rechargeable battery.",
+          "us_identifier": "Logitech MX Vertical Advanced Ergonomic Mouse",
+          "uk_identifier": "Logitech MX Vertical Advanced Ergonomic Mouse",
+          "pros": [
+            "57-degree vertical orientation designed around a handshake-style grip",
+            "Rechargeable design with USB-C charging",
+            "Bluetooth and USB receiver connectivity; supports switching between compatible computers"
+          ],
+          "cons": [
+            "The upright grip can feel unfamiliar and may require an adjustment period",
+            "Its larger shape is not ideal for every hand size or grip preference",
+            "The vertical design is not a substitute for adjusting desk height and overall posture"
+          ],
+          "verdict": "A candidate for users who want to try a pronounced vertical mouse shape and value multi-device connectivity. Check hand fit and current regional model details before buying.",
+          "source": "https://www.logitech.com/en-us/products/mice/mx-vertical-ergonomic-mouse.html",
+          "sourceNote": "Logitech product and technical documentation describes the 57-degree angle, rechargeable power and connection options."
+        },
+        {
+          "name": "Logitech Lift Vertical Ergonomic Mouse",
+          "bestFor": "Users with small-to-medium hands looking for a more compact vertical mouse.",
+          "us_identifier": "Logitech Lift Vertical Ergonomic Mouse",
+          "uk_identifier": "Logitech Lift Vertical Ergonomic Mouse",
+          "pros": [
+            "57-degree vertical grip",
+            "Bluetooth and Logi Bolt receiver connectivity",
+            "Compact shape with programmable buttons and a replaceable AA battery"
+          ],
+          "cons": [
+            "The compact body may not suit larger hands",
+            "Uses a replaceable AA battery rather than USB-C rechargeable power",
+            "Vertical pointing devices require a personal comfort check before committing"
+          ],
+          "verdict": "Worth comparing with larger vertical mice when hand size is a priority. Confirm the colour and handedness variant offered in the selected Amazon marketplace.",
+          "source": "https://www.logitech.com/en-us/products/mice/lift-vertical-ergonomic-mouse.html",
+          "sourceNote": "Logitech technical specifications identify the small-to-medium hand fit, 57-degree angle and connection methods."
+        },
+        {
+          "name": "Logitech ERGO K860 Split Ergonomic Keyboard",
+          "bestFor": "Frequent typists who want a full-size split keyboard with an integrated wrist rest.",
+          "us_identifier": "Logitech ERGO K860 Split Ergonomic Keyboard",
+          "uk_identifier": "Logitech ERGO K860 Split Ergonomic Keyboard",
+          "pros": [
+            "Curved split keyframe intended to encourage a more natural hand position",
+            "Integrated cushioned wrist rest",
+            "Adjustable palm-lift feet and wireless connectivity"
+          ],
+          "cons": [
+            "The split layout can take time to learn",
+            "Full-size footprint requires sufficient desk space",
+            "The integrated wrist rest and non-backlit keys may not suit every workstation"
+          ],
+          "verdict": "A sensible comparison option for desk workers who prefer a full-size ergonomic keyboard. Review the layout and language/region keycap variant carefully.",
+          "source": "https://www.logitech.com/en-us/shop/p/k860-split-ergonomic",
+          "sourceNote": "Logitech product information documents the split frame, wrist rest, palm-lift positions and wireless options."
+        },
+        {
+          "name": "Logitech MX Ergo S Wireless Trackball Mouse",
+          "bestFor": "Users who prefer thumb-controlled trackball navigation and want to reduce mouse travel across the desk.",
+          "us_identifier": "Logitech MX Ergo S Wireless Trackball Mouse",
+          "uk_identifier": "Logitech MX Ergo S Wireless Trackball Mouse",
+          "pros": [
+            "Trackball operation keeps the mouse body stationary during cursor movement",
+            "Adjustable 20-degree tilt",
+            "Customisable buttons and USB-C charging"
+          ],
+          "cons": [
+            "Thumb-operated trackballs have a distinct learning curve",
+            "The sculpted body is designed for medium-to-large hands",
+            "Trackball cleaning and maintenance differ from a conventional optical mouse"
+          ],
+          "verdict": "Consider it if you want a stationary pointing device and are comfortable learning thumb-controlled tracking. It is a different interaction style, not a universal ergonomic solution.",
+          "source": "https://www.logitech.com/en-us/shop/p/mx-ergo-s-wireless-trackball-mouse.910-007260",
+          "sourceNote": "Logitech product documentation describes the trackball, tilt angle, hand fit and customisable controls."
+        }
+      ],
+      "buyingChecklist": [
+        "Check hand size, grip preference and keyboard layout before choosing an ergonomic shape.",
+        "Confirm operating-system support, Bluetooth/receiver requirements and multi-device switching.",
+        "Measure desk space and check wrist-rest height, keyboard width and mouse reach.",
+        "Use a return policy to assess comfort over normal work sessions; ergonomics are personal."
+      ]
+    },
+    {
+      "slug": "portable-power-travel-tech-us-uk",
+      "title": "Portable Power & Travel Tech: Power Banks and Compact Power Stations",
+      "category": "Portable Power & Travel Tech",
+      "publishedAt": "2026-11-16",
+      "summary": "Compare high-capacity USB-C power banks and compact portable power stations for mobile work, travel and backup use.",
+      "introduction": "Portable power products vary significantly in capacity, output, weight, charging method and transport restrictions. A USB power bank is not interchangeable with a mains-output power station. Check device charging requirements, airline rules, regional plug versions and the manufacturer's current specifications before purchase.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Anker 737 Power Bank (PowerCore 24K, A1289)",
+          "bestFor": "Laptop and phone users who need a high-output USB-C power bank.",
+          "us_identifier": "Anker 737 Power Bank PowerCore 24K A1289",
+          "uk_identifier": "Anker 737 Power Bank PowerCore 24K A1289",
+          "pros": [
+            "24,000mAh stated capacity",
+            "Up to 140W maximum output",
+            "Two USB-C ports and one USB-A port with an information display"
+          ],
+          "cons": [
+            "Its 630g stated weight is substantial for a pocket-sized travel charger",
+            "Maximum output depends on the connected device and a suitable cable",
+            "Does not provide AC mains sockets"
+          ],
+          "verdict": "A strong specification-led candidate for charging compatible laptops and mobile devices over USB. Check airline power-bank limits and the exact regional package.",
+          "source": "https://www.anker.com/products/a1289",
+          "sourceNote": "Anker product specifications list 24,000mAh, 140W maximum output, port count and weight."
+        },
+        {
+          "name": "Anker Prime Power Bank (27,650mAh, 250W)",
+          "bestFor": "Power users who need multiple high-output USB-C connections in a portable battery.",
+          "us_identifier": "Anker Prime Power Bank 27650mAh 250W",
+          "uk_identifier": "Anker Prime Power Bank 27650mAh 250W",
+          "pros": [
+            "27,650mAh stated cell capacity",
+            "Up to 250W combined output across its ports",
+            "Two USB-C ports and one USB-A port, with app-based monitoring"
+          ],
+          "cons": [
+            "At 665g it is relatively heavy for everyday pocket carry",
+            "Maximum output is shared across ports and depends on device/cable requirements",
+            "High-capacity power-bank airline carriage rules must be checked before travel"
+          ],
+          "verdict": "A high-output option for users carrying laptops and several mobile devices. Confirm the A1340 model, local stock and applicable airline battery rules.",
+          "source": "https://www.anker.com/uk/products/a1340-250w-power-bank",
+          "sourceNote": "Anker UK identifies model A1340, 27,650mAh capacity, up to 250W total output and port configuration."
+        },
+        {
+          "name": "EcoFlow RIVER 2 Portable Power Station",
+          "bestFor": "Short trips, small electronics and portable backup where AC output is needed.",
+          "us_identifier": "EcoFlow RIVER 2 EFR600 US 120V AC output",
+          "uk_identifier": "EcoFlow RIVER 2 EFR600 UK EU 230V AC output",
+          "pros": [
+            "256Wh LFP battery capacity",
+            "300W pure-sine-wave AC output with stated surge capability",
+            "AC, USB-C, USB-A, car and solar charging inputs/outputs, depending on regional version"
+          ],
+          "cons": [
+            "Approximately 3.5kg, so it is not a pocket-sized travel charger",
+            "AC socket voltage and frequency differ between US and UK versions",
+            "300W output limits the appliances it can run; check startup surge and continuous wattage"
+          ],
+          "verdict": "A compact power-station candidate for small electronics and low-wattage equipment. Select the correct US or UK electrical version; never assume the socket voltage is interchangeable.",
+          "source": "https://uk.ecoflow.com/products/river-2-portable-power-station",
+          "sourceNote": "EcoFlow UK specifications list 256Wh LFP capacity, 300W AC output, 230V regional output and approximately 3.5kg weight.",
+          "availabilityNote": "The RIVER 2 is a region-specific electrical product despite the shared EFR600 family name. EcoFlow's manual specifies US AC input 100–120V and output 120V, while EU/UK input is 220–240V and output 230V. Do not use a US unit on UK/Jordan mains or assume the AC output is interchangeable. Official regional specifications: https://manuals.ecoflow.com/eu/product/river-2-portable-power-station?lang=en_US&source=desktop and https://uk.ecoflow.com/products/river-2-portable-power-station."
+        },
+        {
+          "name": "Jackery Explorer 300 Plus Portable Power Station",
+          "bestFor": "Travellers and campers seeking a compact power station for small electronics.",
+          "us_identifier": "Jackery Explorer 300 Plus JE-300B US 100-120V 100V AC output",
+          "uk_identifier": "Jackery Explorer 300 Plus JE-300B UK 220-240V 230V regional version",
+          "pros": [
+            "288Wh LiFePO4 battery capacity",
+            "300W rated AC output with pure-sine-wave output",
+            "Portable format with solar and car charging input support"
+          ],
+          "cons": [
+            "Approximately 3.75kg, which is heavier than a conventional power bank",
+            "The US and European versions have different AC input/output voltage specifications",
+            "300W output is not suitable for many high-demand appliances"
+          ],
+          "verdict": "A small power-station option for camping and portable electronics. Choose the correct regional version and check the appliance's continuous and startup power needs.",
+          "source": "https://helpcenter.eu.jackery.com/hc/en-gb/articles/52682971950363-Explorer-300-Plus-Basic-Information",
+          "sourceNote": "Jackery Europe identifies model JE-300B, 288Wh LiFePO4 battery, approximately 3.75kg weight and regional AC specifications.",
+          "availabilityNote": "Jackery's official US and Europe support pages show the same JE-300B model code but different regional electrical specifications: US AC input 100–120V and AC output 100V/60Hz; Europe AC input 220–240V/50Hz. Verify the exact country-specific package and output voltage before purchase. Sources: https://faq.jackery.com/hc/en-us/articles/52303549157787-Explorer-300-Plus-Basic-Information and https://helpcenter.eu.jackery.com/hc/en-gb/articles/52682971950363-Explorer-300-Plus-Basic-Information."
+        }
+      ],
+      "buyingChecklist": [
+        "Compare watt-hours (Wh), USB-C Power Delivery output and port-sharing limits—not capacity labels alone.",
+        "Check whether the product provides USB output only or AC mains sockets, and confirm continuous wattage.",
+        "Confirm battery transport rules with the airline; power stations and power banks have different limits.",
+        "Choose the correct US/UK electrical version, plug and charging input before ordering."
+      ]
+    },
+    {
+      "slug": "smart-home-security-cameras-us-uk",
+      "title": "Smart Home Security Cameras: Battery, Solar and Wi-Fi Options",
+      "category": "Smart Home Security",
+      "publishedAt": "2026-11-16",
+      "summary": "A practical comparison of wire-free and connected home security cameras, including storage, subscriptions, Wi-Fi and installation considerations.",
+      "introduction": "A security camera should be selected around its installation location, power source, Wi-Fi coverage, recording needs and ongoing service costs. Resolution alone does not determine whether a camera is right for a home. Check regional availability, subscription terms, privacy settings and compatibility before purchase.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "eufy SoloCam S340",
+          "bestFor": "Outdoor monitoring where solar-assisted charging, local storage and pan-and-tilt coverage are priorities.",
+          "us_identifier": "eufy SoloCam S340",
+          "uk_identifier": "eufy SoloCam S340",
+          "pros": [
+            "Dual-camera system with wide-angle and telephoto views",
+            "Removable solar panel and built-in local storage",
+            "Pan-and-tilt movement, spotlight and on-device motion/person/vehicle detection"
+          ],
+          "cons": [
+            "Uses 2.4GHz Wi-Fi rather than dual-band Wi-Fi",
+            "Battery cameras do not provide continuous 24/7 recording",
+            "Solar charging performance depends on sunlight, placement and activity levels"
+          ],
+          "verdict": "A useful option to compare for outdoor areas where solar positioning and local recording are practical. Check HomeBase compatibility and the regional package contents.",
+          "source": "https://www.eufy.com/products/T81701W1",
+          "sourceNote": "eufy specifications describe the dual cameras, solar panel, local storage, Wi-Fi band and recording limitations."
+        },
+        {
+          "name": "Arlo Essential 3 2K Outdoor Security Camera",
+          "bestFor": "Wire-free outdoor monitoring for users who want 2K video, colour night vision, two-way audio and a built-in spotlight.",
+          "us_identifier": "Arlo Essential 3 2K Outdoor Security Camera",
+          "uk_identifier": "Arlo Essential 3 2K Security Camera",
+          "pros": [
+            "2K video with a 130-degree diagonal field of view and up to 12x digital zoom",
+            "Colour night vision, built-in spotlight and siren, plus two-way audio",
+            "Integrated rechargeable battery and support for 2.4GHz and 5GHz Wi-Fi"
+          ],
+          "cons": [
+            "The battery is integrated rather than a quick-swap removable pack",
+            "Cloud video storage and some advanced AI/notification features depend on an Arlo Secure plan",
+            "The camera has a fixed view rather than pan-and-tilt movement"
+          ],
+          "verdict": "A current-generation option to compare for wire-free outdoor monitoring where 2K detail, colour night vision and two-way audio matter. Check the exact regional package and subscription terms before buying.",
+          "source": "https://www.arlo.com/en_gb/cameras/arlo-essential-3-2k-security",
+          "sourceNote": "Arlo UK's Essential 3 2K product page lists 2K resolution, 130-degree field of view, 12x digital zoom, integrated battery, Wi-Fi bands, spotlight, siren and two-way audio; some AI and cloud functions are plan-dependent."
+        },
+        {
+          "name": "Ring Battery Doorbell 2K Plus",
+          "bestFor": "Front-door monitoring with a battery-powered doorbell, head-to-toe view and two-way talk.",
+          "us_identifier": "Ring Battery Doorbell 2K Plus",
+          "uk_identifier": "Ring Battery Doorbell 2K Plus",
+          "pros": [
+            "2K video with head-to-toe field of view",
+            "Quick-release battery pack",
+            "Customisable motion zones and two-way talk"
+          ],
+          "cons": [
+            "Requires suitable Wi-Fi coverage at the entrance",
+            "Cloud recording and some advanced functions may require a Ring subscription",
+            "Doorbell size, chime compatibility and included accessories should be checked for the region"
+          ],
+          "verdict": "A candidate for households wanting a battery-powered smart doorbell with a broad view of the doorstep. Confirm the current regional product name, generation and plan requirements.",
+          "source": "https://ring.com/products/battery-doorbell-plus-2nd-gen",
+          "sourceNote": "Ring's 2026 product naming update identifies this model as Battery Doorbell 2K Plus; Ring states that the previous Battery Doorbell Plus (2nd Gen) name referred to the same device."
+        },
+        {
+          "name": "Google Nest Cam (outdoor or indoor, battery)",
+          "bestFor": "Homes already using Google Home that want a battery-powered camera for flexible placement.",
+          "us_identifier": "Google Nest Cam outdoor or indoor battery",
+          "uk_identifier": "Google Nest Cam outdoor or indoor battery",
+          "pros": [
+            "Battery-powered camera suitable for indoor or outdoor placement",
+            "130-degree diagonal field of view and 1080p HDR video",
+            "Google Home integration and included event-based video history"
+          ],
+          "cons": [
+            "Longer video history requires a Google Home Premium subscription",
+            "Battery life varies with activity, settings and environmental conditions",
+            "Requires a Google account and Google Home app; check current regional compatibility"
+          ],
+          "verdict": "A practical comparison choice for users invested in Google Home. Review the subscription limits and confirm that the listing is the battery model, not the wired variant.",
+          "source": "https://store.google.com/product/nest_cam_battery_specs",
+          "sourceNote": "Google Store specifications identify the battery model, 1080p HDR video, field of view, app requirement and event-history limits."
+        }
+      ],
+      "buyingChecklist": [
+        "Check 2.4GHz/5GHz Wi-Fi support, router range and whether a hub is required.",
+        "Compare local storage with cloud subscriptions and identify which features stop without a plan.",
+        "Check weather rating, mounting position, field of view and night illumination.",
+        "Review privacy settings, account requirements, event-history limits and power options."
+      ]
+    },
+    {
+      "slug": "wifi-7-home-mesh-routers-us-uk",
+      "title": "Wi-Fi 7 Home Routers & Mesh Systems: Options for US and UK Homes",
+      "category": "Home Networking",
+      "publishedAt": "2026-11-16",
+      "summary": "Compare four Wi-Fi 7 router and mesh-system families by wireless standard, wired ports, coverage design and regional compatibility.",
+      "introduction": "Wi-Fi 7 equipment is not automatically faster in every home. Real results depend on the broadband plan, client devices, radio conditions, building materials and whether a mesh system uses wireless or wired backhaul. Compare the exact hardware kit and regional version before buying; the models below are research-led options, not hands-on test winners.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "TP-Link Deco BE63 Wi-Fi 7 Mesh System",
+          "bestFor": "Homes that need a multi-node mesh system with Wi-Fi 7 and multi-gigabit Ethernet ports.",
+          "us_identifier": "TP-Link Deco BE63 Wi-Fi 7 Mesh System",
+          "uk_identifier": "TP-Link Deco BE63 Wi-Fi 7 Mesh System",
+          "pros": [
+            "Tri-band Wi-Fi 7 across 2.4GHz, 5GHz and 6GHz bands",
+            "Four 2.5Gbps Ethernet ports per unit in the documented US hardware version",
+            "Mesh roaming support using 802.11k/v/r standards"
+          ],
+          "cons": [
+            "Coverage and speed vary with node placement, walls and client capabilities",
+            "The cited port and radio specifications are for the US BE63 hardware; confirm the exact UK kit and regional SKU",
+            "A multi-node system can be unnecessary for smaller homes with good single-router coverage"
+          ],
+          "verdict": "A mesh-system candidate for larger or multi-room homes where several access points and multi-gig wired connections are useful. Verify the exact regional package, node count and firmware feature set.",
+          "source": "https://www.tp-link.com/us/deco-mesh-wifi/product-family/deco-be63/",
+          "sourceNote": "TP-Link's official BE63 product page documents tri-band Wi-Fi 7, BE10000 radio rates and four 2.5Gbps WAN/LAN ports per unit for the listed configuration. TP-Link UK support lists hardware revisions V3.60, V2.60 and V2 and explicitly warns that model and hardware-version availability varies by region. Do not assume the US datasheet's exact hardware or radio configuration applies to every UK kit; check the hardware-version label and matching regional support page before purchase: https://www.tp-link.com/uk/support/download/deco-be63/."
+        },
+        {
+          "name": "ASUS RT-BE96U Wi-Fi 7 Router",
+          "bestFor": "Advanced users who prefer a standalone high-performance router with 10Gbps networking and extensive configuration options.",
+          "us_identifier": "ASUS RT-BE96U Wi-Fi 7 Router",
+          "uk_identifier": "ASUS RT-BE96U Wi-Fi 7 Router",
+          "pros": [
+            "Tri-band Wi-Fi 7 with 2.4GHz, 5GHz and 6GHz radios",
+            "One 10Gbps WAN/LAN port and a separate 10Gbps LAN port",
+            "AiMesh support for compatible ASUS routers and nodes"
+          ],
+          "cons": [
+            "Large external-antenna design needs suitable placement",
+            "A single router may not cover every multi-storey or thick-wall home",
+            "To benefit from Wi-Fi 7 and 10Gbps ports, connected devices and broadband equipment must also support suitable speeds"
+          ],
+          "verdict": "A specification-rich standalone router to compare for users with multi-gig broadband, wired network equipment or a preference for ASUS configuration features. Check local regulatory and hardware variants.",
+          "source": "https://www.asus.com/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-be96u/techspec/",
+          "sourceNote": "ASUS technical specifications list Wi-Fi 7 tri-band support, two 10Gbps Ethernet interfaces, AiMesh modes and supported wireless standards."
+        },
+        {
+          "name": "Amazon eero Pro 7 Tri-Band Wi-Fi 7 Router",
+          "bestFor": "Households seeking a simple app-managed Wi-Fi 7 network with multi-gigabit wired connections and eero mesh expansion.",
+          "us_identifier": "Amazon eero Pro 7 Wi-Fi 7 Router",
+          "uk_identifier": "Amazon eero Pro 7 Wi-Fi 7 Router",
+          "pros": [
+            "Tri-band Wi-Fi 7 with Multi-Link Operation support",
+            "Two auto-sensing 5GbE ports",
+            "Supports eero mesh expansion and smart-home connectivity including Thread and Zigbee"
+          ],
+          "cons": [
+            "Advanced security and management features are offered through an optional eero Plus subscription",
+            "Best suited to users comfortable managing the network through the eero app",
+            "Coverage figures are manufacturer estimates and depend on building layout and interference"
+          ],
+          "verdict": "A practical ecosystem-led option for households that value app-based setup and mesh expansion. Confirm the local model, supported radio channels and any subscription features required.",
+          "source": "https://eero.com/en-GB/shop/eero-pro-7/buy",
+          "sourceNote": "eero's UK product page identifies Pro 7 as a tri-band Wi-Fi 7 system, supports internet plans up to 5Gbps through two auto-sensing 5GbE ports, lists wireless speeds up to 3.9Gbps and coverage up to 190m² per unit, and supports 200+ devices. The page offers different pack sizes; verify selected pack contents, local power adapter/plug and regional radio availability. Optional eero Plus services are subscription-based."
+        },
+        {
+          "name": "NETGEAR Orbi 770 Series Wi-Fi 7 Mesh System (RBE773)",
+          "bestFor": "Larger homes that need a router-and-satellite mesh kit with multi-gigabit Ethernet on both router and satellite units.",
+          "us_identifier": "NETGEAR Orbi 770 Series RBE773 Wi-Fi 7 Mesh System",
+          "uk_identifier": "NETGEAR Orbi 770 Series RBE773 Wi-Fi 7 Mesh System",
+          "pros": [
+            "Tri-band Wi-Fi 7 mesh system supplied as one router and two satellites in the cited kit",
+            "2.5Gbps Ethernet ports on the router and satellites",
+            "Dedicated router-and-satellite layout designed to extend coverage across a home"
+          ],
+          "cons": [
+            "The three-unit kit needs more space and power outlets than a standalone router",
+            "Wireless throughput and coverage depend on placement, building materials and client devices",
+            "NETGEAR Armor and Smart Parental Controls Premium features require paid subscriptions after trial periods"
+          ],
+          "verdict": "A mesh-kit candidate for larger properties where multiple access points are needed. Confirm the exact RBE773 regional pack, included satellite count, local Wi-Fi channel support and optional subscription costs.",
+          "source": "https://www.netgear.com/uk/home/wifi/mesh/rbe773",
+          "sourceNote": "NETGEAR's UK RBE773 page identifies the Orbi 770 Series Wi-Fi 7 3-pack (router plus two satellites), tri-band speeds up to 11Gbps, coverage claims up to 6,750 sq. ft. and 2.5Gbps multi-gig connectivity. Coverage and throughput are manufacturer estimates; confirm the exact pack contents, regional radio settings and any optional Armor/parental-control subscription before purchase."
+        }
+      ],
+      "buyingChecklist": [
+        "Check the broadband modem/ONT connection and WAN port speed before selecting a router.",
+        "Confirm client devices support Wi-Fi 7 features; older devices will not gain every benefit.",
+        "Compare Ethernet port speeds, backhaul options and the number of mesh nodes required.",
+        "Check regional firmware, power adapter, ISP compatibility and subscription-dependent security features."
+      ]
+    },
+    {
+      "slug": "usb-c-gan-chargers-us-uk",
+      "title": "USB-C GaN Chargers: Multi-Port Laptop and Phone Charging for US & UK",
+      "category": "USB-C Charging & Travel Tech",
+      "publishedAt": "2026-11-16",
+      "summary": "A practical comparison of multi-port USB-C GaN wall chargers, focusing on power sharing, port mix, supported charging standards and regional plug versions.",
+      "introduction": "Choose a USB-C charger by checking the maximum output of the port you will use, how total power is shared when several devices are connected, and whether your laptop supports the charger's charging protocol. A 100W label does not mean every port supplies 100W simultaneously. Check the exact regional plug, cable rating and device requirements before buying.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Anker Prime Charger (100W, 3 Ports, GaN) — A2688",
+          "bestFor": "Laptop and phone users who want a compact multi-port charger for up to three devices.",
+          "us_identifier": "Anker Prime Charger 100W 3 Ports GaN A2688",
+          "uk_identifier": "Anker Prime Charger 100W 3 Ports GaN A2688",
+          "pros": [
+            "Up to 100W maximum output from a USB-C port when used alone",
+            "Two USB-C ports and one USB-A port",
+            "Manufacturer lists 100–240V input and up to 89W total output when all three ports are used"
+          ],
+          "cons": [
+            "Total output is shared between connected devices; three-port use is limited to 89W maximum",
+            "Charging cables are not included in the documented package",
+            "A suitable E-Marker USB-C cable is recommended for 100W charging"
+          ],
+          "verdict": "A compact option for users who need to charge a laptop and smaller devices from one wall outlet. Check the port power split, plug format and cable rating before purchase.",
+          "source": "https://www.anker.com/products/a2688-anker-prime-charger-100w-3-ports-gan",
+          "sourceNote": "Anker's A2688 product specifications list 100W maximum output, two USB-C ports, one USB-A port, 100–240V input and 89W maximum when all three ports are used."
+        },
+        {
+          "name": "UGREEN Nexode 100W 4-Port Charger — SKU 40749",
+          "bestFor": "Users who want four charging ports for phones, tablets and a compatible laptop.",
+          "us_identifier": "UGREEN Nexode 100W 4-Port Charger SKU 40749",
+          "uk_identifier": "UGREEN Nexode 100W 4-Port Charger SKU 40749",
+          "pros": [
+            "Up to 100W total output",
+            "Three USB-C ports and one USB-A port",
+            "Manufacturer lists 100–240V input and support for USB Power Delivery 3.0 and other charging protocols"
+          ],
+          "cons": [
+            "100W is the total maximum, not 100W available to every port at the same time",
+            "The UK listing specifies SKU 40749; verify the US retail listing and exact hardware revision",
+            "The wall plug is not described as foldable in the UK specification table"
+          ],
+          "verdict": "A useful multi-port comparison candidate for a shared desk or travel bag. Confirm the actual port-by-port power allocation and regional listing before relying on it for a high-wattage laptop.",
+          "source": "https://uk.ugreen.com/products/ugreen-nexode-100w-usb-c-gan-charger-4-ports-wall-charger",
+          "sourceNote": "UGREEN UK lists SKU 40749, three USB-C plus one USB-A port, 100W total output, 100–240V input and supported charging protocols."
+        },
+        {
+          "name": "Belkin BoostCharge Pro 200W 4-Port USB-C GaN Charger — WCH015",
+          "bestFor": "A fixed desk setup that needs to charge several USB-C laptops and mobile devices together.",
+          "us_identifier": "Belkin BoostCharge Pro 200W 4-Port USB-C GaN Charger WCH015",
+          "uk_identifier": "Belkin BoostCharge Pro 200W 4-Port USB-C GaN Charger WCH015",
+          "pros": [
+            "Up to 200W combined output across four USB-C ports",
+            "Up to 140W maximum from either of the first two ports, with lower maximum output on ports three and four",
+            "Detachable 1.5m power cord and 100–240V input"
+          ],
+          "cons": [
+            "Designed as a desktop charger rather than a compact travel wall plug",
+            "The power cord and charger take more desk space than a small single-port adapter",
+            "The exact regional SKU and plug/cable package should be checked before purchase"
+          ],
+          "verdict": "A high-capacity desk charger for users who need to power multiple USB-C devices. Check the port-specific power allocation and the laptop's USB PD requirements rather than relying on the 200W combined figure.",
+          "source": "https://www.belkin.com/support-article?articleNum=336311",
+          "sourceNote": "Belkin's WCH015 support specifications list four USB-C ports, 200W total maximum, up to 140W on ports one/two, up to 60W on ports three/four and 100–240V input."
+        },
+        {
+          "name": "UGREEN Nexode 200W 4-Port GaN Fast Charger — SKU 35539",
+          "bestFor": "Users who need a high-output desktop charger for more than one laptop or several USB-C devices.",
+          "us_identifier": "UGREEN Nexode 200W 4-Port GaN Fast Charger SKU 35539",
+          "uk_identifier": "UGREEN Nexode 200W 4-Port GaN Fast Charger SKU 35539",
+          "pros": [
+            "Up to 200W total output across four ports",
+            "Three USB-C ports and one USB-A port",
+            "Manufacturer's EU specification lists up to 140W on USB-C1 and up to 100W on USB-C2"
+          ],
+          "cons": [
+            "Power is dynamically shared and individual ports have different output limits",
+            "At approximately 502g in the listed EU specification, it is more suited to a desk or substantial travel kit than pocket carry",
+            "The referenced detailed specification is the EU product version; verify US model number, plug and electrical certification before buying"
+          ],
+          "verdict": "A powerful multi-device charging station candidate for a home office. Compare the exact regional version and its port-sharing table against the devices you intend to charge.",
+          "source": "https://eu.ugreen.com/en-ch/pages/nexode",
+          "sourceNote": "UGREEN's EU Nexode specification table lists SKU 35539, 200W maximum, four ports, USB-C1 up to 140W, USB-C2 up to 100W and approximate 502g weight."
+        }
+      ],
+      "buyingChecklist": [
+        "Match the charger's USB-C PD profile and maximum wattage to the laptop or phone requirement.",
+        "Check how total output is divided when multiple ports are used at the same time.",
+        "Use a cable rated for the required power and data specification.",
+        "Confirm plug type, input voltage range, dimensions and travel suitability."
+      ]
+    },
+    {
+      "slug": "webcams-video-calls-streaming-us-uk",
+      "title": "Best Webcams for Video Calls and Streaming: 4K and 1080p Options for US & UK",
+      "category": "Webcams & Video Conferencing",
+      "publishedAt": "2026-11-16",
+      "summary": "A specification-led comparison of webcams for remote work, online meetings and streaming, covering resolution, framing, focus, mounting and software requirements.",
+      "introduction": "Webcam choice depends on more than headline resolution. Check the maximum frame rate at the resolution you intend to use, the field of view, focus behaviour, connection type, privacy controls and software compatibility. The options below are research summaries based on manufacturer documentation, not hands-on tests.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Insta360 Link 2 4K AI Webcam",
+          "bestFor": "Presenters and remote workers who want 4K video with AI tracking and a two-axis gimbal.",
+          "us_identifier": "Insta360 Link 2 4K AI Webcam",
+          "uk_identifier": "Insta360 Link 2 4K AI Webcam",
+          "pros": [
+            "Supports 4K video up to 30 fps and 1080p up to 60 fps in supported modes",
+            "Two-axis gimbal with AI tracking, Smart Whiteboard and DeskView modes",
+            "HDR support and autofocus; magnetic mount includes a 1/4-inch tripod point"
+          ],
+          "cons": [
+            "4K is limited to 30 fps rather than 60 fps",
+            "Some advanced features depend on Link Controller software and host-computer compatibility",
+            "The motorised gimbal body needs more physical clearance than a simple fixed webcam"
+          ],
+          "verdict": "A feature-rich option for people who actively use presenter tracking, desk demonstrations or whiteboard framing. Confirm software compatibility and whether 4K/30 meets the intended workflow.",
+          "source": "https://www.insta360.com/specs/link2",
+          "sourceNote": "Insta360's official specifications list the 1/2-inch sensor, video modes, HDR, AI tracking, two-axis gimbal, USB-C connection and mounting details."
+        },
+        {
+          "name": "Logitech Brio 4K Webcam",
+          "bestFor": "Business users who want a conventional webcam with 4K/30 video, adjustable framing and Windows Hello support.",
+          "us_identifier": "Logitech Brio 4K Webcam",
+          "uk_identifier": "Logitech Brio 4K Webcam",
+          "pros": [
+            "Supports 4K at 30 fps and Full HD at up to 60 fps",
+            "Adjustable diagonal field of view with 65°, 78° and 90° presets",
+            "Autofocus, RightLight 3, dual omni-directional microphones and an attachable privacy shutter"
+          ],
+          "cons": [
+            "4K recording is limited to 30 fps",
+            "Privacy shutter is an attachable accessory rather than an integrated electronic shutter",
+            "USB-C use may require an adapter depending on the cable and computer ports"
+          ],
+          "verdict": "A practical choice for office video calls where adjustable framing and Windows Hello are useful. Check the exact regional part number and bundled cable before purchase.",
+          "source": "https://www.logitech.com/en-gb/products/webcams/brio-4k-hdr-webcam.html",
+          "sourceNote": "Logitech's UK product specifications document the resolution/frame-rate modes, field-of-view presets, autofocus, microphones, connection and privacy shutter."
+        },
+        {
+          "name": "Razer Kiyo Pro Ultra 4K Webcam",
+          "bestFor": "Streamers and creators prioritising a large sensor, 4K capture and manual camera-position flexibility.",
+          "us_identifier": "Razer Kiyo Pro Ultra 4K Webcam",
+          "uk_identifier": "Razer Kiyo Pro Ultra 4K Webcam",
+          "pros": [
+            "Supports 4K video at up to 30 fps and 1080p at up to 60 fps",
+            "Autofocus lens with built-in privacy shutter",
+            "USB-C connection, built-in microphones and 1/4-inch tripod mounting point"
+          ],
+          "cons": [
+            "4K capture is limited to 30 fps",
+            "The camera is designed for a more involved creator setup than a basic plug-and-play webcam",
+            "Confirm USB bandwidth, system compatibility and Razer Synapse requirements before buying"
+          ],
+          "verdict": "Worth comparing for creators who want 4K capture and more camera-control options. It may be excessive for routine calls where a simpler 1080p webcam is sufficient.",
+          "source": "https://mysupport.razer.com/app/answers/detail/a_id/6430/kw/webcam%20driver",
+          "sourceNote": "Razer's official support page lists the Kiyo Pro Ultra camera modes, lens, privacy shutter, USB-C port, microphones and mounting thread."
+        },
+        {
+          "name": "Elgato Facecam Neo 1080p60 Webcam",
+          "bestFor": "Users who want a compact, straightforward USB webcam for Full HD calls and streaming.",
+          "us_identifier": "Elgato Facecam Neo 1080p60 Webcam",
+          "uk_identifier": "Elgato Facecam Neo 1080p60 Webcam",
+          "pros": [
+            "Supports 1080p at up to 60 fps",
+            "Autofocus lens with a 77° field of view",
+            "USB-C connection, UVC support and a 1/4-inch mounting thread"
+          ],
+          "cons": [
+            "Maximum supported resolution is 1080p rather than 4K",
+            "The USB-C cable is fixed to the camera",
+            "A USB-A connection requires a compatible adapter, which is not included"
+          ],
+          "verdict": "A simpler option for Full HD video calls and streaming where ease of setup matters more than 4K resolution. Check the host operating-system requirements and port arrangement.",
+          "source": "https://www.elgato.com/ww/en/p/facecam-neo",
+          "sourceNote": "Elgato's official technical specifications list supported resolutions, autofocus optics, field of view, fixed USB-C connection, UVC support and operating-system requirements."
+        }
+      ],
+      "buyingChecklist": [
+        "Check real output resolution and frame rate; advertised sensor resolution may differ from live modes.",
+        "Compare autofocus, field of view, low-light performance and microphone requirements.",
+        "Confirm USB bandwidth, cable type, operating-system support and video-call app compatibility.",
+        "Check mounting thread, monitor clearance, privacy shutter and included accessories."
+      ]
+    },
+    {
+      "slug": "4k-usb-c-monitors-home-office-us-uk",
+      "title": "4K USB-C Monitors for Home Offices and Creators: US & UK Buying Guide",
+      "category": "Monitors & Home Office Displays",
+      "publishedAt": "2026-11-16",
+      "summary": "Compare four 27-inch 4K monitor options for desk productivity and creative workflows, focusing on USB-C power delivery, colour coverage, connectivity and ergonomic adjustment.",
+      "introduction": "A 4K monitor is not automatically the best choice for every desk. Compare USB-C power delivery against your laptop's requirements, the colour space needed for your work, refresh rate, stand adjustment and available video inputs. Check the exact regional model and included cables before ordering. These summaries use manufacturer specifications and are not hands-on test results.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Dell UltraSharp U2723QE 27-inch 4K USB-C Hub Monitor",
+          "bestFor": "Laptop-based home offices that need a 4K display with an integrated USB hub and single-cable connectivity.",
+          "us_identifier": "Dell UltraSharp U2723QE 27 inch 4K USB-C Hub Monitor",
+          "uk_identifier": "Dell UltraSharp U2723QE 27 inch 4K USB-C Hub Monitor",
+          "pros": [
+            "27-inch 3840 × 2160 IPS Black display with 60Hz refresh rate",
+            "USB-C upstream connection supports DisplayPort and up to 90W power delivery",
+            "Integrated USB hub and ergonomic stand adjustments"
+          ],
+          "cons": [
+            "60Hz refresh rate is not aimed at high-refresh gaming",
+            "90W USB-C delivery may be insufficient for some high-performance laptops under load",
+            "Confirm regional SKU, included cable and exact port configuration"
+          ],
+          "verdict": "A productivity-oriented monitor for compatible laptops where display, data and charging over one USB-C connection simplify a desk. Verify the laptop's power needs and display-output support.",
+          "source": "https://www.dell.com/en-us/shop/dell-ultrasharp-27-4k-usb-c-hub-monitor-u2723qe/apd/210-bdpf/monitors-monitor-accessories",
+          "sourceNote": "Dell's official U2723QE listing documents 27-inch 4K at 60Hz, IPS Black, USB-C hub, 90W Power Delivery and display connectivity."
+        },
+        {
+          "name": "ASUS ProArt Display PA279CRV 27-inch 4K HDR Monitor",
+          "bestFor": "Photographers, designers and video creators who need wide-gamut colour coverage and USB-C laptop charging.",
+          "us_identifier": "ASUS ProArt PA279CRV 27 inch 4K HDR Monitor",
+          "uk_identifier": "ASUS ProArt PA279CRV 27 inch 4K HDR Monitor",
+          "pros": [
+            "27-inch 3840 × 2160 IPS display",
+            "Manufacturer specifies 99% DCI-P3 and 99% Adobe RGB coverage with factory Delta E below 2",
+            "USB-C supports DisplayPort and up to 96W Power Delivery; ergonomic stand supports height, tilt, swivel and pivot"
+          ],
+          "cons": [
+            "60Hz maximum refresh rate is not designed for high-refresh gaming",
+            "Colour-critical work still benefits from calibration and a controlled viewing environment",
+            "Check regional SKU, USB-C cable and host-device compatibility"
+          ],
+          "verdict": "A creator-focused option when wide colour-gamut coverage and high USB-C power delivery matter. Match the monitor's colour workflow to the software and calibration process you use.",
+          "source": "https://www.asus.com/displays-desktops/monitors/proart/proart-display-pa279crv/",
+          "sourceNote": "ASUS official product information lists 27-inch 4K, 99% DCI-P3, 99% Adobe RGB, Delta E below 2 and USB-C 96W Power Delivery."
+        },
+        {
+          "name": "BenQ DesignVue PD2705U 27-inch 4K Designer Monitor",
+          "bestFor": "Designers and office users who want a 4K USB-C monitor with KVM and factory colour calibration features.",
+          "us_identifier": "BenQ DesignVue PD2705U 27 inch 4K Designer Monitor",
+          "uk_identifier": "BenQ DesignVue PD2705U 27 inch 4K Designer Monitor",
+          "pros": [
+            "27-inch 4K UHD IPS panel with 99% sRGB and 99% Rec.709 coverage",
+            "USB-C supports video, data and up to 65W Power Delivery",
+            "KVM switch, PIP/PBP, factory calibration report and adjustable stand"
+          ],
+          "cons": [
+            "65W charging may not meet the needs of power-hungry laptops",
+            "60Hz refresh rate is intended for productivity rather than high-refresh gaming",
+            "Check the exact regional package and cable contents"
+          ],
+          "verdict": "A practical design-workflow candidate for users who value sRGB/Rec.709 coverage, KVM and USB-C docking. Confirm that 65W is sufficient for the connected laptop.",
+          "source": "https://www.benq.com/en-us/monitor/creative-pro/pd2705u/spec.html",
+          "sourceNote": "BenQ's official US specifications list 27-inch 4K IPS, 99% sRGB/Rec.709, 65W USB-C PD, KVM, PIP/PBP and ergonomic adjustments."
+        },
+        {
+          "name": "Dell 27 4K USB-C Hub Monitor P2723QE",
+          "bestFor": "General business and home-office users who want 4K resolution, a USB-C hub and ergonomic adjustment.",
+          "us_identifier": "Dell P2723QE 27 inch 4K USB-C Hub Monitor",
+          "uk_identifier": "Dell P2723QE 27 inch 4K USB-C Hub Monitor",
+          "pros": [
+            "27-inch 3840 × 2160 IPS display at 60Hz",
+            "USB-C hub connectivity with laptop charging support",
+            "Height, tilt, swivel and pivot adjustments on the supplied stand"
+          ],
+          "cons": [
+            "This is a different model from the U2723QE; compare panel and hub specifications carefully",
+            "60Hz refresh rate is a productivity specification rather than a gaming feature",
+            "Verify the exact regional power-delivery rating and port layout before buying"
+          ],
+          "verdict": "A mainstream business-monitor option for a tidy USB-C desk setup. Compare it directly with the U2723QE and confirm the exact charging wattage for your region and laptop.",
+          "source": "https://www.delltechnologies.com/asset/en-gb/products/electronics-and-accessories/technical-support/dell-27-4k-usb-c-hub-monitor-p2723qe-datasheet.pdf",
+          "sourceNote": "Dell's official P2723QE datasheet lists 27-inch 4K 60Hz, IPS, USB-C hub, and height/tilt/swivel/pivot stand adjustment."
+        }
+      ],
+      "buyingChecklist": [
+        "Confirm the laptop supports video over USB-C/Thunderbolt; a USB-C socket alone does not guarantee display output.",
+        "Check USB-C Power Delivery wattage against the laptop's charging requirement.",
+        "Compare panel type, colour coverage, refresh rate, HDR limits and factory calibration claims.",
+        "Check stand adjustment, VESA mounting, port layout and whether the supplied cable supports the required bandwidth."
+      ]
+    },
+    {
+      "slug": "thunderbolt-usb-c-docking-stations-us-uk",
+      "title": "Best Thunderbolt and USB-C Docking Stations for Laptop Setups: US & UK Guide",
+      "category": "Laptop Docks & Connectivity",
+      "publishedAt": "2026-11-16",
+      "summary": "A specification-led guide to laptop docking stations, comparing host connectivity, display support, charging power, ports and operating-system limitations.",
+      "introduction": "Choose a dock only after checking the laptop's exact USB-C capabilities. USB-C connector shape alone does not guarantee Thunderbolt, USB4, video output or high-wattage charging. Multi-monitor support also depends on the computer's processor, graphics architecture and operating system. Confirm the exact model revision and regional power supply before buying. This guide is based on manufacturer documentation, not hands-on testing.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "CalDigit TS4 Thunderbolt 4 Dock",
+          "bestFor": "Thunderbolt laptop users who need a large range of ports, 2.5Gb Ethernet and high host charging power.",
+          "us_identifier": "CalDigit TS4 Thunderbolt 4 Dock",
+          "uk_identifier": "CalDigit TS4 Thunderbolt 4 Dock",
+          "pros": [
+            "Thunderbolt 4 host connection with up to 98W host power delivery",
+            "Large port selection including three Thunderbolt 4, three USB-C, five USB-A, DisplayPort 1.4 and UHS-II SD/microSD readers",
+            "2.5 Gigabit Ethernet and separate audio connections"
+          ],
+          "cons": [
+            "Requires a compatible Thunderbolt/USB4 or supported USB-C host for full functionality",
+            "Display count and resolution depend on the computer and its graphics/display pipeline",
+            "A premium multi-port dock may be unnecessary for users who only need a few USB peripherals"
+          ],
+          "verdict": "A strong connectivity-focused candidate for a fixed workstation with many peripherals and wired networking. Check CalDigit's host compatibility guidance and monitor limits for the exact laptop.",
+          "source": "https://www.caldigit.com/ts4-support/",
+          "sourceNote": "CalDigit's official TS4 support page lists its port inventory, 98W host power delivery, 2.5Gb Ethernet and minimum system requirements."
+        },
+        {
+          "name": "Anker Prime TB5 Docking Station (14-in-1)",
+          "bestFor": "Newer Thunderbolt 5 laptops and demanding desk setups that can benefit from high-bandwidth connectivity and up to 140W host charging.",
+          "us_identifier": "Anker Prime TB5 Docking Station 14-in-1 140W",
+          "uk_identifier": "Anker Prime TB5 Docking Station 14-in-1 140W",
+          "pros": [
+            "Thunderbolt 5 upstream connection with up to 140W maximum power delivery",
+            "Two downstream Thunderbolt 5 ports, 2.5Gb Ethernet, HDMI 2.1 or DisplayPort 2.1 output, SD and TF card readers",
+            "Designed for high-bandwidth workflows and multiple connected devices"
+          ],
+          "cons": [
+            "Full Thunderbolt 5 benefits require a compatible host computer and peripherals",
+            "The HDMI 2.1 and DisplayPort 2.1 outputs are selectable rather than simultaneous according to the listed port specification",
+            "Check the exact display modes and macOS/Windows compatibility for the laptop before purchase"
+          ],
+          "verdict": "A forward-looking option for compatible Thunderbolt 5 systems. It is unlikely to be a sensible upgrade for a laptop limited to basic USB-C or older Thunderbolt; verify host support first.",
+          "source": "https://www.anker.com/products/a83b5-anker-prime-thunderbolt5-docking-station-14-in-1-140w-8k",
+          "sourceNote": "Anker's official product specification lists Thunderbolt 5, 140W upstream power, downstream ports, display output selection, Ethernet and OS compatibility."
+        },
+        {
+          "name": "Kensington SD5780T Thunderbolt 4 Dock",
+          "bestFor": "Windows and Mac laptop users who want a Thunderbolt 4 dock with 96W charging, HDMI and dual-display support on compatible hosts.",
+          "us_identifier": "Kensington SD5780T Thunderbolt 4 Dock",
+          "uk_identifier": "Kensington SD5780T Thunderbolt 4 Dock",
+          "pros": [
+            "Thunderbolt 4 connection with up to 96W laptop charging",
+            "HDMI 2.1, two downstream Thunderbolt 4 ports, UHS-II SD reader and 2.5Gb Ethernet",
+            "Manufacturer lists dual 4K/60Hz or supported dual 6K/60Hz display configurations"
+          ],
+          "cons": [
+            "Some base-chip MacBook models and USB-C Alt Mode hosts support only one external display",
+            "Display capabilities depend on host graphics, DSC and DisplayPort support",
+            "Windows systems may require Intel Thunderbolt software to be enabled"
+          ],
+          "verdict": "A practical dock for users who need 96W charging and a mix of HDMI, Thunderbolt and 2.5Gb Ethernet. Check the manufacturer's compatibility table, especially for MacBook chip variants.",
+          "source": "https://www.kensington.com/p/products/device-docking-connectivity-products/laptop-docks-usb-accessories/sd5780t-thunderbolt-4-dual-4k-docking-station-with-96w-pd-winmac/",
+          "sourceNote": "Kensington's official product page documents 96W PD, Thunderbolt 4, HDMI 2.1, Ethernet and host-dependent monitor limitations."
+        },
+        {
+          "name": "Plugable TBT4-UDZ Thunderbolt 4 Dock",
+          "bestFor": "Windows and Mac users who need a broad port selection, dual 4K displays on supported systems and 2.5Gb Ethernet.",
+          "us_identifier": "Plugable TBT4-UDZ Thunderbolt 4 Dock",
+          "uk_identifier": "Plugable TBT4-UDZ Thunderbolt 4 Dock",
+          "pros": [
+            "16-in-1 port layout with dual HDMI and dual DisplayPort outputs",
+            "Up to 100W advertised host charging (98W certified) and 2.5Gb Ethernet",
+            "Includes SD and microSD readers, multiple USB ports and a Thunderbolt 4 host cable"
+          ],
+          "cons": [
+            "The number of extended displays varies substantially by host hardware and operating system",
+            "Some USB-C-only laptops may not support video output or multiple displays through this dock",
+            "Windows multi-display capability can depend on DisplayPort 1.4 HBR3 DSC support"
+          ],
+          "verdict": "A flexible option for mixed peripheral and display setups, especially where the extra video outputs are useful. Confirm the exact laptop's display architecture before assuming all outputs can be used.",
+          "source": "https://plugable.com/products/tbt4-udz",
+          "sourceNote": "Plugable's official product page documents port count, 100W/98W charging, 2.5Gb Ethernet, compatibility and display-output caveats."
+        }
+      ],
+      "buyingChecklist": [
+        "Identify the host port standard (USB-C, USB4 or Thunderbolt) and the dock's minimum requirements.",
+        "Check supported monitor count, resolution and refresh rate for the exact laptop and operating system.",
+        "Match host charging wattage and power-adapter capacity to the laptop.",
+        "Review Ethernet speed, USB port generations, SD reader and any display-driver dependency."
+      ]
+    },
+    {
+      "slug": "portable-ssd-external-storage-us-uk",
+      "title": "Best Portable SSDs for Fast External Storage: US & UK Buying Guide",
+      "category": "Storage & Backup",
+      "publishedAt": "2026-11-16",
+      "summary": "Compare portable SSDs by interface bandwidth, real-world host compatibility, capacity, ruggedness and security before choosing external storage.",
+      "introduction": "Portable SSD performance depends on the drive and the port on the computer, phone or tablet. A USB 3.2 Gen 2x2 drive may not reach its advertised maximum on a host that supports only 10Gbps USB, and USB4 or Thunderbolt compatibility should be checked separately. Maximum sequential speeds are manufacturer test figures, not guaranteed everyday transfer rates. For important files, a portable SSD should supplement a tested backup strategy rather than serve as the only copy.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Samsung Portable SSD T9",
+          "bestFor": "Fast portable storage for creators and professionals whose computer supports USB 3.2 Gen 2x2.",
+          "us_identifier": "Samsung Portable SSD T9 2TB",
+          "uk_identifier": "Samsung Portable SSD T9 2TB",
+          "pros": [
+            "USB 3.2 Gen 2x2 interface with sequential read speeds up to 2,000MB/s",
+            "Available in 1TB, 2TB and 4TB capacities",
+            "AES 256-bit hardware encryption and drop resistance up to 3 metres"
+          ],
+          "cons": [
+            "Full 20Gbps performance requires a USB 3.2 Gen 2x2 host; many USB-C ports are slower",
+            "The manufacturer's 2,000MB/s figures are maximum sequential test results, not guaranteed sustained performance",
+            "Larger and heavier than some pocket-sized portable SSDs"
+          ],
+          "verdict": "A capable high-speed portable SSD when the host computer supports its 20Gbps interface. Check the laptop's exact USB specification before paying for the faster model.",
+          "source": "https://download.semiconductor.samsung.com/resources/data-sheet/samsung_portable_ssd_t9_datasheet_rev1_0.pdf",
+          "sourceNote": "Samsung's official T9 datasheet lists USB 3.2 Gen 2x2, up to 2,000MB/s, capacities, 122g weight, AES 256-bit hardware encryption and 3m drop resistance."
+        },
+        {
+          "name": "SanDisk Extreme PRO Portable SSD (USB 3.2 Gen 2x2)",
+          "bestFor": "Users who want a rugged portable drive with IP65 dust/water resistance and high transfer speeds.",
+          "us_identifier": "SanDisk Extreme PRO Portable SSD USB 3.2 Gen 2x2 2TB",
+          "uk_identifier": "SanDisk Extreme PRO Portable SSD USB 3.2 Gen 2x2 2TB",
+          "pros": [
+            "USB 3.2 Gen 2x2 with sequential read and write speeds up to 2,000MB/s",
+            "IP65 water and dust resistance with drop protection up to 3 metres",
+            "Aluminium chassis designed to help dissipate heat and a five-year limited warranty"
+          ],
+          "cons": [
+            "Maximum speed depends on a compatible 20Gbps host connection",
+            "IP65 is not an immersion rating; the drive must be clean and dry after exposure",
+            "The PRO USB 3.2 Gen 2x2 version should not be confused with other SanDisk Extreme or newer USB4 models"
+          ],
+          "verdict": "A rugged, high-speed choice for moving large files outdoors or between workstations. Confirm the precise model generation and host interface because SanDisk sells several similarly named portable SSDs.",
+          "source": "https://www.sandisk.com/products/ssd/external-ssd/portable-ssd-sandisk-extreme-pro-usb-3-2?sku=SDSSDE81",
+          "sourceNote": "SanDisk's official product specifications list USB 3.2 Gen 2x2, up to 2,000MB/s read/write, IP65, 3m drop protection and five-year limited warranty."
+        },
+        {
+          "name": "Crucial X10 Pro Portable SSD",
+          "bestFor": "Video professionals and creators transferring large media files who have a compatible high-speed USB-C host.",
+          "us_identifier": "Crucial X10 Pro Portable SSD 2TB",
+          "uk_identifier": "Crucial X10 Pro Portable SSD 2TB",
+          "pros": [
+            "Manufacturer-rated sequential speeds up to 2,100MB/s read and 2,000MB/s write",
+            "IP55 water and dust resistance and a compact aluminium design",
+            "USB-C connectivity and compatibility across supported Windows, Mac and Android devices"
+          ],
+          "cons": [
+            "Maximum speeds require the supported USB 3.2 Gen 2x2 interface; slower ports reduce throughput",
+            "IP55 protects against limited dust and water exposure but is not waterproof or submersible",
+            "Device compatibility and formatting requirements vary by host and operating system"
+          ],
+          "verdict": "A creator-oriented option for high-speed transfers and editing workflows. Check USB port bandwidth and the exact device compatibility notes before relying on it for direct editing.",
+          "source": "https://www.crucial.com/content/dam/crucial/ssd-products/x10-pro/flyer/crucial-X10-productflyer.pdf",
+          "sourceNote": "Crucial's official X10 Pro flyer lists up to 2,100/2,000MB/s, capacities up to 4TB, IP55 and supported device families."
+        },
+        {
+          "name": "Kingston XS2000 Portable SSD",
+          "bestFor": "Travellers who value a very small, lightweight drive with a removable protective sleeve.",
+          "us_identifier": "Kingston XS2000 Portable SSD 2TB",
+          "uk_identifier": "Kingston XS2000 Portable SSD 2TB",
+          "pros": [
+            "Pocket-sized design weighing approximately 28.9g",
+            "USB 3.2 Gen 2x2 with sequential read/write speeds up to 2,000MB/s",
+            "IP55 protection when used with the included removable rubber sleeve and capacities up to 4TB"
+          ],
+          "cons": [
+            "Full performance requires USB 3.2 Gen 2x2; a 10Gbps USB-C port will limit transfer speeds",
+            "The IP55 protective rating depends on using the included rubber sleeve",
+            "Small physical size makes it easier to misplace, so a protective carry case may be useful"
+          ],
+          "verdict": "A highly portable option for users who want a small drive for travel. Confirm the host's USB speed and keep the sleeve fitted when relying on its stated environmental protection.",
+          "source": "https://www.kingston.com/datasheets/SXS2000_en.pdf",
+          "sourceNote": "Kingston's official XS2000 datasheet lists USB 3.2 Gen 2x2, up to 2,000MB/s, 28.9g weight, capacities to 4TB and IP55 with the rubber sleeve."
+        }
+      ],
+      "buyingChecklist": [
+        "Check the computer's USB generation and port support; the drive's headline speed may not be achievable on every host.",
+        "Choose capacity based on current data plus expected growth and maintain a separate backup.",
+        "Compare hardware encryption, password recovery, ruggedness and warranty terms.",
+        "Confirm included cable/adapter compatibility and whether sustained writes affect performance."
+      ]
+    },
+    {
+      "slug": "air-fryers-us-uk",
+      "title": "Air Fryers for US & UK Kitchens: Single-Basket, Dual-Zone and Steam Models",
+      "category": "Kitchen Appliances",
+      "publishedAt": "2026-11-16",
+      "summary": "Compare single-basket and dual-zone air fryers by usable capacity, cooking flexibility, cleaning, counter footprint and regional electrical specifications.",
+      "introduction": "Air fryers differ in basket layout, usable cooking space, controls and electrical requirements. A large headline capacity does not guarantee that a model will fit your counter or cook every food evenly. This guide compares four manufacturer-documented product families. US and UK variants are not interchangeable: check the exact model number, voltage, plug, capacity and included accessories on the local listing before ordering. These are research-led summaries, not hands-on test results.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Ninja Foodi MAX Dual Zone Air Fryer (AF400UK / DZ550)",
+          "bestFor": "Households wanting two independent cooking zones and a large family-sized capacity.",
+          "us_identifier": "Ninja Foodi 6-in-1 Smart 10-qt 2-Basket Air Fryer DZ550",
+          "uk_identifier": "Ninja Foodi MAX Dual Zone Air Fryer 9.5L AF400UK",
+          "pros": [
+            "Two independent baskets allow different foods, temperatures and cooking times",
+            "UK AF400UK has 9.5L total capacity and six cooking functions",
+            "US DZ550 adds a Smart Cook System with an integrated food thermometer"
+          ],
+          "cons": [
+            "The UK AF400UK and US DZ550 are different electrical and capacity variants, not interchangeable units",
+            "Dual-basket design needs substantial counter space",
+            "The Smart Cook thermometer feature is specific to the US DZ550 package and should not be assumed for AF400UK"
+          ],
+          "verdict": "A useful family-size dual-zone comparison, provided buyers select the exact regional model. Compare AF400UK for the UK and DZ550 for the US rather than importing across voltage regions.",
+          "source": "https://ninjakitchen.co.uk/product/ninja-foodi-max-dual-zone-air-fryer-af400uk-zidAF400UK",
+          "sourceNote": "Ninja UK lists AF400UK at 9.5L, 2470W, six cooking functions and two independent zones. Ninja US lists DZ550 at 10qt, 1690W, 120V, six functions and an integrated Smart Cook thermometer: https://www.ninjakitchen.com/products/ninja-foodi-6-in-1-smart-10-qt.-2-basket-air-fryer-zidDZ550"
+        },
+        {
+          "name": "Philips 5000 Series Dual-Basket Airfryer with Steam (NA555/09 / NA555/00)",
+          "bestFor": "Users who want dual baskets with steam cooking as well as air frying.",
+          "us_identifier": "Philips 5000 Series Dual Basket Airfryer with Steam 9.6 qt NA555/00",
+          "uk_identifier": "Philips 5000 Series Dual Basket Airfryer with Steam 9L NA555/09",
+          "pros": [
+            "Dual-basket configuration combines a 6L main drawer and 3L secondary drawer in the UK version",
+            "Steam, steam-and-airfry and steam-clean functions expand the cooking methods",
+            "Philips lists 12 presets and 19 cooking methods for the series"
+          ],
+          "cons": [
+            "The UK NA555/09 is specified for 220–240V while the US NA555/00 is a 120V model",
+            "Steam functions add cleaning and water-management steps compared with a basic air fryer",
+            "The 9L UK and 9.6qt US capacity figures use different regional specifications and should not be treated as identical measurements"
+          ],
+          "verdict": "A distinctive option when steam cooking is a real requirement. Check NA555/09 for the UK or NA555/00 for the US and confirm local voltage and dimensions.",
+          "source": "https://www.philips.co.uk/c-p/NA555_09/5000-series/overview",
+          "sourceNote": "Philips UK lists 9L, 2750W, 220–240V, two baskets, steam functions and 12 presets; Philips US lists NA555/00 at 9.6qt and 120V: https://www.usa.philips.com/c-p/NA555_00/5000-series"
+        },
+        {
+          "name": "Instant Vortex Plus Dual-Basket Air Fryer with ClearCook (DAF8132BK / 140-3090-01)",
+          "bestFor": "Buyers who value two independent baskets and viewing windows to monitor cooking.",
+          "us_identifier": "Instant Pot Vortex Plus Dual Black 8QT Air Fryer with ClearCook 140-3090-01",
+          "uk_identifier": "Instant Vortex Plus Dual Drawer with ClearCook Air Fryer DAF8132BK",
+          "pros": [
+            "ClearCook viewing windows let users check food without opening the drawers",
+            "SyncCook and SyncFinish support matching settings or coordinating different cooking programmes",
+            "UK DAF8132BK manual specifies 7.5L total capacity, 1700W and two 3.7L baskets"
+          ],
+          "cons": [
+            "The UK DAF8132BK and US 140-3090-01 have different capacity and electrical specifications",
+            "Two drawers take more counter width than many single-basket models",
+            "Viewing windows and lighting add components that need routine cleaning"
+          ],
+          "verdict": "A practical dual-basket alternative to compare when viewing windows and synchronised finish times matter. Select the UK DAF8132BK or US 140-3090-01 regional version.",
+          "source": "https://instantpot.co.uk/shop-all-products/instant/cooking-appliances/air-fryers/instant-vortex-plus-dual-drawer-8-in-1-air-fryer-with-clearcook-black/",
+          "sourceNote": "Instant UK product information and manual specify the DAF8132BK 7.5L, 1700W, 220–240V variant; Instant US lists SKU 140-3090-01 at 8qt with dual baskets and ClearCook: https://instantpot.com/products/instant-pot-vortex-plus-dual-black-8qt-air-fryer-with-clearcook"
+        },
+        {
+          "name": "COSORI TurboBlaze Air Fryer (UK 6L / US 6-Quart)",
+          "bestFor": "Users who prefer a single spacious basket and a broad temperature range over dual cooking zones.",
+          "us_identifier": "COSORI TurboBlaze CAF-DC601-KUS US 120V 60Hz 1725W 6qt",
+          "uk_identifier": "COSORI TurboBlaze UK 6L model 220-240V regional version",
+          "pros": [
+            "Single-basket format offers a simpler footprint than many dual-zone models",
+            "Nine cooking functions cover air frying, roasting, baking, broiling, dehydrating, proofing and reheating",
+            "Manufacturer specifications list a 30–230°C temperature range and five-speed airflow"
+          ],
+          "cons": [
+            "A single basket cannot cook two separate dishes independently at different settings",
+            "UK and US versions use different voltage, capacity notation and model identifiers",
+            "The 6L UK model page and US 6-quart model have variant-specific dimensions and should be checked locally"
+          ],
+          "verdict": "A flexible single-basket option for users who do not need separate cooking zones. Confirm the regional model and its electrical rating before purchase.",
+          "source": "https://cosori.co.uk/products/cosori-turbo-blaze-6l-air-fryer",
+          "sourceNote": "COSORI UK lists the 6L TurboBlaze, nine functions and 30–230°C range; COSORI US identifies model CAF-DC601-KUS as 120V, 1725W and 6qt: https://cosori.com/products/turboblaze-air-fryer",
+          "availabilityNote": "The US CAF-DC601-KUS is specified for AC 120V, 60Hz and 1,725W. The UK product page is a separate 6L regional listing; its current public specification page does not expose a clear voltage line in the captured data, so confirm the rating plate/manual before ordering. Never assume the US 120V unit is suitable for UK/Jordan mains. Sources: https://cosori.com/products/turboblaze-air-fryer and https://cosori.co.uk/products/cosori-turbo-blaze-6l-air-fryer."
+        }
+      ],
+      "buyingChecklist": [
+        "Compare usable basket capacity and dimensions, not just the advertised family-size claim.",
+        "Check the exact regional model number, voltage, wattage, plug and counter-space clearance.",
+        "Decide whether single basket, dual-zone synchronisation or steam functions are genuinely useful.",
+        "Check dishwasher-safe parts, cleaning access, replacement accessories and warranty conditions."
+      ]
+    },
+    {
+      "slug": "cordless-vacuum-cleaners-us-uk",
+      "title": "Cordless Vacuum Cleaners: Comparing Stick Vacuums for US & UK Homes",
+      "category": "Cleaning & Floorcare",
+      "publishedAt": "2026-11-16",
+      "summary": "Compare cordless stick vacuums by suction claims, battery runtime, weight, dust capacity, filtration and included floor tools across US and UK model variants.",
+      "introduction": "Cordless vacuums are not directly comparable by headline runtime or suction figures alone. Maximum runtime is commonly measured in a low-power mode with a non-motorised tool, while powered floorheads and boost modes can reduce it substantially. Check the exact regional model, included batteries and floorheads, dust capacity, replacement-filter costs and warranty terms before buying. This guide uses manufacturer documentation and does not claim hands-on testing.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Dyson V15 Detect Absolute Cordless Vacuum",
+          "bestFor": "Homes that want a feature-rich cordless stick vacuum with particle sensing and illuminated hard-floor cleaning.",
+          "us_identifier": "Dyson V15 Detect Cordless Vacuum",
+          "uk_identifier": "Dyson V15 Detect Absolute Cordless Vacuum",
+          "pros": [
+            "Manufacturer lists up to 240 Air Watts of suction and up to 60 minutes of runtime",
+            "Fluffy Optic floorhead illuminates fine dust on hard floors",
+            "Particle sensor and LCD screen provide cleaning feedback",
+            "Click-in battery design supports battery replacement"
+          ],
+          "cons": [
+            "The 60-minute figure is a maximum and varies with power mode, floor type and attachments",
+            "At approximately 3.1 kg, the complete machine may feel heavy for some users",
+            "A 4.5-hour charge time means it is not a quick top-up device"
+          ],
+          "verdict": "A specification-led option for buyers who value dust-detection features and a broad tool set. Compare the exact US and UK package contents because floorheads and accessories can differ by variant.",
+          "source": "https://www.dyson.co.uk/vacuum-cleaners/cordless/v15/detect-yellow-nickel",
+          "sourceNote": "Dyson UK product documentation lists 240 AW, up to 60 minutes, 0.77 L bin volume, 3.1 kg weight and 4.5-hour charging. US model details should be checked against the selected US listing."
+        },
+        {
+          "name": "Shark Stratos Cordless Vacuum",
+          "bestFor": "Homes with mixed carpet and hard floors that want an anti-hair-wrap floorhead and a flexible wand.",
+          "us_identifier": "Shark Stratos Cordless Vacuum IZ862H",
+          "uk_identifier": "Shark Stratos Anti Hair Wrap Plus Pet Pro Cordless Vacuum IZ400UKT",
+          "pros": [
+            "DuoClean PowerFins floorhead is designed for carpet and hard-floor cleaning",
+            "Self-cleaning brushroll is designed to reduce hair wrap",
+            "MultiFLEX wand bends to reach beneath furniture and folds for compact storage",
+            "UK manufacturer specification lists up to 60 minutes of runtime and a 0.7 L dust capacity"
+          ],
+          "cons": [
+            "The UK IZ400UKT weighs approximately 4.1 kg, making it heavier than some competing stick vacuums",
+            "The stated 60-minute runtime is an Eco-mode maximum with a non-motorised tool",
+            "US and UK model numbers and included accessories are different"
+          ],
+          "verdict": "Worth comparing for households prioritising hair pickup features and flexible under-furniture access. Verify the exact model suffix and included tools in the marketplace you use.",
+          "source": "https://sharkclean.co.uk/product/shark-stratos-anti-hair-wrap-plus-pet-pro-cordless-vacuum-single-battery-iz400ukt-zidIZ400UKT",
+          "sourceNote": "Shark UK product details specify 4.1 kg, 0.7 L and up to 60 minutes. Shark US lists the IZ862H variant and its Clean Sense IQ, DuoClean PowerFins HairPro and MultiFLEX features."
+        },
+        {
+          "name": "Samsung Bespoke Jet AI Cordless Stick Vacuum",
+          "bestFor": "Buyers who want a premium cordless vacuum with an automatic dust-emptying and charging station.",
+          "us_identifier": "Samsung Bespoke Jet AI Cordless Stick Vacuum VS28C9762UK/AA",
+          "uk_identifier": "Samsung Bespoke Jet AI Cordless Stick Vacuum VS28C9784QK/EU",
+          "pros": [
+            "Samsung UK lists 280 W for model VS28C9784QK/EU; the US model VS28C9762UK/AA is specified as 280 AW. These differently expressed regional specifications must not be compared as the same unit.",
+            "All-in-One Clean Station empties the dustbin and recharges the vacuum",
+            "AI cleaning mode uses floor sensing to adjust cleaning behaviour",
+            "UK model family documentation lists removable batteries and up to 160 minutes using two batteries"
+          ],
+          "cons": [
+            "The Clean Station needs additional floor space and uses disposable dust bags",
+            "The 160-minute UK claim uses two batteries; US documentation for its regional model lists up to 100 minutes in minimum mode",
+            "Runtime falls sharply at higher power settings, so headline figures should not be treated as typical powered-floorhead runtime"
+          ],
+          "verdict": "A premium convenience-focused option if automatic dust emptying matters. Compare the regional model code, number of batteries and included station before deciding; US and UK runtime figures are not directly interchangeable.",
+          "source": "https://www.samsung.com/uk/vacuum-cleaners/bespoke-jet/",
+          "sourceNote": "Samsung UK lists model VS28C9784QK/EU and 280 W suction, with up to 160 minutes using two batteries. Samsung US model VS28C9762UK/AA documentation lists 280 AW, 120 V / 60 Hz and up to 100 minutes in minimum mode with a non-motorised tool. W and AW are not interchangeable labels; compare each regional model only using its own manufacturer specification and confirm the exact included battery bundle."
+        },
+        {
+          "name": "Miele Triflex HX2 Cordless Stick Vacuum",
+          "bestFor": "Buyers who value a configurable 3-in-1 stick vacuum and a HEPA lifetime filter.",
+          "us_identifier": "Miele Triflex HX2 Lotus White US material number 11827000",
+          "uk_identifier": "Miele Triflex HX2 Lotus White UK material number 11819170",
+          "pros": [
+            "Three-in-one design can be configured for different cleaning tasks",
+            "Manufacturer lists a HEPA lifetime filter and 99.999% dust-retention capability under its stated test method",
+            "Exchangeable lithium-ion battery",
+            "Up to 60 minutes of runtime in the specified low-power, PowerUnit-only configuration"
+          ],
+          "cons": [
+            "Runtime is listed as up to 60 minutes without the powered floorhead; manufacturer documentation lists 30 minutes with electrical accessories at low power",
+            "The 3.6 kg complete machine is relatively substantial",
+            "A full recharge is listed at approximately four hours"
+          ],
+          "verdict": "A flexible alternative for buyers who want different body configurations and a lifetime HEPA filter. Check the exact HX2 package and whether the powered floorhead is included in the selected regional listing.",
+          "source": "https://media.miele.com/downloads/n-/gb/FS_11819170_GBE_GB-en-GB.pdf",
+          "sourceNote": "Miele's UK technical sheet identifies material number 11819170 / EAN 4002516449959 and lists 3-in-1 design, 3.6 kg weight, up to 60 minutes PowerUnit-only runtime, 30 minutes with electrical accessories at low power, 14 minutes at high power with electrical accessories and four-hour charging. Miele's US product page identifies a different material number 11827000 / EAN 4002516453017. Treat these as distinct regional package records; verify included floorhead, charger, colour and warranty against the exact retailer listing. UK technical sheet: https://media.miele.com/downloads/n-/gb/FS_11819170_GBE_GB-en-GB.pdf. US product page: https://www.mieleusa.com/product/11827000/cordless-stick-vacuum-cleaner-triflex-hx2-lotus-white."
+        }
+      ],
+      "buyingChecklist": [
+        "Compare measured suction claims carefully and check which tool/mode was used for runtime figures.",
+        "Check floor-head design, anti-tangle features, bin capacity, weight and filtration.",
+        "Confirm battery runtime at the power level you will actually use and whether batteries are replaceable.",
+        "Check regional model suffix, included tools, wall dock, filter availability and warranty."
+      ]
+    },
+    {
+      "slug": "cordless-drills-us-uk",
+      "title": "Cordless Drills for DIY and Home Projects: US & UK Buying Guide",
+      "category": "Power Tools",
+      "publishedAt": "2026-11-16",
+      "summary": "Compare cordless drill-drivers by battery platform, size, brushless motor options, chuck capacity and the type of work you plan to tackle.",
+      "introduction": "Cordless drill selection depends on the work, not just voltage. Compare the battery ecosystem you already own, tool-only versus kit bundles, chuck capacity, torque settings, weight and whether a hammer-drill mode is needed. Model suffixes and included batteries vary by market.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "DEWALT 20V MAX XR Brushless 1/2-in Drill/Driver DCD801B",
+          "bestFor": "Buyers already using DEWALT 20V MAX batteries who want a compact brushless drill-driver.",
+          "us_identifier": "DEWALT 20V MAX XR Brushless 1/2-in Drill/Driver DCD801B",
+          "uk_identifier": "DEWALT UK 18V XR brushless drill driver DCD791NT-XJ",
+          "pros": [
+            "Brushless motor platform; 1/2-inch chuck; tool-only option can suit owners of compatible batteries."
+          ],
+          "cons": [
+            "Tool-only package does not include battery or charger; verify the exact kit contents and regional battery system."
+          ],
+          "verdict": "A flexible candidate for buyers already invested in the DEWALT 20V MAX platform. Confirm the SKU and battery bundle.",
+          "source": "https://www.dewalt.com/en-us/product/dcd801b/20v-max-xr-brushless-cordless-12-drilldriver-tool-only",
+          "sourceNote": "DEWALT's exact US model page identifies DCD801B as a 20V MAX XR brushless 1/2-in drill/driver, tool-only, with a two-speed transmission and three-position LED. DEWALT UK lists separate 18V XR model numbers; these are regional candidates, not one-to-one equivalents. Compare torque, chuck, dimensions, battery platform and kit contents.",
+          "availabilityNote": "The US DCD801B identifier is not a confirmed UK SKU. DEWALT's UK range uses 18V XR naming and separate model numbers. Verify the exact UK model, battery platform, charger, included accessories and warranty before purchase. Official UK examples: https://www.dewalt.co.uk/en-gb/product/dcd791nt-xj/18v-xr-brushless-drill-driver-tool-only and https://www.dewalt.co.uk/en-gb/product/dcd708n-xj/18v-xr-brushless-drill-driver-tool-only."
+        },
+        {
+          "name": "DEWALT ATOMIC 20V MAX Compact Drill/Driver DCD794D1",
+          "bestFor": "DIY users who prioritise a compact tool for furniture, fittings and general household work.",
+          "us_identifier": "DEWALT ATOMIC 20V MAX Compact Drill/Driver DCD794D1",
+          "uk_identifier": "DEWALT UK 18V XR compact brushless drill driver DCD708N-XJ",
+          "pros": [
+            "Compact ATOMIC family; supplied as a kit in the DCD794D1 configuration; part of the 20V MAX platform."
+          ],
+          "cons": [
+            "Compact size does not replace a higher-capacity hammer drill for demanding masonry work; kit contents are SKU-specific."
+          ],
+          "verdict": "Compare its compact form with full-size drill-drivers and choose based on access, material and existing batteries.",
+          "source": "https://www.dewalt.com/en-us/product/dcd794d1/20v-max-atomic-brushless-cordless-12-drilldriver-1-20ah-battery",
+          "sourceNote": "DEWALT's exact US DCD794D1 page identifies the ATOMIC 20V MAX brushless 1/2-in kit and lists its included 2.0Ah battery and charger, 404 UWO and compact 5.88-in tool-head length. The UK DCD708N-XJ is a separate regional model, not a verified identical SKU; compare torque, dimensions and kit contents.",
+          "availabilityNote": "The US DCD794D1 is a US-market kit identifier. Do not assume the same model number or kit is sold in the UK. DEWALT UK lists DCD708N-XJ as an 18V XR brushless drill driver (tool only); verify battery, charger, torque and included accessories: https://www.dewalt.co.uk/en-gb/product/dcd708n-xj/18v-xr-brushless-drill-driver-tool-only."
+        },
+        {
+          "name": "DEWALT 20V MAX Compact Drill/Driver DCD777D1",
+          "bestFor": "Home users wanting a straightforward compact drill-driver kit.",
+          "us_identifier": "DEWALT 20V MAX Compact Drill/Driver DCD777D1",
+          "uk_identifier": "DEWALT UK 18V XR drill driver DCD776C1-GB",
+          "pros": [
+            "Compact 20V MAX drill-driver; kit configuration identified by DCD777D1; suited to general drilling and fastening tasks."
+          ],
+          "cons": [
+            "Check whether the included battery capacity meets longer work sessions; not every kit includes the same accessories."
+          ],
+          "verdict": "A straightforward option to compare for routine household jobs and light workshop use.",
+          "source": "https://www.dewalt.com/en-us/product/dcd777d1/20v-max-compact-brushless-drilldriver-kit",
+          "sourceNote": "DEWALT's exact US DCD777D1 page identifies the 20V MAX compact brushless 1/2-in drill/driver kit and states 340 UWO, a two-speed transmission and included 2.0Ah battery/charger. The UK DCD776C1-GB is a different regional model number; verify motor specification and kit contents before comparison.",
+          "availabilityNote": "The US DCD777D1 and UK DCD776C1-GB are different regional model numbers. Confirm the motor specification and exact kit contents before comparing; never assume batteries/chargers or model features are identical. UK catalogue: https://www.dewalt.co.uk/en-gb/products/power-tools/drills/drill-drivers."
+        },
+        {
+          "name": "DEWALT 12V MAX 5-in-1 Brushless Drill/Driver DCD703F1",
+          "bestFor": "Users who need a small multi-head tool for tight spaces and varied fastening access.",
+          "us_identifier": "DEWALT 12V MAX 5-in-1 Brushless Drill/Driver DCD703F1",
+          "uk_identifier": "DEWALT UK 12V XR brushless drill driver DCD701N-XJ",
+          "pros": [
+            "12V MAX platform; brushless motor; interchangeable head concept supports different access angles."
+          ],
+          "cons": [
+            "12V ecosystem differs from 20V MAX; the multi-head design is specialised and not a like-for-like replacement for a full-size drill."
+          ],
+          "verdict": "Consider when access and compactness matter more than using the larger 20V battery platform.",
+          "source": "https://www.dewalt.com/en-us/product/dcd703f1/12v-max-5-1-brushless-drilldriver-kit",
+          "sourceNote": "DEWALT's exact US DCD703F1 page confirms a 12V MAX brushless 5-in-1 drill/driver kit with four dedicated attachment solutions, two speeds and 15 clutch settings. The UK DCD701N-XJ is a separate 12V XR drill-driver, not a verified equivalent with the same multi-head system.",
+          "availabilityNote": "No exact UK 5-in-1 counterpart for DCD703F1 was confirmed in this pass. DCD701N-XJ is a separate 12V XR drill-driver model, not a verified equivalent. UK source: https://www.dewalt.co.uk/en-gb/product/dcd701n-xj/12v-xr-brushless-drill-driver-tool-only."
+        }
+      ],
+      "buyingChecklist": [
+        "Confirm the exact platform voltage, battery chemistry, included battery capacity and charger.",
+        "Compare torque, speed ranges, chuck size and clutch settings with the materials you plan to drill.",
+        "Check whether the listing is a bare tool or a kit and whether batteries are compatible with tools you own.",
+        "Confirm regional model suffixes, charger voltage, warranty and availability of replacement batteries."
+      ]
+    },
+    {
+      "slug": "robot-vacuum-mops-us-uk",
+      "title": "Robot Vacuum and Mop Combos: Navigation, Docking and Floor-Care Choices",
+      "category": "Smart Cleaning",
+      "publishedAt": "2026-11-16",
+      "summary": "Compare robot vacuum and mop systems by navigation, dock automation, obstacle handling, carpet behaviour and ongoing maintenance.",
+      "introduction": "Robot vacuum and mop systems differ most in dock functions, mop design, obstacle avoidance and how they handle rugs and thresholds. Suction figures are manufacturer claims and are not directly comparable across brands. Measure the dock footprint, check replacement consumables and confirm local app and voice-assistant support.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Roborock Saros 10R Robot Vacuum",
+          "bestFor": "Buyers comparing Roborock's slim premium robot platform with advanced obstacle recognition and automated floor care.",
+          "us_identifier": "Roborock Saros 10R Robot Vacuum",
+          "uk_identifier": "Roborock Saros 10R Robot Vacuum",
+          "pros": [
+            "StarSight Autonomous System 2.0 navigation and obstacle-recognition platform",
+            "Ultra-slim 7.98cm robot body and dual anti-tangle system",
+            "Multifunctional Dock 4.0 floor-care automation"
+          ],
+          "cons": [
+            "A matching UK Saros 10R product listing was not confirmed; do not substitute the differently named Saros 10",
+            "Dock footprint, maintenance, accessory bundle and warranty need checking against the exact regional package"
+          ],
+          "verdict": "Keep this as a distinct Saros 10R model reference. UK buyers should compare it with the separately named Saros 10 rather than assuming they are the same SKU.",
+          "source": "https://global.roborock.com/pages/roborock-saros-10r",
+          "sourceNote": "Roborock's exact global Saros 10R page describes StarSight Autonomous System 2.0, the slim body, anti-tangle design and Multifunctional Dock 4.0. The UK product catalogue lists Saros 10 separately; no direct UK Saros 10R retailer product listing is confirmed here.",
+          "availabilityNote": "UK model equivalence and availability are unconfirmed for Saros 10R. The official UK Saros 10 is a different model name; verify exact SKU, dock bundle, plug, app-region terms, consumables and warranty."
+        },
+        {
+          "name": "Roborock Qrevo CurvX Robot Vacuum and Mop",
+          "bestFor": "Buyers researching the CurvX product family and comparing low-profile cleaning designs.",
+          "us_identifier": "Roborock Qrevo CurvX Robot Vacuum and Mop",
+          "uk_identifier": "Roborock Qrevo Curv 2 Pro Robot Vacuum and Mop",
+          "pros": [
+            "The US Qrevo CurvX source describes a low-profile design, AdaptiLift chassis and dock automation",
+            "Roborock UK currently lists the separately named Qrevo Curv 2 Pro with AdaptiLift chassis and up to 25,000Pa advertised suction"
+          ],
+          "cons": [
+            "Qrevo CurvX and Qrevo Curv 2 Pro are distinct product names; the UK search phrase is a related UK-market alternative, not a verified equivalent SKU",
+            "Do not transfer CurvX specifications, dock contents, plug, warranty or accessories to Curv 2 Pro"
+          ],
+          "verdict": "Use the UK Qrevo Curv 2 Pro as a separate regional alternative for UK shoppers; retain CurvX only as the US-market product reference.",
+          "source": "https://us.roborock.com/products/roborock-qrevo-curv-x",
+          "sourceNote": "The US source is the exact Qrevo CurvX product page. Roborock UK's robot-vacuum range lists Qrevo Curv 2 Pro as a separate product name and feature set. The two are not asserted to be identical.",
+          "availabilityNote": "For UK shopping, search for the separately named Qrevo Curv 2 Pro. Confirm its exact UK SKU, dock package, plug, consumables and warranty; do not assume Qrevo CurvX regional parity."
+        },
+        {
+          "name": "Roborock Qrevo Edge 2 Robot Vacuum and Mop",
+          "bestFor": "Homes comparing anti-tangle cleaning and automated mop care in a robot-and-dock system.",
+          "us_identifier": "Roborock Qrevo Edge 2 Robot Vacuum and Mop",
+          "uk_identifier": "Roborock Qrevo Edge 2 Robot Vacuum and Mop",
+          "pros": [
+            "Roborock UK lists up to 25,000Pa HyperForce suction for this exact UK model",
+            "Dual anti-tangle system and upgraded mopping features are described by Roborock UK",
+            "UK product listing identifies the Edge 2 name directly"
+          ],
+          "cons": [
+            "Advertised suction figures are manufacturer claims and are not a standard cross-brand test",
+            "Dock footprint, replacement consumables, carpet handling and obstacle performance depend on the home and exact bundle"
+          ],
+          "verdict": "A current UK-market comparison candidate where hair management and automated mop care matter. Check the precise dock and accessory bundle before purchase.",
+          "source": "https://uk.roborock.com/products/roborock-qrevo-edge-2-hyperforce-suction-dual-anti-tangle-system",
+          "sourceNote": "Roborock UK's exact Qrevo Edge 2 product listing identifies up to 25,000Pa HyperForce suction and a dual anti-tangle system. Claims are attributed to the manufacturer.",
+          "availabilityNote": "The exact Qrevo Edge 2 model is listed on Roborock UK. Confirm the active retailer listing, bundle, consumables and UK warranty before ordering."
+        },
+        {
+          "name": "Roborock Qrevo 2 Pro Robot Vacuum and Mop",
+          "bestFor": "Homes comparing an automated dock, anti-tangle brushing and mop removal for carpet care.",
+          "us_identifier": "Roborock Qrevo 2 Pro Robot Vacuum and Mop",
+          "uk_identifier": "Roborock Qrevo 2 Pro Robot Vacuum and Mop",
+          "pros": [
+            "Roborock UK advertises up to 25,000Pa HyperForce suction for the UK model",
+            "Automatic mop detachment for carpet care and a multifunctional dock are listed by Roborock",
+            "The US product page for the same named family advertises 20,000Pa, so regional specification differences are explicitly retained"
+          ],
+          "cons": [
+            "The UK and US pages publish different suction figures; compare only against the target-market SKU",
+            "Suction numbers are manufacturer claims, not standardised independent cross-brand measurements",
+            "Verify dock, included accessories, consumables and warranty for the exact listing"
+          ],
+          "verdict": "A useful UK-market option for homes mixing carpet and hard floors. Use the UK-published specifications for UK shopping and do not copy them into US product copy.",
+          "source": "https://uk.roborock.com/pages/roborock-qrevo-2-pro",
+          "sourceNote": "Roborock's official UK Qrevo 2 Pro page advertises 25,000Pa; the official US page advertises 20,000Pa. Both describe automatic mop detachment for carpets and the multifunctional dock. This regional difference is preserved rather than normalised.",
+          "availabilityNote": "Roborock publishes separate UK and US feature specifications for Qrevo 2 Pro. UK page: 25,000Pa; US page: 20,000Pa. Verify exact model/SKU and package on the target marketplace; never assume identical regional performance claims."
+        }
+      ],
+      "buyingChecklist": [
+        "Check navigation and obstacle avoidance performance for your floor plan, cables and thresholds.",
+        "Compare dock functions: auto-empty, mop washing/drying, water refill and detergent requirements.",
+        "Confirm consumable availability, replacement costs and which features require an app or subscription.",
+        "Check carpet detection, mop lifting, privacy controls and regional warranty."
+      ]
+    },
+    {
+      "slug": "noise-cancelling-headphones-us-uk",
+      "title": "Noise-Cancelling Over-Ear Headphones: Comfort, Calls and Battery Choices",
+      "category": "Audio & Headphones",
+      "publishedAt": "2026-11-16",
+      "summary": "Compare over-ear wireless headphones by active noise cancellation, call microphones, comfort, battery claims and device compatibility.",
+      "introduction": "Over-ear headphones are personal-fit products. Before choosing, compare clamp force and ear-cup dimensions, controls, multipoint support, wired listening options, codec compatibility and replacement ear pads. Battery and noise-cancellation claims come from manufacturers and vary with settings.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Sony WH-1000XM6 Wireless Noise Cancelling Headphones",
+          "bestFor": "Frequent travellers and hybrid workers comparing Sony's current premium over-ear model.",
+          "us_identifier": "Sony WH-1000XM6 Wireless Noise Cancelling Headphones",
+          "uk_identifier": "Sony WH-1000XM6 Wireless Noise Cancelling Headphones",
+          "pros": [
+            "Sony lists up to 30 hours of playback with noise cancelling on (40 hours off).",
+            "Bluetooth 5.3 with SBC, AAC, LDAC and LC3 codec support, plus multipoint connectivity.",
+            "Adaptive Noise Cancelling Optimizer and atmospheric-pressure optimisation are documented in Sony's model-specific specifications."
+          ],
+          "cons": [
+            "Codec availability depends on the playback device and selected Bluetooth settings.",
+            "Premium over-ear fit and long-session comfort are individual; check weight, case and replacement-pad availability."
+          ],
+          "verdict": "A current premium candidate for travellers who prioritise noise cancellation, multipoint and broad codec support; compare the exact regional bundle before purchase.",
+          "source": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wh-1000xm6/specifications",
+          "sourceNote": "Sony's model-specific specifications list Bluetooth 5.3, SBC/AAC/LDAC/LC3 codecs, multipoint, and up to 30 hours playback with noise cancelling on (40 hours off). Battery and codec performance depend on settings and source-device support."
+        },
+        {
+          "name": "Sony WH-1000XM5 Wireless Noise Cancelling Headphones",
+          "bestFor": "Buyers comparing a previous-generation premium Sony model.",
+          "us_identifier": "Sony WH-1000XM5 Wireless Noise Cancelling Headphones",
+          "uk_identifier": "Sony WH-1000XM5 Wireless Noise Cancelling Headphones",
+          "pros": [
+            "Sony lists up to 30 hours of playback with noise cancelling on (40 hours off).",
+            "Bluetooth 5.2 and SBC, AAC and LDAC codec support.",
+            "Sony documents the model's noise-cancelling and ambient-sound functions."
+          ],
+          "cons": [
+            "The non-folding headband design may be less convenient for compact travel storage.",
+            "Codec availability and battery life depend on the playback device and settings."
+          ],
+          "verdict": "A previous-generation premium candidate where the XM5's non-folding design, features and exact regional bundle suit the buyer.",
+          "source": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wh-1000xm5/specifications",
+          "sourceNote": "Sony's model-specific specifications list Bluetooth 5.2, SBC/AAC/LDAC codecs, and up to 30 hours playback with noise cancelling on (40 hours off). Confirm regional package and colour suffix on the retailer listing."
+        },
+        {
+          "name": "Sony WH-1000XM4C Wireless Noise Cancelling Headphones",
+          "bestFor": "Buyers considering the XM4 family as an alternative to newer premium models.",
+          "us_identifier": "Sony WH-1000XM4C Wireless Noise Cancelling Headphones",
+          "uk_identifier": "Sony WH-1000XM4C Wireless Noise Cancelling Headphones",
+          "pros": [
+            "Sony lists Bluetooth 6.0, LDAC/SBC/AAC support and multipoint connectivity.",
+            "Sony specifies approximately 253g weight and up to 27 hours with noise cancelling on (34 hours off).",
+            "Foldable design and three colour options are described on Sony's product information."
+          ],
+          "cons": [
+            "The 27-hour noise-cancelling runtime is lower than the original WH-1000XM4's published 30-hour figure.",
+            "Check that the retailer listing is the refreshed WH-1000XM4C, not the original WH-1000XM4; verify colour and package."
+          ],
+          "verdict": "A refreshed XM4-family option for buyers who value the foldable design and updated connectivity; confirm the exact XM4C variant and battery expectations.",
+          "source": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wh-1000xm4c/specifications",
+          "sourceNote": "Sony's exact WH-1000XM4C specifications identify Bluetooth 6.0, LDAC/SBC/AAC, multipoint, approximately 253g weight and up to 27 hours playback with noise cancelling on (34 hours off). This 2026 refresh is distinct from the original WH-1000XM4; verify colour suffix and local bundle."
+        },
+        {
+          "name": "Sony ULT WEAR Wireless Noise Cancelling Headphones",
+          "bestFor": "Listeners who want a bass-oriented over-ear model within Sony's wireless range.",
+          "us_identifier": "Sony ULT WEAR Wireless Noise Cancelling Headphones",
+          "uk_identifier": "Sony ULT WEAR Wireless Noise Cancelling Headphones",
+          "pros": [
+            "Part of Sony's ULT Wear wireless headphone family with dedicated bass-oriented sound modes."
+          ],
+          "cons": [
+            "Sound preference is subjective; compare ANC, fit and control layout rather than relying on a bass label alone."
+          ],
+          "verdict": "Consider if the ULT sound profile appeals and the fit is comfortable for longer sessions.",
+          "source": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wh-ult900n/specifications",
+          "sourceNote": "Sony's WH-ULT900N model-specific specifications list the ULT button, 40mm driver, Bluetooth 5.2, SBC/AAC/LDAC and up to 30 hours with noise cancelling on (50 hours off)."
+        }
+      ],
+      "buyingChecklist": [
+        "Compare comfort, clamp force, weight and ear-cup fit for long listening sessions.",
+        "Check ANC behaviour, transparency mode, microphone performance and wind-noise handling.",
+        "Confirm Bluetooth codecs, multipoint support, wired operation and compatibility with your devices.",
+        "Compare battery life with ANC enabled, charging connector, foldability and replacement ear pads."
+      ]
+    },
+    {
+      "slug": "wireless-earbuds-us-uk",
+      "title": "Wireless Earbuds: ANC, Fit, Battery and Phone Compatibility",
+      "category": "Audio & Headphones",
+      "publishedAt": "2026-11-16",
+      "summary": "Compare true-wireless earbuds by fit options, active noise cancellation, ecosystem features, battery claims and water resistance.",
+      "introduction": "Earbud comfort and seal affect sound and noise cancellation. Check the supplied tip sizes, case dimensions, single-charge versus case-inclusive battery figures, water-resistance rating and which features require a particular phone ecosystem. Confirm model generation because names can be similar.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Sony WF-1000XM6 Truly Wireless Noise Cancelling Earbuds",
+          "bestFor": "Listeners comparing Sony's current premium noise-cancelling earbud family.",
+          "us_identifier": "Sony WF-1000XM6 Truly Wireless Noise Cancelling Earbuds",
+          "uk_identifier": "Sony WF-1000XM6 Truly Wireless Noise Cancelling Earbuds",
+          "pros": [
+            "Sony lists the WF-1000XM6 in its current wireless headphone catalogue; model family focuses on ANC and wireless audio."
+          ],
+          "cons": [
+            "Ear-tip seal is individual; check phone codec support, case size and regional warranty before choosing."
+          ],
+          "verdict": "A premium earbud candidate for users who want to compare Sony's current ANC platform.",
+          "source": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wf-1000xm6/specifications",
+          "sourceNote": "Sony's official WF-1000XM6 specifications cover supported codecs, multipoint, IPX4 rating and battery figures; confirm the regional SKU and package contents."
+        },
+        {
+          "name": "Sony WF-1000XM5 Truly Wireless Noise Cancelling Earbuds",
+          "bestFor": "Buyers comparing the prior Sony flagship earbud generation.",
+          "us_identifier": "Sony WF-1000XM5 Truly Wireless Noise Cancelling Earbuds",
+          "uk_identifier": "Sony WF-1000XM5 Truly Wireless Noise Cancelling Earbuds",
+          "pros": [
+            "Sony documents advanced noise cancellation, high-resolution audio support and call-quality features for this model family."
+          ],
+          "cons": [
+            "Fit and ear-tip comfort vary; compare the case size and current generation before purchase."
+          ],
+          "verdict": "Compare the XM5 when its size, feature mix and price positioning suit the buyer.",
+          "source": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wf-1000xm5/specifications",
+          "sourceNote": "Sony's official WF-1000XM5 specifications cover codecs, multipoint, IPX4-equivalent water resistance and battery figures."
+        },
+        {
+          "name": "Apple AirPods Pro 3",
+          "bestFor": "iPhone users seeking Apple's in-ear ANC and ecosystem integration.",
+          "us_identifier": "Apple AirPods Pro 3",
+          "uk_identifier": "Apple AirPods Pro 3",
+          "pros": [
+            "Apple's official comparison lists AirPods Pro 3 with H2 features, adaptive audio and active noise cancellation."
+          ],
+          "cons": [
+            "Some features are ecosystem-dependent; verify compatibility and fit, and do not assume identical support on Android."
+          ],
+          "verdict": "A strong ecosystem candidate for buyers already using compatible Apple devices.",
+          "source": "https://www.apple.com/airpods-pro/specs/",
+          "sourceNote": "Apple's official AirPods Pro 3 specifications cover ANC, Adaptive Audio, IP57 resistance, charging options and battery claims; several features depend on Apple devices and software."
+        },
+        {
+          "name": "Apple AirPods 4 with Active Noise Cancellation",
+          "bestFor": "Buyers who prefer an open-fit AirPods design with ANC features.",
+          "us_identifier": "Apple AirPods 4 with Active Noise Cancellation",
+          "uk_identifier": "Apple AirPods 4 with Active Noise Cancellation",
+          "pros": [
+            "Apple lists an ANC version of AirPods 4 and H2-based features in its model comparison."
+          ],
+          "cons": [
+            "Open-fit designs do not seal like silicone-tip earbuds; noise isolation and comfort differ by ear shape."
+          ],
+          "verdict": "Compare against AirPods Pro if the buyer prefers an open-fit style over sealed ear tips.",
+          "source": "https://support.apple.com/en-gb/121204",
+          "sourceNote": "Apple Support's UK technical specifications identify the AirPods 4 ANC model, H2 chip, IP54 resistance and charging-case details."
+        }
+      ],
+      "buyingChecklist": [
+        "Check ear-tip fit, comfort, isolation and whether an open-fit design suits your ears.",
+        "Compare ANC, transparency, microphone performance and wind handling in your typical environment.",
+        "Confirm codec and feature compatibility across iPhone, Android and companion apps.",
+        "Check case charging, wireless charging support, water-resistance rating and replacement-tip availability."
+      ]
+    },
+    {
+      "slug": "home-air-purifiers-us-uk",
+      "title": "Home Air Purifiers: Room Size, Filters and Smart Features",
+      "category": "Air Quality & Home",
+      "publishedAt": "2026-11-16",
+      "summary": "Compare home air purifiers by intended room size, filter replacement, particle filtration, noise modes and connected controls.",
+      "introduction": "Choose an air purifier by the room's measured floor area and the manufacturer's clean-air delivery guidance, not by model name alone. Check replacement filter cost and availability, operating noise at the speed you will actually use, sensor features and whether the unit's filter claims match your needs.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Levoit Core 300-P Air Purifier",
+          "bestFor": "Buyers looking for a straightforward purifier for a medium-sized room.",
+          "us_identifier": "Levoit Core 300-P Air Purifier",
+          "uk_identifier": "Levoit Core 300 UK air purifier",
+          "pros": [
+            "Levoit lists the Core 300-P in its Core range for medium rooms; replaceable filter system."
+          ],
+          "cons": [
+            "No smart control on this base model; room coverage depends on the specified clean-air rate and usage conditions."
+          ],
+          "verdict": "A simple model to compare when app controls are not essential.",
+          "source": "https://levoit.com/products/core300-p-air-purifier",
+          "sourceNote": "Levoit US identifies Core 300-P and specifies AC 120V/60Hz; the UK store lists a Core 300 model. Treat US Core 300-P and UK Core 300 as regional listings, not a confirmed identical electrical SKU. Verify the UK rating plate and filter SKU.",
+          "availabilityNote": "The US Core 300-P is specified at AC 120V/60Hz. Levoit UK lists a Core 300 model, but do not assume the US P-suffix unit is electrically interchangeable. Buy only the UK-market version with its correct plug/rating and verify replacement filter compatibility. UK source: https://levoit.co.uk/collections/air-purifiers."
+        },
+        {
+          "name": "Levoit Core 300S-P Smart Air Purifier",
+          "bestFor": "Users who want a compact smart purifier with app-connected control.",
+          "us_identifier": "Levoit Core 300S-P Smart Air Purifier",
+          "uk_identifier": "Levoit Core 300S UK smart air purifier",
+          "pros": [
+            "Levoit lists the 300S-P as a smart Core model for medium rooms."
+          ],
+          "cons": [
+            "Smart features add setup and app dependence; filter replacement remains a recurring cost."
+          ],
+          "verdict": "Compare it with the non-smart Core 300-P if remote control and scheduling matter.",
+          "source": "https://levoit.com/products/core-300s-p-smart-air-purifier",
+          "sourceNote": "Levoit US identifies Core 300S-P and specifies AC 120V/60Hz. Levoit UK sells a Core 300S model. Regional package, electrical rating and filter suffix must be checked separately.",
+          "availabilityNote": "The US Core 300S-P specification is AC 120V/60Hz. Levoit UK lists a Core 300S model; choose the UK-market unit and verify rating plate, plug, filter compatibility and warranty. UK source: https://levoit.co.uk/products/levoit-core-300s-smart-air-purifier."
+        },
+        {
+          "name": "Levoit Core 400S-P Smart Air Purifier",
+          "bestFor": "Buyers comparing smart purification for larger rooms.",
+          "us_identifier": "Levoit Core 400S-P Smart Air Purifier",
+          "uk_identifier": "Levoit Core 400S UK smart air purifier",
+          "pros": [
+            "Levoit places the Core 400S-P in its smart Core series for larger rooms."
+          ],
+          "cons": [
+            "Check the stated room-size assumptions and noise at the required fan speed; replacement filters must match the exact model."
+          ],
+          "verdict": "A larger-room candidate for users who want connected controls.",
+          "source": "https://levoit.com/products/core-400s-p-smart-air-purifier",
+          "sourceNote": "Levoit US identifies Core 400S-P; Levoit UK lists a Core 400S model. The US and UK pages describe the same family name, but exact regional electrical rating and filter compatibility must be verified before purchase.",
+          "availabilityNote": "Do not infer electrical compatibility from the shared Core 400S family name. Select the UK-market model and confirm its rating plate, plug, replacement filter and warranty. UK source: https://levoit.co.uk/products/levoit-core-400s-smart-air-purifier."
+        },
+        {
+          "name": "Levoit Vital 200S-P Air Purifier",
+          "bestFor": "Homes prioritising a purifier designed for pet hair and dander management.",
+          "us_identifier": "Levoit Vital 200S-P Air Purifier",
+          "uk_identifier": "Levoit Vital 200S UK air purifier",
+          "pros": [
+            "Levoit describes the Vital 200S-P for home use and pet hair/dander control; smart features are listed."
+          ],
+          "cons": [
+            "Pet-hair pre-filter maintenance and replacement filter availability should be considered; do not treat filtration as a substitute for cleaning."
+          ],
+          "verdict": "Compare for homes with pets, paying attention to filter upkeep and room-size guidance.",
+          "source": "https://levoit.com/products/vital-200s-p-smart-air-purifier",
+          "sourceNote": "Levoit US identifies Vital 200S-P and model LAP-V201S-WUS. The current Levoit UK air-purifier collection did not list an exact Vital 200S counterpart in this review; do not treat the UK Vital 100S or another model as identical.",
+          "availabilityNote": "The US Vital 200S-P uses a power adapter and the cited US page does not establish a UK plug/adapter bundle. No exact UK counterpart was confirmed in the UK store collection reviewed. Do not buy the US package for UK/Jordan mains without confirming adapter input rating and local warranty. UK range: https://levoit.co.uk/collections/air-purifiers."
+        }
+      ],
+      "buyingChecklist": [
+        "Size the purifier using clean-air delivery rate (CADR) and room area, not a vague room-size headline.",
+        "Check filter type, replacement SKU, availability and ongoing filter cost.",
+        "Review noise levels at the fan speed needed for the room and whether sleep mode reduces output.",
+        "Check sensor claims, app/cloud dependencies, ozone-related claims and regional electrical requirements."
+      ]
+    },
+    {
+      "slug": "espresso-coffee-machines-us-uk",
+      "title": "Home Espresso Machines: UK Sage Models Compared (US Breville Equivalents)",
+      "category": "Coffee & Kitchen Appliances",
+      "publishedAt": "2026-11-16",
+      "summary": "A UK-first comparison of Sage espresso machines, using UK SES model identifiers and electrical specifications while identifying the corresponding US Breville BES families.",
+      "introduction": "This guide compares four home espresso machines using the UK Sage versions as the primary reference: Bambino Plus SES500, Barista Express SES870, Barista Pro SES878 and Oracle Jet SES985. The corresponding US listings use Breville BES identifiers. Names, suffixes, plugs, voltage, accessories and warranty can vary by region, so UK buyers should verify the exact SES model and UK package before ordering. These are research-led summaries based on manufacturer documentation, not hands-on test results.",
+      "editorialStatus": "Research draft — UK-first regional naming updated; requires human editorial review before publication.",
+      "products": [
+        {
+          "name": "Sage Bambino Plus (UK SES500) / Breville Bambino Plus (US BES500)",
+          "bestFor": "UK buyers who want a compact machine with automatic milk texturing and are comfortable choosing and using a separate grinder.",
+          "us_identifier": "Breville Bambino Plus Espresso Machine BES500",
+          "uk_identifier": "Sage Bambino Plus UK SES500 / SES500BS 220–240V",
+          "pros": [
+            "Sage UK documentation identifies a 54mm portafilter, 1.9L removable water tank and automatic milk texturing.",
+            "Automatic milk texturing offers three milk-temperature and three milk-foam settings.",
+            "The UK model-family manual specifies 220–240V, 50–60Hz and 1300–1600W."
+          ],
+          "cons": [
+            "No integrated grinder is listed in the machine's documented components, so espresso-capable grinding equipment must be budgeted separately.",
+            "Automatic milk texturing reduces manual steaming work but does not remove the need to learn dosing, tamping, cleaning and milk handling.",
+            "Check the exact SES500 colour/package suffix, included baskets and local warranty before ordering."
+          ],
+          "verdict": "A compact UK-market option for buyers who value assisted milk texturing and are happy to pair the machine with a separate grinder.",
+          "source": "https://www.sageappliances.com/en-gb/product/bes500",
+          "sourceNote": "Primary reference: Sage UK Bambino Plus product page and SES500 UK instruction booklet. The UK family is identified as Sage SES500; the corresponding US family is sold as Breville BES500. UK manual rating: 220–240V, 50–60Hz, 1300–1600W. Verify the full model suffix and package.",
+          "availabilityNote": "UK-first naming is used here. Choose the Sage SES500 UK electrical package with the correct plug and 220–240V rating. Breville BES500 is the US regional identifier and must not be assumed electrically or commercially identical. Confirm colour suffix, accessories, seller and warranty on the retailer/manufacturer listing."
+        },
+        {
+          "name": "Sage Barista Express (UK SES870) / Breville Barista Express (US BES870)",
+          "bestFor": "UK buyers who want an integrated conical-burr grinder and a hands-on espresso workflow.",
+          "us_identifier": "Breville Barista Express Espresso Machine BES870",
+          "uk_identifier": "Sage Barista Express UK SES870 220–240V",
+          "pros": [
+            "Integrated conical-burr grinder with 16 grind settings.",
+            "54mm portafilter and an 18g dose reference in the manufacturer's product guidance.",
+            "Manual steam wand for hands-on milk texturing, with PID temperature control; UK manual rating is 220–240V, 50–60Hz and 1560–1850W."
+          ],
+          "cons": [
+            "Grind adjustment, espresso dial-in and manual milk texturing require practice.",
+            "The integrated grinder is convenient but offers less flexibility than choosing a separate grinder.",
+            "Regular grinder, group-head and steam-wand cleaning should be included in the ownership routine."
+          ],
+          "verdict": "An all-in-one UK-market option for buyers who want an integrated grinder but still prefer control over espresso preparation and milk steaming.",
+          "source": "https://www.sageappliances.com/en-gb/product/bes870",
+          "sourceNote": "Primary reference: Sage UK Barista Express product page and SES870 UK instruction booklet. UK family identifier: Sage SES870; corresponding US family: Breville BES870. Sage documentation describes the 16-setting integrated grinder, 54mm portafilter, 18g dose reference and PID temperature control. UK manual rating: 220–240V, 50–60Hz, 1560–1850W.",
+          "availabilityNote": "Choose the Sage SES870 UK package for UK mains and warranty. Breville BES870 is the US regional identifier; do not assume the plug, electrical package, included accessories or warranty are interchangeable. Check the full model suffix and retailer listing."
+        },
+        {
+          "name": "Sage Barista Pro (UK SES878) / Breville Barista Pro (US BES878)",
+          "bestFor": "UK buyers who want an integrated grinder, digital controls and a rapid-heating workflow while retaining manual milk texturing.",
+          "us_identifier": "Breville Barista Pro Espresso Machine BES878",
+          "uk_identifier": "Sage Barista Pro UK SES878 220–240V",
+          "pros": [
+            "Integrated conical-burr grinder with 30 grind settings.",
+            "ThermoJet heating system; Sage UK states a 3-second heat-up time for this model.",
+            "Digital interface and volumetric shot control, with a manual steam wand; UK manual rating is 220–240V, 50–60Hz and 1380–1650W."
+          ],
+          "cons": [
+            "The integrated grinder still needs adjustment and routine cleaning to suit different beans.",
+            "Milk texturing remains a manual task, unlike the more automated milk workflow on Oracle Jet.",
+            "Confirm the exact colour/model suffix, included accessories and UK warranty."
+          ],
+          "verdict": "A more digitally guided integrated-grinder option for buyers who want a quick-start workflow but still want to texture milk manually.",
+          "source": "https://www.sageappliances.com/en-gb/product/bes878",
+          "sourceNote": "Primary reference: Sage UK Barista Pro product page and SES878 UK instruction booklet. UK family identifier: Sage SES878; corresponding US family: Breville BES878. Sage UK documents 30 grinder settings, ThermoJet and a stated 3-second heat-up. UK manual rating: 220–240V, 50–60Hz, 1380–1650W.",
+          "availabilityNote": "Choose the Sage SES878 UK electrical package for UK mains. Breville BES878 is the US regional identifier and may differ in plug, electrical package, suffix, accessories and warranty. Verify the exact UK variant with the seller."
+        },
+        {
+          "name": "Sage Oracle Jet (UK SES985) / Breville Oracle Jet (US BES985)",
+          "bestFor": "UK buyers who prioritise assisted grinding, dosing, tamping and automated milk texturing over a compact or fully manual setup.",
+          "us_identifier": "Breville Oracle Jet Espresso Machine BES985",
+          "uk_identifier": "Sage Oracle Jet UK SES985 220–240V",
+          "pros": [
+            "Automates grinding, dosing and tamping, reducing several manual preparation steps.",
+            "58mm portafilter with a 22g dose reference and 45 grind settings in Sage's product documentation.",
+            "Auto MilQ provides hands-free milk texturing with settings for dairy, soy, almond and oat milk; touchscreen guidance supports the workflow. UK manual rating is 220–240V, 50–60Hz and 1400–1600W."
+          ],
+          "cons": [
+            "The more automated system is a larger and more complex countertop appliance; check dimensions and clearance.",
+            "Automated milk and cleaning routines still require setup, maintenance and regular care.",
+            "Do not assume it is a dual-boiler machine; use only the architecture and feature claims stated in the exact current regional documentation."
+          ],
+          "verdict": "A highly assisted UK-market workflow candidate for buyers who value automated preparation and milk texturing more than compact size or fully manual control.",
+          "source": "https://www.sageappliances.com/en-gb/product/BES985",
+          "sourceNote": "Primary reference: Sage UK Oracle Jet product page and SES985 UK instruction booklet. UK family identifier: Sage SES985; corresponding US family: Breville BES985. Sage documentation describes automatic grind/dose/tamp, 58mm portafilter, 22g dose reference, 45 grind settings, Auto MilQ and touchscreen guidance. UK manual rating: 220–240V, 50–60Hz, 1400–1600W.",
+          "availabilityNote": "Choose the Sage SES985 UK electrical package for UK mains and confirm the exact suffix, accessories and warranty. Breville BES985 is the US regional identifier; do not assume electrical or package equivalence. Verify that a retailer listing is for a new UK-market unit rather than an Amazon Renewed or other used/refurbished offer."
+        }
+      ],
+      "buyingChecklist": [
+        "UK buyers: prioritise the Sage SES model identifier, UK plug and 220–240V rating; Breville BES names are the corresponding US regional identifiers.",
+        "Decide whether you want a separate grinder, an integrated grinder or automated grinding, dosing and tamping.",
+        "Compare manual versus automatic milk texturing, portafilter size, dose reference, controls and cleaning routines.",
+        "Check counter dimensions, water-tank access, included accessories, model suffix, retailer seller and regional warranty.",
+        "Treat manufacturer heat-up and feature claims as model-specific published specifications, not independent performance testing."
+      ]
+    },
+    {
+      "slug": "tablets-for-work-study-us-uk",
+      "title": "Tablets for Work, Study and Everyday Use: iPad Models Compared",
+      "category": "Tablets & Mobile Computing",
+      "publishedAt": "2026-11-16",
+      "summary": "Compare current iPad families by screen size, processor tier, accessories, portability and intended workload.",
+      "introduction": "A tablet's value depends on the tasks and accessories it must support. Compare display size, storage, keyboard and stylus compatibility, cellular options and the cost of the complete setup. Current chip generations and available configurations vary by country.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Apple iPad Pro 13-inch (M5)",
+          "bestFor": "Creative professionals and users who want a large premium iPad display.",
+          "us_identifier": "Apple iPad Pro 13-inch (M5)",
+          "uk_identifier": "Apple iPad Pro 13-inch (M5)",
+          "pros": [
+            "Apple lists an M5 processor and Ultra Retina XDR display for the current Pro family."
+          ],
+          "cons": [
+            "Large size and accessory costs reduce portability; some professional workflows still require desktop software."
+          ],
+          "verdict": "A premium large-screen option for demanding tablet workflows.",
+          "source": "https://support.apple.com/en-gb/125407",
+          "sourceNote": "Apple's model-specific UK technical specifications identify the 13-inch M5 iPad Pro with Tandem OLED Ultra Retina XDR, ProMotion up to 120Hz, Thunderbolt/USB 4, and storage options from 256GB to 2TB. CPU and memory configuration vary by storage tier; verify Wi-Fi/cellular model and regional eSIM bands."
+        },
+        {
+          "name": "Apple iPad Air 11-inch (M4)",
+          "bestFor": "Students and mobile professionals who want a balance of performance and portability.",
+          "us_identifier": "Apple iPad Air 11-inch (M4)",
+          "uk_identifier": "Apple iPad Air 11-inch (M4)",
+          "pros": [
+            "Apple lists the current Air family with M4 processor and Liquid Retina display."
+          ],
+          "cons": [
+            "Keyboard, stylus and storage upgrades affect total cost; confirm compatibility of older accessories."
+          ],
+          "verdict": "A versatile middle-ground candidate for study, notes and general productivity.",
+          "source": "https://support.apple.com/en-gb/126471",
+          "sourceNote": "Apple's model-specific UK specifications identify the 11-inch M4 iPad Air, 128GB–1TB storage, Liquid Retina display, 12MP landscape Center Stage camera, Wi-Fi 7 and Bluetooth 6. Cellular models use eSIM; verify supported bands and local carrier compatibility."
+        },
+        {
+          "name": "Apple iPad (A16)",
+          "bestFor": "Everyday users who need a general-purpose tablet for browsing, media and study.",
+          "us_identifier": "Apple iPad (A16)",
+          "uk_identifier": "Apple iPad (A16)",
+          "pros": [
+            "Apple's comparison lists the standard iPad with A16 processor and Liquid Retina display."
+          ],
+          "cons": [
+            "Fewer premium display and performance features than Pro; accessory support differs from other iPad lines."
+          ],
+          "verdict": "A mainstream option for everyday tablet tasks.",
+          "source": "https://support.apple.com/en-gb/122240",
+          "sourceNote": "Apple's model-specific UK specifications identify the A16 iPad with 128GB/256GB/512GB storage, 10.86-inch Liquid Retina display, A16 chip, Wi-Fi 6 and Bluetooth 5.3. Cellular models use eSIM; verify supported regional bands and Apple Pencil compatibility."
+        },
+        {
+          "name": "Apple iPad mini (A20 Pro)",
+          "bestFor": "Readers and travellers who prioritise a smaller tablet footprint.",
+          "us_identifier": "Apple iPad mini (A20 Pro)",
+          "uk_identifier": "Apple iPad mini (A20 Pro)",
+          "pros": [
+            "Apple lists the current mini with an 8.5-inch class display and A20 Pro processor."
+          ],
+          "cons": [
+            "Smaller screen can constrain split-screen work and long document editing; check the exact generation and regional launch availability."
+          ],
+          "verdict": "A compact option when portability matters more than screen area.",
+          "source": "https://support.apple.com/en-us/149482",
+          "sourceNote": "Apple's 2026 technical specifications identify the A20 Pro chip, 8.5-inch OLED display, 128GB/256GB/512GB capacities, IP67 rating and 255g Wi-Fi model weight. Storage configuration changes the GPU/Neural Engine core count; check regional cellular bands and included power adapter."
+        }
+      ],
+      "buyingChecklist": [
+        "Choose screen size, storage and Wi-Fi/cellular configuration for your actual workload.",
+        "Check stylus and keyboard compatibility, including whether accessories are sold separately.",
+        "Compare chip generation, memory limits, external display support and port capabilities.",
+        "Confirm regional warranty, cellular band support and charger/accessory package."
+      ]
+    },
+    {
+      "slug": "dash-cams-us-uk",
+      "title": "Dash Cameras: Resolution, Field of View and Parking Features",
+      "category": "Car Technology",
+      "publishedAt": "2026-11-16",
+      "summary": "Compare compact dash cameras by video resolution, lens field of view, glare handling, GPS features and installation needs.",
+      "introduction": "Dash-camera selection should start with front-only versus multi-camera coverage, video resolution, field of view, GPS, parking mode and storage-card requirements. Some features require a hardwire kit or cloud subscription. Check local privacy and recording rules before installation.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Garmin Dash Cam X310",
+          "bestFor": "Drivers comparing a compact 4K-capable dash camera.",
+          "us_identifier": "Garmin Dash Cam X310",
+          "uk_identifier": "Garmin Dash Cam X310",
+          "pros": [
+            "Garmin's UK comparison lists 4K Ultra HD recording; X310 is the 4K tier in the X series."
+          ],
+          "cons": [
+            "High-resolution recording uses more storage; parking features may need additional wiring and setup."
+          ],
+          "verdict": "A premium compact option for buyers prioritising detailed front-camera footage.",
+          "source": "https://www.garmin.com/en-US/p/1391409/",
+          "sourceNote": "Garmin's exact US product page identifies the Dash Cam X310 as a 4K touchscreen camera with a 140-degree field of view and built-in Clarity polarizer. Confirm the local package, microSD card, power cable and parking-mode accessories for the selected marketplace."
+        },
+        {
+          "name": "Garmin Dash Cam X210",
+          "bestFor": "Drivers who want a mid-range X-series camera with high-resolution recording.",
+          "us_identifier": "Garmin Dash Cam X210",
+          "uk_identifier": "Garmin Dash Cam X210",
+          "pros": [
+            "Garmin's UK comparison lists 1440p recording; X210 sits between the 1080p X110/Mini 3 and 4K X310."
+          ],
+          "cons": [
+            "Confirm exact recording resolution and feature set for the selected regional package; accessories may be separate."
+          ],
+          "verdict": "Compare with the X310 if 4K is not essential to the buyer's requirements.",
+          "source": "https://www.garmin.com/en-US/p/1033231/",
+          "sourceNote": "Garmin's exact US product page identifies the Dash Cam X210 as a 1440p camera with a 140-degree field of view and built-in Clarity polarizer. Confirm the local package, microSD card, power cable and parking-mode accessories for the selected marketplace."
+        },
+        {
+          "name": "Garmin Dash Cam X110",
+          "bestFor": "Drivers wanting a compact dash camera from Garmin's X-series range.",
+          "us_identifier": "Garmin Dash Cam X110",
+          "uk_identifier": "Garmin Dash Cam X110",
+          "pros": [
+            "Garmin's UK comparison lists 1080p recording and a 2.4-inch display."
+          ],
+          "cons": [
+            "Check the exact resolution tier, GPS availability and included power cable before purchase."
+          ],
+          "verdict": "A simpler X-series candidate when core recording matters more than flagship specifications.",
+          "source": "https://www.garmin.com/en-US/p/1222949/",
+          "sourceNote": "Garmin's exact US product page identifies the Dash Cam X110 as a 1080p camera with a 140-degree field of view and built-in Clarity polarizer. Confirm the local package, microSD card, power cable and parking-mode accessories for the selected marketplace."
+        },
+        {
+          "name": "Garmin Dash Cam Mini 3",
+          "bestFor": "Drivers who want a discreet, small-form-factor dash camera.",
+          "us_identifier": "Garmin Dash Cam Mini 3",
+          "uk_identifier": "Garmin Dash Cam Mini 3",
+          "pros": [
+            "Garmin's UK comparison lists 1080p recording, a 140-degree field of view and no built-in display."
+          ],
+          "cons": [
+            "Small size means checking screenless setup, app workflow and whether GPS/parking functions meet the intended use."
+          ],
+          "verdict": "A discreet option for buyers who prefer minimal windshield obstruction.",
+          "source": "https://www.garmin.com/en-US/p/1223369/",
+          "sourceNote": "Garmin's exact US product page identifies the Dash Cam Mini 3 as an ultracompact 1080p camera with a 140-degree field of view and built-in Clarity polarizer. Its screenless design differs from the X110; confirm local package, microSD card, power cable and parking-mode accessories."
+        }
+      ],
+      "buyingChecklist": [
+        "Compare front/rear resolution, frame rate, HDR and number-plate readability in day and night footage.",
+        "Check whether a microSD card, polarising filter, hardwire kit or rear camera is included.",
+        "Review parking-mode power requirements and whether a low-voltage cut-off is provided.",
+        "Check local privacy/recording rules, GPS features, app support and regional warranty."
+      ]
+    },
+    {
+      "slug": "portable-projectors-us-uk",
+      "title": "Portable Projectors: Brightness, Battery and Streaming Features",
+      "category": "Home Entertainment",
+      "publishedAt": "2026-11-16",
+      "summary": "Compare portable projectors by native resolution, brightness claims, battery operation, smart TV platform and connectivity.",
+      "introduction": "Projector brightness claims use different measurement standards, so do not compare ANSI lumens and ISO lumens as if identical. Consider ambient light, screen size, throw distance, autofocus, keystone correction, battery runtime and whether streaming apps are licensed on the device.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "XGIMI MoGo 4 Portable Projector",
+          "bestFor": "Travellers and renters who want a battery-powered portable projector.",
+          "us_identifier": "XGIMI MoGo 4 Portable Projector",
+          "uk_identifier": "XGIMI MoGo 4 Portable Projector",
+          "pros": [
+            "Official specifications list 1080p, 450 ISO lumens, Google TV and up to 2.5 hours of video playback in Eco mode."
+          ],
+          "cons": [
+            "Battery runtime is a manufacturer maximum in a defined mode; brightness is limited for bright rooms and PowerBase is separate."
+          ],
+          "verdict": "A portable choice when battery operation and integrated streaming are important.",
+          "source": "https://uk.xgimi.com/products/mogo-4",
+          "sourceNote": "XGIMI UK's official product page identifies model WK08K and lists native 1080p, 450 ISO lumens, Google TV, 71.28Wh battery and up to 2.5 hours video playback in Eco mode. The UK page specifies AC 200–240V, 50/60Hz; PowerBase Stand is sold separately. Confirm the exact bundle and plug before purchase."
+        },
+        {
+          "name": "Epson EF-21G Mini Laser Projector",
+          "bestFor": "Buyers wanting a compact Full HD laser projector with Google TV and a portable form factor.",
+          "us_identifier": "Epson EpiqVision Mini EF21 Laser Projector",
+          "uk_identifier": "Epson EF-21G",
+          "pros": [
+            "Full HD 1080p projection with 1,000 lumens white and colour light output",
+            "Built-in Google TV, Bluetooth speakers and screen sizes up to 150 inches",
+            "Compact 2.3kg design with automatic focus, keystone correction and obstacle avoidance"
+          ],
+          "cons": [
+            "Brightness is below larger mains-powered home-cinema projectors and suits controlled lighting better",
+            "No built-in battery; portable placement still requires mains power",
+            "Check exact colour, UK SKU and retailer warranty; EF-21G and EF-21W have different availability status"
+          ],
+          "verdict": "A compact UK-listed laser projector for buyers who want Google TV and flexible placement. The EF-21G is the currently listed UK variant; do not assume the EF-21W has the same stock status.",
+          "source": "https://www.epson.co.uk/en_GB/products/projector/home-cinema/epson-ef-21g%2C-mini-laser-projector%2C-1%2C000-lumens%2C-up-to-150-inch-display%2C-google-tv%E2%84%A2-and-bluetooth-speaker%2C-portable/p/46374",
+          "sourceNote": "Epson UK's exact EF-21G page identifies UK SKU V11HB35340 and lists Full HD resolution enhancement, 1,000-lumen white and colour output, 3LCD laser projection, Google TV, Bluetooth speakers, up to 150-inch screen size, 2.3kg weight and AC 100–240V, 50/60Hz input. Epson UK currently lists EF-21G as in stock; the EF-21W page is marked discontinued, so do not conflate the two colour/SKU variants.",
+          "availabilityNote": "Epson currently marks this US EF21 listing as discontinued. Do not present it as a currently available recommendation without checking a live regional listing."
+        },
+        {
+          "name": "Epson EF-30 Smart Personal Projector",
+          "bestFor": "Users who want a compact projector with built-in Google TV.",
+          "us_identifier": "Epson EF-30 Smart Personal Projector",
+          "uk_identifier": "Epson EF-30 Smart Personal Projector",
+          "pros": [
+            "Epson lists Full HD 1080p, built-in Google TV and Dolby Audio stereo speakers for EF-30."
+          ],
+          "cons": [
+            "Manufacturer lists 350 lumens; room darkening and screen size are important for perceived brightness."
+          ],
+          "verdict": "A compact smart projector for controlled-light environments.",
+          "source": "https://epson.com/For-Home/Projectors/Streaming-Entertainment/EF-30-Smart-Personal-Projector/p/V11HC43920",
+          "sourceNote": "Epson's official US page identifies model V11HC43920 and lists Full HD 1080p, 350 lumens, built-in Google TV and Dolby Audio. This is a US manufacturer source; an exact UK regional SKU and current UK availability have not yet been verified. Do not assume regional bundle, electrical rating, warranty or app availability are identical."
+        },
+        {
+          "name": "Epson CO-FH02 Full HD Smart Projector",
+          "bestFor": "Users seeking a Full HD home projector with built-in Android TV and high stated brightness.",
+          "us_identifier": "Epson EpiqVision Flex CO-FH02 Smart Portable Projector",
+          "uk_identifier": "Epson EpiqVision Flex CO-FH02 Smart Portable Projector",
+          "pros": [
+            "Full HD 1080p resolution with 3,000-lumen white and colour light output",
+            "3LCD projection technology and built-in Android TV",
+            "UK manufacturer listing shows the model available through Epson UK; confirm retailer stock and warranty at purchase"
+          ],
+          "cons": [
+            "Not battery-powered; requires mains power during use",
+            "Larger and less travel-focused than compact battery projectors",
+            "Check the streaming app support and included accessories for the exact retailer bundle"
+          ],
+          "verdict": "A mains-powered Full HD option for brighter rooms than small battery projectors can typically handle. Epson UK currently lists the CO-FH02; check the retailer's bundle and warranty.",
+          "source": "https://www.epson.co.uk/en_GB/products/projector/home-cinema/co-fh02/p/35475",
+          "sourceNote": "Epson UK's CO-FH02 product page identifies UK SKU V11HA85040 and lists Full HD 1080p, 3,000-lumen brightness, 3LCD technology and Android TV. The UK product page currently shows the model as in stock; live retailer stock can change. It is mains-powered, not a battery projector."
+        }
+      ],
+      "buyingChecklist": [
+        "Compare ANSI/ISO lumens and colour brightness standards; do not compare unlike lumen claims directly.",
+        "Check native resolution, throw ratio, focus/keystone features and required projection distance.",
+        "Confirm whether a battery is built in, expected runtime and whether streaming apps are licensed in your region.",
+        "Check HDMI/USB-C inputs, speaker output, fan noise, plug type and current regional availability."
+      ]
+    },
+    {
+      "slug": "home-nas-storage-us-uk",
+      "title": "Home and Small-Business NAS: Drive Bays, Network Ports and Expansion",
+      "category": "Storage & Backup",
+      "publishedAt": "2026-11-16",
+      "summary": "Compare network-attached storage systems by drive-bay count, network connectivity, expansion, backup workflows and software support.",
+      "introduction": "A NAS is a storage platform, not a backup by itself. Choose bay count based on capacity and redundancy plans, then compare network speed, memory upgradeability, expansion, supported drives, snapshots and off-site backup. Check the manufacturer's current compatibility list before buying disks.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Synology DiskStation DS1525+",
+          "bestFor": "Small offices and advanced home users who want a five-bay NAS with room to expand.",
+          "us_identifier": "Synology DiskStation DS1525+",
+          "uk_identifier": "Synology DiskStation DS1525+",
+          "pros": [
+            "Official catalogue lists five bays, dual 2.5GbE and expansion capacity up to 15 drives."
+          ],
+          "cons": [
+            "Drive costs are additional; verify RAM and drive compatibility and plan a separate backup destination."
+          ],
+          "verdict": "A flexible multi-bay option for growing shared storage and backup workloads.",
+          "source": "https://www.synology.com/en-uk/products/DS1525%2B",
+          "sourceNote": "Synology's exact UK-region DS1525+ product page identifies the five-bay DiskStation with dual 2.5GbE ports, two M.2 NVMe slots and optional 10GbE upgrade support. Check the current Synology drive compatibility list, memory configuration, expansion-unit requirements and local warranty before purchase."
+        },
+        {
+          "name": "Synology DiskStation DS925+",
+          "bestFor": "Homes and small teams needing a four-bay NAS with modern network ports.",
+          "us_identifier": "Synology DiskStation DS925+",
+          "uk_identifier": "Synology DiskStation DS925+",
+          "pros": [
+            "Synology lists four bays, dual 2.5GbE and built-in M.2 NVMe slots for cache/storage pools."
+          ],
+          "cons": [
+            "M.2 and drive compatibility restrictions should be checked; RAID is not a backup."
+          ],
+          "verdict": "A balanced four-bay platform for shared files and backup jobs.",
+          "source": "https://www.synology.com/en-uk/products/DS925%2B",
+          "sourceNote": "Synology's exact UK-region DS925+ product page covers the four-bay DS925+ family, dual 2.5GbE networking and two M.2 NVMe slots; the page also presents a separate DS925neo+ variant. Confirm the exact DS925+ SKU, memory type, supported drives, expansion unit and warranty rather than assuming DS925neo+ is identical."
+        },
+        {
+          "name": "Synology DiskStation DS725+",
+          "bestFor": "Users who want a compact two-bay NAS with expansion options.",
+          "us_identifier": "Synology DiskStation DS725+",
+          "uk_identifier": "Synology DiskStation DS725+",
+          "pros": [
+            "Official product list identifies two bays, 2.5GbE plus 1GbE connectivity and expansion support."
+          ],
+          "cons": [
+            "Two bays limit drive-layout flexibility compared with four- or five-bay systems."
+          ],
+          "verdict": "A compact starting point where capacity and expansion needs are modest.",
+          "source": "https://www.synology.com/en-uk/products/DS725%2B",
+          "sourceNote": "Synology's exact UK-region DS725+ product page identifies the two-bay DiskStation with 2.5GbE networking and two M.2 NVMe slots, with expansion capability. Check supported drives, memory limits, expansion-unit requirements and local warranty before purchase."
+        },
+        {
+          "name": "Synology DiskStation DS224+",
+          "bestFor": "Home users wanting a simple two-bay NAS for file storage and personal backups.",
+          "us_identifier": "Synology DiskStation DS224+",
+          "uk_identifier": "Synology DiskStation DS224+",
+          "pros": [
+            "Synology lists two bays, dual 1GbE and Btrfs support for this model."
+          ],
+          "cons": [
+            "Gigabit networking is slower than newer 2.5GbE models; it has limited expansion compared with larger units."
+          ],
+          "verdict": "A practical entry-level two-bay option for home file sharing and backup.",
+          "source": "https://www.synology.com/en-us/products/DS224%2B?tab=specs",
+          "sourceNote": "Synology's official DS224+ specifications identify a 2-bay NAS with Intel Celeron J4125, 2GB DDR4 (expandable to 6GB), two 1GbE LAN ports, Btrfs support and a 100–240V AC, 50/60Hz power input. This is an older platform; verify lifecycle, DSM support and drive compatibility before purchase.",
+          "availabilityNote": "The DS224+ power supply is specified for 100–240V AC and 50/60Hz, but regional package, warranty and supported-drive policy may differ. Check the exact UK listing and current compatibility list before purchase."
+        }
+      ],
+      "buyingChecklist": [
+        "Choose bay count based on usable capacity, redundancy plan and expected expansion—not raw disk capacity alone.",
+        "Check CPU/RAM, network ports, upgrade options and whether link aggregation or 10GbE is supported.",
+        "Review the manufacturer's drive compatibility list and any restrictions on third-party drives.",
+        "Budget for NAS-rated disks, off-site backup, power protection and software/security update support."
+      ]
+    },
+    {
+      "slug": "electric-toothbrushes-us-uk",
+      "title": "Electric Toothbrushes: Pressure Sensors, Modes and App Guidance",
+      "category": "Personal Care",
+      "publishedAt": "2026-11-16",
+      "summary": "Compare electric toothbrush families by pressure feedback, brushing modes, app features, display and replacement-head ecosystem.",
+      "introduction": "Choose an electric toothbrush by comfort, pressure feedback, brush-head cost and replacement availability. App coaching and displays are optional conveniences, not substitutes for good technique. Check compatible brush-head models and the charging/travel accessories included in each regional bundle.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Oral-B iO Series 10 Electric Toothbrush",
+          "bestFor": "Users who want the most feature-rich iO handle and guided brushing feedback.",
+          "us_identifier": "Oral-B iO Series 10 Electric Toothbrush",
+          "uk_identifier": "Oral-B iO Series 10 Electric Toothbrush",
+          "pros": [
+            "Oral-B UK lists seven brushing modes, 3D Teeth Tracking and real-time coaching via the iO Sense smart charger."
+          ],
+          "cons": [
+            "Premium charging accessories and replacement brush heads add ongoing cost; bundle contents vary."
+          ],
+          "verdict": "A premium guided-brushing option for users who will use its feedback features.",
+          "source": "https://www.oralb.co.uk/en-gb/products/electric-toothbrushes/oral-b-io10-lunar-gold-special-edition-electric-toothbrush",
+          "sourceNote": "Oral-B UK's exact iO10 product page identifies the iO Sense smart charger with live time and pressure feedback and a charging travel case for the listed Lunar Gold package. Colours, replacement-head bundles, charger and travel-case contents vary by retailer SKU; confirm the exact bundle and UK plug."
+        },
+        {
+          "name": "Oral-B iO Series 9 Electric Toothbrush",
+          "bestFor": "Users seeking advanced iO feedback without choosing the top bundle.",
+          "us_identifier": "Oral-B iO Series 9 Electric Toothbrush",
+          "uk_identifier": "Oral-B iO Series 9 Electric Toothbrush",
+          "pros": [
+            "Oral-B UK lists seven brushing modes, an interactive colour display, 3D Teeth Tracking and a charging travel case."
+          ],
+          "cons": [
+            "Check the exact charging case and accessory bundle; replacement-head compatibility is specific to iO."
+          ],
+          "verdict": "Compare with iO10 by included accessories rather than assuming the handle alone differs.",
+          "source": "https://www.oralb.co.uk/en-gb/products/electric-toothbrushes/oral-b-io9-black-electric-toothbrush-with-black-travel-charger-case",
+          "sourceNote": "Oral-B UK's exact iO9 product page identifies the Black Onyx handle and travel-charger case package. The iO9 feature set and included heads/case may vary by retailer bundle; verify the exact SKU, charger, plug and replacement-head count before purchase."
+        },
+        {
+          "name": "Oral-B iO Series 6 Electric Toothbrush",
+          "bestFor": "Users who want an interactive display and app-connected guidance.",
+          "us_identifier": "Oral-B iO Series 6 Electric Toothbrush",
+          "uk_identifier": "Oral-B iO Series 6 Electric Toothbrush",
+          "pros": [
+            "Oral-B UK lists five modes, an interactive display, Smart Pressure Sensor and six-zone brushing recognition."
+          ],
+          "cons": [
+            "Fewer advanced modes than top iO tiers; app features require a compatible phone and regular use."
+          ],
+          "verdict": "A middle-tier option when guided feedback is useful but flagship accessories are unnecessary.",
+          "source": "https://www.oralb.co.uk/en-gb/products/electric-toothbrushes/oral-b-io-series-6-electric-toothbrush",
+          "sourceNote": "Oral-B UK's exact iO6 product page identifies the Series 6 handle and its model-specific product details. Retailer bundles may differ in colour, travel case and included brush heads; verify the exact SKU, charger, plug and replacement-head count."
+        },
+        {
+          "name": "Oral-B iO Series 3 Electric Toothbrush",
+          "bestFor": "Users who want core iO brushing and visible pressure feedback.",
+          "us_identifier": "Oral-B iO Series 3 Electric Toothbrush",
+          "uk_identifier": "Oral-B iO Series 3 Electric Toothbrush",
+          "pros": [
+            "Oral-B UK lists three modes, a pressure sensor and LightRing feedback."
+          ],
+          "cons": [
+            "No interactive display or app coaching at this tier; confirm included heads and charging accessories."
+          ],
+          "verdict": "A simpler iO entry point when pressure guidance matters more than connected features.",
+          "source": "https://www.oralb.co.uk/en-gb/products/electric-toothbrushes/oral-b-io-series-3-electric-toothbrush",
+          "sourceNote": "Oral-B UK's exact iO3 product page identifies the Series 3 rechargeable toothbrush. Colour and travel-case bundles vary by retailer SKU; confirm the exact handle, charger, plug and included brush heads before purchase."
+        }
+      ],
+      "buyingChecklist": [
+        "Compare pressure feedback, timer, cleaning modes and whether app guidance is useful to you.",
+        "Check the exact handle generation and compatible replacement brush-head family.",
+        "Compare charger type, travel case, battery claims and replacement-head availability/cost.",
+        "Do not treat app scores as a dental diagnosis; follow professional dental advice for oral-health concerns."
+      ]
+    },
+    {
+      "slug": "gaming-mice-us-uk",
+      "title": "Wireless Gaming Mice: Shape, Weight, Sensor and Connection",
+      "category": "Gaming Peripherals",
+      "publishedAt": "2026-11-16",
+      "summary": "Compare wireless gaming mice by shape, weight class, sensor platform, switch design, battery and button layout.",
+      "introduction": "Gaming mice are strongly dependent on hand size and grip style. Compare dimensions and shape first, then weight, sensor features, polling rate, battery, connectivity and software. A lighter mouse is not automatically better for every user, and model suffixes may identify different regional or special-edition versions.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Logitech PRO X2 SUPERSTRIKE LIGHTSPEED Wireless Gaming Mouse",
+          "bestFor": "Competitive players comparing Logitech's newer PRO wireless mouse family.",
+          "us_identifier": "Logitech PRO X2 SUPERSTRIKE LIGHTSPEED Wireless Gaming Mouse",
+          "uk_identifier": "Logitech PRO X2 SUPERSTRIKE LIGHTSPEED Wireless Gaming Mouse",
+          "pros": [
+            "Listed in Logitech G's current mouse catalogue; PRO family targets low-distraction competitive play."
+          ],
+          "cons": [
+            "Symmetrical lightweight shapes do not suit every hand; verify dimensions, switches and software compatibility."
+          ],
+          "verdict": "A premium competitive model to compare by shape and control preference.",
+          "source": "https://www.logitechg.com/en-us/shop/p/pro-x2-superstrike-mouse.910-007700",
+          "sourceNote": "Logitech G's official product page identifies PRO X2 SUPERSTRIKE and its Haptic Inductive Trigger System; verify the precise regional package and software support."
+        },
+        {
+          "name": "Logitech PRO X SUPERLIGHT 2 LIGHTSPEED Wireless Gaming Mouse",
+          "bestFor": "Players wanting a lightweight symmetrical wireless mouse.",
+          "us_identifier": "Logitech PRO X SUPERLIGHT 2 LIGHTSPEED Wireless Gaming Mouse",
+          "uk_identifier": "Logitech PRO X SUPERLIGHT 2 LIGHTSPEED Wireless Gaming Mouse",
+          "pros": [
+            "Logitech lists the PRO X SUPERLIGHT 2 in its current wireless mouse range."
+          ],
+          "cons": [
+            "Minimal button count and compact shape may not suit productivity or users who want many controls."
+          ],
+          "verdict": "A streamlined option for users who prioritise a simple competitive layout.",
+          "source": "https://www.logitechg.com/en-us/shop/p/pro-x2-superlight-wireless-mouse.910-006628",
+          "sourceNote": "Logitech G's official product page documents the PRO X SUPERLIGHT 2, HERO 2 sensor and LIGHTSPEED wireless; check the exact edition and colour."
+        },
+        {
+          "name": "Logitech G502 X PLUS LIGHTSPEED Wireless Gaming Mouse",
+          "bestFor": "Users who prefer a larger ergonomic shape and multiple programmable controls.",
+          "us_identifier": "Logitech G502 X PLUS LIGHTSPEED Wireless Gaming Mouse",
+          "uk_identifier": "Logitech G502 X PLUS LIGHTSPEED Wireless Gaming Mouse",
+          "pros": [
+            "Logitech lists G502 X PLUS as a wireless gaming mouse in its current range."
+          ],
+          "cons": [
+            "More buttons and a larger body can add weight and complexity; confirm hand fit."
+          ],
+          "verdict": "A versatile choice for users who value programmable controls over minimum weight.",
+          "source": "https://www.logitechg.com/en-us/shop/p/g502-x-plus-wireless-lightforce.910-006169",
+          "sourceNote": "Logitech G's official product page documents the G502 X PLUS, LIGHTFORCE switches, LIGHTSPEED wireless and LIGHTSYNC RGB; check the exact colour and regional SKU."
+        },
+        {
+          "name": "Logitech G309 LIGHTSPEED Wireless Gaming Mouse",
+          "bestFor": "Buyers seeking a wireless mouse with a more accessible feature set.",
+          "us_identifier": "Logitech G309 LIGHTSPEED Wireless Gaming Mouse",
+          "uk_identifier": "Logitech G309 LIGHTSPEED Wireless Gaming Mouse Black UK SKU 910-007200",
+          "pros": [
+            "Logitech lists G309 LIGHTSPEED with LIGHTFORCE switches in its current catalogue."
+          ],
+          "cons": [
+            "Check battery type, weight with the chosen power source and grip comfort before buying."
+          ],
+          "verdict": "Compare it as a flexible wireless option for gaming and everyday use.",
+          "source": "https://www.logitechg.com/en-gb/shop/p/g309-lightspeed-gaming-mouse.910-007200",
+          "sourceNote": "Logitech G's UK product page identifies the black G309 LIGHTSPEED as SKU 910-007200 and documents dual LIGHTSPEED/Bluetooth connectivity, LIGHTFORCE hybrid switches, HERO 25K sensor, six programmable buttons, up to 300+ hours on one AA battery, 86g with AA or 68g with POWERPLAY. Verify colour and SKU on the retailer listing; the 68g figure requires the separate POWERPLAY charging system."
+        }
+      ],
+      "buyingChecklist": [
+        "Choose shape and size based on hand dimensions and grip style before prioritising weight.",
+        "Compare sensor performance, polling rate, click technology and wired/2.4GHz/Bluetooth modes.",
+        "Check battery life, receiver storage, software compatibility and onboard profile support.",
+        "Confirm the exact model generation, included receiver/cable and warranty."
+      ]
+    },
+    {
+      "slug": "smartwatches-us-uk",
+      "title": "Smartwatches for Everyday Use and Sport: Apple and Garmin Compared",
+      "category": "Wearables & Fitness Tech",
+      "publishedAt": "2026-11-16",
+      "summary": "Compare smartwatch families by phone compatibility, display, battery expectations, sport features and case design.",
+      "introduction": "Start with phone compatibility and the activities you actually track. Compare case size, battery life under your own usage pattern, GPS needs, cellular availability, app ecosystem and regional feature support. Health and fitness metrics are consumer features, not medical diagnoses.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Apple Watch Series 12",
+          "bestFor": "iPhone users seeking a mainstream smartwatch for daily notifications and activity tracking.",
+          "us_identifier": "Apple Watch Series 12",
+          "uk_identifier": "Apple Watch Series 12",
+          "pros": [
+            "42mm or 46mm case options; Apple lists aluminium, titanium and ceramic finishes",
+            "Always-On Retina wide-angle OLED display with LTPO3 and up to 2,000 nits peak brightness",
+            "Apple lists the S11 chip and up to 24 hours of normal-use battery life"
+          ],
+          "cons": [
+            "Requires iPhone for full experience; battery life varies with cellular, workouts and settings."
+          ],
+          "verdict": "A general-purpose option for buyers already using an iPhone.",
+          "source": "https://support.apple.com/en-mide/148589",
+          "sourceNote": "Apple's model-specific technical specifications identify 42mm and 46mm case options, S11 chip, 2,000-nit display and up to 24 hours of normal-use battery life (up to 38 hours in Low Power Mode). GPS/cellular, case material and regional feature availability vary by configuration and country."
+        },
+        {
+          "name": "Apple Watch SE 3",
+          "bestFor": "iPhone users who want core smartwatch features in a simpler model family.",
+          "us_identifier": "Apple Watch SE 3",
+          "uk_identifier": "Apple Watch SE 3",
+          "pros": [
+            "Apple lists SE 3 with 40 mm and 44 mm case options and an always-on display."
+          ],
+          "cons": [
+            "Fewer premium display and sensor features than higher-tier models; compare exact GPS/cellular configuration."
+          ],
+          "verdict": "A simpler Apple Watch option for everyday use.",
+          "source": "https://www.apple.com/jo/watch/compare/",
+          "sourceNote": "Apple's official comparison lists SE 3 as a current model with 40mm or 44mm aluminium case options and an Always-On Retina display. Check GPS versus GPS + Cellular configuration and regional feature availability."
+        },
+        {
+          "name": "Apple Watch Ultra 4",
+          "bestFor": "Outdoor and endurance users who want a larger rugged-oriented Apple Watch.",
+          "us_identifier": "Apple Watch Ultra 4",
+          "uk_identifier": "Apple Watch Ultra 4",
+          "pros": [
+            "49mm Grade 5 titanium case in Natural or Black finishes",
+            "Always-On Retina wide-angle OLED display with up to 3,000 nits peak brightness",
+            "Apple estimates up to 50 hours of normal use and up to 84 hours in Low Power Mode"
+          ],
+          "cons": [
+            "Larger case is not comfortable for every wrist; cellular and battery performance vary with use and region."
+          ],
+          "verdict": "A rugged premium candidate for users who need its larger case and outdoor feature set.",
+          "source": "https://www.apple.com/jo/apple-watch-ultra-4/specs/",
+          "sourceNote": "Apple Jordan's model-specific specifications identify the 49mm titanium case, S11 chip, 3,000-nit display and battery estimates of up to 50 hours normal use or 84 hours in Low Power Mode. Actual battery life varies by use and configuration; satellite/cellular features vary by country and model."
+        },
+        {
+          "name": "Garmin Forerunner 265",
+          "bestFor": "Runners and triathletes who prioritise training metrics and GPS workouts.",
+          "us_identifier": "Garmin Forerunner 265",
+          "uk_identifier": "Garmin Forerunner 265",
+          "pros": [
+            "Garmin lists Forerunner 265 with an AMOLED display and advanced training/recovery features."
+          ],
+          "cons": [
+            "Training metrics have a learning curve; check phone notifications, music and payment support by region."
+          ],
+          "verdict": "A sport-focused alternative for users who prioritise training data over a general app ecosystem.",
+          "source": "https://www.garmin.com/en-GB/compare/?compareProduct=886785",
+          "sourceNote": "Garmin's official UK comparison lists Forerunner 265 specifications including AMOLED display, multi-band GPS, 5 ATM rating and battery figures. The 970 is a newer higher-tier family option; compare features before choosing."
+        }
+      ],
+      "buyingChecklist": [
+        "Check phone compatibility first; some watch features are restricted to a particular mobile ecosystem.",
+        "Compare GPS accuracy, battery life in smartwatch and activity modes, display size and comfort.",
+        "Check whether cellular connectivity requires a supported carrier plan in your country.",
+        "Treat health sensors as wellness features unless the manufacturer and local regulator specify otherwise."
+      ]
+    },
+    {
+      "slug": "home-printers-us-uk",
+      "title": "Home and Small-Office Printers: UK Buying Guide to Colour and Mono Laser Models",
+      "category": "Printers & Office Equipment",
+      "publishedAt": "2026-11-16",
+      "summary": "Compare UK-focused Brother laser and LED printers for home offices and small businesses, including colour or mono output, duplex printing, scanning, networking and toner costs.",
+      "introduction": "Printer purchase price is only one part of total cost. Compare toner/ink yield, drum and waste components, duplex printing and scanning, ADF capacity, wired/wireless networking, paper sizes and regional consumables. Check the exact voltage and suffix for US versus UK variants.",
+      "editorialStatus": "Research draft — requires human review before publication.",
+      "products": [
+        {
+          "name": "Brother MFC-L8390CDW Colour LED All-in-One Printer",
+          "bestFor": "Small offices needing colour printing, copying, scanning and fax in one device.",
+          "us_identifier": "Brother MFC-L8395CDW Colour Laser All-in-One Printer",
+          "uk_identifier": "Brother MFC-L8390CDW",
+          "pros": [
+            "Prints up to 30 pages per minute in mono and colour on the UK specification",
+            "Supports duplex printing and duplex scanning, with a 50-sheet 2-sided ADF",
+            "Gigabit Ethernet, 5GHz Wi-Fi and USB connectivity"
+          ],
+          "cons": [
+            "Large office-oriented multifunction device; check desk space and paper handling needs",
+            "Colour toner, drum, belt and waste-toner components contribute to ongoing running costs",
+            "Check the exact toner bundle and page yields included by the retailer"
+          ],
+          "verdict": "A UK-focused colour multifunction option for small offices that need duplex scanning, networking and fax. Check the exact bundle and consumable costs before buying.",
+          "source": "https://store.brother.co.uk/devices/laser/mfc/mfcl8390cdw",
+          "sourceNote": "Brother UK's MFC-L8390CDW page lists up to 30ppm mono/colour, duplex print, duplex scan up to 56 images per minute, a 50-sheet 2-sided ADF, Gigabit Ethernet and 5GHz Wi-Fi. UK electrical rating: 220–240V AC, 50/60Hz. Confirm the retailer's toner bundle and exact warranty.",
+          "availabilityNote": "The cited MFC-L8395CDW page is the US electrical variant (110–120V AC). Brother UK lists the distinct MFC-L8390CDW with 220–240V AC input; it is a regional counterpart, not the identical model number. Verify features, consumables and warranty against the UK listing before purchase. UK source: https://store.brother.co.uk/devices/laser/mfc/mfcl8390cdw."
+        },
+        {
+          "name": "Brother MFC-L3740CDW Colour LED All-in-One Printer",
+          "bestFor": "Small workgroups needing colour multifunction capability and network sharing.",
+          "us_identifier": "Brother MFC-L3780CDW Colour Laser All-in-One Printer",
+          "uk_identifier": "Brother MFC-L3740CDW",
+          "pros": [
+            "Colour print, copy, scan and fax in one A4 LED multifunction device",
+            "Up to 18ppm mono and colour print speed, with automatic duplex printing",
+            "8.8cm colour touchscreen, 50-sheet ADF, Gigabit Ethernet and 5GHz Wi-Fi"
+          ],
+          "cons": [
+            "Print speed is lower than the MFC-L8390CDW business tier",
+            "Duplex scan speed and paper handling should be matched to the expected workload",
+            "Check the included toner yields and ongoing TN248 replacement costs"
+          ],
+          "verdict": "A more compact UK colour multifunction choice for home offices and small workgroups that need copy, scan and fax without the higher speed tier.",
+          "source": "https://store.brother.co.uk/devices/laser/mfc/mfcl3740cdw",
+          "sourceNote": "Brother UK's MFC-L3740CDW specifications list 18ppm mono/colour, automatic duplex printing, up to 7 sides per minute duplex print, 50-sheet ADF, 8.8cm touchscreen, Gigabit Ethernet and 5GHz Wi-Fi. UK electrical rating: 220–240V AC, 50/60Hz. Verify toner bundle and retailer warranty.",
+          "availabilityNote": "The cited MFC-L3780CDW page is the US electrical variant (110–120V AC). This audit has not yet confirmed an exact UK counterpart for this model. Do not buy the US unit for UK/Jordan mains; select only a Brother UK model explicitly rated 220–240V and verify whether its duplex scanning, ADF and networking match. Current UK range: https://www.brother.co.uk/printers/laser-printers/colour-laser-all-in-one."
+        },
+        {
+          "name": "Brother HL-L3240CDW Colour LED Printer",
+          "bestFor": "Home offices wanting colour laser printing without a scanner.",
+          "us_identifier": "Brother HL-L3280CDW Colour Laser Printer",
+          "uk_identifier": "Brother HL-L3240CDW",
+          "pros": [
+            "Print-only colour LED device with automatic duplex printing",
+            "Up to 26ppm mono and colour print speed",
+            "Gigabit Ethernet, 5GHz Wi-Fi and USB connectivity"
+          ],
+          "cons": [
+            "Print-only model has no scanner or copier",
+            "One-line LCD is simpler than the touchscreen on multifunction models",
+            "Check the included TN248 toner yields and replacement costs"
+          ],
+          "verdict": "A straightforward UK colour printer for users who do not need scanning or copying and want wired and wireless network options.",
+          "source": "https://store.brother.co.uk/devices/laser/hl/hll3240cdw",
+          "sourceNote": "Brother UK's HL-L3240CDW page lists up to 26ppm mono/colour, automatic duplex printing up to 10 sides per minute, Gigabit Ethernet, 5GHz Wi-Fi and USB. UK electrical rating: 220–240V AC, 50/60Hz. Confirm the included toner and exact retailer warranty.",
+          "availabilityNote": "The cited HL-L3280CDW page is the US electrical variant (110–120V AC). Brother UK lists the distinct HL-L3240CDW with 220–240V AC input. Treat these as regional models, not identical SKUs, and compare print speed, connectivity, consumables and warranty before purchase. UK source: https://store.brother.co.uk/devices/laser/hl/hll3240cdw."
+        },
+        {
+          "name": "Brother DCP-L2660DW Monochrome Laser Multifunction Printer",
+          "bestFor": "Users who mostly print black-and-white documents and need scan/copy functions.",
+          "us_identifier": "Brother DCP-L2640DW Monochrome Laser Multifunction Printer",
+          "uk_identifier": "Brother DCP-L2660DW",
+          "pros": [
+            "Mono laser multifunction device with print, copy and scan",
+            "Up to 34ppm mono printing and automatic duplex print",
+            "50-sheet ADF, 6.8cm colour touchscreen, Ethernet and 5GHz Wi-Fi"
+          ],
+          "cons": [
+            "Monochrome-only output does not support colour documents",
+            "No fax function on the DCP-L2660DW",
+            "Check TN2510/TN2510XL toner and drum replacement costs"
+          ],
+          "verdict": "A practical UK document-focused printer for home offices and small businesses that need fast black-and-white printing with scanning and copying.",
+          "source": "https://store.brother.co.uk/devices/laser/dcp/dcpl2660dw",
+          "sourceNote": "Brother UK's DCP-L2660DW page lists up to 34ppm mono print, automatic duplex printing, print/copy/scan, a 50-sheet ADF, 6.8cm colour touchscreen, Ethernet and 5GHz Wi-Fi. UK electrical rating: 220–240V AC, 50/60Hz. Check toner yield and the separate drum replacement cost.",
+          "availabilityNote": "The cited DCP-L2640DW page is the US electrical variant (110–120V AC). Brother UK lists the distinct DCP-L2660DW with 220–240V AC input. Treat these as regional models, not identical SKUs; compare print/scan speed, connectivity, toner family and warranty. UK source: https://store.brother.co.uk/devices/laser/dcp/dcpl2660dw."
+        }
+      ],
+      "buyingChecklist": [
+        "Estimate monthly print volume and compare toner/ink yield and replacement consumable costs.",
+        "Choose laser or inkjet based on colour needs, print frequency and document/photo use.",
+        "Check automatic duplex, ADF duplex scanning, paper sizes, tray capacity and network protocols.",
+        "Verify the regional model suffix, mains voltage, toner cartridge family, warranty and driver support."
+      ]
+    }
+  ]
+}

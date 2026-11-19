@@ -1,0 +1,18 @@
+---
+interface Column { key: string; label: string; }
+interface Props { columns: Column[]; rows: Record<string, string | number>[]; }
+const { columns, rows } = Astro.props;
+---
+<div style="overflow-x:auto">
+  <table>
+    <thead><tr>{columns.map((column) => <th scope="col">{column.label}</th>)}</tr></thead>
+    <tbody>
+      {rows.map((row) => <tr>{columns.map((column) => <td>{row[column.key] ?? 'Not provided'}</td>)}</tr>)}
+    </tbody>
+  </table>
+</div>
+<style>
+  table { width:100%; border-collapse:collapse; background:#fff; }
+  th, td { padding:.75rem; border:1px solid #e5e7eb; text-align:left; }
+  th { background:#f1f5f9; }
+</style>

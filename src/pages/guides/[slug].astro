@@ -1,0 +1,178 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import data from '../../data/products.json';
+import { buildAffiliateUrl } from '../../config/affiliate';
+
+type ProductWithOptionalImage = (typeof data.guides)[number]['products'][number] & {
+  image?: {
+    url?: string;
+    alt?: string;
+    sourcePage?: string;
+    sourceLabel?: string;
+    license?: string;
+    attribution?: string;
+    reviewStatus?: 'pending' | 'approved';
+  };
+};
+
+export function getStaticPaths() {
+  return (data.guides ?? []).map((guide) => ({ params: { slug: guide.slug }, props: { guide } }));
+}
+
+const { guide } = Astro.props;
+const canonicalUrl = new URL(`/guides/${guide.slug}/`, Astro.site).toString();
+const socialImage = `/images/pinterest/${guide.slug}.png`;
+const coverImage = `/images/webp/${guide.slug}.webp`;
+const products = (guide.products ?? []) as ProductWithOptionalImage[];
+const checklist = guide.buyingChecklist ?? [
+  'Confirm the exact model and specification against the manufacturer documentation.',
+  'Check compatibility with your devices, region and intended use.',
+  'Compare total ownership costs, accessories and warranty conditions.',
+  'Verify the live retailer listing, seller, delivery terms and return policy before ordering.'
+];
+const itemList = {
+  '@type': 'ItemList',
+  name: `${guide.title} — product comparison`,
+  numberOfItems: products.length,
+  itemListOrder: 'https://schema.org/ItemListOrderAscending',
+  itemListElement: products.map((product, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    item: {
+      '@type': 'Product',
+      name: product.name,
+      description: product.verdict ?? product.bestFor ?? undefined
+    }
+  }))
+};
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      headline: guide.title,
+      description: guide.summary,
+      datePublished: guide.publishedAt,
+      dateModified: guide.publishedAt,
+      author: { '@type': 'Organization', name: 'SmartPickHub' },
+      publisher: { '@type': 'Organization', name: 'SmartPickHub' },
+      mainEntityOfPage: canonicalUrl,
+      mainEntity: itemList
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).toString() },
+        { '@type': 'ListItem', position: 2, name: 'Buying Guides', item: new URL('/guides/', Astro.site).toString() },
+        { '@type': 'ListItem', position: 3, name: guide.title, item: canonicalUrl }
+      ]
+    },
+    itemList
+  ]
+};
+const jsonLd = JSON.stringify(structuredData).replace(/</g, '\\u003c');
+---
+<Layout title={guide.title} description={guide.summary} canonical={canonicalUrl} socialImage={socialImage}>
+  <article class="buying-guide">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Buying Guides</a><span aria-hidden="true">/</span><span aria-current="page">{guide.category}</span>
+    </nav>
+    <header class="guide-header">
+      <span class="pill">{guide.category}</span>
+      <h1>{guide.title}</h1>
+      <p class="guide-summary">{guide.summary}</p>
+      <p class="guide-meta">Research-led guide · Updated {guide.publishedAt} · US and UK marketplace links</p>
+      {guide.editorialStatus && <p class="disclosure">{guide.editorialStatus}</p>}
+      {guide.introduction && <p class="guide-introduction">{guide.introduction}</p>}
+      <figure class="guide-cover">
+        <img src={coverImage} alt={'Original SmartPickHub editorial cover for ' + guide.title} width="720" height="1080" fetchpriority="high" decoding="async" />
+        <figcaption>Original editorial cover generated from this guide’s title and summary. It is an illustration, not a product photograph.</figcaption>
+      </figure>
+    </header>
+
+    <nav class="guide-contents" aria-label="On this page">
+      <strong>On this page</strong>
+      <a href="#quick-comparison">Quick comparison</a>
+      <a href="#buying-checklist">What to check</a>
+      <a href="#product-reviews">Product details</a>
+    </nav>
+
+    <section class="comparison-overview" id="quick-comparison" aria-labelledby="comparison-overview-title">
+      <h2 id="comparison-overview-title">Quick comparison</h2>
+      <p class="muted">Use this table to shortlist products. It is not a hands-on test ranking.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Product</th><th scope="col">Best for</th><th scope="col">Key decision point</th></tr></thead>
+          <tbody>
+            {products.map((product) => (
+              <tr>
+                <th scope="row"><a href={`#product-${product.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}>{product.name}</a></th>
+                <td>{product.bestFor}</td>
+                <td>{product.pros?.[0] ?? product.verdict}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="buyer-checklist" id="buying-checklist" aria-labelledby="buyer-checklist-title">
+      <h2 id="buyer-checklist-title">What to check before you buy</h2>
+      <ul>{checklist.map((item) => <li>{item}</li>)}</ul>
+    </section>
+
+    <section id="product-reviews" aria-labelledby="product-reviews-title">
+      <h2 id="product-reviews-title">Product details</h2>
+      <p class="muted">The advantages and limitations below are based on manufacturer documentation and editorial analysis. They are not claims of physical product testing.</p>
+      {products.map((product, index) => (
+        <section class="card product-detail" id={`product-${product.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}>
+          <div class="product-detail-heading">
+            <span class="product-index">{String(index + 1).padStart(2, '0')}</span>
+            <h3>{product.name}</h3>
+          </div>
+          {product.image?.reviewStatus === 'approved' && product.image?.url ? (
+            <figure class="product-image">
+              <img src={product.image.url} alt={product.image.alt || product.name} width="640" height="480" loading="lazy" decoding="async" />
+              <figcaption>
+                Product image source: <a href={product.image.sourcePage} target="_blank" rel="noopener noreferrer">{product.image.sourceLabel || 'image source'}</a>
+                {product.image.license && <> · {product.image.license}</>}
+                {product.image.attribution && <> · {product.image.attribution}</>}
+              </figcaption>
+            </figure>
+          ) : (
+            <div class="product-image-pending" role="note" aria-label="Product photograph not yet verified">
+              <span class="product-image-pending-icon" aria-hidden="true">▧</span>
+              <span><strong>Product photo under verification</strong><small>We will show an image only after confirming its source and usage rights.</small></span>
+            </div>
+          )}
+          {product.bestFor && <p><strong>Best for:</strong> {product.bestFor}</p>}
+          {product.us_identifier || product.uk_identifier ? (
+            <div class="early-product-actions">
+              <p class="affiliate-link-label">Affiliate links (paid links):</p>
+              <div class="product-actions">
+                {product.us_identifier && <a class="button" href={buildAffiliateUrl('us', product.us_identifier)} rel="sponsored nofollow noopener" target="_blank" aria-label={`Search Amazon US for ${product.name}`}>Search Amazon US</a>}
+                {product.uk_identifier && <a class="button secondary" href={buildAffiliateUrl('uk', product.uk_identifier)} rel="sponsored nofollow noopener" target="_blank" aria-label={`Search Amazon UK for ${product.name}`}>Search Amazon UK</a>}
+              </div>
+            </div>
+          ) : null}
+          {product.verdict && <p class="product-verdict">{product.verdict}</p>}
+          <div class="pros-cons">
+            {product.pros?.length > 0 && <div><h4>Potential advantages</h4><ul>{product.pros.map((item) => <li>{item}</li>)}</ul></div>}
+            {product.cons?.length > 0 && <div><h4>Points to consider</h4><ul>{product.cons.map((item) => <li>{item}</li>)}</ul></div>}
+          </div>
+          {product.availabilityNote && <p class="availability-note"><strong>Availability check:</strong> {product.availabilityNote}</p>}
+          {product.source && <p class="manufacturer-source"><strong>Manufacturer source:</strong> <a href={product.source} target="_blank" rel="noopener noreferrer">View official specifications</a>. {product.sourceNote}</p>}
+          <p class="affiliate-context">Amazon links below open marketplace search results for the model phrase, not a verified direct product listing. Confirm the exact model, seller, regional variant and current terms before ordering.</p>
+          <p class="affiliate-link-label">Affiliate links (paid links):</p>
+          <div class="product-actions">
+            {product.us_identifier && <a class="button" href={buildAffiliateUrl('us', product.us_identifier)} rel="sponsored nofollow noopener" target="_blank" aria-label={`Search Amazon US for ${product.name}`}>Search Amazon US</a>}
+            {product.uk_identifier && <a class="button secondary" href={buildAffiliateUrl('uk', product.uk_identifier)} rel="sponsored nofollow noopener" target="_blank" aria-label={`Search Amazon UK for ${product.name}`}>Search Amazon UK</a>}
+          </div>
+        </section>
+      ))}
+    </section>
+
+    <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Affiliate links are paid links. Product information is based on cited manufacturer documentation and editorial research; SmartPickHub has not claimed hands-on testing.</p>
+  </article>
+  <script type="application/ld+json" set:html={jsonLd} />
+</Layout>

@@ -1,0 +1,47 @@
+---
+import '../styles/global.css';
+interface Props { title: string; description?: string; canonical?: string; socialImage?: string; }
+const { title, description = 'Practical buying guides and product comparisons for shoppers in the United States and United Kingdom.', canonical, socialImage } = Astro.props;
+const canonicalUrl = canonical ?? Astro.url.href;
+const socialImageUrl = socialImage ? new URL(socialImage, Astro.site).toString() : undefined;
+const pinterestVerifyCode = import.meta.env.PINTEREST_VERIFY_CODE?.trim();
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    {pinterestVerifyCode && <meta name="p:domain_verify" content={pinterestVerifyCode} />}
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    {socialImageUrl && <meta property="og:image" content={socialImageUrl} />}
+    {socialImageUrl && <meta name="twitter:card" content="summary_large_image" />}
+    {socialImageUrl && <meta name="twitter:image" content={socialImageUrl} />}
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/">SmartPickHub</a>
+        <nav aria-label="Main navigation">
+          <a href="/">Home</a>
+          <a href="/guides/">Buying Guides</a>
+          <a href="/rss.xml">RSS</a>
+          <a href="/affiliate-disclosure/">Affiliate Disclosure</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container"><slot /></main>
+    <footer class="site-footer">
+      <div class="container">
+        <p>As an Amazon Associate I earn from qualifying purchases.</p>
+        <p>SmartPickHub may earn commissions from qualifying purchases. Affiliate links are identified near the relevant links. Product details and availability can change; always confirm current details with the retailer.</p>
+      </div>
+    </footer>
+  </body>
+</html>
