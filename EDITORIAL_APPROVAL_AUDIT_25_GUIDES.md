@@ -1046,3 +1046,39 @@ This batch checked selected manufacturer pages for Wi-Fi 7 routers/mesh, GaN cha
 - Guide 24 remains provisional pending Garmin Forerunner 265 verification. Guide 25 remains provisional pending direct capture of all four Brother UK product spec pages and confirmation of the model-specific consumables.
 - No guide is approved for publication at this checkpoint. No product records, editorial statuses, publication statuses, production pages, Pinterest feeds or production settings changed. All 25 guides remain drafts.
 - Key sources checked: https://www.apple.com/uk/watch/compare/?modelList=watch-se-3%2Cwatch-ultra-4 ; https://www.apple.com/uk/apple-watch-ultra-4/specs/ ; https://www.garmin.com/en-GB/compare/?compareProduct=886785 ; Brother UK model pages listed in the product catalogue: https://store.brother.co.uk/devices/laser/mfc/mfcl8390cdw ; https://store.brother.co.uk/devices/laser/mfc/mfcl3740cdw ; https://store.brother.co.uk/devices/laser/hl/hll3240cdw ; https://store.brother.co.uk/devices/laser/dcp/dcpl2660dw
+
+
+## Supplemental product-level verification — follow-up, 19 November 2026
+
+### Corrected evidence — Samsung Bespoke Jet AI (guide 11)
+- Exact UK model: VS28C9784QK/EU. Samsung UK's model-specific product page states 280 W maximum suction and up to 160 minutes at the minimum power level with two batteries and a non-motorised tool attached. The same specification lists two detachable batteries and the All-in-One Clean Station.
+- Important interpretation: the generic UK comparison page is easy to misread because its 160-minute entry belongs to the BESPOKE Jet AI column; preserve the column/model association. Do not present 160 minutes as typical powered-floorhead runtime.
+- UK 280 W and US 280 AW are not interchangeable units. Keep region-specific models and electrical details separate.
+- Catalogue correction committed on review branch: commit 74ca554d8ec839e104f964414e08fd463ae4d52f. Updated the product's source URL, pros, cons, sourceNote and regional availabilityNote. No approval or publication status was changed.
+- Sources: https://www.samsung.com/uk/business/vacuum-cleaners/stick/bespoke-jet-plus-210w-all-in-one-clean-station-black-vs28c9784qk-eu/ ; https://www.samsung.com/uk/support/model.VS28C9784QK_EU/.
+
+### Newly verified source evidence — Apple iPad mini (A20 Pro), guide 18
+- Apple Support's model-specific technical specification page identifies iPad mini (A20 Pro), year introduced 2026, 8.5-inch OLED Super Retina XDR display, A20 Pro chip and other hardware details. This resolves the previous concern that no official Apple model page could be found.
+- Replace the previous hold reason (no official model/source found) with a narrower review: verify the catalogue's individual claims and regional listing against the exact Apple page; do not approve guide 18 until its other three product records and remaining claims are verified.
+- Source: https://support.apple.com/en-us/149482 ; Apple UK iPad mini page currently describes a different 8.3-inch A17 Pro generation, so do not mix the UK page's older generation specifications into the A20 Pro 2026 record.
+
+### Newly verified UK Brother printer specifications — guide 25
+- Brother UK MFC-L8390CDW official source lists up to 30ppm mono/colour, duplex print, duplex scan up to 56 ipm, 50-sheet two-sided ADF, USB/wired/wireless connectivity and 512MB memory.
+- Brother UK MFC-L3740CDW official source lists 18ppm mono/colour, automatic duplex print up to 7 sides/min, 50-sheet ADF, 8.8cm colour touchscreen, Gigabit Ethernet and 5GHz Wi-Fi. The page lists scanning speeds; this is not evidence that the ADF itself duplex-scans. Do not attribute duplex scanning to this model unless the product-specific documentation explicitly confirms it.
+- Brother UK HL-L3240CDW official page lists 26ppm mono/colour, duplex printing up to 10 sides/min, Gigabit Ethernet, 5GHz Wi-Fi and USB.
+- Brother UK DCP-L2660DW official page lists 34ppm mono print, duplex printing, 50-sheet ADF, Ethernet, 5GHz Wi-Fi, 1,200-page inbox toner and a separate 15,000-page drum unit.
+- Keep UK product model numbers separate from US electrical variants. Do not use US model claims to fill gaps for UK records.
+- Sources: https://store.brother.co.uk/devices/laser/mfc/mfcl8390cdw ; https://store.brother.co.uk/devices/laser/mfc/mfcl3740cdw ; https://store.brother.co.uk/devices/laser/hl/hll3240cdw ; https://store.brother.co.uk/devices/laser/dcp/dcpl2660dw.
+
+### Garmin dashcam SKU checks — guide 19
+- Garmin UK source confirms Mini 3 part number 010-02899-10, 1080p and 140° field of view; Garmin's UK dashcam comparison differentiates X110 (1080p), X210 (1440p) and X310 (4K).
+- A UK Declaration of Conformity identifies Dash Cam X210 model family B04684, but this is not the Garmin retail part number/SKU. Do not substitute a regulatory model identifier for a retail part number.
+- Exact retail part numbers for X210 and X310 remain unconfirmed in this pass. Guide remains on hold pending model-page/SKU and package checks.
+- Sources: https://www.garmin.com/en-GB/p/pn/010-02899-10/ ; https://www.garmin.com/en-GB/p/772586/ ; https://static.garmin.com/pumac/Dash%20Cam%20x210_DoC-UK.pdf.
+
+### Current disposition
+- Samsung guide 11: one proven model-specific runtime presentation ambiguity corrected in the catalogue; the guide remains draft pending all four products.
+- iPad mini A20 Pro: existence/model identity is now supported by official Apple Support; individual product claims and the remaining guide products still need verification.
+- Brother guide 25: the four UK model pages have now been reviewed; do not claim duplex scan for MFC-L3740CDW based only on the general scanning specifications. Check full consumables/warranty/bundle details before approval.
+- Garmin guide 19: quality/resolution tiers are supported, but exact X210/X310 retail part numbers and bundle remain open.
+- No guide's editorial or publication status changed. No page was published, no index notification was sent, and no production settings were touched.
