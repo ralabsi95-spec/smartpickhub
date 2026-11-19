@@ -1,6 +1,4 @@
-# SmartPickHub – Agent Handoff (READ THIS FIRST)
-
-**Last verified:** 19 November 2026 20:10 UTC; latest `main` is `27ed4cdb8918c6bb23ea4f829ef97a92a04f6449` (PR #31 merged, followed by documentation-only continuity commits). PR-head CI and both Cloudflare Pages checks passed on `45cfa74aadbc983e7bae872b3d2d9d908d2de9ef`; latest main-SHA Pages production check is still in progress.  
+**Last verified:** 19 November 2026 20:24 UTC; latest checked main before this documentation refresh: `ddf8f636fb8493ba6a6d087d2c1864e9bbfd3e00`. Main-SHA build-and-audit, Cloudflare Pages production, Cloudflare Pages preview, and Workers checks all completed successfully on that SHA.  
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `main` (production)  
 **Latest merged work:** PRs #24, #25, #28, #29 and #31. PR #30 is superseded; do not retry. PR #26/#27 are stale checkpoints.  
@@ -11,21 +9,22 @@
 >
 > **Permanent scope boundary:** The former InfinityFree/WordPress environment is cancelled and completely outside SmartPickHub. Do not access, connect, edit, migrate, redirect, import from, or spend effort on it. The approved environment is GitHub + Astro + Cloudflare Pages.
 
-## Current authoritative checkpoint — 19 November 2026 20:05 UTC
+## Current authoritative checkpoint — 19 November 2026 20:24 UTC
 
-- **Current main SHA:** `27ed4cdb8918c6bb23ea4f829ef97a92a04f6449` (GitHub main ref verified). PR #31 squash merge commit: `8f6a95a328c7d131e94b7de0de6f0bf4702c4dae`; continuity-only docs commits followed.
-- **PR #31:** merged/closed. Exact-head run `44596709375` passed build-and-audit, including Astro checks, importer dry-run/E2E, catalogue/affiliate validation, static build, RSS, SEO/JSON-LD/affiliate smoke tests, axe-core, Lighthouse desktop/mobile/templates and report upload. Cloudflare Pages production and preview checks passed on PR head `45cfa74aadbc983e7bae872b3d2d9d908d2de9ef`.
-- **Post-merge caution:** after PR #31, documentation-only commits updated both continuity files. The Pages production check for latest main SHA `27ed4cdb8918c6bb23ea4f829ef97a92a04f6449` was still in progress at the last read. Do not claim this latest SHA is deployed until its Pages check completes. A completed main-SHA build-and-audit or preview check was not yet visible.
-- **Legacy Workers check:** separate Workers build failed again. It is not the Cloudflare Pages production/preview deployment and is not a new Pages outage. Do not reopen the known issue as a blocker.
-- **What PR #31 adds:** `US_GLOBAL_TREND_PREPAREDNESS_PLAN.md`, plus continuity updates in README/MASTER_PROJECT/AGENT_HANDOFF. It is a research/implementation plan; no product, guide, page metadata, image, affiliate link, analytics, crawler, DNS/WAF or production setting was changed.
-- **Strategy:** UK remains primary; US is a parallel market with independent research/metrics. Trend signals are hypotheses, not search-volume facts. Preparedness content must focus on civil resilience (power, water, communications, weather), never war-panic marketing. Follow the plan's evidence and owner-approval gates.
-- **Protected catalogue baseline:** 25 approved guides / 100 product records. Do not re-import or duplicate. Marketplace search links are not direct verified ASIN links. No invented ASINs, prices, ratings, reviews, stock or hands-on testing. Product images only with documented commercial reuse rights; otherwise retain current text cards.
-- **Measurement gaps:** GSC/GA4/Bing first-party reporting and onsite Amazon outbound-click tracking remain unconnected/unimplemented. Do not add GA4 without verified Measurement ID and consent/privacy decision. Keep onsite clicks distinct from Amazon Associates reports.
-- **Pinterest:** five RSS-to-board connections are owner-confirmed; actual feed ingestion and Pin publication remain unverified. Do not claim Pins were published without Pinterest-side evidence.
-- **Paid-service boundary:** no subscriptions, paid SEO/AI visibility checks, paid keyword batches or TinyFish work. Last-known OpenSEO balance 28 credits; a seed research run costs approximately 54 credits. Do not spend without explicit approval.
-- **Immediate next action:** poll Cloudflare Pages production (and any pending build/preview checks) for latest main SHA `27ed4cdb8918c6bb23ea4f829ef97a92a04f6449`; then continue free, non-mutating official-source research for emergency radios/backup power and existing Tier-1 guide evidence gaps. Do not create/publish new products or pages without verified evidence and the established approval gate.
+- **Verified main before this documentation refresh:** `ddf8f636fb8493ba6a6d087d2c1864e9bbfd3e00`. PR #31 remains merged/closed as `8f6a95a328c7d131e94b7de0de6f0bf4702c4dae`.
+- **Exact-main CI:** GitHub Actions run `44604477800` on SHA `ddf8f636fb8493ba6a6d087d2c1864e9bbfd3e00` completed successfully; build-and-audit job passed.
+- **Exact-main deployment checks:** Cloudflare Pages production passed; Cloudflare Pages preview passed; the separate Workers build check also passed on this SHA. Do not carry forward the earlier failed Workers status as if it were current. IndexNow notification runs shown for this SHA were skipped/conditional; do not interpret them as a new IndexNow submission or accepted URL batch.
+- **PR #31 scope:** research/implementation plan only (`US_GLOBAL_TREND_PREPAREDNESS_PLAN.md`) plus README and continuity documentation. No product, guide copy, page metadata, image, affiliate link, analytics, crawler, DNS/WAF or production setting changed.
+- **Strategy:** UK remains primary; US is a parallel market with independent research/metrics. Trend signals are hypotheses, not search-volume facts. Preparedness content focuses on civil resilience (power, water, communications, weather), never war-panic marketing. Follow the plan's evidence and owner-approval gates.
+- **Protected catalogue:** 25 approved guides / 100 product records. Do not re-import or duplicate. Marketplace search links are not direct verified ASIN links. Never invent ASINs, prices, ratings, reviews, stock or hands-on testing. Product images require documented commercial reuse rights; otherwise retain current text cards.
+- **Measurement gaps:** GSC/GA4/Bing first-party reporting and onsite Amazon outbound-click tracking remain unconnected/unimplemented. Do not add GA4 without a verified Measurement ID and consent/privacy decision. Keep onsite clicks distinct from Amazon Associates reports.
+- **Pinterest:** five RSS-to-board connections are owner-confirmed; actual feed ingestion and Pin publication remain unverified.
+- **Paid-service boundary:** no subscriptions, paid SEO/AI visibility checks, paid keyword batches or TinyFish work. Last-known OpenSEO balance 28 credits; one seed research run costs approximately 54 credits. Do not spend without explicit approval.
+- **Immediate next action:** continue free, non-mutating official-source research for emergency radios/backup power and evidence gaps in existing Tier-1 guides. Do not create/publish new products or pages without verified evidence and the established approval gate.
+- **After this handoff update:** this documentation commit itself advances `main`; re-check its new SHA and Pages/CI checks before describing that new SHA as deployed. The checks above apply to the pre-refresh SHA stated above.
 
 ---
+
 
 ## Current authoritative checkpoint — 19 November 2026 16:00 UTC
 
