@@ -1,0 +1,30 @@
+name: IndexNow notification
+
+on:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: "Why are URLs being submitted?"
+        required: true
+        default: "Initial public launch"
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+        env:
+          PUBLIC_SITE_URL: https://smartpickhub.pages.dev
+      - name: Notify IndexNow after confirming deployed key file
+        run: npm run indexnow
+        env:
+          PUBLIC_SITE_URL: https://smartpickhub.pages.dev
