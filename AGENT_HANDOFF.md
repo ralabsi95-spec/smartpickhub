@@ -1,15 +1,28 @@
 # SmartPickHub – Agent Handoff (READ THIS FIRST)
 
-**Last verified:** 19 November 2026 12:40 UTC; production serves main commit `2fc29d32067a0b654b1f4e4a8133835002f45513`; PR #10 IndexNow guard repair open; PR #7 lifecycle documentation stale and not to be merged as-is
+**Last verified:** 19 November 2026 19:15 UTC; main includes merged PRs #24, #25, #28 and #29 at `d623268d91f893f06510d68b85ee55c39ea0aec2`; new US/global trend plan is being rebased onto this main state.  
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `main` (production)  
-**Pull requests:** PR #8 merged; PR #9 merged; no open release PR  
+**Pull requests:** #24, #25, #28, #29 merged. PR #30's original branch is superseded by a clean rebased continuation; PRs #26/#27 are stale status checkpoints, not merge candidates.  
 **Production target:** https://smartpickhub.pages.dev/ (Cloudflare Pages + Astro)  
 **Isolated Astro preview:** https://smartpickhub-preview.pages.dev/
 
 > This file is the operational handoff for every new ChatGPT conversation, coding agent or human contributor. Read it before proposing or changing anything. Then read `MASTER_PROJECT.md` for the chronological record. The current dated status at the top supersedes older historical entries below.
 >
 > **Permanent scope boundary (19 Nov 2026):** The former InfinityFree domain/hosting and former WordPress site are cancelled and completely outside SmartPickHub. They are not a target, fallback, migration source, catalogue source, or integration. Do not access, connect, edit, migrate, redirect, import from, or spend project effort on them. The approved environment is GitHub + Astro + Cloudflare Pages on `pages.dev`.
+
+## Current authoritative checkpoint — 19 November 2026 19:12 UTC
+
+- Main now contains four approved improvement merges: Garmin source correction (#24), How We Research transparency page (#25), product discovery/million-record scale plan plus missing-key draft workflow guard (#28), and the 25-guide buyer-intent map (#29).
+- PR #24/#25/#28/#29 exact-head Astro quality checks passed. Cloudflare Pages production and isolated preview deployments passed for each. The separate legacy Workers build check still fails; it is not the Pages deployment and is not a blocker for these Pages releases.
+- Existing catalogue baseline remains 25 approved guides / 100 product records. No new products, direct ASINs, prices, ratings, reviews or images were introduced by these merges.
+- US market/global trend/civil preparedness plan is being carried forward on a fresh branch based on the new main to avoid conflicts with the four merged PRs. Read `US_GLOBAL_TREND_PREPAREDNESS_PLAN.md` for US keyword seeds, GTA VI evidence snapshot and official UK/US/EU preparedness references.
+- OpenSEO last-known credits: 28; paid keyword research at approximately 54 credits per seed is not authorized. No paid AI visibility, subscription or scheduled automation is active.
+- No GA4/GSC/Bing connector state change, analytics event code, Pinterest account action, DNS/WAF/robots change or model-training crawler preference change was made.
+- The known separate Workers/legacy deployment check is not to be confused with the active Cloudflare Pages projects. Use the Pages checks and actual preview deployments for Astro Pages verification.
+- Next: finish CI on the clean rebased US/global plan PR; merge if exact-head quality and Pages checks pass. Then continue free manufacturer-source research for emergency radios/backup power and non-mutating keyword prioritisation. Keep product/page intake behind source verification and approval.
+
+---
 
 ## Current authoritative checkpoint — 19 November 2026 16:00 UTC
 
