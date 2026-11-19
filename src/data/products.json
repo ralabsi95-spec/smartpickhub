@@ -1133,67 +1133,79 @@
       "products": [
         {
           "name": "Roborock Saros 10R Robot Vacuum",
-          "bestFor": "Homes comparing a premium robot with automated floor-care and navigation features.",
+          "bestFor": "Buyers comparing Roborock's slim premium robot platform with advanced obstacle recognition and automated floor care.",
           "us_identifier": "Roborock Saros 10R Robot Vacuum",
-          "uk_identifier": "Roborock Saros 10R UK robot vacuum",
+          "uk_identifier": "Roborock Saros 10R Robot Vacuum",
           "pros": [
-            "Saros family design; manufacturer describes advanced navigation and automated cleaning features; integrated dock ecosystem."
+            "StarSight Autonomous System 2.0 navigation and obstacle-recognition platform",
+            "Ultra-slim 7.98cm robot body and dual anti-tangle system",
+            "Multifunctional Dock 4.0 floor-care automation"
           ],
           "cons": [
-            "Dock size and maintenance needs can be substantial; performance depends on room layout, cables and floor transitions."
+            "A matching UK Saros 10R product listing was not confirmed; do not substitute the differently named Saros 10",
+            "Dock footprint, maintenance, accessory bundle and warranty need checking against the exact regional package"
           ],
-          "verdict": "A premium model family to compare when navigation and dock automation are key priorities.",
+          "verdict": "Keep this as a distinct Saros 10R model reference. UK buyers should compare it with the separately named Saros 10 rather than assuming they are the same SKU.",
           "source": "https://global.roborock.com/pages/roborock-saros-10r",
-          "sourceNote": "Roborock's exact global Saros 10R page confirms the StarSight Autonomous System 2.0, 7.98cm ultra-slim body, dual anti-tangle system and 10-in-1 Multifunctional Dock 4.0. A matching UK robot product listing was not confirmed in this pass; the UK store's Saros 10 page is a different named model. Do not treat it as a UK-equivalent SKU; verify dock, drainage option, plug, warranty and app-region terms.",
-          "availabilityNote": "Regional product names and dock bundles can differ. Only buy the exact UK model shown by Roborock UK; verify the dock, voltage/plug, app region, consumables and warranty. This entry is not confirmation that a US model is sold unchanged in the UK."
+          "sourceNote": "Roborock's exact global Saros 10R page describes StarSight Autonomous System 2.0, the slim body, anti-tangle design and Multifunctional Dock 4.0. The UK product catalogue lists Saros 10 separately; no direct UK Saros 10R retailer product listing is confirmed here.",
+          "availabilityNote": "UK model equivalence and availability are unconfirmed for Saros 10R. The official UK Saros 10 is a different model name; verify exact SKU, dock bundle, plug, app-region terms, consumables and warranty."
         },
         {
           "name": "Roborock Qrevo CurvX Robot Vacuum and Mop",
-          "bestFor": "Buyers looking for a robot-and-dock system with a low-profile body design.",
+          "bestFor": "Buyers researching the CurvX product family and comparing low-profile cleaning designs.",
           "us_identifier": "Roborock Qrevo CurvX Robot Vacuum and Mop",
-          "uk_identifier": "Roborock Qrevo CurvX UK robot vacuum mop",
+          "uk_identifier": "Roborock Qrevo Curv 2 Pro Robot Vacuum and Mop",
           "pros": [
-            "Official listing highlights an ultra-slim 3.14-inch design and AdaptiLift chassis; dual anti-tangle system is advertised."
+            "The US Qrevo CurvX source describes a low-profile design, AdaptiLift chassis and dock automation",
+            "Roborock UK currently lists the separately named Qrevo Curv 2 Pro with AdaptiLift chassis and up to 25,000Pa advertised suction"
           ],
           "cons": [
-            "Confirm the exact dock and accessory bundle; slim-body clearance does not guarantee access under every item of furniture."
+            "Qrevo CurvX and Qrevo Curv 2 Pro are distinct product names; the UK search phrase is a related UK-market alternative, not a verified equivalent SKU",
+            "Do not transfer CurvX specifications, dock contents, plug, warranty or accessories to Curv 2 Pro"
           ],
-          "verdict": "Compare its low-profile dimensions and dock features against the actual clearance and floor mix at home.",
+          "verdict": "Use the UK Qrevo Curv 2 Pro as a separate regional alternative for UK shoppers; retain CurvX only as the US-market product reference.",
           "source": "https://us.roborock.com/products/roborock-qrevo-curv-x",
-          "sourceNote": "Roborock's exact US Qrevo CurvX product page confirms the 22,000Pa HyperForce system, AdaptiLift chassis, dual anti-tangle brush system and Multifunctional Dock 3.0 Thermo+. The UK site has a Qrevo CurvX information page and compatible accessories, but a direct UK robot listing was not confirmed in this pass; do not assume the US bundle, plug, warranty or app-region terms are identical.",
-          "availabilityNote": "Regional product names and dock bundles can differ. Only buy the exact UK model shown by Roborock UK; verify the dock, voltage/plug, app region, consumables and warranty. This entry is not confirmation that a US model is sold unchanged in the UK."
+          "sourceNote": "The US source is the exact Qrevo CurvX product page. Roborock UK's robot-vacuum range lists Qrevo Curv 2 Pro as a separate product name and feature set. The two are not asserted to be identical.",
+          "availabilityNote": "For UK shopping, search for the separately named Qrevo Curv 2 Pro. Confirm its exact UK SKU, dock package, plug, consumables and warranty; do not assume Qrevo CurvX regional parity."
         },
         {
           "name": "Roborock Qrevo Edge 2 Robot Vacuum and Mop",
-          "bestFor": "Homes prioritising hair management and high advertised suction in a robot-and-mop package.",
+          "bestFor": "Homes comparing anti-tangle cleaning and automated mop care in a robot-and-dock system.",
           "us_identifier": "Roborock Qrevo Edge 2 Robot Vacuum and Mop",
-          "uk_identifier": "Roborock Qrevo Edge 2 UK robot vacuum mop",
+          "uk_identifier": "Roborock Qrevo Edge 2 Robot Vacuum and Mop",
           "pros": [
-            "Roborock UK lists up to 25,000 Pa HyperForce suction and a dual anti-tangle system for this exact UK model."
+            "Roborock UK lists up to 25,000Pa HyperForce suction for this exact UK model",
+            "Dual anti-tangle system and upgraded mopping features are described by Roborock UK",
+            "UK product listing identifies the Edge 2 name directly"
           ],
           "cons": [
-            "High suction claims are manufacturer-specific; dock footprint, maintenance and obstacle handling still need consideration."
+            "Advertised suction figures are manufacturer claims and are not a standard cross-brand test",
+            "Dock footprint, replacement consumables, carpet handling and obstacle performance depend on the home and exact bundle"
           ],
-          "verdict": "A candidate for households comparing anti-tangle design and automated mop care.",
+          "verdict": "A current UK-market comparison candidate where hair management and automated mop care matter. Check the precise dock and accessory bundle before purchase.",
           "source": "https://uk.roborock.com/products/roborock-qrevo-edge-2-hyperforce-suction-dual-anti-tangle-system",
-          "sourceNote": "Exact UK Qrevo Edge 2 product page verified. Roborock UK advertises up to 25,000 Pa HyperForce suction and a dual anti-tangle system. Confirm the exact dock/accessory bundle, plug, warranty and app-region terms on the UK listing before ordering.",
-          "availabilityNote": "The exact Qrevo Edge 2 model is listed by Roborock UK. Verify the precise bundle, included accessories, plug, consumables and UK warranty on the retailer listing; do not assume every US package is identical."
+          "sourceNote": "Roborock UK's exact Qrevo Edge 2 product listing identifies up to 25,000Pa HyperForce suction and a dual anti-tangle system. Claims are attributed to the manufacturer.",
+          "availabilityNote": "The exact Qrevo Edge 2 model is listed on Roborock UK. Confirm the active retailer listing, bundle, consumables and UK warranty before ordering."
         },
         {
           "name": "Roborock Qrevo 2 Pro Robot Vacuum and Mop",
-          "bestFor": "Buyers seeking an automated dock and carpet-aware mop handling.",
+          "bestFor": "Homes comparing an automated dock, anti-tangle brushing and mop removal for carpet care.",
           "us_identifier": "Roborock Qrevo 2 Pro Robot Vacuum and Mop",
           "uk_identifier": "Roborock Qrevo 2 Pro Robot Vacuum and Mop",
           "pros": [
-            "Roborock UK lists up to 25,000 Pa HyperForce suction, automatic mop detachment for carpets and a multifunctional self-cleaning dock; the US source previously reviewed listed 20,000 Pa."
+            "Roborock UK advertises up to 25,000Pa HyperForce suction for the UK model",
+            "Automatic mop detachment for carpet care and a multifunctional dock are listed by Roborock",
+            "The US product page for the same named family advertises 20,000Pa, so regional specification differences are explicitly retained"
           ],
           "cons": [
-            "Advertised suction is not a standard cross-brand test; check carpet detection and mop-lift/detachment details in the regional SKU."
+            "The UK and US pages publish different suction figures; compare only against the target-market SKU",
+            "Suction numbers are manufacturer claims, not standardised independent cross-brand measurements",
+            "Verify dock, included accessories, consumables and warranty for the exact listing"
           ],
-          "verdict": "Compare its dock automation and mop handling with the amount of carpet and hard flooring in your home.",
-          "source": "https://uk.roborock.com/products/roborock-qrevo-2-pro-robot-vacuum-with-multifunctional-dock",
-          "sourceNote": "Roborock's UK product page advertises up to 25,000 Pa HyperForce suction, automatic mop detachment for carpets and a multifunctional self-cleaning dock. The US product page for the same named family advertises 20,000 Pa; retain this regional distinction rather than presenting one number as universal. UK source: https://uk.roborock.com/pages/roborock-qrevo-2-pro. US source: https://us.roborock.com/pages/roborock-qrevo-2-pro. Verify exact regional SKU, dock bundle, plug, consumables and warranty before ordering.",
-          "availabilityNote": "Official UK and US product pages are available but advertise different suction figures: 25,000 Pa for the UK page and 20,000 Pa for the US page. This is a regional specification difference in the manufacturer's published material; check exact SKU and bundle before comparing or purchasing."
+          "verdict": "A useful UK-market option for homes mixing carpet and hard floors. Use the UK-published specifications for UK shopping and do not copy them into US product copy.",
+          "source": "https://uk.roborock.com/pages/roborock-qrevo-2-pro",
+          "sourceNote": "Roborock's official UK Qrevo 2 Pro page advertises 25,000Pa; the official US page advertises 20,000Pa. Both describe automatic mop detachment for carpets and the multifunctional dock. This regional difference is preserved rather than normalised.",
+          "availabilityNote": "Roborock publishes separate UK and US feature specifications for Qrevo 2 Pro. UK page: 25,000Pa; US page: 20,000Pa. Verify exact model/SKU and package on the target marketplace; never assume identical regional performance claims."
         }
       ],
       "buyingChecklist": [
