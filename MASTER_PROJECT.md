@@ -1591,3 +1591,13 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - PR #7 remains stale and must not be merged as-is. Its lifecycle text says the 25 guides are drafts and references the superseded notifier. A corrected lifecycle document is being prepared on branch `docs/reconcile-search-discovery-lifecycle-20261119`.
 - No production catalogue/content change, product re-import, Pinterest Pin, or paid service action was made.
 - Next: confirm main CI and post-merge IndexNow outcome; review/CI the replacement lifecycle document; connect GSC/GA4 and investigate the known sitemap fetch issue.
+
+
+## 19 November 2026 13:11 UTC — PR #11 and Pinterest RSS readiness
+- PR #11 merged to main as `960c32597d7bdcb6119a7d8bcd657d0818e4b251`; its exact-head CI #827 passed. It is documentation-only.
+- Current production marker remains `88f7f86d6083e2546f229d0ba4c6258df30dc62b`; no new code deployment is claimed for the docs merge.
+- Historical owner instruction confirmed that Pinterest RSS feeds were intentionally not connected while the 25-guide approval/publication batch was incomplete. The correct order is complete/verify all 25 guides, connect every feed to its matching board, verify all five connections, then start Pinterest distribution.
+- Live RSS verification confirms 5 feeds / 25 entries: Home Office & Ergonomics (5); Smart Home & Security (5); Kitchen & Home Tech (6); Travel & Tech Gear (6); Computing & Gaming (3). All five endpoints are live and populated.
+- Feed URLs: `/rss/home-office.xml`, `/rss/smart-home.xml`, `/rss/kitchen-home-tech.xml`, `/rss/travel-tech.xml`, `/rss/computing-gaming.xml` on the production host.
+- Pinterest remains unconnected: no board/feed mapping has been saved, no Pins created, and no Pins published. RSS availability does not mean Pinterest connection.
+- Next: use an authenticated Pinterest session to inspect existing boards, connect each matching feed, verify all five, and only then commence distribution. Do not create duplicate boards or publish prematurely.
