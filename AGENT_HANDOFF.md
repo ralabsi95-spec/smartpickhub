@@ -1427,3 +1427,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - PR #13 remains a separate public SEO metadata change and must stay unmerged until explicit production-change approval, notwithstanding its passing CI.
 - No paid services, TinyFish credits, OpenSEO AI visibility checks, subscriptions or recurring paid checks were started. Pinterest's five RSS-to-board connections remain owner-confirmed; actual Pinterest ingestion/publication remains unverified. GSC/GA4 are not connected; Bing Webmaster Tools account/ownership verification remains a free next step for the owner.
 - Next: keep PR #13 gated; when owner is ready, verify Bing Webmaster Tools ownership and sitemap status using the free account, and connect GSC/GA4 to inspect first-party indexing and traffic. Continue engineering only in a branch/PR with dry-run defaults and exact-head CI. Never re-submit unchanged IndexNow URLs.
+
+
+## 19 November 2026 14:54 UTC — PR #17 documentation checkpoint merged
+- PR #17 (docs-only status and handoff checkpoint) passed exact-head CI run #846 (run ID `44547416370`): all workflow stages succeeded, including type/content checks, dry-run importer tests, catalogue validation, build, RSS and smoke checks, axe-core accessibility audit, Lighthouse desktop/mobile and report upload.
+- PR #17 merged to `main` as `522f1eee26951f3034d9632399b324fb0bdb2a25`. GitHub main branch API confirms this exact SHA. The merge changes project documentation only.
+- The PR #17 checkpoint accurately records PR #15 and PR #16 merges. This entry supersedes the earlier statement that PR #17's own CI was pending.
+- No public guide/product content, SEO metadata, sitemap, robots policy, DNS or Cloudflare configuration was changed by PR #17. Production deployment marker remains unverified after the documentation merges; do not claim deployment of this SHA without first-party marker evidence.
+- PR #13 remains open and unmerged pending explicit approval for its public SEO metadata changes. Existing 25 guides / 100 products remain unchanged. Product importer remains dry-run only.
+- Next free discovery step: owner adds/verifies `https://smartpickhub.pages.dev/` in Bing Webmaster Tools (prefer DNS TXT verification through Cloudflare, but do not change DNS without explicit approval); then inspect sitemap and IndexNow activity. Google Search Console/GA4 connection remains outstanding. No paid tools or TinyFish activity.
