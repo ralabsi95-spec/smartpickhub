@@ -1,0 +1,62 @@
+name: IndexNow after production release
+
+on:
+  workflow_run:
+    workflows: ["Astro Build and Quality Checks"]
+    types: [completed]
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: smartpickhub-indexnow-production
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    if: github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out the exact commit that passed quality CI
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.23.4
+
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Build the production sitemap and verify indexability
+        run: npm run build
+        env:
+          PUBLIC_SITE_URL: https://smartpickhub.pages.dev
+
+      - name: Wait for Cloudflare to serve the exact production commit
+        env:
+          EXPECTED_DEPLOYMENT_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          for attempt in $(seq 1 60); do
+            marker=$(curl --fail --silent https://smartpickhub.pages.dev/deployment.json || true)
+            if printf '%s' "$marker" | grep -Fq "\"commit\": \"$EXPECTED_DEPLOYMENT_SHA\"" \
+              && printf '%s' "$marker" | grep -Fq '"branch": "main"' \
+              && printf '%s' "$marker" | grep -Fq '"environment": "production"'; then
+              echo "Confirmed production deployment $EXPECTED_DEPLOYMENT_SHA"
+              exit 0
+            fi
+            echo "Waiting for production deployment ($attempt/60)..."
+            sleep 10
+          done
+          echo "Cloudflare did not serve the expected production commit within 10 minutes."
+          exit 1
+
+      - name: Notify IndexNow after live robots, sitemap and key checks
+        run: npm run indexnow
+        env:
+          PUBLIC_SITE_URL: https://smartpickhub.pages.dev
+          EXPECTED_DEPLOYMENT_SHA: ${{ github.event.workflow_run.head_sha }}
