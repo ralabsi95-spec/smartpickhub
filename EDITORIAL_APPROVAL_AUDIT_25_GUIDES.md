@@ -1,43 +1,50 @@
 # Editorial approval audit — 25 SmartPickHub buying guides
 
-Audit date: 19 November 2026. Source: `src/data/products.json` on `main`.
+Audit date: 19 November 2026. Source: `src/data/products.json` on release branch `release/approve-guides-indexing-20261119`.
 
 ## Scope and decision
 
 - 25 guides and 100 product records inspected structurally.
 - This is a structured editorial preflight, not a live verification of all 100 manufacturer pages, Amazon search results, stock, prices, ratings or product-image rights.
-- No guide has been marked approved or published by this audit. Owner authorised the approval workflow, but factual and regional checks must be resolved before status changes.
-- Product links remain Amazon search links with configured UK/US tracking IDs; they are not verified direct product URLs.
+- The owner subsequently gave explicit release approval for all 25 guides on 19 November 2026 after a proportionate UK-first, material-risk review. This release does not claim every one of the 100 product specifications or live retailer listings was independently re-fetched. Retain the regional, compatibility, bundle and availability caveats recorded per product.
+- Product links remain Amazon search links with configured UK/US tracking IDs; they are not verified direct product URLs. US/UK phrase parity is not a launch blocker; UK remains primary.
+
+## Current release decision (19 November 2026)
+
+- All 25 guides are owner-approved and marked `published` in the release branch. This follows the owner's explicit launch instruction; it is not a claim of full 100-product manufacturer re-verification or hands-on testing.
+- Product images are optional. Use a free/open asset only when the exact product identity and commercial-use rights are documented. Otherwise retain the existing text-based product card without a placeholder.
+- Production is crawlable on `https://smartpickhub.pages.dev/`; robots allows crawling, homepage is `index, follow`, and the sitemap currently contains 28 URLs.
+- IndexNow is being guarded behind successful main CI and confirmation of the exact live Cloudflare deployment. Google Search Console sitemap submission is still unconfirmed.
 
 ## All-guide inventory
 
 | # | Guide | Products | Source references | Caveat signals | Current status |
 |---:|---|---:|---:|---:|---|
-| 1 | `home-office-ergonomics-us-uk` | 4 | 4/4 | 1 | `draft` / research-led |
-| 2 | `portable-power-travel-tech-us-uk` | 4 | 4/4 | 3 | `draft` / research-led |
-| 3 | `smart-home-security-cameras-us-uk` | 4 | 4/4 | 4 | `draft` / research-led |
-| 4 | `wifi-7-home-mesh-routers-us-uk` | 4 | 4/4 | 3 | `draft` / research-led |
-| 5 | `usb-c-gan-chargers-us-uk` | 4 | 4/4 | 3 | `draft` / research-led |
-| 6 | `webcams-video-calls-streaming-us-uk` | 4 | 4/4 | 1 | `draft` / research-led |
-| 7 | `4k-usb-c-monitors-home-office-us-uk` | 4 | 4/4 | 4 | `draft` / research-led |
-| 8 | `thunderbolt-usb-c-docking-stations-us-uk` | 4 | 4/4 | 1 | `draft` / research-led |
-| 9 | `portable-ssd-external-storage-us-uk` | 4 | 4/4 | 0 | `draft` / research-led |
-| 10 | `air-fryers-us-uk` | 4 | 4/4 | 4 | `draft` / research-led |
-| 11 | `cordless-vacuum-cleaners-us-uk` | 4 | 4/4 | 3 | `draft` / research-led |
-| 12 | `cordless-drills-us-uk` | 4 | 4/4 | 3 | `draft` / research-led |
-| 13 | `robot-vacuum-mops-us-uk` | 4 | 4/4 | 3 | `draft` / research-led |
-| 14 | `noise-cancelling-headphones-us-uk` | 4 | 4/4 | 3 | `draft` / research-led |
-| 15 | `wireless-earbuds-us-uk` | 4 | 4/4 | 2 | `draft` / research-led |
-| 16 | `home-air-purifiers-us-uk` | 4 | 4/4 | 4 | `draft` / research-led |
-| 17 | `espresso-coffee-machines-us-uk` | 4 | 4/4 | 4 | `draft` / research-led |
-| 18 | `tablets-for-work-study-us-uk` | 4 | 4/4 | 3 | `draft` / research-led |
-| 19 | `dash-cams-us-uk` | 4 | 4/4 | 2 | `draft` / research-led |
-| 20 | `portable-projectors-us-uk` | 4 | 4/4 | 3 | `draft` / research-led |
-| 21 | `home-nas-storage-us-uk` | 4 | 4/4 | 2 | `draft` / research-led |
-| 22 | `electric-toothbrushes-us-uk` | 4 | 4/4 | 4 | `draft` / research-led |
-| 23 | `gaming-mice-us-uk` | 4 | 4/4 | 2 | `draft` / research-led |
-| 24 | `smartwatches-us-uk` | 4 | 4/4 | 2 | `draft` / research-led |
-| 25 | `home-printers-us-uk` | 4 | 4/4 | 3 | `draft` / research-led |
+| 1 | `home-office-ergonomics-us-uk` | 4 | 4/4 | 1 | `published` / approved |
+| 2 | `portable-power-travel-tech-us-uk` | 4 | 4/4 | 3 | `published` / approved |
+| 3 | `smart-home-security-cameras-us-uk` | 4 | 4/4 | 4 | `published` / approved |
+| 4 | `wifi-7-home-mesh-routers-us-uk` | 4 | 4/4 | 3 | `published` / approved |
+| 5 | `usb-c-gan-chargers-us-uk` | 4 | 4/4 | 3 | `published` / approved |
+| 6 | `webcams-video-calls-streaming-us-uk` | 4 | 4/4 | 1 | `published` / approved |
+| 7 | `4k-usb-c-monitors-home-office-us-uk` | 4 | 4/4 | 4 | `published` / approved |
+| 8 | `thunderbolt-usb-c-docking-stations-us-uk` | 4 | 4/4 | 1 | `published` / approved |
+| 9 | `portable-ssd-external-storage-us-uk` | 4 | 4/4 | 0 | `published` / approved |
+| 10 | `air-fryers-us-uk` | 4 | 4/4 | 4 | `published` / approved |
+| 11 | `cordless-vacuum-cleaners-us-uk` | 4 | 4/4 | 3 | `published` / approved |
+| 12 | `cordless-drills-us-uk` | 4 | 4/4 | 3 | `published` / approved |
+| 13 | `robot-vacuum-mops-us-uk` | 4 | 4/4 | 3 | `published` / approved |
+| 14 | `noise-cancelling-headphones-us-uk` | 4 | 4/4 | 3 | `published` / approved |
+| 15 | `wireless-earbuds-us-uk` | 4 | 4/4 | 2 | `published` / approved |
+| 16 | `home-air-purifiers-us-uk` | 4 | 4/4 | 4 | `published` / approved |
+| 17 | `espresso-coffee-machines-us-uk` | 4 | 4/4 | 4 | `published` / approved |
+| 18 | `tablets-for-work-study-us-uk` | 4 | 4/4 | 3 | `published` / approved |
+| 19 | `dash-cams-us-uk` | 4 | 4/4 | 2 | `published` / approved |
+| 20 | `portable-projectors-us-uk` | 4 | 4/4 | 3 | `published` / approved |
+| 21 | `home-nas-storage-us-uk` | 4 | 4/4 | 2 | `published` / approved |
+| 22 | `electric-toothbrushes-us-uk` | 4 | 4/4 | 4 | `published` / approved |
+| 23 | `gaming-mice-us-uk` | 4 | 4/4 | 2 | `published` / approved |
+| 24 | `smartwatches-us-uk` | 4 | 4/4 | 2 | `published` / approved |
+| 25 | `home-printers-us-uk` | 4 | 4/4 | 3 | `published` / approved |
 
 ## Per-guide product/source inventory and required editorial follow-up
 
@@ -1198,3 +1205,21 @@ This batch checked selected manufacturer pages for Wi-Fi 7 routers/mesh, GaN cha
 ## 19 November 2026 — CI status correction
 - Follow-up check: run #794 (`44515389423`) on head `50ecc2ddd389e127fb65df0a7b9850b0b6af6ca6` is now **cancelled**, not pending. The latest PR head is `9fa3deeb3eccf8c5c179ac9e02ed951eeb57baec`; the commit-run lookup currently returns no workflow run for that exact SHA.
 - Run #781 remains successful only for historical head `89edd10e2ad3df3c5c923aceb1fb8805d0498685`. Do not claim latest-head CI is complete. A supported workflow-dispatch trigger is not exposed through the connected GitHub actions available in this session; next operator step is to trigger/allow a PR quality run for the current head and verify the full job result.
+
+
+## 19 November 2026 — owner-approved publication and indexing release
+
+- The owner explicitly requested that the guides be merged, approved and made indexable while absent for two days. Release branch `release/approve-guides-indexing-20261119` updates all 25 records to `Approved for publication` / `published`.
+- The release intentionally does not require a product photograph: use only exact-model images with documented commercial rights; otherwise display the existing text-based product information card without an empty placeholder.
+- The owner does not require exhaustive US/UK phrase parity. UK-first material electrical/model differences remain disclosed in the catalogue; no US electrical SKU is represented as UK/Jordan-compatible.
+- Amazon links remain model-name search URLs, not direct verified ASINs. No prices, ratings, reviews, stock or hands-on testing claims were added.
+- PR #8 has been merged; release PR #9 must pass the latest CI before merge. The guarded IndexNow workflow is designed to run after successful main CI and exact production deployment verification.
+- Search Console sitemap submission is still outstanding; no Google indexing request has been confirmed. IndexNow acceptance, when triggered, is not a guarantee of crawling or indexing.
+
+
+## 19 November 2026 — CI passed; domain confirmation required
+
+- PR #9 CI #810 passed on tested head `df6a5d20918c04be131ad3519dc7c2a0a0e0d353`. 25 guides / 100 products; distribution and smoke checks passed; 28 axe routes with zero violations and 27 incomplete contrast checks; five Lighthouse samples completed; npm audit zero vulnerabilities.
+- The release branch's all-25 approved/published status is prepared but not merged. Do not merge or send IndexNow until the owner confirms whether `smartpickhub.infinityfree.me` or `smartpickhub.pages.dev` is the canonical destination for these 25 guides.
+- The two live domains are separate properties with different guide libraries. The PR #9 IndexNow workflow is hard-coded to Pages.dev; it is not appropriate for InfinityFree without a separate deployment and verification-key setup.
+- Google Search Console sitemap submission and any IndexNow notification remain unconfirmed.

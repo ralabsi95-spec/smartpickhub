@@ -46,6 +46,8 @@ jobs:
           DEPLOYMENT_ENV: preview
       - name: Validate Pinterest RSS and approved-only social distribution artifacts
         run: npm run distribution:check
+        env:
+          DEPLOYMENT_ENV: preview
       - name: Smoke-test generated pages, SEO, JSON-LD and affiliate links
         run: npm run smoke
       - name: Start local preview server

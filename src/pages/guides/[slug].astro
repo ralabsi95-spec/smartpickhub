@@ -82,7 +82,7 @@ const jsonLd = JSON.stringify(structuredData).replace(/</g, '\\u003c');
       <h1>{guide.title}</h1>
       <p class="guide-summary">{guide.summary}</p>
       <p class="guide-meta">Research-led guide · Updated {guide.publishedAt} · US and UK marketplace links</p>
-      {guide.editorialStatus && <p class="disclosure">{guide.editorialStatus}</p>}
+      {guide.editorialStatus && guide.editorialStatus !== 'Approved for publication' && <p class="disclosure">{guide.editorialStatus}</p>}
       {guide.introduction && <p class="guide-introduction">{guide.introduction}</p>}
       <figure class="guide-cover">
         <img src={coverImage} alt={'Original SmartPickHub editorial cover for ' + guide.title} width="720" height="1080" fetchpriority="high" decoding="async" />
@@ -139,12 +139,7 @@ const jsonLd = JSON.stringify(structuredData).replace(/</g, '\\u003c');
                 {product.image.attribution && <> · {product.image.attribution}</>}
               </figcaption>
             </figure>
-          ) : (
-            <div class="product-image-pending" role="note" aria-label="Product photograph not yet verified">
-              <span class="product-image-pending-icon" aria-hidden="true">▧</span>
-              <span><strong>Product photo under verification</strong><small>We will show an image only after confirming its source and usage rights.</small></span>
-            </div>
-          )}
+          ) : null}
           {product.bestFor && <p><strong>Best for:</strong> {product.bestFor}</p>}
           {product.us_identifier || product.uk_identifier ? (
             <div class="early-product-actions">

@@ -100,7 +100,7 @@ if (!liveRobotsResponse.ok || !liveHomeResponse.ok || !liveSitemapResponse.ok) {
 const [liveRobots, liveHome, liveSitemapIndex] = await Promise.all([
   liveRobotsResponse.text(), liveHomeResponse.text(), liveSitemapResponse.text(),
 ]);
-if (/Disallow:\s*\/\s*(?:\\r?\\n|$)/i.test(liveRobots)) skip('the live production robots.txt blocks crawling.');
+if (/Disallow:\s*\/\s*(?:\r?\n|$)/i.test(liveRobots)) skip('the live production robots.txt blocks crawling.');
 if (/<meta[^>]+name=["']robots["'][^>]+content=["'][^"']*noindex/i.test(liveHome)) {
   skip('the live production homepage still contains a noindex directive.');
 }
