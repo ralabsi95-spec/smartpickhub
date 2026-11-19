@@ -1,9 +1,9 @@
 # SmartPickHub – Agent Handoff (READ THIS FIRST)
 
-**Last verified:** 18 November 2026 20:07 UTC; latest branch head `ecc2498386e3ed8012161d3460951fb242ef8bf9`; PR CI #664 passed on this exact SHA  
+**Last verified:** 19 November 2026 06:20 UTC; PR #4 and PR #1 merged; main release-preparation documentation commit `cbc083c5d749515b0050bac88c8272642de4bc94`  
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
-**Working branch:** `automation/bootstrap`  
-**Pull request:** [#1 – Draft Astro foundation and safe content workflow](https://github.com/ralabsi95-spec/smartpickhub/pull/1)  
+**Working branch:** `main` (release preparation); historical implementation branch `automation/bootstrap`  
+**Pull requests:** [#4 – UK Roborock correction](https://github.com/ralabsi95-spec/smartpickhub/pull/4) and [#1 – Astro MVP foundation](https://github.com/ralabsi95-spec/smartpickhub/pull/1) — both merged  
 **Production target (not deployed):** https://smartpickhub.pages.dev/ (Pages project remains disconnected; do not deploy without approval)  
 **Isolated Astro preview:** https://smartpickhub-preview.pages.dev/
 
@@ -940,3 +940,15 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 1. Inspect the latest unique preview `https://866a609e.smartpickhub-preview.pages.dev/` using a reliable raw HTTP response method, capturing the exact homepage and guide HTML head plus response headers; if browser view-source remains stuck, use a different retrieval method.
 2. Diagnose Cloudflare Pages build/output/environment or possible browser inspection mismatch. Do not modify settings speculatively. Keep preview crawl-blocked.
 3. Add a deployed-response verification gate once diagnosis is established. Continue UK-first content and legal product-image sourcing in parallel without repeating the existing catalogue import.
+
+
+## 19 November 2026 — owner-authorized release preparation (latest)
+
+- The owner explicitly requested: “continue and publish online.” This authorizes release preparation and the merges below; it does not mean that a production deployment or indexing has already happened.
+- PR #4 was marked ready and squash-merged into `automation/bootstrap`: merge commit `93626f0f3befa0a6982f208e32022bde7e157e0a`. Its source head `9c9e7c2b8e11ba69efd0f9c717ce5059e672ba71` passed CI #716 / run ID `44468046199`, all 19 substantive steps successful.
+- PR #1 was marked ready and squash-merged into `main`: merge commit `31a7d141169033fd01005543143a03d8715104d8`. No app code was changed during this release-preparation session.
+- Current source on `main` still intentionally contains `noindex, nofollow` in `src/layouts/Layout.astro` and `Disallow: /` in `public/robots.txt`. Do not remove these yet: a previous preview inspection reported conflicting deployed HTML; raw response verification is still required before any indexing change.
+- Catalogue state is unchanged: 25 guides / 100 products; 0 guides approved for publication; 0 approved product images. All guides remain draft status. Do not describe them as editorially approved or as hands-on tested.
+- Production deployment is NOT complete. The approved target `https://smartpickhub.pages.dev/` is recorded as a Cloudflare Pages project disconnected from Git. The separate preview project `smartpickhub-preview` is not production. No Cloudflare production project connection, deployment, DNS change, sitemap submission, IndexNow ping, WordPress change or catalogue re-import occurred.
+- Verified Astro production build settings from the repository: build command `npm run build`; static output directory `dist`; target site in `astro.config.mjs` is `https://smartpickhub.pages.dev` unless overridden by `PUBLIC_SITE_URL`.
+- Next action: owner must connect the existing Cloudflare Pages production project to GitHub repository `ralabsi95-spec/smartpickhub`, branch `main`, using `npm run build` and output `dist`. Then inspect live HTML and response headers on homepage and representative guide routes. Keep indexing blocked until that verification and editorial launch decision are complete.
