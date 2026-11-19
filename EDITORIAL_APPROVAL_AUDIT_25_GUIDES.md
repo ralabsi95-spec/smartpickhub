@@ -1172,3 +1172,10 @@ This batch checked selected manufacturer pages for Wi-Fi 7 routers/mesh, GaN cha
 - BenQ PD2705U: UK source confirms 100–240V built-in supply and 65W USB-C PD; accessories may vary.
 - Sources: https://www.eero.com/en-GB/legal/compliance ; https://www.netgear.com/uk/home/wifi/mesh/rbe773 ; https://www.dell.com/en-gb/shop/u2723qe-monitor/apd/210-bcxk/monitors-monitor-accessories ; https://www.asus.com/me-en/displays-desktops/monitors/proart/proart-display-pa279crv/techspec/ ; https://www.benq.eu/en-uk/monitor/creative-pro/pd2705u/spec.html.
 - No guide status or production content changed; all 25 guides remain drafts.
+
+
+## 19 November 2026 — Garmin X-series source-link correction
+- Commit `39bfea83d6b1216c86473d169d7284f883a1a96f` corrects product-specific evidence links for Garmin X110/X210/X310. The prior shared URL used the Mini 3 part-number path for the X models, despite its comparison content.
+- X110 now links to Garmin's UK X110 page, which confirms UK part number 010-02900-10 and the X-series resolution comparison. X210 and X310 now link to model-specific Currys Business UK listings confirming retail part numbers 010-02859-10 and 010-02860-10; Garmin's UK series comparison remains cited for resolution tier. This avoids substituting regulatory model IDs or Canadian SKUs.
+- Sources: https://www.garmin.com/en-GB/p/1222949/ ; https://business.currys.co.uk/catalogue/cameras-smart-tech/camcorders/dash-cams/garmin-x210-quad-hd-dash-cam-black/N731313W ; https://business.currys.co.uk/catalogue/cameras-smart-tech/camcorders/dash-cams/garmin-x310-4k-ultra-hd-dash-cam-black/N676331W.
+- All guides remain draft; no production or marketing publication.
