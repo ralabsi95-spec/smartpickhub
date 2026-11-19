@@ -1193,3 +1193,8 @@ This batch checked selected manufacturer pages for Wi-Fi 7 routers/mesh, GaN cha
 - CI run #781 completed successfully on older head `89edd10e2ad3df3c5c923aceb1fb8805d0498685`: npm/ Astro checks, import tests, catalogue/affiliate validation, static build, distribution checks, SEO/affiliate smoke tests, axe-core across all catalogue routes, Lighthouse desktop/mobile and representative templates, consolidated report and artifact upload all passed. Artifact `smartpickhub-quality-reports` is retained until 3 December 2026.
 - Current PR head at this checkpoint: `50ecc2ddd389e127fb65df0a7b9850b0b6af6ca6`. Workflow run #794 is pending for that head; no final-head success is claimed until it completes.
 - PR #8 remains open/unmerged. No live-site deployment, guide publication, Pinterest post or IndexNow submission. All 25 guides remain draft. Deferred IndexNow changed/deleted URL detection and durable send/receipt log remain future work.
+
+
+## 19 November 2026 — CI status correction
+- Follow-up check: run #794 (`44515389423`) on head `50ecc2ddd389e127fb65df0a7b9850b0b6af6ca6` is now **cancelled**, not pending. The latest PR head is `9fa3deeb3eccf8c5c179ac9e02ed951eeb57baec`; the commit-run lookup currently returns no workflow run for that exact SHA.
+- Run #781 remains successful only for historical head `89edd10e2ad3df3c5c923aceb1fb8805d0498685`. Do not claim latest-head CI is complete. A supported workflow-dispatch trigger is not exposed through the connected GitHub actions available in this session; next operator step is to trigger/allow a PR quality run for the current head and verify the full job result.
