@@ -1,6 +1,6 @@
 # SmartPickHub – Agent Handoff (READ THIS FIRST)
 
-**Last verified:** 19 November 2026 19:12 UTC; main includes merged PRs #24, #25, #28 and #29 at `d623268d91f893f06510e99b85ee55c39ea0aec2`; new US/global trend plan is being rebased onto this main state.  
+**Last verified:** 19 November 2026 19:15 UTC; main includes merged PRs #24, #25, #28 and #29 at `d623268d91f893f06510d68b85ee55c39ea0aec2`; new US/global trend plan is being rebased onto this main state.  
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `main` (production)  
 **Pull requests:** #24, #25, #28, #29 merged. PR #30's original branch is superseded by a clean rebased continuation; PRs #26/#27 are stale status checkpoints, not merge candidates.  
