@@ -1,6 +1,6 @@
 # Editorial approval audit — 25 SmartPickHub buying guides
 
-Audit date: 19 November 2026. Source: `src/data/products.json` on `main`.
+Audit date: 19 November 2026. Source: `src/data/products.json` on release branch `release/approve-guides-indexing-20261119`.
 
 ## Scope and decision
 
