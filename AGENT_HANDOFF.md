@@ -1054,3 +1054,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Commit: `55aa72e8f21c8edea56b963bb013b6e1bb0f7fb4`.
 - This is a source change on `main`; deployment and live HTML are not yet independently verified. Google ownership has NOT yet been verified. After Cloudflare Pages finishes deploying, return to the Search Console dialog and click VERIFY. Keep this meta tag in place permanently to retain verification.
 - No other SEO, page, catalogue, or hosting settings were changed in this step.
+
+
+## 19 November 2026 — Google Search Console ownership verified
+
+- Owner confirmed successful Google Search Console ownership verification for URL-prefix property `https://smartpickhub.pages.dev/` using the HTML meta-tag method.
+- Screenshot confirms the green “Ownership verified” state and instructs that the verification meta tag must remain in the homepage head. The tag remains in `src/layouts/Layout.astro`; do not remove it.
+- Search Console overview screenshot at verification time showed 1 indexed page and 42 not indexed pages. This is an initial property status, not a failure by itself; inspect the Page indexing reasons before deciding which URLs need action. Do not submit mass individual indexing requests without reviewing canonical/noindex/duplicate/redirect/excluded reasons.
+- Next: open the property, submit `https://smartpickhub.pages.dev/sitemap-index.xml` under Sitemaps, then inspect the Page indexing report and URL Inspection for the homepage plus a small sample of priority buying guides. Record reasons and statuses; indexing requests are not guarantees.
+- No page content, robots settings, DNS, or hosting settings changed in this verification step.
