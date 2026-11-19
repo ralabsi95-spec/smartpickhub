@@ -42,6 +42,8 @@ jobs:
         run: npm run keywords
       - name: Build static preview
         run: npm run build
+        env:
+          DEPLOYMENT_ENV: preview
       - name: Validate Pinterest RSS and approved-only social distribution artifacts
         run: npm run distribution:check
       - name: Smoke-test generated pages, SEO, JSON-LD and affiliate links
