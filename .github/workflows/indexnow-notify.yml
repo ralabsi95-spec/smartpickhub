@@ -1,21 +1,47 @@
 name: IndexNow notification
 
 on:
+  workflow_run:
+    workflows: ["Astro Build and Quality Checks"]
+    types: [completed]
   workflow_dispatch:
     inputs:
       reason:
         description: "Why are URLs being submitted?"
         required: true
-        default: "Initial public launch"
+        default: "Manual production re-notification"
 
 permissions:
   contents: read
 
 jobs:
   notify:
+    if: >-
+      (github.event_name == 'workflow_run' &&
+       github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.head_branch == 'main') ||
+      (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+      - name: Wait for the exact Cloudflare Pages production deployment
+        env:
+          EXPECTED_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
+        run: |
+          for attempt in {1..30}; do
+            deployed_sha=$(curl --fail --silent --show-error https://smartpickhub.pages.dev/deployment.json | jq -r '.commit // empty' || true)
+            if [ "$deployed_sha" = "$EXPECTED_SHA" ]; then
+              echo "Cloudflare Pages is serving $EXPECTED_SHA"
+              exit 0
+            fi
+            echo "Waiting for Cloudflare deployment: expected $EXPECTED_SHA, currently ${deployed_sha:-not available} (attempt $attempt/30)"
+            sleep 60
+          done
+          echo "Cloudflare did not serve the expected commit within 30 minutes."
+          exit 1
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -24,7 +50,9 @@ jobs:
       - run: npm run build
         env:
           PUBLIC_SITE_URL: https://smartpickhub.pages.dev
-      - name: Notify IndexNow after confirming deployed key file
+          EXPECTED_DEPLOYMENT_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
+      - name: Notify IndexNow after verifying live deployment, robots and sitemap
         run: npm run indexnow
         env:
           PUBLIC_SITE_URL: https://smartpickhub.pages.dev
+          EXPECTED_DEPLOYMENT_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
