@@ -1723,3 +1723,15 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - PR #22 passed exact-head CI run #858 (all 23 job steps success) and was merged as `b211f1df1e2f6a677ade31ba9b7e3ccb649c3bc9`. Main matches this SHA. Cloudflare production deployment for the merge SHA remains unverified.
 - No public page, catalogue, affiliate links, crawler settings, WAF, DNS, analytics or Pinterest configuration was changed. No paid service or TinyFish credit used. GSC/GA4/Bing account connections and the owner's model-training preference remain pending for a later desktop session.
 - Next: exact-head CI for the AI-search plan PR; then continue a non-public, evidence-led Tier-1 guide gap review. Once the owner is back at a computer, connect GSC/GA4/Bing and decide training-vs-search preferences before any crawler policy changes.
+
+
+## 19 November 2026 — Product discovery, buyer-intent and million-record scale planning
+
+- Reviewed current OpenSEO SmartPickHub project context, all 24 saved UK keywords, monthly trends, five existing buyer-query SERPs and two new product-category seeds. No previous keyword list was recreated or duplicated.
+- Early existing-guide opportunities: best cordless vacuum cleaner (27,100 estimated monthly searches, KD 8, commercial); front/rear dash cam UK (2,400, KD 9, commercial); robot vacuum/mop UK (1,300, KD 9, commercial); small air fryer UK (1,000, KD 8, commercial).
+- New category candidates: best dehumidifier UK (9,900, KD 15, commercial; compact variant 720/KD 4) and best heated clothes airer (3,600, commercial; KD 0 reported). Both require exact model/source/availability and SERP validation before a guide is proposed. Monthly data shows autumn seasonality and year-on-year declines in some broad terms; do not call these guaranteed rising trends.
+- UK SERPs showed AI Overview and People Also Ask modules for sampled categories, plus popular-product modules. This records SERP features, not SmartPickHub AI citations.
+- AI visibility tracker is not configured. A proposed 8-prompt × 4-engine UK weekly baseline costs an estimated 64 OpenSEO credits (about US$0.064 per weekly run; about US$0.256 per four-run month). Current balance 28 credits; no tracker/schedule activated.
+- OpenSEO project currently has no connected GSC or GA4 account. The GSC property was previously manually verified, but project connector and sitemap diagnostics remain outstanding.
+- Reviewed current static Astro output, 100-record JSON catalogue, dry-run CSV/JSON importer (20 MB / 100,000-row limits), and synthetic keyword universe generator. These are MVP foundations, not a million-record platform.
+- New scale plan document defines opportunity scoring, product/evidence/image lifecycle, AI/search visibility, PostgreSQL/queue/object-storage/edge-delivery target, sitemap sharding, analytics and staged gates. No production data, product, page, image, dependency or hosting setting was changed.
