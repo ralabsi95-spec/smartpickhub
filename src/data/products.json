@@ -1675,7 +1675,7 @@
           ],
           "verdict": "A premium compact option for buyers prioritising detailed front-camera footage.",
           "source": "https://www.garmin.com/en-GB/p/pn/010-02899-10/",
-          "sourceNote": "Garmin UK's official Dash Cam Mini 3 product page includes the manufacturer's X-series comparison: X310 is 4K Ultra HD, 140-degree field of view, built-in Clarity polariser and the same feature family as X110. The Garmin UK comparison page is used here for resolution-tier evidence; exact UK retail part number and bundle for X310 were not exposed in the source captured for this review. Do not treat the EU declaration model identifier A04684 or a Canadian SKU as a UK retail part number.",
+          "sourceNote": "Garmin UK’s official X-series comparison confirms 4K Ultra HD and 140° field of view. UK retail part number 010-02860-10 is corroborated by AO Business UK’s Garmin listing; this retailer evidence identifies the UK SKU, while Garmin’s official page remains the specification source. Do not use regulatory model A04684 or Canadian part number 010-02860-00 as the UK retail SKU. Check exact in-box package and microSD (not assumed included). Sources: https://www.garmin.com/en-GB/p/pn/010-02899-10/ ; https://www.ao-business.com/l/home_and_outdoors-garmin_in_stock/1-6-270/676/",
           "availabilityNote": "UK retail SKU and exact in-box bundle remain to be confirmed from a UK X310 product listing. The resolution tier is manufacturer-confirmed. Verify local microSD, power cable, parking-mode accessories and warranty before purchase."
         },
         {
@@ -1691,7 +1691,7 @@
           ],
           "verdict": "Compare with the X310 if 4K is not essential to the buyer's requirements.",
           "source": "https://www.garmin.com/en-GB/p/pn/010-02899-10/",
-          "sourceNote": "Garmin UK's official Dash Cam Mini 3 product page includes the manufacturer's X-series comparison: X210 is 1440p, 140-degree field of view and the same feature family as X110. A UK Declaration of Conformity identifies regulatory model family B04684; that is not a retail part number. Exact UK retail SKU and bundle remain unconfirmed.",
+          "sourceNote": "Garmin UK’s official X-series comparison confirms 1440p and 140° field of view. UK retail part number 010-02859-10 is corroborated by AO Business UK’s Garmin listing. Do not substitute regulatory model family B04684 or the dealer dummy SKU for a retail SKU. Check exact in-box package and microSD (not assumed included). Sources: https://www.garmin.com/en-GB/p/pn/010-02899-10/ ; https://www.ao-business.com/l/home_and_outdoors-garmin_in_stock/1-6-270/676/",
           "availabilityNote": "Do not use B04684 as a retail SKU. Confirm the UK retail part number, package, microSD, power cable, parking-mode accessories and warranty before purchase."
         },
         {
@@ -1707,7 +1707,7 @@
           ],
           "verdict": "A simpler X-series candidate when core recording matters more than flagship specifications.",
           "source": "https://www.garmin.com/en-GB/p/pn/010-02899-10/",
-          "sourceNote": "Garmin UK's official Dash Cam Mini 3 product page includes the manufacturer's X-series comparison: X110 is 1080p with 140-degree field of view, 2.4-inch LCD and built-in Clarity polariser. The same page distinguishes X210 1440p and X310 4K. Exact UK retail SKU and package details still need verification.",
+          "sourceNote": "Garmin UK’s official X-series comparison confirms 1080p, 140° field of view and 2.4-inch display. UK retail part number 010-02900-10 is corroborated by AO Business UK’s Garmin listing. Check exact in-box package and microSD (not assumed included). Sources: https://www.garmin.com/en-GB/p/pn/010-02899-10/ ; https://www.ao-business.com/l/home_and_outdoors-garmin_in_stock/1-6-270/676/",
           "availabilityNote": "Confirm UK retail part number and in-box package, including microSD and power accessories, before purchase."
         },
         {
@@ -2000,8 +2000,8 @@
             "Symmetrical lightweight shapes do not suit every hand; verify dimensions, switches and software compatibility."
           ],
           "verdict": "A premium competitive model to compare by shape and control preference.",
-          "source": "https://www.logitechg.com/en-us/shop/p/pro-x2-superstrike-mouse.910-007700",
-          "sourceNote": "Logitech G's official product page identifies PRO X2 SUPERSTRIKE and its Haptic Inductive Trigger System; verify the precise regional package and software support."
+          "source": "https://www.logitechg.com/en-gb/shop/p/pro-x2-superstrike-mouse",
+          "sourceNote": "Logitech G UK’s product page confirms PRO X2 SUPERSTRIKE and its Haptic Inductive Trigger System (HITS). Logitech Support’s model-specific specification lists 60g weight, HERO 2 sensor, up to 44,000 DPI, 8,000Hz report rate, LIGHTSPEED 2, and up to 90 hours of constant-motion battery life. Regional product number varies; use the retailer’s exact regional SKU and bundle. Sources: https://www.logitechg.com/en-gb/shop/p/pro-x2-superstrike-mouse ; https://support.logi.com/hc/en-sg/articles/35026563405591-Specification-PRO-X2-SUPERSTRIKE"
         },
         {
           "name": "Logitech PRO X SUPERLIGHT 2 LIGHTSPEED Wireless Gaming Mouse",
