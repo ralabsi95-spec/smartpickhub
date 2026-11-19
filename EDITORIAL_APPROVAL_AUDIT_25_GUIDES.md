@@ -1147,3 +1147,11 @@ This batch checked selected manufacturer pages for Wi-Fi 7 routers/mesh, GaN cha
 - Sources: https://www.anker.com/eu-en/products/a2688-anker-prime-charger-100w-3-ports-gan ; https://app.anker.com/uk/products/a83b5-anker-prime-thunderbolt5-docking-station-14-in-1-140w-8k ; https://www.kensington.com/p/products/device-docking-connectivity-products/laptop-docks-usb-accessories/sd5780t-thunderbolt-4-dual-4k-docking-station-with-96w-pd-winmac/ ; https://plugable.com/products/tbt4-udz ; https://kb.plugable.com/en_US/what-are-the-display-output-capabilities-for-the-tbt4-udz ; https://helpcenter.eu.jackery.com/hc/en-gb/articles/52682971950363-Explorer-300-Plus-Basic-Information ; https://faq.jackery.com/hc/en-us/articles/52303549157787-Explorer-300-Plus-Basic-Information.
 - No guide approval state changed. All 25 guides remain drafts. No production, Pinterest or IndexNow action was performed.
 - CI #778 was running against the previous documentation head `2137a66d` and therefore does not validate this product-data update. A new workflow is expected for the latest head; do not report success until it completes.
+
+
+## 19 November 2026 — UGREEN charger power-allocation clarification
+- Commit `88ee74da154158c7c371b7145148801519d995c8` updates UGREEN Nexode 100W SKU 40749 and Nexode 200W SKU 35539.
+- SKU 40749: UK manufacturer listing confirms 100–240V, 50/60Hz input, 3×USB-C + 1×USB-A and 100W maximum total output. The public spec does not provide a complete simultaneous allocation table; do not imply 100W to every device at once or repeat the marketing shorthand “all full speed” as a guarantee.
+- SKU 35539: EU manufacturer listing confirms 100–240V, 50/60Hz input, 200W combined maximum and per-port ceilings of USB-C1 140W, USB-C2 100W, USB-C3 30W, USB-A 22.5W. These port maxima are not additive; combined output remains capped at 200W. Confirm the supplied UK mains lead/plug.
+- Sources: https://uk.ugreen.com/products/ugreen-nexode-100w-usb-c-gan-charger-4-ports-wall-charger ; https://eu.ugreen.com/en-es/pages/nexode.
+- No guide status or production content changed; all 25 guides remain drafts.
