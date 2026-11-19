@@ -1156,3 +1156,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Guides 4–8 remain provisional and **not approved** because not all four product records in each guide have been fully rechecked, and some port-power, regional model, compatibility or subscription claims remain unresolved.
 - No product data, editorial statuses, publication statuses, production pages, Pinterest feeds or production settings changed. All 25 guides remain drafts.
 - Next batch: continue official-source verification for guides 9–13, recording only directly supported facts and holds. After product-level verification, revise proven errors on the isolated review branch, fix the validator to permit approved-but-unpublished guides while preserving distribution gates, and run CI. Deferred IndexNow changed-URL/deletion/receipt-log engineering remains deferred.
+
+
+## 19 November 2026 — editorial source review batch 3 (guides 9–13)
+
+- Checked selected official sources for portable SSDs, air fryers, cordless vacuums, cordless drills and robot vacuum/mop products; evidence and open questions are detailed in `EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md`.
+- Confirmed Samsung T9 20Gbps/2,000MB/s/122g/AES-256/3m claims; Kingston XS2000 20Gbps/2,000MB/s/IP55 and an important Mac/Thunderbolt/USB4 interface limitation; Miele Triflex HX2 UK runtime/weight/charging figures; Samsung Bespoke Jet AI UK product page says up to 1 hour, up to 2 hours with spare battery, conflicting with the catalogue's existing 160-minute claim; Roborock Saros 10R slim body/StarSight/Dock details; Roborock UK Qrevo Edge 2 and Qrevo 2 Pro advertised 25,000Pa.
+- Guides 9–13 remain **not approved**: several product pages remain unchecked; guide 11 has a concrete Samsung runtime discrepancy; guide 10 retains Ninja/COSORI regional checks; guide 12 needs full DEWALT model-pair checks; guide 13 requires exact regional SKU/dock distinctions.
+- No product records, editorialStatus, publicationStatus, production pages or distribution settings changed. All 25 guides remain drafts.
+- Next batch: continue official-source verification for guides 14–18. Keep all claims manufacturer-attributed, distinguish regional variants, and do not approve until every product in a guide has passed the evidence gates. Deferred IndexNow changed-URL/deletion/receipt-log engineering remains deferred.
