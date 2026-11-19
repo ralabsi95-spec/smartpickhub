@@ -14,6 +14,8 @@ The 2 December review deadline and temporary exception are historical and no lon
 
 ## Historical finding and exception record (18 November 2026)
 
+> The following details describe the decision as it stood on 18 November. The advisory was withdrawn on 18 November; the historical severity, affected range and temporary controls below are not the current advisory status.
+
 - Advisory: [GHSA-fc5q-39xc-vjpf](https://github.com/advisories/GHSA-fc5q-39xc-vjpf)
 - CVE: CVE-2026-112366
 - Package: `picomatch`
@@ -23,7 +25,7 @@ The 2 December review deadline and temporary exception are historical and no lon
 - Published patched version: **None identified in the reviewed GitHub advisory or upstream issue as of 18 November 2026**.
 - Upstream discussion: [picomatch issue #247](https://github.com/micromatch/picomatch/issues/247) remains open; no published fix was identified.
 
-**CI #656 update (18 November 2026, 19:31 UTC):** the raw `npm audit --json` artifact reports zero vulnerabilities. This is a clean result from npm's current audit feed, but it does not prove the installed `picomatch` copies are patched: the GitHub advisory currently has incomplete package/version metadata and the inspected project lockfile still resolves the versions above. Keep this record open as an advisory watch and temporary owner-approved risk acceptance; do not describe the source package as remediated or infer a clean software composition analysis from this one npm audit result.
+**CI #656 update (18 November 2026, 19:31 UTC):** the raw `npm audit --json` artifact reports zero vulnerabilities. This is a clean result from npm's current audit feed, but it does not prove the installed `picomatch` copies are patched: the GitHub advisory currently has incomplete package/version metadata and the inspected project lockfile still resolves the versions above. At that historical checkpoint the record was kept open as a temporary owner-approved risk acceptance. That decision was superseded by the advisory withdrawal on 18 November.
 
 ## Approved scope and limits
 
