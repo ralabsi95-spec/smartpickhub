@@ -998,3 +998,13 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - The template currently renders an early affiliate CTA above the verdict and another affiliate CTA after manufacturer source/limitations; the screenshot confirms the early CTA. Review the lower card section to ensure the manufacturer source and second CTA are clear and not confusing or excessively repetitive.
 - No product image was approved, no product data or affiliate identifier was changed, no editorial approval/indexing/DNS change was made, and no product re-import occurred.
 - Next action: inspect the lower portion of this first product card (manufacturer source, model caveats and second CTA), then click-test the Amazon UK search destination in a controlled way and verify its tracking tag without purchasing.
+
+
+## 19 November 2026 — lower first product card and second product transition visually verified
+
+- Owner screenshot of the production Home Office Ergonomics guide confirms the lower portion of product 01 (Logitech MX Vertical Advanced Ergonomic Mouse): manufacturer-source label and official specifications link with supporting source note; a clear statement that Amazon links open marketplace search results for the model phrase rather than a verified direct listing; paid-link disclosure; and the second pair of US/UK Amazon search buttons.
+- Screenshot also shows product 02 (Logitech Lift Vertical Ergonomic Mouse) beginning immediately after product 01, with its own image-rights placeholder, Best for text, paid-link label and first pair of marketplace search buttons.
+- This verifies the page template's two CTA placements per product: an early CTA near the product introduction and a second CTA after detailed pros/cons and manufacturer-source context. This may help readers who decide early or after reading, but mobile usability and whether the repetition feels excessive still need testing. Do not remove either CTA without evidence and owner approval.
+- Manufacturer source attribution and marketplace-search caveat are visible and helpful; they distinguish manufacturer documentation from retailer availability and prevent search URLs being mistaken for direct product listings.
+- No code, product records, image approvals, affiliate IDs, editorial status, DNS, indexing or sitemap settings were changed. No purchases or live Amazon link click-tests were performed.
+- Next action: complete a mobile-width visual check of one guide and inspect the bottom of the remaining product card for manufacturer source/disclosure consistency; then test a generated Amazon UK search URL without purchasing and verify the tracking tag.
