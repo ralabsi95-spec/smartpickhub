@@ -5,13 +5,14 @@ const { title, description = 'Practical buying guides and product comparisons fo
 const canonicalUrl = canonical ?? Astro.url.href;
 const socialImageUrl = socialImage ? new URL(socialImage, Astro.site).toString() : undefined;
 const pinterestVerifyCode = import.meta.env.PINTEREST_VERIFY_CODE?.trim();
+const isPreviewBuild = process.env.DEPLOYMENT_ENV === 'preview' || (Boolean(process.env.CF_PAGES_BRANCH) && process.env.CF_PAGES_BRANCH !== 'main') || Astro.site?.hostname !== 'smartpickhub.pages.dev';
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="robots" content={isPreviewBuild ? "noindex, nofollow" : "index, follow, max-image-preview:large"} />
     <meta name="google-site-verification" content="zH0EHPDRo5BI_WTJ_OnnD-aDAMc8U0ZORttx4Xs4TCs" />
     {pinterestVerifyCode && <meta name="p:domain_verify" content={pinterestVerifyCode} />}
     <title>{title}</title>
