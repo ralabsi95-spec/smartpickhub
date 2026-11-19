@@ -190,7 +190,7 @@
           "verdict": "A small power-station option for camping and portable electronics. Choose the correct regional version and check the appliance's continuous and startup power needs.",
           "source": "https://helpcenter.eu.jackery.com/hc/en-gb/articles/52682971950363-Explorer-300-Plus-Basic-Information",
           "sourceNote": "Jackery Europe identifies model JE-300B, 288Wh LiFePO4 battery, approximately 3.75kg weight and regional AC specifications.",
-          "availabilityNote": "Jackery's official US and Europe support pages show the same JE-300B model code but different regional electrical specifications: US AC input 100–120V and AC output 100V/60Hz; Europe AC input 220–240V/50Hz. Verify the exact country-specific package and output voltage before purchase. Sources: https://faq.jackery.com/hc/en-us/articles/52303549157787-Explorer-300-Plus-Basic-Information and https://helpcenter.eu.jackery.com/hc/en-gb/articles/52682971950363-Explorer-300-Plus-Basic-Information."
+          "availabilityNote": "Jackery's official US and Europe support pages show model JE-300B but materially different electrical variants: US AC input 100–120V and AC output 100V/60Hz; Europe AC input 220–240V and AC output 230V/50Hz. Select the correct regional unit for the destination country; do not assume the same model code means the same AC voltage. Confirm seller bundle and warranty. Sources: https://faq.jackery.com/hc/en-us/articles/52303549157787-Explorer-300-Plus-Basic-Information and https://helpcenter.eu.jackery.com/hc/en-gb/articles/52682971950363-Explorer-300-Plus-Basic-Information."
         }
       ],
       "buyingChecklist": [
@@ -321,7 +321,8 @@
           ],
           "verdict": "A mesh-system candidate for larger or multi-room homes where several access points and multi-gig wired connections are useful. Verify the exact regional package, node count and firmware feature set.",
           "source": "https://www.tp-link.com/us/deco-mesh-wifi/product-family/deco-be63/",
-          "sourceNote": "TP-Link's official BE63 product page documents tri-band Wi-Fi 7, BE10000 radio rates and four 2.5Gbps WAN/LAN ports per unit for the listed configuration. TP-Link UK support lists hardware revisions V3.60, V2.60 and V2 and explicitly warns that model and hardware-version availability varies by region. Do not assume the US datasheet's exact hardware or radio configuration applies to every UK kit; check the hardware-version label and matching regional support page before purchase: https://www.tp-link.com/uk/support/download/deco-be63/."
+          "sourceNote": "TP-Link's official BE63 product page documents tri-band Wi-Fi 7, BE10000 radio rates and four 2.5Gbps WAN/LAN ports per unit for the listed configuration. TP-Link UK support lists hardware revisions V3.60, V2.60 and V2 and explicitly warns that model and hardware-version availability varies by region. Do not assume the US datasheet's exact hardware or radio configuration applies to every UK kit; check the hardware-version label and matching regional support page before purchase: https://www.tp-link.com/uk/support/download/deco-be63/.",
+          "availabilityNote": "TP-Link's UK support page lists regional hardware versions for Deco BE63 and explicitly warns that model and hardware-version availability varies by region. The cited US datasheet is useful for feature context but is not proof that a US retail unit, radio configuration, firmware branch or included power adapter is identical to a UK unit. For UK buyers, select the UK-market hardware revision shown on TP-Link's UK support/download page and verify the adapter rating and exact pack contents on the retailer listing. UK support: https://www.tp-link.com/uk/support/download/deco-be63/"
         },
         {
           "name": "ASUS RT-BE96U Wi-Fi 7 Router",
@@ -359,7 +360,8 @@
           ],
           "verdict": "A practical ecosystem-led option for households that value app-based setup and mesh expansion. Confirm the local model, supported radio channels and any subscription features required.",
           "source": "https://eero.com/en-GB/shop/eero-pro-7/buy",
-          "sourceNote": "eero's UK product page identifies Pro 7 as a tri-band Wi-Fi 7 system, supports internet plans up to 5Gbps through two auto-sensing 5GbE ports, lists wireless speeds up to 3.9Gbps and coverage up to 190m² per unit, and supports 200+ devices. The page offers different pack sizes; verify selected pack contents, local power adapter/plug and regional radio availability. Optional eero Plus services are subscription-based."
+          "sourceNote": "eero's UK product page identifies Pro 7 as a tri-band Wi-Fi 7 system, supports internet plans up to 5Gbps through two auto-sensing 5GbE ports, lists wireless speeds up to 3.9Gbps and coverage up to 190m² per unit, and supports 200+ devices. eero's UK safety/compliance page specifies a 27W USB-C power adapter with 100–240V AC, 50/60Hz input. Verify the supplied UK plug and selected pack contents on the retailer listing. Optional eero Plus services are subscription-based. Official compliance: https://www.eero.com/en-GB/legal/compliance",
+          "availabilityNote": "The Pro 7 power adapter is specified for universal 100–240V AC, 50/60Hz input by eero's UK compliance page, so the electrical input range is suitable for UK mains. The compliance page does not itself guarantee which physical plug/adapter is included in every marketplace bundle; check the exact UK retail pack. Source: https://www.eero.com/en-GB/legal/compliance"
         },
         {
           "name": "NETGEAR Orbi 770 Series Wi-Fi 7 Mesh System (RBE773)",
@@ -378,7 +380,8 @@
           ],
           "verdict": "A mesh-kit candidate for larger properties where multiple access points are needed. Confirm the exact RBE773 regional pack, included satellite count, local Wi-Fi channel support and optional subscription costs.",
           "source": "https://www.netgear.com/uk/home/wifi/mesh/rbe773",
-          "sourceNote": "NETGEAR's UK RBE773 page identifies the Orbi 770 Series Wi-Fi 7 3-pack (router plus two satellites), tri-band speeds up to 11Gbps, coverage claims up to 6,750 sq. ft. and 2.5Gbps multi-gig connectivity. Coverage and throughput are manufacturer estimates; confirm the exact pack contents, regional radio settings and any optional Armor/parental-control subscription before purchase."
+          "sourceNote": "NETGEAR's UK RBE773 page identifies the Orbi 770 Series Wi-Fi 7 3-pack (router plus two satellites), tri-band speeds up to 11Gbps, coverage claims up to 6,750 sq. ft. and 2.5Gbps multi-gig connectivity. Coverage and throughput are manufacturer estimates; confirm the exact pack contents, regional radio settings and any optional Armor/parental-control subscription before purchase.",
+          "availabilityNote": "NETGEAR's UK page confirms the RBE773 3-pack contains one RBE771 router, two RBE770 satellites and three power adapters. The product page does not state the adapters' AC input range in the captured specifications; verify the rating label on the supplied UK adapters and exact regional pack before purchase. Do not infer electrical input voltage solely from the UK page URL. Official UK product page: https://www.netgear.com/uk/home/wifi/mesh/rbe773"
         }
       ],
       "buyingChecklist": [
@@ -414,8 +417,8 @@
             "A suitable E-Marker USB-C cable is recommended for 100W charging"
           ],
           "verdict": "A compact option for users who need to charge a laptop and smaller devices from one wall outlet. Check the port power split, plug format and cable rating before purchase.",
-          "source": "https://www.anker.com/products/a2688-anker-prime-charger-100w-3-ports-gan",
-          "sourceNote": "Anker's A2688 product specifications list 100W maximum output, two USB-C ports, one USB-A port, 100–240V input and 89W maximum when all three ports are used."
+          "source": "https://www.anker.com/eu-en/products/a2688-anker-prime-charger-100w-3-ports-gan",
+          "sourceNote": "Anker's official EU A2688 page confirms 100W maximum from one USB-C port, two USB-C plus one USB-A, 100W max when two ports are used, and 89W max across all three ports. Use the upper USB-C port for laptop charging when both USB-C ports are occupied. Input is 100–240V; check the UK plug supplied by the seller. Charging cables are not included; an E-Marker cable is recommended for 100W. Source: https://www.anker.com/eu-en/products/a2688-anker-prime-charger-100w-3-ports-gan."
         },
         {
           "name": "UGREEN Nexode 100W 4-Port Charger — SKU 40749",
@@ -434,7 +437,8 @@
           ],
           "verdict": "A useful multi-port comparison candidate for a shared desk or travel bag. Confirm the actual port-by-port power allocation and regional listing before relying on it for a high-wattage laptop.",
           "source": "https://uk.ugreen.com/products/ugreen-nexode-100w-usb-c-gan-charger-4-ports-wall-charger",
-          "sourceNote": "UGREEN UK lists SKU 40749, three USB-C plus one USB-A port, 100W total output, 100–240V input and supported charging protocols."
+          "sourceNote": "UGREEN UK lists SKU 40749, three USB-C plus one USB-A port, 100W total output, 100–240V input and supported charging protocols.",
+          "availabilityNote": "UGREEN UK lists SKU 40749 with universal 100–240V, 50/60Hz input, three USB-C ports and one USB-A port, and 100W maximum total output. The 100W figure is the charger's overall ceiling, not 100W guaranteed to every connected device simultaneously; actual USB-C/USB-A allocation depends on which ports are used and the connected devices. The public specification page does not provide a complete simultaneous multi-port power-allocation table, so do not promise four devices each receive full rated power. Confirm the exact UK plug supplied by the retailer. Official UK specifications: https://uk.ugreen.com/products/ugreen-nexode-100w-usb-c-gan-charger-4-ports-wall-charger"
         },
         {
           "name": "Belkin BoostCharge Pro 200W 4-Port USB-C GaN Charger — WCH015",
@@ -472,7 +476,8 @@
           ],
           "verdict": "A powerful multi-device charging station candidate for a home office. Compare the exact regional version and its port-sharing table against the devices you intend to charge.",
           "source": "https://eu.ugreen.com/en-ch/pages/nexode",
-          "sourceNote": "UGREEN's EU Nexode specification table lists SKU 35539, 200W maximum, four ports, USB-C1 up to 140W, USB-C2 up to 100W and approximate 502g weight."
+          "sourceNote": "UGREEN's EU Nexode comparison identifies SKU 35539, 100–240V~ 50/60Hz 3A max input, 200W maximum combined output, three USB-C ports and one USB-A port. Individual port maxima are USB-C1 140W, USB-C2 100W, USB-C3 30W and USB-A 22.5W; these are port-specific ceilings, not additive simultaneous output. The charger's combined output remains capped at 200W, with power allocation depending on the ports in use. Official EU specifications: https://eu.ugreen.com/en-es/pages/nexode",
+          "availabilityNote": "The EU specification lists universal 100–240V~ 50/60Hz input, but check the supplied mains lead/plug for the UK retailer and use an appropriate UK-rated lead where needed. Do not add the individual port maxima (140W + 100W + 30W + 22.5W) as simultaneous power: the unit is rated 200W maximum combined output. Port allocation changes with the connected devices and active ports. Official specification: https://eu.ugreen.com/en-es/pages/nexode"
         }
       ],
       "buyingChecklist": [
@@ -602,8 +607,8 @@
             "Confirm regional SKU, included cable and exact port configuration"
           ],
           "verdict": "A productivity-oriented monitor for compatible laptops where display, data and charging over one USB-C connection simplify a desk. Verify the laptop's power needs and display-output support.",
-          "source": "https://www.dell.com/en-us/shop/dell-ultrasharp-27-4k-usb-c-hub-monitor-u2723qe/apd/210-bdpf/monitors-monitor-accessories",
-          "sourceNote": "Dell's official U2723QE listing documents 27-inch 4K at 60Hz, IPS Black, USB-C hub, 90W Power Delivery and display connectivity."
+          "source": "https://www.dell.com/en-uk/shop/dell-ultrasharp-27-4k-usb-c-hub-monitor-u2723qe/apd/210-bcxk/",
+          "sourceNote": "Dell's official UK listing for U2723QE SKU 210-BCXK documents 27-inch 4K at 60Hz, USB-C hub with up to 90W Power Delivery, integrated Ethernet and included power/USB/display cables. Dell UK specifies AC 100–240V, 50/60Hz input. Confirm exact seller SKU and package. Source: https://www.dell.com/en-uk/shop/dell-ultrasharp-27-4k-usb-c-hub-monitor-u2723qe/apd/210-bcxk/"
         },
         {
           "name": "ASUS ProArt Display PA279CRV 27-inch 4K HDR Monitor",
@@ -621,8 +626,8 @@
             "Check regional SKU, USB-C cable and host-device compatibility"
           ],
           "verdict": "A creator-focused option when wide colour-gamut coverage and high USB-C power delivery matter. Match the monitor's colour workflow to the software and calibration process you use.",
-          "source": "https://www.asus.com/displays-desktops/monitors/proart/proart-display-pa279crv/",
-          "sourceNote": "ASUS official product information lists 27-inch 4K, 99% DCI-P3, 99% Adobe RGB, Delta E below 2 and USB-C 96W Power Delivery."
+          "source": "https://www.asus.com/me-en/displays-desktops/monitors/proart/proart-display-pa279crv/techspec/",
+          "sourceNote": "ASUS official regional specifications list 27-inch 4K, 99% DCI-P3, 99% Adobe RGB, Delta E below 2, USB-C 96W Power Delivery and AC input 100–240V, 50/60Hz. Accessories and power cord can vary by region; check the exact local package. Source: https://www.asus.com/me-en/displays-desktops/monitors/proart/proart-display-pa279crv/techspec/"
         },
         {
           "name": "BenQ DesignVue PD2705U 27-inch 4K Designer Monitor",
@@ -640,8 +645,8 @@
             "Check the exact regional package and cable contents"
           ],
           "verdict": "A practical design-workflow candidate for users who value sRGB/Rec.709 coverage, KVM and USB-C docking. Confirm that 65W is sufficient for the connected laptop.",
-          "source": "https://www.benq.com/en-us/monitor/creative-pro/pd2705u/spec.html",
-          "sourceNote": "BenQ's official US specifications list 27-inch 4K IPS, 99% sRGB/Rec.709, 65W USB-C PD, KVM, PIP/PBP and ergonomic adjustments."
+          "source": "https://www.benq.eu/en-uk/monitor/creative-pro/pd2705u/spec.html",
+          "sourceNote": "BenQ's official UK specifications list 27-inch 4K IPS, 99% sRGB/Rec.709, 65W USB-C Power Delivery, KVM, PIP/PBP and built-in power supply rated 100–240V. Cable/accessory contents may vary by region. Source: https://www.benq.eu/en-uk/monitor/creative-pro/pd2705u/spec.html"
         },
         {
           "name": "Dell 27 4K USB-C Hub Monitor P2723QE",
@@ -715,8 +720,8 @@
             "Check the exact display modes and macOS/Windows compatibility for the laptop before purchase"
           ],
           "verdict": "A forward-looking option for compatible Thunderbolt 5 systems. It is unlikely to be a sensible upgrade for a laptop limited to basic USB-C or older Thunderbolt; verify host support first.",
-          "source": "https://www.anker.com/products/a83b5-anker-prime-thunderbolt5-docking-station-14-in-1-140w-8k",
-          "sourceNote": "Anker's official product specification lists Thunderbolt 5, 140W upstream power, downstream ports, display output selection, Ethernet and OS compatibility."
+          "source": "https://app.anker.com/uk/products/a83b5-anker-prime-thunderbolt5-docking-station-14-in-1-140w-8k",
+          "sourceNote": "Anker UK identifies the A83B5 Thunderbolt 5 dock and 140W maximum upstream PD. The dock supports one display up to 8K60 or two up to 6K+4K60 on compatible hosts; HDMI 2.1 and DP 2.1 are alternatives, not simultaneous. Windows USB-C Alt Mode hosts are limited to one external display; base M1/M2/M3 Apple Silicon Macs are limited to one; Mac M1/M2/M3 Pro/Max and M4 models can support two. Requires Windows 10/11 or macOS 15+, Thunderbolt 4/5 host; no Thunderbolt 3, Linux or ChromeOS support. Confirm host compatibility before purchase. Source: https://app.anker.com/uk/products/a83b5-anker-prime-thunderbolt5-docking-station-14-in-1-140w-8k."
         },
         {
           "name": "Kensington SD5780T Thunderbolt 4 Dock",
@@ -735,7 +740,7 @@
           ],
           "verdict": "A practical dock for users who need 96W charging and a mix of HDMI, Thunderbolt and 2.5Gb Ethernet. Check the manufacturer's compatibility table, especially for MacBook chip variants.",
           "source": "https://www.kensington.com/p/products/device-docking-connectivity-products/laptop-docks-usb-accessories/sd5780t-thunderbolt-4-dual-4k-docking-station-with-96w-pd-winmac/",
-          "sourceNote": "Kensington's official product page documents 96W PD, Thunderbolt 4, HDMI 2.1, Ethernet and host-dependent monitor limitations."
+          "sourceNote": "Kensington's official SD5780T page confirms 96W PD, Thunderbolt 4, HDMI 2.1, three downstream TB4 ports, 2.5Gb Ethernet and three-year limited warranty. Dual 4K/60Hz or supported dual 6K/60Hz requires compatible host/monitor DSC and DP 1.4 HBR3; base M1/M2/M3 MacBooks and USB-C Alt Mode-only hosts support one external display. Do not promise dual monitors without checking the host. Source: https://www.kensington.com/p/products/device-docking-connectivity-products/laptop-docks-usb-accessories/sd5780t-thunderbolt-4-dual-4k-docking-station-with-96w-pd-winmac/."
         },
         {
           "name": "Plugable TBT4-UDZ Thunderbolt 4 Dock",
@@ -754,7 +759,7 @@
           ],
           "verdict": "A flexible option for mixed peripheral and display setups, especially where the extra video outputs are useful. Confirm the exact laptop's display architecture before assuming all outputs can be used.",
           "source": "https://plugable.com/products/tbt4-udz",
-          "sourceNote": "Plugable's official product page documents port count, 100W/98W charging, 2.5Gb Ethernet, compatibility and display-output caveats."
+          "sourceNote": "Plugable's official TBT4-UDZ page confirms 16 ports, 100W advertised/98W certified host charging and 2.5Gb Ethernet. Its support article clarifies display support: compatible Thunderbolt 4/USB4 Windows systems with DP 1.4 HBR3 DSC may drive up to four 4K60 displays; base M1/M2 Macs are limited to one external display; M1/M2/M3/M4 Pro/Max and M4/M5 supported Macs can drive two. USB-C-only hosts require DP Alt Mode and have lower display limits; USB-C monitors, Linux and ChromeOS are not supported. Confirm exact laptop GPU/USB-C capabilities before buying. Sources: https://plugable.com/products/tbt4-udz ; https://kb.plugable.com/en_US/what-are-the-display-output-capabilities-for-the-tbt4-udz."
         }
       ],
       "buyingChecklist": [
@@ -1009,19 +1014,20 @@
           "us_identifier": "Samsung Bespoke Jet AI Cordless Stick Vacuum VS28C9762UK/AA",
           "uk_identifier": "Samsung Bespoke Jet AI Cordless Stick Vacuum VS28C9784QK/EU",
           "pros": [
-            "Samsung UK lists 280 W for model VS28C9784QK/EU; the US model VS28C9762UK/AA is specified as 280 AW. These differently expressed regional specifications must not be compared as the same unit.",
-            "All-in-One Clean Station empties the dustbin and recharges the vacuum",
-            "AI cleaning mode uses floor sensing to adjust cleaning behaviour",
-            "UK model family documentation lists removable batteries and up to 160 minutes using two batteries"
+            "Samsung specifies 280 W maximum suction power for UK model VS28C9784QK/EU; the US model's 280 AW figure uses a different unit and should not be compared directly.",
+            "The All-in-One Clean Station empties the dustbin and recharges the vacuum.",
+            "AI Cleaning Mode adjusts cleaning behaviour for different floor types.",
+            "Samsung states up to 160 minutes using two batteries, at the minimum power level with a non-motorised tool attached."
           ],
           "cons": [
-            "The Clean Station needs additional floor space and uses disposable dust bags",
-            "The 160-minute UK claim uses two batteries; US documentation for its regional model lists up to 100 minutes in minimum mode",
-            "Runtime falls sharply at higher power settings, so headline figures should not be treated as typical powered-floorhead runtime"
+            "The Clean Station needs additional floor space and uses disposable dust bags.",
+            "The 160-minute claim is a best-case manufacturer figure with two batteries and a non-motorised tool; powered brushes and higher suction settings reduce runtime.",
+            "The UK and US records are different regional model codes, electrical specifications and bundles; compare their own listings rather than treating them as identical."
           ],
           "verdict": "A premium convenience-focused option if automatic dust emptying matters. Compare the regional model code, number of batteries and included station before deciding; US and UK runtime figures are not directly interchangeable.",
-          "source": "https://www.samsung.com/uk/vacuum-cleaners/bespoke-jet/",
-          "sourceNote": "Samsung UK lists model VS28C9784QK/EU and 280 W suction, with up to 160 minutes using two batteries. Samsung US model VS28C9762UK/AA documentation lists 280 AW, 120 V / 60 Hz and up to 100 minutes in minimum mode with a non-motorised tool. W and AW are not interchangeable labels; compare each regional model only using its own manufacturer specification and confirm the exact included battery bundle."
+          "source": "https://www.samsung.com/uk/business/vacuum-cleaners/stick/bespoke-jet-plus-210w-all-in-one-clean-station-black-vs28c9784qk-eu/",
+          "sourceNote": "Samsung UK's exact product page for model VS28C9784QK/EU specifies 280 W suction, up to 160 minutes at minimum power with two batteries and a non-motorised tool attached, two detachable batteries, and the All-in-One Clean Station. The UK support page identifies the model code and GB/IE/JE area. Do not compare the UK's 280 W with US 280 AW as if they were equivalent units. Sources: https://www.samsung.com/uk/business/vacuum-cleaners/stick/bespoke-jet-plus-210w-all-in-one-clean-station-black-vs28c9784qk-eu/ and https://www.samsung.com/uk/support/model.VS28C9784QK_EU/.",
+          "availabilityNote": "The US VS28C9762UK/AA is a separate 120 V / 60 Hz regional model with its own runtime and bundle. Do not imply that the UK or US unit is suitable for the other region's mains supply; verify voltage and included batteries before purchase."
         },
         {
           "name": "Miele Triflex HX2 Cordless Stick Vacuum",
@@ -1641,7 +1647,8 @@
           ],
           "verdict": "A compact option when portability matters more than screen area.",
           "source": "https://support.apple.com/en-us/149482",
-          "sourceNote": "Apple's 2026 technical specifications identify the A20 Pro chip, 8.5-inch OLED display, 128GB/256GB/512GB capacities, IP67 rating and 255g Wi-Fi model weight. Storage configuration changes the GPU/Neural Engine core count; check regional cellular bands and included power adapter."
+          "sourceNote": "Apple's 2026 technical specifications identify the A20 Pro chip, 8.5-inch OLED display, 128GB/256GB/512GB capacities, IP67 rating and 255g Wi-Fi model weight. Storage configuration changes the GPU/Neural Engine core count; check regional cellular bands and included power adapter.",
+          "availabilityNote": "Apple's UK store lists the 2026 iPad mini with A20 Pro in Wi-Fi and Wi-Fi + Cellular configurations, including 128GB, 256GB and 512GB options. The cited technical-specification page is Apple's US regional support page; use it for hardware feature details, but verify the exact UK cellular model/band support and UK in-box power-adapter contents against the selected UK configuration before purchase. UK product listing: https://www.apple.com/uk/shop/buy-ipad/ipad-mini/"
         }
       ],
       "buyingChecklist": [
@@ -1673,8 +1680,9 @@
             "High-resolution recording uses more storage; parking features may need additional wiring and setup."
           ],
           "verdict": "A premium compact option for buyers prioritising detailed front-camera footage.",
-          "source": "https://www.garmin.com/en-US/p/1391409/",
-          "sourceNote": "Garmin's exact US product page identifies the Dash Cam X310 as a 4K touchscreen camera with a 140-degree field of view and built-in Clarity polarizer. Confirm the local package, microSD card, power cable and parking-mode accessories for the selected marketplace."
+          "source": "https://business.currys.co.uk/catalogue/cameras-smart-tech/camcorders/dash-cams/garmin-x310-4k-ultra-hd-dash-cam-black/N676331W",
+          "sourceNote": "Garmin's official UK X-series comparison confirms the X310 is the 4K Ultra HD tier with a 140° field of view; the UK retail part number 010-02860-10 and retail bundle details are corroborated by Currys Business UK. Do not use regulatory model A04684 or Canadian retail part number 010-02860-00 as the UK SKU. Confirm exact in-box package and microSD (not assumed included). Sources: https://www.garmin.com/en-GB/p/1222949/ ; https://business.currys.co.uk/catalogue/cameras-smart-tech/camcorders/dash-cams/garmin-x310-4k-ultra-hd-dash-cam-black/N676331W",
+          "availabilityNote": "UK retail part number 010-02860-10 is corroborated by Currys Business UK. Verify exact in-box package, microSD, power cable, parking-mode accessories and warranty before purchase."
         },
         {
           "name": "Garmin Dash Cam X210",
@@ -1688,8 +1696,9 @@
             "Confirm exact recording resolution and feature set for the selected regional package; accessories may be separate."
           ],
           "verdict": "Compare with the X310 if 4K is not essential to the buyer's requirements.",
-          "source": "https://www.garmin.com/en-US/p/1033231/",
-          "sourceNote": "Garmin's exact US product page identifies the Dash Cam X210 as a 1440p camera with a 140-degree field of view and built-in Clarity polarizer. Confirm the local package, microSD card, power cable and parking-mode accessories for the selected marketplace."
+          "source": "https://business.currys.co.uk/catalogue/cameras-smart-tech/camcorders/dash-cams/garmin-x210-quad-hd-dash-cam-black/N731313W",
+          "sourceNote": "Garmin's official UK X-series comparison confirms the X210 is the 1440p tier with a 140° field of view; the UK retail part number 010-02859-10 and model-specific retail details are corroborated by Currys Business UK. Do not substitute regulatory model family B04684 or a dealer dummy SKU for the retail part number. Confirm exact package and microSD (not assumed included). Sources: https://www.garmin.com/en-GB/p/1222949/ ; https://business.currys.co.uk/catalogue/cameras-smart-tech/camcorders/dash-cams/garmin-x210-quad-hd-dash-cam-black/N731313W",
+          "availabilityNote": "UK retail part number 010-02859-10 is corroborated by Currys Business UK. Verify exact in-box package, microSD, power cable, parking-mode accessories and warranty before purchase."
         },
         {
           "name": "Garmin Dash Cam X110",
@@ -1703,8 +1712,9 @@
             "Check the exact resolution tier, GPS availability and included power cable before purchase."
           ],
           "verdict": "A simpler X-series candidate when core recording matters more than flagship specifications.",
-          "source": "https://www.garmin.com/en-US/p/1222949/",
-          "sourceNote": "Garmin's exact US product page identifies the Dash Cam X110 as a 1080p camera with a 140-degree field of view and built-in Clarity polarizer. Confirm the local package, microSD card, power cable and parking-mode accessories for the selected marketplace."
+          "source": "https://www.garmin.com/en-GB/p/1222949/",
+          "sourceNote": "Garmin's official UK X110 page confirms part number 010-02900-10, 1080p video, 140° field of view and 2.4-inch LCD; the same official page compares the X110/X210/X310 resolution tiers. Verify exact package and whether microSD is included before purchase.",
+          "availabilityNote": "Confirm UK retail part number and in-box package, including microSD and power accessories, before purchase."
         },
         {
           "name": "Garmin Dash Cam Mini 3",
@@ -1718,8 +1728,9 @@
             "Small size means checking screenless setup, app workflow and whether GPS/parking functions meet the intended use."
           ],
           "verdict": "A discreet option for buyers who prefer minimal windshield obstruction.",
-          "source": "https://www.garmin.com/en-US/p/1223369/",
-          "sourceNote": "Garmin's exact US product page identifies the Dash Cam Mini 3 as an ultracompact 1080p camera with a 140-degree field of view and built-in Clarity polarizer. Its screenless design differs from the X110; confirm local package, microSD card, power cable and parking-mode accessories."
+          "source": "https://www.garmin.com/en-GB/p/pn/010-02899-10/",
+          "sourceNote": "Garmin UK exact product listing confirms Dash Cam Mini 3 part number 010-02899-10, 1080p video, 140-degree field of view and built-in Clarity polariser. Garmin's same page compares X110, X210 and X310 resolution tiers. Confirm the exact package and whether a microSD card is included before purchase.",
+          "availabilityNote": "UK retail part number 010-02899-10 is manufacturer-confirmed. Some jurisdictions regulate or prohibit dash cams or recording; buyers must check local privacy and road-use rules."
         }
       ],
       "buyingChecklist": [
@@ -1995,8 +2006,8 @@
             "Symmetrical lightweight shapes do not suit every hand; verify dimensions, switches and software compatibility."
           ],
           "verdict": "A premium competitive model to compare by shape and control preference.",
-          "source": "https://www.logitechg.com/en-us/shop/p/pro-x2-superstrike-mouse.910-007700",
-          "sourceNote": "Logitech G's official product page identifies PRO X2 SUPERSTRIKE and its Haptic Inductive Trigger System; verify the precise regional package and software support."
+          "source": "https://www.logitechg.com/en-gb/shop/p/pro-x2-superstrike-mouse",
+          "sourceNote": "Logitech G UK’s product page confirms PRO X2 SUPERSTRIKE and its Haptic Inductive Trigger System (HITS). Logitech Support’s model-specific specification lists 60g weight, HERO 2 sensor, up to 44,000 DPI, 8,000Hz report rate, LIGHTSPEED 2, and up to 90 hours of constant-motion battery life. Regional product number varies; use the retailer’s exact regional SKU and bundle. Sources: https://www.logitechg.com/en-gb/shop/p/pro-x2-superstrike-mouse ; https://support.logi.com/hc/en-sg/articles/35026563405591-Specification-PRO-X2-SUPERSTRIKE"
         },
         {
           "name": "Logitech PRO X SUPERLIGHT 2 LIGHTSPEED Wireless Gaming Mouse",
@@ -2108,7 +2119,8 @@
           ],
           "verdict": "A rugged premium candidate for users who need its larger case and outdoor feature set.",
           "source": "https://www.apple.com/jo/apple-watch-ultra-4/specs/",
-          "sourceNote": "Apple Jordan's model-specific specifications identify the 49mm titanium case, S11 chip, 3,000-nit display and battery estimates of up to 50 hours normal use or 84 hours in Low Power Mode. Actual battery life varies by use and configuration; satellite/cellular features vary by country and model."
+          "sourceNote": "Apple Jordan's model-specific specifications identify the 49mm titanium case, S11 chip, 3,000-nit display and battery estimates of up to 50 hours normal use or 84 hours in Low Power Mode. Actual battery life varies by use and configuration. Cellular model compatibility and carrier support vary by country. Do not attribute Apple Watch Ultra 3 satellite messaging features to Ultra 4; verify any carrier-provided satellite capability against the exact model, carrier and country.",
+          "availabilityNote": "Apple's carrier compatibility documentation lists country-specific Watch model numbers and supported carriers. Do not assume a GPS + Cellular model purchased in one country will support cellular service in another. Apple satellite support documentation currently distinguishes Ultra 3's Apple-provided satellite feature from carrier-provided features; do not market Ultra 4 as having Ultra 3 satellite SOS/messaging."
         },
         {
           "name": "Garmin Forerunner 265",

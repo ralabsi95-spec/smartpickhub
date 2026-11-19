@@ -1129,3 +1129,162 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Fresh manufacturer/source checks confirm: Ninja UK AF400UK is 9.5L, 2470W, 240V, dual-zone, six functions; Ninja US DZ550 is 10qt, 1690W, 120V and includes Smart Cook thermometer. Philips UK NA555/09 is 9L, 2750W, 220–240V, 12 presets, dimensions 444×383×355mm. Instant UK DAF8132BK manual specifies 7.5L total, 2×3.7L, 1700W, 220–240V. COSORI US CAF-DC601-KUS is 6qt/5.7L, 1725W, 120V; UK TurboBlaze 6L regional model has separate manufacturer documentation/manual indicating 220–240V, 1725W, model CAF-DC602-KEUR.
 - Editorial issues to resolve before approval: (1) explicitly identify COSORI UK model as CAF-DC602-KEUR and distinguish it from US CAF-DC601-KUS; (2) retain a clear warning that UK and US versions are not electrically interchangeable; (3) distinguish Philips 12 presets from its 19 cooking methods; (4) avoid displaying transient retailer prices/stock as permanent guide facts; (5) re-check current Ninja page dimensions/weight before publishing because older manufacturer pages and current SharkNinja page surface differing weight/dimension values. No content was changed and no guide was approved.
 - Pinterest first-feed form remains unsaved. No Pins were created. Next: complete and present the first guide's editorial revision for owner approval; after at least one guide is explicitly approved and published through the agreed process, reconnect the five feeds (or connect them individually) and confirm Pinterest accepts them. In parallel, continue Bing and Google sitemap diagnostics without altering production settings without approval.
+
+
+## 19 November 2026 — 25-guide editorial preflight audit
+
+- Owner instructed to continue and approve all 25 buying guides. Approval workflow is authorised, but each guide still must pass factual/editorial gates before its `editorialStatus` is changed; no blind approval or publication.
+- Inspected current `src/data/products.json` on main: exactly 25 guides and 100 product records; every guide currently remains `publicationStatus: draft` and research-led editorial status. Each product record has manufacturer source/sourceNote and US/UK Amazon search identifiers structurally present (live verification of all 100 sources/listings is not yet complete).
+- Created `EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md` on branch `automation/editorial-audit-25-guides-20261119`, commit `e43d2bea02d3c96b982c11fdd18a78cfb130b071`; PR #8: https://github.com/ralabsi95-spec/smartpickhub/pull/8. It inventories all 25 guides/100 products, source references, regional caveat signals, and per-guide approval gates. Documentation only; no catalogue records changed.
+- Live-source spot checks support Apple Watch Series 12/Ultra 4 (2026), iPad mini A20 Pro (2026), Garmin Dash Cam X110/X210/X310/Mini 3, current Roborock product family names, Google Nest Cam battery specifications and Brother UK printer models. See citations in the working conversation; audit document lists source URLs for each catalogue record.
+- High-priority editorial holds: Air Fryers (COSORI regional model CAF-DC602-KEUR vs US CAF-DC601-KUS; Philips 12 presets vs 19 cooking methods; recheck Ninja dimensions/weight); Robot Vacuums (keep Roborock Saros 10R/10, Qrevo CurvX/Curv 2 Pro and Edge variants distinct); Air Purifiers (Levoit US models vs UK counterparts/availability); Smartwatches (country/carrier feature support); Dash Cams (UK model/part numbers and local legal caveats). Other product model/source pairings require a full live source check before approval.
+- Current publication/distribution gates remain intact: all 25 guides are drafts, Pinterest feeds remain empty until both approved and published, no pins or search submissions triggered by this audit.
+- Next: complete live verification of product-source/model pairs in tiered batches; correct confirmed errors on a review branch; adjust the catalogue validator so approved editorial status can be tested without permitting unapproved distribution; run full CI; only then set editorial approvals. Keep publicationStatus=draft until a separate explicit go-live action.
+
+
+## 19 November 2026 — owner confirmation and deferred indexing engineering
+
+- Owner explicitly confirmed the editorial approval workflow for all 25 buying guides: proceed through factual/source/regional/editorial validation and approve guides that pass without requesting repetitive per-guide permission. This is approval to complete the editorial approval process, not permission to publish guides; keep `publicationStatus: draft` until a separate launch decision.
+- Owner explicitly asked that the following engineering work be remembered and resumed later, after/alongside guide approval: **develop changed-URL detection, deletion notifications, and a durable IndexNow send/receipt log; test the full implementation in CI before any production adoption.** Scope includes deduplication, bounded retries, commit/deployment matching, deletion/move handling, and proof of notification acceptance. Do not deploy this work to production until CI passes and the owner authorizes production adoption.
+- This deferred task must remain in the next-agent handoff and must not be treated as completed by the lifecycle design document or current sitemap-wide IndexNow sender.
+
+
+## 19 November 2026 — editorial source review batch 2 (guides 4–8)
+
+- Reviewed selected official manufacturer sources for Wi-Fi 7 routers/mesh, USB-C GaN chargers, webcams, 4K USB-C monitors and docking stations; detailed evidence and unresolved claims are recorded in `EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md`.
+- Confirmed TP-Link Deco BE63 UK hardware revisions V3.60/V2.60/V2 and regional-availability warning; UGREEN 40749 UK SKU/port count/input/100W total; Insta360 Link 2 video modes and virtual-camera 60fps limitation; Elgato Facecam Neo 1080p60/fixed USB-C/UVC; Dell U2723QE UK 90W USB-C/4K60/IPS Black; ASUS PA279CRV 96W/colour gamut/60Hz; BenQ PD2705U 4K60/99% sRGB/Rec.709; CalDigit TS4 port inventory/98W; Plugable TBT4-UDZ display-host limitations; Anker A83B5 140W upstream and shared 45W front ports.
+- Guides 4–8 remain provisional and **not approved** because not all four product records in each guide have been fully rechecked, and some port-power, regional model, compatibility or subscription claims remain unresolved.
+- No product data, editorial statuses, publication statuses, production pages, Pinterest feeds or production settings changed. All 25 guides remain drafts.
+- Next batch: continue official-source verification for guides 9–13, recording only directly supported facts and holds. After product-level verification, revise proven errors on the isolated review branch, fix the validator to permit approved-but-unpublished guides while preserving distribution gates, and run CI. Deferred IndexNow changed-URL/deletion/receipt-log engineering remains deferred.
+
+
+## 19 November 2026 — editorial source review batch 3 (guides 9–13)
+
+- Checked selected official sources for portable SSDs, air fryers, cordless vacuums, cordless drills and robot vacuum/mop products; evidence and open questions are detailed in `EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md`.
+- Confirmed Samsung T9 20Gbps/2,000MB/s/122g/AES-256/3m claims; Kingston XS2000 20Gbps/2,000MB/s/IP55 and an important Mac/Thunderbolt/USB4 interface limitation; Miele Triflex HX2 UK runtime/weight/charging figures; Samsung Bespoke Jet AI UK product page says up to 1 hour, up to 2 hours with spare battery, conflicting with the catalogue's existing 160-minute claim; Roborock Saros 10R slim body/StarSight/Dock details; Roborock UK Qrevo Edge 2 and Qrevo 2 Pro advertised 25,000Pa.
+- Guides 9–13 remain **not approved**: several product pages remain unchecked; guide 11 has a concrete Samsung runtime discrepancy; guide 10 retains Ninja/COSORI regional checks; guide 12 needs full DEWALT model-pair checks; guide 13 requires exact regional SKU/dock distinctions.
+- No product records, editorialStatus, publicationStatus, production pages or distribution settings changed. All 25 guides remain drafts.
+- Next batch: continue official-source verification for guides 14–18. Keep all claims manufacturer-attributed, distinguish regional variants, and do not approve until every product in a guide has passed the evidence gates. Deferred IndexNow changed-URL/deletion/receipt-log engineering remains deferred.
+
+
+## 19 November 2026 — editorial source review batch 4 (guides 14–18)
+
+- Checked selected official sources for noise-cancelling headphones, wireless earbuds, air purifiers, Sage espresso machines and iPad models; findings and holds are in `EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md`.
+- Confirmed Sony WH-1000XM6 and WH-1000XM4C UK model specs; Sony WF-1000XM6 IPX4, multipoint/codecs and battery; Apple AirPods Pro 3 H2/ANC/IP57 features; Sage Barista Pro and Oracle Jet workflow/specifications; Apple iPad Pro M5, iPad Air M4 and iPad A16 regional specifications.
+- High-priority unresolved item: the claimed Apple iPad mini (A20 Pro) 8.5-inch OLED/2026 model did not resolve to an official Apple UK spec page in this pass. Do not call it an official released model or approve its guide until authoritative model evidence is found.
+- Levoit Vital 200S UK counterpart is unconfirmed; filter and voltage checks remain; Sage Bambino Plus/Barista Express package details and several remaining headphones/earbuds models still require direct source checks.
+- Guides 14–18 remain not approved; no product records, editorial statuses, publication statuses or production settings changed. All guides remain drafts.
+- Next batch: review guides 19–23 (dash cams, projectors, NAS, electric toothbrushes, gaming mice) with exact model and regional manufacturer pages. Deferred IndexNow engineering remains deferred.
+
+
+## 19 November 2026 — editorial source review batch 5 (guides 19–23)
+
+- Reviewed selected official sources for Garmin dash cams, XGIMI/Epson projectors, Synology NAS, Oral-B iO toothbrushes and Logitech gaming mice; detailed findings and remaining gates are in `EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md`.
+- Confirmed Garmin UK X110 and Mini 3 exact 1080p/140° models and Garmin's separate X210 1440p / X310 4K tiers; noted jurisdiction-specific dashcam/privacy caveat. Confirmed XGIMI MoGo 4 UK model WK08K 1080p/450 ISO lumens/71.28Wh/2.5h Eco; Epson EF-30 US 350-lumen/Google TV facts; Synology UK catalogue distinction DS1525+/DS925+/DS725+ and DS1525+ optional 10GbE; DS224+ 2×1GbE/2GB RAM/100–240V; Oral-B iO mode count and iO10/iO9 feature split.
+- Guides 19–23 remain not approved; several model-specific product records still require full verification, including Garmin X210/X310 part numbers, Epson UK variants, Synology compatibility policy, Oral-B exact packages and Logitech sensor/weight/polling specifications.
+- No catalogue records, editorial statuses, publication statuses, site pages, feeds or production settings changed. All guides remain drafts.
+- Next: final catalogue batch, guides 24–25 (smartwatches and home printers), then consolidate the 25-guide gate matrix, fix the test validator only on the review branch, correct proven content errors and run CI. Deferred IndexNow engineering remains deferred.
+
+
+## 19 November 2026 — editorial source review batch 6 (guides 24–25) and catalogue-wide checkpoint
+
+- Completed a selective official-source pass for smartwatch and home-printer guides. Apple UK confirms current Watch Series 12, Ultra 4 and SE 3 families and Ultra 4 model-specific case/display/battery/connectivity details; Garmin Forerunner 265 details remain pending. Brother UK catalogue records distinguish UK 220–240V models from separate US 110–120V model numbers; full four-model UK spec/consumables checks remain pending.
+- All 25 guide categories have now received a structured first-pass source review. This is **not** a complete 100-product live-source audit and does not justify blanket editorial approval. Current explicit holds and confirmed discrepancies are recorded in `EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md`.
+- No guide has been approved; all 25 remain `publicationStatus: draft`. No product data, live pages, feeds or production settings changed.
+- Next phase: consolidate unresolved source checks into a product-level matrix; finish high-risk mismatches (Apple iPad mini A20 Pro source, Samsung vacuum runtime, Levoit Vital 200S UK counterpart, UK/US power variants, exact Brother printer bundles, Garmin dashcam part numbers, model-specific dock/charger port tables); revise only proven catalogue errors on the review branch; then fix the validator to allow approved-but-unpublished drafts while preserving the RSS/publishing gate and run full CI.
+- PR #8 remains a documentation/review branch; do not merge or publish without owner authorization. Deferred IndexNow changed-URL detection, deletion notifications and durable send/receipt logging remain explicitly deferred until separately scheduled and fully CI-tested.
+
+
+## 19 November 2026 — current handoff for editorial product audit
+- Current editorial working branch: automation/editorial-audit-25-guides-20261119; current review PR #8 targets main and is not merged. Continue this review on the existing branch; do not switch to the legacy implementation branch simply because older sections say automation/bootstrap.
+- Current reviewed catalogue is 25 guides / 100 products; every guide remains publicationStatus=draft and none is editorially approved.
+- Product data correction commit: 74ca554d8ec839e104f964414e08fd463ae4d52f fixes the Samsung Bespoke Jet AI VS28C9784QK/EU 160-minute condition and separates UK 280 W from US 280 AW.
+- Official Apple Support confirms iPad mini (A20 Pro) as a 2026 model; update the earlier missing-source hold to a narrower claim-by-claim verification task.
+- Brother UK official model-page checks exist for all four UK printer models. MFC-L3740CDW supports 50-sheet ADF and duplex printing; do not state duplex scanning without explicit model-specific evidence.
+- Garmin Mini 3 UK retail SKU 010-02899-10 confirmed; X210/X310 exact UK retail SKUs remain open. Regulatory model family B04684 is not a retail SKU.
+- CI passed on prior PR head 1b994672d4e09a57d1b53b75222c9976ac3062f2 (run #766). It does not validate the product correction commit. Verify latest head and build-check run before next change/approval.
+- Several newer workflow runs were cancelled by concurrency while run #766 succeeded on the PR head; do not mistake cancelled runs for test failures. Cloudflare preview reported successful Pages previews and an isolated failed deployment for commit 212e323; current production remains untouched.
+- IndexNow changed-URL detection/deletion/receipt-log remains deferred by owner instruction.
+- Next: verify remaining product claims and exact models from guides 1–25, prioritising regional/electrical/accessory compatibility and unsupported port/dock claims; correct only evidence-backed discrepancies; update the catalogue validator only when its editorial/publication gate contract is defined; rerun CI on the latest head. Keep all guides draft until the evidence matrix is complete.
+
+
+## 19 November 2026 — quality workflow concurrency safeguard
+- CI workflow cancellation issue diagnosed: runs #767/#768 were cancelled while new PR commits arrived, causing incomplete consolidated reports (0 axe routes / 0 Lighthouse pages). These are incomplete/cancelled runs, not failed product checks.
+- `.github/workflows/build-check.yml` now uses `cancel-in-progress: false` on the review branch. Commit `2125c3ab52f757b2888e2d15022a2e670fe7a925`.
+- Current review PR head will change as documentation is updated. Verify the latest run SHA exactly before treating quality gates as passed. Previous #766 success on `1b994672` is historical only.
+- Keep working on `automation/editorial-audit-25-guides-20261119`, PR #8 open/unmerged. Product statuses remain draft; no production changes, publication, or IndexNow/Pinterest submissions.
+
+
+## 19 November 2026 — latest run queue note
+- Current branch head before this handoff update was 19569f46fc83c9080b7885a59cb0a88f597fac1c. Workflow run #771 (ID 44510854956) for that SHA was pending with zero jobs at the last poll. This is scheduler queue/pending status; not a test failure and not a success.
+- CI concurrency is now cancel-in-progress=false (change committed at 2125c3ab52f757b2888e2d15022a2e670fe7a925). Avoid no-op commits or repeated manual dispatches while queue is pending. Recheck latest PR head/run and verify every required job before approval.
+- Catalogue correction: Samsung Bespoke Jet AI condition clarified and source audit extended; Apple A20 Pro official 2026 support source confirmed; four Brother UK product pages inspected; Garmin Mini 3 SKU confirmed but X210/X310 retail SKUs remain pending.
+- All 25 guides / 100 products remain draft; no guide approved/published. PR #8 open/unmerged; no production, WordPress or DNS changes. IndexNow changed/deleted URL/receipt log remains deferred.
+
+
+## 19 November 2026 — catalogue-wide continuation
+- All 25 guide records / 100 product records have been structurally re-read. Do not report this as 100/100 fully manufacturer-verified; it was a complete structural and risk-triage pass with targeted source checks.
+- Latest product data correction commit `726f6266e1f06214eb431fba6d4d897cdbd3fb1f`: Garmin X310/X210/X110 sources use Garmin UK official comparison; Mini 3 uses UK SKU page 010-02899-10; Apple Watch Ultra 4 no longer inherits Ultra 3 satellite messaging claims.
+- Evidence details and source URLs in EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md. Key holds: exact UK retail SKU for Garmin X210/X310; Brother MFC-L3740CDW duplex scan not established; country/carrier restrictions for Watch cellular/satellite; model-specific regional voltage and kit contents across product categories.
+- Continue exact manufacturer model/SKU checks for remaining products; no blanket approval. All 25 guides remain draft; PR #8 open/unmerged; production unchanged. Do not merge/publish or trigger Pinterest/IndexNow.
+- Verify latest CI against latest PR head after documentation updates; prior successes only apply to historical SHAs. CI concurrency is set to cancel-in-progress=false.
+
+
+## 19 November 2026 — latest handoff update
+- Owner preference: finish the broad review in consolidated batches; focus on material correctness and compatibility, not immaterial micro-detail. Do not confuse this with permission to publish or merge.
+- Latest product correction commit: `1c8bc4d2b1f95f10102979641757cc1fa1d2e509` (Garmin UK X110/X210/X310 retail SKU evidence added; Logitech PRO X2 SUPERSTRIKE official UK source and manufacturer support specs added).
+- Garmin UK retail SKUs corroborated by AO Business UK: X110 010-02900-10; X210 010-02859-10; X310 010-02860-10. Manufacturer UK comparison is still source for resolution tiers. Exact product bundle/microSD contents should not be assumed.
+- Logitech PRO X2 SUPERSTRIKE: official UK product page plus Logitech Support spec; 60g, HERO 2, up to 44,000 DPI, 8,000Hz, LIGHTSPEED 2, up to 90h constant-motion battery life. Regional product number varies.
+- PR #8 remains open/unmerged; latest product data commit is newer than the SHA being tested by CI #773. Verify CI against final PR head before any approval.
+- All 25 guides remain `draft`; no site publication, production configuration, Pinterest post or IndexNow submission. Deferred IndexNow changed-URL detection/deletion notifications/durable send-receipt log remains a future task.
+
+
+## 19 November 2026 — latest handoff checkpoint (compatibility batch)
+- Owner approved the whole remaining review in one pass and asked to avoid low-value detail checks. This is not approval to merge, publish or change production.
+- Latest product-data commit: `ff1fff9a5f85609060c799a7a791bd8eb77c00a6`.
+- Five records clarified: Anker A2688 port-sharing output (89W max with all three ports); Anker A83B5 TB5 dock host/OS/display restrictions; Kensington SD5780T host-dependent external display count; Plugable TBT4-UDZ display limitations by host; Jackery JE-300B regional 230V/50Hz EU vs 100V/60Hz US electrical variant.
+- Sources are listed in `EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md`; no unsupported claim that all 100 products have undergone full line-by-line manufacturer verification.
+- PR #8 remains open/unmerged; all guides remain draft. No production publishing, Pinterest posts or IndexNow requests.
+- CI #778 belongs to prior head `2137a66d`; the latest data commit must get its own completed workflow result. Keep deferred IndexNow changed/deleted URL detection and durable send/receipt records in the future queue.
+
+
+## 19 November 2026 — latest compatibility handoff
+- New product-data commit: `88ee74da154158c7c371b7145148801519d995c8`.
+- UGREEN Nexode 100W SKU 40749: UK manufacturer confirms universal 100–240V input and 100W total output; public specs do not support promising full rated output to all four connected devices simultaneously.
+- UGREEN Nexode 200W SKU 35539: EU manufacturer confirms universal 100–240V input, 200W combined ceiling, and individual port maxima 140W/100W/30W/22.5W; these maxima are not additive. Check UK mains lead/plug.
+- CI #781 was still in progress on older head `89edd10e`; require a completed run for the latest final head. PR #8 stays open/unmerged and all 25 guides remain draft. No production, Pinterest or IndexNow action.
+
+
+## 19 November 2026 — TP-Link regional revision handoff
+- Product-data commit `68ae210e216909ac6ddf669a9c5f2e6a0b508feb` adds a Deco BE63 note: UK hardware revisions differ by region; do not equate a US datasheet or US unit with the UK SKU/firmware/adapter. Check TP-Link UK support page and exact retail pack.
+- PR #8 remains open/unmerged; 25 guides remain draft; no production publishing, Pinterest or IndexNow.
+
+
+## 19 November 2026 — router/monitor review handoff
+- Product data commit `27be358f9413ed808752a09e080ac4aecfff2eec` adds UK/regional source evidence to eero Pro 7, Orbi RBE773, Dell U2723QE, ASUS PA279CRV and BenQ PD2705U.
+- eero adapter: 27W, 100–240V/50–60Hz confirmed by eero UK compliance. Orbi UK 3-pack contents confirm three adapters, but input voltage is not stated in captured page; do not infer it.
+- Dell UK code 210-BCXK and universal AC input confirmed; listing currently reports unavailable. ASUS PA279CRV: universal input and 96W PD. BenQ PD2705U: universal input and 65W PD.
+- Keep all guides draft. PR #8 open/unmerged. No production publishing, Pinterest or IndexNow. Latest-head CI still must be confirmed after documentation commits.
+
+
+## 19 November 2026 — Garmin X-series source fix
+- Commit `39bfea83d6b1216c86473d169d7284f883a1a96f`: corrected wrong shared Mini 3 product URL previously used for X110/X210/X310. X110 uses Garmin UK direct page; X210/X310 use model-specific Currys Business UK pages for exact UK SKUs, plus Garmin's official UK comparison for resolution claims.
+- Keep drafts unpublished. PR #8 open/unmerged; no production, Pinterest or IndexNow.
+
+
+## 19 November 2026 — iPad mini regional evidence
+- Commit `9af76b4c5d1f17552745f8a334d618ef623c91cb`: Apple UK store lists A20 Pro iPad mini configurations; technical specs link remains US regional support page. Verify UK cellular model/bands and local adapter/box contents for the selected SKU.
+- Keep all guides draft; PR #8 open/unmerged; no production publishing, Pinterest or IndexNow.
+
+
+## 19 November 2026 — final handoff checkpoint for this continuation
+- Data corrections this session: UGREEN 100W/200W power allocation; Deco BE63 UK hardware revision caveat; eero Pro 7 100–240V adapter rating; Orbi RBE773 pack contents and unverified adapter input; Dell U2723QE UK part code 210-BCXK/100–240V; ASUS PA279CRV 100–240V/96W PD; BenQ PD2705U 100–240V/65W PD; Garmin X110/X210/X310 product-specific source correction; iPad mini A20 Pro UK availability/configuration caveat.
+- Structural check result: 25 guides, 100 products, all guides draft, no missing/malformed product source URLs, no missing US/UK search identifiers, no duplicate names; 37 explicit regional/availability caveats. Do not overstate this as a complete verification of every specification.
+- CI #781 succeeded on older SHA `89edd10e`, including axe-core for all catalogue routes and Lighthouse desktop/mobile/templates, report generated and artifact uploaded. It does not validate later product/documentation changes.
+- Current PR #8 head `50ecc2ddd389e127fb65df0a7b9850b0b6af6ca6`; run #794 pending. Confirm latest-head CI before closure. PR remains open/unmerged, all guides remain draft, and no production/Pinterest/IndexNow actions occurred.
+- Deferred: IndexNow changed-URL and deletion detection, plus durable send/receipt logging.
+
+
+## 19 November 2026 — latest CI handoff correction
+- Run #794 (head `50ecc2ddd389e127fb65df0a7b9850b0b6af6ca6`) is cancelled. Current PR head: `9fa3deeb3eccf8c5c179ac9e02ed951eeb57baec`; no workflow run is currently returned for this exact SHA.
+- Successful run #781 validates only historical head `89edd10e2ad3df3c5c923aceb1fb8805d0498685`. Latest-head CI is still outstanding. No workflow-dispatch action is available through connected GitHub tools; next step is to trigger/verify CI on current PR head.
