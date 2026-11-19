@@ -21,7 +21,9 @@
     "research:commons": "node scripts/research-commons-images.mjs",
     "import:dry-run": "node scripts/import-products.mjs",
     "import:self-test": "node scripts/import-products.mjs --self-test",
-    "import:integration-test": "node scripts/test-import-products.mjs"
+    "import:integration-test": "node scripts/test-import-products.mjs",
+    "postbuild": "node scripts/build-social-snippets.mjs && node scripts/write-deployment-marker.mjs",
+    "distribution:check": "node scripts/validate-distribution.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",

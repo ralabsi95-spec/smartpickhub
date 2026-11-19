@@ -2,9 +2,9 @@ name: Astro Build and Quality Checks
 
 on:
   push:
-    branches: [automation/bootstrap, security/astro7-upgrade-assessment]
+    branches: [main, automation/bootstrap, automation/bootstrap-20261119, security/astro7-upgrade-assessment]
   pull_request:
-    branches: [main, automation/bootstrap]
+    branches: [main, automation/bootstrap, automation/bootstrap-20261119]
   workflow_dispatch:
 
 permissions:
@@ -42,6 +42,10 @@ jobs:
         run: npm run keywords
       - name: Build static preview
         run: npm run build
+        env:
+          DEPLOYMENT_ENV: preview
+      - name: Validate Pinterest RSS and approved-only social distribution artifacts
+        run: npm run distribution:check
       - name: Smoke-test generated pages, SEO, JSON-LD and affiliate links
         run: npm run smoke
       - name: Start local preview server

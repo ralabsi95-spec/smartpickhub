@@ -79,6 +79,41 @@ if (process.env.INDEXNOW_PREPARE_ONLY === 'true') {
   process.exit(0);
 }
 
+
+const expectedDeploymentSha = process.env.EXPECTED_DEPLOYMENT_SHA;
+const deploymentResponse = await fetch(new URL('/deployment.json', site));
+if (!deploymentResponse.ok) skip('the live deployment marker is not reachable yet.');
+let deploymentMarker;
+try { deploymentMarker = await deploymentResponse.json(); } catch { skip('the live deployment marker is not valid JSON.'); }
+if (expectedDeploymentSha && deploymentMarker.commit !== expectedDeploymentSha) {
+  skip(`Cloudflare is serving commit ${deploymentMarker.commit ?? 'unknown'}, not the expected commit ${expectedDeploymentSha}.`);
+}
+
+const [liveRobotsResponse, liveHomeResponse, liveSitemapResponse] = await Promise.all([
+  fetch(new URL('/robots.txt', site)),
+  fetch(new URL('/', site)),
+  fetch(new URL('/sitemap-index.xml', site)),
+]);
+if (!liveRobotsResponse.ok || !liveHomeResponse.ok || !liveSitemapResponse.ok) {
+  skip('live robots.txt, homepage or sitemap index is not reachable.');
+}
+const [liveRobots, liveHome, liveSitemapIndex] = await Promise.all([
+  liveRobotsResponse.text(), liveHomeResponse.text(), liveSitemapResponse.text(),
+]);
+if (/Disallow:\s*\/\s*(?:\\r?\\n|$)/i.test(liveRobots)) skip('the live production robots.txt blocks crawling.');
+if (/<meta[^>]+name=["']robots["'][^>]+content=["'][^"']*noindex/i.test(liveHome)) {
+  skip('the live production homepage still contains a noindex directive.');
+}
+const liveNestedSitemaps = parseLocs(liveSitemapIndex).filter((url) => /sitemap[^/]*\.xml(?:$|\?)/i.test(url));
+const liveSitemapPages = new Set(liveNestedSitemaps.length ? [] : parseLocs(liveSitemapIndex));
+for (const nestedUrl of liveNestedSitemaps) {
+  const nestedResponse = await fetch(nestedUrl);
+  if (!nestedResponse.ok) skip(`live child sitemap could not be fetched: ${nestedUrl}`);
+  for (const url of parseLocs(await nestedResponse.text())) liveSitemapPages.add(url);
+}
+const missingLiveUrls = pageUrls.filter((url) => !liveSitemapPages.has(url));
+if (missingLiveUrls.length) skip(`live sitemap is not yet aligned with this build (${missingLiveUrls.length} expected URLs missing).`);
+
 const keyLocation = new URL(`/${apiKey}.txt`, site);
 const keyResponse = await fetch(keyLocation);
 if (!keyResponse.ok || (await keyResponse.text()).trim() !== apiKey) {
