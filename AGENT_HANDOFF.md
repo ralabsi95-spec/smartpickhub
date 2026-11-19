@@ -1,9 +1,9 @@
 # SmartPickHub – Agent Handoff (READ THIS FIRST)
 
-**Last verified:** 19 November 2026 11:55 UTC; PR #8 merged at `4a6b67a5c60f93bfeb58b5f792c08825a0ad1706`; release PR #9 is being prepared  
+**Last verified:** 19 November 2026 11:55 UTC; PR #8 merged at `4a6b67a5c60f93bfeb58b5f792c08825a0ad1706`; release PR #9 is open; latest CI must be verified  
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `release/approve-guides-indexing-20261119`; production branch `main`  
-**Pull requests:** [#8 – 25-guide editorial audit and product corrections](https://github.com/ralabsi95-spec/smartpickhub/pull/8) merged; release PR #9 pending creation/CI  
+**Pull requests:** [#8 – 25-guide editorial audit and product corrections](https://github.com/ralabsi95-spec/smartpickhub/pull/8) merged; release PR #9 open; CI pending  
 **Production target (live):** https://smartpickhub.pages.dev/; latest verified production commit after PR #8 is `4a6b67a5c60f93bfeb58b5f792c08825a0ad1706`  
 **Isolated Astro preview:** https://smartpickhub-preview.pages.dev/
 
