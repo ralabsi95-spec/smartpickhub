@@ -1009,19 +1009,20 @@
           "us_identifier": "Samsung Bespoke Jet AI Cordless Stick Vacuum VS28C9762UK/AA",
           "uk_identifier": "Samsung Bespoke Jet AI Cordless Stick Vacuum VS28C9784QK/EU",
           "pros": [
-            "Samsung UK lists 280 W for model VS28C9784QK/EU; the US model VS28C9762UK/AA is specified as 280 AW. These differently expressed regional specifications must not be compared as the same unit.",
-            "All-in-One Clean Station empties the dustbin and recharges the vacuum",
-            "AI cleaning mode uses floor sensing to adjust cleaning behaviour",
-            "UK model family documentation lists removable batteries and up to 160 minutes using two batteries"
+            "Samsung specifies 280 W maximum suction power for UK model VS28C9784QK/EU; the US model's 280 AW figure uses a different unit and should not be compared directly.",
+            "The All-in-One Clean Station empties the dustbin and recharges the vacuum.",
+            "AI Cleaning Mode adjusts cleaning behaviour for different floor types.",
+            "Samsung states up to 160 minutes using two batteries, at the minimum power level with a non-motorised tool attached."
           ],
           "cons": [
-            "The Clean Station needs additional floor space and uses disposable dust bags",
-            "The 160-minute UK claim uses two batteries; US documentation for its regional model lists up to 100 minutes in minimum mode",
-            "Runtime falls sharply at higher power settings, so headline figures should not be treated as typical powered-floorhead runtime"
+            "The Clean Station needs additional floor space and uses disposable dust bags.",
+            "The 160-minute claim is a best-case manufacturer figure with two batteries and a non-motorised tool; powered brushes and higher suction settings reduce runtime.",
+            "The UK and US records are different regional model codes, electrical specifications and bundles; compare their own listings rather than treating them as identical."
           ],
           "verdict": "A premium convenience-focused option if automatic dust emptying matters. Compare the regional model code, number of batteries and included station before deciding; US and UK runtime figures are not directly interchangeable.",
-          "source": "https://www.samsung.com/uk/vacuum-cleaners/bespoke-jet/",
-          "sourceNote": "Samsung UK lists model VS28C9784QK/EU and 280 W suction, with up to 160 minutes using two batteries. Samsung US model VS28C9762UK/AA documentation lists 280 AW, 120 V / 60 Hz and up to 100 minutes in minimum mode with a non-motorised tool. W and AW are not interchangeable labels; compare each regional model only using its own manufacturer specification and confirm the exact included battery bundle."
+          "source": "https://www.samsung.com/uk/business/vacuum-cleaners/stick/bespoke-jet-plus-210w-all-in-one-clean-station-black-vs28c9784qk-eu/",
+          "sourceNote": "Samsung UK's exact product page for model VS28C9784QK/EU specifies 280 W suction, up to 160 minutes at minimum power with two batteries and a non-motorised tool attached, two detachable batteries, and the All-in-One Clean Station. The UK support page identifies the model code and GB/IE/JE area. Do not compare the UK's 280 W with US 280 AW as if they were equivalent units. Sources: https://www.samsung.com/uk/business/vacuum-cleaners/stick/bespoke-jet-plus-210w-all-in-one-clean-station-black-vs28c9784qk-eu/ and https://www.samsung.com/uk/support/model.VS28C9784QK_EU/.",
+          "availabilityNote": "The US VS28C9762UK/AA is a separate 120 V / 60 Hz regional model with its own runtime and bundle. Do not imply that the UK or US unit is suitable for the other region's mains supply; verify voltage and included batteries before purchase."
         },
         {
           "name": "Miele Triflex HX2 Cordless Stick Vacuum",
