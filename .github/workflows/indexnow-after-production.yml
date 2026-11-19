@@ -74,6 +74,7 @@ jobs:
         env:
           PUBLIC_SITE_URL: https://smartpickhub.pages.dev
           EXPECTED_DEPLOYMENT_SHA: ${{ github.event.workflow_run.head_sha }}
+          ALLOW_DESCENDANT_DEPLOYMENT: 'true'
 ; then
                   echo "Confirmed production serves a documentation-only descendant $deployed_sha of tested release $EXPECTED_DEPLOYMENT_SHA"
                   exit 0
