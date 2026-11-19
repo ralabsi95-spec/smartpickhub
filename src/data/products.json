@@ -1647,7 +1647,8 @@
           ],
           "verdict": "A compact option when portability matters more than screen area.",
           "source": "https://support.apple.com/en-us/149482",
-          "sourceNote": "Apple's 2026 technical specifications identify the A20 Pro chip, 8.5-inch OLED display, 128GB/256GB/512GB capacities, IP67 rating and 255g Wi-Fi model weight. Storage configuration changes the GPU/Neural Engine core count; check regional cellular bands and included power adapter."
+          "sourceNote": "Apple's 2026 technical specifications identify the A20 Pro chip, 8.5-inch OLED display, 128GB/256GB/512GB capacities, IP67 rating and 255g Wi-Fi model weight. Storage configuration changes the GPU/Neural Engine core count; check regional cellular bands and included power adapter.",
+          "availabilityNote": "Apple's UK store lists the 2026 iPad mini with A20 Pro in Wi-Fi and Wi-Fi + Cellular configurations, including 128GB, 256GB and 512GB options. The cited technical-specification page is Apple's US regional support page; use it for hardware feature details, but verify the exact UK cellular model/band support and UK in-box power-adapter contents against the selected UK configuration before purchase. UK product listing: https://www.apple.com/uk/shop/buy-ipad/ipad-mini/"
         }
       ],
       "buyingChecklist": [
