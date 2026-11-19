@@ -26,12 +26,12 @@ Build a trustworthy UK-first English-language affiliate buying-guide property, w
 - GitHub repository as source control and project record.
 - Isolated Cloudflare Pages preview: https://smartpickhub-preview.pages.dev/ (project `smartpickhub-preview`, branch `automation/bootstrap`). This remains separate from the approved MVP production origin.
 - Catalogue contains 25 guides and 100 product records. The current release branch marks all 25 as owner-approved/published; production remains on the previous main commit until PR #9 passes CI and is merged. Existing WordPress products were not imported and must not be duplicated.
-- RSS endpoint is generated only from guides explicitly approved for publication; it may remain empty while all guides are drafts.
+- The release branch marks 25 guides approved/published, so the RSS endpoint will contain those guides after merge. RSS is not connected to Pinterest; no Pins are published by this release.
 - JSON-LD includes Article and ItemList/Product identity structure; no unverified prices, offers, ratings or reviews are emitted.
 
 ## Automation safety
 - Scheduled workflow, when added, must create reviewable drafts only.
-- No unattended public publishing, no automatic product importing, no affiliate account actions and no automatic WordPress modifications.
+- No unattended content publication beyond the owner-authorised 25-guide release and guarded IndexNow notification. No automatic product importing, affiliate-account actions, Pinterest publication or WordPress modifications.
 - Gemini output is unverified editorial draft material, not evidence. Human verification is required for product identity, market availability, technical claims, links, policy compliance and editorial quality.
 - API keys belong in GitHub Actions secrets, never in source files.
 - No paid service or subscription without owner approval.
