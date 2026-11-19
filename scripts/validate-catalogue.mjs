@@ -33,7 +33,12 @@ for (const guide of guides) {
     errors.push('Duplicate guide slug: ' + guide.slug);
   }
   slugs.add(guide.slug);
-  if (guide.editorialStatus === 'Approved for publication') errors.push('Research draft is marked approved: ' + guide.slug);
+  if (!['draft', 'published'].includes(guide.publicationStatus)) {
+    errors.push('Invalid publicationStatus for ' + guide.slug + ': expected draft or published.');
+  }
+  if (guide.publicationStatus === 'published' && guide.editorialStatus !== 'Approved for publication') {
+    errors.push('Published guide must be editorially approved: ' + guide.slug);
+  }
   if (!Array.isArray(guide.products) || guide.products.length === 0) {
     errors.push('Guide ' + guide.slug + ' must contain at least one product.');
     continue;
