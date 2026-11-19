@@ -1225,3 +1225,13 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Preserve crawl protection until production response metadata is checked and editorial launch approval is separately obtained. The screenshots do not establish whether production HTML currently has noindex; do not infer this from the prior preview checks.
 - Catalogue remains 25 guides / 100 product records, 0 guides editorially approved and 0 approved product images. No product re-import, content approval, DNS change, sitemap submission or indexing activation was performed.
 - Next action: inspect the first guide detail page (Home Office Ergonomics) and verify its content, exact route, and affiliate link behavior; then perform a production route/SEO/robots verification. Continue to distinguish successful deployment from editorial launch readiness.
+
+
+## 19 November 2026 — owner visual verification of first production guide detail page
+
+- Owner opened the exact production route `https://smartpickhub.pages.dev/guides/home-office-ergonomics-us-uk/`; screenshot confirms the guide detail page loads on the production domain.
+- Visible elements verified: breadcrumb navigation (Home / Buying Guides / Home Office Ergonomics), category label, full title, summary, research/update metadata (Updated 2026-11-16; US and UK marketplace links), prominent draft warning ("Research draft — requires human review before publication"), explanatory paragraph that summaries are based on manufacturer documentation rather than hands-on test results, and guide cover artwork.
+- The draft warning and no-hands-on-testing statement are visible and appropriately transparent. This visual check does not validate factual accuracy of every product specification or confirm all Amazon links.
+- Below-the-fold product cards, exact Amazon UK/US destinations and tracking tags, link-level paid-link disclosure, and the complete guide content remain unverified. Raw production HTML robots/canonical/header checks also remain outstanding.
+- No code/content changes, product imports, editorial approvals, image approvals, indexing changes, DNS changes or sitemap submissions were made in this checkpoint.
+- Next action: inspect below the fold on this guide, starting with the first product card; verify model, key specs, UK/US links and paid-link disclosure, then continue route/SEO/robots checks.
