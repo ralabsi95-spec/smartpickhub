@@ -1246,3 +1246,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Sources are listed in `EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md`; no unsupported claim that all 100 products have undergone full line-by-line manufacturer verification.
 - PR #8 remains open/unmerged; all guides remain draft. No production publishing, Pinterest posts or IndexNow requests.
 - CI #778 belongs to prior head `2137a66d`; the latest data commit must get its own completed workflow result. Keep deferred IndexNow changed/deleted URL detection and durable send/receipt records in the future queue.
+
+
+## 19 November 2026 — latest compatibility handoff
+- New product-data commit: `88ee74da154158c7c371b7145148801519d995c8`.
+- UGREEN Nexode 100W SKU 40749: UK manufacturer confirms universal 100–240V input and 100W total output; public specs do not support promising full rated output to all four connected devices simultaneously.
+- UGREEN Nexode 200W SKU 35539: EU manufacturer confirms universal 100–240V input, 200W combined ceiling, and individual port maxima 140W/100W/30W/22.5W; these maxima are not additive. Check UK mains lead/plug.
+- CI #781 was still in progress on older head `89edd10e`; require a completed run for the latest final head. PR #8 stays open/unmerged and all 25 guides remain draft. No production, Pinterest or IndexNow action.
