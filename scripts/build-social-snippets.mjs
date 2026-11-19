@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import data from '../src/data/products.json';
+const data = JSON.parse(await fs.readFile('src/data/products.json', 'utf8'));
 
 const productionSite = 'https://smartpickhub.pages.dev';
 const previewSite = 'https://smartpickhub-preview.pages.dev';
@@ -21,7 +21,9 @@ function trimTo(value, limit) {
 
 const items = eligible.map((guide) => {
   const url = new URL(`/guides/${guide.slug}/`, site).href;
-  const xText = trimTo(`${guide.title}. ${guide.summary} Read the guide: ${url}`, 259);
+  const xSuffix = ` Read the guide: ${url}`;
+  const xLead = trimTo(`${guide.title}. ${guide.summary}`, Math.max(1, 259 - xSuffix.length));
+  const xText = `${xLead}${xSuffix}`;
   const productNames = [...new Set((guide.products ?? []).map((p) => p.name).filter(Boolean))].slice(0, 5);
   const productSection = productNames.length
     ? `\n\n## Products covered\n\n${productNames.map((name) => `- ${name}`).join('\n')}\n`
