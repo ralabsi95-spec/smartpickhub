@@ -1265,3 +1265,8 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - eero adapter: 27W, 100–240V/50–60Hz confirmed by eero UK compliance. Orbi UK 3-pack contents confirm three adapters, but input voltage is not stated in captured page; do not infer it.
 - Dell UK code 210-BCXK and universal AC input confirmed; listing currently reports unavailable. ASUS PA279CRV: universal input and 96W PD. BenQ PD2705U: universal input and 65W PD.
 - Keep all guides draft. PR #8 open/unmerged. No production publishing, Pinterest or IndexNow. Latest-head CI still must be confirmed after documentation commits.
+
+
+## 19 November 2026 — Garmin X-series source fix
+- Commit `39bfea83d6b1216c86473d169d7284f883a1a96f`: corrected wrong shared Mini 3 product URL previously used for X110/X210/X310. X110 uses Garmin UK direct page; X210/X310 use model-specific Currys Business UK pages for exact UK SKUs, plus Garmin's official UK comparison for resolution claims.
+- Keep drafts unpublished. PR #8 open/unmerged; no production, Pinterest or IndexNow.
