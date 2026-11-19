@@ -917,3 +917,37 @@ This batch checked selected manufacturer pages for Wi-Fi 7 routers/mesh, GaN cha
 - Provisional/hold: guides 4, 5, 6, 7 and 8 remain **not approved** pending the unresolved product-level checks noted above.
 - No catalogue product record, editorialStatus, publicationStatus, page, feed, or production setting was changed. All guides remain drafts.
 - Key source pages checked: https://www.tp-link.com/uk/support/download/deco-be63/ ; https://www.tp-link.com/us/support/download/deco-be63/v2.60/ ; https://uk.ugreen.com/products/ugreen-nexode-100w-usb-c-gan-charger-4-ports-wall-charger ; https://www.insta360.com/specs/link2 ; https://www.elgato.com/ww/en/p/facecam-neo ; https://www.dell.com/en-gb/shop/dell-ultrasharp-27-4k-usb-c-hub-monitor-u2723qe/apd/210-bcxk/ ; https://www.asus.com/uk/displays-desktops/monitors/proart/proart-display-pa279crv/techspec/ ; https://www.benq.eu/en-uk/monitor/creative-pro/pd2705u/spec.html ; https://www.caldigit.com/ts4-support/ ; https://plugable.com/products/tbt4-udz ; https://app.anker.com/uk/products/bundle-a83b52a1-1-a84n0011-1
+
+
+## Supplemental live source checks — batch 3 (guides 9–13), 19 November 2026
+
+### Guide 9 — portable SSDs
+- Samsung's official T9 datasheet confirms USB 3.2 Gen 2x2 (20Gbps), up to 2,000MB/s sequential read, 1,950–2,000MB/s write by capacity, 122g weight, AES 256-bit hardware encryption and drop resistance up to 3m. Do not omit the host-interface caveat: a USB-C connector alone does not guarantee 20Gbps.
+- Kingston's XS2000 datasheet confirms USB 3.2 Gen 2x2, up to 2,000MB/s, capacities up to 4TB, removable protective sleeve and IP55. Kingston's own support FAQ specifically warns that Thunderbolt/USB4 ports may negotiate only USB 3.2 Gen 2 (10Gbps) for this drive, and Mac systems do not provide USB 3.2 Gen 2x2 speeds. This is a useful compatibility warning to add prominently.
+- SanDisk Extreme PRO and Crucial X10 Pro detailed current regional claims have not been fully re-fetched in this batch. Hold guide approval until all four products and model generations are checked.
+
+### Guide 10 — air fryers
+- This remains a Tier-1 hold from batch 1. Existing model distinctions and key source checks remain in the audit: Ninja AF400UK vs DZ550, Philips NA555/09 vs NA555/00, Instant DAF8132BK vs US 140-3090-01, and COSORI CAF-DC602-KEUR vs CAF-DC601-KUS.
+- Do not approve until Ninja dimensions/weight are reconciled against current UK documentation and COSORI UK voltage/model details are confirmed from the manual/rating plate. Keep Philips' 12 presets distinct from 19 cooking methods.
+
+### Guide 11 — cordless vacuums
+- Samsung UK current product family page identifies Bespoke Jet AI model VS28C9784QK/EU at 280W and states up to 1 hour runtime, extendable to up to 2 hours with a spare removable battery. This conflicts with the catalogue's existing “up to 160 minutes using two batteries” claim. Treat 160 minutes as unverified and correct only after locating the exact manual/official regional source that supports it; do not retain it by assumption.
+- Miele UK official technical sheet confirms Triflex HX2 material number 11819170 / EAN 4002516449959, 3.6kg, exchangeable battery, HEPA lifetime filter, 60 minutes PowerUnit-only at low setting, 30 minutes with electrical accessories at low setting, 14 minutes with electrical accessories at high setting, and 240-minute recharge. Existing caveat that runtime depends on configuration is supported.
+- Dyson V15, Shark IZ400UKT and Samsung's exact runtime/battery bundle still require complete model-specific review; do not approve this guide yet.
+
+### Guide 12 — cordless drills
+- The catalogue already distinguishes DEWALT US 20V MAX and UK 18V XR model numbers and explicitly warns that they are not direct equivalents. This is the correct editorial approach.
+- The four US/UK drill pairings (DCD801B/DCD791NT-XJ, DCD794D1/DCD708N-XJ, DCD777D1/DCD776C1-GB, DCD703F1/DCD701N-XJ) have not yet been independently verified against all live manufacturer spec pages in this batch. In particular, do not imply a UK equivalent exists for the US DCD703F1 5-in-1 attachment kit unless an exact UK model is confirmed.
+- Hold guide approval pending torque, chuck, dimensions, speed, battery platform, kit contents and safety/charger checks for the selected regional models.
+
+### Guide 13 — robot vacuum and mop combos
+- Roborock's official Saros 10R page confirms 7.98cm body height, StarSight Autonomous System 2.0, dual anti-tangle system and Multifunctional Dock 4.0 features. The global page does not itself establish UK stock or exact UK retailer SKU; do not present Saros 10 as an identical substitute.
+- Roborock UK confirms Qrevo Edge 2 is advertised at up to 25,000Pa and lists the dual anti-tangle system, 7.98cm body, dock contents, dimensions and UK two-year warranty. These are manufacturer claims; keep suction figures attributed and avoid cross-brand test comparisons.
+- Roborock UK Qrevo 2 Pro page confirms up to 25,000Pa. Existing record notes the US page's 20,000Pa claim; keep the regional difference explicit and verify exact current US listing before using it.
+- Saros 10R vs Saros 10 and Qrevo CurvX vs Qrevo Curv 2 Pro remain distinct names/models. Never merge specs, dock packages, accessories or warranty across these products.
+
+### Batch 3 disposition
+- Manufacturer sources checked for selected claims across guides 9–13; not all 20 product entries in these five guides have been fully verified.
+- Guides 9–13 remain **not approved** pending remaining product/source and compatibility checks. Guide 11 has a concrete unresolved runtime discrepancy (Samsung 160 minutes vs current UK product page up to 120 minutes with spare battery).
+- No catalogue product records, editorial statuses, publication statuses, site pages, feeds or production settings were changed. All guides remain drafts.
+- Key source pages checked: https://download.semiconductor.samsung.com/resources/data-sheet/samsung_portable_ssd_t9_datasheet_rev1_0.pdf ; https://www.kingston.com/datasheets/XS2000_en.pdf ; https://www.kingston.com/en/support/technical/products/sxs2000 ; https://www.samsung.com/uk/vacuum-cleaners/bespoke-jet/ ; https://media.miele.com/downloads/n-/gb/FS_11819170_GBE_GB-en-GB.pdf ; https://global.roborock.com/pages/roborock-saros-10r ; https://uk.roborock.com/products/roborock-qrevo-edge-2-hyperforce-suction-dual-anti-tangle-system ; https://uk.roborock.com/pages/roborock-qrevo-2-pro
