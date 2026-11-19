@@ -1258,3 +1258,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 ## 19 November 2026 — TP-Link regional revision handoff
 - Product-data commit `68ae210e216909ac6ddf669a9c5f2e6a0b508feb` adds a Deco BE63 note: UK hardware revisions differ by region; do not equate a US datasheet or US unit with the UK SKU/firmware/adapter. Check TP-Link UK support page and exact retail pack.
 - PR #8 remains open/unmerged; 25 guides remain draft; no production publishing, Pinterest or IndexNow.
+
+
+## 19 November 2026 — router/monitor review handoff
+- Product data commit `27be358f9413ed808752a09e080ac4aecfff2eec` adds UK/regional source evidence to eero Pro 7, Orbi RBE773, Dell U2723QE, ASUS PA279CRV and BenQ PD2705U.
+- eero adapter: 27W, 100–240V/50–60Hz confirmed by eero UK compliance. Orbi UK 3-pack contents confirm three adapters, but input voltage is not stated in captured page; do not infer it.
+- Dell UK code 210-BCXK and universal AC input confirmed; listing currently reports unavailable. ASUS PA279CRV: universal input and 96W PD. BenQ PD2705U: universal input and 65W PD.
+- Keep all guides draft. PR #8 open/unmerged. No production publishing, Pinterest or IndexNow. Latest-head CI still must be confirmed after documentation commits.
