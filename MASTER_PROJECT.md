@@ -1723,3 +1723,17 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - PR #22 passed exact-head CI run #858 (all 23 job steps success) and was merged as `b211f1df1e2f6a677ade31ba9b7e3ccb649c3bc9`. Main matches this SHA. Cloudflare production deployment for the merge SHA remains unverified.
 - No public page, catalogue, affiliate links, crawler settings, WAF, DNS, analytics or Pinterest configuration was changed. No paid service or TinyFish credit used. GSC/GA4/Bing account connections and the owner's model-training preference remain pending for a later desktop session.
 - Next: exact-head CI for the AI-search plan PR; then continue a non-public, evidence-led Tier-1 guide gap review. Once the owner is back at a computer, connect GSC/GA4/Bing and decide training-vs-search preferences before any crawler policy changes.
+
+
+## 19 November 2026 — US expansion, global trend radar and civil-preparedness research
+
+- Rechecked the project context and 32 saved UK keyword records. Existing UK metrics remain estimates from OpenSEO/DataForSEO, not first-party traffic.
+- Confirmed the US market needs its own keyword research (US location code 2840); it must not inherit UK volume, KD, CPC or product-variant assumptions.
+- OpenSEO's last known balance is 28 credits. The keyword research action costs approximately 54 credits per seed at default settings, so no paid US keyword batch was started. A US seed universe is documented for later approved research.
+- Verified Rockstar's 19 Nov 2026 announcement that GTA VI is available worldwide for PS5 and Xbox Series X|S. Google Trends US/UK launch-day snapshots show a substantial short-term GTA 6 and PS5 search spike. Trend-feed bands are not monthly keyword volumes. No PC release or PC compatibility is assumed.
+- Reviewed official UK Cabinet Office Be Ready guidance (three days of household disruption), US FEMA/Ready.gov kit guidance (including battery/hand-crank and NOAA radio guidance), and the EU Preparedness Union 72-hour objective. This supports a practical civil-preparedness research lane, not war-scare marketing.
+- Added PR #29, an intent map for the existing 25 guides. Exact-head Astro quality workflow #870 passed for SHA 778270bdd0c17c790940a2c04b86f81abc6c6842.
+- Added PR #30, a US keyword seed / global trend / civil-preparedness plan. Exact-head workflow #871 was still in progress at the time of this checkpoint.
+- PR #27 exact-head workflow #867 passed; PR #28 exact-head workflow #869 passed. Both remain unmerged pending owner approval. PR #29 and PR #30 are also open and unmerged.
+- No product or guide records, public pages, metadata, images, affiliate links, analytics, Cloudflare settings, DNS, crawler rules or production deployment were changed. No paid service, research batch, AI visibility tracking or scheduled automation was activated.
+- Next: finish PR #30 exact-head CI, inspect the resulting docs, then continue source verification for emergency-radio/backup-power candidate products and prepare a measured US keyword batch only after credits and spend are approved.
