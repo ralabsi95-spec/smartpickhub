@@ -1027,3 +1027,22 @@ This batch checked selected manufacturer pages for Wi-Fi 7 routers/mesh, GaN cha
 - Guides 19–23 remain **not approved**. High-priority unresolved checks include exact Garmin UK X210/X310 SKUs and legal context; Epson UK EF-21G/CO-FH02; Synology compatibility/drive policy; Oral-B exact bundles; and Logitech model-specific performance data.
 - No catalogue records, editorial statuses, publication statuses, live pages, feeds or production settings changed. All 25 guides remain drafts.
 - Key sources checked: https://www.garmin.com/en-GB/p/1222949/ ; https://www.garmin.com/en-GB/p/pn/010-02899-10/ ; https://uk.xgimi.com/collections/all/products/mogo-4 ; https://epson.com/For-Home/Projectors/Streaming-Entertainment/EF-30-Smart-Personal-Projector/p/V11HC43920 ; https://www.synology.com/en-uk/products ; https://www.synology.com/en-us/products/DS224%2B?tab=specs ; https://www.synology.com/en-uk/company/news/article/DS1525p_Global ; https://www.oralb.co.uk/en-gb/oral-health/why-oral-b/electric-toothbrushes/which-oral-b-io-is-right-for-me ; https://www.oralb.co.uk/en-gb/products/electric-toothbrushes/oral-b-io-series-6-electric-toothbrush
+
+
+## Supplemental live source checks — batch 6 (guides 24–25), 19 November 2026
+
+### Guide 24 — smartwatches
+- Apple UK current comparison confirms Series 12, Ultra 4 and SE 3 as current models. Series 12 is shown with 42mm/46mm cases, up to 2,000-nit display; Ultra 4 with 49mm titanium case and up to 3,000 nits; SE 3 with 40mm/44mm aluminium cases and up to 1,000 nits. The comparison page warns feature availability varies by region/language and requires compatible iPhone/software.
+- Apple UK Ultra 4 technical specifications confirm S11, 49mm Grade 5 titanium, 3,000-nit display, up to 50h normal use / 84h Low Power Mode, 100m water resistance, satellite connectivity and model-specific RedCap/LTE bands. Do not imply satellite or cellular features work in every country/carrier; check feature availability and supported regional bands.
+- Garmin Forerunner 265 model-specific UK source and battery/multiband GPS details were not fully retrieved in this pass. Hold guide approval until Garmin product spec and exact UK/US regional variant are checked.
+
+### Guide 25 — home printers
+- Brother UK source URLs and source notes in the catalogue identify the intended UK electrical variants: MFC-L8390CDW, MFC-L3740CDW, HL-L3240CDW and DCP-L2660DW, all stated as 220–240V AC, 50/60Hz. US identifiers MFC-L8395CDW, MFC-L3780CDW, HL-L3280CDW and DCP-L2640DW are separate 110–120V regional models; do not treat them as identical SKUs or send UK shoppers to US listings.
+- This batch did not retrieve the full live Brother UK spec pages for all four models, so ppm, duplex scan, ADF, Wi-Fi/Ethernet and consumable-yield claims remain pending direct verification. The MFC-L3740CDW UK record is especially important: do not assume its duplex scanning/ADF features match the US MFC-L3780CDW.
+- Guide needs explicit total-cost guidance: toner yield and included starter cartridges, drum/belt/waste-toner replacement where applicable, exact retailer bundle and warranty. Keep transient retailer stock/prices out of evergreen claims.
+
+### Batch 6 disposition and full catalogue status
+- Final two guides have been source-checked selectively. The catalogue-wide live-source preflight now covers all 25 guide categories, but does **not** constitute full verification of all 100 individual product records.
+- Guide 24 remains provisional pending Garmin Forerunner 265 verification. Guide 25 remains provisional pending direct capture of all four Brother UK product spec pages and confirmation of the model-specific consumables.
+- No guide is approved for publication at this checkpoint. No product records, editorial statuses, publication statuses, production pages, Pinterest feeds or production settings changed. All 25 guides remain drafts.
+- Key sources checked: https://www.apple.com/uk/watch/compare/?modelList=watch-se-3%2Cwatch-ultra-4 ; https://www.apple.com/uk/apple-watch-ultra-4/specs/ ; https://www.garmin.com/en-GB/compare/?compareProduct=886785 ; Brother UK model pages listed in the product catalogue: https://store.brother.co.uk/devices/laser/mfc/mfcl8390cdw ; https://store.brother.co.uk/devices/laser/mfc/mfcl3740cdw ; https://store.brother.co.uk/devices/laser/hl/hll3240cdw ; https://store.brother.co.uk/devices/laser/dcp/dcpl2660dw
