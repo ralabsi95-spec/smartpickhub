@@ -23,6 +23,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ github.event.workflow_run.head_sha }}
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -41,15 +42,38 @@ jobs:
         env:
           EXPECTED_DEPLOYMENT_SHA: ${{ github.event.workflow_run.head_sha }}
         run: |
+          git fetch --no-tags origin main
           for attempt in $(seq 1 60); do
             marker=$(curl --fail --silent https://smartpickhub.pages.dev/deployment.json || true)
-            if printf '%s' "$marker" | grep -Fq "\"commit\": \"$EXPECTED_DEPLOYMENT_SHA\"" \
+            deployed_sha=$(printf '%s' "$marker" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{process.stdout.write(JSON.parse(s).commit ?? "")}catch{}})')
+            if [ -n "$deployed_sha" ] \
               && printf '%s' "$marker" | grep -Fq '"branch": "main"' \
               && printf '%s' "$marker" | grep -Fq '"environment": "production"'; then
-              echo "Confirmed production deployment $EXPECTED_DEPLOYMENT_SHA"
-              exit 0
+              if [ "$deployed_sha" = "$EXPECTED_DEPLOYMENT_SHA" ]; then
+                echo "Confirmed exact production deployment $deployed_sha"
+                exit 0
+              fi
+              if git cat-file -e "$deployed_sha^{commit}" 2>/dev/null \
+                && git merge-base --is-ancestor "$EXPECTED_DEPLOYMENT_SHA" "$deployed_sha" \
+                && git merge-base --is-ancestor "$deployed_sha" origin/main; then
+                changed_files=$(git diff --name-only "$EXPECTED_DEPLOYMENT_SHA" "$deployed_sha")
+                if [ -z "$changed_files" ] || ! printf '%s\\n' "$changed_files" | grep -qvE '\\.md
+          echo "Cloudflare did not serve the expected production commit within 10 minutes."
+          exit 1
+
+      - name: Notify IndexNow after live robots, sitemap and key checks
+        run: npm run indexnow
+        env:
+          PUBLIC_SITE_URL: https://smartpickhub.pages.dev
+          EXPECTED_DEPLOYMENT_SHA: ${{ github.event.workflow_run.head_sha }}
+; then
+                  echo "Confirmed production serves a documentation-only descendant $deployed_sha of tested release $EXPECTED_DEPLOYMENT_SHA"
+                  exit 0
+                fi
+                echo "Production descendant contains non-documentation changes; waiting for its own successful CI."
+              fi
             fi
-            echo "Waiting for production deployment ($attempt/60)..."
+            echo "Waiting for the exact tested commit or a documentation-only descendant ($attempt/60)..."
             sleep 10
           done
           echo "Cloudflare did not serve the expected production commit within 10 minutes."
