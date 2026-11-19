@@ -1489,3 +1489,9 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - All 25 guides / 100 products remain in the catalogue; all guides remain draft. PR #8 open/unmerged. No live site update, Pinterest publication or IndexNow submission.
 - CI #778 was observed running on prior head `2137a66d`; it is not evidence for commit `ff1fff9a`. Confirm new workflow run on the final head before marking checks complete.
 - Next: proportionate review of remaining product identity/regional power/bundle risks; wait for final-head CI; preserve deferred IndexNow changed-URL/deletion detection and send/receipt log as future scope.
+
+
+## 19 November 2026 — charger compatibility checkpoint
+- Product-data commit `88ee74da154158c7c371b7145148801519d995c8` adds manufacturer-backed clarifications for UGREEN Nexode 100W SKU 40749 (universal input; 100W total cap; no unsupported simultaneous per-device claim) and Nexode 200W SKU 35539 (universal input; per-port ceilings; 200W combined cap; verify UK mains lead).
+- PR #8 remains open/unmerged; no production deployment, guide publication, Pinterest post or IndexNow submission. All 25 guides remain draft.
+- Run #778 completed successfully on an older head, while #781 was still running on prior head `89edd10e`; the new product commit requires its own completed CI run.
