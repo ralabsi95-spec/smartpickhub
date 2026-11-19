@@ -1082,3 +1082,43 @@ This batch checked selected manufacturer pages for Wi-Fi 7 routers/mesh, GaN cha
 - Brother guide 25: the four UK model pages have now been reviewed; do not claim duplex scan for MFC-L3740CDW based only on the general scanning specifications. Check full consumables/warranty/bundle details before approval.
 - Garmin guide 19: quality/resolution tiers are supported, but exact X210/X310 retail part numbers and bundle remain open.
 - No guide's editorial or publication status changed. No page was published, no index notification was sent, and no production settings were touched.
+
+
+## Full-catalogue follow-up — structural pass and targeted source verification (19 November 2026)
+
+### Scope and limits
+- Re-read all 25 guide records and all 100 product records in `src/data/products.json` on the editorial review branch. Confirmed 25 guides × 4 products = 100 records. This is a catalogue-wide structural and risk-triage pass, not a claim that every specification in all 100 records has been independently re-tested against a live manufacturer page.
+- No product was removed, no guide was editorially approved, and no `publicationStatus` changed. All 25 guides remain `draft`.
+
+### Additional catalogue corrections committed
+- Commit `726f6266e1f06214eb431fba6d4d897cdbd3fb1f`:
+  - Garmin Dash Cam X310/X210/X110 source links now point to Garmin UK's official product-comparison page rather than the US-specific product URLs. The official UK comparison identifies X310 as 4K, X210 as 1440p, and X110 as 1080p/140-degree/2.4-inch display. Exact UK retail part numbers for X210 and X310 remain unconfirmed; the X210 DoC model family B04684 is explicitly not treated as a retail SKU.
+  - Garmin Mini 3 source now points to the exact Garmin UK product page and confirmed part number 010-02899-10.
+  - Apple Watch Ultra 4 source notes narrowed to avoid attributing Ultra 3 satellite SOS/messaging features to Ultra 4. Apple documentation distinguishes Ultra 3's Apple-provided satellite feature and carrier-dependent satellite services; cellular support remains model/country/carrier-specific.
+
+### Additional official evidence reviewed
+- CalDigit TS4 official specification: 18 ports; up to 98W host power delivery; display output up to 8K on compatible Windows systems, while Apple M1 Pro/M1 Max support dual 6K and base M1 supports only one external display. Full functionality depends on host Thunderbolt/USB-C capabilities. Source: https://us.caldigit.com/products/ts4
+- eufy SoloCam S340 official US page: dual 3K wide + 2K telephoto, 135-degree field of view, 8× hybrid zoom, 360-degree pan/70-degree tilt, built-in 8GB storage; solar and cloud feature details must retain their footnotes. Source: https://www.eufy.com/solocam-s340
+- Ninja UK AF400UK official listing: 9.5L, 2,470W, 240V, six functions and 2-year guarantee upon registration in UK/ROI. Keep separate from US DZ550 (10qt/120V/thermometer). Source: https://www.sharkninja.co.uk/ninja-foodi-max-dual-zone-air-fryer-af400uk/AF400UK.html
+- Dyson UK V15 Detect Absolute official listing: up to 60 minutes, 240AW, 0.77L bin and 4.5-hour charge; runtime is a maximum manufacturer claim and depends on mode/head. Source: https://www.dyson.co.uk/vacuum-cleaners/cordless/v15/detect-yellow-nickel
+- Apple iPad mini (A20 Pro) official Support page: 2026 model, 8.5-inch OLED, A20 Pro, IP67 and storage configurations; use its exact spec rather than older UK iPad mini page. Source: https://support.apple.com/en-us/149482
+- Apple Watch official pages confirm Series 12, Ultra 4 and SE 3 are current model names in this review period. Cellular model numbers/carrier compatibility vary by country; Ultra 3 satellite support must not be transferred to Ultra 4. Sources: https://www.apple.com/watch/compare/ ; https://www.apple.com/watch/cellular/ ; https://support.apple.com/en-us/125408
+- Garmin official UK comparison confirms Mini 3/X110/X210/X310 resolution tiers and legal/privacy warning; exact UK retail SKU for Mini 3 is 010-02899-10. Sources: https://www.garmin.com/en-GB/p/pn/010-02899-10/ ; https://support.garmin.com/en-US/enUS/?faq=K5Kkj7NNG59OMjVi1NwIl5
+- Brother UK official MFC-L8390CDW page confirms 30ppm, duplex print, duplex scan and 50-sheet two-sided ADF. Source: https://store.brother.co.uk/devices/laser/mfc/mfcl8390cdw
+
+### Risk triage across all 25 guides
+1. Highest priority: regional mains voltage / electrical SKU distinctions (portable power stations, air fryers, coffee machines, printers, power tools); never present US 120V models as UK/Jordan-compatible.
+2. Highest priority: USB-C charger power sharing and dock display/host compatibility (guides 5 and 8); maximum combined watts are not per-port watts, and host GPU/USB-C/Thunderbolt support determines display count/resolution.
+3. High priority: model identity and regional alternatives (robot vacuums, DEWALT, Brother, Garmin, Apple Watch/iPad); separate true equivalent SKUs from merely similar products.
+4. High priority: consumables and bundle contents (printers, vacuums, air fryers, projectors, dash cams); never assume SD cards, batteries, chargers, docks, or accessories are included.
+5. Medium priority: wireless standards, codecs, cellular bands, subscription-dependent camera/cloud features, and warranty country coverage.
+
+### Open holds carried forward
+- Garmin X210/X310 UK retail part numbers and exact in-box packages.
+- Brother MFC-L3740CDW duplex scanning: do not claim it; official listing reviewed confirms ADF and duplex printing, not duplex ADF scanning.
+- Apple Watch country/carrier and satellite feature availability.
+- Samsung Bespoke Jet AI 160-minute runtime is conditional on two batteries, minimum power and non-motorised tool; do not present as typical powered-head runtime.
+- Any product whose UK/US record names a related but non-identical model remains a regional alternative, not a verified equivalent.
+
+### Next gate
+- Continue manufacturer evidence checks on remaining records, one exact model/SKU at a time. Then run latest CI on the final branch head, complete editorial approval checklist for each guide, and keep all guides draft until owner launch decision. PR #8 stays open/unmerged. No production, Pinterest or IndexNow action.
