@@ -1512,3 +1512,8 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 ## 19 November 2026 — Garmin X-series source integrity correction
 - Commit `39bfea83d6b1216c86473d169d7284f883a1a96f` fixes a material source mismatch: X110/X210/X310 previously shared the Mini 3-specific product URL. X110 now uses Garmin UK's X110 page; X210 and X310 use their model-specific Currys Business UK listings for exact UK retail identifiers, with Garmin's UK X-series comparison retained for model resolution tiers.
 - PR #8 remains open/unmerged; 25 guides remain draft. No production, Pinterest or IndexNow action.
+
+
+## 19 November 2026 — Apple iPad mini UK configuration note
+- Commit `9af76b4c5d1f17552745f8a334d618ef623c91cb` records Apple's UK store availability for iPad mini A20 Pro and preserves a regional caveat: US technical page does not establish exact UK cellular band configuration or local in-box adapter contents. Check selected UK SKU/configuration.
+- PR #8 open/unmerged; all 25 guides remain draft; no production/Pinterest/IndexNow action.
