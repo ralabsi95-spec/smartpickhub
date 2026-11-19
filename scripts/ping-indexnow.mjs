@@ -86,7 +86,23 @@ if (!deploymentResponse.ok) skip('the live deployment marker is not reachable ye
 let deploymentMarker;
 try { deploymentMarker = await deploymentResponse.json(); } catch { skip('the live deployment marker is not valid JSON.'); }
 if (expectedDeploymentSha && deploymentMarker.commit !== expectedDeploymentSha) {
-  skip(`Cloudflare is serving commit ${deploymentMarker.commit ?? 'unknown'}, not the expected commit ${expectedDeploymentSha}.`);
+  if (process.env.ALLOW_DESCENDANT_DEPLOYMENT !== 'true') {
+    skip(`Cloudflare is serving commit ${deploymentMarker.commit ?? 'unknown'}, not the expected commit ${expectedDeploymentSha}.`);
+  }
+  try {
+    const { execFileSync } = await import('node:child_process');
+    const deployedSha = deploymentMarker.commit;
+    execFileSync('git', ['merge-base', '--is-ancestor', expectedDeploymentSha, deployedSha], { stdio: 'ignore' });
+    execFileSync('git', ['merge-base', '--is-ancestor', deployedSha, 'origin/main'], { stdio: 'ignore' });
+    const changedFiles = execFileSync('git', ['diff', '--name-only', expectedDeploymentSha, deployedSha], { encoding: 'utf8' })
+      .split(/\r?\n/).map((file) => file.trim()).filter(Boolean);
+    if (changedFiles.some((file) => !file.endsWith('.md'))) {
+      skip('the newer live deployment contains non-documentation changes; require CI for that exact commit before notifying.');
+    }
+    console.log(`Cloudflare serves documentation-only descendant ${deployedSha} of tested commit ${expectedDeploymentSha}.`);
+  } catch {
+    skip(`Cloudflare serves ${deploymentMarker.commit ?? 'unknown'}, which is not a verified documentation-only descendant of tested commit ${expectedDeploymentSha} on main.`);
+  }
 }
 
 const [liveRobotsResponse, liveHomeResponse, liveSitemapResponse] = await Promise.all([

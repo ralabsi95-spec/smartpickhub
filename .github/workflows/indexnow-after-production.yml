@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   notify:
-    if: github.event.workflow_run.conclusion == 'success' && contains(github.event.workflow_run.head_commit.message, 'Approve 25 buying guides and enable guarded indexing')
+    if: github.event.workflow_run.conclusion == 'success' && (contains(github.event.workflow_run.head_commit.message, 'Approve 25 buying guides and enable guarded indexing') || contains(github.event.workflow_run.head_commit.message, 'Fix IndexNow guard and refresh SmartPickHub project handoff'))
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -23,6 +23,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ github.event.workflow_run.head_sha }}
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -37,22 +38,36 @@ jobs:
         env:
           PUBLIC_SITE_URL: https://smartpickhub.pages.dev
 
-      - name: Wait for Cloudflare to serve the exact production commit
+      - name: Wait for Cloudflare to serve the tested commit or a documentation-only descendant
         env:
           EXPECTED_DEPLOYMENT_SHA: ${{ github.event.workflow_run.head_sha }}
         run: |
+          git fetch --no-tags origin main
           for attempt in $(seq 1 60); do
             marker=$(curl --fail --silent https://smartpickhub.pages.dev/deployment.json || true)
-            if printf '%s' "$marker" | grep -Fq "\"commit\": \"$EXPECTED_DEPLOYMENT_SHA\"" \
+            deployed_sha=$(printf '%s' "$marker" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{process.stdout.write(JSON.parse(s).commit ?? "")}catch{}})')
+            if [ -n "$deployed_sha" ] \
               && printf '%s' "$marker" | grep -Fq '"branch": "main"' \
               && printf '%s' "$marker" | grep -Fq '"environment": "production"'; then
-              echo "Confirmed production deployment $EXPECTED_DEPLOYMENT_SHA"
-              exit 0
+              if [ "$deployed_sha" = "$EXPECTED_DEPLOYMENT_SHA" ]; then
+                echo "Confirmed exact production deployment $deployed_sha"
+                exit 0
+              fi
+              if git cat-file -e "$deployed_sha^{commit}" 2>/dev/null \
+                && git merge-base --is-ancestor "$EXPECTED_DEPLOYMENT_SHA" "$deployed_sha" \
+                && git merge-base --is-ancestor "$deployed_sha" origin/main; then
+                changed_files=$(git diff --name-only "$EXPECTED_DEPLOYMENT_SHA" "$deployed_sha")
+                if [ -z "$changed_files" ] || ! printf '%s\n' "$changed_files" | grep -qvE '\.md$'; then
+                  echo "Confirmed documentation-only descendant $deployed_sha of tested release $EXPECTED_DEPLOYMENT_SHA"
+                  exit 0
+                fi
+                echo "Production descendant contains non-documentation changes; waiting for its own successful CI."
+              fi
             fi
-            echo "Waiting for production deployment ($attempt/60)..."
+            echo "Waiting for exact tested commit or documentation-only descendant ($attempt/60)..."
             sleep 10
           done
-          echo "Cloudflare did not serve the expected production commit within 10 minutes."
+          echo "Cloudflare did not serve the tested commit or a safe documentation-only descendant within 10 minutes."
           exit 1
 
       - name: Notify IndexNow after live robots, sitemap and key checks
@@ -60,3 +75,4 @@ jobs:
         env:
           PUBLIC_SITE_URL: https://smartpickhub.pages.dev
           EXPECTED_DEPLOYMENT_SHA: ${{ github.event.workflow_run.head_sha }}
+          ALLOW_DESCENDANT_DEPLOYMENT: 'true'

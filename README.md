@@ -2,31 +2,38 @@
 
 UK-first, research-led affiliate buying guides, with a secondary US marketplace track.
 
-## Read this first
-- **[Agent handoff and continuation rules](AGENT_HANDOFF.md)** – mandatory first read for every new ChatGPT conversation, coding agent or contributor.
-- **[Master project log](MASTER_PROJECT.md)** – chronological project history, decisions and implementation notes.
-- **[25-guide editorial approval audit](EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md)** – current guide status, evidence scope and publication/indexing gates.
-- **[Product ingestion playbook](PRODUCT_INGESTION_PLAYBOOK.md)** – safe product research and intake procedure.
+## Current production environment
+- Production: https://smartpickhub.pages.dev/ (Cloudflare Pages + Astro).
+- Preview: https://smartpickhub-preview.pages.dev/ (must remain noindex/nofollow and crawl-disallowed).
+- Source repository: https://github.com/ralabsi95-spec/smartpickhub
+- Production branch: `main`.
+- The former InfinityFree domain/hosting and former WordPress site are cancelled and completely outside SmartPickHub. Do not access, connect, edit, migrate, redirect, import from, or use them as fallback or data source.
 
-## Current status (19 November 2026)
+## Current release (19 November 2026)
+- 25 buying guides / 100 product records are owner-approved and published in the repository.
+- Amazon UK tracking ID: `smartpickhubu-21`; secondary US ID: `smartpickh0bc-20`.
+- Product identifiers are marketplace search phrases, not verified direct ASIN links. Do not invent ASINs, prices, ratings, reviews, stock, discounts or hands-on testing.
+- Product imagery is optional. Use only exact-model images with documented commercial reuse rights; otherwise retain the existing text-based product information card.
+- Production sitemap contains 28 URLs. Robots allows crawling; this does not guarantee Google/Bing indexing.
+- Five category-specific RSS feeds are live and contain approved guide entries. Pinterest has not been connected to these feeds and no Pins have been published by this release.
+- IndexNow key file is live. Guarded notification is gated on successful main CI and verified production deployment. Do not claim a notification until the workflow result confirms acceptance.
+- Google Search Console sitemap processing/submission remains unconfirmed; OpenSEO currently has no connected GSC or GA4 account.
 
-- Production is live on Cloudflare Pages: https://smartpickhub.pages.dev/. The live deployment marker was verified at commit `4a6b67a5c60f93bfeb58b5f792c08825a0ad1706`.
-- PR #8 was merged to `main` after its latest-head CI #798 passed. It includes evidence-backed product corrections and the 25-guide audit record.
-- Release branch `release/approve-guides-indexing-20261119` prepares the owner-authorised publication of all **25 buying guides / 100 products**, optional product imagery, and guarded IndexNow notification. PR #9 CI #810 passed on tested head `df6a5d2`; merge is held pending confirmation of the canonical indexing host.
-- Product photos are optional. Use only exact-model assets with documented commercial reuse rights; otherwise retain the existing text-based product information card without a substitute image or empty placeholder.
-- Amazon links remain marketplace search links, not verified direct ASIN listings. UK tracking ID: `smartpickhubu-21`; US secondary tracking ID: `smartpickh0bc-20`.
-- Production robots currently allows crawling, the homepage has `index, follow`, and the live sitemap contains 28 URLs. This enables crawling but does not guarantee Google/Bing indexing.
-- IndexNow verification key is already live. A guarded post-CI/post-deployment IndexNow workflow is being added; it will submit only after the live deployment marker, robots, sitemap and key file match the exact successful commit.
-- Google Search Console's existing sitemap-fetch issue remains unresolved. The OpenSEO project does not currently have a connected Search Console account; no sitemap submission is claimed yet.
-- Do not connect Pinterest RSS or publish Pins as part of this indexing release. RSS feeds may become populated after the approved guide release, but no Pinterest publishing action is authorised here.
-- InfinityFree / `smartpickhub.infinityfree.me` is not the production host for this Astro release. Preserve the legacy property and WordPress installation unchanged.
+## Current audit snapshot
+- Latest production deployment marker: `2fc29d32067a0b654b1f4e4a8133835002f45513`.
+- Fresh OpenSEO audit: 28/28 pages crawled, all HTTP 200, indexable and in sitemap; no critical crawl issues.
+- Informational SEO improvements: 21 title tags exceed the audit's 60-character recommendation; 4 meta descriptions exceed 160 characters. Preserve visible guide H1s; use separate concise SEO titles where appropriate.
+- Catalogue: 25 guides / 100 products; four products per guide; all product records have manufacturer sources and US/UK marketplace search identifiers.
+- OpenSEO has 24 saved UK commercial/transactional keyword opportunities with estimated volume, difficulty and CPC. These are estimates, not first-party traffic.
 
-## Verified quality snapshot
-- CI push run [#44249569378](https://github.com/ralabsi95-spec/smartpickhub/actions/runs/44249569378) and PR run [#44249577388](https://github.com/ralabsi95-spec/smartpickhub/actions/runs/44249577388) passed on commit `3f49a59`.
-- 29 generated HTML pages passed smoke checks; 25 guides; 100 US and 100 UK affiliate URL constructions.
-- axe checked 28 routes: zero violations; 27 incomplete contrast checks remain for manual review because of gradient backgrounds.
-- Lighthouse intentionally samples five representative pages: all five scored 100 Performance, Accessibility and Best Practices; SEO 66–69 is expected while noindex/robots protections remain enabled.
-- Consolidated report: `quality-passed-security-review-and-manual-accessibility-review-required`. npm audit remains review-required for one high-severity picomatch advisory affecting 12 dependency nodes; 27 axe contrast checks still require manual review. This is not a clean security audit.
+## Project continuity and safety
+- Read [AGENT_HANDOFF.md](AGENT_HANDOFF.md) before work and [MASTER_PROJECT.md](MASTER_PROJECT.md) for the chronological record.
+- [25-guide editorial approval audit](EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md) records the evidence scope and regional caveats.
+- [Product ingestion playbook](PRODUCT_INGESTION_PLAYBOOK.md) governs safe product research and intake.
+- Do not re-import products or repeat the 25-guide release.
+- Never publish, delete, or materially change production content without owner approval.
+- Do not run `npm audit fix --force`, blind major upgrades, or destructive dependency changes.
+- No paid service, API or subscription without owner approval.
 
 ## Development commands
 ```bash
@@ -42,16 +49,3 @@ npm run smoke
 npm run accessibility
 npm run audit-report
 ```
-
-## Editorial and safety rules
-All catalogue entries are research drafts. Verify exact local product variants, manufacturer claims and marketplace destinations before editorial approval. Do not invent ASINs, direct links, prices, ratings, reviews, stock or hands-on testing. Do not publish automatically. See `AGENT_HANDOFF.md` for mandatory operating rules and next actions.
-
-## Draft research automation
-The GitHub Actions draft-research workflow creates unverified research briefs for human review only. It uses a dedicated `automation/editorial-drafts` branch and opens/updates a pull request to the default branch; it must never push generated drafts directly to the default branch. Scheduled workflows run from the default branch, so the schedule becomes active only after the workflow itself is approved and merged. A missing Gemini secret causes generation to fail safely.
-
-
-## Indexing target confirmation (19 November 2026)
-- Two distinct live sites were verified: the InfinityFree WordPress site at https://smartpickhub.infinityfree.me/ and the Astro catalogue at https://smartpickhub.pages.dev/.
-- InfinityFree robots allows crawling and points to /wp-sitemap.xml; sitemap XML could not be independently read by the available fetchers. Pages.dev robots allows crawling, homepage is index,follow, and its sitemap has 28 URLs.
-- PR #9 CI #810 passed on tested head `df6a5d20918c04be131ad3519dc7c2a0a0e0d353`; it is intentionally not merged because the owner must confirm which host is canonical for the 25-guide release. PR #9's IndexNow workflow targets Pages.dev and must not be merged if InfinityFree is the intended target.
-- No IndexNow notification or Google Search Console sitemap submission has been confirmed. OpenSEO has no connected GSC account; browser automation was unavailable due TinyFish wallet balance -$0.47.
