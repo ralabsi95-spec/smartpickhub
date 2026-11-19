@@ -12,7 +12,7 @@ UK-first, research-led affiliate buying guides, with a secondary US marketplace 
 
 - Production is live on Cloudflare Pages: https://smartpickhub.pages.dev/. The live deployment marker was verified at commit `4a6b67a5c60f93bfeb58b5f792c08825a0ad1706`.
 - PR #8 was merged to `main` after its latest-head CI #798 passed. It includes evidence-backed product corrections and the 25-guide audit record.
-- Release branch `release/approve-guides-indexing-20261119` prepares the owner-authorised publication of all **25 buying guides / 100 products**, optional product imagery, and guarded IndexNow notification. PR #9 and its CI must pass before this release reaches production.
+- Release branch `release/approve-guides-indexing-20261119` prepares the owner-authorised publication of all **25 buying guides / 100 products**, optional product imagery, and guarded IndexNow notification. PR #9 CI #810 passed on tested head `df6a5d2`; merge is held pending confirmation of the canonical indexing host.
 - Product photos are optional. Use only exact-model assets with documented commercial reuse rights; otherwise retain the existing text-based product information card without a substitute image or empty placeholder.
 - Amazon links remain marketplace search links, not verified direct ASIN listings. UK tracking ID: `smartpickhubu-21`; US secondary tracking ID: `smartpickh0bc-20`.
 - Production robots currently allows crawling, the homepage has `index, follow`, and the live sitemap contains 28 URLs. This enables crawling but does not guarantee Google/Bing indexing.
@@ -48,3 +48,10 @@ All catalogue entries are research drafts. Verify exact local product variants, 
 
 ## Draft research automation
 The GitHub Actions draft-research workflow creates unverified research briefs for human review only. It uses a dedicated `automation/editorial-drafts` branch and opens/updates a pull request to the default branch; it must never push generated drafts directly to the default branch. Scheduled workflows run from the default branch, so the schedule becomes active only after the workflow itself is approved and merged. A missing Gemini secret causes generation to fail safely.
+
+
+## Indexing target confirmation (19 November 2026)
+- Two distinct live sites were verified: the InfinityFree WordPress site at https://smartpickhub.infinityfree.me/ and the Astro catalogue at https://smartpickhub.pages.dev/.
+- InfinityFree robots allows crawling and points to /wp-sitemap.xml; sitemap XML could not be independently read by the available fetchers. Pages.dev robots allows crawling, homepage is index,follow, and its sitemap has 28 URLs.
+- PR #9 CI #810 passed on tested head `df6a5d20918c04be131ad3519dc7c2a0a0e0d353`; it is intentionally not merged because the owner must confirm which host is canonical for the 25-guide release. PR #9's IndexNow workflow targets Pages.dev and must not be merged if InfinityFree is the intended target.
+- No IndexNow notification or Google Search Console sitemap submission has been confirmed. OpenSEO has no connected GSC account; browser automation was unavailable due TinyFish wallet balance -$0.47.
