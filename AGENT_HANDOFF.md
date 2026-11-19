@@ -1165,3 +1165,13 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Guides 9–13 remain **not approved**: several product pages remain unchecked; guide 11 has a concrete Samsung runtime discrepancy; guide 10 retains Ninja/COSORI regional checks; guide 12 needs full DEWALT model-pair checks; guide 13 requires exact regional SKU/dock distinctions.
 - No product records, editorialStatus, publicationStatus, production pages or distribution settings changed. All 25 guides remain drafts.
 - Next batch: continue official-source verification for guides 14–18. Keep all claims manufacturer-attributed, distinguish regional variants, and do not approve until every product in a guide has passed the evidence gates. Deferred IndexNow changed-URL/deletion/receipt-log engineering remains deferred.
+
+
+## 19 November 2026 — editorial source review batch 4 (guides 14–18)
+
+- Checked selected official sources for noise-cancelling headphones, wireless earbuds, air purifiers, Sage espresso machines and iPad models; findings and holds are in `EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md`.
+- Confirmed Sony WH-1000XM6 and WH-1000XM4C UK model specs; Sony WF-1000XM6 IPX4, multipoint/codecs and battery; Apple AirPods Pro 3 H2/ANC/IP57 features; Sage Barista Pro and Oracle Jet workflow/specifications; Apple iPad Pro M5, iPad Air M4 and iPad A16 regional specifications.
+- High-priority unresolved item: the claimed Apple iPad mini (A20 Pro) 8.5-inch OLED/2026 model did not resolve to an official Apple UK spec page in this pass. Do not call it an official released model or approve its guide until authoritative model evidence is found.
+- Levoit Vital 200S UK counterpart is unconfirmed; filter and voltage checks remain; Sage Bambino Plus/Barista Express package details and several remaining headphones/earbuds models still require direct source checks.
+- Guides 14–18 remain not approved; no product records, editorial statuses, publication statuses or production settings changed. All guides remain drafts.
+- Next batch: review guides 19–23 (dash cams, projectors, NAS, electric toothbrushes, gaming mice) with exact model and regional manufacturer pages. Deferred IndexNow engineering remains deferred.
