@@ -988,3 +988,42 @@ This batch checked selected manufacturer pages for Wi-Fi 7 routers/mesh, GaN cha
 - Guides 14–18 remain **not approved**. Specific holds: ULT WEAR/XM5 final checks; WF-1000XM5/AirPods 4; Levoit Vital 200S UK identifier/filter compatibility; Sage Bambino/Barista Express packages; and Apple iPad mini A20 Pro official model/source confirmation.
 - No catalogue data, editorial statuses, publication statuses, live pages, Pinterest feeds or production settings changed. All 25 guides remain drafts.
 - Key sources checked: https://www.sony.co.uk/electronics/support/wireless-headphones-bluetooth-headphones/wh-1000xm6/specifications ; https://www.sony.co.uk/electronics/support/wireless-headphones-bluetooth-headphones/wh-1000xm4c/specifications ; https://www.sony.co.uk/electronics/support/wireless-headphones-bluetooth-headphones/wf-1000xm6/specifications ; https://www.apple.com/airpods-pro/specs/ ; https://www.sageappliances.com/en-gb/product/bes878 ; https://www.sageappliances.com/en-gb/product/bes985 ; https://support.apple.com/en-gb/122240 ; https://support.apple.com/en-gb/126471 ; https://www.apple.com/uk/ipad-pro/specs/
+
+
+## Supplemental live source checks — batch 5 (guides 19–23), 19 November 2026
+
+### Guide 19 — dash cameras
+- Garmin UK confirms X110 is 1080p, 140° field of view, 2.4-inch LCD and built-in Clarity polariser; UK part number shown as 010-02900-10.
+- Garmin UK confirms Mini 3 is 1080p, 140° field of view, built-in polariser and no screen; UK part number 010-02899-10. The same official UK product page distinguishes X210 (1440p) and X310 (4K) as separate tiers. Keep exact models distinct and use UK product URLs/SKUs for UK shoppers.
+- Garmin explicitly warns that some jurisdictions regulate or prohibit use of dash cameras. Guide needs a concise UK/US local-law and privacy reminder; do not present US legal guidance as UK law or imply the device is legal in every jurisdiction.
+- The current official source excerpt does not expose every X210/X310 individual SKU or full package contents. Hold approval until all four exact UK part numbers, recording modes, power/parking accessories and microSD assumptions are checked.
+
+### Guide 20 — portable projectors
+- XGIMI UK confirms MoGo 4 model WK08K: native 1080p, 450 ISO lumens, Google TV, 71.28Wh battery, up to 2.5h video in Eco mode, Wi-Fi 5 dual-band, Bluetooth 5.1, 1.31kg, and AC 200–240V. PowerBase Stand is not assumed included; verify the selected bundle.
+- Epson US confirms EF-30 model V11HC43920: Full HD, 350 lumens white/colour, Google TV and Dolby Audio. This source confirms the US product, not a UK equivalent or UK mains package. Keep it clearly US-market only unless an exact UK SKU is sourced.
+- Epson EF-21G and CO-FH02 UK source checks are still required for current SKU/availability and the 1,000-lumen/3,000-lumen claims. Do not carry over EF-21W discontinued status to EF-21G; they are distinct regional/colour SKU listings.
+- Guide remains provisional pending full four-product regional review and a clear explanation that battery-powered portable projectors have different brightness/runtime trade-offs from mains-powered models.
+
+### Guide 21 — home NAS
+- Synology UK current catalogue lists DS1525+ as five bays, dual 2.5GbE, optional 10GbE and M.2 NVMe slots; supports expansion up to 15 drives. Synology's UK launch notice confirms optional 10GbE via E10G22-T1-Mini.
+- Synology UK catalogue separately lists DS925+ and DS925neo+; these are distinct product names. DS925+ should not inherit DS925neo+ claims. Likewise DS1525+ and DS1525neo+ are separate catalogue entries.
+- Synology DS725+ is listed with one 2.5GbE and one 1GbE port; do not simplify as dual 2.5GbE.
+- Synology official DS224+ specifications confirm Intel Celeron J4125, 2GB DDR4 (expandable to 6GB), two 1GbE LAN ports, two bays, and 100–240V AC 50/60Hz input. It is a 1GbE older-generation product, not comparable to 2.5GbE units without explaining the network difference.
+- NAS buying guidance must state that drives are not included unless the exact retailer bundle says otherwise, RAID is not backup, and drive/SSD/RAM compatibility should be checked against the current Synology compatibility list. Hold approval until all current model compatibility restrictions and warranty details are verified.
+
+### Guide 22 — electric toothbrushes
+- Oral-B UK comparison chart confirms iO10 and iO9 have seven modes; iO10 adds the iO Sense live coaching charger; iO9 includes 3D Teeth Tracking and a charging travel case. The chart also confirms iO6 has five modes, not the three-mode profile of iO3.
+- Oral-B UK iO6 product page confirms five cleaning modes and a 360° visible pressure sensor. This supports the current iO6 mode count.
+- Retailer bundles differ in brush heads, travel case, colour and charger. Keep product recommendations tied to exact bundle/plug details and do not imply all packages include the same accessories.
+- Guide remains provisional until exact iO10/iO9/iO3 regional packages, replacement-head compatibility and charging case inclusions are captured from each current UK product page.
+
+### Guide 23 — gaming mice
+- The current product catalogue lists Logitech PRO X2 SUPERSTRIKE, PRO X SUPERLIGHT 2, G502 X PLUS and G309. This batch did not retrieve sufficient exact model-specific official source detail for the first three products; do not approve based on category-level catalogue presence.
+- Existing G309 UK source note gives SKU 910-007200 and distinguishes 86g with AA battery from 68g with POWERPLAY. Keep the 68g claim conditional on the separate POWERPLAY charging system and verify the precise colour/SKU.
+- Hold guide approval until sensor model, weight, dimensions, switch type, polling rate, battery/runtime, connection modes, onboard memory/software and regional part numbers are checked from current Logitech G pages. Avoid subjective “best” or performance claims without evidence.
+
+### Batch 5 disposition
+- Selected official sources checked for guides 19–23; not all 20 product records in these guides have passed a complete source audit.
+- Guides 19–23 remain **not approved**. High-priority unresolved checks include exact Garmin UK X210/X310 SKUs and legal context; Epson UK EF-21G/CO-FH02; Synology compatibility/drive policy; Oral-B exact bundles; and Logitech model-specific performance data.
+- No catalogue records, editorial statuses, publication statuses, live pages, feeds or production settings changed. All 25 guides remain drafts.
+- Key sources checked: https://www.garmin.com/en-GB/p/1222949/ ; https://www.garmin.com/en-GB/p/pn/010-02899-10/ ; https://uk.xgimi.com/collections/all/products/mogo-4 ; https://epson.com/For-Home/Projectors/Streaming-Entertainment/EF-30-Smart-Personal-Projector/p/V11HC43920 ; https://www.synology.com/en-uk/products ; https://www.synology.com/en-us/products/DS224%2B?tab=specs ; https://www.synology.com/en-uk/company/news/article/DS1525p_Global ; https://www.oralb.co.uk/en-gb/oral-health/why-oral-b/electric-toothbrushes/which-oral-b-io-is-right-for-me ; https://www.oralb.co.uk/en-gb/products/electric-toothbrushes/oral-b-io-series-6-electric-toothbrush
