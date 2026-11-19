@@ -1,26 +1,29 @@
 # SmartPickHub – Agent Handoff (READ THIS FIRST)
 
-**Last verified:** 19 November 2026 19:15 UTC; main includes merged PRs #24, #25, #28 and #29 at `d623268d91f893f06510d68b85ee55c39ea0aec2`; new US/global trend plan is being rebased onto this main state.  
+**Last verified:** 19 November 2026 20:05 UTC; current `main` is `8f6a95a328c7d131e94b7de0de6f0bf4702c4dae` (PR #31 merged). PR-head CI and both Cloudflare Pages checks passed on `45cfa74aadbc983e7bae872b3d2d9d908d2de9ef`; post-merge main checks/deployment were still running at last read.  
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `main` (production)  
-**Pull requests:** #24, #25, #28, #29 merged. PR #30's original branch is superseded by a clean rebased continuation; PRs #26/#27 are stale status checkpoints, not merge candidates.  
+**Latest merged work:** PRs #24, #25, #28, #29 and #31. PR #30 is superseded; do not retry. PR #26/#27 are stale checkpoints.  
 **Production target:** https://smartpickhub.pages.dev/ (Cloudflare Pages + Astro)  
 **Isolated Astro preview:** https://smartpickhub-preview.pages.dev/
 
-> This file is the operational handoff for every new ChatGPT conversation, coding agent or human contributor. Read it before proposing or changing anything. Then read `MASTER_PROJECT.md` for the chronological record. The current dated status at the top supersedes older historical entries below.
+> This file is the operational handoff for every new agent. Read this file first, then read the latest dated entry at the end of `MASTER_PROJECT.md`. The current checkpoint below supersedes older historical status entries. Verify GitHub refs/checks again before acting; never assume a previous session's pending state is still current.
 >
-> **Permanent scope boundary (19 Nov 2026):** The former InfinityFree domain/hosting and former WordPress site are cancelled and completely outside SmartPickHub. They are not a target, fallback, migration source, catalogue source, or integration. Do not access, connect, edit, migrate, redirect, import from, or spend project effort on them. The approved environment is GitHub + Astro + Cloudflare Pages on `pages.dev`.
+> **Permanent scope boundary:** The former InfinityFree/WordPress environment is cancelled and completely outside SmartPickHub. Do not access, connect, edit, migrate, redirect, import from, or spend effort on it. The approved environment is GitHub + Astro + Cloudflare Pages.
 
-## Current authoritative checkpoint — 19 November 2026 19:12 UTC
+## Current authoritative checkpoint — 19 November 2026 20:05 UTC
 
-- Main now contains four approved improvement merges: Garmin source correction (#24), How We Research transparency page (#25), product discovery/million-record scale plan plus missing-key draft workflow guard (#28), and the 25-guide buyer-intent map (#29).
-- PR #24/#25/#28/#29 exact-head Astro quality checks passed. Cloudflare Pages production and isolated preview deployments passed for each. The separate legacy Workers build check still fails; it is not the Pages deployment and is not a blocker for these Pages releases.
-- Existing catalogue baseline remains 25 approved guides / 100 product records. No new products, direct ASINs, prices, ratings, reviews or images were introduced by these merges.
-- US market/global trend/civil preparedness plan is being carried forward on a fresh branch based on the new main to avoid conflicts with the four merged PRs. Read `US_GLOBAL_TREND_PREPAREDNESS_PLAN.md` for US keyword seeds, GTA VI evidence snapshot and official UK/US/EU preparedness references.
-- OpenSEO last-known credits: 28; paid keyword research at approximately 54 credits per seed is not authorized. No paid AI visibility, subscription or scheduled automation is active.
-- No GA4/GSC/Bing connector state change, analytics event code, Pinterest account action, DNS/WAF/robots change or model-training crawler preference change was made.
-- The known separate Workers/legacy deployment check is not to be confused with the active Cloudflare Pages projects. Use the Pages checks and actual preview deployments for Astro Pages verification.
-- Next: finish CI on the clean rebased US/global plan PR; merge if exact-head quality and Pages checks pass. Then continue free manufacturer-source research for emergency radios/backup power and non-mutating keyword prioritisation. Keep product/page intake behind source verification and approval.
+- **Current main SHA:** `8f6a95a328c7d131e94b7de0de6f0bf4702c4dae` (PR #31 squash merge; GitHub main ref verified).
+- **PR #31:** merged/closed. Exact-head run `44596709375` passed build-and-audit, including Astro checks, importer dry-run/E2E, catalogue/affiliate validation, static build, RSS, SEO/JSON-LD/affiliate smoke tests, axe-core, Lighthouse desktop/mobile/templates and report upload. Cloudflare Pages production and preview checks passed on PR head `45cfa74aadbc983e7bae872b3d2d9d908d2de9ef`.
+- **Post-merge caution:** main-SHA build-and-audit was queued and production Pages was in progress at the last read. Do not claim the merge SHA is deployed until those checks complete. Preview post-merge status was not yet visible.
+- **Legacy Workers check:** separate Workers build failed again. It is not the Cloudflare Pages production/preview deployment and is not a new Pages outage. Do not reopen the known issue as a blocker.
+- **What PR #31 adds:** `US_GLOBAL_TREND_PREPAREDNESS_PLAN.md`, plus continuity updates in README/MASTER_PROJECT/AGENT_HANDOFF. It is a research/implementation plan; no product, guide, page metadata, image, affiliate link, analytics, crawler, DNS/WAF or production setting was changed.
+- **Strategy:** UK remains primary; US is a parallel market with independent research/metrics. Trend signals are hypotheses, not search-volume facts. Preparedness content must focus on civil resilience (power, water, communications, weather), never war-panic marketing. Follow the plan's evidence and owner-approval gates.
+- **Protected catalogue baseline:** 25 approved guides / 100 product records. Do not re-import or duplicate. Marketplace search links are not direct verified ASIN links. No invented ASINs, prices, ratings, reviews, stock or hands-on testing. Product images only with documented commercial reuse rights; otherwise retain current text cards.
+- **Measurement gaps:** GSC/GA4/Bing first-party reporting and onsite Amazon outbound-click tracking remain unconnected/unimplemented. Do not add GA4 without verified Measurement ID and consent/privacy decision. Keep onsite clicks distinct from Amazon Associates reports.
+- **Pinterest:** five RSS-to-board connections are owner-confirmed; actual feed ingestion and Pin publication remain unverified. Do not claim Pins were published without Pinterest-side evidence.
+- **Paid-service boundary:** no subscriptions, paid SEO/AI visibility checks, paid keyword batches or TinyFish work. Last-known OpenSEO balance 28 credits; a seed research run costs approximately 54 credits. Do not spend without explicit approval.
+- **Immediate next action:** poll build-and-audit and Cloudflare Pages checks for merge SHA `8f6a95a328c7d131e94b7de0de6f0bf4702c4dae`; then continue free, non-mutating official-source research for emergency radios/backup power and existing Tier-1 guide evidence gaps. Do not create/publish new products or pages without verified evidence and the established approval gate.
 
 ---
 
