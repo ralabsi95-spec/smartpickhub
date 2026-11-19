@@ -1473,3 +1473,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Additional sources reviewed for CalDigit TS4, eufy S340, Ninja AF400UK, Dyson V15, Apple iPad mini A20 Pro, Apple Watch Series 12/Ultra 4/SE 3, Garmin X-series and Brother MFC-L8390CDW. Detailed evidence and caveats in EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md.
 - Risk triage prioritises voltage/SKU, charger power split, dock host display limits, regional model equivalence, consumables/bundles, cellular bands and subscription-dependent features.
 - PR #8 remains open/unmerged; no production changes, publication, Pinterest or IndexNow submission. Next gate is exact-model verification for remaining products, then CI on final head and guide-by-guide editorial approval while drafts remain unpublished.
+
+
+## 19 November 2026 — project checkpoint
+- Owner requested one consolidated continuation and proportionate review: prioritise material product identity, regional compatibility, working source/affiliate paths, bundle/consumables and launch gates; avoid spending time on minor descriptive differences.
+- Review branch received targeted source corrections for Garmin UK X110/X210/X310 retail part numbers and Logitech PRO X2 SUPERSTRIKE official UK page/specification. Commit `1c8bc4d2b1f95f10102979641757cc1fa1d2e509`.
+- PR #8 remains open and unmerged. All 25 guides remain drafts; no production/site changes, no Pinterest posts, no IndexNow submissions.
+- CI run #773 remains associated with older product-data SHA `726f6266e1f06214eb431fba6d4d897cdbd3fb1f`; early steps and axe accessibility checks passed, Lighthouse/report steps were still running at last check. It does not validate the latest branch head.
+- Next: complete a proportionate high-risk review, then run/confirm the quality workflow against the final PR head. Keep the deferred IndexNow changed-URL/deletion/receipt-log work in the future queue.
