@@ -173,3 +173,21 @@ Legend:
 - No prices or guaranteed retailer stock are displayed; source stock labels are recorded only as point-in-time evidence.
 - CI #681 and #683 remain cancelled during overlapping PR workflow activity. No complete successful CI run has been observed for the latest catalogue commits. Obtain a clean full run before declaring the release candidate validated.
 - No publication approval, merge, production deployment, indexing or Pinterest publishing occurred.
+
+
+## 19 November 2026 — CI #703 quality/security artifact review
+
+- Full workflow run #703 / ID `44398753742` passed on PR source head `de3e612c896d924ffe7bce81d83768a64c234880`. Artifact ID `14472018692` (`smartpickhub-quality-reports`) was downloaded and inspected.
+- Catalogue validation passed: 25 guides / 100 products; 100 UK and 100 US affiliate URL-construction checks; zero errors. Smoke test passed on 29 generated HTML pages with zero route errors. Importer dry-run unit and isolated integration tests passed.
+- npm audit reported zero vulnerabilities across 362 dependency entries in this run. This is a point-in-time result; it does not alone close the separately tracked picomatch advisory review.
+- axe audited all 28 routes: zero violations and 27 incomplete contrast checks. The incomplete checks remain open for manual rendered-state review; no full WCAG sign-off is claimed.
+- Lighthouse five-page sample (home desktop/mobile, guide index, affiliate disclosure and one guide) scored 100 for Performance, Accessibility and Best Practices. SEO 66–69 reflects intentional noindex/crawl blocking in preview and is not a reason to remove those protections.
+- Product-image readiness remains 0 approved, 0 complete candidates pending review and 100 products without approved product images.
+- The consolidated report records synthetic pull-request merge SHA `700db2eed1271f6fe15b7710233c48b67e32bc7a` via GitHub Actions `GITHUB_SHA`; run/artifact metadata confirm the actual PR source head is `de3e612...`. This is expected for pull_request workflows.
+- PR #1 remains Draft/open/unmerged; all guides remain research drafts. No image approvals, publication, merge, production deployment, indexing or Pinterest publishing occurred.
+
+### Next actions
+1. Continue the bounded UK-first editorial review; prioritise dated models, meaningful product-specific verdicts and material compatibility issues.
+2. Keep the 27 incomplete contrast findings open until rendered-state review is documented.
+3. Preserve the image-rights and human-approval gate.
+4. Revisit the picomatch advisory by its existing 2 December 2026 review date.
