@@ -1213,3 +1213,15 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Attempt to fetch `https://smartpickhub.pages.dev/` and the older hashed production deployment via the read-only extraction service returned 404; treat the canonical production host as not independently verified until direct browser/HTTP response is confirmed after connection.
 - No Cloudflare settings, Git connection, deployment, DNS or indexing settings were changed in this audit. The user has explicitly authorized publishing; next operational step is to use Cloudflare Pages Settings > Build > Connect to Git, select GitHub repo `ralabsi95-spec/smartpickhub`, then configure `main`, `npm run build`, and `dist`. This connection/authorization remains pending.
 - Product/content status unchanged: 25 guides / 100 product entries, 0 editorially approved guides, 0 approved product images. No public editorial launch approval inferred from deployment consent.
+
+
+## 19 November 2026 — first Git-connected production deployment and owner visual checks
+
+- Owner connected Cloudflare Pages production project `smartpickhub` to GitHub repository `ralabsi95-spec/smartpickhub`. Cloudflare Settings screenshot confirms production branch `main`, build command `npm run build`, output directory `dist`, and automatic deployments enabled.
+- Cloudflare Deployments screenshot confirms a successful Production deployment sourced from `main` commit `515c0d5`, deployment URL `https://3ffea89c.smartpickhub.pages.dev`, with production domain `https://smartpickhub.pages.dev`.
+- Owner opened `https://smartpickhub.pages.dev/`; screenshot visually confirms the Astro homepage renders with SmartPickHub branding, navigation, hero section, and US/UK messaging.
+- Owner opened `https://smartpickhub.pages.dev/guides/`; screenshot visually confirms the Buying Guides index renders with search input, category selector, and **25 guides available**. Three guide cards are visible in the captured viewport, with cover artwork, titles and descriptions.
+- This is the first confirmed Git-connected production deployment. The root page and guides index are visually confirmed by owner screenshots; individual guide detail pages, all 25 routes, product links, mobile layout, raw response metadata, canonical tags, deployed robots meta and headers are NOT yet verified on production.
+- Preserve crawl protection until production response metadata is checked and editorial launch approval is separately obtained. The screenshots do not establish whether production HTML currently has noindex; do not infer this from the prior preview checks.
+- Catalogue remains 25 guides / 100 product records, 0 guides editorially approved and 0 approved product images. No product re-import, content approval, DNS change, sitemap submission or indexing activation was performed.
+- Next action: inspect the first guide detail page (Home Office Ergonomics) and verify its content, exact route, and affiliate link behavior; then perform a production route/SEO/robots verification. Continue to distinguish successful deployment from editorial launch readiness.
