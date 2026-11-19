@@ -1458,3 +1458,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Updated `.github/workflows/build-check.yml` on the editorial review branch to set `concurrency.cancel-in-progress: false`, preventing a newer docs commit from cancelling an in-flight quality run. Commit: 2125c3ab52f757b2888e2d15022a2e670fe7a925.
 - Run #766 passed on the previous catalogue state; it is not validation for later changes. A newer run is triggered on the preceding documentation commit; verify CI on the current branch head and make no approval claim until the full required steps finish.
 - This is CI scheduling only. No production Pages binding/deployment, WordPress, DNS, product publication or Pinterest action was performed.
+
+
+## 19 November 2026 — latest CI scheduling state and next work
+- Workflow concurrency configuration is corrected: .github/workflows/build-check.yml sets cancel-in-progress=false (commit 2125c3ab52f757b2888e2d15022a2e670fe7a925). Existing run #767/#768 were cancelled before this setting took effect; do not use those incomplete report artifacts as code failures.
+- A PR run #771 was created for head 19569f46fc83c9080b7885a59cb0a88f597fac1c but remained pending with no jobs at last check. This is an Actions queue/scheduling state, not a passed test. Previous successful run #766 only validates old head 1b994672d4e09a57d1b53b75222c9976ac3062f2.
+- Wait to verify a complete quality run for latest head before approval. Do not add no-op commits or trigger repeated workflow dispatches to churn the queue.
+- Product catalogue correction and source audit are committed; all 25 guides / 100 products remain drafts and none approved. PR #8 remains open and unmerged; production/WordPress/DNS remain untouched.
