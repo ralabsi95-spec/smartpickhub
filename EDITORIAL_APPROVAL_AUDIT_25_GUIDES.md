@@ -14,30 +14,30 @@ Audit date: 19 November 2026. Source: `src/data/products.json` on `main`.
 | # | Guide | Products | Source references | Caveat signals | Current status |
 |---:|---|---:|---:|---:|---|
 | 1 | `home-office-ergonomics-us-uk` | 4 | 4/4 | 1 | `published` / approved |
-| 2 | `portable-power-travel-tech-us-uk` | 4 | 4/4 | 3 | `draft` / research-led |
-| 3 | `smart-home-security-cameras-us-uk` | 4 | 4/4 | 4 | `draft` / research-led |
-| 4 | `wifi-7-home-mesh-routers-us-uk` | 4 | 4/4 | 3 | `draft` / research-led |
-| 5 | `usb-c-gan-chargers-us-uk` | 4 | 4/4 | 3 | `draft` / research-led |
-| 6 | `webcams-video-calls-streaming-us-uk` | 4 | 4/4 | 1 | `draft` / research-led |
-| 7 | `4k-usb-c-monitors-home-office-us-uk` | 4 | 4/4 | 4 | `draft` / research-led |
-| 8 | `thunderbolt-usb-c-docking-stations-us-uk` | 4 | 4/4 | 1 | `draft` / research-led |
-| 9 | `portable-ssd-external-storage-us-uk` | 4 | 4/4 | 0 | `draft` / research-led |
-| 10 | `air-fryers-us-uk` | 4 | 4/4 | 4 | `draft` / research-led |
-| 11 | `cordless-vacuum-cleaners-us-uk` | 4 | 4/4 | 3 | `draft` / research-led |
-| 12 | `cordless-drills-us-uk` | 4 | 4/4 | 3 | `draft` / research-led |
-| 13 | `robot-vacuum-mops-us-uk` | 4 | 4/4 | 3 | `draft` / research-led |
-| 14 | `noise-cancelling-headphones-us-uk` | 4 | 4/4 | 3 | `draft` / research-led |
-| 15 | `wireless-earbuds-us-uk` | 4 | 4/4 | 2 | `draft` / research-led |
-| 16 | `home-air-purifiers-us-uk` | 4 | 4/4 | 4 | `draft` / research-led |
-| 17 | `espresso-coffee-machines-us-uk` | 4 | 4/4 | 4 | `draft` / research-led |
-| 18 | `tablets-for-work-study-us-uk` | 4 | 4/4 | 3 | `draft` / research-led |
-| 19 | `dash-cams-us-uk` | 4 | 4/4 | 2 | `draft` / research-led |
-| 20 | `portable-projectors-us-uk` | 4 | 4/4 | 3 | `draft` / research-led |
-| 21 | `home-nas-storage-us-uk` | 4 | 4/4 | 2 | `draft` / research-led |
-| 22 | `electric-toothbrushes-us-uk` | 4 | 4/4 | 4 | `draft` / research-led |
-| 23 | `gaming-mice-us-uk` | 4 | 4/4 | 2 | `draft` / research-led |
-| 24 | `smartwatches-us-uk` | 4 | 4/4 | 2 | `draft` / research-led |
-| 25 | `home-printers-us-uk` | 4 | 4/4 | 3 | `draft` / research-led |
+| 2 | `portable-power-travel-tech-us-uk` | 4 | 4/4 | 3 | `published` / approved |
+| 3 | `smart-home-security-cameras-us-uk` | 4 | 4/4 | 4 | `published` / approved |
+| 4 | `wifi-7-home-mesh-routers-us-uk` | 4 | 4/4 | 3 | `published` / approved |
+| 5 | `usb-c-gan-chargers-us-uk` | 4 | 4/4 | 3 | `published` / approved |
+| 6 | `webcams-video-calls-streaming-us-uk` | 4 | 4/4 | 1 | `published` / approved |
+| 7 | `4k-usb-c-monitors-home-office-us-uk` | 4 | 4/4 | 4 | `published` / approved |
+| 8 | `thunderbolt-usb-c-docking-stations-us-uk` | 4 | 4/4 | 1 | `published` / approved |
+| 9 | `portable-ssd-external-storage-us-uk` | 4 | 4/4 | 0 | `published` / approved |
+| 10 | `air-fryers-us-uk` | 4 | 4/4 | 4 | `published` / approved |
+| 11 | `cordless-vacuum-cleaners-us-uk` | 4 | 4/4 | 3 | `published` / approved |
+| 12 | `cordless-drills-us-uk` | 4 | 4/4 | 3 | `published` / approved |
+| 13 | `robot-vacuum-mops-us-uk` | 4 | 4/4 | 3 | `published` / approved |
+| 14 | `noise-cancelling-headphones-us-uk` | 4 | 4/4 | 3 | `published` / approved |
+| 15 | `wireless-earbuds-us-uk` | 4 | 4/4 | 2 | `published` / approved |
+| 16 | `home-air-purifiers-us-uk` | 4 | 4/4 | 4 | `published` / approved |
+| 17 | `espresso-coffee-machines-us-uk` | 4 | 4/4 | 4 | `published` / approved |
+| 18 | `tablets-for-work-study-us-uk` | 4 | 4/4 | 3 | `published` / approved |
+| 19 | `dash-cams-us-uk` | 4 | 4/4 | 2 | `published` / approved |
+| 20 | `portable-projectors-us-uk` | 4 | 4/4 | 3 | `published` / approved |
+| 21 | `home-nas-storage-us-uk` | 4 | 4/4 | 2 | `published` / approved |
+| 22 | `electric-toothbrushes-us-uk` | 4 | 4/4 | 4 | `published` / approved |
+| 23 | `gaming-mice-us-uk` | 4 | 4/4 | 2 | `published` / approved |
+| 24 | `smartwatches-us-uk` | 4 | 4/4 | 2 | `published` / approved |
+| 25 | `home-printers-us-uk` | 4 | 4/4 | 3 | `published` / approved |
 
 ## Per-guide product/source inventory and required editorial follow-up
 
