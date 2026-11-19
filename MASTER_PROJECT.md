@@ -1294,3 +1294,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Current verification limit: source changes are committed to `main`, but this session has not independently confirmed the final Cloudflare production deployment, live robots/meta response, sitemap availability, Search Console verification, Bing site verification, IndexNow acceptance or any page actually appearing in an index. Do not claim indexed until platform reports confirm.
 - No product import, fabricated price/rating/review, direct ASIN invention, unverified product image approval, DNS change, or paid campaign spend was made. The 25 guides / 100 product catalogue remains intact.
 - Next actions: (1) verify the latest production deployment and live `robots.txt`, homepage robots meta, canonical URLs and sitemap; (2) verify the site in Google Search Console and Bing Webmaster Tools; (3) submit the sitemap to Google and Bing; (4) trigger the IndexNow workflow only after its public key URL returns the exact key; (5) connect OpenSEO/Ahrefs for keyword/competitor metrics and Windsor.ai or GA4 for traffic/conversion reporting; (6) review first 14/30-day query and affiliate-click data before calling any keyword a winner.
+
+
+## 19 November 2026 — Google Search Console verification tag added
+
+- Owner supplied the exact Google Search Console HTML verification meta tag for the URL-prefix property `https://smartpickhub.pages.dev/`.
+- Added the tag to the shared `src/layouts/Layout.astro` head so it is emitted site-wide: `<meta name="google-site-verification" content="zH0EHPDRo5BI_WTJ_OnnD-aDAMc8U0ZORttx4Xs4TCs" />`.
+- Commit: `55aa72e8f21c8edea56b963bb013b6e1bb0f7fb4`.
+- This is a source change on `main`; deployment and live HTML are not yet independently verified. Google ownership has NOT yet been verified. After Cloudflare Pages finishes deploying, return to the Search Console dialog and click VERIFY. Keep this meta tag in place permanently to retain verification.
+- No other SEO, page, catalogue, or hosting settings were changed in this step.
