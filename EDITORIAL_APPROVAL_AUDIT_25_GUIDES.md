@@ -9,7 +9,14 @@ Audit date: 19 November 2026. Source: `src/data/products.json` on `main`.
 - The owner subsequently gave explicit release approval for all 25 guides on 19 November 2026 after a proportionate UK-first, material-risk review. This release does not claim every one of the 100 product specifications or live retailer listings was independently re-fetched. Retain the regional, compatibility, bundle and availability caveats recorded per product.
 - Product links remain Amazon search links with configured UK/US tracking IDs; they are not verified direct product URLs. US/UK phrase parity is not a launch blocker; UK remains primary.
 
-## Current release decision (19 November 2026)\n\n- All 25 guides are owner-approved and marked `published` in the release branch. This follows the owner's explicit launch instruction; it is not a claim of full 100-product manufacturer re-verification or hands-on testing.\n- Product images are optional. Use a free/open asset only when the exact product identity and commercial-use rights are documented. Otherwise retain the existing text-based product card without a placeholder.\n- Production is crawlable on `https://smartpickhub.pages.dev/`; robots allows crawling, homepage is `index, follow`, and the sitemap currently contains 28 URLs.\n- IndexNow is being guarded behind successful main CI and confirmation of the exact live Cloudflare deployment. Google Search Console sitemap submission is still unconfirmed.\n\n## All-guide inventory
+## Current release decision (19 November 2026)
+
+- All 25 guides are owner-approved and marked `published` in the release branch. This follows the owner's explicit launch instruction; it is not a claim of full 100-product manufacturer re-verification or hands-on testing.
+- Product images are optional. Use a free/open asset only when the exact product identity and commercial-use rights are documented. Otherwise retain the existing text-based product card without a placeholder.
+- Production is crawlable on `https://smartpickhub.pages.dev/`; robots allows crawling, homepage is `index, follow`, and the sitemap currently contains 28 URLs.
+- IndexNow is being guarded behind successful main CI and confirmation of the exact live Cloudflare deployment. Google Search Console sitemap submission is still unconfirmed.
+
+## All-guide inventory
 
 | # | Guide | Products | Source references | Caveat signals | Current status |
 |---:|---|---:|---:|---:|---|
