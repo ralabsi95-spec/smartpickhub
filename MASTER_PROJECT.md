@@ -1235,3 +1235,15 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Below-the-fold product cards, exact Amazon UK/US destinations and tracking tags, link-level paid-link disclosure, and the complete guide content remain unverified. Raw production HTML robots/canonical/header checks also remain outstanding.
 - No code/content changes, product imports, editorial approvals, image approvals, indexing changes, DNS changes or sitemap submissions were made in this checkpoint.
 - Next action: inspect below the fold on this guide, starting with the first product card; verify model, key specs, UK/US links and paid-link disclosure, then continue route/SEO/robots checks.
+
+
+## 19 November 2026 — owner visual verification of first product card on production
+
+- Owner scrolled the production Home Office Ergonomics guide to the first product card, **Logitech MX Vertical Advanced Ergonomic Mouse**.
+- Screenshot confirms the product title and number, intentional image placeholder ("Product photo under verification"), explanation that an image will be shown only after source and usage rights are confirmed, Best for summary, visible paid-link disclosure, separate Amazon US and Amazon UK search buttons, product verdict, potential advantages and points to consider.
+- The image placeholder is expected: current product-image audit records 0 approved product photos; do not replace it with an unlicensed or unverified image.
+- Source inspection of src/data/products.json confirms both identifiers for this product are model-name search phrases, not ASINs. src/config/affiliate.ts generates Amazon /s?k=... search destinations for non-ASIN identifiers and adds the correct marketplace tags: US smartpickh0bc-20, UK smartpickhubu-21. src/pages/guides/[slug].astro marks links rel="sponsored nofollow noopener" and clearly states the search results are not a verified direct product listing. No exact live Amazon destination was clicked/verified in the owner's screenshot.
+- Visible copy is appropriately cautious: the verdict says it is a candidate and asks buyers to check hand fit and regional model details; advantages/limitations are shown without a universal-best or hands-on-testing claim.
+- The template currently renders an early affiliate CTA above the verdict and another affiliate CTA after manufacturer source/limitations; the screenshot confirms the early CTA. Review the lower card section to ensure the manufacturer source and second CTA are clear and not confusing or excessively repetitive.
+- No product image was approved, no product data or affiliate identifier was changed, no editorial approval/indexing/DNS change was made, and no product re-import occurred.
+- Next action: inspect the lower portion of this first product card (manufacturer source, model caveats and second CTA), then click-test the Amazon UK search destination in a controlled way and verify its tracking tag without purchasing.
