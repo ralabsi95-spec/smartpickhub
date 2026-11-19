@@ -1237,3 +1237,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Logitech PRO X2 SUPERSTRIKE: official UK product page plus Logitech Support spec; 60g, HERO 2, up to 44,000 DPI, 8,000Hz, LIGHTSPEED 2, up to 90h constant-motion battery life. Regional product number varies.
 - PR #8 remains open/unmerged; latest product data commit is newer than the SHA being tested by CI #773. Verify CI against final PR head before any approval.
 - All 25 guides remain `draft`; no site publication, production configuration, Pinterest post or IndexNow submission. Deferred IndexNow changed-URL detection/deletion notifications/durable send-receipt log remains a future task.
+
+
+## 19 November 2026 — latest handoff checkpoint (compatibility batch)
+- Owner approved the whole remaining review in one pass and asked to avoid low-value detail checks. This is not approval to merge, publish or change production.
+- Latest product-data commit: `ff1fff9a5f85609060c799a7a791bd8eb77c00a6`.
+- Five records clarified: Anker A2688 port-sharing output (89W max with all three ports); Anker A83B5 TB5 dock host/OS/display restrictions; Kensington SD5780T host-dependent external display count; Plugable TBT4-UDZ display limitations by host; Jackery JE-300B regional 230V/50Hz EU vs 100V/60Hz US electrical variant.
+- Sources are listed in `EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md`; no unsupported claim that all 100 products have undergone full line-by-line manufacturer verification.
+- PR #8 remains open/unmerged; all guides remain draft. No production publishing, Pinterest posts or IndexNow requests.
+- CI #778 belongs to prior head `2137a66d`; the latest data commit must get its own completed workflow result. Keep deferred IndexNow changed/deleted URL detection and durable send/receipt records in the future queue.
