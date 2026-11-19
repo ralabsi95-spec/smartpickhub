@@ -1283,3 +1283,8 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - CI #781 succeeded on older SHA `89edd10e`, including axe-core for all catalogue routes and Lighthouse desktop/mobile/templates, report generated and artifact uploaded. It does not validate later product/documentation changes.
 - Current PR #8 head `50ecc2ddd389e127fb65df0a7b9850b0b6af6ca6`; run #794 pending. Confirm latest-head CI before closure. PR remains open/unmerged, all guides remain draft, and no production/Pinterest/IndexNow actions occurred.
 - Deferred: IndexNow changed-URL and deletion detection, plus durable send/receipt logging.
+
+
+## 19 November 2026 — latest CI handoff correction
+- Run #794 (head `50ecc2ddd389e127fb65df0a7b9850b0b6af6ca6`) is cancelled. Current PR head: `9fa3deeb3eccf8c5c179ac9e02ed951eeb57baec`; no workflow run is currently returned for this exact SHA.
+- Successful run #781 validates only historical head `89edd10e2ad3df3c5c923aceb1fb8805d0498685`. Latest-head CI is still outstanding. No workflow-dispatch action is available through connected GitHub tools; next step is to trigger/verify CI on current PR head.
