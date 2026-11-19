@@ -1347,3 +1347,18 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - PR #7 remains open but stale; its content incorrectly describes the 25 guides as drafts and refers to the superseded workflow. Do not merge it. A corrected lifecycle document is being ported to `docs/reconcile-search-discovery-lifecycle-20261119`.
 - Current verified catalogue remains 25 approved/published guides / 100 products. No product import, content publication, Pinterest Pin, or production content edit occurred in this continuation.
 - Next: verify the post-merge main CI and IndexNow workflow outcome; complete review/CI of the reconciled lifecycle PR; then connect GSC/GA4 and diagnose the sitemap fetch discrepancy.
+
+
+## 19 November 2026 13:11 UTC — lifecycle docs merged; Pinterest RSS connection prerequisite confirmed
+- PR #11 (production-reconciled search/discovery lifecycle) merged to main as `960c32597d7bdcb6119a7d8bcd657d0818e4b251`. Its CI run #827 passed on exact PR head `4c407247cef17bab1e0cb425cd30bb945717bc58`.
+- PR #11 is documentation-only. Live production marker still reports `88f7f86d6083e2546f229d0ba4c6258df30dc62b`; no new deployed site code is claimed from the docs merge.
+- Prior owner discussion confirmed the five Pinterest RSS feeds were deliberately left unconnected while the 25-guide approval/publication batch was incomplete. The required sequence is: complete and verify the 25 approved guide entries, then connect each RSS feed to its matching Pinterest board, and only then begin Pinterest distribution.
+- Live verification now confirms five populated RSS feeds with 25 entries total: Home Office & Ergonomics (5), Smart Home & Security (5), Kitchen & Home Tech (6), Travel & Tech Gear (6), Computing & Gaming (3).
+- Exact feed URLs:
+  - `https://smartpickhub.pages.dev/rss/home-office.xml`
+  - `https://smartpickhub.pages.dev/rss/smart-home.xml`
+  - `https://smartpickhub.pages.dev/rss/kitchen-home-tech.xml`
+  - `https://smartpickhub.pages.dev/rss/travel-tech.xml`
+  - `https://smartpickhub.pages.dev/rss/computing-gaming.xml`
+- No Pinterest board has been connected, no Pins have been created, and no Pinterest publication has started. RSS feed availability is not proof of Pinterest connection.
+- Next: obtain an authenticated Pinterest browser session, inspect the existing board names, map each board to its corresponding feed, connect all five, verify each connection, and only then start any Pin distribution. Do not create duplicate boards or publish Pins before the five mappings are verified.
