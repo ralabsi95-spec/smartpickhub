@@ -50,3 +50,10 @@ Production host: `https://smartpickhub.pages.dev/`
 - No Bing Webmaster verification/submission performed.
 - No IndexNow notification sent from this branch.
 - No GA4/Search Console legacy properties used.
+
+
+## Pinterest verification code supplied by owner (19 Nov 2026)
+
+- Added the owner's Pinterest domain verification token to the optional verification meta tag in `src/layouts/Layout.astro` as a public fallback; an explicitly configured `PINTEREST_VERIFY_CODE` build variable takes precedence.
+- The token is a public site-ownership verification value, not an account password or API secret. It will appear in the rendered HTML only when this branch is deployed.
+- It is not yet live on production: this change remains in draft PR #5 and requires owner approval to merge. After the approved production deployment completes, return to Pinterest and press Verify/Finish on the claimed `smartpickhub.pages.dev` website.
