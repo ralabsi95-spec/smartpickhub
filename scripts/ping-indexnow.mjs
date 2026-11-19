@@ -95,7 +95,7 @@ if (expectedDeploymentSha && deploymentMarker.commit !== expectedDeploymentSha) 
     execFileSync('git', ['merge-base', '--is-ancestor', expectedDeploymentSha, deployedSha], { stdio: 'ignore' });
     execFileSync('git', ['merge-base', '--is-ancestor', deployedSha, 'origin/main'], { stdio: 'ignore' });
     const changedFiles = execFileSync('git', ['diff', '--name-only', expectedDeploymentSha, deployedSha], { encoding: 'utf8' })
-      .split('\\n').map((file) => file.trim()).filter(Boolean);
+      .split(/\r?\n/).map((file) => file.trim()).filter(Boolean);
     if (changedFiles.some((file) => !file.endsWith('.md'))) {
       skip('the newer live deployment contains non-documentation changes; require CI for that exact commit before notifying.');
     }
