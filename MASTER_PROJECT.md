@@ -1451,3 +1451,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Garmin Mini 3 UK retail part number 010-02899-10 is confirmed; X210/X310 exact UK retail SKUs remain open.
 - Evidence and detailed source URLs recorded in EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md. All guide statuses remain draft; no publishing, IndexNow submission, Pinterest post or production change.
 - CI passed on pre-correction head 1b994672d4e09a57d1b53b75222c9976ac3062f2 (Astro Build and Quality Checks run #766); run must be repeated for the changed catalogue commit before claiming current-head validation.
+
+
+## 19 November 2026 — CI concurrency remediation
+- Investigated Actions runs #767/#768. These were cancelled by workflow concurrency while a later commit arrived; the resulting consolidated report correctly showed incomplete data (0 axe routes / 0 Lighthouse pages), so the report failure was a consequence of cancellation, not evidence of a source-code test regression.
+- Updated `.github/workflows/build-check.yml` on the editorial review branch to set `concurrency.cancel-in-progress: false`, preventing a newer docs commit from cancelling an in-flight quality run. Commit: 2125c3ab52f757b2888e2d15022a2e670fe7a925.
+- Run #766 passed on the previous catalogue state; it is not validation for later changes. A newer run is triggered on the preceding documentation commit; verify CI on the current branch head and make no approval claim until the full required steps finish.
+- This is CI scheduling only. No production Pages binding/deployment, WordPress, DNS, product publication or Pinterest action was performed.
