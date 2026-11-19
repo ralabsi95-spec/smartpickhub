@@ -1155,3 +1155,9 @@ This batch checked selected manufacturer pages for Wi-Fi 7 routers/mesh, GaN cha
 - SKU 35539: EU manufacturer listing confirms 100–240V, 50/60Hz input, 200W combined maximum and per-port ceilings of USB-C1 140W, USB-C2 100W, USB-C3 30W, USB-A 22.5W. These port maxima are not additive; combined output remains capped at 200W. Confirm the supplied UK mains lead/plug.
 - Sources: https://uk.ugreen.com/products/ugreen-nexode-100w-usb-c-gan-charger-4-ports-wall-charger ; https://eu.ugreen.com/en-es/pages/nexode.
 - No guide status or production content changed; all 25 guides remain drafts.
+
+
+## 19 November 2026 — Deco BE63 regional hardware note
+- Commit `68ae210e216909ac6ddf669a9c5f2e6a0b508feb` adds a regional hardware caveat to TP-Link Deco BE63. TP-Link UK lists multiple BE63 hardware revisions and explicitly says model/hardware availability varies by region. The US datasheet must not be treated as proof of identical UK retail hardware, radio configuration, firmware branch or included adapter.
+- UK buyers should select the hardware revision shown on TP-Link's UK support page and confirm the adapter rating and pack contents on the exact retailer listing: https://www.tp-link.com/uk/support/download/deco-be63/.
+- This is a targeted regional caveat, not a full radio-certification audit. All guides remain drafts.
