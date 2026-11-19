@@ -1,8 +1,8 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-const siteValue = process.env.PUBLIC_SITE_URL ?? process.env.SITE_URL ?? '';
-const apiKey = process.env.INDEXNOW_KEY ?? '';
+const siteValue = process.env.PUBLIC_SITE_URL ?? process.env.SITE_URL ?? 'https://smartpickhub.pages.dev';
+const apiKey = process.env.INDEXNOW_KEY ?? 'smartpickhub-20261119-7f3c9a2d4b6e8a1c';
 const distDir = path.resolve(process.env.DIST_DIR ?? 'dist');
 
 const skip = (reason) => {
