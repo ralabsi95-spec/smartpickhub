@@ -4,57 +4,27 @@ const BOARDS = {
   'home-office': {
     title: 'SmartPickHub — Home Office & Ergonomics',
     description: 'Approved buying guides for home office equipment, displays, webcams and workplace productivity.',
-    slugs: [
-      'home-office-ergonomics-us-uk',
-      'webcams-video-calls-streaming-us-uk',
-      '4k-usb-c-monitors-home-office-us-uk',
-      'thunderbolt-usb-c-docking-stations-us-uk',
-      'home-printers-us-uk',
-    ],
+    slugs: ['home-office-ergonomics-us-uk', 'webcams-video-calls-streaming-us-uk', '4k-usb-c-monitors-home-office-us-uk', 'thunderbolt-usb-c-docking-stations-us-uk', 'home-printers-us-uk'],
   },
   'smart-home': {
     title: 'SmartPickHub — Smart Home & Security',
     description: 'Approved buying guides for smart home security, networking and connected home care.',
-    slugs: [
-      'smart-home-security-cameras-us-uk',
-      'wifi-7-home-mesh-routers-us-uk',
-      'robot-vacuum-mops-us-uk',
-      'home-air-purifiers-us-uk',
-      'home-nas-storage-us-uk',
-    ],
+    slugs: ['smart-home-security-cameras-us-uk', 'wifi-7-home-mesh-routers-us-uk', 'robot-vacuum-mops-us-uk', 'home-air-purifiers-us-uk', 'home-nas-storage-us-uk'],
   },
   'kitchen-home-tech': {
     title: 'SmartPickHub — Kitchen & Home Tech',
     description: 'Approved buying guides for kitchen appliances, cleaning, coffee and practical home technology.',
-    slugs: [
-      'air-fryers-us-uk',
-      'cordless-vacuum-cleaners-us-uk',
-      'cordless-drills-us-uk',
-      'espresso-coffee-machines-us-uk',
-      'electric-toothbrushes-us-uk',
-      'portable-projectors-us-uk',
-    ],
+    slugs: ['air-fryers-us-uk', 'cordless-vacuum-cleaners-us-uk', 'cordless-drills-us-uk', 'espresso-coffee-machines-us-uk', 'electric-toothbrushes-us-uk', 'portable-projectors-us-uk'],
   },
   'travel-tech': {
     title: 'SmartPickHub — Travel & Tech Gear',
     description: 'Approved buying guides for portable power, charging, audio, car technology and travel gear.',
-    slugs: [
-      'portable-power-travel-tech-us-uk',
-      'usb-c-gan-chargers-us-uk',
-      'noise-cancelling-headphones-us-uk',
-      'wireless-earbuds-us-uk',
-      'dash-cams-us-uk',
-      'smartwatches-us-uk',
-    ],
+    slugs: ['portable-power-travel-tech-us-uk', 'usb-c-gan-chargers-us-uk', 'noise-cancelling-headphones-us-uk', 'wireless-earbuds-us-uk', 'dash-cams-us-uk', 'smartwatches-us-uk'],
   },
   'computing-gaming': {
     title: 'SmartPickHub — Computing & Gaming',
     description: 'Approved buying guides for computing, storage, tablets and gaming peripherals.',
-    slugs: [
-      'portable-ssd-external-storage-us-uk',
-      'tablets-for-work-study-us-uk',
-      'gaming-mice-us-uk',
-    ],
+    slugs: ['portable-ssd-external-storage-us-uk', 'tablets-for-work-study-us-uk', 'gaming-mice-us-uk'],
   },
 };
 
@@ -90,9 +60,7 @@ export function GET(context) {
     const link = new URL(`/guides/${guide.slug}/`, site).href;
     const image = new URL(`/images/pinterest/${guide.slug}.png`, site).href;
     const productTerms = [...new Set((guide.products ?? []).map((product) => product.name).filter(Boolean))];
-    const keywordSummary = productTerms.length
-      ? ` Products covered: ${productTerms.slice(0, 6).join(', ')}.`
-      : '';
+    const keywordSummary = productTerms.length ? ` Products covered: ${productTerms.slice(0, 6).join(', ')}.` : '';
     const description = `${guide.summary ?? ''}${keywordSummary} Research-led buying guidance for shoppers. Check the guide for regional compatibility and current retailer details.`;
 
     return `    <item>
@@ -116,7 +84,7 @@ export function GET(context) {
     <description>${escapeXml(config.description)}</description>
     <language>en-gb</language>
     <atom:link href="${escapeXml(feedUrl)}" rel="self" type="application/rss+xml" />
-${items.join('\\n')}
+${items.join('\n')}
   </channel>
 </rss>`;
 
