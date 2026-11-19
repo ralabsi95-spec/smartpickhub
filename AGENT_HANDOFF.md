@@ -820,3 +820,25 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Source: https://www.epson.co.uk/en_GB/products/projector/home-cinema/epson-ef-21g%2C-mini-laser-projector%2C-1%2C000-lumens%2C-up-to-150-inch-display%2C-google-tv%E2%84%A2-and-bluetooth-speaker%2C-portable/p/46374 . Commit `c64145e14d07686b1c54b34c645c3e097ac9d909`.
 - CI still not fully passed for current head; previous #681/#683 cancelled. Need one full CI pass.
 - All guides remain drafts; no merge/deploy/indexing/Pinterest publishing.
+
+
+## 19 November 2026 — Latest verified status (CI #703)
+
+- **Current branch:** `automation/bootstrap`; verified HEAD `de3e612c896d924ffe7bce81d83768a64c234880`.
+- **PR #1:** open, Draft, unmerged. CI #703 / run ID `44398753742` passed on this exact PR head. [Run details](https://github.com/ralabsi95-spec/smartpickhub/actions/runs/44398753742).
+- **Catalogue:** 25 guides / 100 products; 0 approved guides. All 100 US and 100 UK affiliate URL-construction checks passed. Search identifiers are not proof of live marketplace availability.
+- **Smoke tests:** 29 generated HTML pages passed with zero route errors. Importer dry-run unit and isolated integration tests passed.
+- **npm audit:** 0 reported vulnerabilities across 362 dependency entries in this run. This is a point-in-time feed result, not proof that the previously tracked picomatch advisory has been remediated. Keep its existing 2 Dec 2026 review date; inspect the lockfile and advisory status before closing.
+- **axe:** 28/28 routes, 0 violations, 27 incomplete contrast findings. Most are caused by gradient backgrounds that axe cannot calculate automatically or decorative glyph-only elements. Manual rendered-state contrast review remains open.
+- **Lighthouse:** five samples (home desktop/mobile, guide index, affiliate disclosure, one guide template) each scored 100 Performance, Accessibility and Best Practices. SEO 66–69 is expected while preview is intentionally noindex/crawl-blocked.
+- **Product images:** 0 approved, 0 complete candidates pending review, 100 without product images. Do not scrape Amazon images or approve any image without exact-model identity, commercial reuse rights, provenance, attribution and human approval.
+- **Preview safety:** report confirms robots disallow all, noindex verified, public publication disabled.
+- **Audit report commit note:** `latest-audit.json` records synthetic PR merge SHA `700db2eed1271f6fe15b7710233c48b67e32bc7a` because the workflow uses GitHub Actions `GITHUB_SHA` on a pull_request event. The workflow run and artifact metadata bind the tested PR source head to `de3e612c896d924ffe7bce81d83768a64c234880`. This difference is expected, not an unverified build.
+- No merge, production deployment, indexing, Pinterest publishing, guide approval, image approval or production setting change occurred.
+
+### Next actions
+1. Continue practical UK-first content review in one coherent batch; avoid exhaustive US/UK parity audits.
+2. Manually review rendered contrast for the 27 incomplete axe findings before full accessibility sign-off.
+3. Preserve draft/noindex/robots safeguards and all release gates.
+4. Reassess the picomatch exception by 2 December 2026.
+5. After the next coherent content batch, run a single complete CI and update this handoff with exact head and artifact evidence.
