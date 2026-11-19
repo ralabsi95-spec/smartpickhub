@@ -3,6 +3,8 @@
 **Status:** Development policy; apply before adding any real product photograph.  
 **Purpose:** Show accurate product imagery without assuming that a publicly accessible image is free to reuse.
 
+**Launch decision (19 November 2026):** Product photography is optional and is not a publication blocker. If no exact-model image with documented commercial-use rights is available, keep the existing text-based product information card and show no substitute photo or empty placeholder. Do not delay a guide solely because a product image is unavailable.
+
 ## Allowed image-source paths
 
 1. **Wikimedia Commons / other open repositories:** use only an individual file whose page clearly states a licence that permits commercial reuse and the intended modification/format conversion. Record the exact file page, licence version, creator and required attribution. Check for additional restrictions such as trademarks, privacy, publicity or depicted artwork.
