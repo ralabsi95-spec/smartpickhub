@@ -1253,3 +1253,8 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - UGREEN Nexode 100W SKU 40749: UK manufacturer confirms universal 100–240V input and 100W total output; public specs do not support promising full rated output to all four connected devices simultaneously.
 - UGREEN Nexode 200W SKU 35539: EU manufacturer confirms universal 100–240V input, 200W combined ceiling, and individual port maxima 140W/100W/30W/22.5W; these maxima are not additive. Check UK mains lead/plug.
 - CI #781 was still in progress on older head `89edd10e`; require a completed run for the latest final head. PR #8 stays open/unmerged and all 25 guides remain draft. No production, Pinterest or IndexNow action.
+
+
+## 19 November 2026 — TP-Link regional revision handoff
+- Product-data commit `68ae210e216909ac6ddf669a9c5f2e6a0b508feb` adds a Deco BE63 note: UK hardware revisions differ by region; do not equate a US datasheet or US unit with the UK SKU/firmware/adapter. Check TP-Link UK support page and exact retail pack.
+- PR #8 remains open/unmerged; 25 guides remain draft; no production publishing, Pinterest or IndexNow.
