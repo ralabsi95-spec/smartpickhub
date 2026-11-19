@@ -1524,3 +1524,8 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Structural validation: 25 guides / 100 products; every guide publicationStatus is draft; all product records have HTTP(S) sources and both US/UK search identifiers; no duplicate product names. 37 product records contain explicit regional/availability caveats. This is not a claim of complete manufacturer-level verification for every spec.
 - CI #781 passed on old head `89edd10e` including axe accessibility on every catalogue route, Lighthouse desktop/mobile and representative templates, build and smoke checks, report generation/upload. Its artifact is retained until 3 Dec 2026. Current PR head `50ecc2ddd389e127fb65df0a7b9850b0b6af6ca6` has run #794 pending; wait for that exact head or a later final head before calling CI complete.
 - PR #8 remains open/unmerged. No production deployment, publication, Pinterest or IndexNow action. Keep changed/deleted URL detection and durable IndexNow receipt log in deferred scope.
+
+
+## 19 November 2026 — CI status correction
+- Run #794 on `50ecc2ddd389e127fb65df0a7b9850b0b6af6ca6` was later observed as cancelled. Current PR head `9fa3deeb3eccf8c5c179ac9e02ed951eeb57baec` has no associated run in the commit-run lookup.
+- CI #781 passed on historical SHA `89edd10e2ad3df3c5c923aceb1fb8805d0498685` only. Latest-head CI remains an open gate. Connected GitHub actions in this session do not expose workflow_dispatch; trigger/verify a quality run for the current head before closure.
