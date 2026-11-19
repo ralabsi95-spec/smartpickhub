@@ -1465,3 +1465,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - A PR run #771 was created for head 19569f46fc83c9080b7885a59cb0a88f597fac1c but remained pending with no jobs at last check. This is an Actions queue/scheduling state, not a passed test. Previous successful run #766 only validates old head 1b994672d4e09a57d1b53b75222c9976ac3062f2.
 - Wait to verify a complete quality run for latest head before approval. Do not add no-op commits or trigger repeated workflow dispatches to churn the queue.
 - Product catalogue correction and source audit are committed; all 25 guides / 100 products remain drafts and none approved. PR #8 remains open and unmerged; production/WordPress/DNS remain untouched.
+
+
+## 19 November 2026 — full catalogue structural pass and additional source checks
+- Re-read all 25 guides / 100 product records. This was a structural/risk-triage pass plus targeted official-source checks, not a claim that all 100 product specs are fully verified. All guide publication statuses remain draft.
+- Commit 726f6266e1f06214eb431fba6d4d897cdbd3fb1f updated Garmin X310/X210/X110 to Garmin UK comparison evidence, Garmin Mini 3 to exact UK SKU 010-02899-10, and narrowed Apple Watch Ultra 4 satellite feature caveats.
+- Additional sources reviewed for CalDigit TS4, eufy S340, Ninja AF400UK, Dyson V15, Apple iPad mini A20 Pro, Apple Watch Series 12/Ultra 4/SE 3, Garmin X-series and Brother MFC-L8390CDW. Detailed evidence and caveats in EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md.
+- Risk triage prioritises voltage/SKU, charger power split, dock host display limits, regional model equivalence, consumables/bundles, cellular bands and subscription-dependent features.
+- PR #8 remains open/unmerged; no production changes, publication, Pinterest or IndexNow submission. Next gate is exact-model verification for remaining products, then CI on final head and guide-by-guide editorial approval while drafts remain unpublished.
