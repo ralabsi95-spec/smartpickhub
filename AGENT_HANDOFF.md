@@ -1175,3 +1175,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Levoit Vital 200S UK counterpart is unconfirmed; filter and voltage checks remain; Sage Bambino Plus/Barista Express package details and several remaining headphones/earbuds models still require direct source checks.
 - Guides 14–18 remain not approved; no product records, editorial statuses, publication statuses or production settings changed. All guides remain drafts.
 - Next batch: review guides 19–23 (dash cams, projectors, NAS, electric toothbrushes, gaming mice) with exact model and regional manufacturer pages. Deferred IndexNow engineering remains deferred.
+
+
+## 19 November 2026 — editorial source review batch 5 (guides 19–23)
+
+- Reviewed selected official sources for Garmin dash cams, XGIMI/Epson projectors, Synology NAS, Oral-B iO toothbrushes and Logitech gaming mice; detailed findings and remaining gates are in `EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md`.
+- Confirmed Garmin UK X110 and Mini 3 exact 1080p/140° models and Garmin's separate X210 1440p / X310 4K tiers; noted jurisdiction-specific dashcam/privacy caveat. Confirmed XGIMI MoGo 4 UK model WK08K 1080p/450 ISO lumens/71.28Wh/2.5h Eco; Epson EF-30 US 350-lumen/Google TV facts; Synology UK catalogue distinction DS1525+/DS925+/DS725+ and DS1525+ optional 10GbE; DS224+ 2×1GbE/2GB RAM/100–240V; Oral-B iO mode count and iO10/iO9 feature split.
+- Guides 19–23 remain not approved; several model-specific product records still require full verification, including Garmin X210/X310 part numbers, Epson UK variants, Synology compatibility policy, Oral-B exact packages and Logitech sensor/weight/polling specifications.
+- No catalogue records, editorial statuses, publication statuses, site pages, feeds or production settings changed. All guides remain drafts.
+- Next: final catalogue batch, guides 24–25 (smartwatches and home printers), then consolidate the 25-guide gate matrix, fix the test validator only on the review branch, correct proven content errors and run CI. Deferred IndexNow engineering remains deferred.
