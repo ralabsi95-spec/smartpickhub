@@ -1220,3 +1220,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - CI concurrency is now cancel-in-progress=false (change committed at 2125c3ab52f757b2888e2d15022a2e670fe7a925). Avoid no-op commits or repeated manual dispatches while queue is pending. Recheck latest PR head/run and verify every required job before approval.
 - Catalogue correction: Samsung Bespoke Jet AI condition clarified and source audit extended; Apple A20 Pro official 2026 support source confirmed; four Brother UK product pages inspected; Garmin Mini 3 SKU confirmed but X210/X310 retail SKUs remain pending.
 - All 25 guides / 100 products remain draft; no guide approved/published. PR #8 open/unmerged; no production, WordPress or DNS changes. IndexNow changed/deleted URL/receipt log remains deferred.
+
+
+## 19 November 2026 — catalogue-wide continuation
+- All 25 guide records / 100 product records have been structurally re-read. Do not report this as 100/100 fully manufacturer-verified; it was a complete structural and risk-triage pass with targeted source checks.
+- Latest product data correction commit `726f6266e1f06214eb431fba6d4d897cdbd3fb1f`: Garmin X310/X210/X110 sources use Garmin UK official comparison; Mini 3 uses UK SKU page 010-02899-10; Apple Watch Ultra 4 no longer inherits Ultra 3 satellite messaging claims.
+- Evidence details and source URLs in EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md. Key holds: exact UK retail SKU for Garmin X210/X310; Brother MFC-L3740CDW duplex scan not established; country/carrier restrictions for Watch cellular/satellite; model-specific regional voltage and kit contents across product categories.
+- Continue exact manufacturer model/SKU checks for remaining products; no blanket approval. All 25 guides remain draft; PR #8 open/unmerged; production unchanged. Do not merge/publish or trigger Pinterest/IndexNow.
+- Verify latest CI against latest PR head after documentation updates; prior successes only apply to historical SHAs. CI concurrency is set to cancel-in-progress=false.
