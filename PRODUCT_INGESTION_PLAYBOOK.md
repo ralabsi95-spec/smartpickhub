@@ -1,9 +1,10 @@
 # SmartPickHub — Product Intake, Research & Scale Playbook
 
-**Status:** Architecture and operating procedure — approved for development planning, not permission to publish or connect paid services.  
-**Date:** 18 November 2026  
-**Current source of truth:** `src/data/products.json` on `automation/bootstrap`  
-**Current catalogue:** 25 research-draft guides / 100 product records; zero guides approved for publication.
+**Status:** Architecture and operating procedure — planning reference; no permission to publish or connect paid services is implied.  
+**Last reconciled:** 19 November 2026  
+**Current source of truth:** `src/data/products.json` on `main` (production branch).  
+**Current catalogue:** 25 owner-approved/published guides / 100 product records; zero approved product photographs.  
+**Scale target:** the JSON importer and static catalogue are MVP tools only. See `PRODUCT_DISCOVERY_AUTOMATION_SCALE_PLAN.md` for the current keyword, product discovery, AI visibility and million-record architecture. Historical draft-state statements below are superseded by this header and the latest project handoff.
 
 ## 1. Purpose and operating principle
 

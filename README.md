@@ -30,6 +30,7 @@ UK-first, research-led affiliate buying guides, with a secondary US marketplace 
 - Read [AGENT_HANDOFF.md](AGENT_HANDOFF.md) before work and [MASTER_PROJECT.md](MASTER_PROJECT.md) for the chronological record.
 - [25-guide editorial approval audit](EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md) records the evidence scope and regional caveats.
 - [Product ingestion playbook](PRODUCT_INGESTION_PLAYBOOK.md) governs safe product research and intake.
+- [Product discovery and million-record scale plan](PRODUCT_DISCOVERY_AUTOMATION_SCALE_PLAN.md) defines the keyword, buyer-intent, trend, AI visibility and automation roadmap.
 - Do not re-import products or repeat the 25-guide release.
 - Never publish, delete, or materially change production content without owner approval.
 - Do not run `npm audit fix --force`, blind major upgrades, or destructive dependency changes.
