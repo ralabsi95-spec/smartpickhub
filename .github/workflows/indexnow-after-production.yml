@@ -69,27 +69,10 @@ jobs:
           done
           echo "Cloudflare did not serve the tested commit or a safe documentation-only descendant within 10 minutes."
           exit 1
-      - name: Notify IndexNow after live robots, sitemap and key checks
-        run: npm run indexnow
-        env:
-          PUBLIC_SITE_URL: https://smartpickhub.pages.dev
-          EXPECTED_DEPLOYMENT_SHA: ${{ github.event.workflow_run.head_sha }}
-          ALLOW_DESCENDANT_DEPLOYMENT: 'true'
-; then
-                  echo "Confirmed production serves a documentation-only descendant $deployed_sha of tested release $EXPECTED_DEPLOYMENT_SHA"
-                  exit 0
-                fi
-                echo "Production descendant contains non-documentation changes; waiting for its own successful CI."
-              fi
-            fi
-            echo "Waiting for the exact tested commit or a documentation-only descendant ($attempt/60)..."
-            sleep 10
-          done
-          echo "Cloudflare did not serve the expected production commit within 10 minutes."
-          exit 1
 
       - name: Notify IndexNow after live robots, sitemap and key checks
         run: npm run indexnow
         env:
           PUBLIC_SITE_URL: https://smartpickhub.pages.dev
           EXPECTED_DEPLOYMENT_SHA: ${{ github.event.workflow_run.head_sha }}
+          ALLOW_DESCENDANT_DEPLOYMENT: 'true'
