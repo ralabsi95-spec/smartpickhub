@@ -6,14 +6,14 @@ Audit date: 19 November 2026. Source: `src/data/products.json` on `main`.
 
 - 25 guides and 100 product records inspected structurally.
 - This is a structured editorial preflight, not a live verification of all 100 manufacturer pages, Amazon search results, stock, prices, ratings or product-image rights.
-- No guide has been marked approved or published by this audit. Owner authorised the approval workflow, but factual and regional checks must be resolved before status changes.
-- Product links remain Amazon search links with configured UK/US tracking IDs; they are not verified direct product URLs.
+- The owner subsequently gave explicit release approval for all 25 guides on 19 November 2026 after a proportionate UK-first, material-risk review. This release does not claim every one of the 100 product specifications or live retailer listings was independently re-fetched. Retain the regional, compatibility, bundle and availability caveats recorded per product.
+- Product links remain Amazon search links with configured UK/US tracking IDs; they are not verified direct product URLs. US/UK phrase parity is not a launch blocker; UK remains primary.
 
-## All-guide inventory
+## Current release decision (19 November 2026)\n\n- All 25 guides are owner-approved and marked `published` in the release branch. This follows the owner's explicit launch instruction; it is not a claim of full 100-product manufacturer re-verification or hands-on testing.\n- Product images are optional. Use a free/open asset only when the exact product identity and commercial-use rights are documented. Otherwise retain the existing text-based product card without a placeholder.\n- Production is crawlable on `https://smartpickhub.pages.dev/`; robots allows crawling, homepage is `index, follow`, and the sitemap currently contains 28 URLs.\n- IndexNow is being guarded behind successful main CI and confirmation of the exact live Cloudflare deployment. Google Search Console sitemap submission is still unconfirmed.\n\n## All-guide inventory
 
 | # | Guide | Products | Source references | Caveat signals | Current status |
 |---:|---|---:|---:|---:|---|
-| 1 | `home-office-ergonomics-us-uk` | 4 | 4/4 | 1 | `draft` / research-led |
+| 1 | `home-office-ergonomics-us-uk` | 4 | 4/4 | 1 | `published` / approved |
 | 2 | `portable-power-travel-tech-us-uk` | 4 | 4/4 | 3 | `draft` / research-led |
 | 3 | `smart-home-security-cameras-us-uk` | 4 | 4/4 | 4 | `draft` / research-led |
 | 4 | `wifi-7-home-mesh-routers-us-uk` | 4 | 4/4 | 3 | `draft` / research-led |
@@ -1198,3 +1198,13 @@ This batch checked selected manufacturer pages for Wi-Fi 7 routers/mesh, GaN cha
 ## 19 November 2026 — CI status correction
 - Follow-up check: run #794 (`44515389423`) on head `50ecc2ddd389e127fb65df0a7b9850b0b6af6ca6` is now **cancelled**, not pending. The latest PR head is `9fa3deeb3eccf8c5c179ac9e02ed951eeb57baec`; the commit-run lookup currently returns no workflow run for that exact SHA.
 - Run #781 remains successful only for historical head `89edd10e2ad3df3c5c923aceb1fb8805d0498685`. Do not claim latest-head CI is complete. A supported workflow-dispatch trigger is not exposed through the connected GitHub actions available in this session; next operator step is to trigger/allow a PR quality run for the current head and verify the full job result.
+
+
+## 19 November 2026 — owner-approved publication and indexing release
+
+- The owner explicitly requested that the guides be merged, approved and made indexable while absent for two days. Release branch `release/approve-guides-indexing-20261119` updates all 25 records to `Approved for publication` / `published`.
+- The release intentionally does not require a product photograph: use only exact-model images with documented commercial rights; otherwise display the existing text-based product information card without an empty placeholder.
+- The owner does not require exhaustive US/UK phrase parity. UK-first material electrical/model differences remain disclosed in the catalogue; no US electrical SKU is represented as UK/Jordan-compatible.
+- Amazon links remain model-name search URLs, not direct verified ASINs. No prices, ratings, reviews, stock or hands-on testing claims were added.
+- PR #8 has been merged; release PR #9 must pass the latest CI before merge. The guarded IndexNow workflow is designed to run after successful main CI and exact production deployment verification.
+- Search Console sitemap submission is still outstanding; no Google indexing request has been confirmed. IndexNow acceptance, when triggered, is not a guarantee of crawling or indexing.
