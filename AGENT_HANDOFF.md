@@ -1193,3 +1193,16 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - No guide has been approved; all 25 remain `publicationStatus: draft`. No product data, live pages, feeds or production settings changed.
 - Next phase: consolidate unresolved source checks into a product-level matrix; finish high-risk mismatches (Apple iPad mini A20 Pro source, Samsung vacuum runtime, Levoit Vital 200S UK counterpart, UK/US power variants, exact Brother printer bundles, Garmin dashcam part numbers, model-specific dock/charger port tables); revise only proven catalogue errors on the review branch; then fix the validator to allow approved-but-unpublished drafts while preserving the RSS/publishing gate and run full CI.
 - PR #8 remains a documentation/review branch; do not merge or publish without owner authorization. Deferred IndexNow changed-URL detection, deletion notifications and durable send/receipt logging remain explicitly deferred until separately scheduled and fully CI-tested.
+
+
+## 19 November 2026 — current handoff for editorial product audit
+- Current editorial working branch: automation/editorial-audit-25-guides-20261119; current review PR #8 targets main and is not merged. Continue this review on the existing branch; do not switch to the legacy implementation branch simply because older sections say automation/bootstrap.
+- Current reviewed catalogue is 25 guides / 100 products; every guide remains publicationStatus=draft and none is editorially approved.
+- Product data correction commit: 74ca554d8ec839e104f964414e08fd463ae4d52f fixes the Samsung Bespoke Jet AI VS28C9784QK/EU 160-minute condition and separates UK 280 W from US 280 AW.
+- Official Apple Support confirms iPad mini (A20 Pro) as a 2026 model; update the earlier missing-source hold to a narrower claim-by-claim verification task.
+- Brother UK official model-page checks exist for all four UK printer models. MFC-L3740CDW supports 50-sheet ADF and duplex printing; do not state duplex scanning without explicit model-specific evidence.
+- Garmin Mini 3 UK retail SKU 010-02899-10 confirmed; X210/X310 exact UK retail SKUs remain open. Regulatory model family B04684 is not a retail SKU.
+- CI passed on prior PR head 1b994672d4e09a57d1b53b75222c9976ac3062f2 (run #766). It does not validate the product correction commit. Verify latest head and build-check run before next change/approval.
+- Several newer workflow runs were cancelled by concurrency while run #766 succeeded on the PR head; do not mistake cancelled runs for test failures. Cloudflare preview reported successful Pages previews and an isolated failed deployment for commit 212e323; current production remains untouched.
+- IndexNow changed-URL detection/deletion/receipt-log remains deferred by owner instruction.
+- Next: verify remaining product claims and exact models from guides 1–25, prioritising regional/electrical/accessory compatibility and unsupported port/dock claims; correct only evidence-backed discrepancies; update the catalogue validator only when its editorial/publication gate contract is defined; rerun CI on the latest head. Keep all guides draft until the evidence matrix is complete.
