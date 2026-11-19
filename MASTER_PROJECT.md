@@ -1191,3 +1191,13 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 1. Inspect the latest unique preview `https://866a609e.smartpickhub-preview.pages.dev/` using a reliable raw HTTP response method, capturing the exact homepage and guide HTML head plus response headers; if browser view-source remains stuck, use a different retrieval method.
 2. Diagnose Cloudflare Pages build/output/environment or possible browser inspection mismatch. Do not modify settings speculatively. Keep preview crawl-blocked.
 3. Add a deployed-response verification gate once diagnosis is established. Continue UK-first content and legal product-image sourcing in parallel without repeating the existing catalogue import.
+
+
+## 19 November 2026 — owner-authorized release preparation
+- Owner explicitly requested: continue and publish online. This supersedes the earlier no-merge/no-publication restrictions for release preparation.
+- PR #4 (UK-first Roborock model distinctions) was marked ready and squash-merged into `automation/bootstrap`; merge commit `93626f0f3befa0a6982f208e32022bde7e157e0a`. Its exact source head `9c9e7c2b8e11ba69efd0f9c717ce5059e672ba71` passed CI #716 / run ID `44468046199` (all 19 substantive steps successful).
+- PR #1 (Astro MVP foundation) was then marked ready and squash-merged into `main`; merge commit `31a7d141169033fd01005543143a03d8715104d8`. The merged tree is the CI-verified PR #4 tree plus the PR merge metadata; no application edits were made during release preparation.
+- Production deployment is NOT complete. The approved Cloudflare Pages production target `https://smartpickhub.pages.dev/` remains disconnected from Git according to the latest verified project record. The separate `smartpickhub-preview` Pages project is not production.
+- Production indexing protections intentionally remain in source: `Layout.astro` emits `noindex, nofollow`, and `public/robots.txt` contains `Disallow: /`. The previous preview raw-response discrepancy remains unresolved; do not remove protections or submit sitemap/IndexNow until deployed response headers/HTML are verified.
+- Editorial status is unchanged: 25 guides / 100 product records, 0 guides approved for publication, and 0 approved product images. No catalogue re-import, product-image approval, price/rating/ASIN fabrication, DNS change, or WordPress modification occurred.
+- Next: connect the existing Cloudflare Pages production project to GitHub repository `ralabsi95-spec/smartpickhub`, production branch `main`, with Astro build command `npm run build` and output directory `dist`; then verify the actual production response before enabling indexing. The Cloudflare connection and deployment have not yet been performed.
