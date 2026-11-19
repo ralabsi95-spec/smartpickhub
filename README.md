@@ -56,3 +56,7 @@ npm run audit-report
 - Production deployment marker confirms main commit `88f7f86d6083e2546f229d0ba4c6258df30dc62b`.
 - PR #10's full PR-head quality workflow #825 passed before merge; the post-merge IndexNow notification result still requires separate confirmation.
 - See `AGENT_HANDOFF.md`, `MASTER_PROJECT.md` and `SEARCH_DISCOVERY_INDEXING_LIFECYCLE.md` for the current operating state and scale-up plan.
+
+
+## Research and growth plans
+- [US market, global trend radar and civil-preparedness opportunity plan](US_GLOBAL_TREND_PREPAREDNESS_PLAN.md) — separate US keyword discovery, event-led demand validation, GTA VI launch snapshot, and non-alarmist household resilience research. All unmeasured terms remain hypotheses; no paid research or product intake is implied.
