@@ -1,9 +1,9 @@
 # SmartPickHub – Agent Handoff (READ THIS FIRST)
 
-**Last verified:** 19 November 2026 20:36 Asia/Amman; production serves main commit `806e231665dd398e9a2935a0854c65afa3a30857`; main CI #862 and guarded IndexNow #129 confirmed; PRs #24–#26 reviewed and remain open
+**Last verified:** 19 November 2026 20:36 Asia/Amman; production serves main commit `806e231665dd398e9a2935a0854c65afa3a30857`; main CI #862 and guarded IndexNow #129 confirmed; PRs #24–#27 reviewed and remain open
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `main` (production)  
-**Pull requests:** PR #8 merged; PR #9 merged; no open release PR  
+**Pull requests:** PRs #24–#27 open; PR #24 source correction, PR #25 transparency page, PR #26 documentation, PR #27 handoff/security documentation. PRs #7 and #13 are stale and superseded.  
 **Production target:** https://smartpickhub.pages.dev/ (Cloudflare Pages + Astro)  
 **Isolated Astro preview:** https://smartpickhub-preview.pages.dev/
 
@@ -11,15 +11,18 @@
 >
 > **Permanent scope boundary (19 Nov 2026):** The former InfinityFree domain/hosting and former WordPress site are cancelled and completely outside SmartPickHub. They are not a target, fallback, migration source, catalogue source, or integration. Do not access, connect, edit, migrate, redirect, import from, or spend project effort on them. The approved environment is GitHub + Astro + Cloudflare Pages on `pages.dev`.
 
-## Current authoritative checkpoint — 19 November 2026 16:00 UTC
+## Current authoritative checkpoint — 19 November 2026 20:36 Asia/Amman
 
-- Main/production commit: `ed52a5ece4c1e0b088bea83e71dff5c072be90dd`; Cloudflare Pages production deployment is confirmed successful. Preview also deployed successfully and remains noindex/nofollow.
-- PR #19 is merged after explicit owner approval. It updates metadata only: 25 concise unique SEO titles and four shortened descriptions; visible H1 and catalogue product data remain unchanged.
-- Run #853 audit attempt 1 failed only when `npx lighthouse` could not resolve `@sentry/bundler-plugins@11.15.0` (ETARGET). Type/content, importer dry-run, catalogue, build, RSS, smoke and axe checks passed. Attempt 2 retry is pending; verify it before stating Lighthouse/full CI passed.
-- Eight Tier-1 guides were structurally reviewed: all 32 product entries have official manufacturer sources/source notes, best-for, pros/cons and UK/US search identifiers; comparison table, buying checklist and product details already exist.
-- GA4/gtag and outbound click tracking are not implemented. GA4 Measurement ID and a consent/privacy approach are prerequisites. GSC/GA4 first-party reporting and Bing Webmaster verification remain outstanding; no actual keyword-volume or conversion data is available.
-- No catalogue import/change, public content edit, DNS change, paid service, paid SEO tool or TinyFish credits. Pinterest feeds are owner-confirmed but Pinterest-side ingestion remains unverified.
-- Continue UK commercial-intent optimisation on existing guides. Do not create near-duplicate pages, invent ASINs/prices/ratings/search metrics, or treat Amazon search URLs as direct product links.
+- Production serves main commit 806e231665dd398e9a2935a0854c65afa3a30857. Main quality workflow #862 passed; IndexNow workflow #129 independently verified that exact deployment marker and received acceptance for 28 URLs. This does not guarantee crawling or indexing.
+- Catalogue remains 25 owner-approved/published guides and 100 product records (four per guide). Amazon UK tracking ID: smartpickhubu-21; secondary US ID: smartpickh0bc-20. Destinations are marketplace search phrases, not verified direct ASIN listings. No product image is approved; retain text-based product cards until exact-model commercial rights are verified.
+- Five board-specific RSS feeds contain 25 approved entries. The owner confirms all five feeds are connected to their matching Pinterest boards; authenticated ingestion and Pin activity remain unverified.
+- Preview remains a separate non-indexable host. Production robots allows crawling and sitemap contains 28 URLs. Google Search Console sitemap processing, Bing Webmaster reporting, GA4 and onsite Amazon outbound-click analytics remain unconfirmed/not implemented.
+- PR #24 source correction passed exact-head CI #861 but needs its sourceNote references reconciled before merge; it remains owner-approval-gated. PR #25 transparency page passed #863 but is public content and remains owner-approval-gated. PR #26 documentation-only passed #864. PR #27 documentation/status/security update is open and awaiting exact-head CI #865.
+- PR #7 is 35 commits behind and superseded; PR #13 is 11 commits behind and superseded by PR #19 SEO metadata work. Do not merge either as-is.
+- Scheduled Draft Research run #1 failed because GEMINI_API_KEY is not configured; no draft or PR was created. Do not add a key or use paid API services without owner direction.
+- GHSA-fc5q-39xc-vjpf / CVE-2026-112366 was withdrawn by GitHub on 18 November because it is not a security issue. The former temporary exception is now a historical record; do not change dependencies solely for that withdrawn advisory.
+- Before scaling beyond the current 28-URL sitemap, implement the documented route-aware IndexNow delta/deletion queue and durable receipts. Do not repeat the 25-guide release, product import, or previous SEO metadata work.
+
 
 ## 1. Non-negotiable safety rules
 
