@@ -1,6 +1,6 @@
 # SmartPickHub – Agent Handoff (READ THIS FIRST)
 
-**Last verified:** 19 November 2026 12:30 UTC; PR #9 merged to `main` at `2619626e51e023a906876cebe5632bd84f97ef53`; main CI #816 queued  
+**Last verified:** 19 November 2026 12:40 UTC; production serves main commit `2fc29d32067a0b654b1f4e4a8133835002f45513`; PR #10 IndexNow guard repair open; PR #7 lifecycle documentation stale and not to be merged as-is
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `main` (production)  
 **Pull requests:** PR #8 merged; PR #9 merged; no open release PR  
@@ -1323,3 +1323,17 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Google Search Console sitemap submission remains outstanding. Changed/deleted URL detection and durable IndexNow receipt logging remain deferred.
 - Permanent scope boundary: former InfinityFree hosting/domain and former WordPress site are cancelled and completely outside the project. No access, integration, migration, redirect, import, fallback, or further work there.
 - Next action: verify workflow #816 and Cloudflare main deployment for `2619626e`; then verify guarded IndexNow result. Do not claim completion before those exact checks pass.
+
+
+## 19 November 2026 12:40 UTC — full production and SEO review
+- Confirmed repository default branch is `main`; latest main commit is `2fc29d32067a0b654b1f4e4a8133835002f45513`. Production `https://smartpickhub.pages.dev/` serves that exact commit (deployment marker generated 12:34:40 UTC). Preview `https://smartpickhub-preview.pages.dev/` remains crawl-disallowed.
+- Live production checks: robots allows crawling; sitemap index and child sitemap are readable; child sitemap has 28 URLs (home, disclosure, guide hub and 25 guides); homepage and sample guides return index/follow metadata. IndexNow key file is publicly reachable and its content matches the configured key.
+- Fresh OpenSEO crawl audit `a9580b1b-cc76-4572-82a6-f6fe069a3448` completed: 28/28 pages crawled, all HTTP 200, indexable and in sitemap, no critical issues. Only 25 informational title/description length recommendations: 21 long title tags and 4 long meta descriptions. Keep H1/editorial titles intact; consider a separate concise SEO title field and shorten only the four descriptions.
+- Catalogue structural check on main: 25 guides / 100 products, four products per guide, all published and editorially approved; all product records have source URLs and US/UK marketplace identifiers; no duplicate product names; 100 products have no product-image record. This is intentional and matches the owner's policy: no product photo unless exact-model identity and commercial reuse rights are documented; keep the text card.
+- Five board-specific RSS feeds are live and contain approved guide entries. No Pinterest connection or Pin publication is confirmed or authorised by the indexing release.
+- OpenSEO project contains 24 saved UK commercial/transactional keyword records with search-volume/KD/CPC metrics. These are research estimates, not first-party traffic or guaranteed demand.
+- OpenSEO currently sees no connected Google Search Console or GA4 accounts. The production page retains its Google verification meta tag, but Search Console performance/index status cannot be read through this connector until an account is connected. Sitemap submission/processing in GSC remains unconfirmed.
+- PR #7 (`automation/search-discovery-lifecycle-20261119`) is documentation-only but is 4 commits behind and 3 ahead of current main; its text incorrectly says all 25 guides are drafts and refers to the superseded IndexNow workflow. Do not merge it as-is. Port/reconcile the lifecycle document against the current release before merging.
+- PR #10 (`fix/indexnow-descendant-deploy-guard-20261119`) fixes the one-time IndexNow workflow's exact-SHA problem: production has advanced from release commit `2619626e` to documentation-only descendant `2fc29d3`, so the old exact-match gate would time out. The fix accepts only the exact tested commit or a verified documentation-only descendant on main; any non-Markdown change still requires its own successful CI. PR #10 CI run #820 was pending at last check. No IndexNow submission is claimed.
+- Dependency risk: the owner-approved temporary picomatch advisory exception remains open/review-required through 2 December 2026; it is not remediation or a clean security audit.
+- Next: verify PR #10 full CI; merge only after green checks; confirm main quality CI and exact production deployment; then verify the guarded IndexNow workflow result. Separately connect GSC/GA4, diagnose the GSC sitemap fetch discrepancy, and reconcile PR #7's lifecycle document.
