@@ -6,7 +6,7 @@
     "marketStrategy": "UK-first launch. Prioritise useful UK buying guidance and Amazon UK search destinations; US marketplace fields are optional secondary support and do not require exhaustive model-by-model regional parity.",
     "identifierPolicy": "Identifiers are product/model search phrases, not ASINs. Affiliate links use marketplace search URLs unless an exact product ASIN and destination have been verified. Never invent ASINs, live prices, ratings, stock or seller claims.",
     "editorialPolicy": "Practical editorial guidance based on available manufacturer/product information. Keep claims proportionate to evidence; avoid hands-on testing claims, fabricated rankings, current price/availability claims, and unsafe electrical or compatibility advice. Minor regional differences do not block a guide; clearly material safety, voltage, plug, battery-platform or compatibility differences must not be misrepresented.",
-    "publicationPolicy": "Do not treat these research drafts as approved editorial content. Preview remains noindex.",
+    "publicationPolicy": "Guides remain draft until publicationStatus is explicitly set to published AND editorialStatus is Approved for publication. Preview builds are noindex and disallowed in robots.txt.",
     "productCount": 100,
     "marketPriority": "UK primary; US secondary where useful. No exhaustive UK/US SKU equivalence audit is required for launch."
   },
@@ -102,7 +102,8 @@
         "Confirm operating-system support, Bluetooth/receiver requirements and multi-device switching.",
         "Measure desk space and check wrist-rest height, keyboard width and mouse reach.",
         "Use a return policy to assess comfort over normal work sessions; ergonomics are personal."
-      ]
+      ],
+      "publicationStatus": "draft"
     },
     {
       "slug": "portable-power-travel-tech-us-uk",
@@ -197,7 +198,8 @@
         "Check whether the product provides USB output only or AC mains sockets, and confirm continuous wattage.",
         "Confirm battery transport rules with the airline; power stations and power banks have different limits.",
         "Choose the correct US/UK electrical version, plug and charging input before ordering."
-      ]
+      ],
+      "publicationStatus": "draft"
     },
     {
       "slug": "smart-home-security-cameras-us-uk",
@@ -290,7 +292,8 @@
         "Compare local storage with cloud subscriptions and identify which features stop without a plan.",
         "Check weather rating, mounting position, field of view and night illumination.",
         "Review privacy settings, account requirements, event-history limits and power options."
-      ]
+      ],
+      "publicationStatus": "draft"
     },
     {
       "slug": "wifi-7-home-mesh-routers-us-uk",
@@ -383,7 +386,8 @@
         "Confirm client devices support Wi-Fi 7 features; older devices will not gain every benefit.",
         "Compare Ethernet port speeds, backhaul options and the number of mesh nodes required.",
         "Check regional firmware, power adapter, ISP compatibility and subscription-dependent security features."
-      ]
+      ],
+      "publicationStatus": "draft"
     },
     {
       "slug": "usb-c-gan-chargers-us-uk",
@@ -476,7 +480,8 @@
         "Check how total output is divided when multiple ports are used at the same time.",
         "Use a cable rated for the required power and data specification.",
         "Confirm plug type, input voltage range, dimensions and travel suitability."
-      ]
+      ],
+      "publicationStatus": "draft"
     },
     {
       "slug": "webcams-video-calls-streaming-us-uk",
@@ -569,7 +574,8 @@
         "Compare autofocus, field of view, low-light performance and microphone requirements.",
         "Confirm USB bandwidth, cable type, operating-system support and video-call app compatibility.",
         "Check mounting thread, monitor clearance, privacy shutter and included accessories."
-      ]
+      ],
+      "publicationStatus": "draft"
     },
     {
       "slug": "4k-usb-c-monitors-home-office-us-uk",
@@ -662,7 +668,8 @@
         "Check USB-C Power Delivery wattage against the laptop's charging requirement.",
         "Compare panel type, colour coverage, refresh rate, HDR limits and factory calibration claims.",
         "Check stand adjustment, VESA mounting, port layout and whether the supplied cable supports the required bandwidth."
-      ]
+      ],
+      "publicationStatus": "draft"
     },
     {
       "slug": "thunderbolt-usb-c-docking-stations-us-uk",
@@ -755,7 +762,8 @@
         "Check supported monitor count, resolution and refresh rate for the exact laptop and operating system.",
         "Match host charging wattage and power-adapter capacity to the laptop.",
         "Review Ethernet speed, USB port generations, SD reader and any display-driver dependency."
-      ]
+      ],
+      "publicationStatus": "draft"
     },
     {
       "slug": "portable-ssd-external-storage-us-uk",
@@ -848,7 +856,8 @@
         "Choose capacity based on current data plus expected growth and maintain a separate backup.",
         "Compare hardware encryption, password recovery, ruggedness and warranty terms.",
         "Confirm included cable/adapter compatibility and whether sustained writes affect performance."
-      ]
+      ],
+      "publicationStatus": "draft"
     },
     {
       "slug": "air-fryers-us-uk",
@@ -942,7 +951,8 @@
         "Check the exact regional model number, voltage, wattage, plug and counter-space clearance.",
         "Decide whether single basket, dual-zone synchronisation or steam functions are genuinely useful.",
         "Check dishwasher-safe parts, cleaning access, replacement accessories and warranty conditions."
-      ]
+      ],
+      "publicationStatus": "draft"
     },
     {
       "slug": "cordless-vacuum-cleaners-us-uk",
@@ -1039,7 +1049,8 @@
         "Check floor-head design, anti-tangle features, bin capacity, weight and filtration.",
         "Confirm battery runtime at the power level you will actually use and whether batteries are replaceable.",
         "Check regional model suffix, included tools, wall dock, filter availability and warranty."
-      ]
+      ],
+      "publicationStatus": "draft"
     },
     {
       "slug": "cordless-drills-us-uk",
@@ -1120,7 +1131,8 @@
         "Compare torque, speed ranges, chuck size and clutch settings with the materials you plan to drill.",
         "Check whether the listing is a bare tool or a kit and whether batteries are compatible with tools you own.",
         "Confirm regional model suffixes, charger voltage, warranty and availability of replacement batteries."
-      ]
+      ],
+      "publicationStatus": "draft"
     },
     {
       "slug": "robot-vacuum-mops-us-uk",
@@ -1213,7 +1225,8 @@
         "Compare dock functions: auto-empty, mop washing/drying, water refill and detergent requirements.",
         "Confirm consumable availability, replacement costs and which features require an app or subscription.",
         "Check carpet detection, mop lifting, privacy controls and regional warranty."
-      ]
+      ],
+      "publicationStatus": "draft"
     },
     {
       "slug": "noise-cancelling-headphones-us-uk",
@@ -1299,7 +1312,8 @@
         "Check ANC behaviour, transparency mode, microphone performance and wind-noise handling.",
         "Confirm Bluetooth codecs, multipoint support, wired operation and compatibility with your devices.",
         "Compare battery life with ANC enabled, charging connector, foldability and replacement ear pads."
-      ]
+      ],
+      "publicationStatus": "draft"
     },
     {
       "slug": "wireless-earbuds-us-uk",
@@ -1376,7 +1390,8 @@
         "Compare ANC, transparency, microphone performance and wind handling in your typical environment.",
         "Confirm codec and feature compatibility across iPhone, Android and companion apps.",
         "Check case charging, wireless charging support, water-resistance rating and replacement-tip availability."
-      ]
+      ],
+      "publicationStatus": "draft"
     },
     {
       "slug": "home-air-purifiers-us-uk",
@@ -1457,7 +1472,8 @@
         "Check filter type, replacement SKU, availability and ongoing filter cost.",
         "Review noise levels at the fan speed needed for the room and whether sleep mode reduces output.",
         "Check sensor claims, app/cloud dependencies, ozone-related claims and regional electrical requirements."
-      ]
+      ],
+      "publicationStatus": "draft"
     },
     {
       "slug": "espresso-coffee-machines-us-uk",
@@ -1555,7 +1571,8 @@
         "Compare manual versus automatic milk texturing, portafilter size, dose reference, controls and cleaning routines.",
         "Check counter dimensions, water-tank access, included accessories, model suffix, retailer seller and regional warranty.",
         "Treat manufacturer heat-up and feature claims as model-specific published specifications, not independent performance testing."
-      ]
+      ],
+      "publicationStatus": "draft"
     },
     {
       "slug": "tablets-for-work-study-us-uk",
@@ -1632,7 +1649,8 @@
         "Check stylus and keyboard compatibility, including whether accessories are sold separately.",
         "Compare chip generation, memory limits, external display support and port capabilities.",
         "Confirm regional warranty, cellular band support and charger/accessory package."
-      ]
+      ],
+      "publicationStatus": "draft"
     },
     {
       "slug": "dash-cams-us-uk",
@@ -1709,7 +1727,8 @@
         "Check whether a microSD card, polarising filter, hardwire kit or rear camera is included.",
         "Review parking-mode power requirements and whether a low-voltage cut-off is provided.",
         "Check local privacy/recording rules, GPS features, app support and regional warranty."
-      ]
+      ],
+      "publicationStatus": "draft"
     },
     {
       "slug": "portable-projectors-us-uk",
@@ -1795,7 +1814,8 @@
         "Check native resolution, throw ratio, focus/keystone features and required projection distance.",
         "Confirm whether a battery is built in, expected runtime and whether streaming apps are licensed in your region.",
         "Check HDMI/USB-C inputs, speaker output, fan noise, plug type and current regional availability."
-      ]
+      ],
+      "publicationStatus": "draft"
     },
     {
       "slug": "home-nas-storage-us-uk",
@@ -1873,7 +1893,8 @@
         "Check CPU/RAM, network ports, upgrade options and whether link aggregation or 10GbE is supported.",
         "Review the manufacturer's drive compatibility list and any restrictions on third-party drives.",
         "Budget for NAS-rated disks, off-site backup, power protection and software/security update support."
-      ]
+      ],
+      "publicationStatus": "draft"
     },
     {
       "slug": "electric-toothbrushes-us-uk",
@@ -1950,7 +1971,8 @@
         "Check the exact handle generation and compatible replacement brush-head family.",
         "Compare charger type, travel case, battery claims and replacement-head availability/cost.",
         "Do not treat app scores as a dental diagnosis; follow professional dental advice for oral-health concerns."
-      ]
+      ],
+      "publicationStatus": "draft"
     },
     {
       "slug": "gaming-mice-us-uk",
@@ -2027,7 +2049,8 @@
         "Compare sensor performance, polling rate, click technology and wired/2.4GHz/Bluetooth modes.",
         "Check battery life, receiver storage, software compatibility and onboard profile support.",
         "Confirm the exact model generation, included receiver/cable and warranty."
-      ]
+      ],
+      "publicationStatus": "draft"
     },
     {
       "slug": "smartwatches-us-uk",
@@ -2108,7 +2131,8 @@
         "Compare GPS accuracy, battery life in smartwatch and activity modes, display size and comfort.",
         "Check whether cellular connectivity requires a supported carrier plan in your country.",
         "Treat health sensors as wellness features unless the manufacturer and local regulator specify otherwise."
-      ]
+      ],
+      "publicationStatus": "draft"
     },
     {
       "slug": "home-printers-us-uk",
@@ -2205,7 +2229,8 @@
         "Choose laser or inkjet based on colour needs, print frequency and document/photo use.",
         "Check automatic duplex, ADF duplex scanning, paper sizes, tray capacity and network protocols.",
         "Verify the regional model suffix, mains voltage, toner cartridge family, warranty and driver support."
-      ]
+      ],
+      "publicationStatus": "draft"
     }
   ]
 }
