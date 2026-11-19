@@ -16,6 +16,17 @@ const eligible = (data.guides ?? []).filter((guide) =>
 const errors = [];
 const fail = (message) => errors.push(message);
 
+// Verify the full original cover set, including draft guides not yet eligible for distribution.
+for (const guide of data.guides ?? []) {
+  const coverPath = path.join('dist', 'images', 'pinterest', `${guide.slug}.png`);
+  try {
+    const meta = await sharp(coverPath).metadata();
+    if (meta.format !== 'png' || meta.width !== 1000 || meta.height !== 1500) fail(`Pinterest cover is not a 1000×1500 PNG: ${guide.slug}`);
+  } catch (error) {
+    fail(`Pinterest cover is missing or unreadable: ${guide.slug} (${error.message})`);
+  }
+}
+
 const rss = await fs.readFile('dist/rss.xml', 'utf8');
 if (!/^<\?xml[^>]+\?>\s*<rss version="2\.0"/i.test(rss)) fail('Pinterest feed must be a valid RSS 2.0 document.');
 const itemBlocks = [...rss.matchAll(/<item>([\s\S]*?)<\/item>/gi)].map((match) => match[1]);
