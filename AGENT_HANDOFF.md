@@ -1206,3 +1206,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Several newer workflow runs were cancelled by concurrency while run #766 succeeded on the PR head; do not mistake cancelled runs for test failures. Cloudflare preview reported successful Pages previews and an isolated failed deployment for commit 212e323; current production remains untouched.
 - IndexNow changed-URL detection/deletion/receipt-log remains deferred by owner instruction.
 - Next: verify remaining product claims and exact models from guides 1–25, prioritising regional/electrical/accessory compatibility and unsupported port/dock claims; correct only evidence-backed discrepancies; update the catalogue validator only when its editorial/publication gate contract is defined; rerun CI on the latest head. Keep all guides draft until the evidence matrix is complete.
+
+
+## 19 November 2026 — quality workflow concurrency safeguard
+- CI workflow cancellation issue diagnosed: runs #767/#768 were cancelled while new PR commits arrived, causing incomplete consolidated reports (0 axe routes / 0 Lighthouse pages). These are incomplete/cancelled runs, not failed product checks.
+- `.github/workflows/build-check.yml` now uses `cancel-in-progress: false` on the review branch. Commit `2125c3ab52f757b2888e2d15022a2e670fe7a925`.
+- Current review PR head will change as documentation is updated. Verify the latest run SHA exactly before treating quality gates as passed. Previous #766 success on `1b994672` is historical only.
+- Keep working on `automation/editorial-audit-25-guides-20261119`, PR #8 open/unmerged. Product statuses remain draft; no production changes, publication, or IndexNow/Pinterest submissions.
