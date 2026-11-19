@@ -1495,3 +1495,8 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Product-data commit `88ee74da154158c7c371b7145148801519d995c8` adds manufacturer-backed clarifications for UGREEN Nexode 100W SKU 40749 (universal input; 100W total cap; no unsupported simultaneous per-device claim) and Nexode 200W SKU 35539 (universal input; per-port ceilings; 200W combined cap; verify UK mains lead).
 - PR #8 remains open/unmerged; no production deployment, guide publication, Pinterest post or IndexNow submission. All 25 guides remain draft.
 - Run #778 completed successfully on an older head, while #781 was still running on prior head `89edd10e`; the new product commit requires its own completed CI run.
+
+
+## 19 November 2026 — regional router compatibility
+- Commit `68ae210e216909ac6ddf669a9c5f2e6a0b508feb` records TP-Link Deco BE63 regional hardware-revision caution. TP-Link UK documents multiple supported hardware versions and says regional availability varies; US datasheet figures are not proof of identical UK radio/firmware/adapter package.
+- PR #8 remains open/unmerged; all 25 guides remain draft. No production, Pinterest or IndexNow action.
