@@ -1,9 +1,9 @@
 # SmartPickHub – Agent Handoff (READ THIS FIRST)
 
-**Last verified:** 19 November 2026 11:55 UTC; PR #8 merged at `4a6b67a5c60f93bfeb58b5f792c08825a0ad1706`; release PR #9 is open; latest CI must be verified  
+**Last verified:** 19 November 2026 11:55 UTC; PR #8 merged at `4a6b67a5c60f93bfeb58b5f792c08825a0ad1706`; release PR #9 is open; CI #810 passed on tested head `df6a5d2`; canonical host confirmation pending  
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `release/approve-guides-indexing-20261119`; production branch `main`  
-**Pull requests:** [#8 – 25-guide editorial audit and product corrections](https://github.com/ralabsi95-spec/smartpickhub/pull/8) merged; release PR #9 open; CI pending  
+**Pull requests:** [#8 – 25-guide editorial audit and product corrections](https://github.com/ralabsi95-spec/smartpickhub/pull/8) merged; release PR #9 open; CI #810 passed; merge held for domain confirmation  
 **Production target (live):** https://smartpickhub.pages.dev/; latest verified production commit after PR #8 is `4a6b67a5c60f93bfeb58b5f792c08825a0ad1706`  
 **Isolated Astro preview:** https://smartpickhub-preview.pages.dev/
 
@@ -1300,3 +1300,13 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Google Search Console sitemap submission remains unconfirmed: the SmartPickHub OpenSEO project has no connected GSC account. TinyFish browser automation was not started because its wallet balance is -$0.47; do not claim a Google sitemap submission. Owner may connect Google Search Console to OpenSEO or fund browser automation to complete this separate step.
 - The current evidence pass is proportionate/UK-first, not full independent live re-verification of all 100 records. Retain regional compatibility caveats and the distinction between Amazon search links and direct verified ASIN links.
 - Deferred work remains: changed/deleted URL detection and durable IndexNow send/receipt log. Current workflow performs a guarded sitemap-wide IndexNow notification only.
+
+
+## 19 November 2026 — domain/indexing hold (latest)
+
+- PR #9 CI #810 passed on tested head `df6a5d20918c04be131ad3519dc7c2a0a0e0d353`. It has not been merged.
+- Do not merge PR #9 or run its IndexNow workflow until the owner confirms the canonical domain. The permanent project brief identifies `smartpickhub.infinityfree.me`; the Astro repo deploys to `smartpickhub.pages.dev`. Both sites are live and contain different guide libraries.
+- InfinityFree WordPress: robots allows crawling and references `https://smartpickhub.infinityfree.me/wp-sitemap.xml`; `/sitemap_index.xml` returns 404; WP sitemap XML fetch returned empty content through current fetchers. Do not assume it is broken or valid until tested in Search Console/browser.
+- Pages.dev Astro: robots allows crawling, homepage is `index, follow`, sitemap has 28 URLs, and its IndexNow key is live. PR #9 workflow targets this host only.
+- Google Search Console sitemap submission not completed. OpenSEO GSC account list is empty. TinyFish browser automation failed due wallet balance -$0.47. Do not claim Google indexing.
+- Product photos are optional; 0 approved / 100 absent. This is accepted. No-photo product cards are retained; no Pinterest publication is authorised.
