@@ -8,14 +8,18 @@ UK-first, research-led affiliate buying guides, with a secondary US marketplace 
 - **[Release-readiness audit (18 Nov 2026)](docs/RELEASE_READINESS_AUDIT_2026-11-18.md)** – verified quality results, launch blockers and next actions.
 - **[Product ingestion playbook](PRODUCT_INGESTION_PLAYBOOK.md)** – safe product research and intake procedure.
 
-## Current status (18 November 2026)
-- Astro implementation is on development branch `automation/bootstrap`, latest verified commit: `3f49a59ed44c8385ce41b63e94365e4c6161fda1`.
-- Catalogue: **25 research-draft guides / 100 product records**. None is approved for publication.
-- Amazon US/UK link generation is configured with tracking IDs, but current model-name links are marketplace search links, not verified direct ASIN links or proof of live listing availability.
-- Preview project: https://smartpickhub-preview.pages.dev/; it must remain `noindex,nofollow` and crawl-disallowed. Freshness for the latest commit must be checked before visual sign-off.
-- Production target: https://smartpickhub.pages.dev/; its Pages project remains disconnected and no production deployment is authorized.
-- The old InfinityFree property is excluded from the SmartPickHub implementation plan. Do not edit, migrate, reconnect or rely on it.
-- PR #1 remains Draft/open/unmerged. Do not merge without explicit owner approval.
+## Current status (19 November 2026)
+
+- Production is live on Cloudflare Pages: https://smartpickhub.pages.dev/. The live deployment marker was verified at commit `4a6b67a5c60f93bfeb58b5f792c08825a0ad1706`.
+- PR #8 was merged to `main` after its latest-head CI #798 passed. It includes evidence-backed product corrections and the 25-guide audit record.
+- Release branch `release/approve-guides-indexing-20261119` prepares the owner-authorised publication of all **25 buying guides / 100 products**, optional product imagery, and guarded IndexNow notification. PR #9 and its CI must pass before this release reaches production.
+- Product photos are optional. Use only exact-model assets with documented commercial reuse rights; otherwise retain the existing text-based product information card without a substitute image or empty placeholder.
+- Amazon links remain marketplace search links, not verified direct ASIN listings. UK tracking ID: `smartpickhubu-21`; US secondary tracking ID: `smartpickh0bc-20`.
+- Production robots currently allows crawling, the homepage has `index, follow`, and the live sitemap contains 28 URLs. This enables crawling but does not guarantee Google/Bing indexing.
+- IndexNow verification key is already live. A guarded post-CI/post-deployment IndexNow workflow is being added; it will submit only after the live deployment marker, robots, sitemap and key file match the exact successful commit.
+- Google Search Console's existing sitemap-fetch issue remains unresolved. The OpenSEO project does not currently have a connected Search Console account; no sitemap submission is claimed yet.
+- Do not connect Pinterest RSS or publish Pins as part of this indexing release. RSS feeds may become populated after the approved guide release, but no Pinterest publishing action is authorised here.
+- InfinityFree / `smartpickhub.infinityfree.me` is not the production host for this Astro release. Preserve the legacy property and WordPress installation unchanged.
 
 ## Verified quality snapshot
 - CI push run [#44249569378](https://github.com/ralabsi95-spec/smartpickhub/actions/runs/44249569378) and PR run [#44249577388](https://github.com/ralabsi95-spec/smartpickhub/actions/runs/44249577388) passed on commit `3f49a59`.
