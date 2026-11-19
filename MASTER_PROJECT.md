@@ -1517,3 +1517,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 ## 19 November 2026 — Apple iPad mini UK configuration note
 - Commit `9af76b4c5d1f17552745f8a334d618ef623c91cb` records Apple's UK store availability for iPad mini A20 Pro and preserves a regional caveat: US technical page does not establish exact UK cellular band configuration or local in-box adapter contents. Check selected UK SKU/configuration.
 - PR #8 open/unmerged; all 25 guides remain draft; no production/Pinterest/IndexNow action.
+
+
+## 19 November 2026 — consolidated continuation checkpoint
+- Additional product-data corrections: UGREEN Nexode 100W/200W port-sharing and 100–240V caveats (`88ee74da`); Deco BE63 regional hardware revision note (`68ae210e`); eero Pro 7 adapter input, Orbi RBE773 pack/adapter verification, Dell U2723QE UK SKU and 100–240V input, ASUS PA279CRV 100–240V/96W PD, BenQ PD2705U 100–240V/65W PD (`27be358f`); corrected Garmin X110/X210/X310 model-specific evidence links (`39bfea83`); iPad mini A20 Pro UK configuration note (`9af76b4c`).
+- Structural validation: 25 guides / 100 products; every guide publicationStatus is draft; all product records have HTTP(S) sources and both US/UK search identifiers; no duplicate product names. 37 product records contain explicit regional/availability caveats. This is not a claim of complete manufacturer-level verification for every spec.
+- CI #781 passed on old head `89edd10e` including axe accessibility on every catalogue route, Lighthouse desktop/mobile and representative templates, build and smoke checks, report generation/upload. Its artifact is retained until 3 Dec 2026. Current PR head `50ecc2ddd389e127fb65df0a7b9850b0b6af6ca6` has run #794 pending; wait for that exact head or a later final head before calling CI complete.
+- PR #8 remains open/unmerged. No production deployment, publication, Pinterest or IndexNow action. Keep changed/deleted URL detection and durable IndexNow receipt log in deferred scope.
