@@ -2,7 +2,7 @@
 
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Implementation branch:** `main` (production) with release work on `release/approve-guides-indexing-20261119`  
-**Status:** Cloudflare Pages production is live at https://smartpickhub.pages.dev; PR #8 is merged. Owner-authorised 25-guide publication and guarded IndexNow automation are in open PR #9, pending CI.  
+**Status:** Cloudflare Pages production is live at https://smartpickhub.pages.dev; PR #8 is merged. Owner-authorised 25-guide publication and guarded IndexNow automation are in open PR #9; CI #810 passed on tested head `df6a5d2`. Merge is held pending canonical host confirmation.  
 **Updated:** 19 November 2026
 
 ## Project purpose
@@ -1542,3 +1542,13 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - No Pinterest RSS connection or Pin publication is included in this release. Do not infer permission to connect the feeds from indexing approval.
 - Google Search Console property `https://smartpickhub.pages.dev/` was previously owner-verified, but its sitemap fetch issue remains unresolved. The OpenSEO SmartPickHub project currently has no connected Search Console account, and browser automation could not start because the TinyFish wallet balance is negative. No Google sitemap submission is claimed.
 - Evidence scope remains proportionate and UK-first: 25/100 structural inventory and targeted high-risk corrections, not a claim that every specification or current Amazon listing has been independently re-fetched. Regional/compatibility caveats remain in product records; no hands-on testing, live prices, ratings, stock or direct ASIN claims are made.
+
+
+## 19 November 2026 — final indexing target checkpoint
+
+- PR #9 code/test result: CI #810 (run ID `44519855311`) passed on tested head `df6a5d20918c04be131ad3519dc7c2a0a0e0d353`. Distribution checks, smoke tests, accessibility, Lighthouse, and npm audit all completed successfully.
+- Report: 25 guides / 100 products; 100 US + 100 UK affiliate URL-construction checks; 29 HTML pages passed smoke tests; axe 28/28 routes, zero violations and 27 incomplete contrast checks; five Lighthouse samples with Performance/Accessibility/Best Practices 100 and preview SEO 66–69; npm audit 0 vulnerabilities. Product-image audit 0 approved, 0 pending, 100 without photos; text-card fallback is the owner-approved policy.
+- Read-only check found two live domains: InfinityFree WordPress `https://smartpickhub.infinityfree.me/` (robots permits crawling and references `/wp-sitemap.xml`) and Astro Pages.dev `https://smartpickhub.pages.dev/` (robots permits crawling, homepage index/follow, 28-URL sitemap). These are separate sites with different guide libraries.
+- PR #9 remains open/unmerged because the permanent project brief names InfinityFree, while the Astro release and IndexNow workflow target Pages.dev. Do not merge or notify IndexNow until the owner confirms the canonical indexing target.
+- InfinityFree `/sitemap_index.xml` is a 404; its robots file points to WordPress `/wp-sitemap.xml`. The latter XML could not be read by available fetchers, so do not claim its sitemap has been fetched/submitted.
+- Google Search Console submission remains outstanding. The OpenSEO project has no connected Search Console account; TinyFish browser automation could not start because wallet balance is `-$0.47`. No Google indexing request or IndexNow notification has been confirmed.
