@@ -1507,3 +1507,8 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - eero UK compliance confirms 27W adapter input 100–240V/50–60Hz. NETGEAR UK confirms three adapters are included with RBE773 3-pack but does not expose their input voltage in the captured spec; buyer verification remains explicit.
 - Dell UK model/order code 210-BCXK and 100–240V input confirmed; its current Dell page indicates unavailable, so catalogue does not imply stock. ASUS and BenQ regional pages confirm universal input and USB-C PD levels (96W and 65W respectively).
 - PR #8 remains open/unmerged; all 25 guides remain draft. No production, Pinterest or IndexNow action.
+
+
+## 19 November 2026 — Garmin X-series source integrity correction
+- Commit `39bfea83d6b1216c86473d169d7284f883a1a96f` fixes a material source mismatch: X110/X210/X310 previously shared the Mini 3-specific product URL. X110 now uses Garmin UK's X110 page; X210 and X310 use their model-specific Currys Business UK listings for exact UK retail identifiers, with Garmin's UK X-series comparison retained for model resolution tiers.
+- PR #8 remains open/unmerged; 25 guides remain draft. No production, Pinterest or IndexNow action.
