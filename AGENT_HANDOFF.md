@@ -1213,3 +1213,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - `.github/workflows/build-check.yml` now uses `cancel-in-progress: false` on the review branch. Commit `2125c3ab52f757b2888e2d15022a2e670fe7a925`.
 - Current review PR head will change as documentation is updated. Verify the latest run SHA exactly before treating quality gates as passed. Previous #766 success on `1b994672` is historical only.
 - Keep working on `automation/editorial-audit-25-guides-20261119`, PR #8 open/unmerged. Product statuses remain draft; no production changes, publication, or IndexNow/Pinterest submissions.
+
+
+## 19 November 2026 — latest run queue note
+- Current branch head before this handoff update was 19569f46fc83c9080b7885a59cb0a88f597fac1c. Workflow run #771 (ID 44510854956) for that SHA was pending with zero jobs at the last poll. This is scheduler queue/pending status; not a test failure and not a success.
+- CI concurrency is now cancel-in-progress=false (change committed at 2125c3ab52f757b2888e2d15022a2e670fe7a925). Avoid no-op commits or repeated manual dispatches while queue is pending. Recheck latest PR head/run and verify every required job before approval.
+- Catalogue correction: Samsung Bespoke Jet AI condition clarified and source audit extended; Apple A20 Pro official 2026 support source confirmed; four Brother UK product pages inspected; Garmin Mini 3 SKU confirmed but X210/X310 retail SKUs remain pending.
+- All 25 guides / 100 products remain draft; no guide approved/published. PR #8 open/unmerged; no production, WordPress or DNS changes. IndexNow changed/deleted URL/receipt log remains deferred.
