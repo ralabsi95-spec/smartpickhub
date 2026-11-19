@@ -41,13 +41,15 @@ export function GET(context) {
     </item>`;
   });
 
+  const feedUrl = new URL('/rss.xml', site).href;
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SmartPickHub — Approved Buying Guides</title>
     <link>${escapeXml(site.href)}</link>
     <description>Approved buying guides with original vertical cover artwork and region-aware product comparisons.</description>
     <language>en-gb</language>
+    <atom:link href="${escapeXml(feedUrl)}" rel="self" type="application/rss+xml" />
 ${items.join('\n')}
   </channel>
 </rss>`;
