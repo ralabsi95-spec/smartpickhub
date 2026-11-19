@@ -1228,3 +1228,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Evidence details and source URLs in EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md. Key holds: exact UK retail SKU for Garmin X210/X310; Brother MFC-L3740CDW duplex scan not established; country/carrier restrictions for Watch cellular/satellite; model-specific regional voltage and kit contents across product categories.
 - Continue exact manufacturer model/SKU checks for remaining products; no blanket approval. All 25 guides remain draft; PR #8 open/unmerged; production unchanged. Do not merge/publish or trigger Pinterest/IndexNow.
 - Verify latest CI against latest PR head after documentation updates; prior successes only apply to historical SHAs. CI concurrency is set to cancel-in-progress=false.
+
+
+## 19 November 2026 — latest handoff update
+- Owner preference: finish the broad review in consolidated batches; focus on material correctness and compatibility, not immaterial micro-detail. Do not confuse this with permission to publish or merge.
+- Latest product correction commit: `1c8bc4d2b1f95f10102979641757cc1fa1d2e509` (Garmin UK X110/X210/X310 retail SKU evidence added; Logitech PRO X2 SUPERSTRIKE official UK source and manufacturer support specs added).
+- Garmin UK retail SKUs corroborated by AO Business UK: X110 010-02900-10; X210 010-02859-10; X310 010-02860-10. Manufacturer UK comparison is still source for resolution tiers. Exact product bundle/microSD contents should not be assumed.
+- Logitech PRO X2 SUPERSTRIKE: official UK product page plus Logitech Support spec; 60g, HERO 2, up to 44,000 DPI, 8,000Hz, LIGHTSPEED 2, up to 90h constant-motion battery life. Regional product number varies.
+- PR #8 remains open/unmerged; latest product data commit is newer than the SHA being tested by CI #773. Verify CI against final PR head before any approval.
+- All 25 guides remain `draft`; no site publication, production configuration, Pinterest post or IndexNow submission. Deferred IndexNow changed-URL detection/deletion notifications/durable send-receipt log remains a future task.
