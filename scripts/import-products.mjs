@@ -14,15 +14,31 @@ function normalize(value) {
 
 function parseCsv(input) {
   const rows = [];
-  let row = [], field = '', quoted = false;
+  let row = [], field = '', quoted = false, afterQuote = false;
   for (let i = 0; i < input.length; i++) {
     const ch = input[i];
     if (quoted) {
       if (ch === '"' && input[i + 1] === '"') { field += '"'; i++; }
-      else if (ch === '"') quoted = false;
+      else if (ch === '"') { quoted = false; afterQuote = true; }
       else field += ch;
-    } else if (ch === '"' && field.length === 0) quoted = true;
-    else if (ch === ',') { row.push(field); field = ''; }
+      continue;
+    }
+    if (afterQuote) {
+      if (ch === ',') { row.push(field); field = ''; afterQuote = false; }
+      else if (ch === '\n' || ch === '\r') {
+        if (ch === '\r' && input[i + 1] === '\n') i++;
+        row.push(field); field = ''; afterQuote = false;
+        if (row.some(v => v.trim() !== '')) rows.push(row);
+        row = [];
+      } else {
+        throw new Error('CSV contains unexpected characters after a closing quoted field.');
+      }
+      continue;
+    }
+    if (ch === '"') {
+      if (field.length !== 0) throw new Error('CSV quote must begin at the start of a field.');
+      quoted = true;
+    } else if (ch === ',') { row.push(field); field = ''; }
     else if (ch === '\n' || ch === '\r') {
       if (ch === '\r' && input[i + 1] === '\n') i++;
       row.push(field); field = '';
@@ -37,12 +53,14 @@ function parseCsv(input) {
   const headers = rows.shift().map(v => v.trim().replace(/^\uFEFF/, '').toLowerCase());
   if (new Set(headers).size !== headers.length) throw new Error('CSV contains duplicate column headers.');
   return rows.map((values, index) => {
+    if (values.length > headers.length) {
+      throw new Error('CSV row ' + (index + 2) + ' contains more values than the header defines.');
+    }
     const record = { _row: index + 2 };
     headers.forEach((header, i) => { record[header] = values[i] ?? ''; });
     return record;
   });
 }
-
 function parseInput(filePath) {
   const stat = fs.statSync(filePath);
   if (!stat.isFile()) throw new Error('Input path must be a regular file.');
@@ -100,11 +118,22 @@ function csvEscape(value) {
 
 function selfTest() {
   const assert = (condition, message) => { if (!condition) throw new Error('Self-test failed: ' + message); };
+  const assertThrows = (operation, expectedMessage) => {
+    try { operation(); } catch (error) {
+      assert(error.message.includes(expectedMessage), 'expected parser error: ' + expectedMessage);
+      return;
+    }
+    throw new Error('Self-test failed: expected parser to reject ' + expectedMessage);
+  };
   const rows = parseCsv('brand,model,market,source_url,submitted_notes\n"Acme, Inc.","Model ""X""",uk,https://example.com/product,"line one, line two"\n');
   assert(rows.length === 1, 'CSV row count');
   assert(rows[0].brand === 'Acme, Inc.', 'CSV comma quoting');
   assert(rows[0].model === 'Model "X"', 'CSV escaped quote');
   assert(rows[0].submitted_notes === 'line one, line two', 'CSV note parsing');
+  assertThrows(() => parseCsv('brand,model\nNo"va,Beam 4'), 'quote must begin');
+  assertThrows(() => parseCsv('brand,model\n"Nova"x,Beam 4'), 'after a closing quoted field');
+  assertThrows(() => parseCsv('brand,model\nNova,Beam 4,extra'), 'more values than the header');
+  assertThrows(() => parseCsv('brand,model\n"Nova,Beam 4'), 'unclosed quoted field');
   const good = checkRow(rows[0], 2);
   assert(good.status === 'candidate' && good.market === 'uk', 'valid row accepted');
   assert(good.product_id_candidate.startsWith('sp_'), 'stable candidate ID');
