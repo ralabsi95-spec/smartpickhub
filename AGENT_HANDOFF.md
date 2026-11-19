@@ -1008,3 +1008,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Manufacturer source attribution and marketplace-search caveat are visible and helpful; they distinguish manufacturer documentation from retailer availability and prevent search URLs being mistaken for direct product listings.
 - No code, product records, image approvals, affiliate IDs, editorial status, DNS, indexing or sitemap settings were changed. No purchases or live Amazon link click-tests were performed.
 - Next action: complete a mobile-width visual check of one guide and inspect the bottom of the remaining product card for manufacturer source/disclosure consistency; then test a generated Amazon UK search URL without purchasing and verify the tracking tag.
+
+
+## 19 November 2026 — first mobile responsive visual check (390 × 816)
+
+- Owner provided a Chrome responsive-mode screenshot at viewport 390px wide × 816px high, focused on the first Home Office Ergonomics product card.
+- Visual result: card fits the viewport width; no horizontal overflow is visible in the captured region; product title wraps naturally over two lines; image-rights placeholder remains readable; descriptive copy and verdict wrap cleanly; US and UK affiliate buttons stack vertically and span the available card width, providing large touch targets.
+- No obvious clipping or overlapping is visible in the captured product-card region. This is a visual spot-check only, not a full mobile QA pass: mobile navigation, guide comparison table, full page, footer, and other viewport widths remain to be checked.
+- No CSS or application changes were made. Do not change button sizing based on this screenshot alone; current stacked full-width buttons appear usable.
+- Next action: at the same 390px viewport, inspect the top navigation and guide comparison table (especially horizontal overflow), then optionally check a narrow 320–360px viewport.
