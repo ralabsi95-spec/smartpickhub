@@ -1073,3 +1073,23 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 ## 19 November 2026 — Epson EF-21G correction
 - Guide #20 updated to the UK-listed Epson EF-21G (SKU V11HB35340), with UK source, identifier, specs and clear distinction from discontinued EF-21W. Source URL is recorded in the catalogue and audit ledger. Commit: `c64145e14d07686b1c54b34c645c3e097ac9d909`.
 - CI has not yet completed successfully for the current content head; #681/#683 were cancelled. Keep validation open.
+
+
+## 19 November 2026 — Full CI #703 verified and artifact reviewed (21:20 UTC)
+
+- GitHub Actions run #703 / ID `44398753742` completed with conclusion **success** on PR head `de3e612c896d924ffe7bce81d83768a64c234880`. Job `build-and-audit` completed all 19 substantive steps, including type/content checks, importer unit and isolated integration tests, catalogue/affiliate validation, keyword generation, static build, smoke tests, axe, Lighthouse, consolidated report and artifact upload.
+- Artifact `smartpickhub-quality-reports`, ID `14472018692`, was downloaded and inspected. Catalogue: 25 guides / 100 products; 100 US and 100 UK URL-construction checks; zero validation errors. Smoke test: 29 generated HTML pages, all passed with zero route errors. This verifies URL construction, not live retailer listing availability.
+- Dependency report: npm audit returned 0 vulnerabilities across 362 dependency entries at this run. This is point-in-time evidence only; retain the existing picomatch advisory review/expiry checkpoint until separately re-evaluated. Do not infer a patched package solely from a clean audit feed.
+- Accessibility: 28/28 routes audited, zero axe violations, 27 incomplete contrast checks. The incomplete items are manual-review cases, mainly gradient-background contrast and non-text-only glyphs; they are not counted as violations but are not considered manually cleared.
+- Lighthouse sample: homepage desktop/mobile, guide index, affiliate disclosure and first guide template. All five scored 100 Performance, 100 Accessibility and 100 Best Practices. SEO scores were 66–69 because the preview intentionally blocks crawling/noindex. Do not remove preview protections to raise SEO scores.
+- Product image readiness: 0 approved images, 0 complete candidates awaiting human review, 100 products without images. No image has been authorised for display.
+- Preview safety report confirms `robotsTxtDisallowAll=true`, `noindexVerified=true`, `publicPublicationEnabled=false`.
+- The consolidated report's `commit` value `700db2eed1271f6fe15b7710233c48b67e32bc7a` is the GitHub Actions `GITHUB_SHA` for the synthetic pull-request merge ref. It is expected to differ from the PR source head `de3e612...`; the workflow run metadata and artifact metadata both bind this run to the source head `de3e612...`. This is not a source-head mismatch.
+- PR #1 remains open and Draft. No guide approvals, product-image approvals, merge, production deployment, indexing, Pinterest publishing, DNS or production setting changes occurred.
+
+### Next actions
+1. Continue the practical UK-first editorial pass, prioritising current-buy relevance, useful buyer-fit verdicts and material safety/compatibility facts.
+2. Complete rendered-state manual contrast checks for the 27 axe incomplete findings before claiming full accessibility sign-off.
+3. Keep all guides as drafts and images unapproved until human review.
+4. Revisit the picomatch advisory exception by its existing 2 December 2026 review date; do not silently extend or close it from npm audit output alone.
+5. Update the handoff and audit ledger whenever a new bounded batch is completed; run one full CI after the next coherent data batch.
