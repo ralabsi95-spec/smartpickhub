@@ -1179,3 +1179,9 @@ This batch checked selected manufacturer pages for Wi-Fi 7 routers/mesh, GaN cha
 - X110 now links to Garmin's UK X110 page, which confirms UK part number 010-02900-10 and the X-series resolution comparison. X210 and X310 now link to model-specific Currys Business UK listings confirming retail part numbers 010-02859-10 and 010-02860-10; Garmin's UK series comparison remains cited for resolution tier. This avoids substituting regulatory model IDs or Canadian SKUs.
 - Sources: https://www.garmin.com/en-GB/p/1222949/ ; https://business.currys.co.uk/catalogue/cameras-smart-tech/camcorders/dash-cams/garmin-x210-quad-hd-dash-cam-black/N731313W ; https://business.currys.co.uk/catalogue/cameras-smart-tech/camcorders/dash-cams/garmin-x310-4k-ultra-hd-dash-cam-black/N676331W.
 - All guides remain draft; no production or marketing publication.
+
+
+## 19 November 2026 — iPad mini UK market evidence
+- Commit `9af76b4c5d1f17552745f8a334d618ef623c91cb` adds UK availability/configuration context for iPad mini (A20 Pro). Apple's UK store lists 2026 A20 Pro Wi-Fi and Wi-Fi + Cellular configurations in 128GB/256GB/512GB. The technical-spec link remains the US regional Apple support page; UK cellular model/bands and in-box power adapter contents must be checked against the selected UK configuration rather than inferred from US documentation.
+- UK listing: https://www.apple.com/uk/shop/buy-ipad/ipad-mini/.
+- All guides remain draft.
