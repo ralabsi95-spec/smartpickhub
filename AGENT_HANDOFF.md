@@ -26,22 +26,22 @@
 ## 2. Current verified project state
 
 ### Architecture and environments
-- Astro static-site implementation lives on `automation/bootstrap`.
+- Astro static-site production is served from `main` at https://smartpickhub.pages.dev/; active release work is on `release/approve-guides-indexing-20261119`. Historical implementation branch: `automation/bootstrap`.
 - GitHub repository is private: `ralabsi95-spec/smartpickhub`.
-- PR #1 is open, Draft and unmerged. Base is `main`; do not merge without approval.
-- Approved MVP production target: Cloudflare Pages at https://smartpickhub.pages.dev/; production project remains disconnected and untouched.
-- InfinityFree and smartpickhub.infinityfree.me are permanently excluded.
+- PR #8 is merged. PR #9 (owner-approved 25-guide release) is open against `main`; merge only after its exact-head quality CI succeeds.
+- Production Cloudflare Pages is live at https://smartpickhub.pages.dev/; latest verified main deployment before PR #9 is `4a6b67a5c60f93bfeb58b5f792c08825a0ad1706`.
+- Preserve the legacy InfinityFree/WordPress property separately; it is not the Astro production target for this release. Do not migrate or edit it.
 - Legacy WordPress is outside this Astro deployment plan and remains unchanged.
 - Astro preview is a separate Cloudflare Pages project `smartpickhub-preview` at https://smartpickhub-preview.pages.dev/ and must remain non-indexable.
 
 ### Catalogue and editorial status
 - Source of truth: `src/data/products.json`.
-- Current catalogue: **25 research-draft guides and 100 product records**; zero guides are approved for publication.
+- Current catalogue: **25 guides / 100 products**. Release branch marks all 25 `Approved for publication` / `published` under the owner's explicit instruction; main remains at the prior release until PR #9 merges.
 - Every product has separate US and UK model-name search phrases. These are not verified ASINs or guaranteed direct product links.
 - Do not imply hands-on testing. Feature summaries are research-led and manufacturer-source-based; suitability statements are editorial analysis.
 - No fixed prices, review counts, star ratings or availability claims are included.
-- Confirm exact local SKU, electrical rating, plug, language/layout, dimensions, accessories and current marketplace listing before approving any regional product.
-- RSS only includes guides explicitly marked `Approved for publication`; an empty RSS feed is expected while all guides remain drafts.
+- Keep material UK electrical, safety, model-identity and compatibility caveats explicit. Owner waived exhaustive US/UK phrase parity and immaterial micro-detail; do not remove material caveats or invent exact retail availability.
+- RSS includes approved/published guides after PR #9. Do not connect Pinterest RSS or publish Pins; the owner authorised guide indexing, not social publication.
 - Existing WordPress products have not been imported.
 
 ### Keywords
