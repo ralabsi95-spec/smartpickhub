@@ -213,8 +213,8 @@ for (const file of htmlFiles) {
       if (productSection && product.image?.reviewStatus === 'approved' && product.image?.url) {
         if (!productSection.includes(product.image.url)) routeErrors.push('verified product image is not rendered for ' + product.name);
         if (!productSection.includes(product.image.alt || product.name)) routeErrors.push('verified product image alt text is missing for ' + product.name);
-      } else if (!productSection.includes('Product photo under verification')) {
-        routeErrors.push('product image fallback notice is missing for ' + product.name);
+      } else if (productSection.includes('Product photo under verification')) {
+        routeErrors.push('unverified product-image placeholder should not displace the existing product information card for ' + product.name);
       }
     }
   }
