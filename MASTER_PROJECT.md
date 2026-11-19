@@ -1,9 +1,9 @@
 # SmartPickHub – Master Project
 
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
-**Implementation branch:** `automation/bootstrap`  
-**Status:** Astro implementation on development branch only; production target https://smartpickhub.pages.dev is disconnected and not deployed. Preview remains noindex and crawl-disallowed pending explicit launch approval.  
-**Updated:** 18 November 2026
+**Implementation branch:** `main` (production) with release work on `release/approve-guides-indexing-20261119`  
+**Status:** Cloudflare Pages production is live at https://smartpickhub.pages.dev; PR #8 is merged. Owner-authorised 25-guide publication and guarded IndexNow automation are in open PR #9, pending CI.  
+**Updated:** 19 November 2026
 
 ## Project purpose
 Build a trustworthy UK-first English-language affiliate buying-guide property, with a secondary US marketplace track. Prioritise useful original guidance, verified product information, organic discovery and measurable conversions.
