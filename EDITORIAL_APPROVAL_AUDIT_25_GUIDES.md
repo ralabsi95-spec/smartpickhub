@@ -879,3 +879,41 @@ The following manufacturer-page checks were performed after the initial structur
 Primary source URLs: https://us.eufy.com/products/t81701w1 ; https://ring.com/products/battery-doorbell-plus-2nd-gen ; https://store.google.com/product/nest_cam_battery_specs?hl=en-US ; https://www.tp-link.com/uk/support/download/deco-be63/ ; https://www.asus.com/networking-iot-servers/wifi-7/all-series/rt-be96u/techspec/ ; https://www.arlo.com/en_gb/support/faq/device-features/what-is-the-difference-between-the-three-arlo-essential-wire-free-cameras
 
 All guide publication statuses remain draft; no product records or editorial approval statuses were changed by these checks.
+
+
+## Supplemental live source checks — batch 2 (guides 4–8), 19 November 2026
+
+This batch checked selected manufacturer pages for Wi-Fi 7 routers/mesh, GaN chargers, webcams, 4K USB-C monitors and docking stations. Findings below are limited to what the live source pages exposed; a guide is not approved merely because some claims match.
+
+### Guide 4 — Wi-Fi 7 routers and mesh
+- TP-Link UK Deco BE63 support page currently exposes hardware revisions V3.60, V2.60 and V2 and warns that availability varies by region. The US V2.60 page exposes a different revision list (including V1.60) and says firmware must come from the purchase-region site. This confirms the guide's regional hardware-version warning; do not state that all BE63 UK kits have the same radio/port specification as the US datasheet.
+- Existing guide's ASUS RT-BE96U caution is correct in principle: port roles must be stated exactly (WAN/LAN-capable vs LAN-only), not represented as two interchangeable WAN ports. Recheck against the exact regional tech-spec table before final approval.
+- eero Pro 7 and NETGEAR Orbi 770 RBE773 remain provisional: this batch has not yet independently revalidated all pack contents, coverage, radio, Ethernet and subscription claims from the live UK manufacturer pages. Retain a hold pending full source capture.
+
+### Guide 5 — USB-C GaN chargers
+- UGREEN UK confirms SKU 40749, three USB-C plus one USB-A, 100–240V 50/60Hz input and 100W total output. The listing's high-level marketing language (“all at full speed”) should not be repeated as a literal simultaneous 100W-per-port claim; total output remains 100W shared across the device.
+- The current UGREEN UK product listing identifies the code as DL40749 and SKU 40749. Preserve both only if useful; avoid treating an Amazon search phrase as proof of a particular plug or exact port allocation.
+- Anker A2688, Belkin WCH015 and UGREEN SKU 35539 port-by-port allocation claims have not yet been re-fetched and captured in this batch. Keep this guide provisional until the power-sharing tables, plug variants and package details are verified from the correct regional sources.
+
+### Guide 6 — webcams
+- Insta360 Link 2 official specifications confirm 1/2-inch sensor, 4K up to 30fps, 1080p up to 60fps, two-axis gimbal, AI tracking, Smart Whiteboard and DeskView. Important software caveat: its virtual camera does not support 50/60fps; the 60fps mode has to be selected in Link Controller with the relevant high-frame-rate setting enabled.
+- Elgato Facecam Neo official page confirms 1080p60, autofocus, 77° field of view, fixed USB-C cable and UVC 1.5. Its listed system requirements differ between current product page and older support article; use the current regional product page for the live guide and do not copy outdated OS minimums.
+- Logitech Brio and Razer Kiyo Pro Ultra have not been fully revalidated in this batch. Hold guide approval until exact regional model and supported capture modes are confirmed for all four products.
+
+### Guide 7 — 4K USB-C monitors
+- Dell UK confirms U2723QE: 27-inch 4K 60Hz IPS Black, USB-C upstream with up to 90W Power Delivery, integrated hub and ergonomic stand. Dell's UK page currently marks the model unavailable/low-stock in its own store at crawl time; this is transient retailer availability, not a durable product-spec claim, and must not be inserted as evergreen copy.
+- ASUS UK confirms PA279CRV: 27-inch 4K IPS, 99% DCI-P3, 99% Adobe RGB, 100% sRGB, factory Delta E <2, 60Hz maximum and USB-C PD 96W.
+- BenQ UK confirms PD2705U: 27-inch 4K IPS, 60Hz, 99% sRGB and 99% Rec.709. The current result excerpt did not establish the claimed 65W USB-C PD figure; verify that exact number on the full specification page before using it.
+- Dell P2723QE remains a distinct model from U2723QE. Its exact regional USB-C power-delivery wattage and port layout still need direct verification. Keep guide provisional until both unresolved claims are checked.
+
+### Guide 8 — Thunderbolt / USB-C docks
+- CalDigit TS4 official support confirms 3× Thunderbolt 4, 3× USB-C 10Gb/s, 5× USB-A 10Gb/s, DisplayPort 1.4, UHS-II SD/microSD, 2.5Gb Ethernet and up to 98W host power delivery. It explicitly lists minimum supported host categories; the guide should not imply every generic USB-C host receives full Thunderbolt/display capability.
+- Plugable TBT4-UDZ official product/support material confirms 16-port design, up to 98W certified host charging, 2.5Gb Ethernet and four 4K60 displays only on supported Windows Thunderbolt 4/USB4 systems with DP 1.4 HBR3 DSC. Mac display limits vary by chip; base M1/M2 may support only one external display. The guide must avoid a blanket “four displays” promise.
+- Anker Prime TB5 dock model A83B5: current UK-facing listing confirms up to 140W upstream and front dual USB-C ports sharing 45W. The HDMI 2.1 and DisplayPort 2.1 options are not to be described as simultaneous unless the exact manual confirms it.
+- Kensington SD5780T exact regional compatibility and dual-display limits have not been fully captured in this batch; retain guide hold until checked.
+
+### Batch 2 disposition
+- Sources rechecked: selected manufacturer claims for 5 of the 25 guides, not all products in those guides.
+- Provisional/hold: guides 4, 5, 6, 7 and 8 remain **not approved** pending the unresolved product-level checks noted above.
+- No catalogue product record, editorialStatus, publicationStatus, page, feed, or production setting was changed. All guides remain drafts.
+- Key source pages checked: https://www.tp-link.com/uk/support/download/deco-be63/ ; https://www.tp-link.com/us/support/download/deco-be63/v2.60/ ; https://uk.ugreen.com/products/ugreen-nexode-100w-usb-c-gan-charger-4-ports-wall-charger ; https://www.insta360.com/specs/link2 ; https://www.elgato.com/ww/en/p/facecam-neo ; https://www.dell.com/en-gb/shop/dell-ultrasharp-27-4k-usb-c-hub-monitor-u2723qe/apd/210-bcxk/ ; https://www.asus.com/uk/displays-desktops/monitors/proart/proart-display-pa279crv/techspec/ ; https://www.benq.eu/en-uk/monitor/creative-pro/pd2705u/spec.html ; https://www.caldigit.com/ts4-support/ ; https://plugable.com/products/tbt4-udz ; https://app.anker.com/uk/products/bundle-a83b52a1-1-a84n0011-1
