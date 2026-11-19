@@ -38,7 +38,7 @@ jobs:
         env:
           PUBLIC_SITE_URL: https://smartpickhub.pages.dev
 
-      - name: Wait for Cloudflare to serve the exact production commit
+      - name: Wait for Cloudflare to serve the tested commit or a documentation-only descendant
         env:
           EXPECTED_DEPLOYMENT_SHA: ${{ github.event.workflow_run.head_sha }}
         run: |
@@ -57,10 +57,18 @@ jobs:
                 && git merge-base --is-ancestor "$EXPECTED_DEPLOYMENT_SHA" "$deployed_sha" \
                 && git merge-base --is-ancestor "$deployed_sha" origin/main; then
                 changed_files=$(git diff --name-only "$EXPECTED_DEPLOYMENT_SHA" "$deployed_sha")
-                if [ -z "$changed_files" ] || ! printf '%s\\n' "$changed_files" | grep -qvE '\\.md
-          echo "Cloudflare did not serve the expected production commit within 10 minutes."
+                if [ -z "$changed_files" ] || ! printf '%s\n' "$changed_files" | grep -qvE '\.md$'; then
+                  echo "Confirmed documentation-only descendant $deployed_sha of tested release $EXPECTED_DEPLOYMENT_SHA"
+                  exit 0
+                fi
+                echo "Production descendant contains non-documentation changes; waiting for its own successful CI."
+              fi
+            fi
+            echo "Waiting for exact tested commit or documentation-only descendant ($attempt/60)..."
+            sleep 10
+          done
+          echo "Cloudflare did not serve the tested commit or a safe documentation-only descendant within 10 minutes."
           exit 1
-
       - name: Notify IndexNow after live robots, sitemap and key checks
         run: npm run indexnow
         env:
