@@ -842,3 +842,21 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 3. Preserve draft/noindex/robots safeguards and all release gates.
 4. Reassess the picomatch exception by 2 December 2026.
 5. After the next coherent content batch, run a single complete CI and update this handoff with exact head and artifact evidence.
+
+
+## 19 November 2026 — CI #709 verified and robot-vacuum correction opened for review
+
+- GitHub Actions CI #709 / run ID `44460841827` completed successfully on source branch head `56ffa6c79849c278101cff2330fd039c281506f1`. Its sole `build-and-audit` job completed all 19 substantive steps, including type/content checks, product-intake unit and isolated integration tests, catalogue/affiliate validation, keywords, static build, smoke tests, axe, Lighthouse, consolidated report and artifact upload.
+- Reviewed artifact `smartpickhub-quality-reports`, ID `14499468672`. It reports 25 guides / 100 products; 100 US and 100 UK URL-construction checks; 29 generated HTML routes with zero smoke errors; npm audit 0 reported vulnerabilities across 362 dependency entries; axe 28/28 routes, zero violations and 27 incomplete items; five Lighthouse samples scored 100 Performance, Accessibility and Best Practices; SEO 66–69 remains expected under preview noindex/crawl protection. Product photos: zero approved/zero pending/100 without images. Preview report confirms robots disallow all, noindex and public publication disabled.
+- Report provenance detail: workflow metadata and artifact metadata identify source head `56ffa6c79849c278101cff2330fd039c281506f1`; `latest-audit.json` itself records `c817718f702c109126ab041540fc97f88ba2da6c`. Do not silently reinterpret this difference: report-generator SHA provenance needs a separate explanation. The successful run is bound by GitHub workflow and artifact metadata to source head `56ffa6c`.
+- Reviewed the robot vacuum guide (4 Roborock records) against official UK manufacturer sources. Corrected only model/region distinctions: Saros 10R is not relabelled as UK Saros 10; US Qrevo CurvX is not asserted equivalent to UK Qrevo Curv 2 Pro; Qrevo Edge 2 retains its exact UK listing; Qrevo 2 Pro preserves UK 25,000Pa vs US 20,000Pa manufacturer claims. No fifth product added; no price, rating, stock or ASIN introduced.
+- Catalogue correction commit: `870b18ae31b508b88d57680ed44867270239f942` on isolated branch `research/robot-vacuum-uk-correction`. Pre-PR integrity check retained 25 guides / 100 products, exactly 4 robot-vacuum records, unique slugs, HTTPS sources and zero product images. All editorial approval statuses remain draft.
+- Opened Draft PR #4 against `automation/bootstrap`: https://github.com/ralabsi95-spec/smartpickhub/pull/4 . One file changed (`src/data/products.json`), 40 additions / 28 deletions. PR head is `870b18ae31b508b88d57680ed44867270239f942`. No CI run was returned for this PR head at the time of the update; full validation is pending.
+- PR #1 remains unchanged, Draft/open/unmerged. No merge, deployment, publication, indexing, WordPress, DNS or production configuration changes were made.
+
+### Next actions
+1. Inspect and complete the CI run for PR #4 head `870b18ae31b508b88d57680ed44867270239f942`; inspect its quality artifact and report SHA provenance.
+2. Check Cloudflare Pages preview comment/deployment for PR #4 exact head; inspect the robot-vacuum route and confirm noindex/robots safeguards. A successful CI does not itself prove preview deployment.
+3. Keep PR #4 Draft/unmerged and all guides unapproved pending review; do not merge or publish.
+4. Continue next bounded UK-first guide correction only after the current PR's CI/preview evidence is stable; do not overlap commits or repeat the 25/100 catalogue import.
+5. Keep 27 axe incomplete contrast findings open for manual rendered-state review and retain the existing security-exception review checkpoint.
