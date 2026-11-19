@@ -5,7 +5,7 @@ UK-first, research-led affiliate buying guides, with a secondary US marketplace 
 ## Read this first
 - **[Agent handoff and continuation rules](AGENT_HANDOFF.md)** – mandatory first read for every new ChatGPT conversation, coding agent or contributor.
 - **[Master project log](MASTER_PROJECT.md)** – chronological project history, decisions and implementation notes.
-- **[Release-readiness audit (18 Nov 2026)](docs/RELEASE_READINESS_AUDIT_2026-11-18.md)** – verified quality results, launch blockers and next actions.
+- **[25-guide editorial approval audit](EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md)** – current guide status, evidence scope and publication/indexing gates.
 - **[Product ingestion playbook](PRODUCT_INGESTION_PLAYBOOK.md)** – safe product research and intake procedure.
 
 ## Current status (19 November 2026)
