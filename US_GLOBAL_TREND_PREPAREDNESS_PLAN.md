@@ -221,3 +221,40 @@ This plan does not:
 - alter Cloudflare, DNS, robots, IndexNow or analytics settings.
 
 **Decision principle:** SmartPickHub earns trust by translating verified buyer needs into useful product comparisons, not by chasing every trending phrase.
+
+
+## 9. Initial manufacturer-source scan — 19 November 2026
+
+**Status: evidence triage only. These are research references, not approved SmartPickHub product records, buying recommendations, retailer links, or evidence of stock/price. Do not add them to the catalogue until exact regional SKU, current retailer availability, buyer intent and affiliate destination are independently verified.**
+
+### US emergency radio — Midland ER310PRO
+
+- Official product page: https://midlandusa.com/products/er310pro-portable-emergency-crank-radio-with-power-bank
+- Official owner manual / technical details: https://support.midlandusa.com/hc/en-us/articles/36232350240151-Midland-ER310PRO-NOAA-Weather-Radio-Owner-s-Manual
+- Manufacturer documentation identifies model ER310PRO, NOAA weather alerts (seven channels), AM/FM, a 10,000mAh rechargeable battery, USB-C charging, solar maintenance charging and hand-crank backup, USB device output, flashlight/SOS and Bluetooth. Midland states that solar and crank are maintenance/backup charging methods; do not market them as fast or primary charging.
+- **Market boundary:** NOAA Weather Radio is a US-specific alert system. Treat ER310PRO as a US-market candidate only; do not recommend it as a UK emergency alert radio or imply NOAA alerts work in the UK. Verify US retail availability and exact model before any catalogue consideration.
+
+### UK/EU portable power — EcoFlow RIVER 3 family
+
+- UK product page: https://uk.ecoflow.com/products/river-3-portable-power-station
+- UK series page: https://www.ecoflow.com/uk/river-3-series-portable-power-station
+- Manufacturer manual with regional variants: https://manuals.ecoflow.com/redirect?to=%2Fus%2Fproduct%2Friver-3
+- EcoFlow's UK product page currently describes RIVER 3 as 245Wh, 300W AC output, LiFePO4, 3,000 cycles to 80% capacity, 100W USB-C and 110W solar input. The manufacturer manual distinguishes the general RIVER 3 / 10ms UPS model (EFR705, 245Wh) from RIVER 3 (230) (EF-RV-H01-1, 230Wh), and specifies 230V/50Hz AC output for UK/EU variants. Do not merge those capacities or model numbers into one undifferentiated listing.
+- **Required verification before selection:** exact SKU/model printed on the UK retailer listing, 230V/50Hz output, socket type, UPS variant and included accessories. Do not use US 120V/60Hz specs for UK copy. The manufacturer page's listed price/availability can change and is not a durable fact.
+
+### Anker SOLIX C300 family — regional/variant caution
+
+- UK product page for C300 DC: https://www.ankersolix.com/uk/products/c300-dc
+- UK portable power station collection: https://www.ankersolix.com/uk/collections/portable-power-stations
+- Manufacturer page identifies C300 DC as a 288Wh / 300W LiFePO4 model, 2.8kg, with DC-oriented outputs and solar input. Anker's support documentation for a separate C300 model shows 120V/60Hz AC output. The C300 DC, C300, and C300X names must not be treated as interchangeable.
+- **Decision:** retain as an unresolved research lead only. Do not claim a UK AC socket/inverter capability or map the US C300 support specifications onto the UK C300 DC listing. Require a model-specific UK manual/specification and exact retailer SKU first.
+
+### UK emergency-radio gap
+
+- This scan did not yet verify a current UK-market manufacturer model with the required broadcast bands and alert capability. Do not substitute a US NOAA radio. Continue searching manufacturer documentation for UK FM/DAB/DAB+ reception, power options, charging method, battery replaceability and alert capability; if no suitable product is verified, keep the existing category card without a named product.
+
+### Evidence and workflow implications
+
+- This scan did not change the 25-guide / 100-product catalogue, create ASINs, generate affiliate links, change public pages, or approve any product for publication.
+- Product research must record region, exact model/SKU, power standard, alert/broadcast standard, source URL, source-check date, limitations and retailer destination as separate fields. A model-family name alone is not enough.
+- Treat all stated product capabilities as manufacturer claims, not hands-on test results. Recheck official documentation and retailer variant immediately before any future recommendation or publication.
