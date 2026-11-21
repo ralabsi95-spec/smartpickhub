@@ -1,3 +1,31 @@
+**Last verified:** 21 November 2026 16:22 UTC. Production/main merge SHA: `26636d4359508b9af30eec498a22ffc005a81a72`. Cloudflare Pages production and preview checks passed on this exact SHA; the separate Workers build check was still in progress at the last poll.  
+**Repository:** https://github.com/ralabsi95-spec/smartpickhub  
+**Production branch:** `main`  
+**Active research branch:** `strategy/1000-product-evidence-roadmap-20261121` (non-production; contains `PRODUCT_EXPANSION_1000_ROADMAP.md`)  
+**Production:** https://smartpickhub.pages.dev/  
+**Preview:** https://smartpickhub-preview.pages.dev/
+
+## Current authoritative checkpoint — 21 November 2026 16:22 UTC
+
+- PR #33 (`Document radio and backup-power product evidence`) merged by squash as `26636d4359508b9af30eec498a22ffc005a81a72`.
+- Exact PR head `4a079ee9d67e082d73f0de6adcf51b825a655337`: build-and-audit run `44608864797` passed all 22 steps; Cloudflare Pages production and preview both passed. The separate `Workers Builds: smartpickhub` check failed on the PR head; this is not a Pages deployment check. Do not conflate it with the successful Pages deployments.
+- Exact merge SHA `26636d4359508b9af30eec498a22ffc005a81a72`: Cloudflare Pages production and preview passed. Main push build-and-audit run `44924010513` failed before any job steps were reported (GitHub returned no step summaries and job logs were unavailable); cause is unknown and must not be attributed to application code without evidence. The separate Workers build check was still in progress at the last poll. Do not rerun the full suite merely to obtain a green duplicate; preserve this as an unresolved pre-step CI result for the planned 1 December consolidated validation.
+- PR #33 changed research documentation only. No catalogue entries, ASINs, prices, ratings, images, affiliate links, public guide copy or production configuration were changed.
+- Research confirmed current catalogue baseline: 25 guides / 100 unique product records, 12 keyword seed clusters, all 100 products have manufacturer source URLs and source notes, all 100 have UK/US model-name search identifiers (Amazon search URLs, not verified direct ASIN listings). No product images are approved in the catalogue. All 25 guides have SEO titles and buying checklists, but only 4 have separate SEO descriptions; none has an `updatedAt` field. Do not bulk-fill descriptions or alter dates without reviewing each page.
+- New research branch `strategy/1000-product-evidence-roadmap-20261121` contains `PRODUCT_EXPANSION_1000_ROADMAP.md`. It defines the 1,000 target as 1,000 distinct, evidence-qualified product records—not 1,000 pages or generated names—and sets hard evidence gates, deduplication, market-specific checks, buyer-intent/SERP scoring, AI/search measurement and a consolidated 1 December validation protocol. It is not merged or published.
+- Current scope remains UK-first and US as a separately researched market. Existing `AI_SEARCH_VISIBILITY_PLAN.md` and `US_GLOBAL_TREND_PREPAREDNESS_PLAN.md` remain source documents; avoid duplicating their content.
+- No paid SEO/AI visibility credits, subscriptions, TinyFish work or new analytics integrations were used. GSC, Bing Webmaster Tools and GA4 remain unconnected/unknown in the assistant workflow; no GA4 code without Measurement ID and consent/privacy decision.
+- No production catalogue or public-content changes were made by this roadmap branch. Do not merge or publish until the owner-authorised consolidated validation gate.
+
+## Immediate continuation
+1. Continue non-mutating category/SERP/product evidence research and build the evidence model in the research branch.
+2. Review the 21 missing guide SEO descriptions individually; do not auto-fill generic copy.
+3. Keep product candidates out of `src/data/products.json` until all hard gates and approval are met.
+4. Do not trigger full QA repeatedly for small documentation changes. Consolidate compatible implementation work for 1 December; run one final release-candidate CI suite, then verify the exact production deployment.
+5. Recheck the main Workers build outcome separately; it is not a substitute for Cloudflare Pages production status.
+
+---
+
 **Last verified:** 19 November 2026 20:24 UTC; latest checked main before this documentation refresh: `ddf8f636fb8493ba6a6d087d2c1864e9bbfd3e00`. Main-SHA build-and-audit, Cloudflare Pages production, Cloudflare Pages preview, and Workers checks all completed successfully on that SHA.  
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `main` (production)  
