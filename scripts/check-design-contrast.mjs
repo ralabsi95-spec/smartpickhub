@@ -15,9 +15,11 @@ function contrastRatio(a, b) {
   return (values[0] + 0.05) / (values[1] + 0.05);
 }
 function ruleFor(selector) {
-  const escaped = selector.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&');
-  const matches = [...css.matchAll(new RegExp(escaped + String.raw\`\\s*\\{([^}]*)\\}\`, 'g'))];
-  return matches.at(-1)?.[1] ?? '';
+  const start = css.lastIndexOf(selector + ' {');
+  if (start < 0) return '';
+  const bodyStart = css.indexOf('{', start) + 1;
+  const end = css.indexOf('}', bodyStart);
+  return end < 0 ? '' : css.slice(bodyStart, end);
 }
 function gradientStops(selector) {
   const rule = ruleFor(selector);
@@ -30,20 +32,21 @@ function check(selector, backgrounds, minimum, label) {
     errors.push(selector + ': expected a linear gradient with at least two explicit hex colour stops.');
     return;
   }
-  for (const foreground of stops) {
+  const ratios = stops.flatMap((foreground) => backgrounds.map((background) => contrastRatio(foreground, background)));
+  for (let index = 0; index < stops.length; index += 1) {
     for (const background of backgrounds) {
-      const ratio = contrastRatio(foreground, background);
-      if (ratio + 1e-9 < minimum) errors.push(selector + ': ' + foreground + ' against ' + background + ' is ' + ratio.toFixed(2) + ':1; minimum ' + minimum + ':1 (' + label + ').');
+      const ratio = contrastRatio(stops[index], background);
+      if (ratio + 1e-9 < minimum) errors.push(selector + ': ' + stops[index] + ' against ' + background + ' is ' + ratio.toFixed(2) + ':1; minimum ' + minimum + ':1 (' + label + ').');
     }
   }
-  console.log(selector + ': ' + stops.length + ' stops checked; minimum ratio ' + Math.min(...stops.flatMap((foreground) => backgrounds.map((background) => contrastRatio(foreground, background)))).toFixed(2) + ':1.');
+  console.log(selector + ': ' + stops.length + ' stops checked; minimum ratio ' + Math.min(...ratios).toFixed(2) + ':1.');
 }
 
 check('.button', ['#ffffff'], 4.5, 'normal button text');
 check('.button.secondary', ['#ffffff'], 4.5, 'normal secondary-button text');
 check('.brand::before', ['#ffffff'], 4.5, 'brand monogram');
 check('.panel-mark', ['#ffffff'], 4.5, 'panel monogram');
-check('.home-hero h1 span', lightBackgrounds, 4.5, 'large hero heading text over sampled light gradient backgrounds');
+check('.home-hero h1 span', lightBackgrounds, 4.5, 'hero heading text over sampled light gradient backgrounds');
 
 if (errors.length) {
   console.error('Gradient contrast check failed:');
