@@ -221,3 +221,41 @@ This plan does not:
 - alter Cloudflare, DNS, robots, IndexNow or analytics settings.
 
 **Decision principle:** SmartPickHub earns trust by translating verified buyer needs into useful product comparisons, not by chasing every trending phrase.
+
+
+## 9. Free-source product validation snapshot — 19 November 2026
+
+This is a research shortlist, not a catalogue approval. The models below have official manufacturer evidence for core features, but retail availability, exact regional SKU, warranty, price, Amazon ASIN and commercial eligibility have not been verified. Do not create product records or public guide copy from this snapshot alone.
+
+### UK — emergency radio
+
+| Candidate | Officially documented facts | Gaps / checks before any product decision |
+|---|---|---|
+| Roberts SolarDAB 99 | Roberts lists DAB/DAB+/FM, USB-C, solar and hand-crank charging, rechargeable battery, Bluetooth, USB power-bank function, LED light/SOS/siren, IP55 and up to 20 hours playback. | Confirm UK retail stock, exact model/SKU, battery capacity, independent reception/runtime evidence, warranty and a valid Amazon UK destination. Manufacturer page: https://www.robertsradio.com/en-gb/new-products/solardab-99 |
+| Sangean MMR-88 DAB+ (USB-C) | Sangean lists DAB+/FM-RDS, USB-C, solar and hand-crank charging, 40 presets, LED light/SOS, 377 g, 850 mAh battery, stated 8-hour playtime and USB-A output rated 5V/0.3A. | Small battery and low USB output mean it should be positioned as a radio/light first, not a meaningful phone power bank. Verify UK stock, exact SKU, warranty and retailer destination. Manufacturer page: https://www.sangean.eu/en/product/mmr-88-dab-yellow |
+| Sangean MMR-99 | Manufacturer/distributor evidence identifies a rugged AM/FM multi-powered model with hand crank, solar, USB-C, IP55 and 2,600 mAh battery; the AM/FM variant is not DAB+. | Keep separate from MMR-99 DAB variants. Verify exact regional SKU and current official model page before considering it. |
+
+**UK compatibility rule:** Do not treat NOAA Weather Radio / WX as a UK emergency-alert feature. For UK product screening, prioritise verified FM and DAB/DAB+ reception, ordinary replaceable battery support where available, documented runtime, clear charging method, and a realistic phone-output rating. Government Be Ready guidance names a battery/wind-up FM radio; the British Red Cross likewise recommends a battery/wind-up radio as part of a 72-hour household kit. Sources: https://beready.campaign.gov.uk/be-ready-for-emergencies/ and https://www.redcross.org.uk/get-help/prepare-for-emergencies/prepare-an-emergency-kit
+
+### US — emergency radio
+
+| Candidate | Officially documented facts | Gaps / checks before any product decision |
+|---|---|---|
+| Midland ER310PRO | Midland's official support/manual material identifies NOAA Weather Radio alerts, AM/FM, USB-C, solar and hand-crank charging, flashlight/SOS, and a 10,000 mAh rechargeable battery. | Confirm the precise ER310PRO SKU/manual revision, current US availability, alert behaviour, warranty and valid Amazon US destination. Do not use NOAA functionality as a UK selling point. Manufacturer support: https://support.midlandusa.com/hc/en-us/articles/36232350240151-Midland-ER310PRO-NOAA-Weather-Radio-Owner-s-Manual |
+
+FEMA's emergency-kit checklist explicitly recommends a battery-powered or hand-crank radio capable of receiving NOAA Weather Radio tone alerts, plus spare batteries, water, food, lighting, first aid and phone charging. This is US-specific guidance, not a universal product specification. Source: https://www.fema.gov/sites/default/files/documents/fema_hm-emergency-supply-kit-checklist_english.pdf
+
+### Portable power station — preliminary UK candidate
+
+| Candidate | Officially documented facts | Gaps / checks before any product decision |
+|---|---|---|
+| EcoFlow RIVER 2 | EcoFlow UK lists 256 Wh LFP capacity, 300 W AC output (600 W surge/X-Boost claim), 3.5 kg, AC/car/solar/USB-C charging, 230 V output and 3,000-cycle claim. | Search result snapshot showed the product as sold out on the UK store; do not publish a price or availability claim. Verify current stock, warranty, exact SKU, solar-panel bundle and whether 300 W output suits the target appliances. Manufacturer page: https://uk.ecoflow.com/products/river-2-portable-power-station |
+
+### Decision and intake gates
+
+1. These are candidate research references only. No product record, ASIN, affiliate link, price, rating, image or guide was created or changed.
+2. Before a candidate can enter the catalogue, verify the exact regional model and manufacturer specification, then a current retailer/Amazon destination and correct marketplace. A generic model family or a search result is not enough.
+3. For radio comparisons, record bands (FM/DAB+/AM/NOAA), power sources, replaceable-cell support, battery capacity, stated runtime, USB output voltage/current, IP rating, weight and warranty separately. Do not conflate battery mAh with usable energy or imply that a low-current radio USB port is a full phone charger.
+4. For power stations, compare Wh capacity, continuous AC output, surge output, output waveform/voltage/frequency, battery chemistry/cycle claim, recharge inputs, weight, warranty and exact appliance load. Capacity alone does not prove an appliance can run.
+5. UK and US variants must remain separate. Do not reuse NOAA claims for UK pages, or assume US electrical/retailer compatibility for UK products.
+6. The official guidance supports a preparedness need, not a claim of imminent danger. Keep copy calm, practical and focused on ordinary disruptions such as storms, floods and power cuts.
