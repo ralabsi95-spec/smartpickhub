@@ -1802,3 +1802,9 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - No new products, guides, keywords with claimed volume, public copy, analytics, crawler rules or production settings were changed.
 - No full CI was triggered for these branch-only research notes. The 1 December consolidated validation protocol remains the intended final test window.
 
+
+## 21 November 2026 16:40 UTC — Existing-guide SEO metadata draft
+- Added `research/SEO_METADATA_GAP_REGISTER_20261121.md`. Audit: all 25 SEO titles are unique (30–49 characters); only 4/25 guides have a separate `seoDescription`; 21 are missing it; no guide has `updatedAt`.
+- Drafted 21 distinct descriptions from each guide's actual title, summary, introduction and products. This is a research proposal only; none has been added to `products.json` or published.
+- The guide template currently emits Article `dateModified` equal to `publishedAt` and labels the date “Updated”. Do not change this without a substantive review date. Safe options are a genuine `updatedAt` after review, or changing the visible label to “Published”.
+- No tests triggered; branch-only research. Include the metadata review in the single 1 December consolidated release candidate.
