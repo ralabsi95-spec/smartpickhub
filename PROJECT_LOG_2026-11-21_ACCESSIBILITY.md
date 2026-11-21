@@ -33,9 +33,9 @@
 - Local Node syntax check passed for the new contrast checker.
 - Local execution passed. Minimum measured ratios: primary button 4.86:1; secondary button 6.00:1; brand and panel monograms 5.86:1; hero heading gradient 4.63:1 against the sampled light backgrounds.
 - Cloudflare Pages preview reported a successful build for intermediate branch commit `969ba8c`.
-- The latest branch commit is `86cd97a461ab7645f28c5a47afbe7c72d8fc26b4`. Its Cloudflare Pages production-project preview check was still reported as in progress at the last read.
-- GitHub Actions runs #896 and #897 were reported as failed, but the GitHub connector returned no job steps, no artifacts and a missing job-log blob. The failure stage is therefore **unknown**, not attributed to the new contrast check. Exact-head CI is not yet confirmed.
-- PR #34 remains open and unmerged. Do not merge or claim production deployment until exact-head CI, Pages preview and visual review are complete.
+- The latest branch commit at this log update is `3dbd93591aa06b9f78d52f2d6317807041e0d6f0` (documentation-only log addition after the code changes). Cloudflare Pages preview reported a successful build for code commit `e7f9a66`; the later documentation-only commit has not been independently verified by a new Pages result.
+- GitHub Actions runs #896 and #897 for code head `86cd97a` were reported as failed, but the GitHub connector returned no job steps, no artifacts and a missing job-log blob. The failure stage is therefore **unknown**, not attributed to the new contrast check. Exact-head CI is not yet confirmed for the current log commit.
+- PR #34 remains open and unmerged; its latest head is `3dbd93591aa06b9f78d52f2d6317807041e0d6f0`. Do not merge or claim production deployment until exact-head CI, Pages preview and visual review are complete.
 
 ## 5. Next actions
 
