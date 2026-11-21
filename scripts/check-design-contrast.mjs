@@ -33,10 +33,10 @@ function check(selector, backgrounds, minimum, label) {
     return;
   }
   const ratios = stops.flatMap((foreground) => backgrounds.map((background) => contrastRatio(foreground, background)));
-  for (let index = 0; index < stops.length; index += 1) {
+  for (const foreground of stops) {
     for (const background of backgrounds) {
-      const ratio = contrastRatio(stops[index], background);
-      if (ratio + 1e-9 < minimum) errors.push(selector + ': ' + stops[index] + ' against ' + background + ' is ' + ratio.toFixed(2) + ':1; minimum ' + minimum + ':1 (' + label + ').');
+      const ratio = contrastRatio(foreground, background);
+      if (ratio + 1e-9 < minimum) errors.push(selector + ': ' + foreground + ' against ' + background + ' is ' + ratio.toFixed(2) + ':1; minimum ' + minimum + ':1 (' + label + ').');
     }
   }
   console.log(selector + ': ' + stops.length + ' stops checked; minimum ratio ' + Math.min(...ratios).toFixed(2) + ':1.');
