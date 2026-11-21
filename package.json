@@ -13,6 +13,8 @@
     "keywords": "node scripts/build-keyword-universe.mjs",
     "smoke": "node scripts/smoke-test.mjs",
     "accessibility": "node scripts/accessibility-test.mjs",
+    "predev": "npm run images",
+    "images": "node scripts/generate-pinterest-images.mjs",
     "contrast": "node scripts/check-design-contrast.mjs",
     "audit-report": "node scripts/build-audit-report.mjs",
     "indexnow": "node scripts/ping-indexnow.mjs",
@@ -22,8 +24,6 @@
     "import:self-test": "node scripts/import-products.mjs --self-test",
     "import:integration-test": "node scripts/test-import-products.mjs",
     "postbuild": "node scripts/build-social-snippets.mjs && node scripts/write-deployment-marker.mjs",
-    "predev": "npm run images",
-    "images": "node scripts/generate-pinterest-images.mjs",
     "distribution:check": "node scripts/validate-distribution.mjs"
   },
   "dependencies": {
