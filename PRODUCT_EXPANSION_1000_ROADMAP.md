@@ -313,9 +313,9 @@ The following are stage gates, not artificial deadlines or guaranteed production
 ## 15. Immediate work queue (no public release)
 
 1. Close and record the completed radio/backup-power research PR #33; do not import candidates without exact-market retailer verification.
-2. Create a 25-guide SEO metadata gap register: fill missing descriptions only after reviewing actual page intent and content; do not bulk-generate generic descriptions.
+2. Review the draft `research/SEO_METADATA_GAP_REGISTER_20261121.md` against all 25 rendered guides; it proposes 21 unique descriptions but changes no public metadata.
 3. Design a product evidence schema and deduplication key against the existing 100 records; do not migrate data yet.
-4. Build a category opportunity matrix from the 12 current seed clusters plus candidate adjacent categories. Each category needs UK SERP evidence and a buyer-task rationale before product discovery.
+4. Extend `research/UK_CATEGORY_OPPORTUNITY_SNAPSHOT_20261121.md` with category-specific SERP evidence and buyer-task rationale before product discovery.
 5. Prepare the first candidate cohort with evidence records only; keep unverified candidates out of `products.json`.
 6. After owner account access is available, connect GSC and Bing Webmaster Tools and provide only a GA4 Measurement ID plus consent/privacy decision—never passwords or 2FA codes.
 7. Revisit crawler training preferences only as a separate owner decision; no change is made by this plan.
