@@ -23,7 +23,7 @@ function ruleFor(selector) {
 }
 function gradientStops(selector) {
   const rule = ruleFor(selector);
-  const gradient = rule.match(/background\\s*:\\s*linear-gradient\\([^;]+\\)/i)?.[0] ?? '';
+  const gradient = rule.match(/background\s*:\s*linear-gradient\([^;]+\)/i)?.[0] ?? '';
   return [...gradient.matchAll(/#[0-9a-f]{6}/gi)].map((match) => match[0].toLowerCase());
 }
 function check(selector, backgrounds, minimum, label) {
