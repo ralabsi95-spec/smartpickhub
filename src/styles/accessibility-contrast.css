@@ -1,0 +1,17 @@
+/* WCAG contrast-safe overrides for text rendered over gradient backgrounds.
+   Kept separate so the palette can be audited without changing layout or imagery. */
+.button {
+  background: linear-gradient(135deg, #087f78 0%, #0b786f 100%);
+}
+.button.secondary {
+  background: linear-gradient(135deg, #334f62 0%, #496779 100%);
+}
+.brand::before {
+  background: linear-gradient(145deg, #0b6f68 0%, #0a716a 100%);
+}
+.panel-mark {
+  background: linear-gradient(145deg, #0b6f68 0%, #0a716a 100%);
+}
+.home-hero h1 span {
+  background: linear-gradient(90deg, #0b6f68 0%, #0a716a 60%, #93432f 100%);
+}
