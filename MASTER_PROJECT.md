@@ -3,7 +3,7 @@
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Implementation branch:** `main` (production)  
 **Status:** 25 approved guides / 100 product records are published on Cloudflare Pages production. PR #10 fixed the guarded IndexNow descendant-deploy check and is merged; PR #11 reconciled the search/discovery lifecycle. Five populated Pinterest RSS feeds (25 entries total) are connected to their matching boards per owner confirmation; Pinterest-side saved state and any automatic Pin ingestion still require verification.  
-**Updated:** 19 November 2026
+**Updated:** 21 November 2026
 
 ## Project purpose
 Build a trustworthy UK-first English-language affiliate buying-guide property, with a secondary US marketplace track. Prioritise useful original guidance, verified product information, organic discovery and measurable conversions.
@@ -1779,3 +1779,16 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - EcoFlow UK search snapshot showed RIVER 2 sold out; its £ price/availability is volatile and must not be published. The Sangean MMR-88 DAB+ official page lists 850 mAh and 8-hour stated playtime; its 5V/0.3A USB output means it should not be positioned as a substantial phone power bank.
 - **No catalogue or production change:** no products, ASINs, affiliate links, prices, ratings, images or guide pages were added or changed. This is a research-only appendix and remains subject to exact-head CI and PR review.
 - Next: complete build/audit and Pages checks on this branch; inspect official manufacturer evidence for any additional UK/US candidates only if it materially improves comparison coverage. Merge documentation only if checks pass; keep all product intake gates intact.
+
+
+## 21 November 2026 — PR #33 merged; 1,000-product roadmap prepared
+
+- PR #33 (`Document radio and backup-power product evidence`) merged by squash as `26636d4359508b9af30eec498a22ffc005a81a72`.
+- Exact PR head `4a079ee9d67e082d73f0de6adcf51b825a655337`: build-and-audit run `44608864797` passed all 22 steps; Cloudflare Pages production and preview passed. The separate Workers Builds check failed on the PR head; it is distinct from Pages.
+- On merge SHA `26636d4359508b9af30eec498a22ffc005a81a72`, Cloudflare Pages production and preview passed. Main push build-and-audit run `44924010513` failed before any steps were reported; logs and step summaries were unavailable, so cause remains unknown. Do not attribute this to code or rerun the full suite solely for a duplicate green result. The separate Workers build check was still in progress at the last poll.
+- Catalogue audit: 25 guides / 100 unique product records across 12 keyword seed clusters. All 100 product records have manufacturer source URLs and source notes, plus UK/US model-name search identifiers. These are marketplace search destinations, not verified direct ASIN links. No product images are approved in product data.
+- Metadata audit: all 25 guides have SEO titles and buying checklists; only 4 have separate SEO descriptions; no guide has an `updatedAt` field. Do not generate generic descriptions or falsify updated dates. Existing template currently sets Article dateModified to publishedAt; evaluate this in the consolidated SEO implementation review.
+- Created non-production branch `strategy/1000-product-evidence-roadmap-20261121` with `PRODUCT_EXPANSION_1000_ROADMAP.md`. This defines 1,000 as distinct, evidence-qualified products, not pages or generated keyword variations; includes hard product gates, canonical deduplication, UK/US market validation, intent/SERP scoring, search/AI measurement and one consolidated 1 December validation cycle. Branch remains unmerged; no public page, catalogue record or production setting changed.
+- Current SEO and AI search guidance was rechecked against official Google, Bing, OpenAI and Anthropic sources. Google confirms no special AI schema or separate AI SEO requirement; standard helpful-content and technical eligibility apply. Google's scaled-content-abuse policy explicitly warns against large volumes of unoriginal pages, including AI-generated content without user value. Bing AI Performance reports sampled/aggregated citations and grounding queries, not visits or rankings. Search crawler access and model-training crawler permission remain separate owner decisions.
+- No paid SEO/AI visibility credits, subscriptions, TinyFish tasks or analytics integrations were used. GSC/Bing Webmaster/GA4 data remains unconnected or unverified in this assistant workflow.
+- **Next:** continue evidence-led research in the non-production branch; prepare the 1 December consolidated release candidate. Preserve all product/publication gates and avoid repeated full QA for minor changes.
