@@ -17,7 +17,7 @@
       "model_and_pack_code_in_official_brochure": 1
     },
     "manufacturerModelNamesConfirmed": 18,
-    "exactManufacturerProductPages": 6,
+    "exactManufacturerProductPages": 5,
     "namedModelsInOfficialRangeListings": 12
   },
   "candidates": [
@@ -543,11 +543,11 @@
         "image rights if image proposed"
       ],
       "model": "Wireless Smart Thermostat X (2nd gen) Starter Kit with Programmer, Hot Water Control and OpenTherm",
-      "modelIdentityStatus": "manufacturer_model_and_sku_confirmed",
+      "modelIdentityStatus": "manufacturer_model_name_confirmed_sku_pending",
       "sourceType": "manufacturer product page",
       "sourcePageSpecificity": "product_page",
       "sourceVerifiedAt": "2026-11-22",
-      "skuStatus": "exact_product_identity_confirmed"
+      "skuStatus": "not_captured"
     },
     {
       "candidateId": "sp1000-060",
@@ -579,11 +579,11 @@
         "image rights if image proposed"
       ],
       "model": "Wired Smart Thermostat X (2nd gen)",
-      "modelIdentityStatus": "manufacturer_model_and_sku_confirmed",
+      "modelIdentityStatus": "manufacturer_model_name_confirmed_sku_pending",
       "sourceType": "manufacturer product page",
       "sourcePageSpecificity": "product_page",
       "sourceVerifiedAt": "2026-11-22",
-      "skuStatus": "exact_product_identity_confirmed"
+      "skuStatus": "not_captured"
     },
     {
       "candidateId": "sp1000-061",
@@ -615,11 +615,11 @@
         "image rights if image proposed"
       ],
       "model": "Smart Radiator Thermostat X Starter Kit",
-      "modelIdentityStatus": "manufacturer_model_and_sku_confirmed",
+      "modelIdentityStatus": "manufacturer_model_name_confirmed_sku_pending",
       "sourceType": "manufacturer product page",
       "sourcePageSpecificity": "product_page",
       "sourceVerifiedAt": "2026-11-22",
-      "skuStatus": "exact_product_identity_confirmed"
+      "skuStatus": "not_captured"
     },
     {
       "candidateId": "sp1000-062",
