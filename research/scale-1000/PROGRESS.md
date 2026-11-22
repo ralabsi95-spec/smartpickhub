@@ -76,3 +76,10 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 - Added ecobee Smart Thermostat Premium/Enhanced/Essential and Roborock F25 GT Gen 2/Steam/Ultra/XT/BX wet-dry floor cleaners.
 - Added a US wet-dry floor cleaner page brief. This is distinct from robot vacuums and cordless stick vacuums; exact SERP intent still requires review.
 - US candidate verification and Amazon marketplace link validation remain pending; verified/publishable count remains zero.
+
+
+## 22 November 2026 — Long-tail buyer keyword expansion
+- Added a second, use-case-led buyer-intent tier across all 62 product topics in both UK and US databases. The new phrases are specific to purchase decisions (room size, pets, installation, compatibility, use case, performance and ownership costs), not generic question/article filler.
+- All new terms remain unmeasured: search volume, KD, CPC and trend fields are null. No UK metrics were copied to US. No paid keyword credits were used.
+- Keyword universe is now 1612 UK + 1546 US = 3158 distinct candidate phrases. These are research candidates, not a claim that every phrase deserves its own page; clustering and SERP overlap remain required.
+- Correct programme KPI: 1,000+ distinct buyer-intent keyword candidates with measured metrics prioritized where available. Product candidates are a separate research queue, not a 1,000-product publishing target. No production catalogue or public pages changed.
