@@ -1,18 +1,18 @@
-# SmartPickHub — 1,000 Product Programme
+# SmartPickHub — Buyer Keyword Intelligence & Product Discovery
 
-**Updated:** 22 November 2026 14:04 UTC  
+**Updated:** 22 November 2026 14:16 UTC  
 **Primary market:** UK; US is a separately verified secondary market.  
 **Production catalogue:** 25 guides / 100 existing products. These are preserved and must never be re-imported.  
-**Target:** 1,000 unique, evidence-backed product records; 900 net-new records required.
+**Primary KPI:** 1,000+ distinct buyer-intent keyword candidates, with real monthly search metrics prioritised where available. Product candidates are a separate evidence-gated research queue, not a 1,000-product publishing target.
 
 ## Current execution checkpoint
 
 | Measure | Count | Meaning |
 |---|---:|---|
 | Existing live catalogue | 100 | Already present; excluded from new intake |
-| New staged candidates | 62 | Research queue only; not verified/publishable |
+| New staged candidates | 84 | 62 UK + 22 US; research queue only, not verified/publishable |
 | Verified new products | 0 | No candidate in this first batch has passed all identity, regional, evidence and affiliate checks |
-| Remaining to target | 900 | Net-new product records still required after verification |
+| Keyword candidates | 3,158 | 1,612 UK + 1,546 US; candidates are not measured demand or pages |
 
 ### Batch 001 — UK candidate discovery
 
@@ -28,7 +28,7 @@
 4. Capacity/colour/revision variants require deduplication and distinct buyer value before they count as separate products.
 5. Every candidate must have exact UK model identity, manufacturer claims, marketplace destination, source date, claim-level evidence and QA before becoming a verified product.
 6. New guides require separate SERP-intent and cannibalisation review. Existing guide mappings are preferred where intent matches.
-7. Never treat candidate count as progress toward the 1,000 verified-product target.
+7. Never treat candidate count as verified products, measured demand, or approval to publish.
 
 ## Next batches
 
@@ -60,13 +60,13 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 
 ## 22 November 2026 — US market parity workstream
 
-- Created a separate US English keyword database with **1,240 unique phrases across the same 62 product topics**. Phrases are localized to US vocabulary and buying tasks (basement, yard, apartment, HVAC/C-wire, 120V ecosystem, color laser, license plate, carry-on, True HEPA, etc.).
+- Created a separate US English keyword database with **1,240 initial phrases across the same 62 product topics**. Phrases are localized to US vocabulary and buying tasks (basement, yard, apartment, HVAC/C-wire, 120V ecosystem, color laser, license plate, carry-on, True HEPA, etc.).
 - US intent classification: 186 transactional and 1054 commercial phrases by wording. **US measured keyword metrics: 0**. No UK metrics were copied into the US dataset. Fresh US volume/KD/CPC/trends require location code 2840 and must be collected separately.
 - Created US page briefs for all 25 existing guides (refresh, not duplicate) plus 11 new-page/topic candidates; two of the candidates are explicitly refresh-only due likely overlap with existing canonical guides.
 - Created a US product discovery batch with 14 manufacturer-sourced candidates: eufy (4), Levoit (5), Frigidaire (3), EcoFlow (2). Verified/publishable remain 0; stock and exact SKU/variant checks remain open. No Amazon ASIN or affiliate URL was invented.
 - Created a UK page-brief pack: 25 existing-guide refresh briefs plus 12 new-page candidates. These are editorial plans, not pages published.
-- Combined keyword candidate universe now: 1,240 UK + 1,240 US = **2,480 phrases**. UK cache: 32 saved metric records, 8 exact matches within generated UK phrases. US: 0 measured. No monthly trend series available for the saved UK cache.
-- Product queue: 62 UK + 14 US = 76 staged candidates; verified new products 0. Existing live catalogue remains 100 products / 25 guides. Net-new verified product target remains 900.
+- Combined keyword candidate universe at this checkpoint: 1,612 UK + 1,546 US = **3,158 phrases**. UK cache: 32 saved metric records, 8 exact matches within generated UK phrases. US: 0 measured. No monthly trend series available for the saved UK cache.
+- Product queue: 62 UK + 22 US = 84 staged candidates; verified new products 0. Existing live catalogue remains 100 products / 25 guides. No 1,000-product publishing target.
 - All work remains on research branch. No public site, catalogue, Amazon links, indexability or deployment changed.
 
 
@@ -83,3 +83,13 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 - All new terms remain unmeasured: search volume, KD, CPC and trend fields are null. No UK metrics were copied to US. No paid keyword credits were used.
 - Keyword universe is now 1612 UK + 1546 US = 3158 distinct candidate phrases. These are research candidates, not a claim that every phrase deserves its own page; clustering and SERP overlap remain required.
 - Correct programme KPI: 1,000+ distinct buyer-intent keyword candidates with measured metrics prioritized where available. Product candidates are a separate research queue, not a 1,000-product publishing target. No production catalogue or public pages changed.
+
+
+## 22 November 2026 14:16 UTC — Keyword expansion and KPI correction
+- Re-read the latest research branch and confirmed the prior checkpoint was 31 commits ahead of main, 0 behind; no production changes were present.
+- Expanded the localized buyer-keyword databases with a second use-case-led long-tail tier across the existing 62 topics. Final unique counts: **1,612 UK + 1,546 US = 3,158**. UK added 372 phrases; US added 306 after exact-phrase deduplication against its original list.
+- Keyword intent by wording: UK 186 transactional / 1426 commercial; US 186 transactional / 1360 commercial. All newly added long-tail phrases are explicitly unmeasured (null metrics); US remains 0 measured. No trend data has been fabricated and no paid credits were used.
+- UK cached metric coverage remains 32 saved cache records, 8 exact matches in the generated list; remaining UK candidates are unmeasured. Do not treat search volume as clicks/orders or add close-variant volumes.
+- Product discovery is a separate queue: 62 UK + 22 US staged candidates, 0 verified/publishable. Existing catalogue remains 25 guides / 100 products. The 1,000+ target is keywords, not 1,000 products.
+- Page briefs remain plans only: UK 25 refresh + 12 new-page candidates; US 25 refresh + 12 topics (10 new-page candidates, 2 refresh-only). No public page, product, metadata, deployment or indexability changes.
+- Research branch remains `research/scale-1000-batch-001`; refresh branch compare after documentation commits.
