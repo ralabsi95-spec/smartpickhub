@@ -5,15 +5,15 @@
 **Environment:** research only; no production files or live catalogue modified.
 
 ## Executive status
-The research datasets have been normalized and schema gaps have been made explicit. The project currently contains **2,861 distinct normalized buyer-intent keyword candidates** and **102 staged product candidates**. None of the 102 products is verified for publication or has a verified Amazon ASIN/affiliate destination.
+The research datasets have been normalized and schema gaps have been made explicit. The project currently contains **2,799 distinct normalized buyer-intent keyword candidates** and **102 staged product candidates**. None of the 102 products is verified for publication or has a verified Amazon ASIN/affiliate destination.
 
 ## 1. Keyword dataset QA
 
 | Dataset | Unique phrases | Transactional | Commercial | Measured exact metrics | Mapped to existing guides | Unmapped |
 |---|---:|---:|---:|---:|---:|---:|
 | UK | 1,488 | 186 | 1,302 | 8 exact phrase matches in saved cache | 888 | 600 |
-| US | 1,373 | 186 | 1,187 | 0 | 823 | 550 |
-| **Combined** | **2,861** | **372** | **2,489** | **8 UK only** | **1,711** | **1,150** |
+| US | 1,311 | 186 | 1,125 | 0 | 786 | 525 |
+| **Combined** | **2,799** | **372** | **2,427** | **8 UK only** | **1,674** | **1,125** |
 
 ### Defect found and corrected
 The US dataset initially contained 1,383 records but had 10 duplicate pairs differing only by punctuation/hyphenation or capitalization:
@@ -26,7 +26,7 @@ The US dataset initially contained 1,383 records but had 10 duplicate pairs diff
 - 4 bay / 4-bay
 - carry on / carry-on (backpack and packing cubes)
 
-One canonical phrase was retained from each pair. The US file was updated and its summary and 21 cluster counts were recalculated. It now contains 1,373 unique normalized phrases and has zero remaining normalized duplicates.
+One canonical phrase was retained from each pair. The US file was updated and its summary and 21 cluster counts were recalculated. It initially contained 1,373 phrases after punctuation deduplication, then the semantic pass below removed a further 62 redundant phrases. The current US file contains 1,311 phrases and has zero remaining exact or normalized duplicates under the applied normalization rule.
 
 ### Metric and intent safeguards
 - US volume, KD, CPC and trend values remain null/unmeasured. No UK metrics were copied into US records.
@@ -90,3 +90,7 @@ One canonical phrase was retained from each pair. The US file was updated and it
 6. Refresh search-volume/KD/CPC/trend metrics only through an approved costed batch; never present generated phrases as measured demand.
 
 **Quality rule:** candidate volume is not verified product inventory, keyword count is not search demand, and manufacturer marketing claims are not independent test results.
+
+
+## 1A. Second semantic cleanup — redundant budget templates
+A second review found 62 additional US phrases that were not punctuation duplicates but were redundant buyer intents. Each phrase used `for budget models`, `for budget systems`, `for budget routers`, `for budget cameras`, `for budget kits` or `for budget sets`, while an equivalent `best budget [product]` phrase already existed in the same topic dataset. All 62 redundant rows were removed; no unique intent was lost because the canonical budget phrase remains. The US file now contains 1,311 phrases: 186 transactional, 1,125 commercial, 786 mapped and 525 unmapped. The combined UK/US universe is 2,799 phrases. Remaining generic long-tail modifiers are flagged for semantic/SERP review and are not automatically considered valid just because they are syntactically unique.
