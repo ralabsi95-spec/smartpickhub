@@ -20,7 +20,13 @@
       "air-purifiers": 14
     },
     "verifiedForPublication": 0,
-    "stagedCandidates": 44
+    "stagedCandidates": 44,
+    "manufacturerOrRetailerModelIdentitySupported": 43,
+    "identityUnresolved": 1,
+    "exactProductPageRecords": 44,
+    "categoryOnlySourcesRemaining": 0,
+    "brokenSourceRecords": 1,
+    "amazonUkAsinsVerified": 0
   },
   "candidates": [
     {
