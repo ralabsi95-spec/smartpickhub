@@ -88,3 +88,10 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 - Existing-guide mapping: UK 888 mapped / 600 unmapped; US 827 mapped / 556 unmapped. Unmapped phrases require SERP/cannibalisation review; they are not automatically new pages.
 - Product discovery remains separate: 62 UK + 22 US candidates, 0 verified/publishable. Page briefs remain plans only: UK 25 refresh + 12 new candidates; US 25 refresh + 12 topics (10 new-page candidates, 2 refresh-only).
 - No public page, product, catalogue, metadata, deployment or indexability change. Existing 25 guides / 100 products remain untouched.
+
+
+## 22 November 2026 — SERP validation checkpoint
+- Reviewed public UK and US buying-guide SERPs and recorded competition, regional differences, canonical overlap and unresolved evidence gaps in `research/keyword-intelligence/SERP-VALIDATION-2026-11-22.md`.
+- Strongest distinct US candidate in this pass: wet-dry floor cleaners. UK dehumidifiers and robot lawn mowers warrant evidence development. UK heated airers and smart thermostats have clear intent but high competition. US cameras without subscription, basement dehumidifiers, wildfire-smoke purifiers, robot mowers and portable AC show distinct tasks but need differentiation and/or canonical-overlap checks.
+- Smart plugs, travel and several other topics are deferred pending differentiation or stronger SERP samples. UK portable AC is seasonal with stock constraints reported into early 2027.
+- This is qualitative SERP evidence only: no search volumes, trend metrics or ranking predictions were added. Page briefs now record evidence status and notes. No public page or product changes.
