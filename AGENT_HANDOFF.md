@@ -1531,3 +1531,8 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Google says no special AI schema, no `llms.txt` requirement for Google, and no need for artificial chunking; focus on crawlability and original helpful content. Bing AI Performance reports citations and grounding phrases, not visits or clicks. Microsoft AI Training/Grounding controls begin taking effect from 1 February 2027; recheck official guidance before then.
 - No public content/catalogue/crawler/WAF/DNS/analytics/Pinterest change, paid service or TinyFish task was performed. User will be mobile for two days; defer account connection, GA4 Measurement ID, consent decision and crawler training preference until desktop access returns. Do not ask for credentials.
 - Next: verify PR exact-head CI, then prepare Tier-1 guide content improvement proposals in a branch without publishing. After owner desktop access: connect GSC/GA4/Bing and make the training-permission decision.
+
+
+### US product batch update — 22 November 2026
+- US candidate product batch now 22 candidates across eufy, Levoit, Frigidaire, EcoFlow, ecobee and Roborock. Added three ecobee smart thermostats and five Roborock F25 wet-dry floor cleaners. Verified/publishable still 0.
+- Added a US wet-dry floor cleaner page brief. Keep separate from robot vacuums and cordless stick vacuums; validate SERP overlap before creating a page.
