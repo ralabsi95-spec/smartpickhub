@@ -1919,3 +1919,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Official manufacturer pages/manuals confirmed 12 further US candidate identities; US model identity coverage now **39/40**, with EcoFlow RIVER 3 Plus the sole unresolved candidate (staged official URL 404).
 - Added `research/product-verification/us-model-identity-followup-batch-2-2026-11-22.md` and updated the US candidate JSON with manufacturer identifiers and caveats. Distinguish manufacturer SKUs/order numbers/model numbers from Amazon ASINs.
 - QA holds: Rachio 8-/16-zone versions are variants of one family; Schlage BE489 deadbolt vs FE789 lever distinction; Whynter ARC-102CS older manual superseded; pressure washer GPM must be stated with its PSI test point. No ASIN/affiliate destinations or publishable products. No production change.
+
+
+## 22 November 2026 — Keyword expansion batch 002
+- Expanded keyword research to UK 2028 and US 1850 unique market-specific phrases (3878 combined), adding 1079 buyer-task terms.
+- Added research/keyword-intelligence/EXPANSION-BATCH-002-TRENDS-2026-11-22.md documenting UK winter warming, emergency household products, value-led Black Friday and US home-environment purchase intent / holiday search discovery.
+- No search metrics or monthly trend data fabricated. New phrases remain unmeasured; no paid research credits used. Keyword opportunities do not automatically become pages.
+- No catalogue, products, affiliate links, public pages, metadata, indexing or production changes.
