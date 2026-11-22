@@ -50,7 +50,7 @@
       "model": "eufyCam S4",
       "source": "https://us.eufy.com/products/e81741w3",
       "sourceType": "manufacturer product family page",
-      "evidence": "Official US product page confirms eufyCam S4 family, but selectable options include single camera/bundles and 2/4-camera kits. Keep one model-family candidate; record exact camera count, HomeBase and drive bundle separately at SKU level. Do not inflate product count by kit options.",
+      "evidence": "Official US product-family page shows distinct selectable packages: 2-Cam Kit ($699.98), 4-Cam Kit + 1TB ($1,479.99), 2-Cam Kit + Video Doorbell E340 ($949.98), S4 + HomeBase S380 ($549.98), and S4 + Smart Display E10 ($599.98), plus other bundles. These are package choices, not independent camera models. The page does not expose a stable model SKU/ASIN in the captured content; record exact camera count, HomeBase, storage and accessory package before matching a marketplace listing.",
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current catalogue",
@@ -59,7 +59,13 @@
       "sourcePageSpecificity": "product_family_page",
       "sourceDate": "2026-11-22",
       "sourceVerifiedAt": "2026-11-22",
-      "availabilityStatus": "manufacturer_store_listing_stock_not_checked"
+      "availabilityStatus": "manufacturer_page_has_package_options_current_stock_per_option_not_confirmed",
+      "nextVerification": [
+        "capture exact selected option SKU/variant ID for each relevant package",
+        "confirm camera count, HomeBase and drive contents",
+        "verify retailer stock per exact package",
+        "Amazon.com exact package ASIN only after pack match"
+      ]
     },
     {
       "name": "eufy Video Doorbell S4 (Wired)",
@@ -357,7 +363,7 @@
       "model": "LUBA 3 AWD (1500/3000/5000 capacity family)",
       "source": "https://us.mammotion.com/products/luba-3-awd-robot-lawn-mower",
       "sourceType": "manufacturer product family page",
-      "evidence": "Exact US product family page confirms 1500/3000/5000 area variants, 360° LiDAR + NetRTK + dual-camera AI vision, AWD and up to 80% slope claim, up to 15Ah battery and 215-minute runtime claim. 1500 variant showed out of stock; check each capacity SKU separately. Do not count capacity variants as independent products without a separate buyer comparison reason.",
+      "evidence": "Official US family page exposes 1500/1500H (0.37 acre in one page block; out of stock), 3000/3000H (0.75 acre; selected 3000 in stock signal), and 5000/5000H (1.25 acres; out of stock). A separate official Mammotion overview gives 1500/1500H as 1,000m² / 0.25 acre, conflicting with the product page's 0.37-acre label. Hold the 1500 capacity claim pending model-specific manual/SKU confirmation. S and H versions also have different cutting-height ranges. Keep all capacity/cutting variants inside one family unless distinct buyer intent supports separate entries.",
       "buyerUse": "wire-free robotic mowing for larger or sloped US yards; distinguish capacity variants as options within one product family",
       "availabilityNote": "Family listed; availability differs by capacity variant at capture.",
       "status": "candidate",
@@ -367,7 +373,14 @@
       "modelIdentityStatus": "manufacturer_model_family_confirmed_variant_sku_pending",
       "sourcePageSpecificity": "product_family_page",
       "sourceVerifiedAt": "2026-11-22",
-      "availabilityStatus": "variant_1500_out_of_stock_other_variants_unverified"
+      "availabilityStatus": "1500_and_5000_out_of_stock_3000_in_stock_signal_variant_specific",
+      "nextVerification": [
+        "capture exact SKU/variant ID for 1500/1500H, 3000/3000H, 5000/5000H",
+        "resolve 1500 capacity 0.25 vs 0.37 acre conflict",
+        "verify cutting height S vs H and included RTK/4G services",
+        "fresh stock check per exact option",
+        "Amazon.com exact package ASIN only after exact variant match"
+      ]
     },
     {
       "name": "Mammotion LUBA mini 2 AWD Robotic Lawn Mower",
@@ -375,7 +388,7 @@
       "model": "LUBA mini 2 AWD (1500/1500H family)",
       "source": "https://us.mammotion.com/products/luba-mini-2-awd-robot-lawn-mower?variant=51222244819242",
       "sourceType": "manufacturer product family page",
-      "evidence": "Exact US product page for LUBA mini 2 AWD, with 1500/1500H capacity/cutting-height variants. Manufacturer claims 360° LiDAR + dual-camera AI vision, AWD up to 80% slopes, 4.7-inch edge-cutting disc and 6.1Ah battery. Page showed sold-out signal; verify each selected variant.",
+      "evidence": "Official US page identifies LUBA mini 2 AWD 1500 / 1500H variants, with S/H cutting-height configurations (S 2.2–4.0 in? Confirm manual; page option labels require exact variant capture), 360° LiDAR + dual-camera AI vision, AWD up to 80% slope claim, 4.7-inch edge disc and 6.1Ah battery. Page hero showed sold out while lower selected-option module displayed an older estimated arrival window (Sep 29–Oct 06, 2026); these signals conflict/stale. Do not infer current availability or count 1500 and 1500H as separate products.",
       "buyerUse": "compact wire-free AWD mower for smaller yards and steep terrain",
       "availabilityNote": "Listed on official US collection; variant-specific stock to recheck.",
       "status": "candidate",
@@ -385,7 +398,14 @@
       "modelIdentityStatus": "manufacturer_model_family_confirmed_variant_sku_pending",
       "sourcePageSpecificity": "product_family_page",
       "sourceVerifiedAt": "2026-11-22",
-      "availabilityStatus": "manufacturer_page_sold_out_signal_variant_recheck"
+      "availabilityStatus": "conflicting_sold_out_and_stale_variant_delivery_signal",
+      "nextVerification": [
+        "capture exact 1500 vs 1500H variant IDs and SKU",
+        "confirm S/H cutting-height specs in manual",
+        "fresh exact-option stock check",
+        "verify included charging station and accessories",
+        "Amazon.com exact package ASIN only after variant match"
+      ]
     },
     {
       "name": "Mammotion YUKA mini 2 Robotic Lawn Mower",
