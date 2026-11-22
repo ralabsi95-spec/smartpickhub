@@ -1572,3 +1572,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - A Dry:Soon Deluxe + cover bundle ASIN B0HFNS4W5G was found; bundle description mentions airer-only B016Q6NOCC and cover B01HTGQMTA. These component ASINs are leads only pending direct page verification. Do not use bundle ASIN as the airer-only product.
 - Lakeland 24909 and Meaco 180-1 / 179-1-1 / DD8LPro are manufacturer SKUs, not Amazon ASINs. No affiliate URL created; tracking ID smartpickhubu-21 remains reserved for exact verified UK ASINs.
 - Overall counts unchanged: 102 staged candidates; 61/62 UK identities supported; 14/40 US model/family identities supported; 0 Amazon ASINs verified; 0 publishable.
+
+
+## 22 November 2026 15:xx UTC — US variant/package follow-up
+- Added research/product-verification/us-variant-package-resolution-2026-11-22.md and updated batch-003 US candidate notes.
+- eufyCam S4 package choices now recorded: 2-cam, 4-cam + 1TB, Doorbell E340 bundle, HomeBase S380 bundle and Smart Display E10 bundle. Keep as one family; exact SKU/ASIN per package pending.
+- Mammotion LUBA 3 variants 1500/1500H, 3000/3000H and 5000/5000H documented. Hold 1500 capacity claim (official page 0.37 acre vs official overview 1,000m²/0.25 acre). 1500/5000 out-of-stock; 3000 page purchase signal not Amazon stock.
+- LUBA mini 2 1500/1500H documented; page stock signals conflict and delivery estimate is stale. Confirm exact SKU and S/H cutting-height mapping.
+- SoloCam E50 spec conflict still unresolved. No Amazon.com ASINs or affiliate URLs generated.
