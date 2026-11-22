@@ -1578,3 +1578,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - No guide page impression in returned range. Do not equate this with no indexing; performance rows and URL Inspection answer different questions.
 - Continue tracking query/page rows as data accrues. Keep manual indexing paused while quota error persists.
 - No production changes or release/index actions; no paid tool use.
+
+
+## 22 Nov 2026 08:40 UTC — confirmed actionable defect
+- Homepage and /guides/ card templates both expose internal `editorialStatus` ("Approved for publication") publicly. Remove only the status display elements; retain JSON metadata and detail-template conditional. Proposed, not implemented.
+- GSC inspection now covers all 25 guide URLs plus /guides/, /how-we-research/, /affiliate-disclosure/: all 28 return NEUTRAL / URL is unknown to Google. Homepage is the only confirmed indexed/performance URL so far.
+- Search performance has 3 homepage impressions on 19 Nov, USA desktop, 0 clicks; no guide impressions in available range.
+- No PR/CI/merge/deploy/index submission. Next: prepare local patch and verify it; inspect sitemap delivery; check Actions quota before PR.
