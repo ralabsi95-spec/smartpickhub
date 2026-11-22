@@ -267,8 +267,9 @@
         "best indoor drying rack for apartments"
       ],
       "reason": "Distinct US wording and laundry setup differs from UK heated-airer phrasing; validate US demand and product availability before page creation.",
-      "serpEvidence": "US SERP validation pending",
-      "status": "candidate"
+      "serpEvidence": "pending_serp_validation",
+      "status": "candidate",
+      "serpNotes": "No strong US-specific commercial SERP sample captured. Do not assume UK heated-airer demand transfers to US terminology or demand."
     },
     {
       "slugCandidate": "us-dehumidifiers-basements",
@@ -281,8 +282,9 @@
         "Energy Star dehumidifier"
       ],
       "reason": "Basement and crawl-space use cases are strong US-specific buyer tasks.",
-      "serpEvidence": "Frigidaire US product evidence; SERP validation pending",
-      "status": "candidate"
+      "serpEvidence": "confirmed_regional_serp",
+      "status": "candidate",
+      "serpNotes": "Consumer Reports has a 2026 tested basement/crawl-space guide with pint capacity and drainage considerations. A new page must add verified US model comparisons and not simply paraphrase the lab guide."
     },
     {
       "slugCandidate": "us-portable-power-stations",
@@ -295,8 +297,9 @@
         "portable power station with UPS"
       ],
       "reason": "US category has distinct 120V output, outlet and generator/solar terminology; compare capacity and continuous output.",
-      "serpEvidence": "Consumer Reports 2026 lab-tested roundup and EcoFlow US catalogue",
-      "status": "candidate"
+      "serpEvidence": "confirmed_competitive_serp",
+      "status": "candidate",
+      "serpNotes": "Consumer Reports has a 2026 lab-tested portable power station roundup. Check overlap with the existing portable-power/travel guide; prefer a focused section/refresh unless the SERP and product set justify a standalone URL."
     },
     {
       "slugCandidate": "us-air-purifiers-wildfire-smoke",
@@ -309,8 +312,9 @@
         "air purifier filter replacement cost"
       ],
       "reason": "US-specific wildfire-smoke and square-foot coverage intent; must explain CADR and room ACH consistently.",
-      "serpEvidence": "Consumer Reports US buying guide and Levoit US range",
-      "status": "candidate"
+      "serpEvidence": "confirmed_use_case_serp",
+      "status": "candidate",
+      "serpNotes": "Consumer Reports has a dedicated 2026 wildfire-smoke guide with particle reduction, room-size and filter-cost criteria. Distinct use case is real; assess overlap with the existing air-purifier guide before creating a second URL."
     },
     {
       "slugCandidate": "us-security-cameras-no-subscription",
@@ -323,8 +327,9 @@
         "PoE NVR camera system"
       ],
       "reason": "Distinct high-intent subscription avoidance and local-storage decision; include privacy/security caveats.",
-      "serpEvidence": "Consumer Reports October 2026 lab-tested page",
-      "status": "candidate"
+      "serpEvidence": "confirmed_distinct_serp",
+      "status": "candidate",
+      "serpNotes": "Consumer Reports has a 2026 dedicated no-subscription camera guide with local storage, privacy, security and feature trade-offs. Clear commercial intent, but high-authority competition and substantial evidence burden."
     },
     {
       "slugCandidate": "us-robot-lawn-mowers",
@@ -337,8 +342,9 @@
         "robot lawn mower with RTK"
       ],
       "reason": "US yard sizes, slope and navigation requirements need separate regional product set.",
-      "serpEvidence": "US SERP validation pending",
-      "status": "candidate"
+      "serpEvidence": "confirmed_competitive_serp",
+      "status": "candidate",
+      "serpNotes": "Consumer Reports and Reviewed have current tested US robotic-mower roundups. Coverage area, navigation, slope, safety and boundary-wire/RTK distinctions matter; exact US models and regional support must be checked."
     },
     {
       "slugCandidate": "us-smart-thermostats-hvac",
@@ -351,8 +357,9 @@
         "Matter smart thermostat"
       ],
       "reason": "US HVAC and C-wire compatibility differs from UK boiler/zone controls.",
-      "serpEvidence": "US SERP validation pending",
-      "status": "candidate"
+      "serpEvidence": "confirmed_regional_serp",
+      "status": "candidate",
+      "serpNotes": "Consumer Reports and ENERGY STAR guidance emphasize HVAC compatibility and C-wire. Distinct from UK boiler controls; include heat-pump and wiring compatibility caveats."
     },
     {
       "slugCandidate": "us-portable-air-conditioners",
@@ -365,8 +372,9 @@
         "portable air conditioner with heat"
       ],
       "reason": "US seasonal cooling intent and window kit/BTU requirements differ from UK category.",
-      "serpEvidence": "US SERP validation pending",
-      "status": "candidate"
+      "serpEvidence": "confirmed_competitive_serp",
+      "status": "candidate",
+      "serpNotes": "RTINGS, Good Housekeeping and Popular Mechanics publish current tested roundups. Dual-hose vs single-hose, SACC BTU, room size, inverter and noise are key differentiators."
     },
     {
       "slugCandidate": "us-laser-printers-home-office",
@@ -379,8 +387,9 @@
         "duplex laser printer"
       ],
       "reason": "Existing page has regionally different Brother SKUs; consider US-specific page only if SERP intent differs.",
-      "serpEvidence": "SERP validation pending; possible cannibalization with existing printer guide",
-      "status": "candidate"
+      "serpEvidence": "confirmed_overlap_refresh_only",
+      "status": "candidate",
+      "serpNotes": "The brief itself notes likely overlap with the existing printer guide. Treat US SKU/toner/voltage differences as a localized refresh unless SERP evidence proves a separate intent."
     },
     {
       "slugCandidate": "us-cordless-vacuum-pet-hair",
@@ -393,8 +402,9 @@
         "cordless vacuum battery replacement"
       ],
       "reason": "Existing guide already targets cordless vacuums; first action should be a US-focused section/refresh, not a duplicate URL.",
-      "serpEvidence": "Existing guide canonical; SERP overlap check required",
-      "status": "refresh_not_new_page"
+      "serpEvidence": "refresh_only",
+      "status": "refresh_not_new_page",
+      "serpNotes": "Existing cordless-vacuum canonical guide already covers the category. Add a US-focused section and SKU evidence; do not create a duplicate page."
     },
     {
       "slugCandidate": "us-air-fryer-small-kitchen",
@@ -407,8 +417,9 @@
         "air fryer toaster oven"
       ],
       "reason": "Existing guide covers air fryers; build US-localized sections and product comparisons within the canonical guide first.",
-      "serpEvidence": "Existing guide canonical; SERP overlap check required",
-      "status": "refresh_not_new_page"
+      "serpEvidence": "refresh_only",
+      "status": "refresh_not_new_page",
+      "serpNotes": "Existing air-fryer guide already covers the category. Localize product models and cooking/voltage details within the canonical guide."
     },
     {
       "slugCandidate": "us-wet-dry-vacuums",
@@ -421,8 +432,9 @@
         "cordless wet dry vacuum"
       ],
       "reason": "Distinct product class from cordless stick vacuums and robot vacuums; US manufacturers present a wide model range and separate use cases.",
-      "serpEvidence": "US product range evidence from Roborock; SERP overlap validation pending",
-      "status": "candidate"
+      "serpEvidence": "confirmed_distinct_category_serp",
+      "status": "candidate",
+      "serpNotes": "TechRadar has a current tested wet-dry vacuum guide with Roborock F25 and Bissell CrossWave picks. This is a distinct floor-cleaning product class; compare against the site's robot-vacuum and cordless-stick guides before approving a standalone page."
     }
   ],
   "policy": "Research briefs only. Do not create public pages until US-specific metrics, SERP overlap, exact products, affiliate destinations and editorial review pass."
