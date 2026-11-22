@@ -205,3 +205,12 @@ OpenSEO project audit retrieval used the saved report only; no new audit crawl, 
 - No edits to `main`, no PR, no GitHub Actions, no merge/deploy, no indexing requests, no catalogue import, no paid tool use.
 - Main production baseline remains recorded as `26636d4359508b9af30eec498a22ffc005a81a72`; verify live refs before any subsequent operation.
 - Next: continue static QA across remaining product records, then consolidate a minimal proposed content/template patch. Do not create a PR until GitHub Actions quota status is known.
+
+
+## Continuation checkpoint — 22 Nov 2026, 08:15 UTC
+- Continued static catalogue review of cordless vacuum and projector regional variants.
+- Epson EF21 US model V11HB35320 is officially marked discontinued, while Epson UK EF-21G SKU V11HB35340 is listed in stock with 100–240V, 50/60Hz input. Keep the note scoped to the US EF21 variant; do not imply the UK EF-21G is discontinued.
+- Samsung US Bespoke Jet AI VS28C9762UK/AA is specified at 120V/60Hz; Samsung UK model VS28C9784QK/EU is a distinct regional model. Existing warning is supported.
+- Evidence appended to source-verification report on docs branch.
+- No main changes, PR, Actions, merge, deployment, index request, product import or paid service.
+- Next: continue checking remaining high-impact product records and consolidate proposed copy/template changes only after evidence review.
