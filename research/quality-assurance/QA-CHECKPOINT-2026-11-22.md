@@ -185,3 +185,9 @@ A second review found 62 additional US phrases that were not punctuation duplica
 - UK intent: 366 transactional / 1,662 commercial; 8 exact phrases have cached metrics and 2,020 remain unmeasured. Existing UK metric cache contains 32 saved records; do not imply all 32 are exact matches in the generated universe.
 - US intent: 366 transactional / 1,484 commercial; 0 measured / 1,850 unmeasured. US metrics are not inferred from UK.
 - Directional trend tags: UK 90 phrases, US 180 phrases. Monthly trend history remains unavailable; trendDataAvailable=false in both files.
+
+
+## Trend-led product discovery batch 004 — 22 November 2026
+- Added 8 manufacturer-sourced trend-led candidates (3 UK / 5 US) with direct product-page evidence. Total staged candidates now 110 (UK 65 / US 45). These are candidate identities, not publishable products.
+- Holds: Roberts SolarDAB 99 only surfaced refurbished/out of stock; DREO 733S has a 73/95-pint option/spec conflict. SKU/manual and exact marketplace/ASIN checks remain open for the rest.
+- Verified/publishable candidates 0; Amazon ASINs 0; affiliate destinations 0. No production catalogue/page change.
