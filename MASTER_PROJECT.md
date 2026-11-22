@@ -1899,3 +1899,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Added initial UK exact-model Amazon identity report at research/product-verification/uk-amazon-identity-check-2026-11-22.md. No direct Amazon ASIN approved. A Dry:Soon Deluxe + cover bundle ASIN was found, but not reused for the airer-only candidate; component ASIN references remain unverified leads.
 - Manufacturer SKUs (Lakeland 24909; Meaco 180-1, 179-1-1, DD8LPro) remain distinct from Amazon ASINs. No affiliate links created; UK tracking ID smartpickhubu-21 only to be appended after exact ASIN and package verification.
 - UK identities supported 61/62, one Dunelm A-frame 404 unresolved. US identities supported 14/40. 102 total staged candidates; 0 verified Amazon ASINs; 0 publishable. No live catalogue, publication or deployment changes.
+
+
+## 22 November 2026 — US product family resolution
+- Official package/variant structure for eufyCam S4, Mammotion LUBA 3 AWD and LUBA mini 2 AWD is now documented at research/product-verification/us-variant-package-resolution-2026-11-22.md.
+- eufyCam S4 package choices are bundle configurations; do not inflate product count. Mammotion LUBA 3 capacity variants remain one family; 1500 area claim held due 0.37 acre vs 1,000m²/0.25 acre official-source conflict. LUBA mini 2 stock signals are conflicting/stale.
+- SoloCam E50 spec conflict remains unresolved; keep disputed zoom/resolution claims out of editorial content. No Amazon ASIN or affiliate link verified.
+- Project counts remain 102 staged candidates, 61/62 UK identities supported, 14/40 US model/family identities supported, 0 verified ASINs and 0 publishable. Production remains untouched.
