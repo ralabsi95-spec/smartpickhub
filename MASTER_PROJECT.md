@@ -1913,3 +1913,9 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Updated `research/scale-1000/batch-003-us-product-candidates.json` with exact model-name evidence, SKU caveats and availability/technical holds. Levoit Core 600S-P model code LAP-C601S-WUS is manufacturer code only.
 - Critical holds: RIVER 3 Plus URL 404; DELTA 3 Plus preorder/sold-out UI conflict; three Tineco candidates unavailable/backordered; FHDD5034Y1 out of stock in selected area; F25 GT Gen 2 battery capacity mismatch; ecobee compatibility depends on HVAC system.
 - No ASINs, affiliate URLs or publishable candidates added. Production catalogue, pages, metadata, indexing, Cloudflare and `main` unchanged. No PR, merge or deployment.
+
+
+## 22 November 2026 — US model identity follow-up batch 2
+- Official manufacturer pages/manuals confirmed 12 further US candidate identities; US model identity coverage now **39/40**, with EcoFlow RIVER 3 Plus the sole unresolved candidate (staged official URL 404).
+- Added `research/product-verification/us-model-identity-followup-batch-2-2026-11-22.md` and updated the US candidate JSON with manufacturer identifiers and caveats. Distinguish manufacturer SKUs/order numbers/model numbers from Amazon ASINs.
+- QA holds: Rachio 8-/16-zone versions are variants of one family; Schlage BE489 deadbolt vs FE789 lever distinction; Whynter ARC-102CS older manual superseded; pressure washer GPM must be stated with its PSI test point. No ASIN/affiliate destinations or publishable products. No production change.
