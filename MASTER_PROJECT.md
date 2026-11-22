@@ -1822,3 +1822,13 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - This is a targeted sample, not a complete re-certification of all 100 product records. No production data/code changed, no PR/CI/merge/deploy/index request/import/paid service used.
 - Main remains `26636d4359508b9af30eec498a22ffc005a81a72`.
 - Next: continue model/SKU and technical claim validation, prioritize UK regional hardware variants and safety-critical specifications; then consolidate minimal patch proposal.
+
+
+## 22 November 2026 — Continued regional product verification
+- Read-only official-source pass checked TP-Link Deco BE63, Roborock Saros 10R, Levoit Vital 200S-P and NETGEAR Orbi RBE773.
+- TP-Link UK lists BE63 hardware revisions V3.60/V2.60/V2 and warns regional availability varies. US documentation confirms four 2.5Gbps ports only for the documented US hardware; do not generalise this to all UK revisions.
+- Roborock UK shop/navigation mentions Saros 10R but no direct UK Saros 10R product purchase listing was confirmed in the reviewed listing output. The available UK Saros 10 listing is a different model; do not substitute it.
+- Levoit Vital 200S-P US model LAP-V201S-WUS lists 24V DC/2.5A output and 50W, but not the adapter AC input range or UK bundle. Retain adapter/warranty caveat.
+- NETGEAR RBE773 UK listing confirms 1 router, 2 satellites and 3 adapters; reviewed regional technical sheet/manual do not establish exact AC input rating of the supplied UK adapters. Retain label-check advice.
+- Full evidence and source URLs are recorded in `docs/EDITORIAL_QA_SOURCE_VERIFICATION_2026-11-22.md` on the documentation branch. These are verification notes, not production edits.
+- No main changes, PR, Actions run, merge, deployment, index request, product import or paid tool activity in this pass.
