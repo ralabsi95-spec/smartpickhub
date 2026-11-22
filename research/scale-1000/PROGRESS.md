@@ -141,3 +141,12 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 - Combined UK + US candidate phrase count is now **2,799** (1,488 UK + 1,311 US). The original 2,871 and intermediate 2,861 counts are superseded by this cleanup.
 - Remaining generic modifiers are flagged for human/SERP review; they were not blindly removed because many describe valid buyer requirements such as room size, pet hair, travel, runtime, hand size, noise or installation.
 - No new measured search data, pages or products were fabricated; no paid research credits were used.
+
+
+## 22 November 2026 — UK dehumidifier exact-page evidence batch
+- Reviewed the 23 UK dehumidifier candidates against current Meaco and EcoAir manufacturer pages. Upgraded 17 records to exact product-page sources and populated the manufacturer model name; exact SKU remains pending.
+- UK Batch 001 source specificity is now 26 product pages / 18 category or landing pages. Across both UK batches: 28 product pages / 34 category or landing pages. Combined UK+US source-specificity gaps are now **48** (34 UK + 14 US), down from 63.
+- Added model-level manufacturer evidence for Meaco Arete Two 10L/12L/20L/25L, Meaco DD8L Pro, and EcoAir DD1 Mini, DD1 Simple MK3, DD1 Classic MK6, DD2 Simple, DD3 Slimline, DD3 Simple, DD3 Classic MK3, DD128, DC12 MK3, DC26, Summit S and DDWH10.
+- Captured availability caveats: Arete Two 10L page showed out-of-stock/pre-order; DD128 appeared only as a sold-out refurbished outlet listing. Do not count either as a current purchasable recommendation without a fresh stock check.
+- Extraction-rate test conditions differ between models (for example, 20°C/60% RH vs 30°C/80% RH). Do not rank by litres/day without normalising test conditions. Desiccant and compressor models also require separate decision criteria.
+- Evidence matrix: `research/product-verification/uk-dehumidifier-product-evidence-2026-11-22.md`. No ASINs, affiliate links, ratings, review counts or hands-on testing claims were added. Verified/publishable product count remains 0.
