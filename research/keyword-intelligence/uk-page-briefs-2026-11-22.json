@@ -191,10 +191,11 @@
         "3 tier heated clothes airer"
       ],
       "status": "new_page_candidate",
-      "serpValidation": "pending",
+      "serpValidation": "confirmed_competitive_serp",
       "guideOverlapCheck": "pending",
       "productEvidence": "pending",
-      "note": "Research brief only; create a page only after SERP intent, product availability, evidence and editorial checks."
+      "note": "Research brief only; create a page only after SERP intent, product availability, evidence and editorial checks.",
+      "serpNotes": "High competition: Which?, Ideal Home, Good Housekeeping and The Independent publish current tested roundups. Differentiate with verified model specs, running-cost methodology, small-space fit and clear test-source attribution."
     },
     {
       "slugCandidate": "uk-dehumidifiers",
@@ -206,10 +207,11 @@
         "low energy dehumidifier"
       ],
       "status": "new_page_candidate",
-      "serpValidation": "pending",
+      "serpValidation": "confirmed_competitive_serp",
       "guideOverlapCheck": "pending",
       "productEvidence": "pending",
-      "note": "Research brief only; create a page only after SERP intent, product availability, evidence and editorial checks."
+      "note": "Research brief only; create a page only after SERP intent, product availability, evidence and editorial checks.",
+      "serpNotes": "Which? has a current tested category guide covering capacity, desiccant vs refrigerant and damp/laundry use. A page is viable only with a clear UK model shortlist and independently checked running-cost evidence."
     },
     {
       "slugCandidate": "uk-robot-lawn-mowers",
@@ -221,10 +223,11 @@
         "robot mower steep slope"
       ],
       "status": "new_page_candidate",
-      "serpValidation": "pending",
+      "serpValidation": "confirmed_competitive_serp",
       "guideOverlapCheck": "pending",
       "productEvidence": "pending",
-      "note": "Research brief only; create a page only after SERP intent, product availability, evidence and editorial checks."
+      "note": "Research brief only; create a page only after SERP intent, product availability, evidence and editorial checks.",
+      "serpNotes": "Gardeners' World, Which? and Good Housekeeping publish current tests; RTK, LiDAR, vision, boundary-wire and slope distinctions are useful but competition is strong. Exact UK model availability is essential."
     },
     {
       "slugCandidate": "uk-smart-thermostats",
@@ -236,10 +239,11 @@
         "radiator smart thermostat"
       ],
       "status": "new_page_candidate",
-      "serpValidation": "pending",
+      "serpValidation": "confirmed_regional_serp",
       "guideOverlapCheck": "pending",
       "productEvidence": "pending",
-      "note": "Research brief only; create a page only after SERP intent, product availability, evidence and editorial checks."
+      "note": "Research brief only; create a page only after SERP intent, product availability, evidence and editorial checks.",
+      "serpNotes": "Current UK results are boiler-centric and discuss combi boilers, hot-water control, OpenTherm and room-by-room radiator valves. This differs materially from US HVAC/C-wire intent."
     },
     {
       "slugCandidate": "uk-smart-plugs-energy",
@@ -251,10 +255,11 @@
         "smart plug for heater"
       ],
       "status": "new_page_candidate",
-      "serpValidation": "pending",
+      "serpValidation": "confirmed_competitive_serp",
       "guideOverlapCheck": "pending",
       "productEvidence": "pending",
-      "note": "Research brief only; create a page only after SERP intent, product availability, evidence and editorial checks."
+      "note": "Research brief only; create a page only after SERP intent, product availability, evidence and editorial checks.",
+      "serpNotes": "Dedicated UK comparison pages already cover energy monitoring, Matter, Thread and local control. Avoid a generic page; proceed only with distinctive product testing/evidence and transparent load limits."
     },
     {
       "slugCandidate": "uk-smart-garden-irrigation",
@@ -266,10 +271,11 @@
         "smart irrigation controller multiple zones"
       ],
       "status": "new_page_candidate",
-      "serpValidation": "pending",
+      "serpValidation": "pending_serp_validation",
       "guideOverlapCheck": "pending",
       "productEvidence": "pending",
-      "note": "Research brief only; create a page only after SERP intent, product availability, evidence and editorial checks."
+      "note": "Research brief only; create a page only after SERP intent, product availability, evidence and editorial checks.",
+      "serpNotes": "No sufficiently strong SERP sample captured in this pass. Keep as a research topic, not an approved new page."
     },
     {
       "slugCandidate": "uk-humidifiers",
@@ -281,10 +287,11 @@
         "large room humidifier"
       ],
       "status": "new_page_candidate",
-      "serpValidation": "pending",
+      "serpValidation": "pending_serp_validation",
       "guideOverlapCheck": "pending",
       "productEvidence": "pending",
-      "note": "Research brief only; create a page only after SERP intent, product availability, evidence and editorial checks."
+      "note": "Research brief only; create a page only after SERP intent, product availability, evidence and editorial checks.",
+      "serpNotes": "SERP evidence not sufficiently sampled in this pass. Keep pending."
     },
     {
       "slugCandidate": "uk-portable-air-conditioners",
@@ -296,10 +303,11 @@
         "portable AC for bedroom"
       ],
       "status": "new_page_candidate",
-      "serpValidation": "pending",
+      "serpValidation": "confirmed_seasonal_serp",
       "guideOverlapCheck": "pending",
       "productEvidence": "pending",
-      "note": "Research brief only; create a page only after SERP intent, product availability, evidence and editorial checks."
+      "note": "Research brief only; create a page only after SERP intent, product availability, evidence and editorial checks.",
+      "serpNotes": "Which?, Guardian and Good Housekeeping have current tested roundups. Which? reports seasonal stock constraints into February/March 2027; page timing and verified stock matter."
     },
     {
       "slugCandidate": "uk-travel-backpacks",
@@ -311,10 +319,11 @@
         "carry on backpack laptop compartment"
       ],
       "status": "new_page_candidate",
-      "serpValidation": "pending",
+      "serpValidation": "confirmed_competitive_serp",
       "guideOverlapCheck": "pending",
       "productEvidence": "pending",
-      "note": "Research brief only; create a page only after SERP intent, product availability, evidence and editorial checks."
+      "note": "Research brief only; create a page only after SERP intent, product availability, evidence and editorial checks.",
+      "serpNotes": "Current commercial roundups compare carry-on dimensions, one-bag travel, laptop protection and airline rules. Needs an original airline-size matrix and exact product evidence to justify entry."
     },
     {
       "slugCandidate": "uk-carry-on-luggage",
@@ -326,10 +335,11 @@
         "lightweight carry on suitcase"
       ],
       "status": "new_page_candidate",
-      "serpValidation": "pending",
+      "serpValidation": "pending_serp_validation",
       "guideOverlapCheck": "pending",
       "productEvidence": "pending",
-      "note": "Research brief only; create a page only after SERP intent, product availability, evidence and editorial checks."
+      "note": "Research brief only; create a page only after SERP intent, product availability, evidence and editorial checks.",
+      "serpNotes": "Dedicated UK SERP sample not captured in this pass. Keep pending; avoid splitting from travel-backpack intent until SERP overlap is checked."
     },
     {
       "slugCandidate": "uk-pressure-washers",
@@ -341,10 +351,11 @@
         "compact pressure washer"
       ],
       "status": "new_page_candidate",
-      "serpValidation": "pending",
+      "serpValidation": "pending_serp_validation",
       "guideOverlapCheck": "pending",
       "productEvidence": "pending",
-      "note": "Research brief only; create a page only after SERP intent, product availability, evidence and editorial checks."
+      "note": "Research brief only; create a page only after SERP intent, product availability, evidence and editorial checks.",
+      "serpNotes": "Dedicated UK SERP sample not captured in this pass. Keep pending."
     },
     {
       "slugCandidate": "uk-robot-window-cleaners",
@@ -356,10 +367,11 @@
         "robot window cleaner frameless glass"
       ],
       "status": "new_page_candidate",
-      "serpValidation": "pending",
+      "serpValidation": "confirmed_niche_serp",
       "guideOverlapCheck": "pending",
       "productEvidence": "pending",
-      "note": "Research brief only; create a page only after SERP intent, product availability, evidence and editorial checks."
+      "note": "Research brief only; create a page only after SERP intent, product availability, evidence and editorial checks.",
+      "serpNotes": "Dedicated UK comparison guides exist and distinguish window size, frameless glass, docking stations and safety tethers. Potentially differentiated niche, but product claims and safety caveats need strong sourcing."
     }
   ],
   "policy": "Briefs only. Do not create public pages until metrics, SERP overlap, exact UK product identity, Amazon UK destination and editorial approval pass."
