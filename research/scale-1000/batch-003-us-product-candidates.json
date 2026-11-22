@@ -311,7 +311,7 @@
       "evidence": "Official US collection lists the 1000H model, 0.25-acre coverage, LiDAR and dual-camera AI vision, and 45% stated slope capability. Exact product page and availability require confirmation.",
       "buyerUse": "wire-free robotic mowing for smaller US lawns",
       "availabilityNote": "Official collection showed sold out at capture; retain as a research candidate only.",
-      "status": "candidate",
+      "status": "candidate_stock_check_required",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
       "sourceDate": "2026-11-22"
@@ -325,7 +325,7 @@
       "evidence": "Official page lists a cordless hard-floor washer with iLoop sensor, 22 kPa claimed suction, 180° lay-flat design, dual-side edge cleaning, 1 L clean-water tank and up to 75-minute runtime. These are manufacturer claims, not independent test results.",
       "buyerUse": "premium wet-dry floor washer for hard floors, pet hair and under-furniture reach",
       "availabilityNote": "Official page showed backordered/unavailable at capture; not ready for affiliate promotion.",
-      "status": "candidate",
+      "status": "candidate_stock_check_required",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
       "sourceDate": "2026-11-22"
@@ -339,7 +339,7 @@
       "evidence": "Official page describes a steam-assisted wet-dry hard-floor washer, 320°F internal heater output (not outlet steam temperature), claimed 22 kPa suction and up to 75-minute runtime. Temperature claims must retain the manufacturer's qualification.",
       "buyerUse": "steam-assisted wet-dry floor cleaning for dried-on kitchen messes and sealed hard floors",
       "availabilityNote": "Official page showed backordered/unavailable at capture; not ready for affiliate promotion.",
-      "status": "candidate",
+      "status": "candidate_stock_check_required",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
       "sourceDate": "2026-11-22"
@@ -353,7 +353,7 @@
       "evidence": "Official page lists a 180° lay-flat design, dual-layer anti-tangle scraper, heated self-cleaning/drying and up to 50-minute runtime. Intended for bare floors; verify exact tank and runtime conditions before comparison.",
       "buyerUse": "wet-dry floor washer for pet hair, daily spills and low-clearance furniture",
       "availabilityNote": "Official page showed backordered/unavailable at capture; not ready for affiliate promotion.",
-      "status": "candidate",
+      "status": "candidate_stock_check_required",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
       "sourceDate": "2026-11-22"
@@ -409,7 +409,7 @@
       "evidence": "Official page documents app scheduling, rain skips, flow detection and hub-based connectivity; valves require two AA batteries and a Wi-Fi hub, and support 2.4 GHz Wi-Fi.",
       "buyerUse": "automated hose and drip irrigation for garden beds, containers and outdoor taps",
       "availabilityNote": "Rachio product catalogue showed the kit out of stock at capture; keep candidate-only.",
-      "status": "candidate",
+      "status": "candidate_stock_check_required",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
       "sourceDate": "2026-11-22"
