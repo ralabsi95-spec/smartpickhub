@@ -1,6 +1,6 @@
 # SmartPickHub — Buyer Keyword Intelligence & Product Discovery
 
-**Updated:** 22 November 2026 14:40 UTC  
+**Updated:** 22 November 2026 14:55 UTC  
 **Primary market:** UK; US is a separately verified secondary market.  
 **Production catalogue:** 25 guides / 100 existing products. These are preserved and must never be re-imported.  
 **Primary KPI:** 1,000+ distinct buyer-intent keyword candidates, with real monthly search metrics prioritised where available. Product candidates are a separate evidence-gated research queue, not a 1,000-product publishing target.
@@ -122,7 +122,7 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 - No catalogue import, guide publication, ASIN update, production change, PR creation, merge or deployment was performed.
 
 
-## 22 November 2026 14:38 UTC — Quality and evidence audit
+## 22 November 2026 14:55 UTC — Quality and evidence audit
 - Audited the two UK product batches (44 + 18 = 62 records) and the US product batch (40 records). No normalized duplicate candidate names or model labels were found within the UK batches or within the US batch.
 - Found a schema weakness in all 62 UK product candidates: they lacked a dedicated `model` field and an explicit model-identity status. Added `model: null`, `modelIdentityStatus: "unverified"`, `sourceType` and `sourcePageSpecificity` fields rather than guessing model numbers from display names. These remain candidates, not verified products.
 - Added `modelIdentityStatus: "unverified"` and `sourcePageSpecificity` to the 40 US records for consistent quality gating. US source specificity: 26 product pages and 14 category/collection pages; category/collection sources still require exact model pages.
