@@ -1594,3 +1594,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Not build/browser-tested; not PR'd, merged or deployed. CI quota unknown.
 - Sitemap response could not be fetched from web/container due fetch failure and DNS resolution failure; cause unknown.
 - Next: get safe local checkout/build and inspect sitemap HTTP response; only then PR once Actions quota is verified.
+
+
+## 22 Nov 2026 09:10 UTC — sitemap and deployment checks
+- Browser view confirms robots allow-all + sitemap-index; sitemap index points to sitemap-0; child list displays 29 URLs (home, disclosure, guides index, 25 guides, how-we-research). Not raw HTTP status/header or proof Google parser accepted it. Browser extension script node in rendered XML is local extension injection, not server evidence.
+- Cloudflare dashboard tab displayed production main commit `89a17f4...`; GitHub compare shows main checkpoint `26636d4...` 57 commits ahead, 0 behind. Must refresh dashboard before treating this as current production lag.
+- Main catalogue all 25 editorialStatus approved; live production page shows research-led fallback and guide detail draft label. This is a deployment divergence lead, not proven until deployment dashboard + deployment marker refreshed.
+- Next: refresh Cloudflare deployment view, confirm live SHA/time and deployment marker; resolve deploy divergence before deploy/index actions.
+- Patch branch for public status cleanup remains unbuilt, not PR'd/merged/deployed. No prod changes/indexing/paid tools.
