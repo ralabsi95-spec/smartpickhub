@@ -127,3 +127,10 @@ A second review found 62 additional US phrases that were not punctuation duplica
 - Mammotion LUBA 3 1500, LUBA mini 2 and YUKA mini 2 1000H showed sold-out or variant-specific sold-out signals. Do not recommend until a positive exact-variant stock check.
 - Evidence matrix: `research/product-verification/us-product-page-evidence-2026-11-22.md`. No Amazon ASINs or affiliate destinations were inferred or accepted; verified ASIN count remains zero.
 - Across the 102 staged candidates, remaining source/variant resolution gaps are **31**: 28 UK category/landing-page records and 3 US family-variant records.
+
+
+## UK Batch 002 + US identity resolution — 22 November 2026
+- UK Batch 002 all 18 records now have manufacturer-supported identity. 5 exact manufacturer product pages (2 Husqvarna, 3 tado°), 12 named Navimow models in the official UK range listing, and 1 Resideo ATP921R3100 pack code in an official brochure. Do not misstate the 12 range-listing records as individual product pages.
+- UK total source coverage across 62 candidates: 37 dedicated product pages, 12 category/landing pages, 12 named models on an official product-range listing, 1 brochure-confirmed pack code. Manufacturer-supported identity is 41/62; 21 remain unverified. Navimow i210 LiDAR area capacity and i210 LiDAR Pro regional plug/package need resolution.
+- US F25 BX identity resolved from official URL/H1/body/manual; availability still ambiguous due a “not launched yet” notice on the same page as purchase controls. eufy SoloCam E50 zoom/resolution remains a hard hold due conflicting hero/spec table and S340 comparison content. No ASINs verified.
+- No candidate promoted to verified/publishable. Existing 25 guides / 100 products and production remain untouched.
