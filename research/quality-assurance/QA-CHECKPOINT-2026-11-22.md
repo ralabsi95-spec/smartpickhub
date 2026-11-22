@@ -52,7 +52,7 @@ One canonical phrase was retained from each pair. The US file was updated and it
 - All 102 records still have null/missing verified Amazon ASIN and affiliate URL. Do not synthesize ASINs or convert search phrases into direct product links.
 
 ### Current product verification blockers
-- UK: 62 records remain partial-fact candidates; stock has not been checked in this batch; exact regional SKU, full specs, Amazon UK ASIN/destination and image rights remain open.
+- UK: 62 records remain research candidates. Seventeen now have exact manufacturer product pages and model names captured (SKU still pending); 45 model names remain unverified. Of the 62, one Arete Two 10L page showed out-of-stock/pre-order and one DD128 appeared only as a sold-out refurbished outlet listing; other live stock checks remain open. Exact regional SKU, full specs, Amazon UK ASIN/destination and image rights remain open.
 - US: 40 records remain candidates; 8 are explicitly flagged for stock recheck. US sources include category/collection pages that need exact product-page evidence before promotion.
 - Variants, bundles, regional adapters, plug standards, voltage, HVAC compatibility and lawn-area variants must be resolved before records count as distinct market-specific products.
 - A product can be promoted only after exact identity, official specification/manual evidence, current regional availability, retailer destination, duplicate-family review, claim-level sourcing, and content/editorial QA pass.
@@ -97,6 +97,14 @@ A second review found 62 additional US phrases that were not punctuation duplica
 
 
 ### Source specificity counts
-- UK: 13 of 62 records point to a product page; 49 of 62 currently point to a category, collection or landing page.
+- UK: 28 of 62 records now point to a product page; 34 of 62 still point to a category, collection or landing page.
 - US: 26 of 40 records point to a product page; 14 of 40 point to a category or collection page.
-- All 102 candidates have a source URL, but **63 records still need a more specific product-page source** before exact SKU verification can be considered complete. This is a source-quality gap, not proof that the products do not exist.
+- All 102 candidates have a source URL, but **48 records still need a more specific product-page source** before exact SKU verification can be considered complete. This is a source-quality gap, not proof that the products do not exist.
+
+
+## UK dehumidifier evidence batch — 22 November 2026
+- Added exact manufacturer product-page links and model names to 17 of the 23 UK dehumidifier candidates. Seventeen records now carry `modelIdentityStatus: "manufacturer_model_name_confirmed_sku_pending"`; exact SKU and marketplace identity remain pending.
+- UK Batch 001 now has 26 product-page sources and 18 category/landing sources; UK Batch 002 has 2 product-page sources and 16 category/landing sources. Combined UK source specificity is 28 product pages / 34 category or landing pages.
+- Recorded two explicit availability caveats: MeacoDry Arete Two 10L showed out-of-stock/pre-order on its manufacturer page; EcoAir DD128 was surfaced only through a refurbished outlet page marked sold out. Do not recommend either as currently purchasable without a fresh positive stock check.
+- Added `research/product-verification/uk-dehumidifier-product-evidence-2026-11-22.md` with manufacturer claims, technical conditions, and remaining verification gates.
+- Across all 102 product candidates, 48 now still need a more specific product-page source (34 UK + 14 US). This is not the same as model verification: exact SKU, availability, independent evidence and Amazon ASIN remain unverified.
