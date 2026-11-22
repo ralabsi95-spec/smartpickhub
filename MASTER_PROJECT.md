@@ -1858,3 +1858,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Technical comparison guardrail: manufacturer extraction rates use different temperature/relative-humidity conditions (e.g. 20°C/60% RH versus 30°C/80% RH). Do not rank models by nominal L/day unless test conditions are normalised; separate desiccant and compressor use cases.
 - Evidence report: `research/product-verification/uk-dehumidifier-product-evidence-2026-11-22.md`. Full QA remains at `research/quality-assurance/QA-CHECKPOINT-2026-11-22.md`.
 - No guide or product was published, no live catalogue was changed, and no PR/merge/deployment occurred.
+
+
+## 22 November 2026 14:50 UTC — UK dehumidifier source coverage complete
+- All **23/23** UK dehumidifier candidates in Batch 001 now have exact manufacturer product pages and populated model names. Exact SKU and Amazon UK identity remain pending.
+- Six final product pages added: Meaco Arete One 6L/10L/12L/20L/25L and EcoAir DC14 MK2. Arete One and Arete Two remain distinct model families.
+- Seven manufacturer-page stock caveats recorded: Arete One 6L/10L/12L/20L low stock; Arete Two 10L and Arete One 25L out-of-stock/pre-order; DD128 only surfaced through a sold-out refurbished outlet listing.
+- Combined source specificity across staged products is now UK 34/62 product pages and US 26/40 product pages. **42 candidates** still need more specific product-page sources (28 UK + 14 US).
+- UK model-name status: 23 manufacturer-page-confirmed with exact SKU pending; 39 other UK candidate models and all 40 US models remain unverified. All 102 product candidates remain research-only; verified/publishable/ASIN-verified counts remain zero.
+- Updated the product evidence matrix, QA report and progress log. No production catalogue/page/metadata/Cloudflare/indexability change, no PR/merge/deployment, and no paid research was performed.
