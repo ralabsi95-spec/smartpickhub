@@ -1906,3 +1906,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - eufyCam S4 package choices are bundle configurations; do not inflate product count. Mammotion LUBA 3 capacity variants remain one family; 1500 area claim held due 0.37 acre vs 1,000m²/0.25 acre official-source conflict. LUBA mini 2 stock signals are conflicting/stale.
 - SoloCam E50 spec conflict remains unresolved; keep disputed zoom/resolution claims out of editorial content. No Amazon ASIN or affiliate link verified.
 - Project counts remain 102 staged candidates, 61/62 UK identities supported, 14/40 US model/family identities supported, 0 verified ASINs and 0 publishable. Production remains untouched.
+
+
+## 22 November 2026 — US identity evidence follow-up
+- Researched 13 previously unverified US candidate identities using official manufacturer pages. US identity evidence now 27/40 supported, 13 unresolved. Evidence matrix: `research/product-verification/us-model-identity-followup-2026-11-22.md`.
+- Updated `research/scale-1000/batch-003-us-product-candidates.json` with exact model-name evidence, SKU caveats and availability/technical holds. Levoit Core 600S-P model code LAP-C601S-WUS is manufacturer code only.
+- Critical holds: RIVER 3 Plus URL 404; DELTA 3 Plus preorder/sold-out UI conflict; three Tineco candidates unavailable/backordered; FHDD5034Y1 out of stock in selected area; F25 GT Gen 2 battery capacity mismatch; ecobee compatibility depends on HVAC system.
+- No ASINs, affiliate URLs or publishable candidates added. Production catalogue, pages, metadata, indexing, Cloudflare and `main` unchanged. No PR, merge or deployment.
