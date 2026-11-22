@@ -1847,3 +1847,14 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Detailed evidence and validation: `research/quality-assurance/QA-CHECKPOINT-2026-11-22.md`; `research/product-verification/us-wet-dry-floor-cleaners-product-checkpoint-2026-11-22.md`; `research/scale-1000/PROGRESS.md`.
 - No PR was opened, no merge/deployment occurred, and no product/page/indexability/analytics/Cloudflare settings were changed. No paid services or keyword credits were used.
 - Next: replace category/landing evidence with exact model pages for the 63 source gaps, capture manuals/specs and market stock, then verify direct Amazon ASIN/destination identity. Continue semantic/SERP review of the remaining keyword long tail. Paid keyword metric refresh remains gated on explicit cost approval.
+
+
+## 22 November 2026 14:45 UTC — UK dehumidifier manufacturer evidence batch
+- Improved source specificity for the UK dehumidifier candidate set: 17 of 23 candidates now point to exact manufacturer product pages and have a populated manufacturer model name; exact SKU and marketplace identity remain pending.
+- Added evidence for MeacoDry Arete Two 10L/12L/20L/25L, Meaco DD8L Pro, EcoAir DD1 Mini, DD1 Simple MK3, DD1 Classic MK6, DD2 Simple, DD3 Slimline, DD3 Simple, DD3 Classic MK3, DD128, DC12 MK3, DC26, Summit S and DDWH10.
+- Two availability caveats are explicitly recorded: Arete Two 10L showed out-of-stock/pre-order; DD128 appeared only as a sold-out refurbished outlet listing. Do not treat either as currently purchasable without a fresh positive stock check.
+- Updated UK candidate records with exact model page, source type, source specificity, manufacturer evidence notes and model-identity status. No ASINs or affiliate destinations were invented.
+- Combined source-specificity gaps across the 102 staged candidates are now 48 (34 UK and 14 US), down from 63. Seventeen UK model names are manufacturer-page-confirmed with SKU pending; 45 UK and all 40 US candidate model identities remain unverified.
+- Technical comparison guardrail: manufacturer extraction rates use different temperature/relative-humidity conditions (e.g. 20°C/60% RH versus 30°C/80% RH). Do not rank models by nominal L/day unless test conditions are normalised; separate desiccant and compressor use cases.
+- Evidence report: `research/product-verification/uk-dehumidifier-product-evidence-2026-11-22.md`. Full QA remains at `research/quality-assurance/QA-CHECKPOINT-2026-11-22.md`.
+- No guide or product was published, no live catalogue was changed, and no PR/merge/deployment occurred.
