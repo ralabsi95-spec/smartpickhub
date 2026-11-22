@@ -1853,3 +1853,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - No buying-guide URL received an impression in this returned window. This is not proof guides are unindexed; it only describes observed performance in this period.
 - Signal confirms initial Google Search visibility but is very early and not yet buyer-intent traffic. Continue tracking page/query dimensions over time; keep indexing diagnosis separate.
 - No production/site changes, PR, CI, merge, deployment, indexing submission or paid service.
+
+
+## 22 November 2026 — production template defect and full guide URL inspection
+- Confirmed the homepage and guide-library templates publicly display internal editorial workflow state ("Approved for publication") on guide cards. Main file SHAs: homepage `659746141c499bf7e240a4732923c918b47c092e`; guide index `7d9065c9912434887b984adc4c69ab385a253675`. All 25 catalogue entries contain the approved status. Detail template already suppresses this exact status.
+- Proposed minimal correction: remove only the status spans from homepage and guides index, preserve internal catalogue metadata and detail template behavior. Not implemented.
+- GSC inspected all 25 guides plus /guides/, /how-we-research/ and /affiliate-disclosure/: all 28 report NEUTRAL / URL is unknown to Google. Homepage remains indexed. This does not prove blocking or penalty and does not contradict homepage-only impressions.
+- Search performance available: 3 impressions, 0 clicks, homepage only, 19 Nov, USA desktop; no guide-level impressions in the returned period.
+- Sitemap fetch report unresolved; no sitemap change or index requests performed.
+- Next: build/test a minimal local patch and verify sitemap response/header behaviour using a genuinely free route. Check Actions quota before any PR; production changes require explicit approval.
