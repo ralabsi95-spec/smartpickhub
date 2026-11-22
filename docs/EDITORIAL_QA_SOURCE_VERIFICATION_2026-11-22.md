@@ -163,3 +163,20 @@ This pass checked region-sensitive electrical products, networking hardware, sec
 - TP-Link, Roborock, Levoit and NETGEAR all retain their current buyer-protective caveats; no evidence justifies removing them.
 - This was a targeted official-source pass, not a complete re-certification of all 100 products.
 - No production source, catalogue entry, guide, URL, affiliate destination, image or Cloudflare setting was changed. No PR, CI run, merge, deployment, indexing submission, product import or paid tool was used.
+
+
+## Additional regional/model checks — 22 Nov 2026, 08:15 UTC
+
+### Epson EF-21G UK vs EF21 US — keep the regional distinction explicit
+- Epson US identifies EpiqVision Mini EF21 model V11HB35320 as **Discontinued**: https://epson.com/For-Home/Projectors/Home-Cinema/Epson-EpiqVision-Mini-EF21-Portable-Smart-Laser-Projector-%E2%80%93-Opal-Green/p/V11HB35320
+- Epson UK lists the separate EF-21G, UK SKU V11HB35340, as **In stock** and specifies AC 100–240V, 50/60Hz: https://www.epson.co.uk/en_GB/products/projector/home-cinema/epson-ef-21g%2C-mini-laser-projector%2C-1%2C000-lumens%2C-up-to-150-inch-display%2C-google-tv%E2%84%A2-and-bluetooth-speaker%2C-portable/p/46374
+- Decision: the catalogue's US availability caution is supported, but it should remain clearly scoped to the US EF21 identifier. The UK EF-21G is not discontinued in the official UK listing reviewed. No change made.
+
+### Samsung Bespoke Jet AI regional voltage distinction — validated
+- Samsung US model VS28C9762UK/AA specification sheet states 120V / 60Hz: https://image-us.samsung.com/SamsungUS/home/05242023/VS28C9762UK_Bespoke_JetAI_National_V10.pdf
+- Samsung UK identifies its Bespoke Jet AI as VS28C9784QK/EU and lists it in the UK Bespoke Jet family: https://www.samsung.com/uk/vacuum-cleaners/bespoke-jet/ and https://www.samsung.com/uk/support/model.VS28C9784QK_EU/
+- Decision: the catalogue warning that US and UK identifiers are separate regional models is supported. Retain the instruction to choose the UK electrical package and check the exact kit/battery bundle.
+
+### Evidence limitations / status
+- These checks confirm the two existing regional caveats; they do not certify all products in the project.
+- No production source or product record changed. No PR, CI, merge, deployment, index request, product import or paid tool use.
