@@ -1779,3 +1779,18 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - EcoFlow UK search snapshot showed RIVER 2 sold out; its £ price/availability is volatile and must not be published. The Sangean MMR-88 DAB+ official page lists 850 mAh and 8-hour stated playtime; its 5V/0.3A USB output means it should not be positioned as a substantial phone power bank.
 - **No catalogue or production change:** no products, ASINs, affiliate links, prices, ratings, images or guide pages were added or changed. This is a research-only appendix and remains subject to exact-head CI and PR review.
 - Next: complete build/audit and Pages checks on this branch; inspect official manufacturer evidence for any additional UK/US candidates only if it materially improves comparison coverage. Merge documentation only if checks pass; keep all product intake gates intact.
+
+
+---
+
+## Session checkpoint — 22 November 2026 06:09 UTC
+
+- Latest verified main and production deployment marker: `26636d4359508b9af30eec498a22ffc005a81a72`. Live `deployment.json` confirms same commit, branch main, generated 2026-11-21T16:21:38.038Z.
+- Detailed handoff and evidence log: `docs/SESSION_HANDOFF_2026-11-22.md` on documentation branch `docs/handoff-2026-11-22-indexing-investigation`; not merged/deployed.
+- Google Search Console ownership is verified by owner screenshot. Homepage indexed; all 25 guides returned `URL is unknown to Google` in latest inspections. Sitemap reports remain `Couldn't fetch`; independent live extraction parses sitemap-index and 29 URLs, but this does not prove Google's Sitemap parser accepted them.
+- Crawl Stats screenshot: 16 requests / 90 days, 257 KB downloaded, 53 ms average response; host had no problems; 88% HTTP 200, 13% 404 (two requests, one known example /favicon.ico); robots, DNS and server connectivity fail rates acceptable.
+- Live content QA: /guides/ displays `Approved for publication` labels. Air Fryers guide includes phrase `in the captured data` and UK/Jordan wording. Full 25-guide scan pending; no copy edits made.
+- Read-only verification: live deployment marker, robots.txt, sitemap index and sitemap-0, guide hub and sample guide, GitHub main tree and source. `src/pages/robots.txt.js` generates robots.txt dynamically with Content-Type text/plain; charset=utf-8 and Cache-Control public, max-age=300; production allows crawling and points to sitemap-index; preview disallows all.
+- No production code/content/config changes, no product imports, no index requests, no paid tools/credits. No merge or deployment.
+- GitHub Actions quota restoration remains unverified; do not dispatch/rerun workflows before checking.
+- Next: raw HTTP status/headers/XML validation for sitemap and robots; exact locked Astro/sitemap versions; audit all 25 guides; then prepare minimal fix/rollback proposal.
