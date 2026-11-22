@@ -191,3 +191,10 @@ A second review found 62 additional US phrases that were not punctuation duplica
 - Added 8 manufacturer-sourced trend-led candidates (3 UK / 5 US) with direct product-page evidence. Total staged candidates now 110 (UK 65 / US 45). These are candidate identities, not publishable products.
 - Holds: Roberts SolarDAB 99 only surfaced refurbished/out of stock; DREO 733S has a 73/95-pint option/spec conflict. SKU/manual and exact marketplace/ASIN checks remain open for the rest.
 - Verified/publishable candidates 0; Amazon ASINs 0; affiliate destinations 0. No production catalogue/page change.
+
+
+## Aggregate identity coverage after trend-led batch 004
+- Staged candidates: **110 total** (UK 65 / US 45).
+- Manufacturer model/family identity supported: **UK 64/65** (one broken Dunelm source remains unresolved); **US 44/45** (EcoFlow RIVER 3 Plus source remains unresolved). Total 108/110 supported at model/family identity level.
+- This is not the same as SKU/variant confirmation or publishability. Roberts SolarDAB 99 remains unavailable (refurbished/out of stock); DREO 733S variant capacity mapping remains on hold. All eight new records are research only.
+- Amazon ASIN verified 0; affiliate destinations 0; publishable 0. Production remains 25 guides / 100 products.
