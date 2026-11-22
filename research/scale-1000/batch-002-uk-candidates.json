@@ -42,7 +42,11 @@
         "Amazon UK destination and ASIN",
         "duplicate/model-variant resolution",
         "image rights if image proposed"
-      ]
+      ],
+      "model": null,
+      "modelIdentityStatus": "unverified",
+      "sourceType": "manufacturer-or-retailer category or collection page",
+      "sourcePageSpecificity": "category_or_landing_page"
     },
     {
       "candidateId": "sp1000-046",
@@ -73,7 +77,11 @@
         "Amazon UK destination and ASIN",
         "duplicate/model-variant resolution",
         "image rights if image proposed"
-      ]
+      ],
+      "model": null,
+      "modelIdentityStatus": "unverified",
+      "sourceType": "manufacturer-or-retailer category or collection page",
+      "sourcePageSpecificity": "category_or_landing_page"
     },
     {
       "candidateId": "sp1000-047",
@@ -104,7 +112,11 @@
         "Amazon UK destination and ASIN",
         "duplicate/model-variant resolution",
         "image rights if image proposed"
-      ]
+      ],
+      "model": null,
+      "modelIdentityStatus": "unverified",
+      "sourceType": "manufacturer-or-retailer category or collection page",
+      "sourcePageSpecificity": "category_or_landing_page"
     },
     {
       "candidateId": "sp1000-048",
@@ -135,7 +147,11 @@
         "Amazon UK destination and ASIN",
         "duplicate/model-variant resolution",
         "image rights if image proposed"
-      ]
+      ],
+      "model": null,
+      "modelIdentityStatus": "unverified",
+      "sourceType": "manufacturer-or-retailer category or collection page",
+      "sourcePageSpecificity": "category_or_landing_page"
     },
     {
       "candidateId": "sp1000-049",
@@ -166,7 +182,11 @@
         "Amazon UK destination and ASIN",
         "duplicate/model-variant resolution",
         "image rights if image proposed"
-      ]
+      ],
+      "model": null,
+      "modelIdentityStatus": "unverified",
+      "sourceType": "manufacturer-or-retailer category or collection page",
+      "sourcePageSpecificity": "category_or_landing_page"
     },
     {
       "candidateId": "sp1000-050",
@@ -197,7 +217,11 @@
         "Amazon UK destination and ASIN",
         "duplicate/model-variant resolution",
         "image rights if image proposed"
-      ]
+      ],
+      "model": null,
+      "modelIdentityStatus": "unverified",
+      "sourceType": "manufacturer-or-retailer category or collection page",
+      "sourcePageSpecificity": "category_or_landing_page"
     },
     {
       "candidateId": "sp1000-051",
@@ -228,7 +252,11 @@
         "Amazon UK destination and ASIN",
         "duplicate/model-variant resolution",
         "image rights if image proposed"
-      ]
+      ],
+      "model": null,
+      "modelIdentityStatus": "unverified",
+      "sourceType": "manufacturer-or-retailer category or collection page",
+      "sourcePageSpecificity": "category_or_landing_page"
     },
     {
       "candidateId": "sp1000-052",
@@ -259,7 +287,11 @@
         "Amazon UK destination and ASIN",
         "duplicate/model-variant resolution",
         "image rights if image proposed"
-      ]
+      ],
+      "model": null,
+      "modelIdentityStatus": "unverified",
+      "sourceType": "manufacturer-or-retailer category or collection page",
+      "sourcePageSpecificity": "category_or_landing_page"
     },
     {
       "candidateId": "sp1000-053",
@@ -290,7 +322,11 @@
         "Amazon UK destination and ASIN",
         "duplicate/model-variant resolution",
         "image rights if image proposed"
-      ]
+      ],
+      "model": null,
+      "modelIdentityStatus": "unverified",
+      "sourceType": "manufacturer-or-retailer category or collection page",
+      "sourcePageSpecificity": "category_or_landing_page"
     },
     {
       "candidateId": "sp1000-054",
@@ -321,7 +357,11 @@
         "Amazon UK destination and ASIN",
         "duplicate/model-variant resolution",
         "image rights if image proposed"
-      ]
+      ],
+      "model": null,
+      "modelIdentityStatus": "unverified",
+      "sourceType": "manufacturer-or-retailer category or collection page",
+      "sourcePageSpecificity": "category_or_landing_page"
     },
     {
       "candidateId": "sp1000-055",
@@ -352,7 +392,11 @@
         "Amazon UK destination and ASIN",
         "duplicate/model-variant resolution",
         "image rights if image proposed"
-      ]
+      ],
+      "model": null,
+      "modelIdentityStatus": "unverified",
+      "sourceType": "manufacturer-or-retailer landing page",
+      "sourcePageSpecificity": "category_or_landing_page"
     },
     {
       "candidateId": "sp1000-056",
@@ -383,7 +427,11 @@
         "Amazon UK destination and ASIN",
         "duplicate/model-variant resolution",
         "image rights if image proposed"
-      ]
+      ],
+      "model": null,
+      "modelIdentityStatus": "unverified",
+      "sourceType": "manufacturer-or-retailer landing page",
+      "sourcePageSpecificity": "category_or_landing_page"
     },
     {
       "candidateId": "sp1000-057",
@@ -414,7 +462,11 @@
         "Amazon UK destination and ASIN",
         "duplicate/model-variant resolution",
         "image rights if image proposed"
-      ]
+      ],
+      "model": null,
+      "modelIdentityStatus": "unverified",
+      "sourceType": "manufacturer-or-retailer landing page",
+      "sourcePageSpecificity": "category_or_landing_page"
     },
     {
       "candidateId": "sp1000-058",
@@ -445,7 +497,11 @@
         "Amazon UK destination and ASIN",
         "duplicate/model-variant resolution",
         "image rights if image proposed"
-      ]
+      ],
+      "model": null,
+      "modelIdentityStatus": "unverified",
+      "sourceType": "manufacturer-or-retailer landing page",
+      "sourcePageSpecificity": "category_or_landing_page"
     },
     {
       "candidateId": "sp1000-059",
@@ -476,7 +532,11 @@
         "Amazon UK destination and ASIN",
         "duplicate/model-variant resolution",
         "image rights if image proposed"
-      ]
+      ],
+      "model": null,
+      "modelIdentityStatus": "unverified",
+      "sourceType": "manufacturer-or-retailer product page",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "candidateId": "sp1000-060",
@@ -507,7 +567,11 @@
         "Amazon UK destination and ASIN",
         "duplicate/model-variant resolution",
         "image rights if image proposed"
-      ]
+      ],
+      "model": null,
+      "modelIdentityStatus": "unverified",
+      "sourceType": "manufacturer-or-retailer product page",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "candidateId": "sp1000-061",
@@ -538,7 +602,11 @@
         "Amazon UK destination and ASIN",
         "duplicate/model-variant resolution",
         "image rights if image proposed"
-      ]
+      ],
+      "model": null,
+      "modelIdentityStatus": "unverified",
+      "sourceType": "manufacturer-or-retailer category or collection page",
+      "sourcePageSpecificity": "category_or_landing_page"
     },
     {
       "candidateId": "sp1000-062",
@@ -569,7 +637,11 @@
         "Amazon UK destination and ASIN",
         "duplicate/model-variant resolution",
         "image rights if image proposed"
-      ]
+      ],
+      "model": null,
+      "modelIdentityStatus": "unverified",
+      "sourceType": "manufacturer-or-retailer landing page",
+      "sourcePageSpecificity": "category_or_landing_page"
     }
   ]
 }
