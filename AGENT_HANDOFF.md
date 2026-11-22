@@ -1,3 +1,13 @@
+
+
+## Latest research checkpoint — 22 November 2026 (US identity follow-up)
+- US model/family identity evidence: **27/40 supported; 13/40 unresolved**. This supersedes the previous 14/40 checkpoint.
+- New exact manufacturer evidence is recorded in `research/product-verification/us-model-identity-followup-2026-11-22.md`; candidate data updated in `research/scale-1000/batch-003-us-product-candidates.json`.
+- Thirteen names resolved at model/family level only; exact SKU/package and Amazon.com ASIN still pending. Levoit Core 600S-P manufacturer code LAP-C601S-WUS is captured, not an ASIN.
+- Holds: EcoFlow RIVER 3 Plus old manufacturer URL returns 404; EcoFlow DELTA 3 Plus stock UI conflicts; three Tineco models show unavailable/backordered; Frigidaire FHDD5034Y1 out of stock in selected area; Roborock F25 GT Gen 2 battery specification conflicts; ecobee requires HVAC compatibility screening.
+- Total staged candidates remain 102; Amazon ASIN verified 0; affiliate destinations 0; publishable 0. Production catalogue remains 25 guides / 100 products and unchanged.
+- Branch remains `research/scale-1000-batch-001`, isolated from `main`; do not open/merge PR or deploy without owner approval. Recheck branch SHA and CI before handoff.
+- Next: resolve the remaining 13 US identities and the broken RIVER 3 Plus source; capture manuals/SKUs and option-level availability; then verify exact Amazon listings. Do not count model identity as a product ready to publish.
 **Latest checkpoint — 22 November 2026 14:55 UTC**
 
 - Immediate KPI: **1,000+ distinct buyer-intent keyword phrases**, with real monthly search metrics prioritised where available. This is not a 1,000-product publishing target.
