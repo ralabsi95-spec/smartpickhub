@@ -1867,3 +1867,13 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Combined source specificity across staged products is now UK 34/62 product pages and US 26/40 product pages. **42 candidates** still need more specific product-page sources (28 UK + 14 US).
 - UK model-name status: 23 manufacturer-page-confirmed with exact SKU pending; 39 other UK candidate models and all 40 US models remain unverified. All 102 product candidates remain research-only; verified/publishable/ASIN-verified counts remain zero.
 - Updated the product evidence matrix, QA report and progress log. No production catalogue/page/metadata/Cloudflare/indexability change, no PR/merge/deployment, and no paid research was performed.
+
+
+## 22 November 2026 14:55 UTC — US product-page evidence batch completed
+- All 14 US candidate records that previously relied on category/collection sources now have manufacturer product or product-family pages. US source coverage is 37 exact product pages + 3 family pages; zero category-only sources remain.
+- The three family pages requiring exact variant/package SKU resolution are eufyCam S4, Mammotion LUBA 3 AWD and LUBA mini 2 AWD.
+- Manufacturer model/family evidence is now captured for 14 US candidates; 26 US model identities remain unverified. Combined with UK status, 23 UK model names are manufacturer-page-confirmed with SKU pending; 39 other UK models remain unverified.
+- Key technical conflicts documented: eufy SoloCam E50 has conflicting zoom/resolution descriptions between product marketing and technical table; Roborock F25 BX page title metadata conflicts with URL/body. Do not use disputed claims until resolved.
+- Mammotion LUBA 3 1500, LUBA mini 2 and YUKA mini 2 1000H show sold-out or variant-specific sold-out signals; exact stock must be rechecked before recommendation.
+- Remaining source/variant resolution gaps across 102 staged product candidates: **31** (28 UK category/landing pages + 3 US family-variant SKU gaps). Amazon ASIN/affiliate destinations verified: 0.
+- Evidence file: `research/product-verification/us-product-page-evidence-2026-11-22.md`. QA and progress documents updated. No live catalogue, page, indexability or production setting changed; no PR/merge/deployment.
