@@ -177,3 +177,11 @@ A second review found 62 additional US phrases that were not punctuation duplica
 - New phrases are within-market deduplicated buyer-task terms; new metrics remain unmeasured. No monthly trend series exists.
 - Directional trend evidence: UK Uswitch warming gadget survey; UK Be Ready campaign-linked retail reports; US IHA home-environment purchase-intent survey; Google Holiday 100. Evidence is not search volume or a forecast.
 - No product/page publication or production change; no paid research credits used.
+
+
+## Keyword expansion QA reconciliation — 22 November 2026
+- Recomputed cluster-level counts and intent breakdowns after expansion; cluster totals now reconcile to keyword record totals in both markets.
+- Normalized duplicate check: UK 2,028 records / 2,028 unique normalized phrases / 0 duplicates; US 1,850 / 1,850 / 0 duplicates.
+- UK intent: 366 transactional / 1,662 commercial; 8 exact phrases have cached metrics and 2,020 remain unmeasured. Existing UK metric cache contains 32 saved records; do not imply all 32 are exact matches in the generated universe.
+- US intent: 366 transactional / 1,484 commercial; 0 measured / 1,850 unmeasured. US metrics are not inferred from UK.
+- Directional trend tags: UK 90 phrases, US 180 phrases. Monthly trend history remains unavailable; trendDataAvailable=false in both files.
