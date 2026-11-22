@@ -212,3 +212,10 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 - Availability holds: Tineco three models are marked Unavailable/backordered; Frigidaire FHDD5034Y1 is out of stock in selected delivery area; EcoFlow DELTA 3 Plus has conflicting pre-order/sold-out UI; manufacturer-store stock is not Amazon stock.
 - Technical hold: Roborock F25 GT Gen 2 battery data conflicts between 4,000mAh specifications and 2,500mAh FAQ. Do not use the battery capacity until resolved. ecobee HVAC compatibility is configuration-specific.
 - Evidence: `research/product-verification/us-model-identity-followup-2026-11-22.md`. No ASIN/affiliate URLs verified; publishable candidates remain 0; production catalogue and pages unchanged.
+
+
+## 22 November 2026 — US model identity verification follow-up batch 2
+- Checked the final 12 remaining US candidates against official manufacturer sources: Whynter ARC-1050XPH and ARC-102CS; Rachio 3 and Smart Hose Timer; Aqara U100; Schlage Encode Plus and Encode deadbolt; Greenworks GPW2003, GPW2303A and GPW3001; Kärcher K 4 Power Control and K2300PS.
+- US model/family identity coverage rises to **39/40**; only EcoFlow RIVER 3 Plus remains unresolved because the staged official URL returns 404. Manufacturer identifiers now captured include Rachio 8-/16-zone SKUs, SHVK001, Whynter SKU/UPC, Schlage BE499/BE489, Greenworks SKUs 5118202/5128502/5113902, and Kärcher order numbers 1.324-045.0 / 1.106-222.0.
+- QA cautions: Rachio 8-/16-zone variants remain one family; Schlage deadbolt vs lever must not be conflated; Whynter ARC-102CS current 2024 manual supersedes conflicting older 2019 specs; pressure-washer flow rates must retain their PSI test point.
+- Evidence: `research/product-verification/us-model-identity-followup-batch-2-2026-11-22.md`. ASINs verified 0; affiliate destinations 0; publishable 0; no production changes.
