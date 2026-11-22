@@ -1838,3 +1838,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Epson EF21 US SKU V11HB35320 is marked discontinued by Epson US; Epson UK EF-21G SKU V11HB35340 remains listed in stock and specifies 100–240V, 50/60Hz. Keep the availability caution explicitly scoped to the US variant.
 - Samsung US Bespoke Jet AI VS28C9762UK/AA is rated 120V/60Hz; Samsung UK lists separate VS28C9784QK/EU model. Existing regional electrical warning remains appropriate.
 - Detailed official-source evidence is recorded in the 22 Nov source-verification report on the documentation branch. No production content changed.
+
+
+## 22 November 2026 — Google Search visibility signal
+- Owner-provided Google Search Console notification dated 21 Nov 2026 states Google began collecting Search impressions for `https://smartpickhub.pages.dev/` on 19 Nov 2026 and that pages from the site are appearing in Google results for some queries.
+- Treat this as confirmed property-level Search visibility/impression collection, not proof that all 25 buying guides are indexed. The notification does not identify URLs, queries, impression totals or clicks.
+- The separate sitemap “Couldn't fetch” and Page indexing “Processing data” reports remain unresolved. Earlier URL Inspection results showing the 25 guide URLs as “URL is unknown to Google” must be retained as timestamped URL-level evidence; do not infer the email resolves those checks.
+- Next: inspect GSC Performance > Search results, Queries and Pages, using a date range from 19 Nov onward to identify the actual queries, landing URLs, impressions and clicks. Do not repeat manual indexing requests while the daily quota error persists.
