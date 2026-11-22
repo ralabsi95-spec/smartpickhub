@@ -1887,3 +1887,9 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Navimow i210 LiDAR area capacity remains inconsistent between the current UK homepage (1000m²) and an older indexed comparison (600m²); do not use the capacity claim pending exact SKU/manual. Navimow i210 LiDAR Pro is explicitly an EU version with UK adapter. Preserve tado° X wiring/Thread and compatibility constraints.
 - US F25 BX identity is resolved by official product URL, H1/body and linked manual; launch/stock status remains ambiguous due a not-yet-launched notice on the same page as purchase controls. eufy SoloCam E50 zoom/resolution remains on hold due conflicting marketing and technical content plus S340-labelled comparison data.
 - US evidence report updated at `research/product-verification/us-product-page-evidence-2026-11-22.md`. No product has passed the Amazon identity/ASIN gate.
+
+
+## 22 November 2026 — UK product source verification continued
+- UK Batch 001 remaining heated-airer and purifier candidates were checked against exact pages. 20/21 identities supported; one Dunelm A-frame URL returned 404. Evidence: research/product-verification/uk-heated-airers-air-purifiers-evidence-2026-11-22.md.
+- UK overall: 61/62 identities supported (Batch 001 43/44; Batch 002 18/18). This is manufacturer/retailer identity evidence, not Amazon listing validation. SKU/EAN, package, stock and affiliate URL checks remain pending; verified ASIN=0; publishable=0.
+- Legacy and stock holds: Philips AC1214/60 and AC2936/33 discontinued; AC3033/30R1 refurbished only; Lakeland Mini pre-order; Dunelm Black + Decker Winged Airer unavailable at capture; Blueair 211i Max/511i Max notify-me. Preserve model and market distinctions.
