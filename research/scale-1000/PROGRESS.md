@@ -1,6 +1,6 @@
 # SmartPickHub — Buyer Keyword Intelligence & Product Discovery
 
-**Updated:** 22 November 2026 14:38 UTC  
+**Updated:** 22 November 2026 14:40 UTC  
 **Primary market:** UK; US is a separately verified secondary market.  
 **Production catalogue:** 25 guides / 100 existing products. These are preserved and must never be re-imported.  
 **Primary KPI:** 1,000+ distinct buyer-intent keyword candidates, with real monthly search metrics prioritised where available. Product candidates are a separate evidence-gated research queue, not a 1,000-product publishing target.
