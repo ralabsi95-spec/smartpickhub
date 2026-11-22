@@ -10,7 +10,7 @@
   "purpose": "US-localized buyer-intent keyword research. Separate from UK; phrases are opportunities, not measured demand or pages to publish.",
   "summary": {
     "uniqueKeywordCandidates": 1850,
-    "productTopics": 62,
+    "productTopics": 66,
     "transactionalKeywords": 366,
     "commercialKeywords": 1484,
     "exactUSMetricsAvailable": 0,
@@ -40,8 +40,8 @@
     {
       "clusterId": "cleaning-floorcare",
       "count": 114,
-      "transactional": 6,
-      "commercial": 36
+      "transactional": 30,
+      "commercial": 84
     },
     {
       "clusterId": "kitchen-appliances",
@@ -52,44 +52,44 @@
     {
       "clusterId": "home-comfort",
       "count": 305,
-      "transactional": 18,
-      "commercial": 107
+      "transactional": 78,
+      "commercial": 227
     },
     {
       "clusterId": "garden-tools",
       "count": 100,
-      "transactional": 9,
-      "commercial": 55
+      "transactional": 21,
+      "commercial": 79
     },
     {
       "clusterId": "smart-home-energy",
       "count": 56,
-      "transactional": 3,
-      "commercial": 18
+      "transactional": 15,
+      "commercial": 41
     },
     {
       "clusterId": "home-networking",
       "count": 77,
-      "transactional": 6,
-      "commercial": 35
+      "transactional": 18,
+      "commercial": 59
     },
     {
       "clusterId": "smart-home-security",
       "count": 137,
-      "transactional": 9,
-      "commercial": 56
+      "transactional": 33,
+      "commercial": 104
     },
     {
       "clusterId": "portable-power",
       "count": 122,
-      "transactional": 12,
-      "commercial": 74
+      "transactional": 24,
+      "commercial": 98
     },
     {
       "clusterId": "computer-accessories",
       "count": 188,
-      "transactional": 21,
-      "commercial": 131
+      "transactional": 33,
+      "commercial": 155
     },
     {
       "clusterId": "home-office",
@@ -154,8 +154,8 @@
     {
       "clusterId": "car-tech",
       "count": 78,
-      "transactional": 6,
-      "commercial": 36
+      "transactional": 18,
+      "commercial": 60
     },
     {
       "clusterId": "travel-gear",
