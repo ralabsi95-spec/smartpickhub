@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.0",
+  "createdAt": "2026-11-22",
+  "market": "US",
+  "language": "en-US",
+  "existingGuideRefreshes": [
+    {
+      "type": "existing_guide_refresh",
+      "slug": "home-office-ergonomics-us-uk",
+      "title": "Home Office Ergonomics: Practical Keyboard and Mouse Options for US & UK Buyers",
+      "market": "US",
+      "status": "brief_to_prepare",
+      "action": "Add US-localized keyword mapping and confirm US-specific SKU/voltage/plug/warranty/availability; preserve existing guide URL.",
+      "productsAlreadyInGuide": 4,
+      "doNotCreateDuplicate": true
+    },
+    {
+      "type": "existing_guide_refresh",
+      "slug": "portable-power-travel-tech-us-uk",
+      "title": "Portable Power & Travel Tech: Power Banks and Compact Power Stations",
+      "market": "US",
+      "status": "brief_to_prepare",
+      "action": "Add US-localized keyword mapping and confirm US-specific SKU/voltage/plug/warranty/availability; preserve existing guide URL.",
+      "productsAlreadyInGuide": 4,
+      "doNotCreateDuplicate": true
+    },
+    {
+      "type": "existing_guide_refresh",
+      "slug": "smart-home-security-cameras-us-uk",
+      "title": "Smart Home Security Cameras: Battery, Solar and Wi-Fi Options",
+      "market": "US",
+      "status": "brief_to_prepare",
+      "action": "Add US-localized keyword mapping and confirm US-specific SKU/voltage/plug/warranty/availability; preserve existing guide URL.",
+      "productsAlreadyInGuide": 4,
+      "doNotCreateDuplicate": true
+    },
+    {
+      "type": "existing_guide_refresh",
+      "slug": "wifi-7-home-mesh-routers-us-uk",
+      "title": "Wi-Fi 7 Home Routers & Mesh Systems: Options for US and UK Homes",
+      "market": "US",
+      "status": "brief_to_prepare",
+      "action": "Add US-localized keyword mapping and confirm US-specific SKU/voltage/plug/warranty/availability; preserve existing guide URL.",
+      "productsAlreadyInGuide": 4,
+      "doNotCreateDuplicate": true
+    },
+    {
+      "type": "existing_guide_refresh",
+      "slug": "usb-c-gan-chargers-us-uk",
+      "title": "USB-C GaN Chargers: Multi-Port Laptop and Phone Charging for US & UK",
+      "market": "US",
+      "status": "brief_to_prepare",
+      "action": "Add US-localized keyword mapping and confirm US-specific SKU/voltage/plug/warranty/availability; preserve existing guide URL.",
+      "productsAlreadyInGuide": 4,
+      "doNotCreateDuplicate": true
+    },
+    {
+      "type": "existing_guide_refresh",
+      "slug": "webcams-video-calls-streaming-us-uk",
+      "title": "Best Webcams for Video Calls and Streaming: 4K and 1080p Options for US & UK",
+      "market": "US",
+      "status": "brief_to_prepare",
+      "action": "Add US-localized keyword mapping and confirm US-specific SKU/voltage/plug/warranty/availability; preserve existing guide URL.",
+      "productsAlreadyInGuide": 4,
+      "doNotCreateDuplicate": true
+    },
+    {
+      "type": "existing_guide_refresh",
+      "slug": "4k-usb-c-monitors-home-office-us-uk",
+      "title": "4K USB-C Monitors for Home Offices and Creators: US & UK Buying Guide",
+      "market": "US",
+      "status": "brief_to_prepare",
+      "action": "Add US-localized keyword mapping and confirm US-specific SKU/voltage/plug/warranty/availability; preserve existing guide URL.",
+      "productsAlreadyInGuide": 4,
+      "doNotCreateDuplicate": true
+    },
+    {
+      "type": "existing_guide_refresh",
+      "slug": "thunderbolt-usb-c-docking-stations-us-uk",
+      "title": "Best Thunderbolt and USB-C Docking Stations for Laptop Setups: US & UK Guide",
+      "market": "US",
+      "status": "brief_to_prepare",
+      "action": "Add US-localized keyword mapping and confirm US-specific SKU/voltage/plug/warranty/availability; preserve existing guide URL.",
+      "productsAlreadyInGuide": 4,
+      "doNotCreateDuplicate": true
+    },
+    {
+      "type": "existing_guide_refresh",
+      "slug": "portable-ssd-external-storage-us-uk",
+      "title": "Best Portable SSDs for Fast External Storage: US & UK Buying Guide",
+      "market": "US",
+      "status": "brief_to_prepare",
+      "action": "Add US-localized keyword mapping and confirm US-specific SKU/voltage/plug/warranty/availability; preserve existing guide URL.",
+      "productsAlreadyInGuide": 4,
+      "doNotCreateDuplicate": true
+    },
+    {
+      "type": "existing_guide_refresh",
+      "slug": "air-fryers-us-uk",
+      "title": "Air Fryers for US & UK Kitchens: Single-Basket, Dual-Zone and Steam Models",
+      "market": "US",
+      "status": "brief_to_prepare",
+      "action": "Add US-localized keyword mapping and confirm US-specific SKU/voltage/plug/warranty/availability; preserve existing guide URL.",
+      "productsAlreadyInGuide": 4,
+      "doNotCreateDuplicate": true
+    },
+    {
+      "type": "existing_guide_refresh",
+      "slug": "cordless-vacuum-cleaners-us-uk",
+      "title": "Cordless Vacuum Cleaners: Comparing Stick Vacuums for US & UK Homes",
+      "market": "US",
+      "status": "brief_to_prepare",
+      "action": "Add US-localized keyword mapping and confirm US-specific SKU/voltage/plug/warranty/availability; preserve existing guide URL.",
+      "productsAlreadyInGuide": 4,
+      "doNotCreateDuplicate": true
+    },
+    {
+      "type": "existing_guide_refresh",
+      "slug": "cordless-drills-us-uk",
+      "title": "Cordless Drills for DIY and Home Projects: US & UK Buying Guide",
+      "market": "US",
+      "status": "brief_to_prepare",
+      "action": "Add US-localized keyword mapping and confirm US-specific SKU/voltage/plug/warranty/availability; preserve existing guide URL.",
+      "productsAlreadyInGuide": 4,
+      "doNotCreateDuplicate": true
+    },
+    {
+      "type": "existing_guide_refresh",
+      "slug": "robot-vacuum-mops-us-uk",
+      "title": "Robot Vacuum and Mop Combos: Navigation, Docking and Floor-Care Choices",
+      "market": "US",
+      "status": "brief_to_prepare",
+      "action": "Add US-localized keyword mapping and confirm US-specific SKU/voltage/plug/warranty/availability; preserve existing guide URL.",
+      "productsAlreadyInGuide": 4,
+      "doNotCreateDuplicate": true
+    },
+    {
+      "type": "existing_guide_refresh",
+      "slug": "noise-cancelling-headphones-us-uk",
+      "title": "Noise-Cancelling Over-Ear Headphones: Comfort, Calls and Battery Choices",
+      "market": "US",
+      "status": "brief_to_prepare",
+      "action": "Add US-localized keyword mapping and confirm US-specific SKU/voltage/plug/warranty/availability; preserve existing guide URL.",
+      "productsAlreadyInGuide": 4,
+      "doNotCreateDuplicate": true
+    },
+    {
+      "type": "existing_guide_refresh",
+      "slug": "wireless-earbuds-us-uk",
+      "title": "Wireless Earbuds: ANC, Fit, Battery and Phone Compatibility",
+      "market": "US",
+      "status": "brief_to_prepare",
+      "action": "Add US-localized keyword mapping and confirm US-specific SKU/voltage/plug/warranty/availability; preserve existing guide URL.",
+      "productsAlreadyInGuide": 4,
+      "doNotCreateDuplicate": true
+    },
+    {
+      "type": "existing_guide_refresh",
+      "slug": "home-air-purifiers-us-uk",
+      "title": "Home Air Purifiers: Room Size, Filters and Smart Features",
+      "market": "US",
+      "status": "brief_to_prepare",
+      "action": "Add US-localized keyword mapping and confirm US-specific SKU/voltage/plug/warranty/availability; preserve existing guide URL.",
+      "productsAlreadyInGuide": 4,
+      "doNotCreateDuplicate": true
+    },
+    {
+      "type": "existing_guide_refresh",
+      "slug": "espresso-coffee-machines-us-uk",
+      "title": "Home Espresso Machines: UK Sage Models Compared (US Breville Equivalents)",
+      "market": "US",
+      "status": "brief_to_prepare",
+      "action": "Add US-localized keyword mapping and confirm US-specific SKU/voltage/plug/warranty/availability; preserve existing guide URL.",
+      "productsAlreadyInGuide": 4,
+      "doNotCreateDuplicate": true
+    },
+    {
+      "type": "existing_guide_refresh",
+      "slug": "tablets-for-work-study-us-uk",
+      "title": "Tablets for Work, Study and Everyday Use: iPad Models Compared",
+      "market": "US",
+      "status": "brief_to_prepare",
+      "action": "Add US-localized keyword mapping and confirm US-specific SKU/voltage/plug/warranty/availability; preserve existing guide URL.",
+      "productsAlreadyInGuide": 4,
+      "doNotCreateDuplicate": true
+    },
+    {
+      "type": "existing_guide_refresh",
+      "slug": "dash-cams-us-uk",
+      "title": "Dash Cameras: Resolution, Field of View and Parking Features",
+      "market": "US",
+      "status": "brief_to_prepare",
+      "action": "Add US-localized keyword mapping and confirm US-specific SKU/voltage/plug/warranty/availability; preserve existing guide URL.",
+      "productsAlreadyInGuide": 4,
+      "doNotCreateDuplicate": true
+    },
+    {
+      "type": "existing_guide_refresh",
+      "slug": "portable-projectors-us-uk",
+      "title": "Portable Projectors: Brightness, Battery and Streaming Features",
+      "market": "US",
+      "status": "brief_to_prepare",
+      "action": "Add US-localized keyword mapping and confirm US-specific SKU/voltage/plug/warranty/availability; preserve existing guide URL.",
+      "productsAlreadyInGuide": 4,
+      "doNotCreateDuplicate": true
+    },
+    {
+      "type": "existing_guide_refresh",
+      "slug": "home-nas-storage-us-uk",
+      "title": "Home and Small-Business NAS: Drive Bays, Network Ports and Expansion",
+      "market": "US",
+      "status": "brief_to_prepare",
+      "action": "Add US-localized keyword mapping and confirm US-specific SKU/voltage/plug/warranty/availability; preserve existing guide URL.",
+      "productsAlreadyInGuide": 4,
+      "doNotCreateDuplicate": true
+    },
+    {
+      "type": "existing_guide_refresh",
+      "slug": "electric-toothbrushes-us-uk",
+      "title": "Electric Toothbrushes: Pressure Sensors, Modes and App Guidance",
+      "market": "US",
+      "status": "brief_to_prepare",
+      "action": "Add US-localized keyword mapping and confirm US-specific SKU/voltage/plug/warranty/availability; preserve existing guide URL.",
+      "productsAlreadyInGuide": 4,
+      "doNotCreateDuplicate": true
+    },
+    {
+      "type": "existing_guide_refresh",
+      "slug": "gaming-mice-us-uk",
+      "title": "Wireless Gaming Mice: Shape, Weight, Sensor and Connection",
+      "market": "US",
+      "status": "brief_to_prepare",
+      "action": "Add US-localized keyword mapping and confirm US-specific SKU/voltage/plug/warranty/availability; preserve existing guide URL.",
+      "productsAlreadyInGuide": 4,
+      "doNotCreateDuplicate": true
+    },
+    {
+      "type": "existing_guide_refresh",
+      "slug": "smartwatches-us-uk",
+      "title": "Smartwatches for Everyday Use and Sport: Apple and Garmin Compared",
+      "market": "US",
+      "status": "brief_to_prepare",
+      "action": "Add US-localized keyword mapping and confirm US-specific SKU/voltage/plug/warranty/availability; preserve existing guide URL.",
+      "productsAlreadyInGuide": 4,
+      "doNotCreateDuplicate": true
+    },
+    {
+      "type": "existing_guide_refresh",
+      "slug": "home-printers-us-uk",
+      "title": "Home and Small-Office Printers: UK Buying Guide to Colour and Mono Laser Models",
+      "market": "US",
+      "status": "brief_to_prepare",
+      "action": "Add US-localized keyword mapping and confirm US-specific SKU/voltage/plug/warranty/availability; preserve existing guide URL.",
+      "productsAlreadyInGuide": 4,
+      "doNotCreateDuplicate": true
+    }
+  ],
+  "newPageCandidates": [
+    {
+      "slugCandidate": "us-heated-clothes-drying-racks",
+      "title": "Best Heated Clothes Drying Racks for Apartments and Indoor Laundry",
+      "primary": "best heated clothes drying rack",
+      "secondary": [
+        "heated drying rack with cover",
+        "foldable heated clothes rack",
+        "heated clothes drying rack running cost",
+        "best indoor drying rack for apartments"
+      ],
+      "reason": "Distinct US wording and laundry setup differs from UK heated-airer phrasing; validate US demand and product availability before page creation.",
+      "serpEvidence": "US SERP validation pending",
+      "status": "candidate"
+    },
+    {
+      "slugCandidate": "us-dehumidifiers-basements",
+      "title": "Best Dehumidifiers for Basements: Capacity, Drainage and Energy Use",
+      "primary": "best dehumidifier for basement",
+      "secondary": [
+        "50 pint dehumidifier",
+        "dehumidifier with pump",
+        "dehumidifier for crawl space",
+        "Energy Star dehumidifier"
+      ],
+      "reason": "Basement and crawl-space use cases are strong US-specific buyer tasks.",
+      "serpEvidence": "Frigidaire US product evidence; SERP validation pending",
+      "status": "candidate"
+    },
+    {
+      "slugCandidate": "us-portable-power-stations",
+      "title": "Best Portable Power Stations for Camping, RVs and Home Backup",
+      "primary": "best portable power station",
+      "secondary": [
+        "portable power station for home backup",
+        "portable power station for RV",
+        "solar generator 1000Wh",
+        "portable power station with UPS"
+      ],
+      "reason": "US category has distinct 120V output, outlet and generator/solar terminology; compare capacity and continuous output.",
+      "serpEvidence": "Consumer Reports 2026 lab-tested roundup and EcoFlow US catalogue",
+      "status": "candidate"
+    },
+    {
+      "slugCandidate": "us-air-purifiers-wildfire-smoke",
+      "title": "Best Air Purifiers for Wildfire Smoke, Large Rooms and Pet Owners",
+      "primary": "best air purifier for wildfire smoke",
+      "secondary": [
+        "air purifier for large room",
+        "air purifier for pets",
+        "True HEPA air purifier",
+        "air purifier filter replacement cost"
+      ],
+      "reason": "US-specific wildfire-smoke and square-foot coverage intent; must explain CADR and room ACH consistently.",
+      "serpEvidence": "Consumer Reports US buying guide and Levoit US range",
+      "status": "candidate"
+    },
+    {
+      "slugCandidate": "us-security-cameras-no-subscription",
+      "title": "Best Home Security Cameras Without a Subscription",
+      "primary": "best security camera without subscription",
+      "secondary": [
+        "outdoor security camera local storage",
+        "security camera no monthly fee",
+        "solar security camera",
+        "PoE NVR camera system"
+      ],
+      "reason": "Distinct high-intent subscription avoidance and local-storage decision; include privacy/security caveats.",
+      "serpEvidence": "Consumer Reports October 2026 lab-tested page",
+      "status": "candidate"
+    },
+    {
+      "slugCandidate": "us-robot-lawn-mowers",
+      "title": "Best Robot Lawn Mowers for US Yards: RTK, Vision and Boundary-Wire-Free Models",
+      "primary": "best robot lawn mower",
+      "secondary": [
+        "robot lawn mower without boundary wire",
+        "robot mower for steep slopes",
+        "robot mower for large yard",
+        "robot lawn mower with RTK"
+      ],
+      "reason": "US yard sizes, slope and navigation requirements need separate regional product set.",
+      "serpEvidence": "US SERP validation pending",
+      "status": "candidate"
+    },
+    {
+      "slugCandidate": "us-smart-thermostats-hvac",
+      "title": "Best Smart Thermostats for US HVAC Systems: C-Wire, Heat Pumps and Multi-Zone",
+      "primary": "best smart thermostat",
+      "secondary": [
+        "smart thermostat for heat pump",
+        "smart thermostat without C wire",
+        "smart thermostat for multi zone HVAC",
+        "Matter smart thermostat"
+      ],
+      "reason": "US HVAC and C-wire compatibility differs from UK boiler/zone controls.",
+      "serpEvidence": "US SERP validation pending",
+      "status": "candidate"
+    },
+    {
+      "slugCandidate": "us-portable-air-conditioners",
+      "title": "Best Portable Air Conditioners for Bedrooms and Apartments",
+      "primary": "best portable air conditioner",
+      "secondary": [
+        "dual hose portable air conditioner",
+        "portable AC for small room",
+        "quiet portable air conditioner",
+        "portable air conditioner with heat"
+      ],
+      "reason": "US seasonal cooling intent and window kit/BTU requirements differ from UK category.",
+      "serpEvidence": "US SERP validation pending",
+      "status": "candidate"
+    },
+    {
+      "slugCandidate": "us-laser-printers-home-office",
+      "title": "Best Home Office Laser Printers: Toner Cost, Duplex and Color Options",
+      "primary": "best laser printer for home office",
+      "secondary": [
+        "color laser printer for home office",
+        "monochrome laser printer",
+        "cheap toner laser printer",
+        "duplex laser printer"
+      ],
+      "reason": "Existing page has regionally different Brother SKUs; consider US-specific page only if SERP intent differs.",
+      "serpEvidence": "SERP validation pending; possible cannibalization with existing printer guide",
+      "status": "candidate"
+    },
+    {
+      "slugCandidate": "us-cordless-vacuum-pet-hair",
+      "title": "Best Cordless Stick Vacuums for Pet Hair and Mixed Floors",
+      "primary": "best cordless stick vacuum for pet hair",
+      "secondary": [
+        "cordless vacuum for hardwood floors",
+        "cordless vacuum for carpet",
+        "lightweight cordless stick vacuum",
+        "cordless vacuum battery replacement"
+      ],
+      "reason": "Existing guide already targets cordless vacuums; first action should be a US-focused section/refresh, not a duplicate URL.",
+      "serpEvidence": "Existing guide canonical; SERP overlap check required",
+      "status": "refresh_not_new_page"
+    },
+    {
+      "slugCandidate": "us-air-fryer-small-kitchen",
+      "title": "Best Air Fryers for Small Kitchens and Family Cooking",
+      "primary": "best air fryer",
+      "secondary": [
+        "best dual basket air fryer",
+        "small air fryer",
+        "air fryer for family of four",
+        "air fryer toaster oven"
+      ],
+      "reason": "Existing guide covers air fryers; build US-localized sections and product comparisons within the canonical guide first.",
+      "serpEvidence": "Existing guide canonical; SERP overlap check required",
+      "status": "refresh_not_new_page"
+    }
+  ],
+  "policy": "Research briefs only. Do not create public pages until US-specific metrics, SERP overlap, exact products, affiliate destinations and editorial review pass."
+}
