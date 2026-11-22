@@ -46,3 +46,13 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 - Robot lawn mowers: 14 candidates across Segway Navimow and Husqvarna, based on official UK range listings. Lawn-area capacity, navigation method, slope performance, boundary requirements, exact SKU and current stock must be checked per model. Some Navimow LiDAR Pro pages explicitly identify an EU version with UK adapter; keep this regional caveat.
 - Smart thermostats: 4 candidates across tado° X and Resideo evohome, based on official UK product/compatibility documentation. Compatibility with boiler type, hot-water cylinder, OpenTherm, heat pump, wiring and zone configuration is a hard verification gate.
 - No keyword-volume figures were assigned to these two clusters because no current first-party or paid keyword metric was obtained in this batch.
+
+
+## 22 November 2026 — Buyer-intent keyword research started
+
+- Created a separate UK keyword-intelligence database containing 1240 unique buyer-oriented candidate phrases across 62 product topics.
+- The dataset distinguishes transactional terms (buy/price/deals) from commercial investigation terms (best/reviews/comparison/buying guide/use case).
+- Current OpenSEO saved cache contains 32 keywords with monthly volume/KD/CPC/intent values. Only 8 are exact matches inside the generated 1,240-phrase universe; all other generated phrases remain unmeasured.
+- Search volume is estimated monthly searches, not clicks or orders. No monthly trend series was available in the saved cache; do not invent trend directions.
+- No paid metric refresh was run because the last-known credit balance was 28 and a broad fresh metric run needs separate cost approval.
+- This keyword dataset is research-only. It does not create pages or publish keyword variations. Existing guide mapping and SERP-overlap review remain mandatory.
