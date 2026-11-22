@@ -264,3 +264,24 @@ OpenSEO project audit retrieval used the saved report only; no new audit crawl, 
 - Local network/DNS from the available container could not resolve `smartpickhub.pages.dev`; web fetch of sitemap endpoints also failed. Therefore no raw HTTP response/header evidence was obtained. Do not claim sitemap server issue fixed or diagnosed.
 - No PR opened because GitHub Actions quota restoration remains unverified and the repository's PR workflow triggers CI. No production change, merge, deployment, index request, IndexNow submission, product import or paid tool use.
 - Next: obtain a safe local checkout/build or a confirmed CI budget; then inspect actual sitemap response headers/body and visual card layout before creating a draft PR.
+
+
+## Live browser and deployment reconciliation — 22 Nov 2026, 09:10 UTC
+
+### Public sitemap and robots contents inspected in the owner's connected browser
+- Read existing browser tab for `https://smartpickhub.pages.dev/robots.txt`: `User-agent: *`, `Allow: /`, and Sitemap directive to `https://smartpickhub.pages.dev/sitemap-index.xml`.
+- Read existing browser tab for `/sitemap-index.xml`: browser renders a sitemapindex containing child `https://smartpickhub.pages.dev/sitemap-0.xml`.
+- Read existing browser tab for `/sitemap-0.xml`: browser displays the URL set and all 29 expected locations: homepage, affiliate disclosure, guides index, 25 guide routes, and how-we-research.
+- This confirms the browser can render the expected sitemap index and child URL list. It does NOT establish HTTP status/headers, raw response bytes, or that Google's sitemap parser accepted it. The browser-rendered XML DOM includes a `chrome-extension://...` script node; this is browser extension injection in the local rendered context, not evidence that the server emitted it. Do not treat it as part of the sitemap response.
+- GSC Page indexing view still says "Processing data". Earlier Sitemaps report showed "Couldn't fetch"; no fresh status table could be read from the available tab.
+
+### Important deployment/source mismatch to investigate
+- Cloudflare Pages dashboard browser tab showed production environment, branch `main`, latest deployment commit `89a17f4df617ba805835ca61227cfbfdc5d94cf7` ("Record Google Search Console ownership verification"), displayed as roughly an hour old.
+- GitHub compare API reports current `main` is 57 commits ahead of `89a17f4...`, 0 behind. The previously verified main checkpoint is `26636d4359508b9af30eec498a22ffc005a81a72`; compare against the dashboard commit confirms significant source/deployment divergence if the dashboard listing is current.
+- Current main `src/data/products.json` SHA `bb261aff8200a0b5a8f11966080d4ed11376e20d` has 25 guides and every `editorialStatus` equals "Approved for publication". Main homepage template SHA `659746141c499bf7e240a4732923c918b47c092e` renders that field (with a research-led fallback). The production homepage browser tab instead showed the fallback research-led message, and production guide detail showed "Research draft — requires human review before publication." This is consistent with the deployed artifact containing older/different catalogue state than current main, but the dashboard tab freshness must be rechecked before treating the deployment pointer as definitive.
+- Critical next action: refresh Cloudflare Pages Deployments and verify the actual current production deployment commit/branch/time; compare it with current GitHub main HEAD and the site's deployment marker. Do not redeploy or change production until discrepancy is confirmed and owner approval is in scope.
+- Do not conflate deployment mismatch with the sitemap fetch report; no causal relationship established.
+
+### Engineering patch branch
+- `fix/public-editorial-status-2026-11-22` contains only two public card status-display removals, verified by re-fetch. It remains unbuilt, unreviewed in browser, not PR'd/merged/deployed. PR avoided because Actions quota status remains unknown.
+- No production changes, new sitemap submission, URL indexing requests, IndexNow submission, paid services or product import.
