@@ -18,7 +18,7 @@
 ## US page plan
 
 - 25 existing guides have US refresh briefs; preserve their URLs and add US-specific model evidence rather than duplicating pages.
-- 12 new-page/topic briefs prepared: 10 potential new pages and 2 refresh-only topics due likely overlap. Some are marked refresh-not-new-page because current canonical pages likely cover the same SERP intent.
+- 12 new-page/topic briefs prepared: 10 potential new pages and 2 refresh-only topics due likely overlap. 827 keyword phrases map to existing guides; 556 remain unmapped and require SERP review. Some are marked refresh-not-new-page because current canonical pages likely cover the same SERP intent.
 - Highest-confidence US-specific page candidates to validate next: basement dehumidifiers, portable power stations, security cameras without subscription, wildfire-smoke air purifiers, US HVAC smart thermostats and robot lawn mowers.
 
 ## US SERP evidence
