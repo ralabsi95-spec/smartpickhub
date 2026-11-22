@@ -1529,3 +1529,9 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Discarded the first cluster-wide modifier pass after spot checks identified irrelevant topic/modifier combinations. Rebuilt from the original 1,240-per-market base with topic-specific purchase modifiers.
 - Final unique keyword counts: 1,488 UK + 1,383 US = 2,871. UK 1,480 unmeasured (32 cache records, 8 exact matches); US 1,383 unmeasured (0 measured). No trend data or paid refresh.
 - Exact duplicate count is zero in each market dataset. Product/page queues remain research-only; no production change.
+
+
+## 22 November 2026 — SERP validation checkpoint
+- Added market-by-market qualitative SERP review at `research/keyword-intelligence/SERP-VALIDATION-2026-11-22.md`. It distinguishes commercial SERP intent from ranking opportunity and page approval.
+- US wet-dry floor cleaners are the clearest distinct new-page candidate from this pass; UK dehumidifiers and robot lawn mowers warrant evidence development. UK heated airers and smart thermostats show clear intent but high competition. US no-subscription cameras, basement dehumidifiers, wildfire-smoke purifiers, robot mowers and portable AC require differentiation and canonical-overlap checks.
+- Several categories remain pending or refresh-only. No volume/trend metrics were invented; no pages, products or production settings were changed.
