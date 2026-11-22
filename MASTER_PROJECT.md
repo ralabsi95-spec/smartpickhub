@@ -1799,3 +1799,13 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Findings reinforce buyer-task modifiers: air fryer basket/footprint/cost-to-run; coffee-machine beginner/milk-drink/small-kitchen/budget; heated-airer drying capacity/speed/running cost/cover; dehumidifier compressor-vs-desiccant/temperature/laundry; dash-cam front-rear/night/parking/GPS; robot-vacuum mop-lift/obstacle/threshold/dock.
 - Sources include current BBC Good Food, The Independent, The Guardian, Good Housekeeping, Which?, Currys and UK buying-guide pages. This is qualitative SERP evidence only; it adds no search-volume or trend metrics and did not consume OpenSEO credits.
 - Research branch now 14 commits ahead of main, 0 behind. Still no PR, merge, public page change or production deployment.
+
+
+## 22 November 2026 — US market parity and 2,480-keyword checkpoint
+- User requested the US market be developed with the same coverage as UK and asked to prepare products and pages.
+- Keyword universe: 1,240 UK buyer-intent phrases + 1,240 separately localized US phrases = 2,480 total candidate phrases across 62 topics each. US phrases use US vocabulary; no UK metrics are copied into US rows.
+- UK: 32 saved OpenSEO metric records exist; 8 exact matches in the generated UK candidate list. US: 0 measured. No monthly trend series is available in the cached UK rows. Fresh metrics/trends require separate paid credit approval (last-known balance 28).
+- Page planning: 25 existing UK guides have refresh briefs; 12 new UK topic candidates prepared. 25 existing US guide refresh briefs; 11 US page/topic candidates prepared, including refresh-only cases where cannibalisation is likely. No page published or modified.
+- Product discovery: 62 UK candidate records already staged + 14 US candidates staged from official manufacturer US sources (eufy, Levoit, Frigidaire, EcoFlow). Verified/publishable products remain 0; no Amazon ASIN or affiliate URL fabricated. Existing 100 products / 25 guides untouched; 900 net-new verified product records remain toward target 1,000.
+- Research branch `research/scale-1000-batch-001`; no merge, PR, deployment or production change.
+- Files: `research/keyword-intelligence/us-buyer-keywords-2026-11-22.json`, `uk-page-briefs-2026-11-22.json`, `us-page-briefs-2026-11-22.json`, `US-PAGE-AND-PRODUCT-PLAN.md`, and `research/scale-1000/batch-003-us-product-candidates.json`.
