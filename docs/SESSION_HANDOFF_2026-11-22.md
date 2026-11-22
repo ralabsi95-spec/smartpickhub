@@ -165,3 +165,16 @@ Retrieved a previously completed audit rather than starting a new crawl (audit I
 - Four descriptions were measured by the old audit at 162–176 characters; 21 titles at 61–79 characters. The report did not include the current 22 Nov re-render, so recheck exact live title/description before modifying metadata.
 
 OpenSEO project audit retrieval used the saved report only; no new audit crawl, keyword credits or paid service was started.
+
+
+## Continuation checkpoint — 22 Nov 2026, 06:50 UTC
+- Re-read `src/data/products.json` on `main`: 25 guides / 100 products. Recursive text scan found no additional internal audit residue beyond the six already documented.
+- Re-read `src/pages/guides/index.astro`: public guide cards still render `guide.editorialStatus`; remove only the public status display in a future reviewed patch, retain JSON/internal validation.
+- Additional source review: Roborock UK pages show Saros 10R in UK family/navigation but no directly confirmed UK store product purchase page in the extracted evidence. Keep the caution pending direct product-level confirmation; do not substitute Saros 10.
+- Razer Kiyo Pro Ultra 4K/30fps limitation is supported by Razer's official product page/manual; no change needed.
+- Levoit Vital 200S-P US source confirms model LAP-V201S-WUS, 24V DC / 2.5A adapter output and 50W rating, but not the AC input range or UK regional bundle. Keep adapter-label/warranty caution.
+- NETGEAR RBE773 UK page confirms 1 router, 2 satellites and 3 adapters. Official quick-start guide says adapters vary by region; exact AC input for UK retail pack remains unverified. Keep label-check warning.
+- Updated and re-verified `docs/EDITORIAL_QA_SOURCE_VERIFICATION_2026-11-22.md` on this documentation branch. Latest commit: `5ee275b5c3a0223f23623f8b75b74bf404299774`.
+- No edits to `main`, no PR, no Actions run, no merge, no deploy, no product import, no indexing requests, no paid services/TinyFish.
+- Production main remains `26636d4359508b9af30eec498a22ffc005a81a72`.
+- Next: continue read-only validation of other regional model/spec claims and live guide content; then assemble minimal patch proposal. Check Actions quota before creating a PR that triggers CI.
