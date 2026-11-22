@@ -110,3 +110,13 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 - Outline maps eight staged US candidates (five Roborock F25 variants/families and three Tineco FLOOR ONE models), with official source evidence and stock caveats. Tineco's three pages were backordered/unavailable at capture and cannot be recommended until rechecked.
 - Added a publish gate requiring exact US model/SKU, at least five current purchasable models, independent testing coverage, mode-specific runtime, hard-floor compatibility, warranty/consumables and exact Amazon.com destination verification. No hands-on testing is claimed.
 - Outline only; no content page, product card or public URL created.
+
+
+## 22 November 2026 — US wet-dry model verification refresh
+- Rechecked the official US Roborock and Tineco catalogs after the initial eight-model outline. Roborock's current US store surfaces a broader F25 family, including F25 ALT, F25 ACE Pro, F25 Pro Turbo and F25 Ultra Steam Gen 2 in addition to the previously captured models.
+- Created `research/product-verification/us-wet-dry-floor-cleaners-product-checkpoint-2026-11-22.md` with a dated 12-model evidence matrix and source register. This is a verification note, not a promotion of candidates into the staged product batch or live catalogue.
+- Important model distinction: F25 Ultra and F25 Ultra Steam Gen 2 are separate models. Do not merge model variants or bundle listings to inflate unique product counts.
+- Rechecked Tineco US pages: S9 Artist Pro, S9 Artist Steam and S7 Stretch Ultra still explicitly show unavailable/backordered. They remain excluded from purchasable recommendations until a fresh positive stock check.
+- Roborock official-store Add to Cart / Buy Now signals are manufacturer-store evidence only; no Amazon.com ASIN, exact affiliate destination, independent testing, or two-retailer availability was verified in this pass.
+- The staged US candidate batch remains 40; verified/publishable remains 0. The additional Roborock model variants in the checkpoint are not counted as new staged candidates until identity, duplication and regional SKU checks are completed.
+- No catalogue import, guide publication, ASIN update, production change, PR creation, merge or deployment was performed.
