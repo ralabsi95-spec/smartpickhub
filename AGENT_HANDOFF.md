@@ -1540,3 +1540,9 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - US product candidates: **40 staged, 0 verified, 0 publishable, 0 verified ASIN/affiliate destinations**. Added 18 official manufacturer-sourced candidates in six categories: 3 Mammotion robot mower families, 3 Tineco wet-dry floor cleaners, 2 Whynter portable AC models, 2 Rachio irrigation products, 3 Aqara/Schlage smart locks, and 5 Greenworks/Kärcher electric pressure washers.
 - Stock caveats: Tineco S9 Artist Pro/S9 Artist Steam/S7 Stretch Ultra pages showed backordered/unavailable; Rachio Smart Hose Timer was out of stock; Mammotion availability differs by model/capacity. These remain candidates, not buyable recommendations.
 - Full candidate evidence and exact official source links are in `research/scale-1000/batch-003-us-product-candidates.json`. No Amazon ASINs, prices, ratings or affiliate links were invented; no production catalogue/page changes.
+
+
+## 22 November 2026 — US wet-dry floor-cleaner outline checkpoint
+- Prepared `research/page-outlines/us-wet-dry-floor-cleaners-outline-2026-11-22.md` and updated the US page brief. The provisional page is limited to cordless upright hard-floor washers, not workshop wet/dry shop vacs, robot mops or stick-vac attachments.
+- Eight current batch candidates mapped for evidence intake (Roborock F25 and Tineco FLOOR ONE). Three Tineco candidates were backordered/unavailable at capture. No candidates are publishable until exact US stock, independent review coverage, model/SKU identity and Amazon.com destination are verified.
+- No hands-on testing is claimed; outline is research-only. No public page or product was created.
