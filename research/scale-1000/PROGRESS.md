@@ -242,3 +242,10 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 - Evidence: research/product-verification/trend-led-product-evidence-batch-004-2026-11-22.md; candidate data: research/scale-1000/batch-004-trend-led-candidates.json.
 - Roberts SolarDAB 99 is held because the only captured official listing is refurbished/out of stock. DREO 733S is held on 73/95-pint variant/spec discrepancy. Other candidates still need SKU/manual, exact Amazon ASIN, availability and editorial checks.
 - Staged product candidate count rises from 102 to 110 (UK 65, US 45); verified/publishable remains 0; Amazon ASIN verified remains 0. Existing production catalogue 25 guides / 100 products unchanged.
+
+
+## Aggregate identity coverage after trend-led batch 004
+- Staged candidates: **110 total** (UK 65 / US 45).
+- Manufacturer model/family identity supported: **UK 64/65** (one broken Dunelm source remains unresolved); **US 44/45** (EcoFlow RIVER 3 Plus source remains unresolved). Total 108/110 supported at model/family identity level.
+- This is not the same as SKU/variant confirmation or publishability. Roberts SolarDAB 99 remains unavailable (refurbished/out of stock); DREO 733S variant capacity mapping remains on hold. All eight new records are research only.
+- Amazon ASIN verified 0; affiliate destinations 0; publishable 0. Production remains 25 guides / 100 products.
