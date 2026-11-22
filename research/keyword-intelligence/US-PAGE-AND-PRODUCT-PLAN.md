@@ -30,3 +30,17 @@
 ## No production changes
 
 Research only. No live catalogue, page, Amazon link, indexability, deployment, or public site setting was changed. Do not count these candidate terms or products as verified or published assets.
+
+
+## Additional US product categories — 22 November 2026
+
+- Added three ecobee US smart thermostats (Premium, Enhanced, Essential). The official compatibility pages distinguish sensor/air-quality/voice features and HVAC compatibility; check C-wire and Power Extender Kit requirements before recommending any model.
+  - https://www.ecobee.com/en-us/smart-thermostats/smart-thermostat-premium/
+  - https://www.ecobee.com/en-us/smart-thermostats/smart-thermostat-enhanced/
+  - https://www.ecobee.com/en-us/smart-thermostats/smart-thermostat-essential/
+- Added five Roborock F25 wet-dry floor cleaners (GT Gen 2, Steam, Ultra, XT, BX). This is a distinct product class from robot vacuums and cordless stick vacuums. Verify model suffix, runtime, tank capacity, self-cleaning/drying and regional bundle before intake.
+  - https://us.roborock.com/products/roborock-f25-gt-gen-2
+  - https://us.roborock.com/collections/wet-dry-vacuums
+  - https://us.roborock.com/pages/roborock-f25-series-pitching-guide
+- US product candidate batch now contains 22 candidates across six manufacturer/product families (eufy, Levoit, Frigidaire, EcoFlow, ecobee, Roborock). Verified/publishable remains 0.
+- Added a distinct US wet-dry vacuum page brief. No page created or published.
