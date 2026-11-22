@@ -1877,3 +1877,13 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Mammotion LUBA 3 1500, LUBA mini 2 and YUKA mini 2 1000H show sold-out or variant-specific sold-out signals; exact stock must be rechecked before recommendation.
 - Remaining source/variant resolution gaps across 102 staged product candidates: **31** (28 UK category/landing pages + 3 US family-variant SKU gaps). Amazon ASIN/affiliate destinations verified: 0.
 - Evidence file: `research/product-verification/us-product-page-evidence-2026-11-22.md`. QA and progress documents updated. No live catalogue, page, indexability or production setting changed; no PR/merge/deployment.
+
+
+## 22 November 2026 — Continued keyword and product evidence work
+- Working branch remains `research/scale-1000-batch-001`; no PR, merge, deployment or production catalogue change.
+- Keyword universe remains 2,799 distinct candidates (1,488 UK + 1,311 US); only 8 UK exact-phrase cache matches and 0 US measured metrics. No monthly trend series or paid refresh.
+- Product queue remains 102 staged candidates (62 UK + 40 US), 0 verified/publishable, 0 verified Amazon ASIN/affiliate destinations.
+- UK Batch 002 (18 candidates): all 18 have manufacturer-supported model/pack identity. 5 dedicated product pages (2 Husqvarna, 3 tado°), 12 Navimow named models on the official UK range listing (not individual product pages), and 1 Resideo pack code confirmed by official brochure. UK identity supported: 41/62; 21 remain unverified. See `research/product-verification/uk-mowers-thermostats-evidence-2026-11-22.md`.
+- Navimow i210 LiDAR area capacity remains inconsistent between the current UK homepage (1000m²) and an older indexed comparison (600m²); do not use the capacity claim pending exact SKU/manual. Navimow i210 LiDAR Pro is explicitly an EU version with UK adapter. Preserve tado° X wiring/Thread and compatibility constraints.
+- US F25 BX identity is resolved by official product URL, H1/body and linked manual; launch/stock status remains ambiguous due a not-yet-launched notice on the same page as purchase controls. eufy SoloCam E50 zoom/resolution remains on hold due conflicting marketing and technical content plus S340-labelled comparison data.
+- US evidence report updated at `research/product-verification/us-product-page-evidence-2026-11-22.md`. No product has passed the Amazon identity/ASIN gate.
