@@ -2,9 +2,9 @@
 
 ## Keyword universe
 
-- 1,383 unique US English buyer-intent phrases across 62 topic clusters.
-- 186 transactional and 1,197 commercial phrases by wording.
-- All 1,383 phrases have null volume/KD/CPC/trend. No UK metrics were copied into US rows. Fresh US metrics require US location code 2840 and USD CPC.
+- 1,373 unique US English buyer-intent phrases across 62 topic clusters after normalized duplicate removal.
+- 186 transactional and 1,187 commercial phrases by wording.
+- All 1,373 phrases have null volume/KD/CPC/trend. No UK metrics were copied into US rows. Fresh US metrics require US location code 2840 and USD CPC.
 - US phrases are localized for American vocabulary and long-tail buying situations: apartment, basement, yard, carry-on, color, license plate, HVAC/C-wire, portable charger, clothes drying rack, True HEPA, etc.
 - Added a topic-specific, use-case-led second tier; terms remain research candidates until volume, SERP intent and cannibalisation are assessed.
 
@@ -18,7 +18,7 @@
 ## US page plan
 
 - 25 existing guides have US refresh briefs; preserve their URLs and add US-specific model evidence rather than duplicating pages.
-- 12 new-page/topic briefs prepared: 10 potential new pages and 2 refresh-only topics due likely overlap. 827 keyword phrases map to existing guides; 556 remain unmapped and require SERP review. Some are marked refresh-not-new-page because current canonical pages likely cover the same SERP intent.
+- 12 new-page/topic briefs prepared: 10 potential new pages and 2 refresh-only topics due likely overlap. 823 keyword phrases map to existing guides; 550 remain unmapped and require SERP review. Some are marked refresh-not-new-page because current canonical pages likely cover the same SERP intent.
 - Highest-confidence US-specific page candidates to validate next: basement dehumidifiers, portable power stations, security cameras without subscription, wildfire-smoke air purifiers, US HVAC smart thermostats and robot lawn mowers.
 
 ## US SERP evidence
@@ -61,3 +61,10 @@ Added 18 further manufacturer-sourced US candidates, taking the staged batch fro
 All additions are research candidates only. Tineco S9 Artist Pro, S9 Artist Steam and S7 Stretch Ultra were marked backordered/unavailable on the official US store at capture; Rachio Smart Hose Timer was out of stock in its official catalogue. Mammotion availability differs by model/coverage variant. Do not treat these as current purchase recommendations. The 8/16-zone Rachio and acreage/capacity mower variations are not counted as separate product records.
 
 All 40 candidates still have 0 verified products, 0 publishable products and 0 verified Amazon ASINs/affiliate destinations. Exact model page, US availability, Amazon.com ASIN and duplicate-family checks remain mandatory. No prices, ratings or affiliate links were added to the candidate records.
+
+
+## Quality correction — 22 November 2026, 14:38 UTC
+- Normalized the US keyword phrases for case, punctuation and hyphenation. Removed 10 duplicate variants (e.g. carry-on/carry on, multi-zone/multi zone, multi-gig/multi gig) while retaining one canonical phrase for each buyer query.
+- Corrected US unique keyword count to 1,373: 186 transactional, 1,187 commercial; 823 mapped to existing guides and 550 unmapped for SERP review. All 1,373 remain unmeasured for US search volume/KD/CPC/trends.
+- Combined UK + US keyword universe is now 2,861 distinct normalized phrases (1,488 UK + 1,373 US), not 2,871.
+- No search-volume, difficulty, CPC or trend metrics were inferred or copied from the UK market.
