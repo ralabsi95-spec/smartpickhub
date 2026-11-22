@@ -187,3 +187,11 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 - Added research/product-verification/uk-heated-airers-air-purifiers-evidence-2026-11-22.md with evidence matrix and comparison QA rules. Do not compare purifier room sizes without matching ACH/CADR units; filter consumables must be included in value comparisons. Heated-airer formats (ladder, winged, mini, tiered) are distinct buyer needs.
 - UK Batch 002 adds 18/18 manufacturer-supported model/pack identities (12 Navimow names in official range listing, 5 dedicated product pages, 1 Resideo brochure pack code). Across UK 62 candidates, 61 now have manufacturer/retailer-supported identity; 1 unresolved (Dunelm A-frame 404). No Amazon ASIN verified and publishable count remains 0.
 - No production catalog/page, main branch, PR, merge, or deployment changed.
+
+
+## 22 November 2026 — First exact-model Amazon UK identity pass
+- Created research/product-verification/uk-amazon-identity-check-2026-11-22.md. Checked exact Amazon UK matches for a small initial shortlist (Meaco Arete Two 20L, Arete One 20L, DD8L Pro, EcoAir DD3 Slimline, Blueair Blue Max 3350i and Lakeland Dry:Soon Deluxe).
+- No direct Amazon ASIN was approved in this pass. One Amazon bundle page was identified: B0HFNS4W5G is the Lakeland Dry:Soon Deluxe airer + cover bundle. The bundle description names the airer-only ASIN B016Q6NOCC and cover ASIN B01HTGQMTA, but the component listing pages were not independently verified. Do not assign the bundle ASIN to the bare airer or generate an affiliate URL.
+- Lakeland official instruction booklet confirms Dry:Soon Deluxe model 24909. This is a manufacturer model/SKU confirmation, not an Amazon ASIN confirmation. Meaco manufacturer SKUs 180-1 (Arete Two 20L), 179-1-1 (Arete One 20L) and DD8LPro were captured separately; none should be mistaken for ASINs.
+- Current product queue remains 102 candidates; UK model identity supported 61/62, one broken Dunelm A-frame source unresolved; US model/family identities supported 14/40. Verified Amazon ASIN/affiliate destinations remain 0; publishable candidates remain 0.
+- No affiliate links created, no production catalog/page change, no PR, merge or deployment.
