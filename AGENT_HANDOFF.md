@@ -1610,3 +1610,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - GitHub compare confirms only two card-template files changed, branch 2 ahead/0 behind. Re-fetched files confirm editorial workflow status display removed; internal data preserved.
 - Preview deployment green, but visual review still pending. Not PR'd, merged or deployed to production. No Actions quota check available.
 - Next: inspect preview visually, then consider PR only after CI quota known.
+
+
+## 22 Nov 2026 11:25 UTC — clarify preview review status
+- Existing browser tabs are production URLs, not the preview deployment; preview has NOT been visually inspected.
+- Old production tab snapshots show research/draft labels but were opened hours earlier and are stale; do not treat as current live evidence. Main source sample guide is approved/published and detail template suppresses approved status.
+- GSC Page indexing remains Processing data. URL Inspection on sitemap/robots endpoints is not a sitemap parser status check. No fresh Sitemaps report status captured.
+- Next: owner opens exact preview `https://852061d1.smartpickhub.pages.dev/` and /guides/ in fresh tab; separately inspect GSC > Indexing > Sitemaps. No merge/deploy/index requests.
