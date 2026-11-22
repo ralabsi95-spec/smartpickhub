@@ -1,5 +1,11 @@
 
 
+## Latest trend-led product checkpoint — 22 November 2026
+- New trend-led candidate batch: 8 records (UK 3 / US 5), stored in research/scale-1000/batch-004-trend-led-candidates.json with evidence at research/product-verification/trend-led-product-evidence-batch-004-2026-11-22.md.
+- Total staged candidate records: 110 (UK 65 / US 45). No candidate from this batch is publishable. Roberts SolarDAB 99 is held (refurbished/out of stock); DREO 733S is held (73/95-pint option/spec discrepancy).
+- All new candidates need exact SKU/manual and direct Amazon listing/ASIN verification; manufacturer model numbers are not ASINs. Amazon ASINs verified remain 0; affiliate destinations 0; live catalogue remains 25 guides / 100 products.
+
+
 ## Latest keyword checkpoint — 22 November 2026 (Expansion batch 002)
 - UK: 2028 unique buyer-intent phrases; US: 1850; combined 3878. This supersedes the earlier 1,488 UK / 1,311 US checkpoint.
 - Expansion and trend evidence: research/keyword-intelligence/EXPANSION-BATCH-002-TRENDS-2026-11-22.md. Added 1079 deduplicated buyer-task phrases.
