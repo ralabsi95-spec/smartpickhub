@@ -164,3 +164,9 @@ A second review found 62 additional US phrases that were not punctuation duplica
 - Levoit Core 600S-P manufacturer code LAP-C601S-WUS captured. EcoFlow RIVER 3 Plus page 404 remains unresolved.
 - Holds: Tineco S9 Artist Pro/S9 Artist Steam/S7 Stretch Ultra unavailable/backordered; Frigidaire FHDD5034Y1 out of stock in selected area; DELTA 3 Plus preorder/sold-out signal conflicts; Roborock F25 GT Gen 2 battery capacity conflict (4,000mAh spec vs 2,500mAh FAQ); ecobee HVAC compatibility requires exact system check.
 - ASIN verified 0; affiliate destinations 0; publishable candidates 0. No production changes.
+
+
+## US identity follow-up batch 2 — 22 November 2026
+- Twelve additional US candidates have official model evidence. US identity coverage: **39/40 supported; 1 unresolved** (EcoFlow RIVER 3 Plus staged URL returns 404).
+- Manufacturer identifiers recorded for Rachio, Whynter, Schlage, Greenworks and Kärcher. Keep variant/package boundaries and US voltage distinctions explicit.
+- Whynter ARC-102CS old 2019 manual conflicts with the current product page/2024 manual; use current documents only. Pressure washer GPM values must state the associated PSI. No Amazon ASINs or affiliate URLs verified; publishable remains 0.
