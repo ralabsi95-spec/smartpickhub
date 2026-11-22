@@ -1549,3 +1549,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Prepared `research/page-outlines/us-wet-dry-floor-cleaners-outline-2026-11-22.md` and updated the US page brief. The provisional page is limited to cordless upright hard-floor washers, not workshop wet/dry shop vacs, robot mops or stick-vac attachments.
 - Eight current batch candidates mapped for evidence intake (Roborock F25 and Tineco FLOOR ONE). Three Tineco candidates were backordered/unavailable at capture. No candidates are publishable until exact US stock, independent review coverage, model/SKU identity and Amazon.com destination are verified.
 - No hands-on testing is claimed; outline is research-only. No public page or product was created.
+
+
+## Latest research checkpoint — 22 November 2026 (continued)
+- Current working branch: `research/scale-1000-batch-001`; production `main` untouched. No PR/merge/deploy.
+- Keywords: 2,799 unique buyer-intent candidates (1,488 UK + 1,311 US); UK metrics 8 exact phrase matches from saved cache and 1,480 unmeasured; US 0 measured. No trend series or paid refresh.
+- Product candidates: 102 staged (62 UK + 40 US); 0 verified/publishable; 0 verified Amazon ASINs/affiliate destinations.
+- UK source/identity update: 37 dedicated product pages, 12 category/landing sources, 12 Navimow named models on an official range listing, 1 Resideo brochure-confirmed pack. Manufacturer-supported identity 41/62; 21 remain unverified. See `research/product-verification/uk-mowers-thermostats-evidence-2026-11-22.md`.
+- US: F25 BX identity resolved via official URL/body/manual; availability remains ambiguous. eufy SoloCam E50's 4K/12× marketing copy conflicts with 3K+2K/8× technical table and S340-labelled comparison data; keep disputed claims on hold. See updated `research/product-verification/us-product-page-evidence-2026-11-22.md`.
+- Next: exact SKU/manual and stock verification for Navimow range models; resolve E50 with manufacturer; check Mammotion/eufyCam package SKUs; continue marketplace identity verification only after exact model/package matching. Do not invent ASINs or promote candidates prematurely.
