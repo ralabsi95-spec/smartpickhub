@@ -10,7 +10,7 @@
 
 ## US product discovery batch
 
-- 22 manufacturer-sourced US model candidates across eufy, Levoit, Frigidaire, EcoFlow, ecobee and Roborock (security cameras, air purifiers, dehumidifiers, portable power, smart thermostats and wet-dry floor cleaners).
+- 40 manufacturer-sourced US model candidates across eufy, Levoit, Frigidaire, EcoFlow, ecobee and Roborock (security cameras, air purifiers, dehumidifiers, portable power, smart thermostats and wet-dry floor cleaners).
 - Verified/publishable: 0. Exact ASINs and Amazon affiliate URLs are not verified in this research batch.
 - Stock caveats: Frigidaire FHDD5034Y1 page showed out of stock in the checked region; EcoFlow RIVER 3 Plus page indicated sold out; DELTA 3 Plus bundle status varies. Recheck before product intake.
 - Existing catalogue duplicate checks performed against exact product names; product-family/variant deduplication still required.
@@ -45,3 +45,19 @@ Research only. No live catalogue, page, Amazon link, indexability, deployment, o
   - https://us.roborock.com/pages/roborock-f25-series-pitching-guide
 - US product candidate batch now contains 22 candidates across six manufacturer/product families (eufy, Levoit, Frigidaire, EcoFlow, ecobee, Roborock). Verified/publishable remains 0.
 - Added a distinct US wet-dry vacuum page brief. No page created or published.
+
+
+## US product discovery — batch expansion to 40 candidates (22 November 2026)
+
+Added 18 further manufacturer-sourced US candidates, taking the staged batch from 22 to **40**. The new categories and candidate counts are:
+
+- Robot lawn mowers: 3 Mammotion model families (LUBA 3 AWD, LUBA mini 2 AWD, YUKA mini 2).
+- Wet-dry floor cleaners: 3 Tineco models (FLOOR ONE S9 Artist Pro, S9 Artist Steam, S7 Stretch Ultra).
+- Portable air conditioners: 2 Whynter models (ARC-1050XPH, ARC-102CS).
+- Smart irrigation: Rachio 3 Smart Sprinkler Controller and Rachio Smart Hose Timer.
+- Smart locks: Aqara U100, Schlage Encode Plus and Schlage Encode.
+- Electric pressure washers: Greenworks GPW2003, GPW2303A and GPW3001; Kärcher K 4 Power Control and K2300PS.
+
+All additions are research candidates only. Tineco S9 Artist Pro, S9 Artist Steam and S7 Stretch Ultra were marked backordered/unavailable on the official US store at capture; Rachio Smart Hose Timer was out of stock in its official catalogue. Mammotion availability differs by model/coverage variant. Do not treat these as current purchase recommendations. The 8/16-zone Rachio and acreage/capacity mower variations are not counted as separate product records.
+
+All 40 candidates still have 0 verified products, 0 publishable products and 0 verified Amazon ASINs/affiliate destinations. Exact model page, US availability, Amazon.com ASIN and duplicate-family checks remain mandatory. No prices, ratings or affiliate links were added to the candidate records.
