@@ -1,15 +1,15 @@
 **Latest checkpoint — 22 November 2026 14:16 UTC**
 
 - User's immediate KPI is **1,000+ buyer-intent keyword phrases** with measured monthly search frequency prioritised where available, distinctive long-tail terms and clear commercial/transactional intent. This is **not** a 1,000-product publishing target.
-- Current unique keyword universe: **1,612 UK + 1,546 US = 3,158 phrases** across 62 topics per market. UK: 32 cached OpenSEO metric records, 8 exact phrase matches in the dataset; US: 0 measured. Newly added long-tail phrases are unmeasured (null). No monthly trend series available; no paid credits used.
-- Intent by wording: UK 186 transactional / 1,426 commercial; US 186 transactional / 1,360 commercial. Intent scores are heuristics, not conversion forecasts.
+- Final keyword universe after relevance QA: **1,488 UK + 1,383 US = 2,871 unique phrases** across 62 topics per market. UK: 32 cached OpenSEO metric records, 8 exact phrase matches; 1,480 unmeasured. US: 0 measured; all 1,383 unmeasured. No monthly trend series available; no paid credits used.
+- Intent by wording: UK 186 transactional / 1,302 commercial; US 186 transactional / 1,197 commercial. Intent scores are heuristics, not conversion forecasts.
+- The additional long-tail tier was rebuilt from topic-specific purchase modifiers after removing a first cluster-wide modifier pass that produced some irrelevant combinations. Added 248 UK and 143 US unique phrases after exact deduplication; no duplicate phrases remain in either dataset.
 - Product discovery is separate: 62 UK + 22 US staged candidates, 0 verified/publishable. Existing catalogue remains 25 guides / 100 products; do not re-import or overwrite it.
 - Page plans only: UK 25 refresh briefs + 12 new-page candidates; US 25 refresh briefs + 12 topics (10 new-page candidates, 2 refresh-only). No page created or published.
 - Research branch: `research/scale-1000-batch-001`. No PR, merge, deployment, public catalogue, page, metadata or indexability change. Production remains on `main`.
-- Next: prioritise and cluster long-tail terms by SERP overlap; map each distinct buyer task to an existing guide or a justified new-page candidate. Measure US metrics separately (location code 2840) only after explicit cost approval. Validate exact models and marketplace destinations independently before promoting any candidate.
+- Next: cluster terms by SERP overlap and validate long-tail demand; map each distinct buyer task to an existing guide or a justified new-page candidate. Measure US metrics separately (location code 2840) only after explicit cost approval.
 
 ---
-
 **Current working checkpoint — 22 November 2026 17:10 UTC**
 
 - User's immediate target is **1,000+ buyer-intent keyword phrases**, including measured monthly search frequency where available, commercial/transactional intent, and differentiated long-tail queries. Do not confuse this with the separate 1,000-product target.
@@ -1553,3 +1553,9 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Product discovery is a separate queue: 62 UK + 22 US staged candidates, 0 verified/publishable. Existing catalogue remains 25 guides / 100 products. The 1,000+ target is keywords, not 1,000 products.
 - Page briefs remain plans only: UK 25 refresh + 12 new-page candidates; US 25 refresh + 12 topics (10 new-page candidates, 2 refresh-only). No public page, product, metadata, deployment or indexability changes.
 - Research branch remains `research/scale-1000-batch-001`; refresh branch compare after documentation commits.
+
+
+## 22 November 2026 14:16 UTC — Topic-specific long-tail QA correction
+- Discarded the first cluster-wide modifier pass after spot checks identified irrelevant topic/modifier combinations. Rebuilt from the original 1,240-per-market base with topic-specific purchase modifiers.
+- Final unique keyword counts: 1,488 UK + 1,383 US = 2,871. UK 1,480 unmeasured (32 cache records, 8 exact matches); US 1,383 unmeasured (0 measured). No trend data or paid refresh.
+- Exact duplicate count is zero in each market dataset. Product/page queues remain research-only; no production change.
