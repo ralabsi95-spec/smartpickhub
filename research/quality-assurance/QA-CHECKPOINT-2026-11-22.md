@@ -149,3 +149,11 @@ A second review found 62 additional US phrases that were not punctuation duplica
 - Dry:Soon Deluxe Amazon bundle B0HFNS4W5G contains airer and cover. Component ASIN references B016Q6NOCC (airer) and B01HTGQMTA (cover) are leads only until their direct detail pages and package match are checked. Do not assign bundle ASIN to the airer-only candidate.
 - Lakeland model 24909 and Meaco SKUs 180-1, 179-1-1, DD8LPro are manufacturer identifiers, not Amazon ASINs.
 - Affiliate tracking ID to use only after direct ASIN validation: smartpickhubu-21. No affiliate URLs generated.
+
+
+## US package/variant QA — 22 November 2026
+- eufyCam S4 options include different camera counts, HomeBase, 1TB drive and other accessories. Treat these as package SKUs within one family, not separate models. Exact SKU/ASIN remains open.
+- LUBA 3 AWD has 1500/1500H, 3000/3000H and 5000/5000H options. 1500 capacity conflicts between official sources (0.37 acre vs 1,000m² / 0.25 acre); hold until model manual/SKU resolves. 1500 and 5000 show sold-out signals; 3000 selected option showed in-stock signal only on Mammotion store.
+- LUBA mini 2 1500/1500H family confirmed, but stock signal conflicts (hero sold out vs stale Sep 29–Oct 06 estimated delivery). Recheck exact option and manual before comparison.
+- eufy SoloCam E50 technical conflict remains on hold: hero says two 4K lenses/12×, table says 3K+2K/8× and S340-labelled comparison. No disputed claims for editorial use.
+- No package ASINs/affiliate URLs verified. No candidate promoted to publishable.
