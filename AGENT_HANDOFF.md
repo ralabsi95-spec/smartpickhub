@@ -1617,3 +1617,9 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Old production tab snapshots show research/draft labels but were opened hours earlier and are stale; do not treat as current live evidence. Main source sample guide is approved/published and detail template suppresses approved status.
 - GSC Page indexing remains Processing data. URL Inspection on sitemap/robots endpoints is not a sitemap parser status check. No fresh Sitemaps report status captured.
 - Next: owner opens exact preview `https://852061d1.smartpickhub.pages.dev/` and /guides/ in fresh tab; separately inspect GSC > Indexing > Sitemaps. No merge/deploy/index requests.
+
+## 22 Nov 2026 — Preview visual spot-check and GSC sitemap failure confirmed
+- Owner supplied desktop screenshots of Preview homepage and guide index; layout looks coherent in shown areas, and workflow label is not visible on shown guide cards. Mobile/responsive and full-page QA remain pending.
+- GSC Sitemaps report shows both sitemap-index.xml and sitemap-0.xml as Type Unknown, Last read blank, Couldn't fetch, 0 discovered pages.
+- Astro sitemap integration, canonical production host and robots Sitemap directive were rechecked in main source; no special sitemap headers exist. Root cause not yet identified because no raw HTTP response or GSC detailed error is available.
+- Next action: inspect the detail view after clicking sitemap-index.xml row in GSC. No resubmission, manual indexing, production modification or deployment.
