@@ -52,7 +52,7 @@ One canonical phrase was retained from each pair. The US file was updated and it
 - All 102 records still have null/missing verified Amazon ASIN and affiliate URL. Do not synthesize ASINs or convert search phrases into direct product links.
 
 ### Current product verification blockers
-- UK: 62 records remain research candidates. Seventeen now have exact manufacturer product pages and model names captured (SKU still pending); 45 model names remain unverified. Of the 62, one Arete Two 10L page showed out-of-stock/pre-order and one DD128 appeared only as a sold-out refurbished outlet listing; other live stock checks remain open. Exact regional SKU, full specs, Amazon UK ASIN/destination and image rights remain open.
+- UK: 62 records remain research candidates. Twenty-three now have exact manufacturer product pages and model names captured (SKU still pending); 39 other UK model names remain unverified. Seven UK manufacturer-page stock caveats are recorded: Arete One 6L/10L/12L/20L low stock; Arete Two 10L and Arete One 25L out-of-stock/pre-order; DD128 only surfaced as a sold-out refurbished outlet listing. Other live stock checks remain open. Exact regional SKU, full specs, Amazon UK ASIN/destination and image rights remain open.
 - US: 40 records remain candidates; 8 are explicitly flagged for stock recheck. US sources include category/collection pages that need exact product-page evidence before promotion.
 - Variants, bundles, regional adapters, plug standards, voltage, HVAC compatibility and lawn-area variants must be resolved before records count as distinct market-specific products.
 - A product can be promoted only after exact identity, official specification/manual evidence, current regional availability, retailer destination, duplicate-family review, claim-level sourcing, and content/editorial QA pass.
@@ -97,9 +97,9 @@ A second review found 62 additional US phrases that were not punctuation duplica
 
 
 ### Source specificity counts
-- UK: 28 of 62 records now point to a product page; 34 of 62 still point to a category, collection or landing page.
+- UK: 34 of 62 records now point to a product page; 28 of 62 still point to a category, collection or landing page.
 - US: 26 of 40 records point to a product page; 14 of 40 point to a category or collection page.
-- All 102 candidates have a source URL, but **48 records still need a more specific product-page source** before exact SKU verification can be considered complete. This is a source-quality gap, not proof that the products do not exist.
+- All 102 candidates have a source URL, but **42 records still need a more specific product-page source** before exact SKU verification can be considered complete. This is a source-quality gap, not proof that the products do not exist.
 
 
 ## UK dehumidifier evidence batch — 22 November 2026
@@ -108,3 +108,12 @@ A second review found 62 additional US phrases that were not punctuation duplica
 - Recorded two explicit availability caveats: MeacoDry Arete Two 10L showed out-of-stock/pre-order on its manufacturer page; EcoAir DD128 was surfaced only through a refurbished outlet page marked sold out. Do not recommend either as currently purchasable without a fresh positive stock check.
 - Added `research/product-verification/uk-dehumidifier-product-evidence-2026-11-22.md` with manufacturer claims, technical conditions, and remaining verification gates.
 - Across all 102 product candidates, 48 now still need a more specific product-page source (34 UK + 14 US). This is not the same as model verification: exact SKU, availability, independent evidence and Amazon ASIN remain unverified.
+
+
+## UK dehumidifier exact-page completion — 22 November 2026
+- The UK dehumidifier candidate group is now **23/23** with exact manufacturer product pages and populated model names. Exact SKU/retailer identity is still pending for all 23.
+- The six final pages added are Meaco Arete One 6L/10L/12L/20L/25L and EcoAir DC14 MK2. Arete One and Arete Two remain separate model families.
+- Seven manufacturer stock caveats are recorded: Arete One 6L/10L/12L/20L low stock; Arete Two 10L and Arete One 25L out-of-stock/pre-order; DD128 only surfaced as a sold-out refurbished outlet listing.
+- UK source specificity is now 34 product pages / 28 category or landing pages across both UK batches. US remains 26 product pages / 14 category or collection pages. Combined source-page gaps: **42** (28 UK + 14 US).
+- UK model-name status: 23 manufacturer-page-confirmed with SKU pending; 39 other UK candidates remain unverified. All 40 US model identities remain unverified.
+- Updated evidence report: `research/product-verification/uk-dehumidifier-product-evidence-2026-11-22.md`.
