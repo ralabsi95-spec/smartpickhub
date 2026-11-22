@@ -5,9 +5,9 @@
 **Status:** Product-page evidence improved; no products verified for publication, no Amazon UK ASINs confirmed.
 
 ## Executive result
-- 17 of the 23 UK dehumidifier candidates now have an exact manufacturer product page and a populated model-name field.
-- 6 candidates in the dehumidifier set still rely on category/collection evidence or otherwise lack a dedicated product page.
-- Two explicit availability caveats were recorded: MeacoDry Arete Two 10L page showed out-of-stock/pre-order; EcoAir DD128 surfaced only as a refurbished outlet listing marked sold out.
+- All 23 of the 23 UK dehumidifier candidates now have an exact manufacturer product page and a populated manufacturer model-name field.
+- No candidate in this 23-model dehumidifier set remains dependent on a category-only source; exact SKU and retailer identity are still pending.
+- Seven manufacturer availability caveats were recorded: Arete Two 10L and Arete One 25L showed out-of-stock/pre-order; Arete One 6L/10L/12L/20L showed low-stock signals; EcoAir DD128 surfaced only as a refurbished outlet listing marked sold out.
 - Manufacturer specifications are captured as claims with their test conditions. Extraction rates must not be compared unless temperature and relative humidity conditions match.
 - Exact retailer stock, Amazon UK listing/ASIN, affiliate destination, and final SKU identity remain open for all 17.
 
@@ -33,6 +33,14 @@
 | EcoAir Summit S | https://ecoair.org/products/summit-s | Compressor; 12L/day; 2L tank; noise as low as 36dB; 2-year warranty. | Compare with DC12 MK3 on exact extraction conditions, tank, noise and dimensions. |
 | EcoAir DDWH10 | https://ecoair.org/products/ecoair-ddwh10 | Wall-mounted or freestanding desiccant unit with heater; 6L/day; 2.2L tank; 37/53dB; 7.2kg; IP24; 3-year warranty. | Distinct heater/hybrid use case; do not compare as a conventional standalone dehumidifier without explaining the heater function. |
 
+
+| MeacoDry Arete One 6L | https://www.meaco.com/products/meacodry-arete-one-6l | Compressor; 1.8L tank; 32dB; 7.9kg; 5-year warranty; 2.63L/day at 20°C/60% RH and 6L/day at 30°C/80% RH. | Manufacturer page showed low stock. |
+| MeacoDry Arete One 10L | https://www.meaco.com/collections/home-dehumidifiers/products/meacodryarete1-10l | Exact product page; up to 2-bedroom use case; noise from 35dB; 5-year warranty. | Manufacturer page showed low stock; capture full technical table/manual. |
+| MeacoDry Arete One 12L | https://www.meaco.com/collections/wall-mounted-dehumidifiers/products/meacodryarete1-12l | Exact product page; up to 3-bedroom use case; noise from 35dB; 5-year warranty. | Manufacturer page showed low stock; capture full technical table/manual. |
+| MeacoDry Arete One 20L | https://www.meaco.com/collections/arete-one/products/meacodry-arete-one-20l-dehumidifier-and-air-purifier | Compressor; 4.8L tank; 15.2kg; noise from 38dB; 5-year warranty; 12L/day at 27°C/60% RH and 20L/day at 30°C/80% RH. | Manufacturer page showed low stock. |
+| MeacoDry Arete One 25L | https://www.meaco.com/products/meacodry-arete-one-25l-dehumidifier-and-air-purifier | Compressor; 4.8L tank; 16kg; 40dB; 5-year warranty. | Manufacturer page showed out-of-stock/pre-order. |
+| EcoAir DC14 MK2 | https://ecoair.org/products/ecoair-dc14-mk2-13l-compact-portable-dehumidifier | Compressor; up to 13L/day; 1.7L tank; 35dB; 12kg; 2-year warranty; continuous drainage hose included. | Exact manufacturer page found; stock not independently checked. |
+
 ## Critical comparison rules
 1. **Do not compare nominal L/day values without the test condition.** For example, EcoAir desiccant figures shown at 20°C/60% RH and compressor figures shown at 30°C/80% RH are not like-for-like.
 2. Separate desiccant and compressor products in the buying logic. Desiccant models may be better suited to colder environments; do not reduce this to a universal ranking.
@@ -42,11 +50,15 @@
 6. Exact Amazon UK listing/ASIN matching remains a separate task; no affiliate destination has been created or inferred.
 
 ## Remaining UK dehumidifier work
-- Add exact model pages for the six remaining candidates where a current page exists; mark discontinued/unavailable models rather than forcing them into the shortlist.
+- All 23 now have product pages; next resolve exact SKU, manual and retailer stock for each model.
 - Capture the Arete Two 25L full technical table and exact manual.
-- Resolve Meaco Arete One 6L/10L/12L/20L/25L model pages and exact SKU identity; do not merge Arete One and Arete Two.
+- Keep Meaco Arete One and Arete Two as separate model families; capture exact SKU identity for each.
 - Recheck current stock at the official manufacturer and at least one independent UK retailer for every shortlisted model.
 - Deduplicate the comparison by exact model and family; do not count colour variants as separate products.
 - Verify Amazon UK ASIN and affiliate URL only after exact model and pack contents match.
 
 **Outcome:** this batch improves manufacturer evidence and model-name identity for 17 candidates. It does not make any product publishable or authorize a new guide.
+
+
+## Completion update — remaining six exact pages found
+A follow-up official-source search found product pages for the remaining six candidates: Arete One 6L/10L/12L/20L/25L and EcoAir DC14 MK2. The UK dehumidifier batch is now 23/23 with exact product-page sources and populated model names. This does not equal retailer verification or publication approval. Seven records carry explicit manufacturer-page stock caveats (four low-stock Arete One models, two out-of-stock/pre-order models, and the DD128 refurbished outlet sold-out record).
