@@ -7,7 +7,7 @@
 ## Executive result
 - 14/14 previously category-sourced US candidates now have a dedicated manufacturer product or product-family page.
 - 11 records now point to exact product pages; 3 point to model-family pages where bundle/capacity variants still require SKU resolution.
-- Four manufacturer-source conflicts/caveats must be resolved before editorial use: SoloCam E50's zoom/resolution conflict, F25 BX page-title metadata mismatch, eufyCam S4 kit variants, and Mammotion capacity/variant stock.
+- The F25 BX title-metadata mismatch is now resolved in favour of the product body, URL and user manual identifying F25 BX. SoloCam E50 still has unresolved conflicting claims: hero copy advertises two 4K lenses and 12× zoom, while its specifications table states 3K + 2K and 8×. The table also appears to mix in S340 comparison data; hold all disputed claims pending manufacturer clarification. eufyCam S4 kit variants and Mammotion capacity/variant stock remain separate package/SKU gates.
 - Three Mammotion products currently show sold-out or variant-specific sold-out signals.
 - Product-page presence is not Amazon ASIN verification. The verified Amazon ASIN count remains zero.
 
@@ -25,7 +25,7 @@
 | Roborock F25 Steam | https://us.roborock.com/products/roborock-f25-steam-wet-dry-vacuum-with-steam-and-high-temperature-cleaning | 356°F internal-heater steam claim; 25,000Pa claimed suction; up to 80-minute runtime; 180° lay-flat; steam self-cleaning and hot-air drying; manual link. | Exact model page. Verify runtime by mode and distinguish internal heater output from delivered steam temperature. |
 | Roborock F25 Ultra | https://us.roborock.com/products/roborock-f25-ultra | 22,000Pa claimed suction; 356°F internal-heater steam; 187°F high-temperature cleaning; 194°F self-cleaning; 203°F hot-air drying; auto detergent; 180° lay-flat. | Exact model page; one-year manufacturer warranty shown. Do not confuse with F25 Ultra Steam Gen 2. |
 | Roborock F25 XT | https://us.roborock.com/products/roborock-f25-xt-wet-and-dry-vacuum-cleaner | 20,000Pa claimed suction; JawScrapers; DirTect sensor; FlatReach 2.0; SlideTech 2.0; auto detergent; high-temperature self-washing/drying. | Exact model page; full runtime/tank/manual comparison still required. |
-| Roborock F25 BX | https://us.roborock.com/products/roborock-f25-bx-wet-and-dry-vacuum-cleaner | Product body and URL identify F25 BX; one-stroke wet/dry cleaning, FlatReach and JawScrapers. | **Metadata mismatch:** browser page title says “F25 & F25LT” while URL/body say F25 BX. Confirm SKU/manual mapping before using specs. |
+| Roborock F25 BX | https://us.roborock.com/products/roborock-f25-bx-wet-and-dry-vacuum-cleaner | Product body and URL identify F25 BX; one-stroke wet/dry cleaning, FlatReach and JawScrapers. | **Resolved identity:** browser title metadata says “F25 & F25LT”, but official product URL, page H1/body and linked user manual identify F25 BX. The official body confirms 20,000Pa, 60-minute Eco Mode claim, 4000mAh battery and included dock/accessories. Treat the page-title metadata as stale/misleading, not as a different model. Availability remains ambiguous because page contains purchase controls and a “product has not been launched yet” notice; recheck before recommending. |
 | Mammotion LUBA 3 AWD | https://us.mammotion.com/products/luba-3-awd-robot-lawn-mower | 360° LiDAR + NetRTK + dual-camera AI; AWD and up to 80% slope claim; up to 15Ah battery and 215-minute runtime claim. | Product-family page has 1500/3000/5000 area variants. 1500 variant showed out of stock; verify each capacity SKU. Do not count variants as separate products by default. |
 | Mammotion LUBA mini 2 AWD | https://us.mammotion.com/products/luba-mini-2-awd-robot-lawn-mower?variant=51222244819242 | 360° LiDAR + dual-camera AI; AWD up to 80% slopes; 4.7-inch edge-cutting disc; 6.1Ah battery claim. | Product-family page has 1500/1500H variants and sold-out signal. Verify selected variant and SKU. |
 | Mammotion YUKA mini 2 1000H | https://us.mammotion.com/products/yuka-mini-2-1000h-robot-lawn-mower | 0.25-acre claim; 360° LiDAR; dual-camera AI; 6.1Ah battery; 45% slope claim. | Exact 1000H page explicitly showed sold out; exclude from current purchasable recommendations until restocked. |
@@ -33,7 +33,7 @@
 ## Critical QA findings
 1. **Do not treat bundles as independent models.** eufyCam S4 kits and HomeBase bundles are package options; the core camera family is one model candidate.
 2. **Do not treat Mammotion capacity variants as separate products by default.** Exact variant SKUs and lawn-area capacity are options within the family unless a distinct buyer task justifies separate editorial treatment.
-3. **Resolve conflicting manufacturer claims.** SoloCam E50's page contains conflicting zoom/resolution descriptions; F25 BX's page metadata title conflicts with its URL/body.
+3. **Resolve conflicting manufacturer claims.** SoloCam E50's page still contains conflicting zoom/resolution descriptions: hero says two 4K lenses and 12× hybrid zoom; specs say 3K wide-angle + 2K telephoto and 8×. A comparison table on the same page is labelled SoloCam S340, suggesting mixed content. Keep all zoom/resolution claims on hold. F25 BX identity is resolved by its URL, H1/body and linked manual despite stale browser title metadata.
 4. **Availability is regional and variant-specific.** LUBA 3 1500, LUBA mini 2 and YUKA mini 2 1000H showed sold-out signals. Other variants need independent checks.
 5. **Do not turn manufacturer Add to Cart into an Amazon stock claim.** Amazon ASIN and affiliate destination remain unverified for all 14.
 6. **No hands-on claims.** All performance details above are manufacturer-published specifications/claims; independent testing is still required before awards or rankings.
@@ -47,7 +47,7 @@
 - Amazon ASIN/affiliate destinations verified: 0.
 
 ## Next actions
-- Resolve the SoloCam E50 spec conflict and F25 BX metadata/model mapping.
+- Obtain written manufacturer clarification for SoloCam E50's lens resolution and zoom; keep disputed claims out of editorial copy until resolved. F25 BX model identity is resolved; recheck launch/stock status because the page includes both purchase controls and a not-yet-launched notice.
 - Capture exact manuals for all 14 candidates and normalize warranty, power, storage, runtime, filter/consumable, compatibility and service fields.
 - Resolve exact variant SKUs and stock for eufyCam S4 and Mammotion model families.
 - Recheck retailer availability on at least two US retailers for shortlisted models.
@@ -55,3 +55,8 @@
 - Keep products out of the live catalogue until identity, availability, evidence, duplicate and editorial gates pass.
 
 **Outcome:** all 14 category-sourced US candidates now have product/family pages; no candidate has been promoted to verified or publishable.
+
+
+## Follow-up identity resolution — 22 November 2026
+- **Roborock F25 BX:** official product URL and H1/body both identify “Roborock F25 BX Wet and Dry Vacuum Cleaner”; the page links an F25 BX user manual and lists 20,000Pa, 60-minute Eco Mode claim, 4000mAh battery, dock and included accessories. The browser title metadata says “F25 & F25LT”, but the body/manual identity is more specific and consistent. Model identity is resolved as F25 BX; availability is not resolved because the same page contains purchase controls and a “product has not been launched yet” notice. Do not use current stock claims.
+- **eufy SoloCam E50:** the official page hero says two 4K lenses and 12× hybrid zoom, while the technical specification table says 3K wide-angle + 2K telephoto and 8× hybrid zoom. A comparison table within the page is explicitly headed “SoloCam S340”, and lists 3K + 2K / 8× / 8GB eMMC values. This is a material page-content contamination risk, not a discrepancy that can be safely reconciled by choosing one claim. Keep lens resolution and zoom out of all buyer-facing copy pending written eufy clarification. The page does confirm a no-monthly-fee local-storage positioning, but exact storage compatibility/capacity still requires careful wording.
