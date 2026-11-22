@@ -1562,3 +1562,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Verified Epson EF21 US discontinued status separately from UK EF-21G stock status; the catalogue note should stay explicitly US-scoped.
 - Verified Samsung Bespoke Jet AI US 120V/60Hz and separate UK VS28C9784QK/EU model; keep regional electrical warning.
 - Source-verification report updated on docs branch. No production edits or release actions.
+
+
+## 22 Nov 2026 08:10 UTC — GSC visibility notification
+- Owner screenshot of Google Search Console email dated Nov 21 says Google began collecting Search impressions for the property on Nov 19 and pages are appearing for some queries.
+- This is confirmed property-level Search visibility/impression collection, not proof that all 25 guides are indexed or that sitemap processing is resolved.
+- Earlier URL Inspection “URL is unknown to Google” results remain valid as timestamped URL-level observations; the email does not identify the pages/queries.
+- Next: inspect Performance > Search results > Queries and Pages from 19 Nov onward. Do not repeat Request indexing while daily quota error persists.
+- No production changes, PR/CI/merge/deploy or paid service.
