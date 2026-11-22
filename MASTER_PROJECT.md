@@ -1887,3 +1887,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - GitHub compare confirms the fix branch is exactly 2 commits ahead and 0 behind main; only two template files changed. Both files re-fetched and checked: internal status display removed from homepage and guide-library cards, catalogue status data untouched.
 - Preview has successfully built/deployed on Cloudflare, but visual QA has not yet been performed. No PR, merge or production deployment.
 - Next: visually inspect the preview URL, then check Actions quota and decide PR. Do not merge or deploy without explicit release approval.
+
+
+## 22 November 2026 — preview visual QA not yet performed
+- The open browser tabs labelled homepage and guide detail still point to production URLs and were last opened around 05:05–05:06 UTC; they are not the Cloudflare preview. Their text snapshots show older “Research-led guide...” and “Research draft...” labels and must not be treated as fresh production evidence.
+- Current main source has the sample guide marked approved/published, and detail template suppresses the exact approved status. Fresh production navigation needed if validating live text.
+- GSC Page indexing still “Processing data”. URL Inspection of sitemap-index, sitemap-0, and robots returns “URL is unknown to Google”; this does not diagnose sitemap parser fetch. No current Sitemaps report rows obtained.
+- Performance through 19 Nov remains 3 homepage impressions, no clicks, no guide page impressions.
+- Next: fresh browser review of Cloudflare preview URL and GSC Sitemaps report status. No production actions or indexing requests.
