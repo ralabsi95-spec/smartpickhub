@@ -1,3 +1,16 @@
+**Last verified:** 22 November 2026 06:09 UTC.  
+**Current verified main / production marker:** `26636d4359508b9af30eec498a22ffc005a81a72` (Cloudflare `deployment.json` reports the same SHA, branch `main`, generatedAt `2026-11-21T16:21:38.038Z`).  
+**Latest detailed session record:** [docs/SESSION_HANDOFF_2026-11-22.md](docs/SESSION_HANDOFF_2026-11-22.md) on branch `docs/handoff-2026-11-22-indexing-investigation`. This is a documentation-only handoff branch; it has not been merged or deployed.  
+**Critical:** Google Search Console property ownership is verified by owner screenshot. Home page is indexed; all 25 guide URLs returned `URL is unknown to Google` in the latest inspections. Sitemap reports still say `Couldn't fetch`, even though independent live fetch parses sitemap-index and 29 URLs. Do not equate live URL fetch with successful GSC sitemap processing.  
+**Crawl stats (owner screenshot):** 16 requests in 90 days, 257 KB downloaded, 53 ms average response; host had no problems; 88% HTTP 200 and 13% 404 (two requests, including `/favicon.ico`). Robots/DNS/server connectivity fail rates acceptable. This does not indicate a broad host outage.  
+**Content QA finding:** live `/guides/` visibly renders `Approved for publication` labels; the Air Fryers guide contains the internal-sounding phrase `in the captured data` and a UK/Jordan reference. Audit all 25 guides before proposing copy edits; do not edit production without explicit approval.  
+**Repository and operating rules:** GitHub `ralabsi95-spec/smartpickhub`, branch `main`, Cloudflare Pages `https://smartpickhub.pages.dev/`, Astro, `npm run build`, output `dist`. Legacy InfinityFree/WordPress is permanently out of scope. Catalogue remains 25 guides / 100 products; do not re-import. Amazon UK tag `smartpickhubu-21`; US tag `smartpickh0bc-20`. No invented ASINs/prices/ratings/reviews/testing. No paid services or credits without explicit approval.  
+**GitHub Actions:** last recorded quota exhaustion was expected to renew 1 December 2026; current restoration has not been verified. No workflow dispatch/rerun or production deploy until verified.  
+**Pending:** raw HTTP status/headers/body for sitemap-index, sitemap-0 and robots; full 25-guide editorial scan; exact CI quota/current PR state; Bing Webmaster Tools and GA4 setup. GA4 must not use the unrelated legacy Firebase properties.  
+**Next action:** inspect `src/pages/robots.txt.js` and exact locked Astro/sitemap versions, then obtain raw HTTP response headers/XML and finish the 25-guide QA. No production mutation until root cause and rollback are documented and approved.
+
+---
+
 **Last verified:** 19 November 2026 20:24 UTC; latest checked main before this documentation refresh: `ddf8f636fb8493ba6a6d087d2c1864e9bbfd3e00`. Main-SHA build-and-audit, Cloudflare Pages production, Cloudflare Pages preview, and Workers checks all completed successfully on that SHA.  
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `main` (production)  
