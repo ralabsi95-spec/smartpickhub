@@ -1895,3 +1895,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - GSC Page indexing still “Processing data”. URL Inspection of sitemap-index, sitemap-0, and robots returns “URL is unknown to Google”; this does not diagnose sitemap parser fetch. No current Sitemaps report rows obtained.
 - Performance through 19 Nov remains 3 homepage impressions, no clicks, no guide page impressions.
 - Next: fresh browser review of Cloudflare preview URL and GSC Sitemaps report status. No production actions or indexing requests.
+
+## 22 November 2026 — owner-confirmed Preview and Sitemap evidence
+- Desktop screenshots of Preview homepage and /guides/ received and visually reviewed: overall composition coherent; guide listing shows search/category controls and cards; no editorial workflow label visible in captured card area. Only a desktop viewport spot-check, not full mobile/accessibility sign-off.
+- GSC Sitemaps screenshot confirms both submitted sitemap entries show Type Unknown, Last read blank, Status Couldn't fetch, Discovered pages 0:
+  - sitemap-index.xml submitted Nov 22
+  - sitemap-0.xml submitted Nov 19
+- Astro sitemap integration and production canonical hostname/robots Sitemap directive verified in main source. No sitemap-specific response-header rule found.
+- Raw HTTP status/headers/body still unknown. Available public fetch source failed to retrieve the endpoints; this does not prove the endpoints fail for Google.
+- Next: open sitemap-index.xml row in GSC and inspect its detailed error explanation. Do not resubmit, request indexing, or alter production pending diagnosis.
