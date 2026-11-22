@@ -142,3 +142,10 @@ A second review found 62 additional US phrases that were not punctuation duplica
 - Combined UK: 61/62 identities supported; one broken-source candidate. Exact SKU/EAN, retailer stock, Amazon UK identity/ASIN and editorial approval remain separate gates. ASIN verified=0; publishable=0.
 - Philips AC1214/60 and AC2936/33 discontinued. Philips AC3033/30R1 surfaced as refurbished; do not conflate with new AC3033/30. Blueair notify-me and retailer delivery restrictions are not positive availability. Lakeland Mini pre-order is not in-stock.
 - Air purifier comparison must normalize room size at common ACH and CADR units, and capture compatible replacement filter part/price/interval. Heated-airer comparisons must separate form factor and account for cover/accessory package.
+
+
+## Amazon UK exact identity QA — 22 November 2026
+- Initial shortlist search did not produce any independently verified direct Amazon ASINs. Do not mark ASINs as verified based on search snippets, third-party price aggregators, or an ASIN mentioned only as a component within a bundle listing.
+- Dry:Soon Deluxe Amazon bundle B0HFNS4W5G contains airer and cover. Component ASIN references B016Q6NOCC (airer) and B01HTGQMTA (cover) are leads only until their direct detail pages and package match are checked. Do not assign bundle ASIN to the airer-only candidate.
+- Lakeland model 24909 and Meaco SKUs 180-1, 179-1-1, DD8LPro are manufacturer identifiers, not Amazon ASINs.
+- Affiliate tracking ID to use only after direct ASIN validation: smartpickhubu-21. No affiliate URLs generated.
