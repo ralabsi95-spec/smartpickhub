@@ -1934,3 +1934,9 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - UK intent: 366 transactional / 1,662 commercial; 8 exact phrases have cached metrics and 2,020 remain unmeasured. Existing UK metric cache contains 32 saved records; do not imply all 32 are exact matches in the generated universe.
 - US intent: 366 transactional / 1,484 commercial; 0 measured / 1,850 unmeasured. US metrics are not inferred from UK.
 - Directional trend tags: UK 90 phrases, US 180 phrases. Monthly trend history remains unavailable; trendDataAvailable=false in both files.
+
+
+## 22 November 2026 — Trend-led product discovery batch 004
+- Added 8 staged candidates aligned to current UK warming/emergency-product and US home-environment purchase-intent signals. Candidate file: research/scale-1000/batch-004-trend-led-candidates.json; evidence: research/product-verification/trend-led-product-evidence-batch-004-2026-11-22.md.
+- Staged candidates total 110 (UK 65 / US 45). Roberts SolarDAB 99 held (refurbished/out of stock); DREO 733S held pending exact 73/95-pint variant resolution. No ASIN, affiliate link or publishable candidate added.
+- Production catalogue, public pages, metadata, indexing and Cloudflare settings unchanged.
