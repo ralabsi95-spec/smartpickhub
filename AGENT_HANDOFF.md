@@ -1546,3 +1546,13 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - This is a targeted sample, not a complete re-certification of all 100 product records. No production data/code changed, no PR/CI/merge/deploy/index request/import/paid service used.
 - Main remains `26636d4359508b9af30eec498a22ffc005a81a72`.
 - Next: continue model/SKU and technical claim validation, prioritize UK regional hardware variants and safety-critical specifications; then consolidate minimal patch proposal.
+
+
+## 22 Nov 2026 08:07 UTC — regional product verification
+- Continued official-source-only QA for Deco BE63, Saros 10R, Vital 200S-P and Orbi RBE773. Decision on all four: retain current cautious wording; the evidence does not justify broadening UK-specific claims.
+- UK Deco BE63 revision list differs from US; US four-port guide is not evidence for all UK revisions.
+- Roborock UK Saros 10R family mention is not a verified direct UK purchase listing; do not substitute Saros 10.
+- Levoit 24V DC output does not establish AC adapter input range; UK bundle remains unverified.
+- NETGEAR RBE773 UK kit has 3 adapters, but exact supplied adapter AC input is not stated in reviewed official technical sheet/manual.
+- Detailed evidence added to source-verification report on docs branch.
+- No production edits, PR, Actions, merge, deploy, indexing, import or paid tool use.
