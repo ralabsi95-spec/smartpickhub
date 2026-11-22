@@ -1,6 +1,6 @@
 # SmartPickHub — Buyer Keyword Intelligence & Product Discovery
 
-**Updated:** 22 November 2026 14:16 UTC  
+**Updated:** 22 November 2026 14:38 UTC  
 **Primary market:** UK; US is a separately verified secondary market.  
 **Production catalogue:** 25 guides / 100 existing products. These are preserved and must never be re-imported.  
 **Primary KPI:** 1,000+ distinct buyer-intent keyword candidates, with real monthly search metrics prioritised where available. Product candidates are a separate evidence-gated research queue, not a 1,000-product publishing target.
@@ -12,7 +12,7 @@
 | Existing live catalogue | 100 | Already present; excluded from new intake |
 | New staged candidates | 102 | 62 UK + 40 US; research queue only, not verified/publishable |
 | Verified new products | 0 | No candidate has passed all identity, regional, evidence and affiliate checks |
-| Keyword candidates | 2,871 | 1,488 UK + 1,383 US; candidates are not measured demand or pages |
+| Keyword candidates | 2,861 | 1,488 UK + 1,373 US after normalized deduplication; candidates are not measured demand or pages |
 
 ### Batch 001 — UK candidate discovery
 
@@ -120,3 +120,14 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 - Roborock official-store Add to Cart / Buy Now signals are manufacturer-store evidence only; no Amazon.com ASIN, exact affiliate destination, independent testing, or two-retailer availability was verified in this pass.
 - The staged US candidate batch remains 40; verified/publishable remains 0. The additional Roborock model variants in the checkpoint are not counted as new staged candidates until identity, duplication and regional SKU checks are completed.
 - No catalogue import, guide publication, ASIN update, production change, PR creation, merge or deployment was performed.
+
+
+## 22 November 2026 14:38 UTC — Quality and evidence audit
+- Audited the two UK product batches (44 + 18 = 62 records) and the US product batch (40 records). No normalized duplicate candidate names or model labels were found within the UK batches or within the US batch.
+- Found a schema weakness in all 62 UK product candidates: they lacked a dedicated `model` field and an explicit model-identity status. Added `model: null`, `modelIdentityStatus: "unverified"`, `sourceType` and `sourcePageSpecificity` fields rather than guessing model numbers from display names. These remain candidates, not verified products.
+- Added `modelIdentityStatus: "unverified"` and `sourcePageSpecificity` to the 40 US records for consistent quality gating. US source specificity: 21 manufacturer product pages, 5 manufacturer product pages, 11 category pages and 3 collection pages as recorded by the source classification; category/collection sources still require exact model pages.
+- All 102 candidate records still have no verified Amazon ASIN/affiliate destination. All UK 62 records remain partial facts with stock not checked. Eight US records carry explicit stock-check-required status; all 40 remain unverified.
+- Normalized US keyword strings for punctuation/hyphenation/case and removed 10 duplicate variants. US keyword file now contains 1,373 unique phrases (186 transactional / 1,187 commercial; 823 mapped / 550 unmapped); UK remains 1,488 unique (186 transactional / 1,302 commercial; 888 mapped / 600 unmapped). Combined normalized count: **2,861**.
+- US measured metrics remain 0; UK saved cache remains 32 metric records with 8 exact phrase matches. Trend data is unavailable. No paid metric refresh was run.
+- Rechecked the official Roborock US wet-dry collection: its 13 product tiles include bundles/combo SKUs and must not be counted as 13 distinct standalone cleaners. Rechecked Tineco US pages: S9 Artist Pro, S9 Artist Steam and S7 Stretch Ultra remain marked unavailable/backordered.
+- Added a dated US wet-dry catalog/stock update to the product verification checkpoint and created a separate quality audit report. No product was promoted to verified/publishable; no guide, live catalogue, production site, indexability or deployment was changed.
