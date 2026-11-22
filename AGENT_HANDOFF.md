@@ -2,9 +2,9 @@
 
 - User's immediate target is **1,000+ buyer-intent keyword phrases**, including measured monthly search frequency where available, commercial/transactional intent, and differentiated long-tail queries. Do not confuse this with the separate 1,000-product target.
 - Production remains on `main`; verified baseline HEAD before this research branch was `26636d4359508b9af30eec498a22ffc005a81a72`. No production catalogue, public pages, deployment or site settings changed.
-- Research branch: `research/scale-1000-batch-001`, currently 11 commits ahead / 0 behind main. Contains a 1,240-phrase UK buyer-intent keyword database across 62 product topics and a report: `research/keyword-intelligence/`.
+- Research branch: `research/scale-1000-batch-001`, currently 14 commits ahead / 0 behind main. Contains a 1,240-phrase UK buyer-intent keyword database across 62 product topics and a report: `research/keyword-intelligence/`.
 - Keyword metrics: 32 existing OpenSEO saved keywords have cached monthly volume/KD/CPC/intent; only 8 exact-match the generated phrase list. The remaining 1,232 generated phrases are unmeasured (null means not measured, not zero). No monthly trend series is available in the cached rows. Top cached volumes: sage coffee machine 74,000; heated clothes airer 60,500; best cordless vacuum cleaner 27,100 monthly searches. Do not treat volume as clicks/orders or sum grouped close variants.
-- No paid keyword refresh was started; last-known OpenSEO balance was 28 credits. Obtain cost/credit approval before fresh bulk metrics or trend research.
+- No paid keyword refresh was started; last-known OpenSEO balance was 28 credits. Obtain cost/credit approval before fresh bulk metrics or trend research. A public-web UK SERP sample for six major buyer clusters is documented in REPORT.md; it adds qualitative intent evidence, not search-volume or trend metrics.
 - 740 keyword phrases map to existing guide slugs; 500 are not yet mapped and are only candidates for SERP review, not approved new pages. Avoid cannibalisation and one-page-per-keyword publishing.
 - Separate product-discovery queue has 62 research-only candidates across five categories; zero are counted verified/publishable. It is not the user's immediate keyword-count target.
 - No paid API, tracker, rank schedule, publication, merge or production deployment was triggered.
