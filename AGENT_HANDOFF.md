@@ -1558,3 +1558,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - UK source/identity update: 37 dedicated product pages, 12 category/landing sources, 12 Navimow named models on an official range listing, 1 Resideo brochure-confirmed pack. Manufacturer-supported identity 41/62; 21 remain unverified. See `research/product-verification/uk-mowers-thermostats-evidence-2026-11-22.md`.
 - US: F25 BX identity resolved via official URL/body/manual; availability remains ambiguous. eufy SoloCam E50's 4K/12× marketing copy conflicts with 3K+2K/8× technical table and S340-labelled comparison data; keep disputed claims on hold. See updated `research/product-verification/us-product-page-evidence-2026-11-22.md`.
 - Next: exact SKU/manual and stock verification for Navimow range models; resolve E50 with manufacturer; check Mammotion/eufyCam package SKUs; continue marketplace identity verification only after exact model/package matching. Do not invent ASINs or promote candidates prematurely.
+
+
+## 22 November 2026 15:xx UTC — Continued UK source resolution
+- Updated UK Batch 001 JSON: 20 additional candidates now have model identities supported by exact product pages (Lakeland/Dunelm heated airers, Blueair and Philips purifiers). One Dunelm A-frame source URL returns 404; candidate remains unresolved, not verified.
+- Added research/product-verification/uk-heated-airers-air-purifiers-evidence-2026-11-22.md. Key stock/legacy caveats: Philips AC1214/60 and AC2936/33 discontinued; AC3033/30R1 refurbished is not new AC3033/30; Lakeland Mini pre-order; Dunelm Black + Decker Winged unavailable for delivery/collection; Blueair notify-me signals on 211i Max/511i Max.
+- Combined UK candidate identity status: 61/62 manufacturer/retailer-supported, 1 unresolved; exact SKU/EAN, current retailer inventory, Amazon ASIN and editorial gates remain open. No Amazon ASIN or affiliate destination verified; publishable=0.
+- Continue with SKU/manual resolution and exact Amazon UK identity checks only after exact model/package match. Do not import or publish candidates.
