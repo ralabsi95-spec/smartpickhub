@@ -110,3 +110,27 @@ A second recursive scan of all 25 guides / 100 product records checked for inter
 - Levoit and NETGEAR regional adapter caveats remain justified; do not overstate certainty.
 - No additional research-residue phrases were found beyond the six already logged in the expanded scan/source-verification note.
 - No source files on `main` changed. No PR, Actions run, merge, or production deployment occurred.
+
+
+## Product-specification verification — priority sample, 22 Nov 2026
+
+This pass checked region-sensitive electrical products, networking hardware, security cameras, and model-specific Apple/Ring claims against current official manufacturer sources. It is a sample-based factual check, not a complete re-certification of all 100 records.
+
+### Confirmed / retained
+
+1. **EcoFlow RIVER 2 — regional electrical variants:** Official manual confirms 256Wh, 300W continuous / 600W peak, US AC input 100–120V and output 120V, EU/ZA input 220–240V and output 230V. The guide's regional warning is correct. Source: https://manuals.ecoflow.com/eu/product/river-2-portable-power-station?lang=en_US&source=desktop
+2. **Jackery Explorer 300 Plus — regional electrical variants:** Jackery Europe confirms JE-300B, 288Wh, LiFePO4, 3.75kg, AC input 220–240V 50Hz and output 230V 50Hz / 300W. Jackery US separately lists 100–120V input and 100V/60Hz output. The guide's warning that the same family/model code can have materially different regional electrical variants is justified. Sources: https://helpcenter.eu.jackery.com/hc/en-gb/articles/52682971950363-Explorer-300-Plus-Basic-Information and https://faq.jackery.com/hc/en-us/articles/52303549157787-Explorer-300-Plus-Basic-Information
+3. **TP-Link Deco BE63 — regional hardware caution:** TP-Link UK lists hardware revisions V3.60, V2.60 and V2, and explicitly says availability varies by region. US official manual/datasheet confirms four 2.5Gbps ports for the cited US hardware. Keep the current caution that the US datasheet is not proof of identical UK hardware/firmware. Further exact UK revision port and adapter verification remains desirable before making UK-specific claims. Sources: https://www.tp-link.com/uk/support/download/deco-be63/ and https://static.tp-link.com/upload/manual/2026/202606/20260611/1910013639_Deco%20BE63%28US%292.6_User%20Guide_REV2.6.0%20%281%29.pdf
+4. **Arlo Essential 3 2K Outdoor Security Camera:** Exact UK product listing (SKU VMC3280-100EUS) confirms 2K 2560×1440, 130° diagonal field of view, 12× digital zoom, no pan/tilt, spotlight, siren, integrated battery, dual-band Wi-Fi and 4–6 month stated battery estimate. The guide's fixed-view limitation and principal listed features are consistent. Subscription caveat remains relevant for advanced AI/cloud features. Source: https://www.arlo.com/en_gb/cameras/arlo-essential-3-2k-security
+5. **Ring Battery Doorbell 2K Plus:** Ring's 2026 official naming update confirms Battery Doorbell Plus (2nd Gen) was renamed Battery Doorbell 2K Plus without changing features/subscription. The product page confirms the current name and quick-release battery pack. Existing record is consistent. Sources: https://partners.ring.com/support/articles/538eg/ring-product-name-changes and https://ring.com/products/battery-doorbell-plus-2nd-gen
+6. **Apple Watch Series 12 / Ultra 4:** Apple's current official technical pages support the core values recorded: Series 12 S11, 42/46mm, 2,000 nits, up to 24h normal / 38h Low Power; Ultra 4 S11, 49mm Grade 5 titanium, 3,000 nits, up to 50h normal / 84h Low Power. Keep regional feature/cellular caveats. Sources: https://www.apple.com/jo/apple-watch-series-12/specs/ and https://www.apple.com/jo/apple-watch-ultra-4/specs/
+7. **Anker 737 Power Bank A1289:** Anker confirms 24,000mAh, 140W max output, two USB-C plus one USB-A, and 630g. Existing claims are supported. Note that the 140W ceiling is not available to every device/cable or simultaneous multi-port configuration; current buyer caveat is appropriate. Sources: https://www.anker.com/products/a1289 and https://service.anker.com/article-description/Introduction-to-the-Anker-737-Power-Bank-24K-A1289
+
+### Editorial risk / no change yet
+- TP-Link BE63 is the main remaining item in this sample where exact UK revision-level confirmation should be obtained before removing its existing caution. The US configuration should not be silently generalized to UK units.
+- Battery runtime, wireless coverage, camera detection, and throughput are manufacturer estimates or environment-dependent; retain qualifiers and avoid presenting them as guaranteed real-world performance.
+- No first-hand testing claims were found in this sample. No prices, ratings, live stock or direct ASIN claims were introduced.
+
+### Status
+- Source review only. No production files or catalogue records changed.
+- No PR, CI/Actions run, merge, deployment, indexing submission, product import or paid research tool used.
