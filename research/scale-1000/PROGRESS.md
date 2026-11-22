@@ -235,3 +235,10 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 - UK intent: 366 transactional / 1,662 commercial; 8 exact phrases have cached metrics and 2,020 remain unmeasured. Existing UK metric cache contains 32 saved records; do not imply all 32 are exact matches in the generated universe.
 - US intent: 366 transactional / 1,484 commercial; 0 measured / 1,850 unmeasured. US metrics are not inferred from UK.
 - Directional trend tags: UK 90 phrases, US 180 phrases. Monthly trend history remains unavailable; trendDataAvailable=false in both files.
+
+
+## 22 November 2026 — Trend-led product discovery batch 004
+- Added 8 staged candidates tied to current dated purchase-intent signals: UK 3 (Dreamland heated throw, Silentnight electric blanket, Roberts SolarDAB 99 emergency radio) and US 5 (Levoit Superior Studio humidifier, DREO Humidifier 311S, DREO Dehumidifier 733S, Brita Tahoe Elite OB60, Honeywell HHF360V heater).
+- Evidence: research/product-verification/trend-led-product-evidence-batch-004-2026-11-22.md; candidate data: research/scale-1000/batch-004-trend-led-candidates.json.
+- Roberts SolarDAB 99 is held because the only captured official listing is refurbished/out of stock. DREO 733S is held on 73/95-pint variant/spec discrepancy. Other candidates still need SKU/manual, exact Amazon ASIN, availability and editorial checks.
+- Staged product candidate count rises from 102 to 110 (UK 65, US 45); verified/publishable remains 0; Amazon ASIN verified remains 0. Existing production catalogue 25 guides / 100 products unchanged.
