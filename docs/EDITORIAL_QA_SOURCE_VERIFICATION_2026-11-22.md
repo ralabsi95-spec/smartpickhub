@@ -65,3 +65,48 @@ The current `src/pages/guides/index.astro` renders `guide.editorialStatus` direc
 - This file is documentation only on `docs/handoff-2026-11-22-indexing-investigation`.
 - No change has been made to `main`.
 - No PR was created, no workflow was dispatched, and no production deployment occurred.
+
+
+## Additional catalogue sweep — 22 Nov 2026, 06:47–06:50 UTC
+
+A second recursive scan of all 25 guides / 100 product records checked for internal audit language, uncertain regional availability, model mismatch, and specification claims.
+
+### Additional evidence checked
+
+#### Roborock Saros 10R
+- The catalogue's caution says a matching UK Saros 10R listing was not confirmed and warns against substituting Saros 10.
+- Roborock UK public pages now describe the Saros 10R in the UK product family/navigation, including the official UK homepage and a UK page describing the Saros 10R feature set:
+  - https://uk.roborock.com/
+  - https://uk.roborock.com/pages/test
+- The official UK store listing page inspected does not clearly show a direct Saros 10R product purchase listing in the extracted content; the official global Saros 10R product page is not proof of UK stock or UK warranty:
+  - https://global.roborock.com/pages/roborock-saros-10r
+- Decision: current note is cautious and not disproven; however "matching UK product listing not confirmed" needs a targeted direct product/store verification before publication. Do not replace the model with Saros 10. Do not claim UK availability from homepage marketing imagery alone.
+
+#### Razer Kiyo Pro Ultra
+- The current guide's limitation "4K capture is limited to 30 fps" is supported by Razer's official product page and technical manual. Razer describes raw 4K at 30 FPS, 1080p at 60 FPS, and uncompressed output up to 4K 24 FPS / 1440p 30 FPS / 1080p 60 FPS:
+  - https://www.razer.com/streaming-cameras/razer-kiyo-pro-ultra
+  - https://dl.razerzone.com/master-guides/RazerSynapse3/KIYOPROULTRA-00003592-en.pdf
+- Decision: no correction required for the 4K/30fps limitation. Keep it.
+
+#### Levoit Vital 200S-P
+- Levoit's US product page identifies model LAP-V201S-WUS and lists a 24V DC / 2.5A power supply, 50W rated power, and an AC power adapter included in the box:
+  - https://levoit.com/products/levoit-vital-200s-p-smart-air-purifier-black
+- Levoit's US Vital series collection includes Vital 200S-P, but this does not establish a UK regional plug/adapter bundle or UK warranty:
+  - https://levoit.com/collections/levoit-vital-series-air-purifiers
+- Decision: preserve the UK regional availability and adapter/warranty caution. The exact adapter AC input rating still needs the adapter label/manual; do not infer it from the 24V DC output specification.
+
+#### NETGEAR Orbi RBE773
+- The official UK product page confirms RBE771 router x1, RBE770 satellites x2 and power adapters x3. It does not publish adapter AC input rating in the page content:
+  - https://www.netgear.com/uk/home/wifi/mesh/rbe773
+- NETGEAR's official quick-start guide states adapters vary by region and packages in some regions may include plug adapters:
+  - https://www.downloads.netgear.com/files/GDC/RBE773/RBE772_RBE773_QSG_EN-EU.pdf
+- The official user manual refers to EU/UK plug adapters for Singapore use, but this does not identify the universal AC input rating for the exact adapter supplied with a UK retail kit:
+  - https://www.downloads.netgear.com/files/GDC/RBE773/RBE771_RBE770_UM.pdf
+- Decision: retain instruction to inspect the exact adapter label. No universal input voltage claim.
+
+### Sweep summary
+- One further buyer-facing caution (Roborock Saros 10R UK matching listing) remains open for targeted confirmation.
+- Razer 4K/30fps limit is verified and should remain.
+- Levoit and NETGEAR regional adapter caveats remain justified; do not overstate certainty.
+- No additional research-residue phrases were found beyond the six already logged in the expanded scan/source-verification note.
+- No source files on `main` changed. No PR, Actions run, merge, or production deployment occurred.
