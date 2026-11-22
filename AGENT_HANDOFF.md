@@ -1,3 +1,19 @@
+**Current audit checkpoint — 22 November 2026 16:05 UTC**
+
+- Repository `ralabsi95-spec/smartpickhub`, production branch `main`, verified HEAD `26636d4359508b9af30eec498a22ffc005a81a72`. Production marker was last recorded matching this SHA at 06:09 UTC; recheck the live marker before any release.
+- Production: https://smartpickhub.pages.dev/ (Astro + Cloudflare Pages). Preview: https://smartpickhub-preview.pages.dev/ and must remain noindex/nofollow. Former InfinityFree/WordPress remains permanently out of scope.
+- Catalogue: 25 published/approved guides / 100 product records. Do not re-import. Every product has manufacturer source/source note and US/UK marketplace search identifiers; no direct ASIN, prices, ratings, stock or hands-on claims are approved without verification.
+- Latest free GSC read (23 Oct–19 Nov): 3 homepage impressions, 0 clicks, average position 88.3; no guide-page impressions. All 25 guide URLs were previously reported URL unknown to Google. GA4 not connected; no rank tracker or AI visibility tracker configured; Bing Webmaster pending.
+- GSC sitemap-index and child sitemap still show Couldn't fetch / Type Unknown / no discovered pages in the owner-recorded report. Previous independent extraction parsed 29 URLs, but raw HTTP status/headers/body are not captured. Inspect the sitemap detail error and live-test availability before changing anything.
+- Source SEO recheck: 25 unique concise SEO titles; current source-derived descriptions are within 160 characters. Older 19 Nov OpenSEO length warnings predate the metadata release; do not redo that work.
+- Known public UI defect: homepage and guide-library cards expose internal editorialStatus. A two-file fix exists on `fix/public-editorial-status-2026-11-22`; preview build was reported green for an earlier commit, but exact-head QA/visual review is pending. Not merged/deployed.
+- PR #34 remains open with failed Actions run #899 and unavailable logs; cause unknown. PR #32 remains open/stale and not mergeable. Do not merge either.
+- IndexNow workflow is still special-commit-gated and whole-sitemap based; build a route-aware changed/deleted URL queue before scale. Production wildcard robots currently allows all crawlers; keep OAI-SearchBot vs GPTBot policy as a separate owner decision.
+- Pinterest feed connections are owner-confirmed; actual ingestion/Pin publication unverified. No paid OpenSEO/TinyFish use or GitHub Actions rerun; Actions quota restoration remains unverified (last expected renewal 1 Dec 2026).
+- Immediate next action: obtain raw robots/sitemap HTTP response evidence and the exact GSC sitemap-detail error. No production changes without explicit approval and rollback evidence.
+
+---
+
 **Last verified:** 19 November 2026 20:24 UTC; latest checked main before this documentation refresh: `ddf8f636fb8493ba6a6d087d2c1864e9bbfd3e00`. Main-SHA build-and-audit, Cloudflare Pages production, Cloudflare Pages preview, and Workers checks all completed successfully on that SHA.  
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `main` (production)  
