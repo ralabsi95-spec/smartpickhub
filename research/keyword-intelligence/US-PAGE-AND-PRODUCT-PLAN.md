@@ -43,7 +43,7 @@ Research only. No live catalogue, page, Amazon link, indexability, deployment, o
   - https://us.roborock.com/products/roborock-f25-gt-gen-2
   - https://us.roborock.com/collections/wet-dry-vacuums
   - https://us.roborock.com/pages/roborock-f25-series-pitching-guide
-- US product candidate batch now contains 22 candidates across six manufacturer/product families (eufy, Levoit, Frigidaire, EcoFlow, ecobee, Roborock). Verified/publishable remains 0.
+- US product candidate batch now contains 40 candidates across multiple official US manufacturer product families. Verified/publishable remains 0.
 - Added a distinct US wet-dry vacuum page brief. No page created or published.
 
 
