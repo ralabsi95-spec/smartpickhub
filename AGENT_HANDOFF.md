@@ -1,3 +1,15 @@
+**Latest checkpoint — 22 November 2026**
+
+- User wants UK and US markets researched with equal depth, 1,000s of buyer-intent keywords, and preparation of product/page assets. Do not confuse candidate keyword counts with measured demand or live pages.
+- Keyword universe: 1,240 UK + 1,240 US = 2,480 candidates, 62 topic groups per market. UK metrics: 32 saved rows; 8 exact matches in the generated list. US metrics: 0; US phrases are localized but unmeasured. No monthly trend history in cached UK data. Last-known OpenSEO balance 28 credits; do not start paid metric refresh without explicit budget approval.
+- Page planning: 25 UK existing-guide refresh briefs + 12 UK new-page candidates; 25 US existing-guide refresh briefs + 11 US page/topic candidates (some refresh-only due likely cannibalisation). No page was created or published.
+- Product discovery: 62 UK staged candidates + 14 US manufacturer-sourced candidates. Verified/publishable additions remain 0. Existing live catalogue remains 25 guides / 100 products; target remains 1,000 verified products, 900 net-new still needed. Do not re-import or overwrite existing records.
+- US product candidates in `research/scale-1000/batch-003-us-product-candidates.json` from eufy, Levoit, Frigidaire and EcoFlow. Stock/SKU verification open. No ASIN/affiliate URL fabricated.
+- Research branch: `research/scale-1000-batch-001`. No PR, merge, deployment, public catalogue or indexability change. Production stays on main.
+- Next work: build US-specific metrics when credits approved; SERP overlap for UK/US page briefs; expand product discovery in distinct categories; verify exact models, US/UK electrical and warranty differences, Amazon marketplace destinations and image rights before any candidate promotion.
+
+---
+
 **Current working checkpoint — 22 November 2026 17:10 UTC**
 
 - User's immediate target is **1,000+ buyer-intent keyword phrases**, including measured monthly search frequency where available, commercial/transactional intent, and differentiated long-tail queries. Do not confuse this with the separate 1,000-product target.
