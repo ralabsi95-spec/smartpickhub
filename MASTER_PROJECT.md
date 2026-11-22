@@ -1806,7 +1806,7 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Keyword universe: 1,240 UK buyer-intent phrases + 1,240 separately localized US phrases = 2,480 total candidate phrases across 62 topics each. US phrases use US vocabulary; no UK metrics are copied into US rows.
 - UK: 32 saved OpenSEO metric records exist; 8 exact matches in the generated UK candidate list. US: 0 measured. No monthly trend series is available in the cached UK rows. Fresh metrics/trends require separate paid credit approval (last-known balance 28).
 - Page planning: 25 existing UK guides have refresh briefs; 12 new UK topic candidates prepared. 25 existing US guide refresh briefs; 11 US page/topic candidates prepared, including refresh-only cases where cannibalisation is likely. No page published or modified.
-- Product discovery: 62 UK candidate records already staged + 14 US candidates staged from official manufacturer US sources (eufy, Levoit, Frigidaire, EcoFlow). Verified/publishable products remain 0; no Amazon ASIN or affiliate URL fabricated. Existing 100 products / 25 guides untouched; 900 net-new verified product records remain toward target 1,000.
+- Product discovery: 62 UK + 40 US product candidates are staged from manufacturer sources; verified/publishable remain 0 and no Amazon ASIN or affiliate URL has been fabricated. Existing 100 products / 25 guides untouched. The 1,000+ target is buyer-intent keywords, not a 1,000-product publishing quota.
 - Research branch `research/scale-1000-batch-001`; no merge, PR, deployment or production change.
 - Files: `research/keyword-intelligence/us-buyer-keywords-2026-11-22.json`, `uk-page-briefs-2026-11-22.json`, `us-page-briefs-2026-11-22.json`, `US-PAGE-AND-PRODUCT-PLAN.md`, and `research/scale-1000/batch-003-us-product-candidates.json`.
 
@@ -1826,7 +1826,7 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 ## 22 November 2026 14:16 UTC — Final topic-specific keyword expansion checkpoint
 - Replaced the first broad modifier expansion after relevance sampling showed some cluster-wide combinations were not topic-specific. Rebuilt the expansion from the original 1,240 UK and 1,240 US base phrases with per-topic buyer modifiers.
 - Final candidate universe: **1,488 UK + 1,383 US = 2,871 unique phrases**. Exact duplicate validation: 0 per market. UK intent by wording: 186 transactional / 1,302 commercial; 32 saved cache metric records, 8 exact phrase matches, 1,480 unmeasured. US: 186 transactional / 1,197 commercial, 0 measured, all 1,383 unmeasured. No monthly trend data available and no paid credits used.
-- Product discovery remains separate: 62 UK + 22 US candidates, 0 verified/publishable. Page briefs remain plans only (UK 25 refresh + 12 new candidates; US 25 refresh + 12 topics, 10 new and 2 refresh-only). Existing 25 guides / 100 products preserved.
+- Product discovery remains separate: 62 UK + 40 US candidates, 0 verified/publishable. Page briefs remain plans only (UK 25 refresh + 12 new candidates; US 25 refresh + 12 topics, 10 new and 2 refresh-only). Existing 25 guides / 100 products preserved.
 - Research branch only; no PR, merge, public content, catalogue, metadata, deployment or indexability changes. Research branch remains isolated from main; no merge or production action was performed.
 
 
@@ -1834,4 +1834,4 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - The initial broad cluster-wide modifier expansion was reviewed and discarded where modifiers did not fit individual products. The retained expansion is topic-specific and buyer-task-led.
 - Final keyword universe: 1,488 UK + 1,383 US = 2,871 unique phrases. UK 186 transactional / 1,302 commercial; US 186 transactional / 1,197 commercial. Exact duplicate validation: zero in both markets.
 - UK 888 phrases map to existing guides and 600 remain for SERP review; US 827 map and 556 remain for SERP review. These are keyword-to-page mappings, not page creation approvals.
-- Product discovery remains a separate research queue: 62 UK + 22 US staged candidates, 0 verified/publishable. Existing catalogue 25 guides / 100 products unchanged; no production changes.
+- Product discovery remains a separate research queue: 62 UK + 40 US staged candidates, 0 verified/publishable. Existing catalogue 25 guides / 100 products unchanged; no production changes.
