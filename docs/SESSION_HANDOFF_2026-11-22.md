@@ -130,3 +130,16 @@ Only a sample was reviewed. A full scan of all 25 guides remains pending. Do not
 **Decisions:** keep sitemap investigation evidence-led; complete full 25-guide QA; keep the internal workflow-label issue separate from indexing root-cause analysis.
 
 **Next exact action:** verify exact locked package versions and obtain raw HTTP headers/XML for sitemap responses.
+
+
+## 11. Follow-up source-code audit — 22 Nov 2026 06:10 UTC
+
+- Exact lockfile versions confirmed from `package-lock.json` (blob SHA `49e71620d23f120332efd0ef8a5ae866237644a2`): Astro `7.4.12`; `@astrojs/sitemap` `3.7.5`. The package manifest uses caret ranges, but lockfile pins these exact versions.
+- `src/pages/guides/index.astro` (SHA `7d9065c9912434887b984adc4c69ab385a253675`) explicitly renders `guide.editorialStatus` in every guide card. `src/data/products.json` has 25/25 guides set to `Approved for publication` and `publicationStatus: published`. Therefore the badge is not an extraction artefact; it is intentionally rendered by the page template. No change made.
+- `src/pages/guides/[slug].astro` renders editorialStatus only when it is not exactly `Approved for publication`; thus the status is exposed on the guide index cards but suppressed on the guide detail pages for approved guides.
+- The `Jordan` term is present in five guide records, not just Air Fryers: `portable-power-travel-tech-us-uk`, `air-fryers-us-uk`, `home-air-purifiers-us-uk`, `smartwatches-us-uk`, `home-printers-us-uk`. Most mentions are regional electrical/warranty warnings, but these are UK/US-targeted guides and should be reviewed for whether Jordan is intentional. The Apple Watch Jordan official source is a different case: its source URL is Apple Jordan and it may be relevant to regional source verification; review individually rather than blindly deleting.
+- The exact phrase `captured data` occurs in the Air Fryers record only, in the COSORI UK product-page voltage availability note.
+- GitHub workflow `.github/workflows/build-check.yml` listens to PRs targeting main and includes npm ci, Astro checks, importer self-tests, catalogue validation, build, distribution, smoke, accessibility and Lighthouse. A draft PR may trigger Actions, so avoid creating one while quota restoration remains unverified.
+- TinyFish wallet was checked read-only at 06:10 UTC and showed a negative balance of USD -0.472. Do not run further TinyFish fetch/browser/research calls or top up; the owner has not approved spending. Continue only with GitHub connector and genuinely free sources/tools.
+
+**Revised next step:** use free GitHub source reads to complete static data/content review; obtain raw HTTP response headers only through a genuinely free source or owner-provided output. Do not use TinyFish until the owner explicitly approves a top-up.
