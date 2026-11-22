@@ -388,7 +388,7 @@
       "model": "LUBA mini 2 AWD (1500/1500H family)",
       "source": "https://us.mammotion.com/products/luba-mini-2-awd-robot-lawn-mower?variant=51222244819242",
       "sourceType": "manufacturer product family page",
-      "evidence": "Official US page identifies LUBA mini 2 AWD 1500 / 1500H variants, with S/H cutting-height configurations (S 2.2–4.0 in? Confirm manual; page option labels require exact variant capture), 360° LiDAR + dual-camera AI vision, AWD up to 80% slope claim, 4.7-inch edge disc and 6.1Ah battery. Page hero showed sold out while lower selected-option module displayed an older estimated arrival window (Sep 29–Oct 06, 2026); these signals conflict/stale. Do not infer current availability or count 1500 and 1500H as separate products.",
+      "evidence": "Official US page identifies LUBA mini 2 AWD 1500 / 1500H options, 360° LiDAR + dual-camera AI vision, AWD up to 80% slope claim, 4.7-inch edge-cutting disc and 6.1Ah battery. The selected page module displays a 1500 / 0.37-acre high-version option; verify the exact mapping of 1500 vs 1500H and S/H cutting-height ranges against the manual before comparison. Page hero showed sold out while lower selected-option module displayed an older estimated arrival window (Sep 29–Oct 06, 2026), already past the current capture date; these signals conflict/stale. Do not infer current availability or count 1500 and 1500H as separate products.",
       "buyerUse": "compact wire-free AWD mower for smaller yards and steep terrain",
       "availabilityNote": "Listed on official US collection; variant-specific stock to recheck.",
       "status": "candidate",
