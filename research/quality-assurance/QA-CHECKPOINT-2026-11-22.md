@@ -170,3 +170,10 @@ A second review found 62 additional US phrases that were not punctuation duplica
 - Twelve additional US candidates have official model evidence. US identity coverage: **39/40 supported; 1 unresolved** (EcoFlow RIVER 3 Plus staged URL returns 404).
 - Manufacturer identifiers recorded for Rachio, Whynter, Schlage, Greenworks and Kärcher. Keep variant/package boundaries and US voltage distinctions explicit.
 - Whynter ARC-102CS old 2019 manual conflicts with the current product page/2024 manual; use current documents only. Pressure washer GPM values must state the associated PSI. No Amazon ASINs or affiliate URLs verified; publishable remains 0.
+
+
+## Keyword expansion batch 002 — 22 November 2026
+- UK universe: 2028 unique phrases; US: 1850; combined market-specific total 3878. New additions: UK 540 / US 539.
+- New phrases are within-market deduplicated buyer-task terms; new metrics remain unmeasured. No monthly trend series exists.
+- Directional trend evidence: UK Uswitch warming gadget survey; UK Be Ready campaign-linked retail reports; US IHA home-environment purchase-intent survey; Google Holiday 100. Evidence is not search volume or a forecast.
+- No product/page publication or production change; no paid research credits used.
