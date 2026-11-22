@@ -94,3 +94,9 @@ One canonical phrase was retained from each pair. The US file was updated and it
 
 ## 1A. Second semantic cleanup — redundant budget templates
 A second review found 62 additional US phrases that were not punctuation duplicates but were redundant buyer intents. Each phrase used `for budget models`, `for budget systems`, `for budget routers`, `for budget cameras`, `for budget kits` or `for budget sets`, while an equivalent `best budget [product]` phrase already existed in the same topic dataset. All 62 redundant rows were removed; no unique intent was lost because the canonical budget phrase remains. The US file now contains 1,311 phrases: 186 transactional, 1,125 commercial, 786 mapped and 525 unmapped. The combined UK/US universe is 2,799 phrases. Remaining generic long-tail modifiers are flagged for semantic/SERP review and are not automatically considered valid just because they are syntactically unique.
+
+
+### Source specificity counts
+- UK: 13 of 62 records point to a product page; 49 of 62 currently point to a category, collection or landing page.
+- US: 26 of 40 records point to a product page; 14 of 40 point to a category or collection page.
+- All 102 candidates have a source URL, but **63 records still need a more specific product-page source** before exact SKU verification can be considered complete. This is a source-quality gap, not proof that the products do not exist.
