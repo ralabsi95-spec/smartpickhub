@@ -499,15 +499,16 @@
       "model": "ARC-1050XPH",
       "source": "https://whynter.com/product/whynter-arc-1050xph-12000-btu-portable-ac-heater/",
       "sourceType": "manufacturer US product page",
-      "evidence": "Official specifications list 13,500 BTU ASHRAE / 10,000 BTU SACC, single-hose design, heat mode, Wi-Fi, 500 sq ft stated coverage and 115V/60Hz supply. Use SACC prominently and validate room sizing independently.",
+      "evidence": "Official specifications list 13,500 BTU ASHRAE / 10,000 BTU SACC, single-hose design, heat mode, Wi-Fi, 500 sq ft stated coverage and 115V/60Hz supply. Use SACC prominently and validate room sizing independently. Whynter official US product page identifies ARC-1050XPH; manufacturer SKU ARC-1050XPH and UPC 850014459642; current manual lists 13,500 BTU ASHRAE / 10,000 BTU SACC cooling, 10,500 BTU heating, 500 ft² coverage, 115V/60Hz. Keep ASHRAE and SACC figures distinct.",
       "buyerUse": "portable AC with heating and dehumidification for US rooms",
       "availabilityNote": "Official product page accessible; live stock not established in this capture.",
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
       "sourceDate": "2026-11-22",
-      "modelIdentityStatus": "unverified",
-      "sourcePageSpecificity": "product_page"
+      "modelIdentityStatus": "manufacturer_model_name_and_sku_confirmed",
+      "sourcePageSpecificity": "product_page",
+      "sourceVerifiedAt": "2026-11-22"
     },
     {
       "name": "Whynter ARC-102CS Compact Portable Air Conditioner",
@@ -515,15 +516,16 @@
       "model": "ARC-102CS",
       "source": "https://whynter.com/product/whynter-arc-102cs-portable-air-conditioner/",
       "sourceType": "manufacturer US product page",
-      "evidence": "Official product page confirms exact ARC-102CS model identity; extract current SACC, hose design, power and room-size specifications before verification.",
+      "evidence": "Official product page confirms exact ARC-102CS model identity; extract current SACC, hose design, power and room-size specifications before verification. Whynter official US product page identifies ARC-102CS; manufacturer SKU ARC-102CS and manual. Current product page/2024 manual state 10,000 BTU ASHRAE / 7,000 BTU SACC, 300 ft², R32, 115V/60Hz. Older 2019 manual contains superseded figures/refrigerant; do not mix old specifications.",
       "buyerUse": "compact portable AC option for smaller US rooms",
       "availabilityNote": "Official product page accessible; live stock not established in this capture.",
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
       "sourceDate": "2026-11-22",
-      "modelIdentityStatus": "unverified",
-      "sourcePageSpecificity": "product_page"
+      "modelIdentityStatus": "manufacturer_model_name_and_sku_confirmed",
+      "sourcePageSpecificity": "product_page",
+      "sourceVerifiedAt": "2026-11-22"
     },
     {
       "name": "Rachio 3 Smart Sprinkler Controller",
@@ -531,15 +533,26 @@
       "model": "Rachio 3 8-zone / 16-zone variants",
       "source": "https://rachio.com/products/rachio-3",
       "sourceType": "manufacturer US product page",
-      "evidence": "Official Rachio page lists 8- and 16-zone versions, app-based schedules, weather intelligence and Alexa/Google integrations; 2-year limited warranty is documented in Rachio support specifications. Zone count is a variant, not a separate product.",
+      "evidence": "Official Rachio page lists 8- and 16-zone versions, app-based schedules, weather intelligence and Alexa/Google integrations; 2-year limited warranty is documented in Rachio support specifications. Zone count is a variant, not a separate product. Rachio official product catalogue confirms Rachio 3 Smart Sprinkler Controller with 8-zone SKU 8ZULW-CP and 16-zone SKU 16ZULW-C. Keep as one product family with zone-count variants; do not count as two separate models.",
       "buyerUse": "in-ground sprinkler system automation for US yards with multiple watering zones",
       "availabilityNote": "Official page showed 8- and 16-zone options in stock at capture.",
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
       "sourceDate": "2026-11-22",
-      "modelIdentityStatus": "unverified",
-      "sourcePageSpecificity": "product_page"
+      "modelIdentityStatus": "manufacturer_model_and_variant_skus_confirmed",
+      "sourcePageSpecificity": "product_page",
+      "sourceVerifiedAt": "2026-11-22",
+      "manufacturerVariantSkus": [
+        {
+          "variant": "8-zone",
+          "sku": "8ZULW-CP"
+        },
+        {
+          "variant": "16-zone",
+          "sku": "16ZULW-C"
+        }
+      ]
     },
     {
       "name": "Rachio Smart Hose Timer",
@@ -547,15 +560,18 @@
       "model": "Smart Hose Timer kit (one valve plus Wi-Fi hub)",
       "source": "https://rachio.com/products/smart-hose-timer",
       "sourceType": "manufacturer US product page",
-      "evidence": "Official page documents app scheduling, rain skips, flow detection and hub-based connectivity; valves require two AA batteries and a Wi-Fi hub, and support 2.4 GHz Wi-Fi.",
+      "evidence": "Official page documents app scheduling, rain skips, flow detection and hub-based connectivity; valves require two AA batteries and a Wi-Fi hub, and support 2.4 GHz Wi-Fi. Rachio official product catalogue identifies Smart Hose Timer kit (1 valve + WiFi Hub), SKU SHVK001. Official page states 2.4GHz Wi-Fi hub requirement and two AA batteries for valve; listing showed out of stock at capture.",
       "buyerUse": "automated hose and drip irrigation for garden beds, containers and outdoor taps",
       "availabilityNote": "Rachio product catalogue showed the kit out of stock at capture; keep candidate-only.",
       "status": "candidate_stock_check_required",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
       "sourceDate": "2026-11-22",
-      "modelIdentityStatus": "unverified",
-      "sourcePageSpecificity": "product_page"
+      "modelIdentityStatus": "manufacturer_model_and_sku_confirmed",
+      "sourcePageSpecificity": "product_page",
+      "sourceVerifiedAt": "2026-11-22",
+      "manufacturerSku": "SHVK001",
+      "availabilityStatus": "manufacturer_store_out_of_stock"
     },
     {
       "name": "Aqara Smart Lock U100",
@@ -563,15 +579,16 @@
       "model": "U100",
       "source": "https://us.aqara.com/products/smart-lock-u100",
       "sourceType": "manufacturer US product page",
-      "evidence": "Official US page and specifications identify a fingerprint/keypad deadbolt with Apple Home Key, Bluetooth 5.0, Zigbee 3.0, NFC and IP65 keypad rating. Door fit and hub requirements need a compatibility check.",
+      "evidence": "Official US page and specifications identify a fingerprint/keypad deadbolt with Apple Home Key, Bluetooth 5.0, Zigbee 3.0, NFC and IP65 keypad rating. Door fit and hub requirements need a compatibility check. Aqara official US product page and product specifications identify Smart Lock U100; Bluetooth 5.0/Zigbee 3.0/NFC, US-standard deadbolt, 35–55mm door thickness, IP65 keypad, 4 AA batteries. Exact manufacturer SKU and package variant remain pending.",
       "buyerUse": "keyless deadbolt with fingerprint and Apple Home Key access",
       "availabilityNote": "Official US product page listed the model; current retailer/Amazon availability not checked.",
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
       "sourceDate": "2026-11-22",
-      "modelIdentityStatus": "unverified",
-      "sourcePageSpecificity": "product_page"
+      "modelIdentityStatus": "manufacturer_model_name_confirmed_sku_pending",
+      "sourcePageSpecificity": "product_page",
+      "sourceVerifiedAt": "2026-11-22"
     },
     {
       "name": "Schlage Encode Plus Smart WiFi Deadbolt",
@@ -579,15 +596,17 @@
       "model": "Encode Plus",
       "source": "https://www.schlage.com/en/home/smart-locks/encode-plus.html",
       "sourceType": "manufacturer US product page",
-      "evidence": "Official Schlage page documents built-in Wi-Fi, Apple Home Key via iPhone/Apple Watch, access-code management and voice assistant integrations. Door compatibility and exact trim/finish SKUs require verification.",
+      "evidence": "Official Schlage page documents built-in Wi-Fi, Apple Home Key via iPhone/Apple Watch, access-code management and voice assistant integrations. Door compatibility and exact trim/finish SKUs require verification. Schlage official Encode Plus page identifies Encode Plus Smart WiFi Deadbolt; official Schlage comparison PDF maps Encode Plus deadbolt to model BE499. Finish/trim variants are packages/configurations, not separate base models.",
       "buyerUse": "premium Wi-Fi deadbolt for Apple Home Key and remote access",
       "availabilityNote": "Official product page lists the model; live stock not checked.",
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
       "sourceDate": "2026-11-22",
-      "modelIdentityStatus": "unverified",
-      "sourcePageSpecificity": "product_page"
+      "modelIdentityStatus": "manufacturer_model_and_model_number_confirmed",
+      "sourcePageSpecificity": "product_page",
+      "sourceVerifiedAt": "2026-11-22",
+      "manufacturerModelNumber": "BE499"
     },
     {
       "name": "Schlage Encode Smart WiFi Deadbolt",
@@ -595,15 +614,17 @@
       "model": "Encode",
       "source": "https://www.schlage.com/en/home/smart-locks/encode.html",
       "sourceType": "manufacturer US product page",
-      "evidence": "Official Schlage page documents built-in Wi-Fi, remote status/control and unique access codes through Schlage Home app; confirm exact current generation and hardware variants.",
+      "evidence": "Official Schlage page documents built-in Wi-Fi, remote status/control and unique access codes through Schlage Home app; confirm exact current generation and hardware variants. Schlage official Encode page identifies Encode Smart WiFi Deadbolt; official Schlage comparison PDF maps Encode deadbolt to model BE489 (Encode lever is FE789 and is not this candidate). Preserve deadbolt vs lever distinction.",
       "buyerUse": "Wi-Fi smart deadbolt with remote access and keypad codes",
       "availabilityNote": "Official product page lists the model; live stock not checked.",
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
       "sourceDate": "2026-11-22",
-      "modelIdentityStatus": "unverified",
-      "sourcePageSpecificity": "product_page"
+      "modelIdentityStatus": "manufacturer_model_and_model_number_confirmed",
+      "sourcePageSpecificity": "product_page",
+      "sourceVerifiedAt": "2026-11-22",
+      "manufacturerModelNumber": "BE489"
     },
     {
       "name": "Greenworks 2000 PSI 1.2 GPM Electric Pressure Washer",
@@ -611,15 +632,17 @@
       "model": "GPW2003 (SKU 5118202)",
       "source": "https://www.greenworkstools.com/collections/best-selling-pressure-washers/products/2000-psi-14-amp-1-2-gpm-electric-pressure-washer",
       "sourceType": "manufacturer US product page",
-      "evidence": "Official Greenworks page lists 2000 max PSI at 1.2 GPM, 120V corded power, 14-amp motor, 25-ft hose and 3-year limited tool warranty. PSI and flow figures must be reported with their stated test conditions.",
+      "evidence": "Official Greenworks page lists 2000 max PSI at 1.2 GPM, 120V corded power, 14-amp motor, 25-ft hose and 3-year limited tool warranty. PSI and flow figures must be reported with their stated test conditions. Greenworks official US page confirms GPW2003, SKU 5118202; 2000 PSI at 1.2 GPM, 14A, 120V, 25-ft hose, 35-ft cord, 3-year tool warranty.",
       "buyerUse": "corded electric pressure washer for patios, vehicles and household outdoor cleaning",
       "availabilityNote": "Official product page listed a price; confirm live stock before promotion.",
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
       "sourceDate": "2026-11-22",
-      "modelIdentityStatus": "unverified",
-      "sourcePageSpecificity": "product_page"
+      "modelIdentityStatus": "manufacturer_model_and_sku_confirmed",
+      "sourcePageSpecificity": "product_page",
+      "sourceVerifiedAt": "2026-11-22",
+      "manufacturerSku": "5118202"
     },
     {
       "name": "Greenworks 2300 PSI 1.2 GPM Electric Pressure Washer Gen 2",
@@ -627,15 +650,17 @@
       "model": "GPW2303A (SKU 5128502)",
       "source": "https://www.greenworkstools.com/products/2300-psi-1-2-gpm-cold-water-electric-pressure-washer",
       "sourceType": "manufacturer US product page",
-      "evidence": "Official page lists 2300 max PSI at 1.2 GPM, 120V power, five nozzles and a 3-year tool / 10-year motor warranty. Verify current revision and actual stock.",
+      "evidence": "Official page lists 2300 max PSI at 1.2 GPM, 120V power, five nozzles and a 3-year tool / 10-year motor warranty. Verify current revision and actual stock. Greenworks official US page confirms GPW2303A, SKU 5128502; Gen 2 2300 PSI at 1.2 GPM (2.3 GPM at 100 PSI), brushless motor, 5 nozzles, 3-year tool / 10-year motor warranty.",
       "buyerUse": "brushless electric washer for driveway, patio and car-cleaning tasks",
       "availabilityNote": "Official page showed selectable options; current stock/price needs recheck.",
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
       "sourceDate": "2026-11-22",
-      "modelIdentityStatus": "unverified",
-      "sourcePageSpecificity": "product_page"
+      "modelIdentityStatus": "manufacturer_model_and_sku_confirmed",
+      "sourcePageSpecificity": "product_page",
+      "sourceVerifiedAt": "2026-11-22",
+      "manufacturerSku": "5128502"
     },
     {
       "name": "Greenworks 3000 PSI 2.0 GPM Electric Pressure Washer",
@@ -643,15 +668,17 @@
       "model": "GPW3001 (SKU 5113902)",
       "source": "https://www.greenworkstools.com/collections/pressure-washers/products/pro-3000-psi-brushless-pressure-washer-gpw3000-1",
       "sourceType": "manufacturer US product page",
-      "evidence": "Official page lists 3000 max PSI, 1.1 GPM at 3000 PSI / 2.0 GPM at 100 PSI, brushless motor, five nozzles and 3-year tool / 10-year motor warranty. Preserve the two different flow-rate conditions.",
+      "evidence": "Official page lists 3000 max PSI, 1.1 GPM at 3000 PSI / 2.0 GPM at 100 PSI, brushless motor, five nozzles and 3-year tool / 10-year motor warranty. Preserve the two different flow-rate conditions. Greenworks official US page confirms GPW3001, SKU 5113902; 3000 PSI max, 1.1 GPM at 3000 PSI (2.0 GPM at 100 PSI), brushless motor, 3-year tool / 10-year motor warranty. Do not describe 2.0 GPM as flow at 3000 PSI.",
       "buyerUse": "higher-output electric pressure washer for heavier residential cleaning",
       "availabilityNote": "Official page listed the model; verify current stock.",
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
       "sourceDate": "2026-11-22",
-      "modelIdentityStatus": "unverified",
-      "sourcePageSpecificity": "product_page"
+      "modelIdentityStatus": "manufacturer_model_and_sku_confirmed",
+      "sourcePageSpecificity": "product_page",
+      "sourceVerifiedAt": "2026-11-22",
+      "manufacturerSku": "5113902"
     },
     {
       "name": "Kärcher K 4 Power Control Electric Pressure Washer",
@@ -659,15 +686,17 @@
       "model": "K 4 Power Control (US 120V)",
       "source": "https://www.kaercher.com/us/home-garden/electric-pressure-washers/k-4-power-control-13240450.html",
       "sourceType": "manufacturer US product page",
-      "evidence": "Official US specifications list 120V, max 1900 PSI, max 1.5 GPM, water-cooled motor and Power Control spray gun. Do not confuse with 220–240V international K3/K4 variants.",
+      "evidence": "Official US specifications list 120V, max 1900 PSI, max 1.5 GPM, water-cooled motor and Power Control spray gun. Do not confuse with 220–240V international K3/K4 variants. Kärcher official US page and datasheet confirm K 4 Power Control, order number 1.324-045.0, 120V/60Hz, max 1900 PSI and 1.5 GPM. The US 120V variant is verified; do not substitute EU voltage model.",
       "buyerUse": "mid-range electric washer for vehicles, patios and general outdoor surfaces",
       "availabilityNote": "Official US product page accessible; live stock not established.",
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
       "sourceDate": "2026-11-22",
-      "modelIdentityStatus": "unverified",
-      "sourcePageSpecificity": "product_page"
+      "modelIdentityStatus": "manufacturer_model_and_order_number_confirmed",
+      "sourcePageSpecificity": "product_page",
+      "sourceVerifiedAt": "2026-11-22",
+      "manufacturerOrderNumber": "1.324-045.0"
     },
     {
       "name": "Kärcher K2300PS Electric Pressure Washer",
@@ -675,17 +704,19 @@
       "model": "K2300PS (US 120V)",
       "source": "https://www.kaercher.com/us/home-garden/electric-pressure-washers/k2300ps-11062220.html",
       "sourceType": "manufacturer US product page",
-      "evidence": "Official US page describes 2300 PSI TruPressure, brushless induction motor, hose reel, detergent tanks and four spray nozzles. Confirm flow rate, exact bundle and current availability before comparison.",
+      "evidence": "Official US page describes 2300 PSI TruPressure, brushless induction motor, hose reel, detergent tanks and four spray nozzles. Confirm flow rate, exact bundle and current availability before comparison. Kärcher official US page and datasheet confirm K2300PS, order number 1.106-222.0, 120V/60Hz, 2300 PSI, 1.2 GPM. The US 120V model is verified; retailer snippets may show inconsistent PSI/GPM claims, use official manufacturer data.",
       "buyerUse": "higher-pressure electric washer with universal quick-connect accessories",
       "availabilityNote": "Official US product page accessible; live stock not established.",
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
       "sourceDate": "2026-11-22",
-      "modelIdentityStatus": "unverified",
-      "sourcePageSpecificity": "product_page"
+      "modelIdentityStatus": "manufacturer_model_and_order_number_confirmed",
+      "sourcePageSpecificity": "product_page",
+      "sourceVerifiedAt": "2026-11-22",
+      "manufacturerOrderNumber": "1.106-222.0"
     }
   ],
   "lastExpandedAt": "2026-11-22",
-  "notes": "Additional manufacturer-sourced candidates are staged for research only. Some Tineco and Rachio pages explicitly showed backordered/out-of-stock status; do not treat as currently purchasable. Capacity/zone variants remain variants, not separate products. No Amazon ASIN or affiliate URL has been verified.\n\n2026-11-22 US model identity pass: 13 previously unverified candidates now have official manufacturer-page model-name evidence (Levoit Eleva 500X/Core 600S-P; three Frigidaire 50-pint variants; EcoFlow DELTA 3 Plus; three ecobee thermostats; Roborock F25 GT Gen 2; three Tineco FLOOR ONE models). One Levoit model code confirmed (LAP-C601S-WUS). River 3 Plus source still returns 404 and remains unverified. No ASIN/affiliate destination verified; no candidate promoted to publishable. Tineco pages currently say unavailable/backordered; EcoFlow DELTA 3 Plus stock signal is contradictory; Roborock battery capacity is contradictory."
+  "notes": "Additional manufacturer-sourced candidates are staged for research only. Some Tineco and Rachio pages explicitly showed backordered/out-of-stock status; do not treat as currently purchasable. Capacity/zone variants remain variants, not separate products. No Amazon ASIN or affiliate URL has been verified.\n\n2026-11-22 US model identity pass: 13 previously unverified candidates now have official manufacturer-page model-name evidence (Levoit Eleva 500X/Core 600S-P; three Frigidaire 50-pint variants; EcoFlow DELTA 3 Plus; three ecobee thermostats; Roborock F25 GT Gen 2; three Tineco FLOOR ONE models). One Levoit model code confirmed (LAP-C601S-WUS). River 3 Plus source still returns 404 and remains unverified. No ASIN/affiliate destination verified; no candidate promoted to publishable. Tineco pages currently say unavailable/backordered; EcoFlow DELTA 3 Plus stock signal is contradictory; Roborock battery capacity is contradictory.\n\n2026-11-22 US identity follow-up batch 2: 12 additional candidates now supported by official manufacturer pages/manuals: Whynter ARC-1050XPH/ARC-102CS; Rachio 3 (8-/16-zone SKUs) and Smart Hose Timer (SHVK001); Aqara U100; Schlage Encode Plus (BE499) and Encode deadbolt (BE489); Greenworks GPW2003/GPW2303A/GPW3001 with SKUs; Kärcher K 4 Power Control (1.324-045.0) and K2300PS (1.106-222.0). Rachio zone options remain one family; distinguish Schlage deadbolt vs lever; keep Whynter ARC-102CS 2024 specs separate from older 2019 manual; normalize pressure-washer GPM at PSI test point. Only EcoFlow RIVER 3 Plus remains without supported exact identity among this batch. US identity coverage now 39/40. No Amazon ASIN or affiliate URL verified."
 }
