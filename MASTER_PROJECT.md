@@ -1821,3 +1821,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - All new terms remain unmeasured: search volume, KD, CPC and trend fields are null. No UK metrics were copied to US. No paid keyword credits were used.
 - Keyword universe is now 1612 UK + 1546 US = 3158 distinct candidate phrases. These are research candidates, not a claim that every phrase deserves its own page; clustering and SERP overlap remain required.
 - Correct programme KPI: 1,000+ distinct buyer-intent keyword candidates with measured metrics prioritized where available. Product candidates are a separate research queue, not a 1,000-product publishing target. No production catalogue or public pages changed.
+
+
+## 22 November 2026 14:16 UTC — Final topic-specific keyword expansion checkpoint
+- Replaced the first broad modifier expansion after relevance sampling showed some cluster-wide combinations were not topic-specific. Rebuilt the expansion from the original 1,240 UK and 1,240 US base phrases with per-topic buyer modifiers.
+- Final candidate universe: **1,488 UK + 1,383 US = 2,871 unique phrases**. Exact duplicate validation: 0 per market. UK intent by wording: 186 transactional / 1,302 commercial; 32 saved cache metric records, 8 exact phrase matches, 1,480 unmeasured. US: 186 transactional / 1,197 commercial, 0 measured, all 1,383 unmeasured. No monthly trend data available and no paid credits used.
+- Product discovery remains separate: 62 UK + 22 US candidates, 0 verified/publishable. Page briefs remain plans only (UK 25 refresh + 12 new candidates; US 25 refresh + 12 topics, 10 new and 2 refresh-only). Existing 25 guides / 100 products preserved.
+- Research branch only; no PR, merge, public content, catalogue, metadata, deployment or indexability changes. Current branch comparison is 46 commits ahead / 0 behind main as last checked before this correction; refresh compare after docs writes.
