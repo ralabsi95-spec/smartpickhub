@@ -20,7 +20,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue",
-      "buyerUse": "solar/wire-free outdoor camera; validate local storage, camera resolution and subscription limitations"
+      "buyerUse": "solar/wire-free outdoor camera; validate local storage, camera resolution and subscription limitations",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "category_or_collection_page"
     },
     {
       "name": "eufyCam E52",
@@ -32,7 +34,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current catalogue",
-      "buyerUse": "whole-home multi-camera system; distinguish single camera and kits"
+      "buyerUse": "whole-home multi-camera system; distinguish single camera and kits",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "category_or_collection_page"
     },
     {
       "name": "eufyCam S4",
@@ -44,7 +48,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current catalogue",
-      "buyerUse": "premium camera ecosystem; separate individual camera from 2/4/6-camera bundles"
+      "buyerUse": "premium camera ecosystem; separate individual camera from 2/4/6-camera bundles",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "category_or_collection_page"
     },
     {
       "name": "eufy Video Doorbell S4 (Wired)",
@@ -56,7 +62,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current catalogue",
-      "buyerUse": "wired dual-camera doorbell; compare against battery doorbells"
+      "buyerUse": "wired dual-camera doorbell; compare against battery doorbells",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "category_or_collection_page"
     },
     {
       "name": "Levoit Eleva 500X",
@@ -68,7 +76,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current catalogue",
-      "buyerUse": "large-room purifier with sensor and separate carbon/HEPA filters"
+      "buyerUse": "large-room purifier with sensor and separate carbon/HEPA filters",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "name": "Levoit Eleva 300X",
@@ -80,7 +90,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current catalogue",
-      "buyerUse": "mid-size purifier; verify room size and filter costs"
+      "buyerUse": "mid-size purifier; verify room size and filter costs",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "category_or_collection_page"
     },
     {
       "name": "Levoit Vital Pet Pro",
@@ -92,7 +104,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current catalogue",
-      "buyerUse": "pet dander and odour use case; compare filter costs"
+      "buyerUse": "pet dander and odour use case; compare filter costs",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "category_or_collection_page"
     },
     {
       "name": "Levoit Vital 100S-P",
@@ -104,7 +118,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current catalogue",
-      "buyerUse": "medium-room smart purifier; lower-capacity tier than existing Vital 200S-P"
+      "buyerUse": "medium-room smart purifier; lower-capacity tier than existing Vital 200S-P",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "category_or_collection_page"
     },
     {
       "name": "Levoit Core 600S-P",
@@ -116,7 +132,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current catalogue",
-      "buyerUse": "large-room purifier; verify room coverage using consistent ACH standard"
+      "buyerUse": "large-room purifier; verify room coverage using consistent ACH standard",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "name": "Frigidaire FHDD5033Y1",
@@ -128,7 +146,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current catalogue",
-      "buyerUse": "basement and large-room moisture removal; verify DOE rating, noise and drain setup"
+      "buyerUse": "basement and large-room moisture removal; verify DOE rating, noise and drain setup",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "name": "Frigidaire FHDP5033Y1",
@@ -140,7 +160,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current catalogue",
-      "buyerUse": "basement installation where upward condensate pumping is useful"
+      "buyerUse": "basement installation where upward condensate pumping is useful",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "name": "Frigidaire FHDD5034Y1",
@@ -152,7 +174,9 @@
       "status": "candidate_stock_check_required",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current catalogue",
-      "buyerUse": "energy-conscious 50-pint tier; verify current stock before inclusion"
+      "buyerUse": "energy-conscious 50-pint tier; verify current stock before inclusion",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "name": "EcoFlow RIVER 3 Plus",
@@ -164,7 +188,9 @@
       "status": "candidate_stock_check_required",
       "regionalMarket": "US",
       "duplicateCheck": "distinct from existing RIVER 2",
-      "buyerUse": "compact UPS/camping power station; verify availability and exact battery expansion"
+      "buyerUse": "compact UPS/camping power station; verify availability and exact battery expansion",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "name": "EcoFlow DELTA 3 Plus",
@@ -176,7 +202,9 @@
       "status": "candidate_stock_check_required",
       "regionalMarket": "US",
       "duplicateCheck": "distinct from existing RIVER 2 and Jackery Explorer 300 Plus",
-      "buyerUse": "higher-output home backup/camping tier; verify outlet count, transfer/UPS and expansion"
+      "buyerUse": "higher-output home backup/camping tier; verify outlet count, transfer/UPS and expansion",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "name": "ecobee Smart Thermostat Premium",
@@ -188,7 +216,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "no exact product in current catalogue",
-      "buyerUse": "premium HVAC thermostat; distinguish from Essential and Enhanced by sensors, air quality and voice"
+      "buyerUse": "premium HVAC thermostat; distinguish from Essential and Enhanced by sensors, air quality and voice",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "name": "ecobee Smart Thermostat Enhanced",
@@ -200,7 +230,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "no exact product in current catalogue",
-      "buyerUse": "mid-tier thermostat with occupancy-based comfort; verify C-wire/PEK compatibility"
+      "buyerUse": "mid-tier thermostat with occupancy-based comfort; verify C-wire/PEK compatibility",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "name": "ecobee Smart Thermostat Essential",
@@ -212,7 +244,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "no exact product in current catalogue",
-      "buyerUse": "entry-level thermostat; clearly disclose accessory and compatibility limitations"
+      "buyerUse": "entry-level thermostat; clearly disclose accessory and compatibility limitations",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "name": "Roborock F25 GT Gen 2",
@@ -224,7 +258,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "new product family not represented in current catalogue; check model suffix and bundle",
-      "buyerUse": "value wet-dry cleaner for everyday spills and hard floors"
+      "buyerUse": "value wet-dry cleaner for everyday spills and hard floors",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "name": "Roborock F25 Steam",
@@ -236,7 +272,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "new product family not represented in current catalogue",
-      "buyerUse": "steam-oriented wet-dry cleaning for sticky or dried-on messes"
+      "buyerUse": "steam-oriented wet-dry cleaning for sticky or dried-on messes",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "category_or_collection_page"
     },
     {
       "name": "Roborock F25 Ultra",
@@ -248,7 +286,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "new product family not represented in current catalogue",
-      "buyerUse": "premium hot-water/steam cleaning; compare maintenance and detergent needs"
+      "buyerUse": "premium hot-water/steam cleaning; compare maintenance and detergent needs",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "category_or_collection_page"
     },
     {
       "name": "Roborock F25 XT",
@@ -260,7 +300,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "new product family not represented in current catalogue",
-      "buyerUse": "wet-dry cleaning with detergent automation and power-assisted movement"
+      "buyerUse": "wet-dry cleaning with detergent automation and power-assisted movement",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "category_or_collection_page"
     },
     {
       "name": "Roborock F25 BX",
@@ -272,7 +314,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "new product family not represented in current catalogue",
-      "buyerUse": "lower-cost wet-dry model for routine hard-floor cleaning"
+      "buyerUse": "lower-cost wet-dry model for routine hard-floor cleaning",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "category_or_collection_page"
     },
     {
       "name": "Mammotion LUBA 3 AWD Robotic Lawn Mower",
@@ -286,7 +330,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
-      "sourceDate": "2026-11-22"
+      "sourceDate": "2026-11-22",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "category_or_collection_page"
     },
     {
       "name": "Mammotion LUBA mini 2 AWD Robotic Lawn Mower",
@@ -300,7 +346,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
-      "sourceDate": "2026-11-22"
+      "sourceDate": "2026-11-22",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "category_or_collection_page"
     },
     {
       "name": "Mammotion YUKA mini 2 Robotic Lawn Mower",
@@ -314,7 +362,9 @@
       "status": "candidate_stock_check_required",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
-      "sourceDate": "2026-11-22"
+      "sourceDate": "2026-11-22",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "category_or_collection_page"
     },
     {
       "name": "Tineco FLOOR ONE S9 Artist Pro Wet Dry Vacuum Cleaner",
@@ -328,7 +378,9 @@
       "status": "candidate_stock_check_required",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
-      "sourceDate": "2026-11-22"
+      "sourceDate": "2026-11-22",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "name": "Tineco FLOOR ONE S9 Artist Steam Wet Dry Vacuum Cleaner",
@@ -342,7 +394,9 @@
       "status": "candidate_stock_check_required",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
-      "sourceDate": "2026-11-22"
+      "sourceDate": "2026-11-22",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "name": "Tineco FLOOR ONE S7 Stretch Ultra Wet Dry Vacuum Cleaner",
@@ -356,7 +410,9 @@
       "status": "candidate_stock_check_required",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
-      "sourceDate": "2026-11-22"
+      "sourceDate": "2026-11-22",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "name": "Whynter ARC-1050XPH Portable Air Conditioner and Heater",
@@ -370,7 +426,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
-      "sourceDate": "2026-11-22"
+      "sourceDate": "2026-11-22",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "name": "Whynter ARC-102CS Compact Portable Air Conditioner",
@@ -384,7 +442,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
-      "sourceDate": "2026-11-22"
+      "sourceDate": "2026-11-22",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "name": "Rachio 3 Smart Sprinkler Controller",
@@ -398,7 +458,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
-      "sourceDate": "2026-11-22"
+      "sourceDate": "2026-11-22",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "name": "Rachio Smart Hose Timer",
@@ -412,7 +474,9 @@
       "status": "candidate_stock_check_required",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
-      "sourceDate": "2026-11-22"
+      "sourceDate": "2026-11-22",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "name": "Aqara Smart Lock U100",
@@ -426,7 +490,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
-      "sourceDate": "2026-11-22"
+      "sourceDate": "2026-11-22",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "name": "Schlage Encode Plus Smart WiFi Deadbolt",
@@ -440,7 +506,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
-      "sourceDate": "2026-11-22"
+      "sourceDate": "2026-11-22",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "name": "Schlage Encode Smart WiFi Deadbolt",
@@ -454,7 +522,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
-      "sourceDate": "2026-11-22"
+      "sourceDate": "2026-11-22",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "name": "Greenworks 2000 PSI 1.2 GPM Electric Pressure Washer",
@@ -468,7 +538,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
-      "sourceDate": "2026-11-22"
+      "sourceDate": "2026-11-22",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "name": "Greenworks 2300 PSI 1.2 GPM Electric Pressure Washer Gen 2",
@@ -482,7 +554,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
-      "sourceDate": "2026-11-22"
+      "sourceDate": "2026-11-22",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "name": "Greenworks 3000 PSI 2.0 GPM Electric Pressure Washer",
@@ -496,7 +570,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
-      "sourceDate": "2026-11-22"
+      "sourceDate": "2026-11-22",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "name": "Kärcher K 4 Power Control Electric Pressure Washer",
@@ -510,7 +586,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
-      "sourceDate": "2026-11-22"
+      "sourceDate": "2026-11-22",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     },
     {
       "name": "Kärcher K2300PS Electric Pressure Washer",
@@ -524,7 +602,9 @@
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
-      "sourceDate": "2026-11-22"
+      "sourceDate": "2026-11-22",
+      "modelIdentityStatus": "unverified",
+      "sourcePageSpecificity": "product_page"
     }
   ],
   "lastExpandedAt": "2026-11-22T14:27:00Z",
