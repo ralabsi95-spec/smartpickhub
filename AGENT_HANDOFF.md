@@ -1,5 +1,13 @@
 
 
+## Latest US identity checkpoint — 22 November 2026 (follow-up batch 2)
+- US model/family identity evidence is now **39/40 supported; 1/40 unresolved**. Only EcoFlow RIVER 3 Plus remains unresolved because its staged manufacturer URL returns HTTP 404.
+- Batch evidence: `research/product-verification/us-model-identity-followup-batch-2-2026-11-22.md`; candidate data: `research/scale-1000/batch-003-us-product-candidates.json`.
+- Newly captured identifiers: Rachio 3 zone variants 8ZULW-CP / 16ZULW-C; Smart Hose Timer SHVK001; Whynter ARC-1050XPH SKU/UPC and ARC-102CS model; Schlage BE499/BE489; Greenworks 5118202/5128502/5113902; Kärcher 1.324-045.0 / 1.106-222.0. Aqara U100 model name confirmed; SKU pending.
+- Keep model identifiers distinct from Amazon ASINs. No Amazon ASIN verified, no affiliate URL, no publishable candidates. Production remains 25 guides / 100 products, unchanged.
+- Next: resolve the RIVER 3 Plus identity, then verify exact US marketplace listings and continue UK exact-SKU/Amazon matching. Do not publish or merge without explicit approval.
+
+
 ## Latest research checkpoint — 22 November 2026 (US identity follow-up)
 - US model/family identity evidence: **27/40 supported; 13/40 unresolved**. This supersedes the previous 14/40 checkpoint.
 - New exact manufacturer evidence is recorded in `research/product-verification/us-model-identity-followup-2026-11-22.md`; candidate data updated in `research/scale-1000/batch-003-us-product-candidates.json`.
