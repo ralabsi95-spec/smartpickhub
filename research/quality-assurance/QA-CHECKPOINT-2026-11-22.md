@@ -157,3 +157,10 @@ A second review found 62 additional US phrases that were not punctuation duplica
 - LUBA mini 2 1500/1500H family confirmed, but stock signal conflicts (hero sold out vs stale Sep 29–Oct 06 estimated delivery). Recheck exact option and manual before comparison.
 - eufy SoloCam E50 technical conflict remains on hold: hero says two 4K lenses/12×, table says 3K+2K/8× and S340-labelled comparison. No disputed claims for editorial use.
 - No package ASINs/affiliate URLs verified. No candidate promoted to publishable.
+
+
+## US model identity follow-up — 22 November 2026
+- Thirteen additional candidates now have official model-name evidence; US coverage **27/40 supported, 13/40 unresolved**. This is identity evidence only, not full product verification.
+- Levoit Core 600S-P manufacturer code LAP-C601S-WUS captured. EcoFlow RIVER 3 Plus page 404 remains unresolved.
+- Holds: Tineco S9 Artist Pro/S9 Artist Steam/S7 Stretch Ultra unavailable/backordered; Frigidaire FHDD5034Y1 out of stock in selected area; DELTA 3 Plus preorder/sold-out signal conflicts; Roborock F25 GT Gen 2 battery capacity conflict (4,000mAh spec vs 2,500mAh FAQ); ecobee HVAC compatibility requires exact system check.
+- ASIN verified 0; affiliate destinations 0; publishable candidates 0. No production changes.
