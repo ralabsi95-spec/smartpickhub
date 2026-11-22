@@ -6,7 +6,7 @@
 - **32 saved OpenSEO cache records** contain volume/KD/CPC/intent data; **8 exact phrases** match this generated universe. These are cached records, not a fresh bulk refresh.
 - **1,480 phrases remain unmeasured**; null means unmeasured, not zero.
 - 186 transactional and 1,302 commercial phrases by wording classification. Buyer-intent score is a wording heuristic, not conversion probability.
-- 740 phrases map to existing guides; 650 need clustering and SERP/cannibalisation review. No one-keyword-one-page rule.
+- 888 phrases map to existing guides; 600 need clustering and SERP/cannibalisation review. No one-keyword-one-page rule.
 - The second tier adds topic-specific, use-case-led long-tail terms (pets, room size, installation, compatibility, ownership costs and task-specific needs). It is a research universe, not an instruction to publish every phrase.
 
 ## Highest-volume saved UK phrases
