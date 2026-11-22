@@ -193,3 +193,15 @@ OpenSEO project audit retrieval used the saved report only; no new audit crawl, 
 - This is a targeted sample, not a complete re-certification of all 100 product records. No production data/code changed, no PR/CI/merge/deploy/index request/import/paid service used.
 - Main remains `26636d4359508b9af30eec498a22ffc005a81a72`.
 - Next: continue model/SKU and technical claim validation, prioritize UK regional hardware variants and safety-critical specifications; then consolidate minimal patch proposal.
+
+
+## Continuation checkpoint — 22 Nov 2026, 08:07 UTC
+- Continued read-only official-source review of four region-sensitive catalogue records: TP-Link Deco BE63, Roborock Saros 10R, Levoit Vital 200S-P and NETGEAR Orbi RBE773.
+- TP-Link UK support lists revisions V3.60/V2.60/V2 and warns regional hardware availability varies. US documentation describes four 2.5Gbps ports, but this does not verify every UK revision. Keep regional/revision caution.
+- Roborock UK shop/navigation mentions Saros 10R, but the extracted UK product/shop listings did not confirm a direct Saros 10R purchase listing; the confirmed UK Saros 10 page is a different model. Keep caution and do not substitute Saros 10.
+- Levoit US Vital 200S-P confirms model LAP-V201S-WUS, 24V DC / 2.5A output and 50W rating, but not adapter AC input range or UK bundle. Keep regional adapter/warranty caution.
+- NETGEAR UK RBE773 page confirms router x1, satellites x2, adapters x3; regional technical sheet and user guide do not establish exact AC input rating for the UK supplied adapters. Keep label-check advice.
+- Evidence and decisions appended to `docs/EDITORIAL_QA_SOURCE_VERIFICATION_2026-11-22.md` on this docs branch.
+- No edits to `main`, no PR, no GitHub Actions, no merge/deploy, no indexing requests, no catalogue import, no paid tool use.
+- Main production baseline remains recorded as `26636d4359508b9af30eec498a22ffc005a81a72`; verify live refs before any subsequent operation.
+- Next: continue static QA across remaining product records, then consolidate a minimal proposed content/template patch. Do not create a PR until GitHub Actions quota status is known.
