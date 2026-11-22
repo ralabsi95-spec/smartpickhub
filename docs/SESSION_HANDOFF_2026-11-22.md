@@ -252,3 +252,15 @@ OpenSEO project audit retrieval used the saved report only; no new audit crawl, 
 - Conclusion: visibility has started at the homepage/property level, but the site has not yet demonstrated guide-level discovery or buyer-intent search performance. The sitemap report remains separately unresolved.
 - No main changes, PR, Actions, merge, deploy, sitemap/IndexNow submissions, product imports or paid tools.
 - Next: create and test a minimal two-template patch locally, then inspect sitemap serving/headers with free means and check Actions quota before any PR. Do not claim indexing fixed by template cleanup.
+
+
+## Prepared code fix branch — 22 Nov 2026, 09:00 UTC
+- Created branch `fix/public-editorial-status-2026-11-22` from `main`.
+- Removed only the public editorial-status span from:
+  - `src/pages/index.astro` (commit `81d354065ffcec134fa3ee7727a6661ff3ba0154`)
+  - `src/pages/guides/index.astro` (commit `cd8331f0b8aad5e996edb6edcdf4649acdf21ff1`)
+- Re-fetched both branch files and confirmed neither contains `guide.editorialStatus`, `review-status`, or `guide-card-status` display markup. Internal editorialStatus data and the detail-page conditional were not changed.
+- This is a proposed source-only fix on a non-production branch. It is NOT merged, deployed, or yet validated by Astro build/browser visual testing.
+- Local network/DNS from the available container could not resolve `smartpickhub.pages.dev`; web fetch of sitemap endpoints also failed. Therefore no raw HTTP response/header evidence was obtained. Do not claim sitemap server issue fixed or diagnosed.
+- No PR opened because GitHub Actions quota restoration remains unverified and the repository's PR workflow triggers CI. No production change, merge, deployment, index request, IndexNow submission, product import or paid tool use.
+- Next: obtain a safe local checkout/build or a confirmed CI budget; then inspect actual sitemap response headers/body and visual card layout before creating a draft PR.
