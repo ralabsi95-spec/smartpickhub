@@ -1926,3 +1926,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Added research/keyword-intelligence/EXPANSION-BATCH-002-TRENDS-2026-11-22.md documenting UK winter warming, emergency household products, value-led Black Friday and US home-environment purchase intent / holiday search discovery.
 - No search metrics or monthly trend data fabricated. New phrases remain unmeasured; no paid research credits used. Keyword opportunities do not automatically become pages.
 - No catalogue, products, affiliate links, public pages, metadata, indexing or production changes.
+
+
+## Keyword expansion QA reconciliation — 22 November 2026
+- Recomputed cluster-level counts and intent breakdowns after expansion; cluster totals now reconcile to keyword record totals in both markets.
+- Normalized duplicate check: UK 2,028 records / 2,028 unique normalized phrases / 0 duplicates; US 1,850 / 1,850 / 0 duplicates.
+- UK intent: 366 transactional / 1,662 commercial; 8 exact phrases have cached metrics and 2,020 remain unmeasured. Existing UK metric cache contains 32 saved records; do not imply all 32 are exact matches in the generated universe.
+- US intent: 366 transactional / 1,484 commercial; 0 measured / 1,850 unmeasured. US metrics are not inferred from UK.
+- Directional trend tags: UK 90 phrases, US 180 phrases. Monthly trend history remains unavailable; trendDataAvailable=false in both files.
