@@ -102,3 +102,11 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 - New additions: 3 Mammotion mower families; 3 Tineco wet-dry cleaners; 2 Whynter portable AC models; 2 Rachio irrigation products; 3 smart locks (Aqara/Schlage); 5 pressure washers (Greenworks/Kärcher).
 - Sources are official US manufacturer product pages/catalogues. Exact model/variant, product family, US stock, and Amazon.com ASIN/affiliate destination still require verification. Tineco S9 Artist Pro/S9 Artist Steam/S7 Stretch Ultra were marked backordered/unavailable on official store pages; Rachio Smart Hose Timer was out of stock; Mammotion stock varies by model variant.
 - Verified/publishable/ASIN-verified counts remain **0**. Candidate count is not product approval. Existing 100-product catalogue untouched; no production pages or products changed.
+
+
+## 22 November 2026 — US wet-dry floor-cleaner editorial outline
+- Prepared a research-only outline at `research/page-outlines/us-wet-dry-floor-cleaners-outline-2026-11-22.md` for the provisional US wet-dry hard-floor cleaner page.
+- Tightened the intent boundary to upright cordless wet-dry floor washers; explicitly excludes workshop/shop vacuums, carpet extractors, robot vacuum-mops and stick-vacuum mop attachments. This reduces cannibalisation with existing cordless-vacuum and robot-vacuum guides.
+- Outline maps eight staged US candidates (five Roborock F25 variants/families and three Tineco FLOOR ONE models), with official source evidence and stock caveats. Tineco's three pages were backordered/unavailable at capture and cannot be recommended until rechecked.
+- Added a publish gate requiring exact US model/SKU, at least five current purchasable models, independent testing coverage, mode-specific runtime, hard-floor compatibility, warranty/consumables and exact Amazon.com destination verification. No hands-on testing is claimed.
+- Outline only; no content page, product card or public URL created.
