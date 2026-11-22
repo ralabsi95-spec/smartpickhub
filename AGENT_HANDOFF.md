@@ -1518,3 +1518,16 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Google says no special AI schema, no `llms.txt` requirement for Google, and no need for artificial chunking; focus on crawlability and original helpful content. Bing AI Performance reports citations and grounding phrases, not visits or clicks. Microsoft AI Training/Grounding controls begin taking effect from 1 February 2027; recheck official guidance before then.
 - No public content/catalogue/crawler/WAF/DNS/analytics/Pinterest change, paid service or TinyFish task was performed. User will be mobile for two days; defer account connection, GA4 Measurement ID, consent decision and crawler training preference until desktop access returns. Do not ask for credentials.
 - Next: verify PR exact-head CI, then prepare Tier-1 guide content improvement proposals in a branch without publishing. After owner desktop access: connect GSC/GA4/Bing and make the training-permission decision.
+
+
+## Continuation checkpoint — 22 Nov 2026, 06:50 UTC
+- Re-read `src/data/products.json` on `main`: 25 guides / 100 products. Recursive text scan found no additional internal audit residue beyond the six already documented.
+- Re-read `src/pages/guides/index.astro`: public guide cards still render `guide.editorialStatus`; remove only the public status display in a future reviewed patch, retain JSON/internal validation.
+- Additional source review: Roborock UK pages show Saros 10R in UK family/navigation but no directly confirmed UK store product purchase page in the extracted evidence. Keep the caution pending direct product-level confirmation; do not substitute Saros 10.
+- Razer Kiyo Pro Ultra 4K/30fps limitation is supported by Razer's official product page/manual; no change needed.
+- Levoit Vital 200S-P US source confirms model LAP-V201S-WUS, 24V DC / 2.5A adapter output and 50W rating, but not the AC input range or UK regional bundle. Keep adapter-label/warranty caution.
+- NETGEAR RBE773 UK page confirms 1 router, 2 satellites and 3 adapters. Official quick-start guide says adapters vary by region; exact AC input for UK retail pack remains unverified. Keep label-check warning.
+- Updated and re-verified `docs/EDITORIAL_QA_SOURCE_VERIFICATION_2026-11-22.md` on this documentation branch. Latest commit: `5ee275b5c3a0223f23623f8b75b74bf404299774`.
+- No edits to `main`, no PR, no Actions run, no merge, no deploy, no product import, no indexing requests, no paid services/TinyFish.
+- Production main remains `26636d4359508b9af30eec498a22ffc005a81a72`.
+- Next: continue read-only validation of other regional model/spec claims and live guide content; then assemble minimal patch proposal. Check Actions quota before creating a PR that triggers CI.
