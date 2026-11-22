@@ -1,5 +1,13 @@
 
 
+## Latest keyword checkpoint — 22 November 2026 (Expansion batch 002)
+- UK: 2028 unique buyer-intent phrases; US: 1850; combined 3878. This supersedes the earlier 1,488 UK / 1,311 US checkpoint.
+- Expansion and trend evidence: research/keyword-intelligence/EXPANSION-BATCH-002-TRENDS-2026-11-22.md. Added 1079 deduplicated buyer-task phrases.
+- Do not describe new phrases as measured: new search volume/KD/CPC are null; monthly trend history remains unavailable. Trend tags are directional evidence only. UK cache is sparse; US metrics remain unmeasured.
+- No one-keyword-one-page rule. Map overlapping phrases to canonical guides; create new URLs only after distinct SERP intent and editorial QA.
+- Product queue remains 102 candidates; UK identities 61/62, US identities 39/40; ASINs verified 0; publishable 0. Production remains 25 guides / 100 products, unchanged.
+
+
 ## Latest US identity checkpoint — 22 November 2026 (follow-up batch 2)
 - US model/family identity evidence is now **39/40 supported; 1/40 unresolved**. Only EcoFlow RIVER 3 Plus remains unresolved because its staged manufacturer URL returns HTTP 404.
 - Batch evidence: `research/product-verification/us-model-identity-followup-batch-2-2026-11-22.md`; candidate data: `research/scale-1000/batch-003-us-product-candidates.json`.
