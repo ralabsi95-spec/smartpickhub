@@ -55,3 +55,24 @@ The earlier eight-row intake list is no longer a complete or current representat
 2. Add independent review evidence and retailer-level checks.
 3. Decide whether the page has enough genuinely distinct, purchasable models for a useful comparison. If not, defer the page rather than pad it with unavailable products.
 4. In parallel, continue the US 40-product verification and UK priority product matrices. Count only unique, region-correct exact models; manufacturer-family variants and bundles must not inflate totals.
+
+
+## Live catalog recheck — 22 November 2026, 14:38 UTC
+A fresh public search of the current US manufacturer pages was completed after the initial matrix.
+
+### Roborock catalog correction
+- The current official US wet-dry collection reports **13 product results**, but the result set includes combination products and bundles (for example, F25 Combo / F25 ACE Combo and F25 GT Gen 2 packaged with robot vacuums). These are not 13 unique standalone wet-dry models.
+- The official range page currently surfaces the single-machine names F25 Ultra, F25 ACE Pro, F25 XT, F25 BX, F25 Steam, F25 GT Gen 2, F25 Pro Turbo, F25 ALT and F25 Ultra Steam Gen 2. Do not count a bundle as a distinct cleaner model.
+- The official store shows F25 LT as out of stock on the store landing page, while the wet-dry collection's visible products show in-stock/out-of-stock filters. Availability must be checked on the exact SKU page at the moment of affiliate intake.
+- Roborock's own comparison/range material differentiates F25 RT/GT, LT, F25, ALT and ACE by runtime, tank capacities, sensors, detergent dispenser and steering. This demonstrates why model-family names and regional variants cannot be flattened into one record.
+- Source pages: [Roborock US wet-dry collection](https://us.roborock.com/collections/wet-dry-vacuums), [Roborock US wet-dry range](https://us.roborock.com/pages/wet-dry-vacuums), [Roborock F25 series specifications](https://us.roborock.com/pages/roborock-f25-series), [Roborock US store](https://us.roborock.com/pages/roborock-store).
+
+### Tineco stock recheck
+- Tineco US product pages still explicitly label FLOOR ONE S9 Artist Pro, S9 Artist Steam and S7 Stretch Ultra as **Unavailable / backordered**.
+- S9 Artist Pro page states manufacturer-claimed 22 kPa suction and up to 75 minutes, but the stock status blocks it from a current purchasable recommendation.
+- S9 Artist Steam page states 320°F is the internal heater output and a minimum 210°F outlet steam temperature, based on Tineco lab data. These must not be conflated.
+- S7 Stretch Ultra page states 180° lay-flat and up to 50-minute runtime, but remains backordered.
+- Source pages: [Tineco S9 Artist Pro](https://store.tineco.com/products/tineco-floor-one-s9-artist-pro-wet-dry-vacuum-cleaner), [Tineco S9 Artist Steam](https://store.tineco.com/collections/all-machine/products/tineco-floor-one-s9-artist-steam-cordless-wet-dry-vacuum-cleaner), [Tineco S7 Stretch Ultra](https://store.tineco.com/products/tineco-floor-one-s7-stretch-ultra-cordless-wet-dry-vacuum-cleaner).
+
+### Editorial consequence
+Keep the page as a promising candidate, but do not write the final "best" rankings yet. The category has enough distinct manufacturer-listed models to continue evidence gathering, but at least five exact models still need full manuals/specifications, independent reviews, retailer availability checks and exact Amazon.com identity/ASIN validation. Official-store purchase controls do not prove Amazon availability. No product in this matrix is promoted to verified or publishable.
