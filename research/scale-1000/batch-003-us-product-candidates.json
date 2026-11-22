@@ -90,13 +90,14 @@
       "model": "Eleva 500X",
       "source": "https://levoit.com/products/eleva-500x-smart-air-purifier",
       "sourceType": "manufacturer product page",
-      "evidence": "Official US page provides room coverage, CADR, filtration, sensors and noise specifications.",
+      "evidence": "Official US page provides room coverage, CADR, filtration, sensors and noise specifications. Official Levoit US page identifies Eleva 500X; 467 ft² at 4.8 ACH / 2,241 ft² at 1 ACH; Smoke CADR 301 CFM; 33W; 22–52dB; US manual linked. SKU pending.",
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current catalogue",
       "buyerUse": "large-room purifier with sensor and separate carbon/HEPA filters",
-      "modelIdentityStatus": "unverified",
-      "sourcePageSpecificity": "product_page"
+      "modelIdentityStatus": "manufacturer_model_name_confirmed_sku_pending",
+      "sourcePageSpecificity": "product_page",
+      "sourceVerifiedAt": "2026-11-22"
     },
     {
       "name": "Levoit Eleva 300X",
@@ -155,13 +156,15 @@
       "model": "Core 600S-P",
       "source": "https://levoit.com/products/core-600s-p-smart-air-purifier",
       "sourceType": "manufacturer product page",
-      "evidence": "Official page states room coverage, CADR, filtration stages and app/air-quality features.",
+      "evidence": "Official page states room coverage, CADR, filtration stages and app/air-quality features. Official Levoit US page identifies Core 600S-P and model LAP-C601S-WUS; CADR 391 CFM; 606 ft² at 4.8 ACH / 2,909 ft² at 1 ACH; 49W; 26–55dB; US manual linked.",
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current catalogue",
       "buyerUse": "large-room purifier; verify room coverage using consistent ACH standard",
-      "modelIdentityStatus": "unverified",
-      "sourcePageSpecificity": "product_page"
+      "modelIdentityStatus": "manufacturer_model_name_and_sku_confirmed",
+      "sourcePageSpecificity": "product_page",
+      "sourceVerifiedAt": "2026-11-22",
+      "skuStatus": "manufacturer_model_code_confirmed"
     },
     {
       "name": "Frigidaire FHDD5033Y1",
@@ -169,13 +172,14 @@
       "model": "FHDD5033Y1 50 Pint",
       "source": "https://www.frigidaire.com/en/p/home-comfort/dehumidifiers/FHDD5033Y1",
       "sourceType": "manufacturer product page",
-      "evidence": "Official page identifies 50-pint capacity, Wi-Fi/app connection, washable dust filter and current regional availability.",
+      "evidence": "Official page identifies 50-pint capacity, Wi-Fi/app connection, washable dust filter and current regional availability. Official Frigidaire page identifies FHDD5033Y1 50 Pint Dehumidifier; Wi-Fi/app, washable dust filter, Energy Star; page showed in-stock at capture.",
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current catalogue",
       "buyerUse": "basement and large-room moisture removal; verify DOE rating, noise and drain setup",
-      "modelIdentityStatus": "unverified",
-      "sourcePageSpecificity": "product_page"
+      "modelIdentityStatus": "manufacturer_model_name_confirmed_sku_pending",
+      "sourcePageSpecificity": "product_page",
+      "sourceVerifiedAt": "2026-11-22"
     },
     {
       "name": "Frigidaire FHDP5033Y1",
@@ -183,13 +187,14 @@
       "model": "FHDP5033Y1 50 Pint Built-In Pump",
       "source": "https://www.frigidaire.com/en/p/home-comfort/dehumidifiers/FHDP5033Y1",
       "sourceType": "manufacturer product page",
-      "evidence": "Official page describes built-in pump, continuous drainage and Wi-Fi control; model is listed as 50 pint.",
+      "evidence": "Official page describes built-in pump, continuous drainage and Wi-Fi control; model is listed as 50 pint. Official Frigidaire page identifies FHDP5033Y1 50 Pint Built-In Pump Dehumidifier; pump, Wi-Fi/app, continuous drain, 41°F low-temp operation; page showed in-stock at capture.",
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current catalogue",
       "buyerUse": "basement installation where upward condensate pumping is useful",
-      "modelIdentityStatus": "unverified",
-      "sourcePageSpecificity": "product_page"
+      "modelIdentityStatus": "manufacturer_model_name_confirmed_sku_pending",
+      "sourcePageSpecificity": "product_page",
+      "sourceVerifiedAt": "2026-11-22"
     },
     {
       "name": "Frigidaire FHDD5034Y1",
@@ -197,13 +202,15 @@
       "model": "FHDD5034Y1 50 Pint Wi-Fi Energy Star",
       "source": "https://www.frigidaire.com/en/p/home-comfort/dehumidifiers/FHDD5034Y1",
       "sourceType": "manufacturer product page",
-      "evidence": "Official page lists Wi-Fi and Energy Star; product page showed out of stock in the checked region, so stock status must be rechecked.",
+      "evidence": "Official page lists Wi-Fi and Energy Star; product page showed out of stock in the checked region, so stock status must be rechecked. Official Frigidaire page identifies FHDD5034Y1 50 Pint Wi-Fi Energy Star; compatible with Advanced Filter; page showed temporarily out of stock in selected area.",
       "status": "candidate_stock_check_required",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current catalogue",
       "buyerUse": "energy-conscious 50-pint tier; verify current stock before inclusion",
-      "modelIdentityStatus": "unverified",
-      "sourcePageSpecificity": "product_page"
+      "modelIdentityStatus": "manufacturer_model_name_confirmed_sku_pending",
+      "sourcePageSpecificity": "product_page",
+      "sourceVerifiedAt": "2026-11-22",
+      "availabilityStatus": "manufacturer_store_out_of_stock_selected_area"
     },
     {
       "name": "EcoFlow RIVER 3 Plus",
@@ -225,13 +232,15 @@
       "model": "DELTA 3 Plus 1024Wh",
       "source": "https://us.ecoflow.com/collections/delta-series/products/delta-3-plus-portable-power-station",
       "sourceType": "manufacturer US product page",
-      "evidence": "Official page describes 1024Wh capacity, 1800W output and expansion options; product bundles and availability vary by configuration.",
+      "evidence": "Official page describes 1024Wh capacity, 1800W output and expansion options; product bundles and availability vary by configuration. Official EcoFlow US page identifies DELTA 3 Plus 1024Wh / 1800W / <10ms UPS. Basic option showed pre-order and sold-out marker simultaneously; availability ambiguous; package SKU pending.",
       "status": "candidate_stock_check_required",
       "regionalMarket": "US",
       "duplicateCheck": "distinct from existing RIVER 2 and Jackery Explorer 300 Plus",
       "buyerUse": "higher-output home backup/camping tier; verify outlet count, transfer/UPS and expansion",
-      "modelIdentityStatus": "unverified",
-      "sourcePageSpecificity": "product_page"
+      "modelIdentityStatus": "manufacturer_model_name_confirmed_sku_pending",
+      "sourcePageSpecificity": "product_page",
+      "sourceVerifiedAt": "2026-11-22",
+      "availabilityStatus": "manufacturer_store_preorder_and_sold_out_signal_conflict"
     },
     {
       "name": "ecobee Smart Thermostat Premium",
@@ -239,13 +248,14 @@
       "model": "Smart Thermostat Premium",
       "source": "https://www.ecobee.com/en-us/smart-thermostats/smart-thermostat-premium/",
       "sourceType": "manufacturer US product page",
-      "evidence": "Official page lists built-in air-quality monitor, SmartSensor, Siri/Alexa voice features and 24VAC HVAC compatibility; confirm exact compatibility for each system.",
+      "evidence": "Official page lists built-in air-quality monitor, SmartSensor, Siri/Alexa voice features and 24VAC HVAC compatibility; confirm exact compatibility for each system. Dedicated official ecobee US page identifies Smart Thermostat Premium; SmartSensor included, air-quality monitor and built-in voice; verify HVAC compatibility and exact SKU.",
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "no exact product in current catalogue",
       "buyerUse": "premium HVAC thermostat; distinguish from Essential and Enhanced by sensors, air quality and voice",
-      "modelIdentityStatus": "unverified",
-      "sourcePageSpecificity": "product_page"
+      "modelIdentityStatus": "manufacturer_model_name_confirmed_sku_pending",
+      "sourcePageSpecificity": "product_page",
+      "sourceVerifiedAt": "2026-11-22"
     },
     {
       "name": "ecobee Smart Thermostat Enhanced",
@@ -253,13 +263,14 @@
       "model": "Smart Thermostat Enhanced",
       "source": "https://www.ecobee.com/en-us/smart-thermostats/smart-thermostat-enhanced/",
       "sourceType": "manufacturer US product page",
-      "evidence": "Official page describes occupancy sensing, Power Extender Kit, compatibility with most HVAC systems and 3-year warranty.",
+      "evidence": "Official page describes occupancy sensing, Power Extender Kit, compatibility with most HVAC systems and 3-year warranty. Dedicated official ecobee US page identifies Smart Thermostat Enhanced; built-in occupancy sensing and PEK included; dual-transformer and some multi-stage auxiliary heat configurations excluded.",
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "no exact product in current catalogue",
       "buyerUse": "mid-tier thermostat with occupancy-based comfort; verify C-wire/PEK compatibility",
-      "modelIdentityStatus": "unverified",
-      "sourcePageSpecificity": "product_page"
+      "modelIdentityStatus": "manufacturer_model_name_confirmed_sku_pending",
+      "sourcePageSpecificity": "product_page",
+      "sourceVerifiedAt": "2026-11-22"
     },
     {
       "name": "ecobee Smart Thermostat Essential",
@@ -267,13 +278,14 @@
       "model": "Smart Thermostat Essential",
       "source": "https://www.ecobee.com/en-us/smart-thermostats/smart-thermostat-essential/",
       "sourceType": "manufacturer US product page",
-      "evidence": "Official page lists core scheduling, touchscreen, smart-home compatibility and over-85% HVAC compatibility claim; Power Extender Kit/trim kit sold separately.",
+      "evidence": "Official page lists core scheduling, touchscreen, smart-home compatibility and over-85% HVAC compatibility claim; Power Extender Kit/trim kit sold separately. Dedicated official ecobee US page identifies Smart Thermostat Essential; PEK/trim kit sold separately; manufacturer says works with >85% HVAC systems; compatibility check required.",
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "no exact product in current catalogue",
       "buyerUse": "entry-level thermostat; clearly disclose accessory and compatibility limitations",
-      "modelIdentityStatus": "unverified",
-      "sourcePageSpecificity": "product_page"
+      "modelIdentityStatus": "manufacturer_model_name_confirmed_sku_pending",
+      "sourcePageSpecificity": "product_page",
+      "sourceVerifiedAt": "2026-11-22"
     },
     {
       "name": "Roborock F25 GT Gen 2",
@@ -281,13 +293,15 @@
       "model": "F25 GT Gen 2",
       "source": "https://us.roborock.com/products/roborock-f25-gt-gen-2",
       "sourceType": "manufacturer US product page",
-      "evidence": "Official page lists 20,000 Pa suction, edge-to-edge cleaning, anti-tangle design, lay-flat reach and 194°F self-washing.",
+      "evidence": "Official page lists 20,000 Pa suction, edge-to-edge cleaning, anti-tangle design, lay-flat reach and 194°F self-washing. Official Roborock US page identifies F25 GT Gen 2; 20,000Pa and up to 38-min Eco claim. Battery discrepancy: 4,000mAh spec vs 2,500mAh FAQ; hold battery capacity.",
       "status": "candidate",
       "regionalMarket": "US",
       "duplicateCheck": "new product family not represented in current catalogue; check model suffix and bundle",
       "buyerUse": "value wet-dry cleaner for everyday spills and hard floors",
-      "modelIdentityStatus": "unverified",
-      "sourcePageSpecificity": "product_page"
+      "modelIdentityStatus": "manufacturer_model_name_confirmed_sku_pending",
+      "sourcePageSpecificity": "product_page",
+      "sourceVerifiedAt": "2026-11-22",
+      "availabilityStatus": "manufacturer_page_availability_not_confirmed"
     },
     {
       "name": "Roborock F25 Steam",
@@ -431,15 +445,17 @@
       "model": "FLOOR ONE S9 Artist Pro",
       "source": "https://store.tineco.com/collections/wet-dry-vacuum-cleaner/products/tineco-floor-one-s9-artist-pro-wet-dry-vacuum-cleaner",
       "sourceType": "manufacturer US product page",
-      "evidence": "Official page lists a cordless hard-floor washer with iLoop sensor, 22 kPa claimed suction, 180° lay-flat design, dual-side edge cleaning, 1 L clean-water tank and up to 75-minute runtime. These are manufacturer claims, not independent test results.",
+      "evidence": "Official page lists a cordless hard-floor washer with iLoop sensor, 22 kPa claimed suction, 180° lay-flat design, dual-side edge cleaning, 1 L clean-water tank and up to 75-minute runtime. These are manufacturer claims, not independent test results. Official Tineco US page identifies FLOOR ONE S9 Artist Pro; 75-min claim, 1L/0.72L tanks, 22kPa; currently Unavailable/backordered.",
       "buyerUse": "premium wet-dry floor washer for hard floors, pet hair and under-furniture reach",
       "availabilityNote": "Official page showed backordered/unavailable at capture; not ready for affiliate promotion.",
       "status": "candidate_stock_check_required",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
       "sourceDate": "2026-11-22",
-      "modelIdentityStatus": "unverified",
-      "sourcePageSpecificity": "product_page"
+      "modelIdentityStatus": "manufacturer_model_name_confirmed_sku_pending",
+      "sourcePageSpecificity": "product_page",
+      "sourceVerifiedAt": "2026-11-22",
+      "availabilityStatus": "manufacturer_store_unavailable_backordered"
     },
     {
       "name": "Tineco FLOOR ONE S9 Artist Steam Wet Dry Vacuum Cleaner",
@@ -447,15 +463,17 @@
       "model": "FLOOR ONE S9 Artist Steam",
       "source": "https://store.tineco.com/collections/wet-dry-vacuum-cleaner/products/tineco-floor-one-s9-artist-steam-cordless-wet-dry-vacuum-cleaner",
       "sourceType": "manufacturer US product page",
-      "evidence": "Official page describes a steam-assisted wet-dry hard-floor washer, 320°F internal heater output (not outlet steam temperature), claimed 22 kPa suction and up to 75-minute runtime. Temperature claims must retain the manufacturer's qualification.",
+      "evidence": "Official page describes a steam-assisted wet-dry hard-floor washer, 320°F internal heater output (not outlet steam temperature), claimed 22 kPa suction and up to 75-minute runtime. Temperature claims must retain the manufacturer's qualification. Official Tineco US page identifies FLOOR ONE S9 Artist Steam; 320°F internal heater output (not outlet steam), up to 75-min claim; currently Unavailable/backordered.",
       "buyerUse": "steam-assisted wet-dry floor cleaning for dried-on kitchen messes and sealed hard floors",
       "availabilityNote": "Official page showed backordered/unavailable at capture; not ready for affiliate promotion.",
       "status": "candidate_stock_check_required",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
       "sourceDate": "2026-11-22",
-      "modelIdentityStatus": "unverified",
-      "sourcePageSpecificity": "product_page"
+      "modelIdentityStatus": "manufacturer_model_name_confirmed_sku_pending",
+      "sourcePageSpecificity": "product_page",
+      "sourceVerifiedAt": "2026-11-22",
+      "availabilityStatus": "manufacturer_store_unavailable_backordered"
     },
     {
       "name": "Tineco FLOOR ONE S7 Stretch Ultra Wet Dry Vacuum Cleaner",
@@ -463,15 +481,17 @@
       "model": "FLOOR ONE S7 Stretch Ultra",
       "source": "https://store.tineco.com/collections/wet-dry-vacuum-cleaner/products/tineco-floor-one-s7-stretch-ultra-cordless-wet-dry-vacuum-cleaner",
       "sourceType": "manufacturer US product page",
-      "evidence": "Official page lists a 180° lay-flat design, dual-layer anti-tangle scraper, heated self-cleaning/drying and up to 50-minute runtime. Intended for bare floors; verify exact tank and runtime conditions before comparison.",
+      "evidence": "Official page lists a 180° lay-flat design, dual-layer anti-tangle scraper, heated self-cleaning/drying and up to 50-minute runtime. Intended for bare floors; verify exact tank and runtime conditions before comparison. Official Tineco US page identifies FLOOR ONE S7 Stretch Ultra; 180° lay-flat, up to 50-min claim, FlashDry; currently Unavailable/backordered.",
       "buyerUse": "wet-dry floor washer for pet hair, daily spills and low-clearance furniture",
       "availabilityNote": "Official page showed backordered/unavailable at capture; not ready for affiliate promotion.",
       "status": "candidate_stock_check_required",
       "regionalMarket": "US",
       "duplicateCheck": "not present by exact name in current 100-product catalogue; model-family overlap review still required",
       "sourceDate": "2026-11-22",
-      "modelIdentityStatus": "unverified",
-      "sourcePageSpecificity": "product_page"
+      "modelIdentityStatus": "manufacturer_model_name_confirmed_sku_pending",
+      "sourcePageSpecificity": "product_page",
+      "sourceVerifiedAt": "2026-11-22",
+      "availabilityStatus": "manufacturer_store_unavailable_backordered"
     },
     {
       "name": "Whynter ARC-1050XPH Portable Air Conditioner and Heater",
@@ -666,6 +686,6 @@
       "sourcePageSpecificity": "product_page"
     }
   ],
-  "lastExpandedAt": "2026-11-22T14:27:00Z",
-  "notes": "Additional manufacturer-sourced candidates are staged for research only. Some Tineco and Rachio pages explicitly showed backordered/out-of-stock status; do not treat as currently purchasable. Capacity/zone variants remain variants, not separate products. No Amazon ASIN or affiliate URL has been verified."
+  "lastExpandedAt": "2026-11-22",
+  "notes": "Additional manufacturer-sourced candidates are staged for research only. Some Tineco and Rachio pages explicitly showed backordered/out-of-stock status; do not treat as currently purchasable. Capacity/zone variants remain variants, not separate products. No Amazon ASIN or affiliate URL has been verified.\n\n2026-11-22 US model identity pass: 13 previously unverified candidates now have official manufacturer-page model-name evidence (Levoit Eleva 500X/Core 600S-P; three Frigidaire 50-pint variants; EcoFlow DELTA 3 Plus; three ecobee thermostats; Roborock F25 GT Gen 2; three Tineco FLOOR ONE models). One Levoit model code confirmed (LAP-C601S-WUS). River 3 Plus source still returns 404 and remains unverified. No ASIN/affiliate destination verified; no candidate promoted to publishable. Tineco pages currently say unavailable/backordered; EcoFlow DELTA 3 Plus stock signal is contradictory; Roborock battery capacity is contradictory."
 }
