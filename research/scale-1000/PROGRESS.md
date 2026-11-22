@@ -12,7 +12,7 @@
 | Existing live catalogue | 100 | Already present; excluded from new intake |
 | New staged candidates | 84 | 62 UK + 22 US; research queue only, not verified/publishable |
 | Verified new products | 0 | No candidate in this first batch has passed all identity, regional, evidence and affiliate checks |
-| Keyword candidates | 3,158 | 1,612 UK + 1,546 US; candidates are not measured demand or pages |
+| Keyword candidates | 2,871 | 1,488 UK + 1,383 US; candidates are not measured demand or pages |
 
 ### Batch 001 — UK candidate discovery
 
@@ -65,7 +65,7 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 - Created US page briefs for all 25 existing guides (refresh, not duplicate) plus 11 new-page/topic candidates; two of the candidates are explicitly refresh-only due likely overlap with existing canonical guides.
 - Created a US product discovery batch with 14 manufacturer-sourced candidates: eufy (4), Levoit (5), Frigidaire (3), EcoFlow (2). Verified/publishable remain 0; stock and exact SKU/variant checks remain open. No Amazon ASIN or affiliate URL was invented.
 - Created a UK page-brief pack: 25 existing-guide refresh briefs plus 12 new-page candidates. These are editorial plans, not pages published.
-- Combined keyword candidate universe at this checkpoint: 1,612 UK + 1,546 US = **3,158 phrases**. UK cache: 32 saved metric records, 8 exact matches within generated UK phrases. US: 0 measured. No monthly trend series available for the saved UK cache.
+- Combined keyword candidate universe at this checkpoint: 1,488 UK + 1,383 US = **2,871 phrases**. UK cache: 32 saved metric records, 8 exact matches within generated UK phrases. US: 0 measured. No monthly trend series available for the saved UK cache.
 - Product queue: 62 UK + 22 US = 84 staged candidates; verified new products 0. Existing live catalogue remains 100 products / 25 guides. No 1,000-product publishing target.
 - All work remains on research branch. No public site, catalogue, Amazon links, indexability or deployment changed.
 
@@ -87,7 +87,7 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 
 ## 22 November 2026 14:16 UTC — Keyword expansion and KPI correction
 - Re-read the latest research branch and confirmed the prior checkpoint was 31 commits ahead of main, 0 behind; no production changes were present.
-- Expanded the localized buyer-keyword databases with a second use-case-led long-tail tier across the existing 62 topics. Final unique counts: **1,612 UK + 1,546 US = 3,158**. UK added 372 phrases; US added 306 after exact-phrase deduplication against its original list.
+- Expanded the localized buyer-keyword databases with a second use-case-led long-tail tier across the existing 62 topics. Final unique counts: **1,612 UK + 1,546 US = 3,158**. UK added 248 topic-specific phrases; US added 143 after deduplication after exact-phrase deduplication against its original list.
 - Keyword intent by wording: UK 186 transactional / 1426 commercial; US 186 transactional / 1360 commercial. All newly added long-tail phrases are explicitly unmeasured (null metrics); US remains 0 measured. No trend data has been fabricated and no paid credits were used.
 - UK cached metric coverage remains 32 saved cache records, 8 exact matches in the generated list; remaining UK candidates are unmeasured. Do not treat search volume as clicks/orders or add close-variant volumes.
 - Product discovery is a separate queue: 62 UK + 22 US staged candidates, 0 verified/publishable. Existing catalogue remains 25 guides / 100 products. The 1,000+ target is keywords, not 1,000 products.
@@ -97,7 +97,14 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 
 ## 22 November 2026 14:16 UTC — Keyword expansion and KPI correction
 - Expanded the localized buyer-keyword databases with a second use-case-led long-tail tier across the existing 62 topics. Final unique counts: **1,612 UK + 1,546 US = 3,158**. UK added 372 phrases; US added 306 after exact-phrase deduplication against its original list.
-- Keyword intent by wording: UK 186 transactional / 1,426 commercial; US 186 transactional / 1,360 commercial. All newly added long-tail phrases are explicitly unmeasured (null metrics); US remains 0 measured. No trend data has been fabricated and no paid credits were used.
+- Keyword intent by wording: UK 186 transactional / 1,302 commercial; US 186 transactional / 1,197 commercial. All newly added long-tail phrases are explicitly unmeasured (null metrics); US remains 0 measured. No trend data has been fabricated and no paid credits were used.
 - UK cached metric coverage remains 32 saved cache records, 8 exact matches in the generated list; remaining UK candidates are unmeasured. Do not treat search volume as clicks/orders or add close-variant volumes.
 - Product discovery is a separate queue: 62 UK + 22 US staged candidates, 0 verified/publishable. Existing catalogue remains 25 guides / 100 products. The 1,000+ target is keywords, not 1,000 products.
 - Page briefs remain plans only: UK 25 refresh + 12 new-page candidates; US 25 refresh + 12 topics (10 new-page candidates, 2 refresh-only). No public page, product, metadata, deployment or indexability changes.
+
+
+## 22 November 2026 14:16 UTC — Long-tail relevance QA correction
+- QA sampling found that the first modifier pass applied some cluster-wide modifiers to topics where they were not meaningful (for example, kitchen meal-prep modifiers attached to grinders). Those generated phrases were discarded rather than retained to inflate counts.
+- Restored the original 1,240-keyword base per market and rebuilt the incremental tier using topic-specific purchase modifiers. Final counts: **1,488 UK + 1,383 US = 2,871 unique phrases**; the new tier contributes 248 UK and 143 US phrases after exact deduplication.
+- Final UK: 186 transactional / 1,302 commercial; 32 cached metric records, 8 exact matches, 1,480 unmeasured. US: 186 transactional / 1,197 commercial; 0 measured, 1,383 unmeasured. Trends remain unavailable. New terms have null volume/KD/CPC/trend.
+- Duplicate checks: zero exact duplicate phrases in either market dataset. Topic-level phrase relevance was spot-checked on espresso machines, coffee grinders, robot lawn mowers, printers and travel adapters; SERP validation is still required.
