@@ -1879,3 +1879,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Current main catalogue has 25 guides all marked "Approved for publication"; production browser content shows the generic research-led card message and a guide detail label "Research draft — requires human review before publication". This is consistent with an older/different deployed artifact, but not enough to prove without refreshing Cloudflare deployment status and comparing deployment marker.
 - Next: refresh Cloudflare Deployments and verify production SHA/time/branch and live deployment marker. Investigate deployment pipeline discrepancy before any deploy.
 - Editorial status UI patch remains on isolated fix branch and not build-tested or deployed. No production changes or indexing submissions.
+
+
+## 22 November 2026 — Cloudflare preview confirms guide-card patch build
+- Owner screenshot confirms production branch main at commit `26636d4`, successful, matching main SHA `26636d4359508b9af30eec498a22ffc005a81a72`. Earlier concern about production lag is closed.
+- Owner screenshot confirms green successful Preview deployment for branch `fix/public-editorial-status-2026-11-22`, commit `cd8331f`, URL `https://852061d1.smartpickhub.pages.dev`.
+- GitHub compare confirms the fix branch is exactly 2 commits ahead and 0 behind main; only two template files changed. Both files re-fetched and checked: internal status display removed from homepage and guide-library cards, catalogue status data untouched.
+- Preview has successfully built/deployed on Cloudflare, but visual QA has not yet been performed. No PR, merge or production deployment.
+- Next: visually inspect the preview URL, then check Actions quota and decide PR. Do not merge or deploy without explicit release approval.
