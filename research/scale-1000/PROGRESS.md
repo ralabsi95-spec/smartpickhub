@@ -195,3 +195,12 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 - Lakeland official instruction booklet confirms Dry:Soon Deluxe model 24909. This is a manufacturer model/SKU confirmation, not an Amazon ASIN confirmation. Meaco manufacturer SKUs 180-1 (Arete Two 20L), 179-1-1 (Arete One 20L) and DD8LPro were captured separately; none should be mistaken for ASINs.
 - Current product queue remains 102 candidates; UK model identity supported 61/62, one broken Dunelm A-frame source unresolved; US model/family identities supported 14/40. Verified Amazon ASIN/affiliate destinations remain 0; publishable candidates remain 0.
 - No affiliate links created, no production catalog/page change, no PR, merge or deployment.
+
+
+## 22 November 2026 — US family and package option resolution
+- Rechecked official US pages for eufyCam S4, Mammotion LUBA 3 AWD and LUBA mini 2 AWD; added research/product-verification/us-variant-package-resolution-2026-11-22.md and updated the US candidate JSON.
+- eufyCam S4: page exposes 2-camera and 4-camera kits plus HomeBase S380, 1TB drive, Doorbell E340 and Smart Display E10 bundles. These are package options, not separate camera models. Exact option SKU/ASIN remains unverified.
+- LUBA 3 AWD: page exposes 1500/1500H, 3000/3000H and 5000/5000H. 1500 and 5000 showed out-of-stock signals; selected 3000 showed an in-stock signal. A 1500 capacity conflict remains: product page says 0.37 acre, separate official Mammotion overview says 1,000m² / 0.25 acre. Hold the capacity claim pending manual/SKU. S/H cutting-height variants must remain distinct at package/spec level.
+- LUBA mini 2 AWD: 1500/1500H family confirmed; page hero showed sold out but selected option block showed a stale September–October delivery estimate. Treat stock as conflicting/stale and recheck exact option. Verify S/H cutting-height mapping against manual.
+- eufy SoloCam E50 zoom/resolution discrepancy remains unresolved; no disputed claims used.
+- No exact package ASINs verified, no affiliate links created. Overall 102 candidates; UK identity 61/62; US model/family identity supported 14/40; Amazon ASIN verified 0; publishable 0. No production changes.
