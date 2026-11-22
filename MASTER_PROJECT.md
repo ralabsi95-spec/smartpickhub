@@ -1827,7 +1827,7 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Replaced the first broad modifier expansion after relevance sampling showed some cluster-wide combinations were not topic-specific. Rebuilt the expansion from the original 1,240 UK and 1,240 US base phrases with per-topic buyer modifiers.
 - Final candidate universe: **1,488 UK + 1,383 US = 2,871 unique phrases**. Exact duplicate validation: 0 per market. UK intent by wording: 186 transactional / 1,302 commercial; 32 saved cache metric records, 8 exact phrase matches, 1,480 unmeasured. US: 186 transactional / 1,197 commercial, 0 measured, all 1,383 unmeasured. No monthly trend data available and no paid credits used.
 - Product discovery remains separate: 62 UK + 22 US candidates, 0 verified/publishable. Page briefs remain plans only (UK 25 refresh + 12 new candidates; US 25 refresh + 12 topics, 10 new and 2 refresh-only). Existing 25 guides / 100 products preserved.
-- Research branch only; no PR, merge, public content, catalogue, metadata, deployment or indexability changes. Current branch comparison is 46 commits ahead / 0 behind main as last checked before this correction; refresh compare after docs writes.
+- Research branch only; no PR, merge, public content, catalogue, metadata, deployment or indexability changes. Research branch remains isolated from main; no merge or production action was performed.
 
 
 ## 22 November 2026 14:16 UTC — Keyword long-tail relevance correction
