@@ -1602,3 +1602,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Main catalogue all 25 editorialStatus approved; live production page shows research-led fallback and guide detail draft label. This is a deployment divergence lead, not proven until deployment dashboard + deployment marker refreshed.
 - Next: refresh Cloudflare deployment view, confirm live SHA/time and deployment marker; resolve deploy divergence before deploy/index actions.
 - Patch branch for public status cleanup remains unbuilt, not PR'd/merged/deployed. No prod changes/indexing/paid tools.
+
+
+## 22 Nov 2026 10:57 UTC — preview build confirmed
+- Owner screenshot confirms Production main commit `26636d4` green and matching known main SHA; no production lag.
+- Preview for `fix/public-editorial-status-2026-11-22` commit `cd8331f` is green at `https://852061d1.smartpickhub.pages.dev`.
+- GitHub compare confirms only two card-template files changed, branch 2 ahead/0 behind. Re-fetched files confirm editorial workflow status display removed; internal data preserved.
+- Preview deployment green, but visual review still pending. Not PR'd, merged or deployed to production. No Actions quota check available.
+- Next: inspect preview visually, then consider PR only after CI quota known.
