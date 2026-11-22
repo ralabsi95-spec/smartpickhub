@@ -95,3 +95,10 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 - Strongest distinct US candidate in this pass: wet-dry floor cleaners. UK dehumidifiers and robot lawn mowers warrant evidence development. UK heated airers and smart thermostats have clear intent but high competition. US cameras without subscription, basement dehumidifiers, wildfire-smoke purifiers, robot mowers and portable AC show distinct tasks but need differentiation and/or canonical-overlap checks.
 - Smart plugs, travel and several other topics are deferred pending differentiation or stronger SERP samples. UK portable AC is seasonal with stock constraints reported into early 2027.
 - This is qualitative SERP evidence only: no search volumes, trend metrics or ranking predictions were added. Page briefs now record evidence status and notes. No public page or product changes.
+
+
+## 22 November 2026 — US product discovery expansion
+- Expanded the manufacturer-sourced US product candidate batch from 22 to **40** by adding 18 candidates across robot lawn mowers, wet-dry floor cleaners, portable ACs, smart irrigation, smart locks and electric pressure washers.
+- New additions: 3 Mammotion mower families; 3 Tineco wet-dry cleaners; 2 Whynter portable AC models; 2 Rachio irrigation products; 3 smart locks (Aqara/Schlage); 5 pressure washers (Greenworks/Kärcher).
+- Sources are official US manufacturer product pages/catalogues. Exact model/variant, product family, US stock, and Amazon.com ASIN/affiliate destination still require verification. Tineco S9 Artist Pro/S9 Artist Steam/S7 Stretch Ultra were marked backordered/unavailable on official store pages; Rachio Smart Hose Timer was out of stock; Mammotion stock varies by model variant.
+- Verified/publishable/ASIN-verified counts remain **0**. Candidate count is not product approval. Existing 100-product catalogue untouched; no production pages or products changed.
