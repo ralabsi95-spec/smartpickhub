@@ -2,11 +2,12 @@
 
 ## Results
 
-- **1,240 unique UK keyword candidates** generated from 62 product topics.
-- **32 saved keywords** have cached search-volume, KD, CPC and intent fields in OpenSEO. Of the 1,240 candidates, 8 have exact phrase matches to those metrics.
-- **1232 generated candidates** have no measured volume; null means unmeasured, not zero.
-- 186 transactional and 1054 commercial phrases by wording classification.
-- 740 phrases map to an existing guide; 500 are not yet mapped and require SERP/cannibalisation review. They are not automatically approved new pages.
+- **1,612 unique UK buyer-intent keyword candidates** across 62 product topics.
+- **32 saved OpenSEO cache records** contain volume/KD/CPC/intent data; **8 exact phrases** match this generated universe. These are cached records, not a fresh bulk refresh.
+- **1,604 phrases remain unmeasured**; null means unmeasured, not zero.
+- 186 transactional and 1,426 commercial phrases by wording classification. Buyer-intent score is a wording heuristic, not conversion probability.
+- 740 phrases map to existing guides; 650 need clustering and SERP/cannibalisation review. No one-keyword-one-page rule.
+- The second tier adds use-case-led long-tail terms (pets, room size, installation, compatibility, ownership costs and task-specific needs). It is a research universe, not an instruction to publish every phrase.
 
 ## Highest-volume saved UK phrases
 
