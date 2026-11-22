@@ -1792,3 +1792,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Separate product-discovery work remains staged in `research/scale-1000/` (62 product candidates). It is not the keyword target and none is counted as verified or publishable.
 - Working research branch: `research/scale-1000-batch-001`; currently 11 commits ahead of main, 0 behind. All files are research/documentation only; no PR, merge, production deploy or public content change.
 - Next: cluster the 1,240 terms by SERP overlap, prioritize the measured high-volume/low-KD and high-purchase-intent long-tail phrases, then refresh metrics/trend histories for the best seeds when credits are approved. Keep one page per distinct buyer task, not per keyword.
+
+
+## 22 November 2026 17:18 UTC — Live UK SERP intent sample appended
+- Added public SERP evidence for air fryers, bean-to-cup coffee machines, heated clothes airers, dehumidifiers, dash cams and robot vacuum/mops to `research/keyword-intelligence/REPORT.md`.
+- Findings reinforce buyer-task modifiers: air fryer basket/footprint/cost-to-run; coffee-machine beginner/milk-drink/small-kitchen/budget; heated-airer drying capacity/speed/running cost/cover; dehumidifier compressor-vs-desiccant/temperature/laundry; dash-cam front-rear/night/parking/GPS; robot-vacuum mop-lift/obstacle/threshold/dock.
+- Sources include current BBC Good Food, The Independent, The Guardian, Good Housekeeping, Which?, Currys and UK buying-guide pages. This is qualitative SERP evidence only; it adds no search-volume or trend metrics and did not consume OpenSEO credits.
+- Research branch now 14 commits ahead of main, 0 behind. Still no PR, merge, public page change or production deployment.
