@@ -150,3 +150,13 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 - Captured availability caveats: Arete Two 10L page showed out-of-stock/pre-order; DD128 appeared only as a sold-out refurbished outlet listing. Do not count either as a current purchasable recommendation without a fresh stock check.
 - Extraction-rate test conditions differ between models (for example, 20°C/60% RH vs 30°C/80% RH). Do not rank by litres/day without normalising test conditions. Desiccant and compressor models also require separate decision criteria.
 - Evidence matrix: `research/product-verification/uk-dehumidifier-product-evidence-2026-11-22.md`. No ASINs, affiliate links, ratings, review counts or hands-on testing claims were added. Verified/publishable product count remains 0.
+
+
+## 22 November 2026 — UK dehumidifier exact-page coverage completed
+- Completed the remaining six exact manufacturer pages for Meaco Arete One 6L/10L/12L/20L/25L and EcoAir DC14 MK2. UK dehumidifier candidate coverage is now **23/23 exact manufacturer product pages** with model names populated.
+- Model families remain separate: Meaco Arete One vs Arete Two must not be merged; capacities/colours are not separate product counts.
+- Recorded seven manufacturer-page stock caveats: Arete One 6L/10L/12L/20L low stock; Arete Two 10L and Arete One 25L out-of-stock/pre-order; EcoAir DD128 only surfaced as a sold-out refurbished outlet listing.
+- UK source specificity is now 34 product pages / 28 category or landing pages across both batches; US remains 26 product pages / 14 category or collection pages. Total remaining source-specificity gaps: **42** (28 UK + 14 US).
+- UK model-name status: 23 manufacturer-page-confirmed with SKU pending; 39 other UK model names unverified. US: all 40 remain unverified. No Amazon ASIN or affiliate URL has been validated.
+- The complete matrix and technical caveats are in `research/product-verification/uk-dehumidifier-product-evidence-2026-11-22.md`. Extraction rates are not comparable unless temperature/RH test conditions match.
+- No products were promoted to verified/publishable, no page was published, and no production catalogue or deployment changed.
