@@ -7,7 +7,7 @@
 ## Candidate summary
 - UK: 3 (Dreamland Snuggle Up Electric Warming Throw; Silentnight Winter Warmer Electric Blanket; Roberts SolarDAB 99).
 - US: 5 (Levoit Superior Studio Smart Evaporative Humidifier; DREO Humidifier 311S; DREO Dehumidifier 733S; Brita Tahoe Water Pitcher with Elite Filter; Honeywell HHF360V).
-- Seven candidates have model/family identity evidence. Roberts SolarDAB 99 is a confirmed model but the only official listing captured is refurbished and out of stock. DREO 733S is held on 73/95-pint variant/spec conflict.
+- All eight candidates have model/family identity evidence; two remain held for availability or variant-resolution reasons. Roberts SolarDAB 99 is a confirmed model but the only official listing captured is refurbished and out of stock. DREO 733S is held on 73/95-pint variant/spec conflict.
 - 0 ASINs verified; 0 affiliate destinations created; 0 publishable.
 
 ## Evidence
