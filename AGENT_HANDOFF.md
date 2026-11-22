@@ -1565,3 +1565,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Added research/product-verification/uk-heated-airers-air-purifiers-evidence-2026-11-22.md. Key stock/legacy caveats: Philips AC1214/60 and AC2936/33 discontinued; AC3033/30R1 refurbished is not new AC3033/30; Lakeland Mini pre-order; Dunelm Black + Decker Winged unavailable for delivery/collection; Blueair notify-me signals on 211i Max/511i Max.
 - Combined UK candidate identity status: 61/62 manufacturer/retailer-supported, 1 unresolved; exact SKU/EAN, current retailer inventory, Amazon ASIN and editorial gates remain open. No Amazon ASIN or affiliate destination verified; publishable=0.
 - Continue with SKU/manual resolution and exact Amazon UK identity checks only after exact model/package match. Do not import or publish candidates.
+
+
+## 22 November 2026 15:xx UTC — Initial Amazon UK listing identity gate
+- Added research/product-verification/uk-amazon-identity-check-2026-11-22.md. Initial exact-model checks did not verify a direct Amazon ASIN for the Meaco/Blueair/EcoAir shortlist or the bare Lakeland Deluxe airer.
+- A Dry:Soon Deluxe + cover bundle ASIN B0HFNS4W5G was found; bundle description mentions airer-only B016Q6NOCC and cover B01HTGQMTA. These component ASINs are leads only pending direct page verification. Do not use bundle ASIN as the airer-only product.
+- Lakeland 24909 and Meaco 180-1 / 179-1-1 / DD8LPro are manufacturer SKUs, not Amazon ASINs. No affiliate URL created; tracking ID smartpickhubu-21 remains reserved for exact verified UK ASINs.
+- Overall counts unchanged: 102 staged candidates; 61/62 UK identities supported; 14/40 US model/family identities supported; 0 Amazon ASINs verified; 0 publishable.
