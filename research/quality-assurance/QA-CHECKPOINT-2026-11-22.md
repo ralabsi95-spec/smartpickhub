@@ -53,7 +53,7 @@ One canonical phrase was retained from each pair. The US file was updated and it
 
 ### Current product verification blockers
 - UK: 62 records remain research candidates. Twenty-three now have exact manufacturer product pages and model names captured (SKU still pending); 39 other UK model names remain unverified. Seven UK manufacturer-page stock caveats are recorded: Arete One 6L/10L/12L/20L low stock; Arete Two 10L and Arete One 25L out-of-stock/pre-order; DD128 only surfaced as a sold-out refurbished outlet listing. Other live stock checks remain open. Exact regional SKU, full specs, Amazon UK ASIN/destination and image rights remain open.
-- US: 40 records remain candidates; 8 are explicitly flagged for stock recheck. US sources include category/collection pages that need exact product-page evidence before promotion.
+- US: 40 records remain candidates; 14 now have manufacturer model/family evidence (11 model names, 2 family pages and 1 model+SKU record), while 26 remain model-identity unverified. Three product-family pages still need exact variant/SKU resolution. Three Mammotion candidates show sold-out or variant-specific sold-out signals; eight other manufacturer pages show add-to-cart signals, not independent retailer or Amazon stock confirmation.
 - Variants, bundles, regional adapters, plug standards, voltage, HVAC compatibility and lawn-area variants must be resolved before records count as distinct market-specific products.
 - A product can be promoted only after exact identity, official specification/manual evidence, current regional availability, retailer destination, duplicate-family review, claim-level sourcing, and content/editorial QA pass.
 
@@ -98,8 +98,8 @@ A second review found 62 additional US phrases that were not punctuation duplica
 
 ### Source specificity counts
 - UK: 34 of 62 records now point to a product page; 28 of 62 still point to a category, collection or landing page.
-- US: 26 of 40 records point to a product page; 14 of 40 point to a category or collection page.
-- All 102 candidates have a source URL, but **42 records still need a more specific product-page source** before exact SKU verification can be considered complete. This is a source-quality gap, not proof that the products do not exist.
+- US: 37 of 40 records point to an exact product page; 3 of 40 point to product-family pages requiring variant/SKU resolution; no US candidate remains category-only.
+- All 102 candidates have a source URL, but **31 records still need more specific source/SKU resolution** before exact SKU verification can be considered complete. This is a source-quality gap, not proof that the products do not exist.
 
 
 ## UK dehumidifier evidence batch — 22 November 2026
@@ -117,3 +117,13 @@ A second review found 62 additional US phrases that were not punctuation duplica
 - UK source specificity is now 34 product pages / 28 category or landing pages across both UK batches. US remains 26 product pages / 14 category or collection pages. Combined source-page gaps: **42** (28 UK + 14 US).
 - UK model-name status: 23 manufacturer-page-confirmed with SKU pending; 39 other UK candidates remain unverified. All 40 US model identities remain unverified.
 - Updated evidence report: `research/product-verification/uk-dehumidifier-product-evidence-2026-11-22.md`.
+
+
+## US exact product-page evidence batch — 22 November 2026
+- All 14 US candidates that previously relied on category/collection pages now have an exact product or product-family page.
+- Updated US source specificity: **37 exact product pages + 3 product-family pages + 0 category-only sources**. The three family pages are eufyCam S4, Mammotion LUBA 3 AWD and Mammotion LUBA mini 2 AWD; their exact package/capacity variant SKUs remain open.
+- Manufacturer model/family identity is now confirmed for 14 US candidates; 26 remain unverified. One Levoit Vital 100S-P model code (LAP-V102S-WUS) was captured from the official page.
+- Critical conflicts recorded: eufy SoloCam E50's page conflicts between marketing and technical table on zoom/resolution; Roborock F25 BX page title metadata says F25/F25LT while URL and body say F25 BX. Neither claim should be used until resolved.
+- Mammotion LUBA 3 1500, LUBA mini 2 and YUKA mini 2 1000H showed sold-out or variant-specific sold-out signals. Do not recommend until a positive exact-variant stock check.
+- Evidence matrix: `research/product-verification/us-product-page-evidence-2026-11-22.md`. No Amazon ASINs or affiliate destinations were inferred or accepted; verified ASIN count remains zero.
+- Across the 102 staged candidates, remaining source/variant resolution gaps are **31**: 28 UK category/landing-page records and 3 US family-variant records.
