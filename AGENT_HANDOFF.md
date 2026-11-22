@@ -1,4 +1,4 @@
-**Latest checkpoint — 22 November 2026 14:40 UTC**
+**Latest checkpoint — 22 November 2026 14:55 UTC**
 
 - Immediate KPI: **1,000+ distinct buyer-intent keyword phrases**, with real monthly search metrics prioritised where available. This is not a 1,000-product publishing target.
 - Current deduplicated keyword universe: **1,488 UK + 1,311 US = 2,799 phrases** across 62 product topics per market. UK: 32 saved metric-cache records, 8 exact phrase matches, 1,480 unmeasured. US: 0 measured, all 1,311 unmeasured. No monthly trend series; no paid refresh.
