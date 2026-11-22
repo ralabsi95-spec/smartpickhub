@@ -242,3 +242,13 @@ OpenSEO project audit retrieval used the saved report only; no new audit crawl, 
 - This does not prove guide URLs are not indexed; Search Console performance rows show pages that actually received impressions in the selected period, while URL Inspection and Page indexing reports are separate.
 - Next: monitor Performance > Pages and Queries over a longer window as fresh data accrues; keep URL inspection for individual guide URLs and sitemap processing as separate workstreams. No repeated manual Request indexing while quota error persists.
 - No production edits, sitemap change/resubmission, PR, CI, merge, deployment, index submission, product import or paid service.
+
+
+## 22 Nov 2026 08:40 UTC — concrete production review and complete guide inspection
+- Read production templates directly from main. Confirmed a user-facing defect: homepage featured cards and all-guides cards render internal `guide.editorialStatus` (all 25 are "Approved for publication"). Detail page template already suppresses that exact approved string.
+- Recommended minimal fix: remove the public status spans from `src/pages/index.astro` and `src/pages/guides/index.astro`; retain editorialStatus in JSON and existing detail-page guard. No production edits made.
+- Completed GSC URL Inspection for all 25 guide URLs plus /guides/, /how-we-research/ and /affiliate-disclosure/. All 28 return NEUTRAL / "URL is unknown to Google". This is not a penalty or proof of a technical block; these reads do not fetch pages live. Homepage remains the separately indexed URL.
+- GSC performance still has only 3 homepage impressions (19 Nov, USA, desktop), no clicks, and no guide impressions in the available range.
+- Conclusion: visibility has started at the homepage/property level, but the site has not yet demonstrated guide-level discovery or buyer-intent search performance. The sitemap report remains separately unresolved.
+- No main changes, PR, Actions, merge, deploy, sitemap/IndexNow submissions, product imports or paid tools.
+- Next: create and test a minimal two-template patch locally, then inspect sitemap serving/headers with free means and check Actions quota before any PR. Do not claim indexing fixed by template cleanup.
