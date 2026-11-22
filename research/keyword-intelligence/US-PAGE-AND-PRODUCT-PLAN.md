@@ -2,14 +2,15 @@
 
 ## Keyword universe
 
-- 1240 unique US English buyer-intent phrases across 62 topic clusters.
-- 186 transactional and 1054 commercial phrases by wording.
-- All 1240 have null volume/KD/CPC/trend. UK metrics were not copied into US rows. Fresh US metrics require US location code 2840 and USD CPC.
-- US phrases are localized for American vocabulary: apartment, basement, yard, carry-on, color, license plate, HVAC/C-wire, portable charger, clothes drying rack, True HEPA, etc.
+- 1,546 unique US English buyer-intent phrases across 62 topic clusters.
+- 186 transactional and 1,360 commercial phrases by wording.
+- All 1,546 phrases have null volume/KD/CPC/trend. No UK metrics were copied into US rows. Fresh US metrics require US location code 2840 and USD CPC.
+- US phrases are localized for American vocabulary and long-tail buying situations: apartment, basement, yard, carry-on, color, license plate, HVAC/C-wire, portable charger, clothes drying rack, True HEPA, etc.
+- Added a use-case-led second tier; terms remain research candidates until volume, SERP intent and cannibalisation are assessed.
 
 ## US product discovery batch
 
-- 14 manufacturer-sourced US model candidates across eufy security cameras, Levoit air purifiers, Frigidaire dehumidifiers and EcoFlow power stations.
+- 22 manufacturer-sourced US model candidates across eufy, Levoit, Frigidaire, EcoFlow, ecobee and Roborock (security cameras, air purifiers, dehumidifiers, portable power, smart thermostats and wet-dry floor cleaners).
 - Verified/publishable: 0. Exact ASINs and Amazon affiliate URLs are not verified in this research batch.
 - Stock caveats: Frigidaire FHDD5034Y1 page showed out of stock in the checked region; EcoFlow RIVER 3 Plus page indicated sold out; DELTA 3 Plus bundle status varies. Recheck before product intake.
 - Existing catalogue duplicate checks performed against exact product names; product-family/variant deduplication still required.
@@ -17,7 +18,7 @@
 ## US page plan
 
 - 25 existing guides have US refresh briefs; preserve their URLs and add US-specific model evidence rather than duplicating pages.
-- 11 new-page/topic briefs prepared. Some are marked refresh-not-new-page because current canonical pages likely cover the same SERP intent.
+- 12 new-page/topic briefs prepared: 10 potential new pages and 2 refresh-only topics due likely overlap. Some are marked refresh-not-new-page because current canonical pages likely cover the same SERP intent.
 - Highest-confidence US-specific page candidates to validate next: basement dehumidifiers, portable power stations, security cameras without subscription, wildfire-smoke air purifiers, US HVAC smart thermostats and robot lawn mowers.
 
 ## US SERP evidence
