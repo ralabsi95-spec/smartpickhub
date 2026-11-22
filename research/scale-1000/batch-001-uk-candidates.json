@@ -939,7 +939,7 @@
       "searchVolumeMonthlyEstimate": 3600,
       "keywordIntent": "commercial",
       "manufacturerOrRetailerEvidenceUrl": "https://www.lakeland.co.uk/products/dry-soon-deluxe-3-tier-heated-clothes-airer",
-      "sourceNote": "Lakeland product page confirms 15kg load, 21m drying space, front loading, timer, 70×74×132.5cm and 3-year guarantee; in-stock signal at capture. Castors are sold separately; verify exact SKU.",
+      "sourceNote": "Lakeland product page confirms 15kg load, 21m drying space, front loading, timer, 70×74×132.5cm and 3-year guarantee; in-stock signal at capture. Castors are sold separately; verify exact SKU. Lakeland instruction booklet identifies Model 24909. Amazon UK bundle page identifies the airer-only component as ASIN B016Q6NOCC and separate cover B01HTGQMTA, but the fetched Amazon listing itself is a two-item bundle ASIN B0HFNS4W5G. Do not use bundle ASIN as the airer-only direct link; airer-only ASIN still requires its own listing confirmation.",
       "amazonUkSearchPhrase": "Lakeland Dry:Soon Deluxe 3-Tier Heated Clothes Airer",
       "amazonUkDirectAsin": null,
       "amazonUkAffiliateUrl": null,
@@ -959,11 +959,12 @@
         "image rights if image proposed"
       ],
       "model": "Dry:Soon Deluxe 3-Tier Heated Clothes Airer",
-      "modelIdentityStatus": "manufacturer_or_retailer_model_name_confirmed_sku_pending",
+      "modelIdentityStatus": "manufacturer_model_and_sku_confirmed",
       "sourceType": "manufacturer product page",
       "sourcePageSpecificity": "product_page",
       "sourceVerifiedAt": "2026-11-22",
-      "skuStatus": "not_captured"
+      "skuStatus": "manufacturer_sku_confirmed",
+      "sku": "24909"
     },
     {
       "candidateId": "sp1000-027",
