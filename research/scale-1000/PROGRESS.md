@@ -160,3 +160,13 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 - UK model-name status: 23 manufacturer-page-confirmed with SKU pending; 39 other UK model names unverified. US: all 40 remain unverified. No Amazon ASIN or affiliate URL has been validated.
 - The complete matrix and technical caveats are in `research/product-verification/uk-dehumidifier-product-evidence-2026-11-22.md`. Extraction rates are not comparable unless temperature/RH test conditions match.
 - No products were promoted to verified/publishable, no page was published, and no production catalogue or deployment changed.
+
+
+## 22 November 2026 — US exact product-page evidence batch
+- Upgraded all 14 US candidates that previously relied on category/collection pages to exact product or product-family pages.
+- Current US source coverage: 37 exact product pages, 3 product-family pages and zero category-only candidates. The family pages are eufyCam S4, Mammotion LUBA 3 AWD and LUBA mini 2 AWD; exact package/capacity variant SKUs remain unresolved.
+- Captured exact manufacturer model/family evidence for 14 US candidates; 26 remain model-identity unverified. Levoit Vital 100S-P model code LAP-V102S-WUS captured.
+- Recorded two manufacturer-source conflicts requiring resolution: SoloCam E50 page has inconsistent zoom/resolution claims; Roborock F25 BX page metadata title conflicts with URL/body model name.
+- Mammotion LUBA 3 1500, LUBA mini 2 and YUKA mini 2 1000H show sold-out or variant-specific sold-out signals. Do not promote without a positive exact-variant stock check.
+- Combined source/variant resolution gaps across the 102 candidates now stand at **31** (28 UK category/landing sources + 3 US family-variant SKU gaps). Amazon ASIN verified remains zero.
+- Evidence report: `research/product-verification/us-product-page-evidence-2026-11-22.md`. No product import, guide publication, PR, merge or deployment.
