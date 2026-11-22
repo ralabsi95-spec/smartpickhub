@@ -219,3 +219,11 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 - US model/family identity coverage rises to **39/40**; only EcoFlow RIVER 3 Plus remains unresolved because the staged official URL returns 404. Manufacturer identifiers now captured include Rachio 8-/16-zone SKUs, SHVK001, Whynter SKU/UPC, Schlage BE499/BE489, Greenworks SKUs 5118202/5128502/5113902, and Kärcher order numbers 1.324-045.0 / 1.106-222.0.
 - QA cautions: Rachio 8-/16-zone variants remain one family; Schlage deadbolt vs lever must not be conflated; Whynter ARC-102CS current 2024 manual supersedes conflicting older 2019 specs; pressure-washer flow rates must retain their PSI test point.
 - Evidence: `research/product-verification/us-model-identity-followup-batch-2-2026-11-22.md`. ASINs verified 0; affiliate destinations 0; publishable 0; no production changes.
+
+
+## 22 November 2026 16:xx UTC — Keyword expansion batch 002
+- Added 1079 deduplicated buyer-task phrases: UK 540, US 539. UK universe now 2028; US 1850; combined 3878.
+- New queries focus on specific buyer needs and purchase decisions: room/lawn fit, running cost, safety, compatibility, maintenance, consumables, installation, battery runtime and warranty.
+- Added dated trend evidence for UK warming-gadget purchase intentions and campaign-linked household resilience retail spikes; US home-environment product purchase intentions and Google Holiday 100 discovery. See research/keyword-intelligence/EXPANSION-BATCH-002-TRENDS-2026-11-22.md.
+- Trend tags are directional evidence only; monthly trend history remains unavailable. All new keyword metrics are null/unmeasured. No paid SEO credits used.
+- No pages, products, affiliate links, catalogue, metadata, indexability or production settings changed.
