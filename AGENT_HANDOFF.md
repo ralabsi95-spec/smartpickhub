@@ -1585,3 +1585,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - GSC inspection now covers all 25 guide URLs plus /guides/, /how-we-research/, /affiliate-disclosure/: all 28 return NEUTRAL / URL is unknown to Google. Homepage is the only confirmed indexed/performance URL so far.
 - Search performance has 3 homepage impressions on 19 Nov, USA desktop, 0 clicks; no guide impressions in available range.
 - No PR/CI/merge/deploy/index submission. Next: prepare local patch and verify it; inspect sitemap delivery; check Actions quota before PR.
+
+
+## 22 Nov 2026 09:00 UTC — code branch prepared
+- Created `fix/public-editorial-status-2026-11-22` from main; removed public editorial workflow labels from homepage and guide-library cards only.
+- Commits: `81d354065ffcec134fa3ee7727a6661ff3ba0154`, `cd8331f0b8aad5e996edb6edcdf4649acdf21ff1`.
+- Re-fetched branch files; exact display markup absent. JSON status metadata and guide detail template untouched.
+- Not build/browser-tested; not PR'd, merged or deployed. CI quota unknown.
+- Sitemap response could not be fetched from web/container due fetch failure and DNS resolution failure; cause unknown.
+- Next: get safe local checkout/build and inspect sitemap HTTP response; only then PR once Actions quota is verified.
