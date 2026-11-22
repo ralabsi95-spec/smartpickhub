@@ -56,3 +56,15 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 - Search volume is estimated monthly searches, not clicks or orders. No monthly trend series was available in the saved cache; do not invent trend directions.
 - No paid metric refresh was run because the last-known credit balance was 28 and a broad fresh metric run needs separate cost approval.
 - This keyword dataset is research-only. It does not create pages or publish keyword variations. Existing guide mapping and SERP-overlap review remain mandatory.
+
+
+## 22 November 2026 — US market parity workstream
+
+- Created a separate US English keyword database with **1,240 unique phrases across the same 62 product topics**. Phrases are localized to US vocabulary and buying tasks (basement, yard, apartment, HVAC/C-wire, 120V ecosystem, color laser, license plate, carry-on, True HEPA, etc.).
+- US intent classification: 186 transactional and 1054 commercial phrases by wording. **US measured keyword metrics: 0**. No UK metrics were copied into the US dataset. Fresh US volume/KD/CPC/trends require location code 2840 and must be collected separately.
+- Created US page briefs for all 25 existing guides (refresh, not duplicate) plus 11 new-page/topic candidates; two of the candidates are explicitly refresh-only due likely overlap with existing canonical guides.
+- Created a US product discovery batch with 14 manufacturer-sourced candidates: eufy (4), Levoit (5), Frigidaire (3), EcoFlow (2). Verified/publishable remain 0; stock and exact SKU/variant checks remain open. No Amazon ASIN or affiliate URL was invented.
+- Created a UK page-brief pack: 25 existing-guide refresh briefs plus 12 new-page candidates. These are editorial plans, not pages published.
+- Combined keyword candidate universe now: 1,240 UK + 1,240 US = **2,480 phrases**. UK cache: 32 saved metric records, 8 exact matches within generated UK phrases. US: 0 measured. No monthly trend series available for the saved UK cache.
+- Product queue: 62 UK + 14 US = 76 staged candidates; verified new products 0. Existing live catalogue remains 100 products / 25 guides. Net-new verified product target remains 900.
+- All work remains on research branch. No public site, catalogue, Amazon links, indexability or deployment changed.
