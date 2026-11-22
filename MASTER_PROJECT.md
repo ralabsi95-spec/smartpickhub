@@ -1871,3 +1871,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Re-fetched both branch files and verified removal. Not yet Astro-build tested or browser visually checked; not merged/deployed.
 - Direct sitemap HTTP inspection remains blocked: web fetch failed and container DNS could not resolve the production host. Need a valid free HTTP inspection path or owner-provided headers/body; do not infer cause from this failure.
 - PR not opened because Actions quota restoration is not verified and PR creation triggers workflow. No production changes or indexing requests.
+
+
+## 22 November 2026 — sitemap browser inspection and deployment mismatch lead
+- Connected browser renders robots.txt allowing all and pointing to sitemap-index; sitemap-index renders child sitemap-0.xml; child sitemap renders 29 expected URLs (home, affiliate disclosure, guides index, 25 guides, how-we-research). This is not raw HTTP/header evidence and not proof Google parsed the sitemap. A chrome-extension script node seen in the rendered XML is local browser extension injection, not evidence of server output.
+- Cloudflare Pages dashboard tab showed Production / main / commit `89a17f4df617ba805835ca61227cfbfdc5d94cf7`. GitHub compare says current main checkpoint `26636d4359508b9af30eec498a22ffc005a81a72` is 57 commits ahead and 0 behind. Dashboard tab must be refreshed to verify freshness before concluding the production deployment is behind.
+- Current main catalogue has 25 guides all marked "Approved for publication"; production browser content shows the generic research-led card message and a guide detail label "Research draft — requires human review before publication". This is consistent with an older/different deployed artifact, but not enough to prove without refreshing Cloudflare deployment status and comparing deployment marker.
+- Next: refresh Cloudflare Deployments and verify production SHA/time/branch and live deployment marker. Investigate deployment pipeline discrepancy before any deploy.
+- Editorial status UI patch remains on isolated fix branch and not build-tested or deployed. No production changes or indexing submissions.
