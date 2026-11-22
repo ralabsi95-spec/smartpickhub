@@ -306,3 +306,14 @@ OpenSEO project audit retrieval used the saved report only; no new audit crawl, 
 - 28-day GSC performance remains homepage-only: 3 impressions, 0 clicks, 88.3 average position through 19 Nov.
 - Next: owner should open the exact preview URL `https://852061d1.smartpickhub.pages.dev/` and `/guides/` in a fresh browser tab for visual review. Separately, open GSC > Indexing > Sitemaps to inspect submitted sitemap status and Last read/Discovered pages/errors. Do not request indexing or resubmit sitemap yet.
 - No production changes, PR, merge, deployment, index requests, IndexNow submissions, product import or paid service.
+
+## Owner screenshots received — 22 Nov 2026, 12:31 UTC
+- Visual screenshots of the Preview homepage and /guides/ page reviewed. Desktop layout is coherent in the captured viewport; navigation, hero, guide search/category controls, and guide cards are visible. The guide cards show no public editorial workflow status label in the captured area. This is a desktop visual spot-check only, not full responsive/accessibility approval.
+- Owner screenshot of GSC > Indexing > Sitemaps confirms:
+  - `/sitemap-index.xml`: submitted Nov 22, 2026; Type Unknown; Last read blank; Status Couldn't fetch; Discovered pages 0; videos 0.
+  - `/sitemap-0.xml`: submitted Nov 19, 2026; Type Unknown; Last read blank; Status Couldn't fetch; Discovered pages 0; videos 0.
+- This is stronger evidence than URL Inspection's “URL is unknown to Google”: GSC's Sitemaps report itself currently records Couldn't fetch for both entries. It still does not identify the underlying HTTP, parsing, or Googlebot access cause.
+- Source recheck on main: Astro sitemap integration enabled; production canonical site fixed to https://smartpickhub.pages.dev; robots.txt production response allows all and advertises /sitemap-index.xml; no sitemap-specific _headers override. Exact source SHAs remain astro.config.mjs b641bb90679b22ea7eda3855adcde24087be407a, robots generator e0ccaec0d478918bbb4da67a1b9fb9d99d0b41a6, public/_headers 0a263d4edbc56cda5e85a8ca5a5f353fa66ab020.
+- Public fetch attempt through the available read-only web source could not retrieve sitemap-index.xml, sitemap-0.xml or robots.txt (tool-side inaccessible/cache miss). This is NOT evidence of a user-facing HTTP failure; no raw status/headers/body obtained. TinyFish remains off limits due negative wallet balance.
+- Next exact diagnostic: click the `/sitemap-index.xml` row in GSC Sitemaps report and inspect its details/error message; capture the details page including sitemap URL, fetch status, and any parsing/HTTP explanation. Do not resubmit or request indexing.
+- No production code change, merge, deployment, manual indexing request, or paid fetch.
