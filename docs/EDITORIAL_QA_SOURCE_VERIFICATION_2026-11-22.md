@@ -180,3 +180,26 @@ This pass checked region-sensitive electrical products, networking hardware, sec
 ### Evidence limitations / status
 - These checks confirm the two existing regional caveats; they do not certify all products in the project.
 - No production source or product record changed. No PR, CI, merge, deployment, index request, product import or paid tool use.
+
+
+## Production-template defect confirmed — 22 Nov 2026, 08:40 UTC
+
+### Public editorial workflow status is exposed on guide cards
+Read directly from current `main`:
+- `src/pages/index.astro` (blob SHA `659746141c499bf7e240a4732923c918b47c092e`) renders `guide.editorialStatus` in the six featured guide cards, falling back to a workflow-like message.
+- `src/pages/guides/index.astro` (blob SHA `7d9065c9912434887b984adc4c69ab385a253675`) renders `guide.editorialStatus` in every guide card.
+- `src/data/products.json` (blob SHA `bb261aff8200a0b5a8f11966080d4ed11376e20d`) stores `editorialStatus: "Approved for publication"` for all 25 published guides.
+- The detail template `src/pages/guides/[slug].astro` already suppresses the exact approved status and only displays non-approved editorial status, so it should remain unchanged.
+Decision: remove the public status element from homepage featured cards and guide-library cards, retaining the internal JSON field and the detail-template guard. Do not delete workflow metadata from the catalogue.
+Status: confirmed defect; proposed fix only, not implemented on main or deployed.
+
+### GSC URL inspection batch completed for all 25 guide URLs
+- Inspected all 25 guide URLs in three batches using the connected GSC property. All 25 currently return `verdict: NEUTRAL`, `coverageState: URL is unknown to Google`.
+- Also inspected `/guides/`, `/how-we-research/` and `/affiliate-disclosure/`; all three return the same unknown-to-Google state.
+- These are URL-level status reads, not a live fetch or indexing request. No URL inspection call charges credits. The homepage is separately known to be indexed.
+- The finding confirms that the property-level performance email and the 3 homepage impressions do not yet provide evidence that guide pages are indexed. They may still be discovered later; "unknown" is not a manual action or penalty.
+- Do not request indexing repeatedly; the user's manual request previously returned daily quota exceeded.
+
+### Scope and action boundary
+- No production file edited, no branch merged, no PR opened, no Actions run, no Cloudflare deploy, no sitemap resubmission or IndexNow submission.
+- Next engineering task: prepare a minimal two-template patch (remove public status only), then run local checks/build and visual inspection if a safe local checkout is available. Only create a PR after checking GitHub Actions quota; do not merge/deploy without explicit release approval.
