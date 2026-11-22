@@ -1556,3 +1556,9 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - NETGEAR RBE773 UK kit has 3 adapters, but exact supplied adapter AC input is not stated in reviewed official technical sheet/manual.
 - Detailed evidence added to source-verification report on docs branch.
 - No production edits, PR, Actions, merge, deploy, indexing, import or paid tool use.
+
+
+## 22 Nov 2026 08:15 UTC — additional model validation
+- Verified Epson EF21 US discontinued status separately from UK EF-21G stock status; the catalogue note should stay explicitly US-scoped.
+- Verified Samsung Bespoke Jet AI US 120V/60Hz and separate UK VS28C9784QK/EU model; keep regional electrical warning.
+- Source-verification report updated on docs branch. No production edits or release actions.
