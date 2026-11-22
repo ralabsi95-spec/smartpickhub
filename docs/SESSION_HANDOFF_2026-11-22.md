@@ -152,3 +152,16 @@ Only a sample was reviewed. A full scan of all 25 guides remains pending. Do not
 - Article JSON-LD also uses `guide.summary` for description and `guide.publishedAt` for both datePublished and dateModified. Do not change dateModified unless the page content is actually modified.
 - Exact source file SHAs at main: `src/pages/guides/index.astro` `7d9065c9912434887b984adc4c69ab385a253675`; `src/pages/guides/[slug].astro` `6d1543bf28b2bf8b788bc4166b562c4ee48d10bb`; `src/data/products.json` `bb261aff8200a0b5a8f11966080d4ed11376e20d`.
 - `package-lock.json` exact versions: Astro `7.4.12`, `@astrojs/sitemap` `3.7.5`. Current sitemap integration is the standard Astro integration; no custom filename/prefix is configured (see `astro.config.mjs`).
+
+
+## 13. Existing OpenSEO site-audit evidence (read-only, audit dated 19 Nov)
+
+Retrieved a previously completed audit rather than starting a new crawl (audit ID `a9580b1b-cc76-4572-82a6-f6fe069a3448`, completed 2026-11-19 12:38 UTC):
+
+- 28 pages crawled out of the 29 URLs currently extracted from the sitemap. The 28 returned pages were HTTP 200, indexable, had one H1, and had no missing image alt text. The audit's page list contained homepage, affiliate disclosure, guides index and all 25 guides; `/how-we-research/` was not present in that crawl result despite being in the live sitemap. Investigate its discovery/coverage; do not assume it is blocked.
+- The audit returned 25 informational metadata findings: 21 title-too-long and 4 meta-description-too-long. It did not report critical/warning issues in its summary.
+- These findings are from 19 Nov, not a fresh 22 Nov crawl. Treat as historical baseline, not current production truth.
+- The source-code audit confirms all 25 guides have unique `seoTitle` values; dedicated `seoDescription` exists for only 4/25, while the remaining 21 use `summary` as the page meta description fallback. This is not a missing-description error. It is a chance to write 21 separately tailored descriptions if later approved and validated.
+- Four descriptions were measured by the old audit at 162–176 characters; 21 titles at 61–79 characters. The report did not include the current 22 Nov re-render, so recheck exact live title/description before modifying metadata.
+
+OpenSEO project audit retrieval used the saved report only; no new audit crawl, keyword credits or paid service was started.
