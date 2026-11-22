@@ -1606,3 +1606,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Mammotion LUBA 3 variants 1500/1500H, 3000/3000H and 5000/5000H documented. Hold 1500 capacity claim (official page 0.37 acre vs official overview 1,000m²/0.25 acre). 1500/5000 out-of-stock; 3000 page purchase signal not Amazon stock.
 - LUBA mini 2 1500/1500H documented; page stock signals conflict and delivery estimate is stale. Confirm exact SKU and S/H cutting-height mapping.
 - SoloCam E50 spec conflict still unresolved. No Amazon.com ASINs or affiliate URLs generated.
+
+
+## Keyword expansion QA reconciliation — 22 November 2026
+- Recomputed cluster-level counts and intent breakdowns after expansion; cluster totals now reconcile to keyword record totals in both markets.
+- Normalized duplicate check: UK 2,028 records / 2,028 unique normalized phrases / 0 duplicates; US 1,850 / 1,850 / 0 duplicates.
+- UK intent: 366 transactional / 1,662 commercial; 8 exact phrases have cached metrics and 2,020 remain unmeasured. Existing UK metric cache contains 32 saved records; do not imply all 32 are exact matches in the generated universe.
+- US intent: 366 transactional / 1,484 commercial; 0 measured / 1,850 unmeasured. US metrics are not inferred from UK.
+- Directional trend tags: UK 90 phrases, US 180 phrases. Monthly trend history remains unavailable; trendDataAvailable=false in both files.
