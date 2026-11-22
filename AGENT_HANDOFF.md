@@ -1535,3 +1535,9 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Added market-by-market qualitative SERP review at `research/keyword-intelligence/SERP-VALIDATION-2026-11-22.md`. It distinguishes commercial SERP intent from ranking opportunity and page approval.
 - US wet-dry floor cleaners are the clearest distinct new-page candidate from this pass; UK dehumidifiers and robot lawn mowers warrant evidence development. UK heated airers and smart thermostats show clear intent but high competition. US no-subscription cameras, basement dehumidifiers, wildfire-smoke purifiers, robot mowers and portable AC require differentiation and canonical-overlap checks.
 - Several categories remain pending or refresh-only. No volume/trend metrics were invented; no pages, products or production settings were changed.
+
+
+## 22 November 2026 — US candidate batch expanded to 40
+- US product candidates: **40 staged, 0 verified, 0 publishable, 0 verified ASIN/affiliate destinations**. Added 18 official manufacturer-sourced candidates in six categories: 3 Mammotion robot mower families, 3 Tineco wet-dry floor cleaners, 2 Whynter portable AC models, 2 Rachio irrigation products, 3 Aqara/Schlage smart locks, and 5 Greenworks/Kärcher electric pressure washers.
+- Stock caveats: Tineco S9 Artist Pro/S9 Artist Steam/S7 Stretch Ultra pages showed backordered/unavailable; Rachio Smart Hose Timer was out of stock; Mammotion availability differs by model/capacity. These remain candidates, not buyable recommendations.
+- Full candidate evidence and exact official source links are in `research/scale-1000/batch-003-us-product-candidates.json`. No Amazon ASINs, prices, ratings or affiliate links were invented; no production catalogue/page changes.
