@@ -204,3 +204,11 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 - LUBA mini 2 AWD: 1500/1500H family confirmed; page hero showed sold out but selected option block showed a stale September–October delivery estimate. Treat stock as conflicting/stale and recheck exact option. Verify S/H cutting-height mapping against manual.
 - eufy SoloCam E50 zoom/resolution discrepancy remains unresolved; no disputed claims used.
 - No exact package ASINs verified, no affiliate links created. Overall 102 candidates; UK identity 61/62; US model/family identity supported 14/40; Amazon ASIN verified 0; publishable 0. No production changes.
+
+
+## 22 November 2026 — US model identity verification follow-up
+- Checked 13 of the 26 previously unverified US candidates against exact official manufacturer product pages: Levoit Eleva 500X and Core 600S-P; Frigidaire FHDD5033Y1, FHDP5033Y1 and FHDD5034Y1; EcoFlow DELTA 3 Plus; ecobee Smart Thermostat Premium, Enhanced and Essential; Roborock F25 GT Gen 2; Tineco FLOOR ONE S9 Artist Pro, S9 Artist Steam and S7 Stretch Ultra.
+- US model/family identity coverage increases from 14/40 to **27/40**; 13 remain unverified. Levoit Core 600S-P manufacturer code LAP-C601S-WUS is now captured. The EcoFlow RIVER 3 Plus source still returns 404 and remains unresolved.
+- Availability holds: Tineco three models are marked Unavailable/backordered; Frigidaire FHDD5034Y1 is out of stock in selected delivery area; EcoFlow DELTA 3 Plus has conflicting pre-order/sold-out UI; manufacturer-store stock is not Amazon stock.
+- Technical hold: Roborock F25 GT Gen 2 battery data conflicts between 4,000mAh specifications and 2,500mAh FAQ. Do not use the battery capacity until resolved. ecobee HVAC compatibility is configuration-specific.
+- Evidence: `research/product-verification/us-model-identity-followup-2026-11-22.md`. No ASIN/affiliate URLs verified; publishable candidates remain 0; production catalogue and pages unchanged.
