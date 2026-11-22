@@ -409,6 +409,20 @@
       "reason": "Existing guide covers air fryers; build US-localized sections and product comparisons within the canonical guide first.",
       "serpEvidence": "Existing guide canonical; SERP overlap check required",
       "status": "refresh_not_new_page"
+    },
+    {
+      "slugCandidate": "us-wet-dry-vacuums",
+      "title": "Best Wet-Dry Vacuums for Hard Floors, Pet Messes and Kitchen Spills",
+      "primary": "best wet dry vacuum",
+      "secondary": [
+        "wet dry vacuum for hardwood floors",
+        "wet dry vacuum for pet hair",
+        "wet dry floor cleaner with steam",
+        "cordless wet dry vacuum"
+      ],
+      "reason": "Distinct product class from cordless stick vacuums and robot vacuums; US manufacturers present a wide model range and separate use cases.",
+      "serpEvidence": "US product range evidence from Roborock; SERP overlap validation pending",
+      "status": "candidate"
     }
   ],
   "policy": "Research briefs only. Do not create public pages until US-specific metrics, SERP overlap, exact products, affiliate destinations and editorial review pass."
