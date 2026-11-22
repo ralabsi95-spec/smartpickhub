@@ -134,3 +134,11 @@ A second review found 62 additional US phrases that were not punctuation duplica
 - UK total source coverage across 62 candidates: 37 dedicated product pages, 12 category/landing pages, 12 named models on an official product-range listing, 1 brochure-confirmed pack code. Manufacturer-supported identity is 41/62; 21 remain unverified. Navimow i210 LiDAR area capacity and i210 LiDAR Pro regional plug/package need resolution.
 - US F25 BX identity resolved from official URL/H1/body/manual; availability still ambiguous due a “not launched yet” notice on the same page as purchase controls. eufy SoloCam E50 zoom/resolution remains a hard hold due conflicting hero/spec table and S340 comparison content. No ASINs verified.
 - No candidate promoted to verified/publishable. Existing 25 guides / 100 products and production remain untouched.
+
+
+## UK heated-airer / air-purifier evidence QA — 22 November 2026
+- Batch 001: 43/44 candidate model identities supported; one Dunelm A-frame URL returned 404 and remains unresolved. 20 additional model identities documented from exact pages in this pass; 23 dehumidifier model identities were already manufacturer-confirmed with SKU pending.
+- Batch 002: 18/18 model/pack identities supported, but source specificity differs: 5 exact product pages, 12 named models on an official Navimow range page, 1 Resideo pack code in official brochure. Do not label all 18 as individual product pages.
+- Combined UK: 61/62 identities supported; one broken-source candidate. Exact SKU/EAN, retailer stock, Amazon UK identity/ASIN and editorial approval remain separate gates. ASIN verified=0; publishable=0.
+- Philips AC1214/60 and AC2936/33 discontinued. Philips AC3033/30R1 surfaced as refurbished; do not conflate with new AC3033/30. Blueair notify-me and retailer delivery restrictions are not positive availability. Lakeland Mini pre-order is not in-stock.
+- Air purifier comparison must normalize room size at common ACH and CADR units, and capture compatible replacement filter part/price/interval. Heated-airer comparisons must separate form factor and account for cover/accessory package.
