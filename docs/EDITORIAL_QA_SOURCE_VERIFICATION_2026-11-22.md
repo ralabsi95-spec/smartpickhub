@@ -134,3 +134,32 @@ This pass checked region-sensitive electrical products, networking hardware, sec
 ### Status
 - Source review only. No production files or catalogue records changed.
 - No PR, CI/Actions run, merge, deployment, indexing submission, product import or paid research tool used.
+
+
+## Regional model verification — continuation pass, 22 Nov 2026 (08:07 UTC)
+
+### TP-Link Deco BE63 — retain regional/hardware-revision caution
+- TP-Link UK's official support page lists UK hardware revisions V3.60, V2.60 and V2, and explicitly warns that model/hardware availability varies by region: https://www.tp-link.com/uk/support/download/deco-be63/
+- TP-Link US pages list a different revision set (V3.60, V2.60, V1.60); the US V2.6 user guide describes four 2.5Gbps WAN/LAN ports: https://www.tp-link.com/us/support/download/deco-be63/v2.60/ and https://www.tp-link.com/us/document/125928/
+- The four-port US claim is not enough to establish the exact port configuration for every UK hardware revision. Decision: retain the current caution and do not generalise US documentation to UK units. Verify the exact hardware version on the retailer's offered unit before stating revision-specific port details.
+
+### Roborock Saros 10R — UK family mention is not a product-level purchase confirmation
+- Roborock UK's shop page mentions Saros 10R in descriptive navigation/feature copy, but the current product/shop listings extracted show Saros 20, Saros 10 and other models; no direct Saros 10R product purchase listing was confirmed in this pass: https://uk.roborock.com/shop and https://uk.roborock.com/pages/roborock-store
+- A separate official UK product listing exists for Saros 10, not Saros 10R: https://uk.roborock.com/products/roborock-saros-10-robot-vacuum-with-dual-anti-tangle-system
+- Decision: keep the catalogue's caution. A family-level mention or a different Saros 10 SKU does not establish a UK Saros 10R retailer listing, price, stock or warranty. Do not substitute Saros 10.
+
+### Levoit Vital 200S-P — DC output does not prove AC adapter input
+- Levoit's US product page identifies LAP-V201S-WUS, states 24V DC / 2.5A power supply and 50W rated power, and confirms an AC adapter is included. It does not state the adapter's AC input range in the captured specification: https://levoit.com/products/levoit-vital-200s-p-smart-air-purifier-black
+- Decision: retain the regional adapter/warranty warning. Do not infer 100–240V compatibility from the 24V DC output rating. Exact adapter input label and UK regional bundle remain unverified.
+
+### NETGEAR Orbi RBE773 — adapter input remains unverified
+- NETGEAR UK's product page confirms the RBE773 kit contains one RBE771 router, two RBE770 satellites and three power adapters: https://www.netgear.com/uk/home/wifi/mesh/rbe773
+- NETGEAR's official support page lists separate North America and Europe-region technical specification sheets and quick-install guides: https://www.netgear.com/support/product/rbe773
+- The EU/AP/CA technical sheet confirms the three-adapter package but does not specify adapter AC input voltage: https://www.downloads.netgear.com/files/GDC/RBE773/RBE773_TS-EU-AP-CA.pdf
+- The official user guide references region-specific plug adapters, but does not establish the exact input rating on the UK kit's supplied adapter: https://www.downloads.netgear.com/files/GDC/RBE773/RBE771_RBE770_UM.pdf
+- Decision: keep the exact-label check; no universal AC input range should be claimed.
+
+### Summary / scope
+- TP-Link, Roborock, Levoit and NETGEAR all retain their current buyer-protective caveats; no evidence justifies removing them.
+- This was a targeted official-source pass, not a complete re-certification of all 100 products.
+- No production source, catalogue entry, guide, URL, affiliate destination, image or Cloudflare setting was changed. No PR, CI run, merge, deployment, indexing submission, product import or paid tool was used.
