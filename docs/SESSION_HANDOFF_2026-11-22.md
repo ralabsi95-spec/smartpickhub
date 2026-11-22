@@ -178,3 +178,18 @@ OpenSEO project audit retrieval used the saved report only; no new audit crawl, 
 - No edits to `main`, no PR, no Actions run, no merge, no deploy, no product import, no indexing requests, no paid services/TinyFish.
 - Production main remains `26636d4359508b9af30eec498a22ffc005a81a72`.
 - Next: continue read-only validation of other regional model/spec claims and live guide content; then assemble minimal patch proposal. Check Actions quota before creating a PR that triggers CI.
+
+
+## Product specification review checkpoint — 22 Nov 2026, 06:54 UTC
+- Read-only verification sample across portable power, Wi-Fi 7, security cameras, Ring doorbell and Apple Watch product records.
+- Confirmed EcoFlow RIVER 2 US vs EU/UK electrical differences (120V vs 230V AC output; 100–120V vs 220–240V AC input) from official manual. Existing warning is correct.
+- Confirmed Jackery Explorer 300 Plus JE-300B US vs Europe electrical differences from official Jackery pages (US 100V/60Hz output vs EU 230V/50Hz output). Existing warning is correct.
+- Confirmed TP-Link UK Deco BE63 download page lists hardware revisions V3.60, V2.60, V2 and says regional availability varies. US documentation confirms four 2.5Gbps ports, but do not assume all UK revisions are identical; retain caveat pending exact UK hardware revision verification.
+- Confirmed Arlo Essential 3 2K Outdoor UK SKU VMC3280-100EUS is fixed-view/no pan-tilt, 2K, 130° FOV, 12x digital zoom, integrated battery and dual-band Wi-Fi. Existing fixed-view and core claims are supported.
+- Confirmed Ring 2026 rename from Battery Doorbell Plus (2nd Gen) to Battery Doorbell 2K Plus, no feature change.
+- Confirmed Apple Watch Series 12 and Ultra 4 headline specifications against current official Apple pages (S11; display brightness; case size; battery estimates). Keep country/carrier caveats.
+- Confirmed Anker 737 A1289 24,000mAh, 140W max, 630g and 2 USB-C + 1 USB-A; existing caveat that max output depends on device/cable is appropriate.
+- Saved and re-verified expanded evidence in `docs/EDITORIAL_QA_SOURCE_VERIFICATION_2026-11-22.md`; latest commit before handoff updates: `53e14366859d45c06bbf068a42762a7f26155e10`.
+- This is a targeted sample, not a complete re-certification of all 100 product records. No production data/code changed, no PR/CI/merge/deploy/index request/import/paid service used.
+- Main remains `26636d4359508b9af30eec498a22ffc005a81a72`.
+- Next: continue model/SKU and technical claim validation, prioritize UK regional hardware variants and safety-critical specifications; then consolidate minimal patch proposal.
