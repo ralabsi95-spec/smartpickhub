@@ -11,7 +11,7 @@
 
 ---
 
-**Latest main ref comparison:** 22 November 2026 14:16 UTC — `main` at `26636d4359508b9af30eec498a22ffc005a81a72`; research branch was 46 commits ahead / 0 behind before the final documentation updates. This Git comparison does not independently verify the live Cloudflare deployment.  
+**Latest main ref comparison:** 22 November 2026 — `main` at `26636d4359508b9af30eec498a22ffc005a81a72`; the research branch remains isolated and unmerged. Re-run the branch comparison before the next operation. This Git comparison does not independently verify the live Cloudflare deployment.  
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `main` (production)  
 **Latest merged work:** PRs #24, #25, #28, #29 and #31. PR #30 is superseded; do not retry. PR #26/#27 are stale checkpoints.  
