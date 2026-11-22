@@ -1845,3 +1845,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Treat this as confirmed property-level Search visibility/impression collection, not proof that all 25 buying guides are indexed. The notification does not identify URLs, queries, impression totals or clicks.
 - The separate sitemap “Couldn't fetch” and Page indexing “Processing data” reports remain unresolved. Earlier URL Inspection results showing the 25 guide URLs as “URL is unknown to Google” must be retained as timestamped URL-level evidence; do not infer the email resolves those checks.
 - Next: inspect GSC Performance > Search results, Queries and Pages, using a date range from 19 Nov onward to identify the actual queries, landing URLs, impressions and clicks. Do not repeat manual indexing requests while the daily quota error persists.
+
+
+## 22 November 2026 — First Search Console performance rows read
+- Connected GSC data read (no credits charged) for 13–19 Nov 2026, Pacific Time: homepage only, 3 impressions, 0 clicks, CTR 0%, average position 88.3.
+- All three impressions were on 19 Nov and mapped to homepage. Queries: `site:pages.dev`, `site:pages.dev free`, `site:pages.dev store` (one impression each). Country: USA; device: desktop.
+- No buying-guide URL received an impression in this returned window. This is not proof guides are unindexed; it only describes observed performance in this period.
+- Signal confirms initial Google Search visibility but is very early and not yet buyer-intent traffic. Continue tracking page/query dimensions over time; keep indexing diagnosis separate.
+- No production/site changes, PR, CI, merge, deployment, indexing submission or paid service.
