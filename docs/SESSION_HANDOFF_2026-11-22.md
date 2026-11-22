@@ -214,3 +214,14 @@ OpenSEO project audit retrieval used the saved report only; no new audit crawl, 
 - Evidence appended to source-verification report on docs branch.
 - No main changes, PR, Actions, merge, deployment, index request, product import or paid service.
 - Next: continue checking remaining high-impact product records and consolidate proposed copy/template changes only after evidence review.
+
+
+## Google Search Console owner notification — 22 Nov 2026, 08:10 UTC
+- Owner supplied a screenshot of a Google Search Console email notification titled “Monitor the Google Search traffic to https://smartpickhub.pages.dev/”, dated Nov 21, 2026.
+- The notification states: “Google systems confirm that on November 19, 2026 we started collecting Google Search impressions for your website in Search Console. This means that pages from your website are now appearing in Google search results for some queries.”
+- Interpretation: this is first-party owner-provided evidence that Google has begun collecting Search performance impressions for the property and that at least some site pages appeared in results for some queries.
+- This does NOT establish that all 25 buying guides are indexed, identify which URLs appeared, provide impression/click totals, or resolve the separate sitemap processing and Page indexing report delays.
+- Keep the earlier URL Inspection evidence distinct: all 25 guide URLs previously returned “URL is unknown to Google”; that result is not necessarily inconsistent with a property-level performance notification, because the email does not name the URLs and the URL Inspection checks were at a particular time.
+- Next verification: in GSC > Performance > Search results, set date range to last 7 days or since Nov 19; inspect Queries and Pages tabs, then compare impressions/clicks and identify the actual landing URLs. Do not repeat manual Request indexing while the daily quota error persists.
+- Evidence source: owner screenshot uploaded in project conversation on 22 Nov 2026 at 08:10 UTC.
+- No site changes, sitemap resubmission, indexing request, PR, CI, merge, deployment, paid service or credentials access performed.
