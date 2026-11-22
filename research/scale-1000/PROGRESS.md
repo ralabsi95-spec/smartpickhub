@@ -10,8 +10,8 @@
 | Measure | Count | Meaning |
 |---|---:|---|
 | Existing live catalogue | 100 | Already present; excluded from new intake |
-| New staged candidates | 84 | 62 UK + 22 US; research queue only, not verified/publishable |
-| Verified new products | 0 | No candidate in this first batch has passed all identity, regional, evidence and affiliate checks |
+| New staged candidates | 102 | 62 UK + 40 US; research queue only, not verified/publishable |
+| Verified new products | 0 | No candidate has passed all identity, regional, evidence and affiliate checks |
 | Keyword candidates | 2,871 | 1,488 UK + 1,383 US; candidates are not measured demand or pages |
 
 ### Batch 001 — UK candidate discovery
@@ -66,7 +66,7 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 - Created a US product discovery batch with 22 manufacturer-sourced candidates across eufy, Levoit, Frigidaire, EcoFlow, ecobee and Roborock. Verified/publishable remain 0; stock and exact SKU/variant checks remain open. No Amazon ASIN or affiliate URL was invented.
 - Created a UK page-brief pack: 25 existing-guide refresh briefs plus 12 new-page candidates. These are editorial plans, not pages published.
 - Combined keyword candidate universe at this checkpoint: 1,488 UK + 1,383 US = **2,871 phrases**. UK cache: 32 saved metric records, 8 exact matches within generated UK phrases. US: 0 measured. No monthly trend series available for the saved UK cache.
-- Product queue: 62 UK + 22 US = 84 staged candidates; verified new products 0. Existing live catalogue remains 100 products / 25 guides. No 1,000-product publishing target.
+- Product queue: 62 UK + 40 US = 102 staged candidates; verified new products 0. Existing live catalogue remains 100 products / 25 guides. No 1,000-product publishing target.
 - All work remains on research branch. No public site, catalogue, Amazon links, indexability or deployment changed.
 
 
