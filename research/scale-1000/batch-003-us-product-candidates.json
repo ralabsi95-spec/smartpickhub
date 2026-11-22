@@ -4,7 +4,7 @@
   "createdAt": "2026-11-22",
   "market": "US",
   "purpose": "US product discovery candidates from manufacturer-owned US pages; not verified products and not eligible for live catalogue.",
-  "candidateCount": 14,
+  "candidateCount": 22,
   "verifiedCount": 0,
   "publishableCount": 0,
   "affiliateAsinVerifiedCount": 0,
@@ -177,6 +177,102 @@
       "regionalMarket": "US",
       "duplicateCheck": "distinct from existing RIVER 2 and Jackery Explorer 300 Plus",
       "buyerUse": "higher-output home backup/camping tier; verify outlet count, transfer/UPS and expansion"
+    },
+    {
+      "name": "ecobee Smart Thermostat Premium",
+      "category": "smart thermostats",
+      "model": "Smart Thermostat Premium",
+      "source": "https://www.ecobee.com/en-us/smart-thermostats/smart-thermostat-premium/",
+      "sourceType": "manufacturer US product page",
+      "evidence": "Official page lists built-in air-quality monitor, SmartSensor, Siri/Alexa voice features and 24VAC HVAC compatibility; confirm exact compatibility for each system.",
+      "status": "candidate",
+      "regionalMarket": "US",
+      "duplicateCheck": "no exact product in current catalogue",
+      "buyerUse": "premium HVAC thermostat; distinguish from Essential and Enhanced by sensors, air quality and voice"
+    },
+    {
+      "name": "ecobee Smart Thermostat Enhanced",
+      "category": "smart thermostats",
+      "model": "Smart Thermostat Enhanced",
+      "source": "https://www.ecobee.com/en-us/smart-thermostats/smart-thermostat-enhanced/",
+      "sourceType": "manufacturer US product page",
+      "evidence": "Official page describes occupancy sensing, Power Extender Kit, compatibility with most HVAC systems and 3-year warranty.",
+      "status": "candidate",
+      "regionalMarket": "US",
+      "duplicateCheck": "no exact product in current catalogue",
+      "buyerUse": "mid-tier thermostat with occupancy-based comfort; verify C-wire/PEK compatibility"
+    },
+    {
+      "name": "ecobee Smart Thermostat Essential",
+      "category": "smart thermostats",
+      "model": "Smart Thermostat Essential",
+      "source": "https://www.ecobee.com/en-us/smart-thermostats/smart-thermostat-essential/",
+      "sourceType": "manufacturer US product page",
+      "evidence": "Official page lists core scheduling, touchscreen, smart-home compatibility and over-85% HVAC compatibility claim; Power Extender Kit/trim kit sold separately.",
+      "status": "candidate",
+      "regionalMarket": "US",
+      "duplicateCheck": "no exact product in current catalogue",
+      "buyerUse": "entry-level thermostat; clearly disclose accessory and compatibility limitations"
+    },
+    {
+      "name": "Roborock F25 GT Gen 2",
+      "category": "wet-dry floor cleaners",
+      "model": "F25 GT Gen 2",
+      "source": "https://us.roborock.com/products/roborock-f25-gt-gen-2",
+      "sourceType": "manufacturer US product page",
+      "evidence": "Official page lists 20,000 Pa suction, edge-to-edge cleaning, anti-tangle design, lay-flat reach and 194°F self-washing.",
+      "status": "candidate",
+      "regionalMarket": "US",
+      "duplicateCheck": "new product family not represented in current catalogue; check model suffix and bundle",
+      "buyerUse": "value wet-dry cleaner for everyday spills and hard floors"
+    },
+    {
+      "name": "Roborock F25 Steam",
+      "category": "wet-dry floor cleaners",
+      "model": "F25 Steam",
+      "source": "https://us.roborock.com/pages/wet-dry-vacuums",
+      "sourceType": "manufacturer US category",
+      "evidence": "Official F25 range lists 356°F steam cleaning, 25,000 Pa suction and up to 80-minute runtime; capture exact model page before verification.",
+      "status": "candidate",
+      "regionalMarket": "US",
+      "duplicateCheck": "new product family not represented in current catalogue",
+      "buyerUse": "steam-oriented wet-dry cleaning for sticky or dried-on messes"
+    },
+    {
+      "name": "Roborock F25 Ultra",
+      "category": "wet-dry floor cleaners",
+      "model": "F25 Ultra",
+      "source": "https://us.roborock.com/collections/wet-dry-vacuums",
+      "sourceType": "manufacturer US category",
+      "evidence": "Official range lists 356°F steam, 187°F hot-water cleaning and auto detergent dispenser; capture exact product page and electrical specifications.",
+      "status": "candidate",
+      "regionalMarket": "US",
+      "duplicateCheck": "new product family not represented in current catalogue",
+      "buyerUse": "premium hot-water/steam cleaning; compare maintenance and detergent needs"
+    },
+    {
+      "name": "Roborock F25 XT",
+      "category": "wet-dry floor cleaners",
+      "model": "F25 XT",
+      "source": "https://us.roborock.com/collections/wet-dry-vacuums",
+      "sourceType": "manufacturer US category",
+      "evidence": "Official range lists automatic detergent dispenser, app customization and high-temperature self-washing/drying; verify exact runtime and tank capacities.",
+      "status": "candidate",
+      "regionalMarket": "US",
+      "duplicateCheck": "new product family not represented in current catalogue",
+      "buyerUse": "wet-dry cleaning with detergent automation and power-assisted movement"
+    },
+    {
+      "name": "Roborock F25 BX",
+      "category": "wet-dry floor cleaners",
+      "model": "F25 BX",
+      "source": "https://us.roborock.com/collections/wet-dry-vacuums",
+      "sourceType": "manufacturer US category",
+      "evidence": "Official range lists FlatReach and anti-tangle scraper design; verify exact suction, runtime and self-cleaning functions.",
+      "status": "candidate",
+      "regionalMarket": "US",
+      "duplicateCheck": "new product family not represented in current catalogue",
+      "buyerUse": "lower-cost wet-dry model for routine hard-floor cleaning"
     }
   ]
 }
