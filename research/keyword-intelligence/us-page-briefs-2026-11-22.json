@@ -424,17 +424,24 @@
     {
       "slugCandidate": "us-wet-dry-vacuums",
       "title": "Best Wet-Dry Vacuums for Hard Floors, Pet Messes and Kitchen Spills",
-      "primary": "best wet dry vacuum",
+      "primary": "best wet-dry floor cleaner",
       "secondary": [
-        "wet dry vacuum for hardwood floors",
-        "wet dry vacuum for pet hair",
+        "best wet dry vacuum for hard floors",
+        "cordless wet dry floor cleaner",
+        "wet dry floor cleaner for pet messes",
         "wet dry floor cleaner with steam",
-        "cordless wet dry vacuum"
+        "wet dry floor cleaner for hardwood floors",
+        "self-cleaning wet dry floor washer"
       ],
       "reason": "Distinct product class from cordless stick vacuums and robot vacuums; US manufacturers present a wide model range and separate use cases.",
       "serpEvidence": "confirmed_distinct_category_serp",
       "status": "candidate",
-      "serpNotes": "TechRadar has a current tested wet-dry vacuum guide with Roborock F25 and Bissell CrossWave picks. This is a distinct floor-cleaning product class; compare against the site's robot-vacuum and cordless-stick guides before approving a standalone page."
+      "serpNotes": "TechRadar has a current tested wet-dry vacuum guide with Roborock F25 and Bissell CrossWave picks. This is a distinct floor-cleaning product class; compare against the site's robot-vacuum and cordless-stick guides before approving a standalone page.",
+      "editorialBoundary": "Focus on upright cordless hard-floor washers that collect wet spills and wash sealed hard floors. Explicitly exclude workshop/shop vacuums, carpet extractors, robot vacuum-mops and cordless stick-vacuum mop attachments unless separately segmented.",
+      "outlineFile": "research/page-outlines/us-wet-dry-floor-cleaners-outline-2026-11-22.md",
+      "outlineStatus": "draft_outline_prepared_research_only",
+      "canonicalOverlapCheck": "Distinct from existing cordless stick vacuum and robot vacuum-mop guides; link to both but do not duplicate their core queries.",
+      "productCandidateCount": 8
     }
   ],
   "policy": "Research briefs only. Do not create public pages until US-specific metrics, SERP overlap, exact products, affiliate destinations and editorial review pass."
