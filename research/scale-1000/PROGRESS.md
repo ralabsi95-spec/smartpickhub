@@ -12,7 +12,7 @@
 | Existing live catalogue | 100 | Already present; excluded from new intake |
 | New staged candidates | 102 | 62 UK + 40 US; research queue only, not verified/publishable |
 | Verified new products | 0 | No candidate has passed all identity, regional, evidence and affiliate checks |
-| Keyword candidates | 2,861 | 1,488 UK + 1,373 US after normalized deduplication; candidates are not measured demand or pages |
+| Keyword candidates | 2,799 | 1,488 UK + 1,311 US after duplicate and redundant-template cleanup; candidates are not measured demand or pages |
 
 ### Batch 001 — UK candidate discovery
 
@@ -131,3 +131,13 @@ Resolve exact SKU/product pages and manufacturer specifications for Batch 001; e
 - US measured metrics remain 0; UK saved cache remains 32 metric records with 8 exact phrase matches. Trend data is unavailable. No paid metric refresh was run.
 - Rechecked the official Roborock US wet-dry collection: its 13 product tiles include bundles/combo SKUs and must not be counted as 13 distinct standalone cleaners. Rechecked Tineco US pages: S9 Artist Pro, S9 Artist Steam and S7 Stretch Ultra remain marked unavailable/backordered.
 - Added a dated US wet-dry catalog/stock update to the product verification checkpoint and created a separate quality audit report. No product was promoted to verified/publishable; no guide, live catalogue, production site, indexability or deployment was changed.
+
+
+## 22 November 2026 14:40 UTC — Second US keyword semantic cleanup
+- Reviewed the US long-tail set for redundant modifier templates, not just punctuation duplicates.
+- Found 62 phrases of the form `best [product] for budget models/systems/routers/cameras/kits/sets`; each had an existing canonical `best budget [product]` phrase in the same dataset. Removed the redundant phrase rather than count two phrasings as separate opportunities.
+- Recalculated the US summary and 21 cluster counts: 1,311 phrases across 62 topics; 186 transactional / 1,125 commercial; 786 mapped / 525 unmapped; zero measured metrics and no trend series.
+- The earlier 10 punctuation/hyphenation duplicates were already removed. The current US keyword dataset now has no exact or normalized duplicates under the QA normalization rule.
+- Combined UK + US candidate phrase count is now **2,799** (1,488 UK + 1,311 US). The original 2,871 and intermediate 2,861 counts are superseded by this cleanup.
+- Remaining generic modifiers are flagged for human/SERP review; they were not blindly removed because many describe valid buyer requirements such as room size, pet hair, travel, runtime, hand size, noise or installation.
+- No new measured search data, pages or products were fabricated; no paid research credits were used.
