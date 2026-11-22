@@ -10,7 +10,7 @@
 | Measure | Count | Meaning |
 |---|---:|---|
 | Existing live catalogue | 100 | Already present; excluded from new intake |
-| New staged candidates | 44 | Research queue only; not verified/publishable |
+| New staged candidates | 62 | Research queue only; not verified/publishable |
 | Verified new products | 0 | No candidate in this first batch has passed all identity, regional, evidence and affiliate checks |
 | Remaining to target | 900 | Net-new product records still required after verification |
 
@@ -39,3 +39,10 @@
 ## Immediate next step
 
 Resolve exact SKU/product pages and manufacturer specifications for Batch 001; eliminate model variants that do not offer distinct comparison value; then run marketplace-link verification separately. Only after these gates should the batch be promoted from candidate to verified intake.
+
+
+### Batch 002 — additional UK candidate discovery
+
+- Robot lawn mowers: 14 candidates across Segway Navimow and Husqvarna, based on official UK range listings. Lawn-area capacity, navigation method, slope performance, boundary requirements, exact SKU and current stock must be checked per model. Some Navimow LiDAR Pro pages explicitly identify an EU version with UK adapter; keep this regional caveat.
+- Smart thermostats: 4 candidates across tado° X and Resideo evohome, based on official UK product/compatibility documentation. Compatibility with boiler type, hot-water cylinder, OpenTherm, heat pump, wiring and zone configuration is a hard verification gate.
+- No keyword-volume figures were assigned to these two clusters because no current first-party or paid keyword metric was obtained in this batch.
