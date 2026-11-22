@@ -9,14 +9,14 @@
   "amazonMarketplace": "amazon.com",
   "purpose": "US-localized buyer-intent keyword research. Separate from UK; phrases are opportunities, not measured demand or pages to publish.",
   "summary": {
-    "uniqueKeywordCandidates": 1383,
+    "uniqueKeywordCandidates": 1373,
     "productTopics": 62,
     "transactionalKeywords": 186,
-    "commercialKeywords": 1197,
+    "commercialKeywords": 1187,
     "exactUSMetricsAvailable": 0,
-    "unmeasuredCandidates": 1383,
-    "existingGuideMapped": 827,
-    "unmappedPageCandidates": 556,
+    "unmeasuredCandidates": 1373,
+    "existingGuideMapped": 823,
+    "unmappedPageCandidates": 550,
     "trendDataAvailable": false
   },
   "metricPolicy": {
@@ -42,9 +42,9 @@
     },
     {
       "clusterId": "kitchen-appliances",
-      "count": 112,
+      "count": 110,
       "transactional": 15,
-      "commercial": 97
+      "commercial": 95
     },
     {
       "clusterId": "home-comfort",
@@ -60,15 +60,15 @@
     },
     {
       "clusterId": "smart-home-energy",
-      "count": 23,
+      "count": 22,
       "transactional": 3,
-      "commercial": 20
+      "commercial": 19
     },
     {
       "clusterId": "home-networking",
-      "count": 45,
+      "count": 43,
       "transactional": 6,
-      "commercial": 39
+      "commercial": 37
     },
     {
       "clusterId": "smart-home-security",
@@ -84,9 +84,9 @@
     },
     {
       "clusterId": "computer-accessories",
-      "count": 161,
+      "count": 159,
       "transactional": 21,
-      "commercial": 140
+      "commercial": 138
     },
     {
       "clusterId": "home-office",
@@ -96,9 +96,9 @@
     },
     {
       "clusterId": "gaming",
-      "count": 66,
+      "count": 65,
       "transactional": 9,
-      "commercial": 57
+      "commercial": 56
     },
     {
       "clusterId": "audio-video",
@@ -156,9 +156,9 @@
     },
     {
       "clusterId": "travel-gear",
-      "count": 92,
+      "count": 90,
       "transactional": 12,
-      "commercial": 80
+      "commercial": 78
     }
   ],
   "keywords": [
@@ -22717,42 +22717,6 @@
       "source": null
     },
     {
-      "keyword": "best coffee grinder for pour-over coffee",
-      "market": "US",
-      "language": "en-US",
-      "clusterId": "kitchen-appliances",
-      "topic": "coffee grinder",
-      "localizedTopic": "coffee grinder",
-      "mappedGuide": null,
-      "intent": "commercial",
-      "buyerIntentScore": 4,
-      "keywordType": "long_tail_buyer",
-      "searchVolumeMonthly": null,
-      "volumeStatus": "not_measured",
-      "keywordDifficulty": null,
-      "cpc": null,
-      "trendMonthlySearches": null,
-      "source": null
-    },
-    {
-      "keyword": "best coffee grinder for single-dose grinding",
-      "market": "US",
-      "language": "en-US",
-      "clusterId": "kitchen-appliances",
-      "topic": "coffee grinder",
-      "localizedTopic": "coffee grinder",
-      "mappedGuide": null,
-      "intent": "commercial",
-      "buyerIntentScore": 4,
-      "keywordType": "long_tail_buyer",
-      "searchVolumeMonthly": null,
-      "volumeStatus": "not_measured",
-      "keywordDifficulty": null,
-      "cpc": null,
-      "trendMonthlySearches": null,
-      "source": null
-    },
-    {
       "keyword": "best coffee grinder for low grind retention",
       "market": "US",
       "language": "en-US",
@@ -22933,24 +22897,6 @@
       "source": null
     },
     {
-      "keyword": "best smart thermostat for multi-zone heating",
-      "market": "US",
-      "language": "en-US",
-      "clusterId": "smart-home-energy",
-      "topic": "smart thermostat",
-      "localizedTopic": "smart thermostat",
-      "mappedGuide": null,
-      "intent": "commercial",
-      "buyerIntentScore": 4,
-      "keywordType": "long_tail_buyer",
-      "searchVolumeMonthly": null,
-      "volumeStatus": "not_measured",
-      "keywordDifficulty": null,
-      "cpc": null,
-      "trendMonthlySearches": null,
-      "source": null
-    },
-    {
       "keyword": "best smart thermostat for OpenTherm or C-wire compatibility",
       "market": "US",
       "language": "en-US",
@@ -23005,43 +22951,7 @@
       "source": null
     },
     {
-      "keyword": "best Wi-Fi 7 mesh system for multi-gig internet",
-      "market": "US",
-      "language": "en-US",
-      "clusterId": "home-networking",
-      "topic": "Wi-Fi 7 mesh system",
-      "localizedTopic": "Wi-Fi 7 mesh system",
-      "mappedGuide": "wifi-7-home-mesh-routers-us-uk",
-      "intent": "commercial",
-      "buyerIntentScore": 4,
-      "keywordType": "long_tail_buyer",
-      "searchVolumeMonthly": null,
-      "volumeStatus": "not_measured",
-      "keywordDifficulty": null,
-      "cpc": null,
-      "trendMonthlySearches": null,
-      "source": null
-    },
-    {
       "keyword": "best Wi-Fi 7 router for online gaming",
-      "market": "US",
-      "language": "en-US",
-      "clusterId": "home-networking",
-      "topic": "Wi-Fi 7 router",
-      "localizedTopic": "Wi-Fi 7 router",
-      "mappedGuide": "wifi-7-home-mesh-routers-us-uk",
-      "intent": "commercial",
-      "buyerIntentScore": 4,
-      "keywordType": "long_tail_buyer",
-      "searchVolumeMonthly": null,
-      "volumeStatus": "not_measured",
-      "keywordDifficulty": null,
-      "cpc": null,
-      "trendMonthlySearches": null,
-      "source": null
-    },
-    {
-      "keyword": "best Wi-Fi 7 router for multi-gig internet",
       "market": "US",
       "language": "en-US",
       "clusterId": "home-networking",
@@ -23750,24 +23660,6 @@
       "topic": "wireless gaming mouse",
       "localizedTopic": "wireless gaming mouse",
       "mappedGuide": "gaming-mice-us-uk",
-      "intent": "commercial",
-      "buyerIntentScore": 4,
-      "keywordType": "long_tail_buyer",
-      "searchVolumeMonthly": null,
-      "volumeStatus": "not_measured",
-      "keywordDifficulty": null,
-      "cpc": null,
-      "trendMonthlySearches": null,
-      "source": null
-    },
-    {
-      "keyword": "best gaming keyboard for hot-swappable switches",
-      "market": "US",
-      "language": "en-US",
-      "clusterId": "gaming",
-      "topic": "gaming keyboard",
-      "localizedTopic": "gaming keyboard",
-      "mappedGuide": null,
       "intent": "commercial",
       "buyerIntentScore": 4,
       "keywordType": "long_tail_buyer",
@@ -24571,42 +24463,6 @@
       "source": null
     },
     {
-      "keyword": "best NAS storage for 2-bay systems",
-      "market": "US",
-      "language": "en-US",
-      "clusterId": "computer-accessories",
-      "topic": "NAS storage",
-      "localizedTopic": "NAS storage",
-      "mappedGuide": "home-nas-storage-us-uk",
-      "intent": "commercial",
-      "buyerIntentScore": 4,
-      "keywordType": "long_tail_buyer",
-      "searchVolumeMonthly": null,
-      "volumeStatus": "not_measured",
-      "keywordDifficulty": null,
-      "cpc": null,
-      "trendMonthlySearches": null,
-      "source": null
-    },
-    {
-      "keyword": "best NAS storage for 4-bay systems",
-      "market": "US",
-      "language": "en-US",
-      "clusterId": "computer-accessories",
-      "topic": "NAS storage",
-      "localizedTopic": "NAS storage",
-      "mappedGuide": "home-nas-storage-us-uk",
-      "intent": "commercial",
-      "buyerIntentScore": 4,
-      "keywordType": "long_tail_buyer",
-      "searchVolumeMonthly": null,
-      "volumeStatus": "not_measured",
-      "keywordDifficulty": null,
-      "cpc": null,
-      "trendMonthlySearches": null,
-      "source": null
-    },
-    {
       "keyword": "best NAS storage for Plex media servers",
       "market": "US",
       "language": "en-US",
@@ -24913,48 +24769,12 @@
       "source": null
     },
     {
-      "keyword": "best travel backpack for carry-on travel",
-      "market": "US",
-      "language": "en-US",
-      "clusterId": "travel-gear",
-      "topic": "travel backpack",
-      "localizedTopic": "travel backpack",
-      "mappedGuide": null,
-      "intent": "commercial",
-      "buyerIntentScore": 4,
-      "keywordType": "long_tail_buyer",
-      "searchVolumeMonthly": null,
-      "volumeStatus": "not_measured",
-      "keywordDifficulty": null,
-      "cpc": null,
-      "trendMonthlySearches": null,
-      "source": null
-    },
-    {
       "keyword": "best travel backpack for laptop compartments",
       "market": "US",
       "language": "en-US",
       "clusterId": "travel-gear",
       "topic": "travel backpack",
       "localizedTopic": "travel backpack",
-      "mappedGuide": null,
-      "intent": "commercial",
-      "buyerIntentScore": 4,
-      "keywordType": "long_tail_buyer",
-      "searchVolumeMonthly": null,
-      "volumeStatus": "not_measured",
-      "keywordDifficulty": null,
-      "cpc": null,
-      "trendMonthlySearches": null,
-      "source": null
-    },
-    {
-      "keyword": "best packing cubes for carry-on luggage",
-      "market": "US",
-      "language": "en-US",
-      "clusterId": "travel-gear",
-      "topic": "packing cubes",
-      "localizedTopic": "packing cubes",
       "mappedGuide": null,
       "intent": "commercial",
       "buyerIntentScore": 4,
