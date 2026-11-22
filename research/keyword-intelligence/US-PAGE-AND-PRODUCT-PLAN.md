@@ -2,9 +2,9 @@
 
 ## Keyword universe
 
-- 1,373 unique US English buyer-intent phrases across 62 topic clusters after normalized duplicate removal.
-- 186 transactional and 1,187 commercial phrases by wording.
-- All 1,373 phrases have null volume/KD/CPC/trend. No UK metrics were copied into US rows. Fresh US metrics require US location code 2840 and USD CPC.
+- 1,311 unique US English buyer-intent phrases across 62 topic clusters after normalized duplicate removal.
+- 186 transactional and 1,125 commercial phrases by wording.
+- All 1,311 phrases have null volume/KD/CPC/trend. No UK metrics were copied into US rows. Fresh US metrics require US location code 2840 and USD CPC.
 - US phrases are localized for American vocabulary and long-tail buying situations: apartment, basement, yard, carry-on, color, license plate, HVAC/C-wire, portable charger, clothes drying rack, True HEPA, etc.
 - Added a topic-specific, use-case-led second tier; terms remain research candidates until volume, SERP intent and cannibalisation are assessed.
 
@@ -18,7 +18,7 @@
 ## US page plan
 
 - 25 existing guides have US refresh briefs; preserve their URLs and add US-specific model evidence rather than duplicating pages.
-- 12 new-page/topic briefs prepared: 10 potential new pages and 2 refresh-only topics due likely overlap. 823 keyword phrases map to existing guides; 550 remain unmapped and require SERP review. Some are marked refresh-not-new-page because current canonical pages likely cover the same SERP intent.
+- 12 new-page/topic briefs prepared: 10 potential new pages and 2 refresh-only topics due likely overlap. 786 keyword phrases map to existing guides; 525 remain unmapped and require SERP review. Some are marked refresh-not-new-page because current canonical pages likely cover the same SERP intent.
 - Highest-confidence US-specific page candidates to validate next: basement dehumidifiers, portable power stations, security cameras without subscription, wildfire-smoke air purifiers, US HVAC smart thermostats and robot lawn mowers.
 
 ## US SERP evidence
@@ -68,3 +68,11 @@ All 40 candidates still have 0 verified products, 0 publishable products and 0 v
 - Corrected US unique keyword count to 1,373: 186 transactional, 1,187 commercial; 823 mapped to existing guides and 550 unmapped for SERP review. All 1,373 remain unmeasured for US search volume/KD/CPC/trends.
 - Combined UK + US keyword universe is now 2,861 distinct normalized phrases (1,488 UK + 1,373 US), not 2,871.
 - No search-volume, difficulty, CPC or trend metrics were inferred or copied from the UK market.
+
+
+## Second semantic quality pass — 22 November 2026, 14:40 UTC
+- Removed 62 redundant US long-tail phrases using the pattern `best [product] for budget models/systems/routers/cameras/kits/sets` because every one duplicated an existing canonical `best budget [product]` phrase in the same dataset.
+- US keyword total is now **1,311** unique buyer-intent candidates across 62 topics: 186 transactional / 1,125 commercial; 786 mapped to existing guides / 525 unmapped. Zero measured US metrics.
+- After the 10 punctuation/hyphenation duplicates and 62 redundant budget-modifier duplicates were removed, the US dataset contains 1,311 records with no remaining exact or normalized duplicates under the QA normalization rule.
+- Combined UK + US total is **2,799** unique phrases (UK 1,488 + US 1,311). The removed variants are not separate search opportunities and must not be reintroduced as extra keyword counts.
+- Other generic modifiers were not automatically deleted; they remain subject to semantic relevance and SERP validation rather than a broad rule-based purge.
