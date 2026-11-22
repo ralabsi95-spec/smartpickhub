@@ -1,13 +1,16 @@
-**Latest checkpoint — 22 November 2026 14:27 UTC**
+**Latest checkpoint — 22 November 2026 14:40 UTC**
 
-- Immediate KPI: **1,000+ buyer-intent keyword phrases** with real monthly search metrics prioritised where available; this is not a 1,000-product publishing target.
-- Final keyword universe after relevance QA: **1,488 UK + 1,383 US = 2,871 unique phrases** across 62 topics per market. UK: 32 cached OpenSEO metric records, 8 exact phrase matches; 1,480 unmeasured. US: 0 measured; all 1,383 unmeasured. No monthly trend series; no paid credits used.
-- Intent by wording: UK 186 transactional / 1,302 commercial; US 186 transactional / 1,197 commercial. Intent scores are heuristics, not conversion forecasts.
-- Product discovery: **62 UK + 40 US = 102 staged candidates**, 0 verified, 0 publishable, 0 verified Amazon ASINs/affiliate destinations. The latest US batch contains manufacturer-sourced robot mowers, wet-dry floor cleaners, portable ACs, irrigation controllers, smart locks and pressure washers. Stock caveats are recorded; several products are backordered/out of stock.
-- Existing production catalogue remains 25 guides / 100 products. Do not re-import or overwrite it.
-- Page plans only: UK 25 refresh briefs + 12 new-page candidates; US 25 refresh briefs + 12 topics (10 new-page candidates, 2 refresh-only). SERP validation notes are recorded; no page created or published.
-- Research branch: `research/scale-1000-batch-001`. No PR, merge, deployment, public catalogue, page, metadata or indexability change. Production remains on `main`.
-- Next: verify exact US product models, regional stock and Amazon.com destinations; then prioritise unmapped keyword groups by SERP overlap. Measure US metrics separately (location code 2840) only after explicit cost approval.
+- Immediate KPI: **1,000+ distinct buyer-intent keyword phrases**, with real monthly search metrics prioritised where available. This is not a 1,000-product publishing target.
+- Current deduplicated keyword universe: **1,488 UK + 1,311 US = 2,799 phrases** across 62 product topics per market. UK: 32 saved metric-cache records, 8 exact phrase matches, 1,480 unmeasured. US: 0 measured, all 1,311 unmeasured. No monthly trend series; no paid refresh.
+- Intent by wording: UK 186 transactional / 1,302 commercial; US 186 transactional / 1,125 commercial. These labels are heuristics, not conversion forecasts.
+- US keyword QA removed 10 punctuation/hyphenation duplicates and a further 62 redundant “for budget models/systems/kits” phrases that duplicated existing “best budget [product]” phrases. Current US file has zero exact/normalized duplicates under the QA rule. Remaining generic modifiers still need semantic/SERP review.
+- Product discovery: **62 UK + 40 US = 102 staged candidates**, 0 verified, 0 publishable, 0 verified Amazon ASINs/affiliate destinations. No product was imported into the live catalogue.
+- Product-source specificity audit: UK 13/62 exact product-page sources and 49/62 category/collection/landing sources; US 26/40 product-page sources and 14/40 category/collection sources. **63 candidate records still need more specific product-page evidence.** All 62 UK records now have explicit `model: null` and `modelIdentityStatus: "unverified"` rather than guessed model numbers; all 40 US records also carry an explicit unverified model status.
+- The current US Roborock F25 collection includes bundle/combo listings; do not count product tiles as unique standalone models. Tineco S9 Artist Pro, S9 Artist Steam and S7 Stretch Ultra remain marked unavailable/backordered on Tineco US pages. The wet-dry guide remains a research outline, not a published page or approved ranking.
+- QA report: `research/quality-assurance/QA-CHECKPOINT-2026-11-22.md`. Product evidence update: `research/product-verification/us-wet-dry-floor-cleaners-product-checkpoint-2026-11-22.md`. Progress log: `research/scale-1000/PROGRESS.md`.
+- Existing production catalogue remains **25 guides / 100 products**. Do not re-import, overwrite or alter it.
+- Working branch: `research/scale-1000-batch-001`. No PR, merge, deployment, public catalogue, page, metadata or indexability change. Production remains on `main`.
+- Next: obtain exact product-page/manual evidence for the 63 source-specificity gaps; verify regional model/SKU and live stock; then verify Amazon UK/US exact ASINs/destinations. Continue SERP-based semantic review of remaining long-tail terms. Refresh US metrics only after explicit cost approval; no paid research credits used.
 
 ---
 **Latest main ref comparison:** 22 November 2026 — `main` at `26636d4359508b9af30eec498a22ffc005a81a72`; the research branch remains isolated and unmerged. Re-run the branch comparison before the next operation. This Git comparison does not independently verify the live Cloudflare deployment.  
