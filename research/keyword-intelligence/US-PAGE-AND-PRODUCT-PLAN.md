@@ -2,11 +2,11 @@
 
 ## Keyword universe
 
-- 1,546 unique US English buyer-intent phrases across 62 topic clusters.
-- 186 transactional and 1,360 commercial phrases by wording.
-- All 1,546 phrases have null volume/KD/CPC/trend. No UK metrics were copied into US rows. Fresh US metrics require US location code 2840 and USD CPC.
+- 1,383 unique US English buyer-intent phrases across 62 topic clusters.
+- 186 transactional and 1,197 commercial phrases by wording.
+- All 1,383 phrases have null volume/KD/CPC/trend. No UK metrics were copied into US rows. Fresh US metrics require US location code 2840 and USD CPC.
 - US phrases are localized for American vocabulary and long-tail buying situations: apartment, basement, yard, carry-on, color, license plate, HVAC/C-wire, portable charger, clothes drying rack, True HEPA, etc.
-- Added a use-case-led second tier; terms remain research candidates until volume, SERP intent and cannibalisation are assessed.
+- Added a topic-specific, use-case-led second tier; terms remain research candidates until volume, SERP intent and cannibalisation are assessed.
 
 ## US product discovery batch
 
