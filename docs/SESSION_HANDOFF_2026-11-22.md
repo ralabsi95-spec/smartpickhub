@@ -143,3 +143,12 @@ Only a sample was reviewed. A full scan of all 25 guides remains pending. Do not
 - TinyFish wallet was checked read-only at 06:10 UTC and showed a negative balance of USD -0.472. Do not run further TinyFish fetch/browser/research calls or top up; the owner has not approved spending. Continue only with GitHub connector and genuinely free sources/tools.
 
 **Revised next step:** use free GitHub source reads to complete static data/content review; obtain raw HTTP response headers only through a genuinely free source or owner-provided output. Do not use TinyFish until the owner explicitly approves a top-up.
+
+
+## 12. SEO metadata source review — 22 Nov 2026
+
+- The current guide data contains 25 unique non-empty `seoTitle` values (no duplicates found).
+- Only 4/25 guides have a dedicated `seoDescription` field; the other 21 intentionally fall back to `guide.summary` in `src/pages/guides/[slug].astro` via `description={guide.seoDescription ?? guide.summary}`. Therefore these 21 are **not missing meta descriptions**; they lack a separately curated SEO-specific description. Treat the proposed 21-description package as an optional metadata improvement, not a technical indexing blocker.
+- Article JSON-LD also uses `guide.summary` for description and `guide.publishedAt` for both datePublished and dateModified. Do not change dateModified unless the page content is actually modified.
+- Exact source file SHAs at main: `src/pages/guides/index.astro` `7d9065c9912434887b984adc4c69ab385a253675`; `src/pages/guides/[slug].astro` `6d1543bf28b2bf8b788bc4166b562c4ee48d10bb`; `src/data/products.json` `bb261aff8200a0b5a8f11966080d4ed11376e20d`.
+- `package-lock.json` exact versions: Astro `7.4.12`, `@astrojs/sitemap` `3.7.5`. Current sitemap integration is the standard Astro integration; no custom filename/prefix is configured (see `astro.config.mjs`).
