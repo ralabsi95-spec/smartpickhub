@@ -1809,3 +1809,8 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Product discovery: 62 UK candidate records already staged + 14 US candidates staged from official manufacturer US sources (eufy, Levoit, Frigidaire, EcoFlow). Verified/publishable products remain 0; no Amazon ASIN or affiliate URL fabricated. Existing 100 products / 25 guides untouched; 900 net-new verified product records remain toward target 1,000.
 - Research branch `research/scale-1000-batch-001`; no merge, PR, deployment or production change.
 - Files: `research/keyword-intelligence/us-buyer-keywords-2026-11-22.json`, `uk-page-briefs-2026-11-22.json`, `us-page-briefs-2026-11-22.json`, `US-PAGE-AND-PRODUCT-PLAN.md`, and `research/scale-1000/batch-003-us-product-candidates.json`.
+
+
+## 22 November 2026 — US product candidate batch expanded
+- US manufacturer-sourced product candidates increased from 14 to 22, now including ecobee Smart Thermostat Premium/Enhanced/Essential and Roborock F25 wet-dry cleaners (GT Gen 2, Steam, Ultra, XT, BX).
+- Added a distinct US wet-dry vacuum page brief. Candidate count only; 0 verified/publishable. Product identity, exact SKU, compatibility, marketplace stock and Amazon US affiliate destinations still need validation.
