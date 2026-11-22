@@ -38,36 +38,36 @@
     "cleaning-floorcare": {
       "count": 84,
       "measured": 1,
-      "transactional": 6,
-      "commercial": 42,
-      "existingGuideMapped": 48
+      "transactional": 18,
+      "commercial": 66,
+      "existingGuideMapped": 84
     },
     "kitchen-appliances": {
       "count": 192,
       "measured": 1,
-      "transactional": 15,
-      "commercial": 105,
-      "existingGuideMapped": 96
+      "transactional": 39,
+      "commercial": 153,
+      "existingGuideMapped": 168
     },
     "home-comfort": {
       "count": 324,
       "measured": 3,
-      "transactional": 18,
-      "commercial": 126,
-      "existingGuideMapped": 24
+      "transactional": 78,
+      "commercial": 246,
+      "existingGuideMapped": 60
     },
     "garden-tools": {
       "count": 108,
       "measured": 0,
-      "transactional": 9,
-      "commercial": 63,
+      "transactional": 21,
+      "commercial": 87,
       "existingGuideMapped": 0
     },
     "smart-home-energy": {
       "count": 60,
       "measured": 0,
-      "transactional": 3,
-      "commercial": 21,
+      "transactional": 15,
+      "commercial": 45,
       "existingGuideMapped": 0
     },
     "home-networking": {
@@ -87,9 +87,9 @@
     "portable-power": {
       "count": 240,
       "measured": 0,
-      "transactional": 12,
-      "commercial": 84,
-      "existingGuideMapped": 96
+      "transactional": 60,
+      "commercial": 180,
+      "existingGuideMapped": 168
     },
     "computer-accessories": {
       "count": 168,
@@ -171,9 +171,9 @@
     "car-tech": {
       "count": 84,
       "measured": 3,
-      "transactional": 6,
-      "commercial": 42,
-      "existingGuideMapped": 48
+      "transactional": 18,
+      "commercial": 66,
+      "existingGuideMapped": 84
     },
     "travel-gear": {
       "count": 96,
