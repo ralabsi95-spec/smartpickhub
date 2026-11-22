@@ -1832,3 +1832,9 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - NETGEAR RBE773 UK listing confirms 1 router, 2 satellites and 3 adapters; reviewed regional technical sheet/manual do not establish exact AC input rating of the supplied UK adapters. Retain label-check advice.
 - Full evidence and source URLs are recorded in `docs/EDITORIAL_QA_SOURCE_VERIFICATION_2026-11-22.md` on the documentation branch. These are verification notes, not production edits.
 - No main changes, PR, Actions run, merge, deployment, index request, product import or paid tool activity in this pass.
+
+
+## 22 November 2026 — Further regional model checks
+- Epson EF21 US SKU V11HB35320 is marked discontinued by Epson US; Epson UK EF-21G SKU V11HB35340 remains listed in stock and specifies 100–240V, 50/60Hz. Keep the availability caution explicitly scoped to the US variant.
+- Samsung US Bespoke Jet AI VS28C9762UK/AA is rated 120V/60Hz; Samsung UK lists separate VS28C9784QK/EU model. Existing regional electrical warning remains appropriate.
+- Detailed official-source evidence is recorded in the 22 Nov source-verification report on the documentation branch. No production content changed.
