@@ -1,16 +1,15 @@
-**Latest checkpoint — 22 November 2026 14:16 UTC**
+**Latest checkpoint — 22 November 2026 14:27 UTC**
 
-- User's immediate KPI is **1,000+ buyer-intent keyword phrases** with measured monthly search frequency prioritised where available, distinctive long-tail terms and clear commercial/transactional intent. This is **not** a 1,000-product publishing target.
-- Final keyword universe after relevance QA: **1,488 UK + 1,383 US = 2,871 unique phrases** across 62 topics per market. UK: 32 cached OpenSEO metric records, 8 exact phrase matches; 1,480 unmeasured. US: 0 measured; all 1,383 unmeasured. No monthly trend series available; no paid credits used.
+- Immediate KPI: **1,000+ buyer-intent keyword phrases** with real monthly search metrics prioritised where available; this is not a 1,000-product publishing target.
+- Final keyword universe after relevance QA: **1,488 UK + 1,383 US = 2,871 unique phrases** across 62 topics per market. UK: 32 cached OpenSEO metric records, 8 exact phrase matches; 1,480 unmeasured. US: 0 measured; all 1,383 unmeasured. No monthly trend series; no paid credits used.
 - Intent by wording: UK 186 transactional / 1,302 commercial; US 186 transactional / 1,197 commercial. Intent scores are heuristics, not conversion forecasts.
-- The additional long-tail tier was rebuilt from topic-specific purchase modifiers after removing a first cluster-wide modifier pass that produced some irrelevant combinations. Added 248 UK and 143 US unique phrases after exact deduplication; no duplicate phrases remain in either dataset.
-- Product discovery is separate: 62 UK + 22 US staged candidates, 0 verified/publishable. Existing catalogue remains 25 guides / 100 products; do not re-import or overwrite it.
-- Page plans only: UK 25 refresh briefs + 12 new-page candidates; US 25 refresh briefs + 12 topics (10 new-page candidates, 2 refresh-only). No page created or published.
+- Product discovery: **62 UK + 40 US = 102 staged candidates**, 0 verified, 0 publishable, 0 verified Amazon ASINs/affiliate destinations. The latest US batch contains manufacturer-sourced robot mowers, wet-dry floor cleaners, portable ACs, irrigation controllers, smart locks and pressure washers. Stock caveats are recorded; several products are backordered/out of stock.
+- Existing production catalogue remains 25 guides / 100 products. Do not re-import or overwrite it.
+- Page plans only: UK 25 refresh briefs + 12 new-page candidates; US 25 refresh briefs + 12 topics (10 new-page candidates, 2 refresh-only). SERP validation notes are recorded; no page created or published.
 - Research branch: `research/scale-1000-batch-001`. No PR, merge, deployment, public catalogue, page, metadata or indexability change. Production remains on `main`.
-- Next: cluster terms by SERP overlap and validate long-tail demand; map each distinct buyer task to an existing guide or a justified new-page candidate. Measure US metrics separately (location code 2840) only after explicit cost approval.
+- Next: verify exact US product models, regional stock and Amazon.com destinations; then prioritise unmapped keyword groups by SERP overlap. Measure US metrics separately (location code 2840) only after explicit cost approval.
 
 ---
-
 **Latest main ref comparison:** 22 November 2026 — `main` at `26636d4359508b9af30eec498a22ffc005a81a72`; the research branch remains isolated and unmerged. Re-run the branch comparison before the next operation. This Git comparison does not independently verify the live Cloudflare deployment.  
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `main` (production)  
