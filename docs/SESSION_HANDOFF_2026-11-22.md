@@ -285,3 +285,13 @@ OpenSEO project audit retrieval used the saved report only; no new audit crawl, 
 ### Engineering patch branch
 - `fix/public-editorial-status-2026-11-22` contains only two public card status-display removals, verified by re-fetch. It remains unbuilt, unreviewed in browser, not PR'd/merged/deployed. PR avoided because Actions quota status remains unknown.
 - No production changes, new sitemap submission, URL indexing requests, IndexNow submission, paid services or product import.
+
+
+## Preview verification from owner Cloudflare screenshot — 22 Nov 2026, 10:57 UTC
+
+- Owner supplied refreshed Cloudflare Pages Deployments screenshot. Production is explicitly shown as branch `main`, commit `26636d4`, green successful status, domain `smartpickhub.pages.dev`. This confirms the live deployment pointer matches the previously verified main SHA `26636d4359508b9af30eec498a22ffc005a81a72`; no production lag was found.
+- The same screenshot shows Preview for branch `fix/public-editorial-status-2026-11-22`, commit `cd8331f`, green successful deployment, URL `https://852061d1.smartpickhub.pages.dev`. This confirms Cloudflare successfully built/deployed a preview for the second patch commit. It is not production and is not a substitute for a visual inspection of the preview page.
+- GitHub compare `main...`fix branch confirms exactly 2 commits ahead, 0 behind, and exactly two files changed: `src/pages/index.astro` (1 insertion/1 deletion) and `src/pages/guides/index.astro` (1 deletion). No data, URL, product, affiliate link, robots, sitemap, or layout files changed.
+- Re-fetched both branch files. Homepage featured cards no longer render `guide.editorialStatus` / `review-status`; guide-library cards no longer render `guide.editorialStatus` / `guide-card-status`. Internal catalogue metadata remains untouched.
+- Status: preview deployment green; source diff is minimal and scoped. Still not visually inspected by assistant, not PR'd, not merged, not production. No CI workflow status/quota confirmed.
+- Next: owner or connected browser should open preview URL and visually confirm featured cards and guide-library cards no longer show workflow labels and retain spacing. Then decide whether to open PR after checking Actions quota. No merge/deploy without explicit release approval.
