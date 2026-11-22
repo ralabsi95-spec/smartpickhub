@@ -1,12 +1,12 @@
-**Latest checkpoint — 22 November 2026**
+**Latest checkpoint — 22 November 2026 14:16 UTC**
 
-- User wants UK and US markets researched with equal depth, 1,000s of buyer-intent keywords, and preparation of product/page assets. Do not confuse candidate keyword counts with measured demand or live pages.
-- Keyword universe: 1,240 UK + 1,240 US = 2,480 candidates, 62 topic groups per market. UK metrics: 32 saved rows; 8 exact matches in the generated list. US metrics: 0; US phrases are localized but unmeasured. No monthly trend history in cached UK data. Last-known OpenSEO balance 28 credits; do not start paid metric refresh without explicit budget approval.
-- Page planning: 25 UK existing-guide refresh briefs + 12 UK new-page candidates; 25 US existing-guide refresh briefs + 11 US page/topic candidates (some refresh-only due likely cannibalisation). No page was created or published.
-- Product discovery: 62 UK staged candidates + 22 US manufacturer-sourced candidates. Verified/publishable additions remain 0. Existing live catalogue remains 25 guides / 100 products; target remains 1,000 verified products, 900 net-new still needed. Do not re-import or overwrite existing records.
-- US product candidates in `research/scale-1000/batch-003-us-product-candidates.json` from eufy, Levoit, Frigidaire and EcoFlow. Stock/SKU verification open. No ASIN/affiliate URL fabricated.
-- Research branch: `research/scale-1000-batch-001`. No PR, merge, deployment, public catalogue or indexability change. Production stays on main.
-- Next work: build US-specific metrics when credits approved; SERP overlap for UK/US page briefs; expand product discovery in distinct categories; verify exact models, US/UK electrical and warranty differences, Amazon marketplace destinations and image rights before any candidate promotion.
+- User's immediate KPI is **1,000+ buyer-intent keyword phrases** with measured monthly search frequency prioritised where available, distinctive long-tail terms and clear commercial/transactional intent. This is **not** a 1,000-product publishing target.
+- Current unique keyword universe: **1,612 UK + 1,546 US = 3,158 phrases** across 62 topics per market. UK: 32 cached OpenSEO metric records, 8 exact phrase matches in the dataset; US: 0 measured. Newly added long-tail phrases are unmeasured (null). No monthly trend series available; no paid credits used.
+- Intent by wording: UK 186 transactional / 1426 commercial; US 186 transactional / 1360 commercial. Intent scores are heuristics, not conversion forecasts.
+- Product discovery is separate: 62 UK + 22 US staged candidates, 0 verified/publishable. Existing catalogue remains 25 guides / 100 products; do not re-import or overwrite it.
+- Page plans only: UK 25 refresh briefs + 12 new-page candidates; US 25 refresh briefs + 12 topics (10 new-page candidates, 2 refresh-only). No page created or published.
+- Research branch: `research/scale-1000-batch-001`. No PR, merge, deployment, public catalogue, page, metadata or indexability change. Production remains on `main`.
+- Next: prioritise and cluster long-tail terms by SERP overlap; map each distinct buyer task to an existing guide or a justified new-page candidate. Measure US metrics separately (location code 2840) only after explicit cost approval. Validate exact models and marketplace destinations independently before promoting any candidate.
 
 ---
 
@@ -1543,3 +1543,13 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - All new terms remain unmeasured: search volume, KD, CPC and trend fields are null. No UK metrics were copied to US. No paid keyword credits were used.
 - Keyword universe is now 1612 UK + 1546 US = 3158 distinct candidate phrases. These are research candidates, not a claim that every phrase deserves its own page; clustering and SERP overlap remain required.
 - Correct programme KPI: 1,000+ distinct buyer-intent keyword candidates with measured metrics prioritized where available. Product candidates are a separate research queue, not a 1,000-product publishing target. No production catalogue or public pages changed.
+
+
+## 22 November 2026 14:16 UTC — Keyword expansion and KPI correction
+- Re-read the latest research branch and confirmed the prior checkpoint was 31 commits ahead of main, 0 behind; no production changes were present.
+- Expanded the localized buyer-keyword databases with a second use-case-led long-tail tier across the existing 62 topics. Final unique counts: **1,612 UK + 1,546 US = 3,158**. UK added 372 phrases; US added 306 after exact-phrase deduplication against its original list.
+- Keyword intent by wording: UK 186 transactional / 1426 commercial; US 186 transactional / 1360 commercial. All newly added long-tail phrases are explicitly unmeasured (null metrics); US remains 0 measured. No trend data has been fabricated and no paid credits were used.
+- UK cached metric coverage remains 32 saved cache records, 8 exact matches in the generated list; remaining UK candidates are unmeasured. Do not treat search volume as clicks/orders or add close-variant volumes.
+- Product discovery is a separate queue: 62 UK + 22 US staged candidates, 0 verified/publishable. Existing catalogue remains 25 guides / 100 products. The 1,000+ target is keywords, not 1,000 products.
+- Page briefs remain plans only: UK 25 refresh + 12 new-page candidates; US 25 refresh + 12 topics (10 new-page candidates, 2 refresh-only). No public page, product, metadata, deployment or indexability changes.
+- Research branch remains `research/scale-1000-batch-001`; refresh branch compare after documentation commits.
