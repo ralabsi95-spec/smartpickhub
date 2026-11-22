@@ -1570,3 +1570,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Earlier URL Inspection “URL is unknown to Google” results remain valid as timestamped URL-level observations; the email does not identify the pages/queries.
 - Next: inspect Performance > Search results > Queries and Pages from 19 Nov onward. Do not repeat Request indexing while daily quota error persists.
 - No production changes, PR/CI/merge/deploy or paid service.
+
+
+## 22 Nov 2026 08:30 UTC — live Search Console data
+- Read connected GSC directly (no credits). 13–19 Nov Pacific: homepage only, 3 impressions, 0 clicks, CTR 0%, avg position 88.3.
+- All impressions on 19 Nov, USA, desktop. Queries each 1 impression: `site:pages.dev`, `site:pages.dev free`, `site:pages.dev store`; all mapped to homepage.
+- No guide page impression in returned range. Do not equate this with no indexing; performance rows and URL Inspection answer different questions.
+- Continue tracking query/page rows as data accrues. Keep manual indexing paused while quota error persists.
+- No production changes or release/index actions; no paid tool use.
