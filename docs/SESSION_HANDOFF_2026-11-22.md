@@ -295,3 +295,14 @@ OpenSEO project audit retrieval used the saved report only; no new audit crawl, 
 - Re-fetched both branch files. Homepage featured cards no longer render `guide.editorialStatus` / `review-status`; guide-library cards no longer render `guide.editorialStatus` / `guide-card-status`. Internal catalogue metadata remains untouched.
 - Status: preview deployment green; source diff is minimal and scoped. Still not visually inspected by assistant, not PR'd, not merged, not production. No CI workflow status/quota confirmed.
 - Next: owner or connected browser should open preview URL and visually confirm featured cards and guide-library cards no longer show workflow labels and retain spacing. Then decide whether to open PR after checking Actions quota. No merge/deploy without explicit release approval.
+
+
+## Follow-up validation boundary — 22 Nov 2026, 11:25 UTC
+- Read currently open browser tabs: the tab titled SmartPickHub homepage is still the production URL `https://smartpickhub.pages.dev/`, not the preview URL. The guide tab is also the production guide URL. Therefore no visual inspection of the preview branch has yet occurred.
+- Existing production homepage tab content still contains the old research-led status line; existing production guide tab content contains “Research draft — requires human review before publication.” These are stale already-open tab snapshots last opened around 05:05–05:06 UTC, not a fresh page load. Do not use them to contradict the current Cloudflare production deployment screenshot or current source until a fresh navigation/refresh is made.
+- Current main source `products.json` confirms the inspected guide has `editorialStatus: Approved for publication` and `publicationStatus: published`; current detail template only renders editorialStatus when it differs from the approved string. This source is consistent with no draft label for that guide in a fresh build.
+- Re-read GSC Page indexing tab: report still shows “Processing data”; Sitemaps navigation link is available but no current sitemap status rows were retrieved. No fresh sitemap parser status confirmed.
+- GSC URL inspection read for sitemap-index.xml, sitemap-0.xml, robots.txt returns “URL is unknown to Google”; this is not a meaningful sitemap-fetch diagnosis and does not imply the sitemap files are blocked. Homepage remains Submitted and indexed.
+- 28-day GSC performance remains homepage-only: 3 impressions, 0 clicks, 88.3 average position through 19 Nov.
+- Next: owner should open the exact preview URL `https://852061d1.smartpickhub.pages.dev/` and `/guides/` in a fresh browser tab for visual review. Separately, open GSC > Indexing > Sitemaps to inspect submitted sitemap status and Last read/Discovered pages/errors. Do not request indexing or resubmit sitemap yet.
+- No production changes, PR, merge, deployment, index requests, IndexNow submissions, product import or paid service.
