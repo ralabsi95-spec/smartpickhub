@@ -2,7 +2,7 @@
 
 - User's immediate KPI is **1,000+ buyer-intent keyword phrases** with measured monthly search frequency prioritised where available, distinctive long-tail terms and clear commercial/transactional intent. This is **not** a 1,000-product publishing target.
 - Current unique keyword universe: **1,612 UK + 1,546 US = 3,158 phrases** across 62 topics per market. UK: 32 cached OpenSEO metric records, 8 exact phrase matches in the dataset; US: 0 measured. Newly added long-tail phrases are unmeasured (null). No monthly trend series available; no paid credits used.
-- Intent by wording: UK 186 transactional / 1426 commercial; US 186 transactional / 1360 commercial. Intent scores are heuristics, not conversion forecasts.
+- Intent by wording: UK 186 transactional / 1,426 commercial; US 186 transactional / 1,360 commercial. Intent scores are heuristics, not conversion forecasts.
 - Product discovery is separate: 62 UK + 22 US staged candidates, 0 verified/publishable. Existing catalogue remains 25 guides / 100 products; do not re-import or overwrite it.
 - Page plans only: UK 25 refresh briefs + 12 new-page candidates; US 25 refresh briefs + 12 topics (10 new-page candidates, 2 refresh-only). No page created or published.
 - Research branch: `research/scale-1000-batch-001`. No PR, merge, deployment, public catalogue, page, metadata or indexability change. Production remains on `main`.
