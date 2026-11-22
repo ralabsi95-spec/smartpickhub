@@ -225,3 +225,20 @@ OpenSEO project audit retrieval used the saved report only; no new audit crawl, 
 - Next verification: in GSC > Performance > Search results, set date range to last 7 days or since Nov 19; inspect Queries and Pages tabs, then compare impressions/clicks and identify the actual landing URLs. Do not repeat manual Request indexing while the daily quota error persists.
 - Evidence source: owner screenshot uploaded in project conversation on 22 Nov 2026 at 08:10 UTC.
 - No site changes, sitemap resubmission, indexing request, PR, CI, merge, deployment, paid service or credentials access performed.
+
+
+## Live GSC performance read — 22 Nov 2026, 08:30 UTC
+- Read the connected Search Console property directly through the existing OpenSEO connection; no credits charged.
+- Query window returned by GSC: 2026-11-13 through 2026-11-19 (Pacific Time; latest ~3 days may be incomplete).
+- Page dimension: 1 row, homepage only — 3 impressions, 0 clicks, CTR 0%, average position 88.3.
+- Query dimension: three rows, each one impression, all mapped to homepage:
+  - `site:pages.dev`: position 77
+  - `site:pages.dev free`: position 170
+  - `site:pages.dev store`: position 18
+- Date dimension: 18 Nov had 0 impressions; 19 Nov had 3 impressions.
+- Country dimension for 19 Nov: USA, 3 impressions. Device: DESKTOP, 3 impressions.
+- Query/page combined dimension confirms all three impressions are homepage impressions; no guide URL appeared in the returned page rows.
+- Interpretation: validates the owner-provided email at property level, but this is extremely early and low-volume visibility. These are site-restricted/brand-agnostic queries, not qualified buying-intent queries. No clicks or guide impressions are recorded in this data window.
+- This does not prove guide URLs are not indexed; Search Console performance rows show pages that actually received impressions in the selected period, while URL Inspection and Page indexing reports are separate.
+- Next: monitor Performance > Pages and Queries over a longer window as fresh data accrues; keep URL inspection for individual guide URLs and sitemap processing as separate workstreams. No repeated manual Request indexing while quota error persists.
+- No production edits, sitemap change/resubmission, PR, CI, merge, deployment, index submission, product import or paid service.
