@@ -1862,3 +1862,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Search performance available: 3 impressions, 0 clicks, homepage only, 19 Nov, USA desktop; no guide-level impressions in the returned period.
 - Sitemap fetch report unresolved; no sitemap change or index requests performed.
 - Next: build/test a minimal local patch and verify sitemap response/header behaviour using a genuinely free route. Check Actions quota before any PR; production changes require explicit approval.
+
+
+## 22 November 2026 — prepared limited guide-card UI fix
+- Created non-production branch `fix/public-editorial-status-2026-11-22` from main.
+- Removed public workflow-status display from homepage featured guide cards and all-guides cards only. Internal catalogue status fields and guide detail behavior remain unchanged.
+- Commits: `81d354065ffcec134fa3ee7727a6661ff3ba0154` and `cd8331f0b8aad5e996edb6edcdf4649acdf21ff1`.
+- Re-fetched both branch files and verified removal. Not yet Astro-build tested or browser visually checked; not merged/deployed.
+- Direct sitemap HTTP inspection remains blocked: web fetch failed and container DNS could not resolve the production host. Need a valid free HTTP inspection path or owner-provided headers/body; do not infer cause from this failure.
+- PR not opened because Actions quota restoration is not verified and PR creation triggers workflow. No production changes or indexing requests.
