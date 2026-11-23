@@ -1555,7 +1555,7 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - No further production code/content/catalogue/affiliate changes were made during this follow-up.
 - Important boundary: the live fetcher strips JSON-LD script content, so rely on the successful generated-HTML smoke test for JSON-LD assertions. Do not state that the Google Rich Results Test or GSC Product report has been re-run across every guide.
 - QA cadence now active: relevant code/product changes receive essential CI; Markdown-only changes skip that full workflow; axe + Lighthouse run weekly Sunday at 03:00 UTC or on manual dispatch. Do not manually trigger the comprehensive audit just to re-check this release.
-- Remaining work: inspect GSC Pages report for actual indexed/not-indexed counts; optional OG images on four non-guide pages remain unapproved and untouched.
+- Remaining work: passively monitor; defer the next GSC Pages/URL Inspection review until on or after 15 December 2026 per owner decision. Optional OG images on four non-guide pages remain unapproved and untouched.
 
 
 **Search Console index-status baseline — 23 November 2026 06:13 UTC**  
