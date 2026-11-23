@@ -1564,3 +1564,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - GSC final Web performance 2026-10-24 to 2026-11-20: homepage only, 0 clicks, 3 impressions, CTR 0%, avg position 88.3; no guide rows in that period.
 - Follow the owner's checkpoint: do not repeatedly request indexing, mass-submit URLs, or alter sitemap/Astro/robots before 15 December 2026. Passively monitor; review GSC Pages and URL Inspection on/after 15 Dec, then decide on targeted escalation from evidence.
 - Read the latest detailed baseline at the end of `MASTER_PROJECT.md`. No site code/content/catalogue/affiliate changes resulted from these read-only GSC checks.
+
+
+## 23 November 2026 06:32 UTC — GSC live-test follow-up / indexing hold
+- Owner provided the live URL Inspection screenshot for `/guides/4k-usb-c-monitors-home-office-us-uk/`: URL available to Google, page can be indexed, one valid Breadcrumbs item; no Product error card visible. Together with the earlier air-fryers screenshot, two live tests are positive.
+- Important distinction: live-test eligibility is not actual indexing. The last actual URL Inspection baseline remains: homepage indexed; 28 sitemap URLs unknown to Google.
+- Owner asked about requesting indexing for the top five. Recommendation: keep the agreed hold until 15 Dec 2026. No request was submitted and no website/sitemap/robots change was made. Do not send mass or repeated requests. An earlier exception requires explicit owner approval.
+- Next: on/after 15 Dec, inspect GSC Pages and actual URL indexing states, then consider a small targeted request only if evidence supports it.
