@@ -1849,3 +1849,8 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - AI visibility: OpenSEO tracker is not configured (zero topics/prompts/runs); engines available in the tool include ChatGPT, Gemini, Google AI Overviews/AI Mode, Claude and Perplexity. Provider integration is configured; current balance 28 credits. No paid AI visibility run or recurring schedule was started. Production wildcard robots allow means OAI-SearchBot and GPTBot inherit crawl permission, but actual crawler visits/WAF passage are unknown. GPTBot training policy remains undecided; do not alter it without separate owner approval.
 - No site, analytics, robots, sitemap, DNS, WAF, content, catalogue, Pinterest board, Pin, scheduling or paid-service changes were made. This was a read-only diagnostic and documentation checkpoint.
 - Next work: confirm Pinterest's five RSS auto-publish mappings and investigate duplicates/missing Dash Cameras; connect/verify Bing Webmaster Tools and submit the canonical sitemap index; inspect verified IndexNow receipts; keep Google indexing passive until 15 Dec; only enable AI visibility collection after an explicit credit/budget decision.
+ 
+
+## 23 November 2026 12:12 UTC — Pinterest board mapping owner confirmation
+- Owner explicitly confirms all five Pinterest RSS feeds are correctly mapped to their intended boards after checking each one in Pinterest settings. The list and mappings are now owner-verified.
+- No Pinterest settings were changed. Continue investigation only into RSS ingestion history, duplicate Pin records, the missing Dash Cameras Pin in the Metricool sample, and reach/engagement.
