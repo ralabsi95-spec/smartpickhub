@@ -147,13 +147,18 @@ for (const file of htmlFiles) {
     if (!parsedJsonLd.length) routeErrors.push('guide page missing JSON-LD structured data');
     const graph = parsedJsonLd.flatMap(item => Array.isArray(item['@graph']) ? item['@graph'] : [item]);
     const article = graph.find(item => item['@type'] === 'Article');
-    const itemList = graph.find(item => item['@type'] === 'ItemList');
+    const itemLists = graph.filter(item => item['@type'] === 'ItemList');
+    const itemList = itemLists[0];
     if (!article) routeErrors.push('guide JSON-LD missing Article type');
+    if (itemLists.length !== 1) routeErrors.push('guide JSON-LD must expose exactly one ItemList node (avoid duplicate comparison lists)');
     if (!itemList) routeErrors.push('guide JSON-LD missing ItemList type');
     if (itemList) {
       const entries = itemList.itemListElement ?? [];
       if (entries.length !== guide.products.length) routeErrors.push('JSON-LD ItemList count does not match catalogue products');
-      if (entries.some(entry => entry.item?.['@type'] !== 'Product')) routeErrors.push('JSON-LD ItemList contains an entry without Product type');
+      if (entries.some(entry => entry.item?.['@type'] !== 'Thing')) routeErrors.push('JSON-LD comparison entries must use descriptive Thing items, not Product rich-result entities');
+      if (entries.some(entry => !entry.item?.name)) routeErrors.push('JSON-LD comparison item is missing its product name');
+      if (graph.some(item => item['@type'] === 'Product')) routeErrors.push('Editorial comparison guide must not emit Product rich-result entities without verified offer/review data');
+      if (article?.mainEntity?.['@id'] !== itemList['@id']) routeErrors.push('Article mainEntity must reference the single ItemList node by @id');
     }
 
     const amazonLinks = [];

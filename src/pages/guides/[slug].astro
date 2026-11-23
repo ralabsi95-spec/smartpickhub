@@ -36,11 +36,12 @@ const itemList = {
   name: `${guide.title} — product comparison`,
   numberOfItems: products.length,
   itemListOrder: 'https://schema.org/ItemListOrderAscending',
+  '@id': `${canonicalUrl}#product-comparison`,
   itemListElement: products.map((product, index) => ({
     '@type': 'ListItem',
     position: index + 1,
     item: {
-      '@type': 'Product',
+      '@type': 'Thing',
       name: product.name,
       description: product.verdict ?? product.bestFor ?? undefined
     }
@@ -58,7 +59,7 @@ const structuredData = {
       author: { '@type': 'Organization', name: 'SmartPickHub' },
       publisher: { '@type': 'Organization', name: 'SmartPickHub' },
       mainEntityOfPage: canonicalUrl,
-      mainEntity: itemList
+      mainEntity: { '@id': `${canonicalUrl}#product-comparison` }
     },
     {
       '@type': 'BreadcrumbList',

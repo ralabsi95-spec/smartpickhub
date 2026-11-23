@@ -2,9 +2,17 @@ name: Astro Build and Quality Checks
 
 on:
   push:
-    branches: [main, automation/bootstrap, automation/bootstrap-20261119, security/astro7-upgrade-assessment]
+    branches: [main]
+    paths-ignore:
+      - '**/*.md'
+      - 'docs/**'
   pull_request:
-    branches: [main, automation/bootstrap, automation/bootstrap-20261119]
+    branches: [main]
+    paths-ignore:
+      - '**/*.md'
+      - 'docs/**'
+  schedule:
+    - cron: '0 3 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -12,7 +20,7 @@ permissions:
 
 concurrency:
   group: smartpickhub-quality-${{ github.event_name }}-${{ github.head_ref || github.ref_name }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build-and-audit:
@@ -62,18 +70,22 @@ jobs:
           done
           cat /tmp/smartpickhub-preview.log
           exit 1
-      - name: Install Chromium for accessibility audit
+      - name: Install Chromium for scheduled comprehensive accessibility audit
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: npx playwright install --with-deps chromium
       - name: axe-core accessibility audit on every catalogue route
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: npm run accessibility
         env:
           BASE_URL: http://127.0.0.1:4321
       - name: Lighthouse audit - homepage desktop and mobile
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
           mkdir -p test-reports/lighthouse
           npx --yes lighthouse http://127.0.0.1:4321/ --preset=desktop --only-categories=performance,accessibility,best-practices,seo --output=json --output-path=test-reports/lighthouse/home-desktop.json --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage"
           npx --yes lighthouse http://127.0.0.1:4321/ --form-factor=mobile --only-categories=performance,accessibility,best-practices,seo --output=json --output-path=test-reports/lighthouse/home-mobile.json --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage"
       - name: Lighthouse audit - representative page templates
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         shell: bash
         run: |
           mkdir -p test-reports/lighthouse
