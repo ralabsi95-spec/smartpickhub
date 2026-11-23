@@ -1854,3 +1854,13 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 ## 23 November 2026 12:12 UTC — Pinterest board mapping owner confirmation
 - Owner explicitly confirms all five Pinterest RSS feeds are correctly mapped to their intended boards after checking each one in Pinterest settings. The list and mappings are now owner-verified.
 - No Pinterest settings were changed. Continue investigation only into RSS ingestion history, duplicate Pin records, the missing Dash Cameras Pin in the Metricool sample, and reach/engagement.
+
+
+## 23 November 2026 12:15 UTC — Pinterest follow-up and analytics correction
+- Owner confirms all five Pinterest RSS feeds are correctly mapped to their intended boards. Do not ask again unless evidence contradicts it.
+- Source verification: RSS arrays contain 25 guide slugs (5/5/6/6/3), all unique; no duplicate slugs across feeds. All five live feeds contain the expected 25 guide items.
+- Pinterest RSS auto-publish is event-driven, not a fixed Metricool schedule: Pinterest says updated feed content is normally added within 24 hours, oldest first, up to 200 Pins/day. Official help says a Pin image can be sourced from image/enclosure/media:content. Current feed generator emits the same image URL in both enclosure and media:content; this is a candidate cause for duplicate Pin ingestion, not proven. Do not change it without a controlled test.
+- Detailed Metricool records: 29 unique Pin IDs (25 on 19 Nov, 4 on 21 Nov), 24 unique titles, five duplicated title pairs: Smartwatches, Noise-Cancelling Headphones, Home Espresso Machines, NAS, Smart Home Security Cameras. Paired Pins have same title/description but different IDs; public pages do not reveal board placement/root cause. Do not delete.
+- Dash Cameras is missing from Metricool's retrieved Pin set despite being present in the Travel & Tech RSS feed. No duplicate slug exists in source; ingestion reason unknown.
+- Corrected metrics: account Evolution (5–23 Nov) = 325 impressions, 7 interactions, 6 Pin clicks, 1 save, 0 outbound clicks, 37 followers latest reported. The selected 29-post sample = 31 impressions, 0 saves, 0 Pin clicks, 0 outbound clicks at retrieval. 19 Nov accounts for 31 published impressions; 21 Nov has 4 published Pins but 0 published impressions at retrieval. Keep account and selected-Pin scopes separate.
+- No Pinterest, feed, website or social content changes. Next: inspect board-level history for duplicate IDs and missing Dash Cameras; controlled one-item RSS test before any generator adjustment. No bulk manual Pins.
