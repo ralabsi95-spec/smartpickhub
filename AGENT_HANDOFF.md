@@ -1,3 +1,16 @@
+**Current verified checkpoint — 23 November 2026 06:00 UTC**  
+- Latest main documentation commit: `25fa7718fcd5146fa2f44653abd73b30b77aad0b`. Release merge commit: `03abb338693f29de1cca36a8f92ceec28aa4cf9a`.
+- PR #35 merged and deployed. Exact merge-SHA `build-and-audit` passed (run `45120840750`); Cloudflare Pages production, Cloudflare Pages preview and Workers Builds checks all passed on the merge SHA.
+- Production URL: https://smartpickhub.pages.dev/ . Isolated preview: https://smartpickhub-preview.pages.dev/ .
+- Live production fetch of `/guides/air-fryers-us-uk/` returned HTTP content successfully; canonical is self-referencing and robots metadata is `index, follow`. The extraction service strips script tags, so deployed JSON-LD body was not independently parsed in this check. Exact-SHA smoke tests passed and enforce one ItemList, Article.mainEntity @id linkage and Thing entries. A fresh GSC live test is still required; do not claim Google has reprocessed the page.
+- PR #35 introduced `PRODUCT_STRUCTURED_DATA_POLICY.md` (mandatory for future product intake) and quota-aware CI: core checks on code/content PRs and main changes, docs-only Markdown skipped, full axe/Lighthouse weekly Sundays 03:00 UTC or manual dispatch. No comprehensive run was invoked for this release.
+- Catalogue remains 25 guides / 100 products; no catalogue/product/content/affiliate CTA/sitemap/crawler/analytics changes were made by this release.
+- IndexNow notification run `45120919978` was still in progress at checkpoint; run `45120920054` was skipped. Verify before claiming any submission or acceptance.
+- Next: check completion/result of IndexNow notification; owner to rerun GSC live URL test for `https://smartpickhub.pages.dev/guides/air-fryers-us-uk/`; continue agreed index monitoring through 15 December 2026 without repetitive indexing requests. Read latest dated entry in `MASTER_PROJECT.md` for details.
+- Important: older historical entries below may say PR #35 is unmerged or deployment pending; those statements are superseded by the checkpoint and 23 November 06:00 UTC release entry in `MASTER_PROJECT.md`.
+
+---
+
 **Last verified:** 19 November 2026 20:24 UTC; latest checked main before this documentation refresh: `ddf8f636fb8493ba6a6d087d2c1864e9bbfd3e00`. Main-SHA build-and-audit, Cloudflare Pages production, Cloudflare Pages preview, and Workers checks all completed successfully on that SHA.  
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `main` (production)  
