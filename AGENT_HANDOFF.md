@@ -1556,3 +1556,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Important boundary: the live fetcher strips JSON-LD script content, so rely on the successful generated-HTML smoke test for JSON-LD assertions. Do not state that the Google Rich Results Test or GSC Product report has been re-run across every guide.
 - QA cadence now active: relevant code/product changes receive essential CI; Markdown-only changes skip that full workflow; axe + Lighthouse run weekly Sunday at 03:00 UTC or on manual dispatch. Do not manually trigger the comprehensive audit just to re-check this release.
 - Remaining work: inspect GSC Pages report for actual indexed/not-indexed counts; optional OG images on four non-guide pages remain unapproved and untouched.
+
+
+**Search Console index-status baseline — 23 November 2026 06:13 UTC**  
+- OpenSEO project uses verified GSC property `https://smartpickhub.pages.dev/` (siteOwner). Do not use the legacy InfinityFree property.
+- URL Inspection queried all 29 sitemap URLs: homepage is `Submitted and indexed` (successful fetch, robots allowed, matching Google/user canonical); 28 others (all 25 guides plus `/guides/`, `/affiliate-disclosure/`, `/how-we-research/`) returned `URL is unknown to Google`, with unspecified indexing state. This is not evidence of a noindex/robots block: live page-head audit showed index-follow and self-canonical. The air-fryers live URL test screenshot means eligible to be indexed, not already indexed.
+- GSC final Web performance 2026-10-24 to 2026-11-20: homepage only, 0 clicks, 3 impressions, CTR 0%, avg position 88.3; no guide rows in that period.
+- Follow the owner's checkpoint: do not repeatedly request indexing, mass-submit URLs, or alter sitemap/Astro/robots before 15 December 2026. Passively monitor; review GSC Pages and URL Inspection on/after 15 Dec, then decide on targeted escalation from evidence.
+- Read the latest detailed baseline at the end of `MASTER_PROJECT.md`. No site code/content/catalogue/affiliate changes resulted from these read-only GSC checks.
