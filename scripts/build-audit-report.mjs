@@ -73,13 +73,22 @@ const exceptionReview = uniqueAdvisories.map(item => {
 const expectedAxeRoutes = guides.length + 3;
 // Five deliberate samples: homepage desktop/mobile, guide index, disclosure and one guide.
 const expectedLighthousePages = 5;
-const axeStatus = axeSummary?.status ?? (axeFiles.length ? 'partial' : 'missing');
-const lighthouseStatus = lighthousePages.length === expectedLighthousePages ? 'completed' : 'partial';
-const checksPassed = validation?.status === 'passed' && smoke?.status === 'passed' && axeStatus === 'passed' && lighthouseStatus === 'completed';
+const comprehensiveAudit = ['schedule', 'workflow_dispatch'].includes(process.env.GITHUB_EVENT_NAME);
+const axeStatus = !comprehensiveAudit
+  ? 'deferred-to-weekly-comprehensive-audit'
+  : (axeSummary?.status ?? (axeFiles.length ? 'partial' : 'missing'));
+const lighthouseStatus = !comprehensiveAudit
+  ? 'deferred-to-weekly-comprehensive-audit'
+  : (lighthousePages.length === expectedLighthousePages ? 'completed' : 'partial');
+const coreChecksPassed = validation?.status === 'passed' && smoke?.status === 'passed';
+const comprehensiveChecksPassed = !comprehensiveAudit || (axeStatus === 'passed' && lighthouseStatus === 'completed');
+const checksPassed = coreChecksPassed && comprehensiveChecksPassed;
 
 const overallStatus = !checksPassed
   ? 'incomplete-or-failed'
-  : vulnerabilitySummary?.total && (axeSummary?.totalIncomplete ?? 0) > 0
+  : !comprehensiveAudit
+    ? 'core-passed-comprehensive-audit-deferred'
+    : vulnerabilitySummary?.total && (axeSummary?.totalIncomplete ?? 0) > 0
     ? 'quality-passed-security-review-and-manual-accessibility-review-required'
     : vulnerabilitySummary?.total
       ? 'quality-passed-security-review-required'
@@ -92,6 +101,10 @@ const report = {
   generatedAt: new Date().toISOString(),
   commit: process.env.GITHUB_SHA ?? null,
   runtime: { node: process.version, platform: process.platform },
+  auditCadence: {
+    mode: comprehensiveAudit ? 'comprehensive' : 'essential',
+    comprehensiveChecks: comprehensiveAudit ? 'executed' : 'deferred-to-weekly-or-manual-run'
+  },
   previewSafety: {
     robotsTxtDisallowAll: smoke?.robotsTxtDisallowAll ?? null,
     noindexVerified: smoke?.status === 'passed',
