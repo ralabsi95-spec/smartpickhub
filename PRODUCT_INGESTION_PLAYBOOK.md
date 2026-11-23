@@ -188,6 +188,10 @@ Every import batch and candidate record must pass the applicable checks:
 
 Hard failures block the record. Warnings create a review task. No automated score can override a missing rights basis or unresolved product identity.
 
+## 10A. Structured data and Google Product eligibility (mandatory)
+
+Before adding any product or changing guide templates, follow [PRODUCT_STRUCTURED_DATA_POLICY.md](PRODUCT_STRUCTURED_DATA_POLICY.md). Editorial comparison guides use one `ItemList` with descriptive `Thing` entries; `Article.mainEntity` references that one list by `@id`. Do not emit Product rich-result entities or duplicate ItemList nodes in comparison guides. `offers`, `review` and `aggregateRating` are permitted only when genuine, current, region-specific and source-backed, visible to readers, and compliant with Google's current requirements. Never invent fields to silence Search Console. Catalogue additions must retain this policy and pass the generated-page JSON-LD smoke test.
+
 ## 11. Review queue and statuses
 
 Use explicit lifecycle states:
