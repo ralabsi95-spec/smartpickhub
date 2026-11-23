@@ -1587,3 +1587,13 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 ## 23 November 2026 12:12 UTC — Pinterest handoff update
 - Owner confirmed all five RSS feeds are correctly mapped to their intended Pinterest boards. Do not ask for this check again.
 - No settings were edited. Next Pinterest work: explain/check native RSS ingestion history, inspect duplicate Pin records and the absent Dash Cameras record, then improve reach without creating duplicate Pins.
+
+
+## 23 November 2026 12:15 UTC — Pinterest ingestion diagnosis handoff
+- Owner confirmed all five RSS-to-board mappings correct. Do not repeat that request.
+- Source code arrays verified: 25 slugs across five feeds (5/5/6/6/3), all 25 unique, no cross-feed duplicate slug. Live feeds contain 25 approved guide items.
+- Pinterest official RSS behavior: feed updates are event-driven; items generally added within 24h, oldest first, max 200/day. Images may be read from `<image>`, `<enclosure>`, and `<media:content>`. Current RSS generator emits the same image URL in both enclosure and media:content; plausible duplicate source, not proven. Do not change live RSS generator without controlled test and owner approval.
+- Metricool shows 29 unique Pin IDs (25 dated 19 Nov, 4 dated 21 Nov), 24 unique titles and five repeated title pairs: Smartwatches, Noise-Cancelling Headphones, Espresso, NAS, Security Cameras. Same title/description pairs but different Pin IDs; public pages do not reveal board placement. Do not delete.
+- Dash Cameras is present in Travel & Tech feed but absent from the 29 retrieved Pin records. Cause unknown; check Pinterest board history/feed ingestion.
+- Corrected account metrics (5–23 Nov): 325 impressions, 7 interactions, 6 pin clicks, 1 save, 0 outbound clicks; latest follower count 37. Separate 29-Pin sample: 31 impressions and 0 saves/clicks/outbound at retrieval. Never conflate account-level and Pin-level scopes.
+- No changes made. Next: inspect actual board Pin history for duplicates and missing Dash Cameras, then test one newly approved feed item. Only consider single-image-tag RSS change after controlled evidence and owner approval.
