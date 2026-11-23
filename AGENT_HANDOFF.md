@@ -1,3 +1,16 @@
+**Latest live SEO/indexability checkpoint — 23 November 2026 06:10 UTC**  
+- Latest audit record is at the end of `MASTER_PROJECT.md`. The current public sitemap has 29 URLs: 25 guides plus homepage, guide library, affiliate disclosure and How We Research.
+- Live `robots.txt` allows wildcard crawling and declares `https://smartpickhub.pages.dev/sitemap-index.xml`.
+- All 25 guide pages returned successfully in live head-metadata audit: self-canonical matched each URL, robots `index, follow, max-image-preview:large`, title and meta description present; every title <=60 characters and description <=160 characters; guide pages expose OG image metadata.
+- Four non-guide pages also returned with self-canonical, index-follow, title and description. OG image metadata was not detected on those four; optional social-preview improvement only, no indexing blocker established.
+- Owner's 23 Nov GSC live-test screenshot for the air-fryers guide shows URL available to Google, page can be indexed and one valid Breadcrumb item; no Product error cards shown. This proves only that page's live test, not that all URLs are indexed.
+- The extraction tool strips JSON-LD script bodies; do not claim independent live parsing of all scripts. However exact merged-SHA build-and-audit run #45120840750 passed, and repository smoke test validates every generated HTML page plus every guide's Article/BreadcrumbList/one ItemList/Thing entries/no Product rich-result entity/Article.mainEntity linkage, canonical, robots, internal links and both Amazon markets.
+- No code/content/catalogue/affiliate/sitemap/robots change was made in the site-wide audit. Latest documentation update follows this checkpoint.
+- Next: inspect GSC Pages report for actual indexed/not-indexed counts across all 29 sitemap URLs. Use live URL test selectively for anomalies/priority pages; avoid repetitive indexing requests. Do not assume all pages are indexed merely because all are indexable.
+- Optional, not yet approved: add OG image metadata to the four non-guide pages for better social previews.
+
+---
+
 **Current verified checkpoint — 23 November 2026 06:00 UTC**  
 - Latest main documentation commit: `25fa7718fcd5146fa2f44653abd73b30b77aad0b`. Release merge commit: `03abb338693f29de1cca36a8f92ceec28aa4cf9a`.
 - PR #35 merged and deployed. Exact merge-SHA `build-and-audit` passed (run `45120840750`); Cloudflare Pages production, Cloudflare Pages preview and Workers Builds checks all passed on the merge SHA.
