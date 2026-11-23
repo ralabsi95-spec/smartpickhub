@@ -1597,3 +1597,14 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Dash Cameras is present in Travel & Tech feed but absent from the 29 retrieved Pin records. Cause unknown; check Pinterest board history/feed ingestion.
 - Corrected account metrics (5–23 Nov): 325 impressions, 7 interactions, 6 pin clicks, 1 save, 0 outbound clicks; latest follower count 37. Separate 29-Pin sample: 31 impressions and 0 saves/clicks/outbound at retrieval. Never conflate account-level and Pin-level scopes.
 - No changes made. Next: inspect actual board Pin history for duplicates and missing Dash Cameras, then test one newly approved feed item. Only consider single-image-tag RSS change after controlled evidence and owner approval.
+
+
+## 23 November 2026 12:24 UTC — Pinterest automation approved target / handoff
+- Owner approved free automated target: 3 Pins/day for the whole account; can scale later based on measured performance. No new paid subscriptions; minimize owner intervention.
+- Read `PINTEREST_AUTOPUBLISH_AUTOMATION_PLAN.md` before implementation. It is design-only; no production change authorized yet.
+- Current code: `src/pages/rss/[board].xml.js` outputs all eligible guides per board, sorted newest-first. 25 unique guide slugs across five feeds. Each item repeats the same image URL in `<enclosure>` and `<media:content>`. No Pinterest queue, schedule workflow, API integration, Pages Functions or KV binding exists.
+- Existing Actions: build-check, draft-research, IndexNow workflows; build-check runs full core CI for main code pushes and Cloudflare Pages deployment follows main changes.
+- Proposed first implementation: queue/manifest + deterministic idempotent scheduler in GitHub Actions at 07:00/12:00/17:00 UTC, max one item per slot / three daily, then normal Pages deployment updates RSS. Pinterest may ingest with up to 24h delay; exact publish time cannot be guaranteed. No paid tools.
+- Bootstrap blocker: do not hide or re-release the existing 25 feed entries until per-board Pinterest ingestion is reconciled. Metricool has 29 Pin IDs; user screenshot shows Travel & Tech has 7 Pins only. New cadence should first govern future approved guides.
+- No code, feeds, Pinterest settings, or production config changed. Plan doc commit: `215a76bffe1cfdc86a99f699c56ccd62c867c8b3`.
+- Next: separate-branch PR and preview tests only; preserve current production RSS; request explicit go-live approval after owner reviews exact queue and evidence.
