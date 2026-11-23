@@ -1582,3 +1582,8 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Bing Webmaster Tools property/ownership and sitemap processing are not confirmed. IndexNow workflow exists but acceptance must be evidenced by a completed run/receipt. Bing AI Performance can show Copilot/partner citations after BWT is connected; DDG's traditional links are largely sourced from Bing.
 - OpenSEO AI tracker `configured=false`, no prompts/topics/runs; provider integration configured; engines available: ChatGPT, Gemini, Google AI Overviews, Google AI Mode, Claude, Perplexity. Balance 28 credits; no paid collection or recurring tracker activated. Production wildcard robots allows OAI-SearchBot and GPTBot by inheritance; actual visits/WAF passage unknown. GPTBot training policy remains undecided.
 - No site/Pin/board/analytics/crawler/sitemap/robots/DNS/WAF change or paid check occurred. Continue read-only until account-side verification and owner budget/approval.
+ 
+
+## 23 November 2026 12:12 UTC — Pinterest handoff update
+- Owner confirmed all five RSS feeds are correctly mapped to their intended Pinterest boards. Do not ask for this check again.
+- No settings were edited. Next Pinterest work: explain/check native RSS ingestion history, inspect duplicate Pin records and the absent Dash Cameras record, then improve reach without creating duplicate Pins.
