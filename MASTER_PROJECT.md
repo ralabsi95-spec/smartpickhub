@@ -1951,3 +1951,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Google Search Console baseline from 23 Nov: homepage indexed; 28 other sitemap URLs (25 guides + 3 pages) reported `URL is unknown to Google` at that snapshot, not a technical noindex/robots block. No GSC recheck on 24 Nov yet.
 - Next diagnostic: on the same Portable Power URL, run Bing **Live URL** inspection and capture any live SEO/GEO issue / crawlability result. Do not request indexing yet. Then use GSC URL Inspection for this exact URL to obtain Google's current Page indexing reason. Do not change page or sitemap before these diagnostics.
 - No production changes, no indexing requests, no sitemap/robots changes.
+
+
+## 24 November 2026 — Bing Live URL clears Portable Power concerns
+- Owner screenshot for `https://smartpickhub.pages.dev/guides/portable-power-travel-tech-us-uk/`, Bing **Live URL** tab, tested 08:16: **URL can be indexed by Bing**, **No SEO/GEO issues found**, markup detected: **JSON-LD** and **OpenGraph**.
+- Earlier Bing Index tab for the same URL showed **Blocked**. Live test demonstrates the currently fetched page is crawlable/eligible and has no reported SEO/GEO issue. The indexed-state block remains an index-side serving/status discrepancy; its specific reason is not exposed by either screenshot. Do not claim the URL is indexed in Bing yet.
+- Together with live checks showing the URL in sitemap and robots.txt allowing crawling, there is no current evidence of a page-level technical block. Remaining possibilities include Bing's indexed snapshot / quality / serving decision; cannot diagnose further without Bing Site Explorer / URL details or recrawl.
+- Next: inspect this exact URL in Google Search Console URL Inspection (not Bing), record Page indexing status/reason and last crawl. Do not click Bing Request indexing or Google Request indexing until the GSC reason is known; then decide on one targeted request if appropriate.
+- No production code/config changes, no indexing request submitted.
