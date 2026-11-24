@@ -1608,3 +1608,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Bootstrap blocker: do not hide or re-release the existing 25 feed entries until per-board Pinterest ingestion is reconciled. Metricool has 29 Pin IDs; user screenshot shows Travel & Tech has 7 Pins only. New cadence should first govern future approved guides.
 - No code, feeds, Pinterest settings, or production config changed. Plan doc commit: `215a76bffe1cfdc86a99f699c56ccd62c867c8b3`.
 - Next: separate-branch PR and preview tests only; preserve current production RSS; request explicit go-live approval after owner reviews exact queue and evidence.
+
+
+## 24 November 2026 07:35 Asia/Amman — Pinterest quota-safe design update
+- Owner's concern: avoid GitHub Actions/Cloudflare quota overuse. Official docs: standard GitHub-hosted runners are free on public repos; Cloudflare Pages Free = 500 builds/month, one concurrent build.
+- Revised plan: one daily scheduled Actions run releases up to 3 new guides across feeds in one manifest update / one Pages deployment (~30 scheduled Pages builds/month, plus normal site updates), rather than three separate deployments daily.
+- No Larger Runners, paid SaaS, paid API, or new subscription. Do not run comprehensive axe/Lighthouse in daily scheduler; keep existing weekly/manual comprehensive cadence.
+- Add concurrency, idempotency, max 3 releases/day and a monthly deployment-budget kill switch. Actual Pages usage must be checked in Cloudflare dashboard; do not assume full 500 remains.
+- Worker/Pages Function alternative deferred due to extra architecture; revisit only if measured quota/build pressure justifies.
+- Read updated `PINTEREST_AUTOPUBLISH_AUTOMATION_PLAN.md`. No code/workflow/production change; scheduler not enabled; explicit production go-live approval still required.
