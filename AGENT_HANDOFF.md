@@ -1702,3 +1702,13 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Next: one targeted GSC Request indexing for this URL is appropriate after successful live test because Google explicitly recommends it for URL unknown. Request is not a guarantee. User has not yet confirmed clicking.
 - Separately verify GSC > Sitemaps has `https://smartpickhub.pages.dev/sitemap-index.xml` submitted, Status Success, discovered page count. Don't resubmit/change if successful.
 - No production change and no request submitted by assistant.
+
+
+## 24 November 2026 — Research handoff: five new UK-first clusters
+- Research file: `research/uk-opportunity-clusters-2026-11-24.json`.
+- Branch: `research/uk-opportunity-clusters-2026-11-24`; initial commit `2bd9895aec73a94bf661cfdc00efc76d393c1396`.
+- Five clusters and 63 keyword phrases are captured, with topics, audiences and buyer needs. All records remain `research-only`.
+- Do not import products, create public routes, publish guides, change sitemap/robots, or notify IndexNow from this file.
+- No keyword volume, difficulty, CPC, trend, SERP composition, product suitability or Amazon offer availability has been independently verified. Phrases are candidate seeds, not measured demand.
+- Next operator: compare each phrase against existing 25 guide targets and the saved keyword universe; gather dated UK SERP evidence and source-backed demand metrics where available; record overlap/cannibalization and buyer intent. Then prepare separate product research candidates. US equivalents require their own independent market validation.
+- Keep this research PR separate from GA4 consent PR #38. Production remains unchanged.
