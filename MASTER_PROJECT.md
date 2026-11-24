@@ -1971,3 +1971,18 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Critical distinction: this is a live eligibility test, not proof of inclusion in Google's index. The Google Index tab is still needed to establish actual indexing state, reason if not indexed, last crawl and Google-selected canonical.
 - Next: owner switches to **GOOGLE INDEX** tab for the same exact URL and shares the full result. Do not click Request Indexing yet; decide after reading actual index status and exclusion reason.
 - No code/content/sitemap/robots changes and no indexing request submitted.
+
+
+## 24 November 2026 — Google Index diagnosis: Portable Power is undiscovered (not crawled/rejected)
+- Owner GSC GOOGLE INDEX screenshot for `/guides/portable-power-travel-tech-us-uk/`:
+  - `URL is not on Google`
+  - Page indexing: `URL is unknown to Google`
+  - Sitemaps: `No referring sitemaps detected`
+  - Referring page: `None detected`
+  - Last crawl / Crawled as / Crawl allowed / Page fetch / Indexing allowed: `N/A`
+- Interpretation per official Google URL Inspection docs: `URL is unknown to Google` means Google has not seen this URL before. This is not a crawl rejection, quality rejection, noindex or robots block; no crawl has been recorded. The "No referring sitemap" field does not prove the sitemap is broken or unsubmitted: Google reports sitemaps that it can associate with a URL, and an unknown URL may not yet have been processed against the sitemap. Sitemap report submission/processing status should be checked separately.
+- Same URL's GSC LIVE TEST passed: URL available to Google, page can be indexed, one valid Breadcrumb. Bing Live URL also passed with no SEO/GEO issues, JSON-LD and OpenGraph. Live eligibility is distinct from index inclusion.
+- The page is confirmed present in live sitemap-0.xml and robots.txt allows all crawlers. Therefore do not change sitemap, robots, canonical or page content based on this screenshot.
+- Recommended targeted next action: submit this one URL using GSC **Request indexing**, because Google explicitly recommends this for `URL is unknown to Google` after a successful live test. This is one targeted request, not mass submission; request does not guarantee indexing and processing can take days or longer. Owner has not yet confirmed clicking it.
+- Separately open GSC > Sitemaps and verify whether `https://smartpickhub.pages.dev/sitemap-index.xml` is listed with Status Success and discovered page count. Do not resubmit or change sitemap if already successful.
+- No code/site changes and no indexing request submitted by assistant.
