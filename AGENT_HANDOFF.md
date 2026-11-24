@@ -1692,3 +1692,13 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - These confirm live eligibility only, not actual Google index inclusion. Need inspect **GOOGLE INDEX** tab for status, reason, last crawl and Google-selected canonical.
 - Next single step: owner selects GOOGLE INDEX tab for same URL and shares screenshot. Do not request indexing before reviewing result.
 - No production changes or indexing requests.
+
+
+## 24 November 2026 — Google Portable Power index diagnosis
+- GSC GOOGLE INDEX screenshot: URL is not on Google; reason `URL is unknown to Google`; Sitemaps `No referring sitemaps detected`; Referring page none; Last crawl and crawl fields N/A.
+- Official Google interpretation: URL unknown = Google has not seen this URL before. Not a crawl/quality/noindex/robots rejection. No referring sitemap does not prove broken/unsubmitted sitemap; URL Inspection reports sitemap associations, and unknown URL may not yet have been processed against sitemap.
+- GSC LIVE TEST for same URL passed (available to Google, can be indexed, 1 valid Breadcrumb); Bing Live URL also passed with no SEO/GEO issue and JSON-LD/OpenGraph. Live eligibility does not equal indexed.
+- URL is present in live sitemap-0.xml and robots.txt allows all crawlers. Do not alter page, canonical, robots or sitemap based on this screenshot.
+- Next: one targeted GSC Request indexing for this URL is appropriate after successful live test because Google explicitly recommends it for URL unknown. Request is not a guarantee. User has not yet confirmed clicking.
+- Separately verify GSC > Sitemaps has `https://smartpickhub.pages.dev/sitemap-index.xml` submitted, Status Success, discovered page count. Don't resubmit/change if successful.
+- No production change and no request submitted by assistant.
