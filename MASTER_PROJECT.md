@@ -2134,3 +2134,9 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - No Amazon identifiers, ASINs, prices, ratings, availability claims, product counts, guide titles, publication dates, affiliate IDs, sitemap, robots rules, Cloudflare settings, or production content were changed. Unverified regional search phrases (including Roborock Saros 10R UK) remain flagged and unchanged because the validator requires both marketplace fields and no exact UK listing was verified; changing the phrase would risk inventing a product-market match.
 - Validation status: source edits prepared on the isolated branch. GitHub Actions CI/build and rendered-page checks are still required; do not merge or deploy until the PR checks pass and the owner reviews the diff.
 - Next step: open a draft pull request for review, then run the repository's full check/validate/build/smoke/accessibility workflow on the PR head. Production remains unchanged.
+
+
+## 24 November 2026 — CTA placement correction following owner clarification
+- Owner clarified that the two Amazon marketplace button groups per product are intentional: the first group is an early/quick action for visitors who do not scroll through the full guide, while the second appears after product details for readers who review the evidence before clicking.
+- Reinstated the early marketplace button group near the product heading on the review branch. Both CTA positions are retained; the explanatory affiliate-context paragraph remains once per product, and the shared footer remains the sole general Amazon Associate disclosure. The change removes the accidental loss of a deliberate conversion/UX feature from the initial batch remediation.
+- No change to marketplace destinations, tracking IDs, button behavior, product data, or production. PR #37 remains a draft and requires CI/rendered-page review before merge.
