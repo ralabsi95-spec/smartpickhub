@@ -1875,3 +1875,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Critical bootstrap: current Pinterest ingestion of all 25 existing RSS entries is not reconciled. Metricool reports 29 Pin IDs, but owner screenshot only confirms Travel & Tech board has 7 Pins. Do not hide existing items or activate cadence until per-board legacy GUID inventory is reconciled. Initially apply 3/day only to future approved guides.
 - No code, workflows, feed output, Pinterest settings or production configuration changed. New design document created: `PINTEREST_AUTOPUBLISH_AUTOMATION_PLAN.md`, commit `215a76bffe1cfdc86a99f699c56ccd62c867c8b3`.
 - Owner approved the objective and cadence target, not yet production activation. Next: build and test a PR/preview-only implementation, preserve current production RSS behavior until bootstrap, and request explicit go-live approval after review.
+
+
+## 24 November 2026 07:35 Asia/Amman — Pinterest automation quota safeguard
+- Owner concerned about GitHub Actions / deployment usage. Official current documentation reviewed: standard GitHub-hosted runners are free for public repositories; Cloudflare Pages Free allows 500 builds/month and one concurrent build.
+- Refined the proposed Pinterest automation: do not trigger three separate site builds daily. Release up to three new guide items in one daily batch/manifest update, producing about 30 scheduled Pages builds/month, plus ordinary code-change builds. This preserves the target of up to 3 Pins/day without 90 scheduled deployments/month.
+- One GitHub Actions standard runner workflow daily; no Larger Runners, paid SaaS, paid API or paid subscription. Keep weekly comprehensive axe/Lighthouse checks unchanged; daily scheduler must not invoke comprehensive audits.
+- Add concurrency/idempotency, max-three/day and monthly build-budget kill switch. Actual Cloudflare account usage remains to be checked in dashboard; 500 is plan limit, not proof of remaining quota.
+- A Cloudflare Worker/Pages Function with state store could avoid daily builds but adds complexity and is deferred unless measured usage requires it.
+- Design document updated: `PINTEREST_AUTOPUBLISH_AUTOMATION_PLAN.md`, commit `23a8d819c620c49a37619a515c7e674c855e03a5`. No code/workflow/production changes; no scheduled publishing enabled. Continue PR/preview-only until explicit production go-live approval.
