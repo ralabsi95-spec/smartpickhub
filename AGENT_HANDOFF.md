@@ -1663,3 +1663,9 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Bing Live URL for Air Fryers: URL can be indexed, no SEO/GEO issues; expanded markup section lists **JSON-LD** and **OpenGraph**.
 - Interpretation: Bing recognizes structured data and social metadata on the current live page; not a claim that all schema properties qualify for rich results.
 - No code edits, no indexing request.
+ 
+
+## 24 November 2026 — Next Bing inspection target
+- Correct verified URL (do not use the previously suggested incorrect slug): `https://smartpickhub.pages.dev/guides/portable-power-travel-tech-us-uk/`
+- Live fetch confirms deployed title `Portable Power Banks & Stations: US & UK Guide` and published/approved guide record. H1 is `Portable Power & Travel Tech: Power Banks and Compact Power Stations`.
+- Next: owner checks Bing Webmaster Tools > URL Inspection > Bing Index for this exact URL; do not request indexing yet.
