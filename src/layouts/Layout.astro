@@ -12,6 +12,14 @@ const isPreviewBuild = process.env.DEPLOYMENT_ENV === 'preview' || (Boolean(proc
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google tag (gtag.js) — GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7XK4V953R"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){window.dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Q7XK4V953R');
+    </script>
     <meta name="robots" content={isPreviewBuild ? "noindex, nofollow" : "index, follow, max-image-preview:large"} />
     <meta name="google-site-verification" content="zH0EHPDRo5BI_WTJ_OnnD-aDAMc8U0ZORttx4Xs4TCs" />
     {pinterestVerifyCode && <meta name="p:domain_verify" content={pinterestVerifyCode} />}
