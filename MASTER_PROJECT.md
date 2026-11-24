@@ -2274,3 +2274,34 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Interpretation: this confirms the sitemap endpoints were publicly retrievable from the user's test environment at that timestamp and served XML to both request variants. Manually setting a Googlebot User-Agent does not authenticate or emulate verified Googlebot. This does not prove Google's actual fetch, Search Console acceptance, URL discovery, or indexing. Earlier Search Console `Couldn't fetch` / processing state remains an unresolved Search Console-side observation until its report changes or verified crawler logs/URL details provide new evidence.
 - Preserve the agreed crawl observation window through 8 December 2026. Avoid repeated indexing requests, bulk IndexNow submissions, or quota-consuming URL inspections unless a new concrete failure is observed. Record dated deltas only.
 - This branch/PR is research-only and must remain unmerged until the owner reviews it. No production change has been made.
+
+## Consolidated handoff snapshot — 24 November 2026 (verified status at this session)
+### Search discovery and indexing
+- Google: homepage previously confirmed indexed/crawled around 19 Nov. `/guides/` and `/guides/portable-power-travel-tech-us-uk/` were reported as URL unknown to Google, with no referring sitemap/page and last crawl N/A. Live URL tests for both passed (available to Google/can be indexed). `/guides/` HTML was inspected: index/follow, self-canonical, valid title/description, and 25 crawlable anchor links in server-rendered HTML; JavaScript only filters those existing cards. No robots/noindex blocker was identified.
+- Google Search Console: Sitemap report previously showed Couldn't fetch / sitemap could not be read and 0 discovered pages; Pages report was still processing at the last recorded screenshot (24 Nov). Links report showed 0 internal/external links, which conflicts with independently inspected HTML links and must not be interpreted as proof that the site has no links. Daily URL inspection quota had been exhausted; no repeated requests recommended.
+- New user-provided PowerShell test (24 Nov 05:41 UTC): sitemap index and child sitemap both returned HTTP 200 + application/xml with normal UA and manually spoofed Googlebot UA; child sitemap listed 29 URLs. This narrows the issue: no general endpoint failure was present in this test. It does not verify Google's real crawler, Search Console ingestion, or indexing. Earlier GSC state remains pending/unresolved.
+- Bing: site registration/verification already completed. Air Fryers guide was confirmed indexed. Portable Power guide's index-side status showed Blocked while live URL test said can be indexed and detected JSON-LD/OpenGraph; exact index-side reason remains unresolved. Bing AI Performance 3-month report showed 0 citations and 0 average cited pages; this measures Microsoft Copilot/partners only, not all AI assistants. Dashboard screenshot showed 0 clicks/0 impressions for a range not fully visible; do not call it lifetime.
+- AI visibility beyond Bing: not measured with a dated cross-platform baseline; no verified mentions/citations on ChatGPT Search, Gemini, Perplexity, or Claude. Do not claim AI visibility.
+### Measurement and social distribution
+- GA4: production web stream exists (SmartPickHub Production, stream 16395435693, measurement ID G-Q7XK4V953R), but GA4 showed data collection inactive. User's Chrome Network checks on production returned no `collect`, `gtag`, or `googletagmanager` requests. Main Layout had no GA4 tag at the time checked.
+- PR #38 remains a draft/unmerged consent-gated GA4 implementation. It loads GA4 only after explicit analytics acceptance or saved consent, production host only; preview excluded. It is not a certified CMP or legal compliance determination. Tracker inventory, factual privacy notice, consent behavior tests, CI/browser tests and owner approval remain prerequisites. No production analytics change has been deployed.
+- Pinterest source implementation exists: RSS generation for published/approved guides, image generation scripts (1000x1500 PNG and 720x1080 WebP), and social-snippets build output. Actual production RSS ingestion, published Pins, outbound clicks, and Pinterest analytics remain unverified.
+- Homepage social metadata gap: homepage previously omitted `socialImage`; draft PR #40 on branch `fix/homepage-social-image-2026-11-24` proposes reusing the first approved guide's existing Pinterest creative. It remains unmerged/unverified; confirm asset existence, generated metadata, absolute image URL, HTTP content type, and social-preview crop. Vertical creative may be unsuitable; consider a dedicated landscape share image. No production change.
+### Content and research assets
+- Current site baseline remains 25 buying guides and 100 products. Do not create or import content from research-only keyword files until overlap, demand, SERP evidence, products and editorial quality are independently validated.
+- PR #39: prior UK-first five-cluster opportunity research, 63 focused phrases, research-only; draft/unmerged. The new 58-cluster/1,164-keyword dataset is separately captured in PR #41 and explicitly excludes those five clusters and the 25 current guides.
+- PR #41: draft/unmerged; 58 unique clusters, 1,164 unique keyword rows, 816 buy / 348 research, 116 UK-only / 116 US-only / 932 both-market. This is not search-volume or difficulty data and does not establish SERP demand. Keep it research-only.
+- No new public pages, products, route changes, sitemap changes, robots changes, IndexNow submissions, production deployment, domain purchase, or canonical migration were performed in this session.
+### Open pull requests / approvals
+- PR #38: GA4 consent-gated implementation — draft; do not merge until tracker/privacy inventory, notice, tests, and owner approval.
+- PR #39: five UK-first research clusters — draft; research-only.
+- PR #40: homepage socialImage fix — draft; visual/image/build validation and owner approval pending.
+- PR #41: 1,164-keyword research dataset + documentation — draft; research-only.
+### Next actions
+1. Keep observation window through 8 Dec 2026; avoid repeated indexing requests and quota consumption.
+2. Verify PR #40 image asset and build output in branch; do not merge without approval.
+3. Monitor dated Google sitemap/Page indexing deltas after the HTTP 200 test; if GSC remains Couldn't fetch, capture current report and compare timestamps rather than repeat requests.
+4. Resolve Bing Portable Power blocked diagnostic from Bing's index-side details when next checking is justified.
+5. Complete GA4 tracker/privacy inventory and PR #38 tests before considering merge/deployment.
+6. Verify Pinterest production RSS/feed ingestion and real Pins/analytics.
+7. For PR #41, perform overlap/cannibalization mapping, then dated UK and US SERP validation before product research or page creation.
