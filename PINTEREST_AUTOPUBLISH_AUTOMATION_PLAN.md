@@ -107,3 +107,43 @@ Owner approved the target of three Pins/day and the free, automated operating ob
 - The workflow should not run the full comprehensive accessibility/Lighthouse audit; current build-check already defers those checks to weekly/manual runs. Preserve that cadence.
 - Alternative Cloudflare Worker/Pages Function + state-store design may avoid daily Pages rebuilds but adds architecture, bindings, and operational complexity; defer it unless actual Pages usage or deployment quota makes the simple daily batch unsuitable.
 - No workflow has been enabled and no production change has been made. The approved goal remains design/PR/preview first, explicit go-live approval later.
+
+
+## 12. Architecture pivot after quota concern — 24 November 2026
+
+### Preferred design now: Cloudflare Pages Function + Cloudflare Worker Cron + KV
+The earlier GitHub Actions + daily static Pages rebuild approach is no longer preferred. Although GitHub standard runners are free on public repositories, every Git push to the connected Pages repository can trigger a Pages build/deploy. Avoiding unnecessary production builds is better.
+
+Cloudflare documents that Pages Functions can bind to Workers KV, and a separate Worker can run on a Cron Trigger. This allows us to retain the current public RSS URLs and serve their XML dynamically from Pages Functions, while a lightweight scheduled Worker releases up to three eligible new guide slugs per day into the shared KV namespace. No GitHub Actions scheduler and no daily Pages rebuild are required.
+
+Proposed flow:
+1. Normal Astro build emits a public, approved-only Pinterest catalogue JSON asset whenever guide content changes.
+2. Pages Function intercepts the existing `/rss/:board.xml` paths and returns RSS XML using the catalogue asset plus the shared KV release ledger.
+3. A separate Cloudflare Worker uses one UTC Cron Trigger per day. It reads the latest catalogue, checks the durable KV ledger, selects at most three newly approved and not-yet-released guides globally, then writes one daily batch record to KV.
+4. Existing five Pinterest feed URLs and board mappings remain unchanged.
+5. Existing 25 guides remain in a legacy-visible set until a board-by-board inventory reconciles their ingestion. They must not be removed from RSS or re-released as part of bootstrap.
+6. Future newly approved guides are released at up to three/day. Pinterest's own polling may take up to 24 hours, so this is a release cadence, not an exact publication-time guarantee.
+
+### Free-plan guardrails (must verify account state)
+- Workers Free documents 100,000 requests/day and up to five Cron Triggers/account. Only one Cron Trigger is needed.
+- Workers KV Free documents 100,000 reads/day, 1,000 writes/day, 1 GB storage. The planned workload is far below these published limits (one daily batch write plus RSS reads), but monitor actual account usage.
+- The Pages Function request volume counts against Workers usage limits; estimate actual RSS fetches and include an explicit error-safe fallback.
+- No AI/Workers AI usage, no paid SaaS, no GitHub schedule, no paid API, and no daily Pages build.
+- If the Pages Function or KV is unavailable, preserve a static fallback RSS response containing the legacy 25 guides; do not return an empty feed and do not mutate the release ledger.
+- KV is eventually consistent. The scheduler must use a single daily batch key and stable GUIDs, tolerate retry, and avoid relying on immediate read-after-write across locations for correctness. A separate immutable daily batch record plus deterministic idempotency key is preferred over a mutable counter.
+
+### Required setup and deployment considerations
+- Create one Workers KV namespace in Cloudflare; verify Free plan availability and account limits before creating.
+- Bind the namespace to the Pages production environment for the RSS Function. Configure Preview separately or disable release behavior in preview.
+- Deploy a small scheduled Worker with one daily Cron Trigger and the same KV namespace. Keep its code and Wrangler configuration in the repository, but do not configure a live cron until explicit go-live approval.
+- Pages Functions binding setup requires a Pages redeploy. Do not apply this binding or change live RSS routes until PR tests and owner review pass.
+- Add a public generated catalogue file with only approved guide fields needed for RSS (slug/title/summary/category/board/image path/canonical link), no private or unpublished research.
+- Add local tests for all five feeds, legacy preservation, approval gate, 0–3 daily releases, cross-board global cap, stable GUID uniqueness, retry idempotency, KV unavailable fallback, and preview/production separation.
+- Confirm Cloudflare account usage and exact Workers Free entitlements in dashboard before activation. Published plan limits are not proof of remaining account quota.
+
+### Rollout
+- Stage 0: design only; completed.
+- Stage 1: implement Functions/Worker/catalogue/tests on a branch; no production settings, no live Cron Trigger, no Pinterest mapping changes.
+- Stage 2: PR and preview/local test; compare generated feed output against current live five feeds to prove all existing legacy items remain present.
+- Stage 3: owner verifies Cloudflare Free account/namespace and approves production binding/deployment.
+- Stage 4: activate one daily Cron Trigger only after explicit go-live approval; monitor first week and Pinterest ingestion.
