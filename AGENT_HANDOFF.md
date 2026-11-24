@@ -1635,3 +1635,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - OpenGraph detected in Markup card.
 - Next: owner opens Bing Webmaster Tools > AI Performance (Beta), checks 30-day or 3-month view and shares Overview, Pages, and Grounding Queries. Explain citations are not rankings/clicks and report is sampled/aggregated. Then inspect `/guides/air-fryers-us-uk/` in Bing URL Inspection; do not request indexing unless results justify it and owner approves.
 - No indexing request submitted, no code/config changed.
+
+
+## 24 November 2026 — Bing AI Performance baseline
+- Owner screenshot (30D selected): Total Citations 0; Avg. Cited Pages 0; flat chart; Grounding Queries empty. Scope is Microsoft Copilot, Bing AI summaries and selected partner experiences, not ChatGPT/Gemini/Claude/Perplexity. Bing docs: data is aggregated/sampled, refreshed daily with processing delay; very sparse activity may not surface; zero does not mean penalty/exclusion and citations are not clicks/rankings.
+- Bing homepage inspection reported 6 missing image alt attributes. Source confirms six featured cover images on `src/pages/index.astro` use `alt=""` and sit in links marked `aria-hidden=true`, with adjacent visible guide-title links. This is intentional decorative treatment, but Bing flags it. No code change; any remediation must preserve non-duplicative screen-reader behavior and use meaningful accurate alt text.
+- Next: inspect Bing index status for `https://smartpickhub.pages.dev/guides/air-fryers-us-uk/`; separately check AI Performance Pages tab. Do not claim AI citations elsewhere based on Bing data.
+- No request indexing or site edits performed.
