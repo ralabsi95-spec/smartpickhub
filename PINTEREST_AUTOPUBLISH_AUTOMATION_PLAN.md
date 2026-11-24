@@ -97,3 +97,13 @@ Disable the scheduled workflow first. Preserve the current five feed URLs and Pi
 ## 10. Current decision
 
 Owner approved the target of three Pins/day and the free, automated operating objective. Owner has **not** yet approved a production code change or live activation. Continue with design and PR/preview work only; request explicit production go-live approval after evidence and review.
+
+
+## 11. Cost/quota refinement — 24 November 2026
+- Owner raised concern about GitHub Actions and build consumption. Official current docs checked: standard GitHub-hosted runners are free for public repositories; Cloudflare Pages Free permits 500 builds/month and one concurrent build (20-minute timeout).
+- Do not run three separate production build/deploy cycles per day. Revised preferred cadence: **one scheduled release batch per day**, releasing up to three newly due guide items across the appropriate feeds in one manifest update and one Pages deployment. This is about 30 scheduled Pages builds/month, leaving substantial headroom under the published 500/month cap for ordinary site updates. Actual account usage still needs dashboard confirmation; do not claim quota consumption is zero.
+- Keep the three desired Pins/day as a content-release cap, not three separate workflow/builds. One standard GitHub Actions run per day can select up to three due guides, update the manifest once, and trigger one normal CI/Pages deployment.
+- Include a hard monthly deployment budget/kill switch in the workflow (e.g. stop scheduled publishing when the configured safe build budget is reached), plus concurrency lock and idempotency. No paid runner, Larger Runner, paid SaaS, or paid API.
+- The workflow should not run the full comprehensive accessibility/Lighthouse audit; current build-check already defers those checks to weekly/manual runs. Preserve that cadence.
+- Alternative Cloudflare Worker/Pages Function + state-store design may avoid daily Pages rebuilds but adds architecture, bindings, and operational complexity; defer it unless actual Pages usage or deployment quota makes the simple daily batch unsuitable.
+- No workflow has been enabled and no production change has been made. The approved goal remains design/PR/preview first, explicit go-live approval later.
