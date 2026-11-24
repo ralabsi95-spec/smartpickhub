@@ -1642,3 +1642,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Bing homepage inspection reported 6 missing image alt attributes. Source confirms six featured cover images on `src/pages/index.astro` use `alt=""` and sit in links marked `aria-hidden=true`, with adjacent visible guide-title links. This is intentional decorative treatment, but Bing flags it. No code change; any remediation must preserve non-duplicative screen-reader behavior and use meaningful accurate alt text.
 - Next: inspect Bing index status for `https://smartpickhub.pages.dev/guides/air-fryers-us-uk/`; separately check AI Performance Pages tab. Do not claim AI citations elsewhere based on Bing data.
 - No request indexing or site edits performed.
+
+
+## 24 November 2026 — Bing Air Fryers guide inspection
+- Bing Index tab confirms `/guides/air-fryers-us-uk/` is indexed successfully and can appear in Bing.
+- One Bing SEO/GEO error: Title too long (>70 characters).
+- Verified current source and live deployed title: SEO `<title>` is `Air Fryers: Single Basket, Dual-Zone & Steam` (44 chars); H1 is 74 chars. Astro page uses `guide.seoTitle ?? guide.title` for Layout title; live fetch confirms 44-char SEO title. Thus Bing Index warning conflicts with current HTML and may be stale or refer to visible H1.
+- Do not edit title/H1 or request indexing yet. Next: use Bing **Live URL** tab on same URL. If warning absent, record stale indexed metadata; if present, inspect exact offending element before any approved change.
+- No code changed and no indexing request submitted.
