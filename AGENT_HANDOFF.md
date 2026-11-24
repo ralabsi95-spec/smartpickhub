@@ -1627,3 +1627,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Add fallback static RSS with the legacy 25 guides if KV unavailable. Use stable GUIDs and deterministic daily batch keys; account for KV eventual consistency.
 - Read updated `PINTEREST_AUTOPUBLISH_AUTOMATION_PLAN.md` (latest pivot commit `acc1644959a0ae69a721bd1eb6b7db5af0d08d05`).
 - No code, KV namespace, Pages binding, Worker, Cron Trigger, GitHub workflow, RSS URL, or Pinterest setting has been changed. Stage 0 design only; next step branch implementation + tests, then owner approval for Cloudflare setup and go-live.
+
+
+## 24 November 2026 — Bing indexing / AI visibility checkpoint
+- Bing URL Inspection screenshot confirms homepage `https://smartpickhub.pages.dev/` is Indexed successfully and can appear in Bing. This is one URL only, not sitewide confirmation.
+- SEO/GEO notice: 6 image alt instances. Verified in `src/pages/index.astro`: six featured cover images have empty `alt=""` because their adjacent text links repeat the guide titles and the image links are hidden from assistive technology. Bing treats empty alt as missing. No code edits; any remediation must preserve accessible semantics.
+- OpenGraph detected in Markup card.
+- Next: owner opens Bing Webmaster Tools > AI Performance (Beta), checks 30-day or 3-month view and shares Overview, Pages, and Grounding Queries. Explain citations are not rankings/clicks and report is sampled/aggregated. Then inspect `/guides/air-fryers-us-uk/` in Bing URL Inspection; do not request indexing unless results justify it and owner approves.
+- No indexing request submitted, no code/config changed.
