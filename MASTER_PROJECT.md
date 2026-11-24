@@ -2173,3 +2173,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Owner previously reported the daily URL indexing request quota was exhausted. No indexing request was made from this inspection; do not ask the owner to retry while quota remains exhausted.
 - No code, sitemap, robots, Cloudflare, content, or deployment changes were made.
 - Next step: use the Search Console Links report (internal links section) to check whether Google has recorded the homepage -> /guides/ link, and inspect the Pages report for the current not-indexed reason distribution. Do not submit mass indexing requests or alter sitemap configuration without a concrete new diagnostic.
+
+
+## 24 November 2026 — Search Console Links report review
+- Owner supplied the Search Console Links report screenshot. It shows External links Total 0, Internal links Total 0, Top linked pages "No data", and Top linking sites "No data".
+- This is a report-data observation only. It does not mean the website has no links: independent live-page extraction already confirmed homepage links to /guides/ and six featured guides, and the /guides/ index links to all 25 guide URLs.
+- In combination with the Search Console inspections (homepage indexed; /guides/ and Portable Power unknown to Google with no recorded crawl; both live tests available to Google) and sitemap reports (0 discovered pages; "Sitemap could not be read"), the evidence indicates Search Console has not yet recorded the site's wider discovery/link graph. Root cause remains unproven.
+- No indexing request was made because owner reported the daily quota exhausted. No site, sitemap, robots, Cloudflare or source-code changes were made.
+- Next diagnostic: inspect Google's stored crawled HTML for the homepage using URL Inspection > View Crawled Page (not Live Test), and confirm the actual homepage anchor to /guides/ appears in Google's last crawled document. If the stored crawl does not include it, inspect the rendered navigation/link output and crawlable anchor markup; if it does include it, leave code unchanged and allow Google processing time while monitoring Sitemap and Page indexing reports.
