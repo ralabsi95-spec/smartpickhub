@@ -132,6 +132,15 @@ const jsonLd = JSON.stringify(structuredData).replace(/</g, '\\u003c');
             <span class="product-index">{String(index + 1).padStart(2, '0')}</span>
             <h3>{product.name}</h3>
           </div>
+          {product.us_identifier || product.uk_identifier ? (
+            <div class="early-product-actions">
+              <p class="affiliate-link-label">Quick marketplace links (paid links):</p>
+              <div class="product-actions">
+                {product.us_identifier && <a class="button" href={buildAffiliateUrl('us', product.us_identifier)} rel="sponsored nofollow noopener" target="_blank" aria-label={`Search Amazon US for ${product.name}`}>Search Amazon US</a>}
+                {product.uk_identifier && <a class="button secondary" href={buildAffiliateUrl('uk', product.uk_identifier)} rel="sponsored nofollow noopener" target="_blank" aria-label={`Search Amazon UK for ${product.name}`}>Search Amazon UK</a>}
+              </div>
+            </div>
+          ) : null}
           {product.image?.reviewStatus === 'approved' && product.image?.url ? (
             <figure class="product-image">
               <img src={product.image.url} alt={product.image.alt || product.name} width="640" height="480" loading="lazy" decoding="async" />
