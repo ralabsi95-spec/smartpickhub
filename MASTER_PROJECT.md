@@ -1884,3 +1884,13 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Add concurrency/idempotency, max-three/day and monthly build-budget kill switch. Actual Cloudflare account usage remains to be checked in dashboard; 500 is plan limit, not proof of remaining quota.
 - A Cloudflare Worker/Pages Function with state store could avoid daily builds but adds complexity and is deferred unless measured usage requires it.
 - Design document updated: `PINTEREST_AUTOPUBLISH_AUTOMATION_PLAN.md`, commit `23a8d819c620c49a37619a515c7e674c855e03a5`. No code/workflow/production changes; no scheduled publishing enabled. Continue PR/preview-only until explicit production go-live approval.
+
+
+## 24 November 2026 07:38 Asia/Amman — Pinterest automation architecture improved to avoid daily Pages builds
+- Reassessed quota concern using current Cloudflare docs. Preferred design now avoids GitHub Actions scheduler and avoids daily static Pages deployments entirely.
+- New preferred architecture: existing `/rss/:board.xml` URLs served by Cloudflare Pages Functions; a separate Cloudflare Worker with one daily Cron Trigger releases up to 3 newly approved guides globally into a shared Workers KV ledger; Pages Function builds dynamic RSS from a generated approved-only catalogue plus KV release state.
+- This preserves existing Pinterest feed URLs and all five owner-confirmed board mappings. Current 25 guides remain legacy-visible until ingestion is reconciled; do not remove or re-release them.
+- Official docs: Pages Functions can bind to KV; Workers Cron Triggers run scheduled handlers on UTC; Workers Free docs publish 100,000 requests/day, up to 5 cron triggers/account; KV Free docs publish 100,000 reads/day, 1,000 writes/day and 1GB storage. Actual account usage/entitlements still need dashboard verification.
+- This design requires one KV namespace, a Pages production binding, a separately deployed Worker and one daily Cron Trigger. No daily Pages build; normal site builds only when content/code changes. Keep cron inactive until owner approves go-live.
+- Added architecture pivot and rollout gates to `PINTEREST_AUTOPUBLISH_AUTOMATION_PLAN.md`, commit `acc1644959a0ae69a721bd1eb6b7db5af0d08d05`.
+- No code, Cloudflare resources, bindings, cron triggers, RSS URLs, Pinterest settings, or GitHub Actions workflows changed. Current stage remains design only; next step is branch implementation and local/preview tests, then explicit owner approval for Cloudflare setup and activation.
