@@ -1910,3 +1910,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Bing URL Inspection homepage notice: 6 images missing alt. Verified homepage has six featured guide cover images with empty `alt=""` in `src/pages/index.astro`; these are inside image-only links marked `aria-hidden="true"`, with adjacent visible text links to the same guide. They were intentionally treated as decorative; Bing nevertheless reports empty alt as missing. Any change should provide accurate descriptive alt text while removing redundant hidden semantics or restructuring links so screen readers do not announce duplicate content. No code changed.
 - Next: inspect one guide URL in Bing URL Inspection (start with `/guides/air-fryers-us-uk/`) to distinguish homepage indexing from guide indexing; inspect AI Performance Pages tab (likely empty at current zero baseline) and record later trend after more time. Do not infer AI visibility on ChatGPT/Gemini/Claude/Perplexity from this Bing report.
 - No Request indexing submitted and no production changes made.
+
+
+## 24 November 2026 — Bing index inspection: Air Fryers guide
+- Owner screenshot for `https://smartpickhub.pages.dev/guides/air-fryers-us-uk/` (Bing Index tab): **Indexed successfully; URL can appear on Bing**.
+- Bing reports one SEO/GEO error: `Title too long`, one instance; help text says titles longer than 70 characters may be truncated/ignored.
+- Source of truth check: `src/data/products.json` guide record has `seoTitle` = `Air Fryers: Single Basket, Dual-Zone & Steam` (44 chars); visible H1/title field is `Air Fryers for US & UK Kitchens: Single-Basket, Dual-Zone and Steam Models` (74 chars). `src/pages/guides/[slug].astro` passes `guide.seoTitle ?? guide.title` to Layout's `<title>`, and deployed live fetch confirms page title is the 44-character SEO title. The H1 remains 74 characters.
+- Therefore the indexed Bing notice may reflect stale indexed metadata or Bing's interpretation of the visible title/H1; it does not match the currently deployed HTML `<title>`. Do not change the approved SEO title or H1 based on this notice alone.
+- Next diagnostic: inspect the same URL under Bing's **Live URL** tab / live test to see whether the title-length warning persists for the currently fetched page. If Live URL is clean while Bing Index still warns, treat as stale index data and monitor; if Live URL warns, capture the detailed offending element before editing.
+- No Request indexing clicked; no code changes made.
