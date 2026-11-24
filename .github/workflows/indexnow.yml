@@ -34,5 +34,5 @@ jobs:
       - name: Submit sitemap URLs to IndexNow
         env:
           PUBLIC_SITE_URL: https://smartpickhub.pages.dev
-          EXPECTED_DEPLOYMENT_SHA: 26636d4359508b9af30eec498a22ffc005a81a72
+          EXPECTED_DEPLOYMENT_SHA: ${{ github.sha }}
         run: npm run indexnow
