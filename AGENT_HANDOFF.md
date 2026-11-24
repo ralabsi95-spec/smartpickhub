@@ -1617,3 +1617,13 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Add concurrency, idempotency, max 3 releases/day and a monthly deployment-budget kill switch. Actual Pages usage must be checked in Cloudflare dashboard; do not assume full 500 remains.
 - Worker/Pages Function alternative deferred due to extra architecture; revisit only if measured quota/build pressure justifies.
 - Read updated `PINTEREST_AUTOPUBLISH_AUTOMATION_PLAN.md`. No code/workflow/production change; scheduler not enabled; explicit production go-live approval still required.
+
+
+## 24 November 2026 07:38 Asia/Amman — Revised Pinterest automation handoff
+- Do not proceed with GitHub Actions + daily Pages rebuild as the preferred design. Owner is concerned about Actions/build consumption.
+- Preferred architecture: Pages Function handles existing five `/rss/:board.xml` routes dynamically using a generated approved-only catalogue plus KV ledger. Separate Cloudflare Worker with one daily UTC Cron Trigger selects up to 3 new approved guides globally and writes one daily batch to shared Workers KV. No daily Pages build and no GitHub scheduled workflow.
+- Pages Function KV bindings are supported; Workers Cron Triggers are supported. Published Workers Free limits: 100k requests/day and 5 cron triggers/account. KV Free: 100k reads/day, 1,000 writes/day, 1GB. Actual account usage and entitlement must be checked in Cloudflare dashboard.
+- Preserve current RSS URLs and five owner-confirmed board mappings. Keep all 25 existing guides legacy-visible until per-board Pinterest ingestion inventory is reconciled; do not remove/re-release.
+- Add fallback static RSS with the legacy 25 guides if KV unavailable. Use stable GUIDs and deterministic daily batch keys; account for KV eventual consistency.
+- Read updated `PINTEREST_AUTOPUBLISH_AUTOMATION_PLAN.md` (latest pivot commit `acc1644959a0ae69a721bd1eb6b7db5af0d08d05`).
+- No code, KV namespace, Pages binding, Worker, Cron Trigger, GitHub workflow, RSS URL, or Pinterest setting has been changed. Stage 0 design only; next step branch implementation + tests, then owner approval for Cloudflare setup and go-live.
