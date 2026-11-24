@@ -37,7 +37,7 @@ const categories = [...new Set(guides.map((guide) => guide.category).filter(Bool
                 <h2><a href={`/guides/${guide.slug}/`}>{guide.title}</a></h2>
                 <p class="guide-card-summary">{guide.summary}</p>
                 <div class="guide-card-bottom">
-                  <span class="guide-card-status">{guide.editorialStatus ?? 'Editorial review required before publication.'}</span>
+                  <span class="guide-card-status">Research-led guide · Check the exact model and current retailer listing before purchase.</span>
                   <a class="card-arrow" href={`/guides/${guide.slug}/`}>Read guide <span aria-hidden="true">→</span></a>
                 </div>
               </div>
