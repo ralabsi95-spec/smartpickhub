@@ -2253,3 +2253,14 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Assessment: Google Analytics tag is not being loaded through the observed production page request path. This is now a confirmed practical diagnosis for the tested browser session; no evidence yet of a live GA4 tag firing. A browser extension, consent mechanism, or unusual request path is theoretically possible but no indication of one is present in the supplied screenshots.
 - GA4 stream already exists: SmartPickHub Production, Stream ID `16395435693`, Measurement ID `G-Q7XK4V953R`, Enhanced Measurement enabled. Do not recreate stream or ask for ID again.
 - No code, Cloudflare, GA4, or production changes performed. Next: propose the minimal shared-layout Google tag integration using the existing Measurement ID, explain exact scope and validation, and obtain explicit owner approval before modifying source or merging/deploying. After approval, verify `gtag/js`, `g/collect`, and GA4 Realtime/DebugView.
+
+
+## 24 November 2026 — Five UK-first opportunity clusters captured (research-only)
+- Added `research/uk-opportunity-clusters-2026-11-24.json` on a dedicated research branch. The file preserves five proposed clusters: Dehumidifiers & Moisture Control; Heated Clothes Airers & Indoor Drying; Personal & Space Heating; Emergency Power & Preparedness; Portable Carpet & Spot Cleaners.
+- Captured 63 focused UK keyword phrases grouped by cluster, plus topic seeds, audience modifiers and buyer needs.
+- Status is explicitly `research-only`; this is not product intake, guide approval, publication, or a claim of measured search volume/trend. No products, ASINs, prices, ratings, stock or direct Amazon links were added.
+- The clusters are proposed as distinct opportunities relative to the current 25-guide catalogue; semantic overlap/cannibalization still needs a formal mapping against existing guide keyword targets and actual SERPs before any guide brief is approved.
+- Market priority: UK-first. A separate US validation pass is required before claiming equal UK/US coverage.
+- No changes to live catalogue, routes, sitemap, robots, affiliate links, analytics or production configuration.
+- PR: pending creation/review. Dedicated branch: `research/uk-opportunity-clusters-2026-11-24`.
+- Next: review JSON and keyword phrase list in PR; then map intent/SERP evidence and existing-guide overlap. Only after that, begin product evidence research. Keep all five clusters out of publication and importer until owner approves a specific guide/product batch.
