@@ -1894,3 +1894,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - This design requires one KV namespace, a Pages production binding, a separately deployed Worker and one daily Cron Trigger. No daily Pages build; normal site builds only when content/code changes. Keep cron inactive until owner approves go-live.
 - Added architecture pivot and rollout gates to `PINTEREST_AUTOPUBLISH_AUTOMATION_PLAN.md`, commit `acc1644959a0ae69a721bd1eb6b7db5af0d08d05`.
 - No code, Cloudflare resources, bindings, cron triggers, RSS URLs, Pinterest settings, or GitHub Actions workflows changed. Current stage remains design only; next step is branch implementation and local/preview tests, then explicit owner approval for Cloudflare setup and activation.
+
+
+## 24 November 2026 — Bing Webmaster Tools homepage inspection
+- Owner screenshot from Bing URL Inspection for `https://smartpickhub.pages.dev/`: **Indexed successfully; URL can appear on Bing**. This confirms the homepage only; it does not establish indexing of the 25 guide URLs.
+- Bing SEO/GEO card shows one notice: missing image alt attribute, 6 instances. Markup card detects OpenGraph.
+- Read-only source check: `src/pages/index.astro` renders six featured guide cover images with `alt=""`. They are intentionally decorative duplicates adjacent to visible guide titles, within image anchors marked `aria-hidden="true"`. Bing reports empty alt values as missing. No code change made; consider descriptive alt text only after preserving accessible link semantics and avoiding redundant screen-reader announcements.
+- Next user-side check: open Bing Webmaster Tools > AI Performance (Beta), select available date range (30 days or 3 months), and share screenshot of Overview/Pages/Grounding Queries. Interpret this as citation visibility in supported Microsoft Copilot/Bing AI experiences, not rankings or traffic. Then inspect a high-intent guide URL (suggested: `https://smartpickhub.pages.dev/guides/air-fryers-us-uk/`) to establish whether guide pages are indexed in Bing.
+- No Request indexing clicked; no site code/settings changed.
