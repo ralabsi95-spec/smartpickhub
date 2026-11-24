@@ -1684,3 +1684,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Earlier Bing Index tab said Blocked. This is a discrepancy between indexed-state serving and current live eligibility; do not claim Bing indexed. Sitemap includes URL; robots.txt allows crawl. No current evidence of live page-level SEO/robots block. Exact Bing index-side reason remains unknown.
 - Next action: inspect same URL in Google Search Console URL Inspection and share Page indexing status/reason/last crawl. Do not submit indexing requests in either engine until GSC reason is known; consider one targeted request afterward if justified.
 - No code or settings changed; no request indexing clicked.
+
+
+## 24 November 2026 — Google Live Test for Portable Power
+- GSC URL Inspection LIVE TEST screenshot (24 Nov 08:19 AM) for `/guides/portable-power-travel-tech-us-uk/`: URL available to Google; page can be indexed; 1 valid Breadcrumb item. No current live test blocker is shown.
+- Bing Live URL for same page also passed: can be indexed, no SEO/GEO issues, JSON-LD and OpenGraph detected.
+- These confirm live eligibility only, not actual Google index inclusion. Need inspect **GOOGLE INDEX** tab for status, reason, last crawl and Google-selected canonical.
+- Next single step: owner selects GOOGLE INDEX tab for same URL and shares screenshot. Do not request indexing before reviewing result.
+- No production changes or indexing requests.
