@@ -1934,3 +1934,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Combined Live URL result: URL can be indexed by Bing; no SEO/GEO issues; markup types JSON-LD + OpenGraph.
 - This confirms Bing's live fetch recognizes the page's structured-data script and social metadata. It does not by itself certify every JSON-LD property or rich-result eligibility; those are separately validated by project build smoke tests and Google-specific tools.
 - No code changed and no indexing request submitted.
+
+
+## 24 November 2026 — Next Bing inspection target verified
+- Verified live deployed portable power guide URL and title before sending owner to Bing:
+  `https://smartpickhub.pages.dev/guides/portable-power-travel-tech-us-uk/`
+- Live page title: `Portable Power Banks & Stations: US & UK Guide`; H1: `Portable Power & Travel Tech: Power Banks and Compact Power Stations`; page content is published and approved in `src/data/products.json`.
+- Correction: the earlier suggested slug `portable-power-stations-us-uk` was not the actual route. Use the verified slug above.
+- Next owner action: inspect this exact URL in Bing Webmaster Tools > URL Inspection > Bing Index. This will add an independent guide-level Bing index datapoint; do not request indexing yet.
