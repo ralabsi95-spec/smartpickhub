@@ -2238,3 +2238,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Source inspection of `src/layouts/Layout.astro` found no gtag.js / Google tag or GTM snippet. Cloudflare Zaraz or another external/edge injection has not yet been inspected, so check for an existing tag there before proposing code changes. Avoid duplicate page_view events.
 - No changes to site code, GA4 settings, Cloudflare configuration, or deployment were made.
 - Next: inspect Cloudflare Zaraz settings and/or the live site's served HTML/network tag delivery read-only. Confirm whether Google tag ID `G-Q7XK4V953R` is present and firing. Only then recommend the smallest safe fix; require owner approval before any production change.
+
+
+## 24 November 2026 — GA4 browser Network test (owner screenshot)
+- Owner tested the live production homepage in Chrome DevTools > Network with the filter `gtag` and reloaded the page. Screenshot shows `0 / 25 requests` matching the filter, with no request rows. The earlier `collect` filter also showed no matching requests.
+- Combined with the GA4 Web Stream warning `Data collection isn't active for your website` and the absence of gtag/GTM code in `src/layouts/Layout.astro`, this is strong evidence that the live homepage is not loading a Google tag through the page's current request path. It does not yet rule out unusual blocked requests, consent/ad-blocking effects, or alternate tag loading paths; do not claim the exact root cause until one final check.
+- No tag installation, configuration changes, or production deployment performed.
+- Next diagnostic: in Network, clear the filter, reload with DevTools open, then filter `googletagmanager` (or `gtag/js`). If no request appears, confirm tag script is absent. After that, inspect browser Console for CSP/network errors only if needed. Then prepare the smallest code change to load Google tag ID `G-Q7XK4V953R` once in the shared layout, but only after explicit owner approval and checking for duplicate tags. Verify using `gtag/js` and `g/collect` plus GA4 Realtime/DebugView after deployment.
