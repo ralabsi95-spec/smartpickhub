@@ -6,7 +6,7 @@ const guideCount = guides.length;
 const featuredGuides = guides.slice(0, 6);
 const productCount = guides.reduce((total, guide) => total + (guide.products?.length ?? 0), 0);
 ---
-<Layout title="SmartPickHub – Clear Buying Guides for the US & UK" description="Make confident tech and home-buying decisions with practical, research-led product comparisons for shoppers in the United States and United Kingdom.">
+<Layout title="SmartPickHub – Clear Buying Guides for the US & UK" description="Make confident tech and home-buying decisions with practical, research-led product comparisons for shoppers in the United States and United Kingdom." socialImage={guides[0] ? `/images/pinterest/${guides[0].slug}.png` : undefined}>
   <section class="home-hero">
     <div class="hero-copy">
       <span class="eyebrow">A clearer way to choose</span>
