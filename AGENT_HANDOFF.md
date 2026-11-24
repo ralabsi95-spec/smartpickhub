@@ -1650,3 +1650,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Verified current source and live deployed title: SEO `<title>` is `Air Fryers: Single Basket, Dual-Zone & Steam` (44 chars); H1 is 74 chars. Astro page uses `guide.seoTitle ?? guide.title` for Layout title; live fetch confirms 44-char SEO title. Thus Bing Index warning conflicts with current HTML and may be stale or refer to visible H1.
 - Do not edit title/H1 or request indexing yet. Next: use Bing **Live URL** tab on same URL. If warning absent, record stale indexed metadata; if present, inspect exact offending element before any approved change.
 - No code changed and no indexing request submitted.
+
+
+## 24 November 2026 — Bing Live URL confirmation for Air Fryers
+- Owner screenshot of Bing Live URL test for `/guides/air-fryers-us-uk/`, tested 07:47: URL can be indexed; **No SEO/GEO issues found**; 2 markup types detected (names not visible in collapsed screenshot).
+- Earlier Bing Index snapshot reported Title too long, but current deployed SEO title is 44 chars and Live URL test has no SEO/GEO issue. Treat indexed warning as stale/index-snapshot discrepancy; do not change title/H1.
+- Index status remains separately confirmed by Bing Index tab as Indexed successfully. Live URL eligibility alone does not prove indexing.
+- No indexing request submitted and no code changed. Optional: expand markup types if user wants exact names.
