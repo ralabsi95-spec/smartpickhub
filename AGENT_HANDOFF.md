@@ -1702,3 +1702,13 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Next: one targeted GSC Request indexing for this URL is appropriate after successful live test because Google explicitly recommends it for URL unknown. Request is not a guarantee. User has not yet confirmed clicking.
 - Separately verify GSC > Sitemaps has `https://smartpickhub.pages.dev/sitemap-index.xml` submitted, Status Success, discovered page count. Don't resubmit/change if successful.
 - No production change and no request submitted by assistant.
+
+
+## 24 November 2026 — Readiness checkpoint before category expansion
+- Foundation work is partially complete, not closed. Keep new cluster work research-only; no public pages or product imports yet.
+- Google: homepage indexed; /guides/ and Portable Power unknown to Google with live tests passing; /guides/ HTML has 25 crawlable anchors; sitemap reports previously Couldn't fetch/0 discovered; Links report 0; Pages report processing; indexing quota reported exhausted. Sitemap cause unresolved.
+- Bing: property and prior 29-URL IndexNow submission confirmed; Air Fryers indexed; Portable Power Index tab Blocked but Live URL passes; 0 clicks/impressions and AI citations. Exact Portable Power index block unresolved.
+- AI: Bing AI Performance is Microsoft Copilots/partners only and shows zero citations; no verified cross-engine AI citation baseline.
+- GA4: existing Stream ID 16395435693, Measurement ID G-Q7XK4V953R; production tag absent in observed Network tests. PR #38 remains draft/unmerged; consent panel drafted, but no privacy/cookie notice, tracker inventory, Zaraz check, CI verification or production Realtime validation. Owner doesn't know whether other trackers are used.
+- Pinterest: RSS/image/social snippet generation exists in source; production feed ingestion, pin publication and analytics are unverified. Homepage socialImage/OG image gap remains open.
+- Before public expansion, finish Google sitemap diagnostics, Bing blocked URL discrepancy, GA4 privacy/consent/CI/release validation, Pinterest production validation, and cross-platform AI visibility/crawler baseline. Do not repeat completed setup or request duplicate screenshots. No production changes during this checkpoint.
