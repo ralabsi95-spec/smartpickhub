@@ -143,15 +143,6 @@ const jsonLd = JSON.stringify(structuredData).replace(/</g, '\\u003c');
             </figure>
           ) : null}
           {product.bestFor && <p><strong>Best for:</strong> {product.bestFor}</p>}
-          {product.us_identifier || product.uk_identifier ? (
-            <div class="early-product-actions">
-              <p class="affiliate-link-label">Affiliate links (paid links):</p>
-              <div class="product-actions">
-                {product.us_identifier && <a class="button" href={buildAffiliateUrl('us', product.us_identifier)} rel="sponsored nofollow noopener" target="_blank" aria-label={`Search Amazon US for ${product.name}`}>Search Amazon US</a>}
-                {product.uk_identifier && <a class="button secondary" href={buildAffiliateUrl('uk', product.uk_identifier)} rel="sponsored nofollow noopener" target="_blank" aria-label={`Search Amazon UK for ${product.name}`}>Search Amazon UK</a>}
-              </div>
-            </div>
-          ) : null}
           {product.verdict && <p class="product-verdict">{product.verdict}</p>}
           <div class="pros-cons">
             {product.pros?.length > 0 && <div><h4>Potential advantages</h4><ul>{product.pros.map((item) => <li>{item}</li>)}</ul></div>}
@@ -169,7 +160,6 @@ const jsonLd = JSON.stringify(structuredData).replace(/</g, '\\u003c');
       ))}
     </section>
 
-    <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Affiliate links are paid links. Product information is based on cited manufacturer documentation and editorial research; SmartPickHub has not claimed hands-on testing.</p>
   </article>
   <script type="application/ld+json" set:html={jsonLd} />
 </Layout>
