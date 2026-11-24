@@ -1927,3 +1927,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Combined with previous Bing Index tab warning (`Title too long`) and current source/live HTML showing a 44-character SEO `<title>`, this confirms the long-title warning is not present in the live test and is likely stale index-side metadata or a difference in Bing's indexed snapshot. Do not alter the current SEO title/H1 based on the old warning.
 - No Request indexing clicked. Live test success is eligibility, not proof of indexed status; indexed status was separately confirmed by the Bing Index tab.
 - Next optional diagnostic: expand the "2 Markup types found" card if user wants to identify them; no SEO fix needed from this live test.
+
+
+## 24 November 2026 — Bing Live URL markup details: Air Fryers
+- Owner expanded Bing Live URL "2 Markup types found" for `/guides/air-fryers-us-uk/`: detected **JSON-LD** and **OpenGraph**.
+- Combined Live URL result: URL can be indexed by Bing; no SEO/GEO issues; markup types JSON-LD + OpenGraph.
+- This confirms Bing's live fetch recognizes the page's structured-data script and social metadata. It does not by itself certify every JSON-LD property or rich-result eligibility; those are separately validated by project build smoke tests and Google-specific tools.
+- No code changed and no indexing request submitted.
