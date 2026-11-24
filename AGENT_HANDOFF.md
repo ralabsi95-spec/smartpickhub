@@ -1669,3 +1669,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Correct verified URL (do not use the previously suggested incorrect slug): `https://smartpickhub.pages.dev/guides/portable-power-travel-tech-us-uk/`
 - Live fetch confirms deployed title `Portable Power Banks & Stations: US & UK Guide` and published/approved guide record. H1 is `Portable Power & Travel Tech: Power Banks and Compact Power Stations`.
 - Next: owner checks Bing Webmaster Tools > URL Inspection > Bing Index for this exact URL; do not request indexing yet.
+
+
+## 24 November 2026 — Bing Blocked / Portable Power
+- Bing Index screenshot for `/guides/portable-power-travel-tech-us-uk/`: **Blocked; URL cannot appear on Bing**. Generic notice says URL known but issues prevent serving; screenshot does not show root cause. SEO/GEO and markup processing unavailable because it is not indexed.
+- Verified live read-only: full page returns content; URL appears in sitemap-0.xml (29 URLs); robots.txt allows all crawlers and points to sitemap index. No sitemap omission or global robots disallow. These checks do not exclude Bing quality/policy or page-specific issues.
+- This is one URL only; homepage and Air Fryers previously indexed in Bing; Air Fryers Live URL passed with no SEO/GEO issues. Do not generalize.
+- Google baseline 23 Nov: homepage indexed, remaining 28 sitemap URLs unknown to Google; that status did not indicate noindex/block. No updated GSC inspection for Portable Power yet.
+- Next one step: owner runs Bing Live URL test for the same Portable Power URL and shares result. Afterward inspect same URL in GSC. No indexing request or site change until reason known.
