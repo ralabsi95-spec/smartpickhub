@@ -1942,3 +1942,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Live page title: `Portable Power Banks & Stations: US & UK Guide`; H1: `Portable Power & Travel Tech: Power Banks and Compact Power Stations`; page content is published and approved in `src/data/products.json`.
 - Correction: the earlier suggested slug `portable-power-stations-us-uk` was not the actual route. Use the verified slug above.
 - Next owner action: inspect this exact URL in Bing Webmaster Tools > URL Inspection > Bing Index. This will add an independent guide-level Bing index datapoint; do not request indexing yet.
+
+
+## 24 November 2026 — Bing Blocked result: Portable Power guide
+- Owner screenshot of Bing URL Inspection > Bing Index for `/guides/portable-power-travel-tech-us-uk/`: status **Blocked — URL cannot appear on Bing**. Bing says URL is known but has issues preventing it from being served. Screenshot does not expose the specific cause; SEO/GEO and markup processing unavailable because URL is not indexed.
+- Read-only live checks performed: page returns its full published guide content and SEO title `Portable Power Banks & Stations: US & UK Guide`; URL is present in live `sitemap-0.xml` (29 URLs total); live `robots.txt` says `User-agent: * Allow: /` and points to sitemap index. These checks rule out absence from sitemap and a global robots.txt disallow, but do not rule out Bing quality/policy signals or page-specific directives not exposed by the text fetch.
+- Important distinction: Bing's indexed snapshot status for this one URL is Blocked; this is not proof that all guides are blocked or that Google shares the same decision. Previous Bing Index results for homepage and Air Fryers were Indexed successfully; Air Fryers Live URL had no SEO/GEO issues.
+- Google Search Console baseline from 23 Nov: homepage indexed; 28 other sitemap URLs (25 guides + 3 pages) reported `URL is unknown to Google` at that snapshot, not a technical noindex/robots block. No GSC recheck on 24 Nov yet.
+- Next diagnostic: on the same Portable Power URL, run Bing **Live URL** inspection and capture any live SEO/GEO issue / crawlability result. Do not request indexing yet. Then use GSC URL Inspection for this exact URL to obtain Google's current Page indexing reason. Do not change page or sitemap before these diagnostics.
+- No production changes, no indexing requests, no sitemap/robots changes.
