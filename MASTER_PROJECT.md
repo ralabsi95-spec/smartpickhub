@@ -1959,3 +1959,15 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Together with live checks showing the URL in sitemap and robots.txt allowing crawling, there is no current evidence of a page-level technical block. Remaining possibilities include Bing's indexed snapshot / quality / serving decision; cannot diagnose further without Bing Site Explorer / URL details or recrawl.
 - Next: inspect this exact URL in Google Search Console URL Inspection (not Bing), record Page indexing status/reason and last crawl. Do not click Bing Request indexing or Google Request indexing until the GSC reason is known; then decide on one targeted request if appropriate.
 - No production code/config changes, no indexing request submitted.
+
+
+## 24 November 2026 — Google Live Test: Portable Power guide
+- Owner screenshot of Google Search Console URL Inspection, **LIVE TEST** tab for `https://smartpickhub.pages.dev/guides/portable-power-travel-tech-us-uk/`, tested 24 Nov 2026 08:19 AM:
+  - **URL is available to Google**
+  - **Page can be indexed**
+  - Breadcrumbs: **1 valid item detected**
+  - No Product enhancement shown; screenshot does not establish Product rich-result eligibility or index status.
+- This aligns with Bing Live URL test (can be indexed, no SEO/GEO issues, JSON-LD + OpenGraph) and rules against an obvious current live crawlability/robots/SEO block for this URL.
+- Critical distinction: this is a live eligibility test, not proof of inclusion in Google's index. The Google Index tab is still needed to establish actual indexing state, reason if not indexed, last crawl and Google-selected canonical.
+- Next: owner switches to **GOOGLE INDEX** tab for the same exact URL and shares the full result. Do not click Request Indexing yet; decide after reading actual index status and exclusion reason.
+- No code/content/sitemap/robots changes and no indexing request submitted.
