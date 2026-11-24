@@ -1919,3 +1919,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Therefore the indexed Bing notice may reflect stale indexed metadata or Bing's interpretation of the visible title/H1; it does not match the currently deployed HTML `<title>`. Do not change the approved SEO title or H1 based on this notice alone.
 - Next diagnostic: inspect the same URL under Bing's **Live URL** tab / live test to see whether the title-length warning persists for the currently fetched page. If Live URL is clean while Bing Index still warns, treat as stale index data and monitor; if Live URL warns, capture the detailed offending element before editing.
 - No Request indexing clicked; no code changes made.
+
+
+## 24 November 2026 — Bing Live URL test resolves Air Fryers title warning
+- Owner screenshot for `https://smartpickhub.pages.dev/guides/air-fryers-us-uk/`, Bing **Live URL** tab, tested 07:47: **URL can be indexed by Bing**; page can appear in Bing results subject to quality checks and indexing.
+- Live test reports **No SEO/GEO issues found**. It detects **2 markup types** (the screenshot does not show their names because the section is collapsed).
+- Combined with previous Bing Index tab warning (`Title too long`) and current source/live HTML showing a 44-character SEO `<title>`, this confirms the long-title warning is not present in the live test and is likely stale index-side metadata or a difference in Bing's indexed snapshot. Do not alter the current SEO title/H1 based on the old warning.
+- No Request indexing clicked. Live test success is eligibility, not proof of indexed status; indexed status was separately confirmed by the Bing Index tab.
+- Next optional diagnostic: expand the "2 Markup types found" card if user wants to identify them; no SEO fix needed from this live test.
