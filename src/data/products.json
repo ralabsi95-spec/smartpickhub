@@ -960,7 +960,7 @@
           "verdict": "A flexible single-basket option for users who do not need separate cooking zones. Confirm the regional model and its electrical rating before purchase.",
           "source": "https://cosori.co.uk/products/cosori-turbo-blaze-6l-air-fryer",
           "sourceNote": "COSORI UK lists the 6L TurboBlaze, nine functions and 30–230°C range; COSORI US identifies model CAF-DC601-KUS as 120V, 1725W and 6qt: https://cosori.com/products/turboblaze-air-fryer",
-          "availabilityNote": "The US CAF-DC601-KUS is specified for AC 120V, 60Hz and 1,725W. The UK product page is a separate 6L regional listing; its current public specification page does not expose a clear voltage line in the captured data, so confirm the rating plate/manual before ordering. Never assume the US 120V unit is suitable for UK/Jordan mains. Sources: https://cosori.com/products/turboblaze-air-fryer and https://cosori.co.uk/products/cosori-turbo-blaze-6l-air-fryer."
+          "availabilityNote": "The US CAF-DC601-KUS is specified for AC 120V, 60Hz and 1,725W. The UK 6L model is a separate regional version, and its product page does not state the voltage in the listed specifications. Check the exact model number and rating plate/manual before purchase. Never assume the US 120V unit is suitable for UK or Jordan mains. Sources: https://cosori.com/products/turboblaze-air-fryer and https://cosori.co.uk/products/cosori-turbo-blaze-6l-air-fryer."
         }
       ],
       "buyingChecklist": [
@@ -2146,8 +2146,8 @@
           ],
           "verdict": "A rugged premium candidate for users who need its larger case and outdoor feature set.",
           "source": "https://www.apple.com/jo/apple-watch-ultra-4/specs/",
-          "sourceNote": "Apple Jordan's model-specific specifications identify the 49mm titanium case, S11 chip, 3,000-nit display and battery estimates of up to 50 hours normal use or 84 hours in Low Power Mode. Actual battery life varies by use and configuration. Cellular model compatibility and carrier support vary by country. Do not attribute Apple Watch Ultra 3 satellite messaging features to Ultra 4; verify any carrier-provided satellite capability against the exact model, carrier and country.",
-          "availabilityNote": "Apple's carrier compatibility documentation lists country-specific Watch model numbers and supported carriers. Do not assume a GPS + Cellular model purchased in one country will support cellular service in another. Apple satellite support documentation currently distinguishes Ultra 3's Apple-provided satellite feature from carrier-provided features; do not market Ultra 4 as having Ultra 3 satellite SOS/messaging."
+          "sourceNote": "Apple Jordan's model-specific specifications identify the 49mm Grade 5 titanium case, S11 chip, 3,000-nit display and battery estimates of up to 50 hours normal use or 84 hours in Low Power Mode. Apple lists satellite communications (Emergency SOS, Messages and Find My) for Ultra 3 or later; availability is country/region- and model-dependent. Messages and location sharing require an active carrier plan. Sources: https://www.apple.com/apple-watch-ultra-4/specs/ and https://www.apple.com/watchos/feature-availability/.",
+          "availabilityNote": "Apple Watch Ultra 4 supports satellite communications for Emergency SOS, Messages and Find My on supported models and in supported countries or regions. Apple's current feature-availability list includes the UK and US for Emergency SOS via satellite, but not Jordan. Messages and location sharing via satellite require an active carrier plan; satellite features are not offered on models sold in certain countries or regions. Verify the exact regional model and local feature availability before purchase."
         },
         {
           "name": "Garmin Forerunner 265",
