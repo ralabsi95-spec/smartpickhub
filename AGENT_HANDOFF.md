@@ -1702,3 +1702,25 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Next: one targeted GSC Request indexing for this URL is appropriate after successful live test because Google explicitly recommends it for URL unknown. Request is not a guarantee. User has not yet confirmed clicking.
 - Separately verify GSC > Sitemaps has `https://smartpickhub.pages.dev/sitemap-index.xml` submitted, Status Success, discovered page count. Don't resubmit/change if successful.
 - No production change and no request submitted by assistant.
+
+
+## 24 November 2026 — Handoff: GA4 consent implementation (PR #38, draft)
+- Current branch: `fix/ga4-google-tag-2026-11-24`
+- Current PR: https://github.com/ralabsi95-spec/smartpickhub/pull/38
+- Latest branch head at handoff: `3dcf0358fb03b8a7bb399859860ed4cd548aad53f` (confirm live PR head before continuing).
+- PR is OPEN + DRAFT, base `main`; it is 5 commits ahead and 0 behind. It has exactly 3 changed files: `src/layouts/Layout.astro`, `src/styles/global.css`, `MASTER_PROJECT.md`.
+- The GA4 Measurement ID is already confirmed by the owner: `G-Q7XK4V953R`; stream name `SmartPickHub Production`; stream ID `16395435693`; Enhanced Measurement enabled.
+- Owner screenshots established: GA4 reports data collection inactive; production Chrome Network filters `collect`, `gtag`, and `googletagmanager` returned no matching requests. Shared production layout on `main` currently contains no GA4 loader. This diagnosis is for the tested homepage/browser session.
+- Branch implementation removes unconditional gtag insertion and adds an explicit first-party analytics consent panel. GA4 is dynamically loaded once only after explicit acceptance (or a previously saved accepted choice), and only on `smartpickhub.pages.dev`; rejection keeps it unloaded. A footer preferences control reopens the panel. Styling is responsive and includes visible focus styles.
+- Owner said they do not know whether Meta Pixel, Pinterest Tag, Zaraz, or other tracking tools are used. Do not infer that none exist. No access to Cloudflare account settings has been established. The screenshots supplied show Cloudflare Pages deployments and browser Network filters but do not show Zaraz configuration.
+- Read-only route checks found no `privacy-policy.astro`, `privacy.astro`, `cookie-policy.astro`, or `cookies.astro` at the expected `src/pages` paths. Do not author a factual privacy notice until data practices and processors/retention are checked.
+- Relevant ICO and Google guidance was added to PR description and MASTER_PROJECT.md. The current panel is a basic first-party consent UI, not a certified CMP or legal-compliance guarantee.
+- CI status: `fetch_commit_workflow_runs` for current head returned an empty list; this is not a pass. No build, accessibility or browser-consent test has yet been verified for this branch. Do not claim tests pass.
+- Production safety: nothing merged, deployed, or changed on `main`; no Cloudflare or GA4 Admin settings changed; no content/catalogue/affiliate links changed.
+- Next operator must:
+  1. Verify actual branch head and PR status.
+  2. Run project checks/build on the exact PR head (including `npm ci`, `npm run check`, `npm run validate`, `npm run build`, `npm run smoke`, `npm run accessibility` as supported by CI; avoid destructive dependency updates).
+  3. Inspect the actual Cloudflare Pages project integrations/settings read-only for Zaraz/other tag injection if account access is available; also search all repository source for Meta/Pinterest/Google tags and any consent manager.
+  4. Test the banner: first visit sends no GA4 request; reject sends none on reload; accept loads exactly one `gtag/js?id=G-Q7XK4V953R` and one expected page_view; preference reopening and changed choice behave correctly; preview hostname never loads GA4.
+  5. Before merge, establish and document the actual privacy/cookie disclosure (Cloudflare logs, GA4 processing/retention settings, Amazon affiliate outbound link behavior, Pinterest feeds/tags, contact mechanism and any third parties). Ask owner only for facts not discoverable from code/settings.
+  6. Keep PR #38 Draft and production unchanged until all checks, policy review and explicit owner approval are complete.
