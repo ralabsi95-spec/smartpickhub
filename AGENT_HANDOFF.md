@@ -1657,3 +1657,9 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Earlier Bing Index snapshot reported Title too long, but current deployed SEO title is 44 chars and Live URL test has no SEO/GEO issue. Treat indexed warning as stale/index-snapshot discrepancy; do not change title/H1.
 - Index status remains separately confirmed by Bing Index tab as Indexed successfully. Live URL eligibility alone does not prove indexing.
 - No indexing request submitted and no code changed. Optional: expand markup types if user wants exact names.
+
+
+## 24 November 2026 — Bing markup recognition confirmed
+- Bing Live URL for Air Fryers: URL can be indexed, no SEO/GEO issues; expanded markup section lists **JSON-LD** and **OpenGraph**.
+- Interpretation: Bing recognizes structured data and social metadata on the current live page; not a claim that all schema properties qualify for rich results.
+- No code edits, no indexing request.
