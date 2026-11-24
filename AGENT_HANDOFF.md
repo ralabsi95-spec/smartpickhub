@@ -1677,3 +1677,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - This is one URL only; homepage and Air Fryers previously indexed in Bing; Air Fryers Live URL passed with no SEO/GEO issues. Do not generalize.
 - Google baseline 23 Nov: homepage indexed, remaining 28 sitemap URLs unknown to Google; that status did not indicate noindex/block. No updated GSC inspection for Portable Power yet.
 - Next one step: owner runs Bing Live URL test for the same Portable Power URL and shares result. Afterward inspect same URL in GSC. No indexing request or site change until reason known.
+
+
+## 24 November 2026 — Portable Power Bing Live URL result
+- Bing Live URL screenshot (tested 08:16): `/guides/portable-power-travel-tech-us-uk/` **can be indexed**, **No SEO/GEO issues found**, markup: **JSON-LD + OpenGraph**.
+- Earlier Bing Index tab said Blocked. This is a discrepancy between indexed-state serving and current live eligibility; do not claim Bing indexed. Sitemap includes URL; robots.txt allows crawl. No current evidence of live page-level SEO/robots block. Exact Bing index-side reason remains unknown.
+- Next action: inspect same URL in Google Search Console URL Inspection and share Page indexing status/reason/last crawl. Do not submit indexing requests in either engine until GSC reason is known; consider one targeted request afterward if justified.
+- No code or settings changed; no request indexing clicked.
