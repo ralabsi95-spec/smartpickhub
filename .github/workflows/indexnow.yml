@@ -1,0 +1,38 @@
+name: Manual IndexNow Notification
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow-manual
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    name: Validate production sitemap and notify IndexNow
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Build and validate site output
+        run: npm run build
+
+      - name: Submit sitemap URLs to IndexNow
+        env:
+          PUBLIC_SITE_URL: https://smartpickhub.pages.dev
+          EXPECTED_DEPLOYMENT_SHA: 26636d4359508b9af30eec498a22ffc005a81a72
+        run: npm run indexnow
