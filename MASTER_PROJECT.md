@@ -2229,3 +2229,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Existing known issue retained: homepage call to Layout does not pass socialImage, so homepage source lacks conditional og:image and Twitter large-image tags. This was already identified in previous audit; no change made.
 - No production source, configuration, tracking ID, Bing submission, Pinterest pin, or deployment changes were made.
 - Next step: in GA4 Admin > Data streams > web stream for smartpickhub.pages.dev, inspect/copy the Measurement ID (G-...). Then compare it with Cloudflare Zaraz settings and repository configuration before proposing any installation. Do not add a tag until the correct ID and any existing edge-injected tag are verified to avoid duplicate page_view events.
+
+
+## 24 November 2026 — GA4 Web Stream details supplied by owner
+- Owner supplied the existing GA4 Web stream details screenshot and Measurement ID `G-Q7XK4V953R`. This confirms the GA4 property/Web stream was already created; do not repeat stream creation or ask for this ID again.
+- Stream name: `SmartPickHub Production`; stream URL: `https://smartpickhub.pages.dev`; Stream ID: `16395435693`; Measurement ID: `G-Q7XK4V953R`.
+- Enhanced Measurement is visibly enabled. GA4 displays the warning: `Data collection isn't active for your website.` Therefore the remaining issue is tag delivery/installation or event reception, not missing GA4 stream setup.
+- Source inspection of `src/layouts/Layout.astro` found no gtag.js / Google tag or GTM snippet. Cloudflare Zaraz or another external/edge injection has not yet been inspected, so check for an existing tag there before proposing code changes. Avoid duplicate page_view events.
+- No changes to site code, GA4 settings, Cloudflare configuration, or deployment were made.
+- Next: inspect Cloudflare Zaraz settings and/or the live site's served HTML/network tag delivery read-only. Confirm whether Google tag ID `G-Q7XK4V953R` is present and firing. Only then recommend the smallest safe fix; require owner approval before any production change.
