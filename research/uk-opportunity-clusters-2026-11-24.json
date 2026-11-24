@@ -1,0 +1,234 @@
+{
+  "newClusters": [
+    {
+      "id": "dehumidifiers-moisture",
+      "name": "Dehumidifiers & Moisture Control",
+      "topics": [
+        "dehumidifier",
+        "compact dehumidifier",
+        "desiccant dehumidifier",
+        "compressor dehumidifier",
+        "mini dehumidifier",
+        "dehumidifier for damp",
+        "dehumidifier for condensation",
+        "dehumidifier for laundry",
+        "dehumidifier for bedroom",
+        "dehumidifier for bathroom",
+        "low energy dehumidifier",
+        "quiet dehumidifier"
+      ],
+      "audiences": [
+        "for small flats",
+        "for large rooms",
+        "for damp homes",
+        "for laundry drying",
+        "for condensation problems",
+        "for bedrooms"
+      ],
+      "needs": [
+        "running cost",
+        "extraction rate",
+        "noise level",
+        "continuous drainage",
+        "auto defrost",
+        "room size coverage",
+        "energy efficiency"
+      ]
+    },
+    {
+      "id": "heated-clothes-airers",
+      "name": "Heated Clothes Airers & Indoor Drying",
+      "topics": [
+        "heated clothes airer",
+        "heated drying rack",
+        "electric clothes airer",
+        "folding heated airer",
+        "heated airer with cover",
+        "3 tier heated airer",
+        "indoor clothes dryer",
+        "energy efficient clothes airer"
+      ],
+      "audiences": [
+        "for small spaces",
+        "for flats",
+        "for winter drying",
+        "for large households",
+        "for energy saving"
+      ],
+      "needs": [
+        "running cost per hour",
+        "drying capacity",
+        "folding design",
+        "cover included",
+        "safety features",
+        "power consumption",
+        "drying time"
+      ]
+    },
+    {
+      "id": "personal-space-heating",
+      "name": "Personal & Space Heating",
+      "topics": [
+        "oil filled radiator",
+        "oil filled heater",
+        "PTC heater",
+        "ceramic heater",
+        "panel heater",
+        "convector heater",
+        "desk heater",
+        "portable heater",
+        "energy efficient heater"
+      ],
+      "audiences": [
+        "for bedrooms",
+        "for home offices",
+        "for small rooms",
+        "for garages",
+        "for energy conscious homes"
+      ],
+      "needs": [
+        "running cost",
+        "thermostat control",
+        "timer",
+        "safety cut-out",
+        "quiet operation",
+        "heat up time",
+        "portability"
+      ]
+    },
+    {
+      "id": "emergency-power-preparedness",
+      "name": "Emergency Power & Preparedness",
+      "topics": [
+        "emergency radio",
+        "hand crank radio",
+        "wind up radio",
+        "portable power station",
+        "solar power bank",
+        "emergency power bank",
+        "battery backup for router",
+        "rechargeable lantern",
+        "emergency flashlight"
+      ],
+      "audiences": [
+        "for power cuts",
+        "for home preparedness",
+        "for camping and emergencies",
+        "for households"
+      ],
+      "needs": [
+        "battery runtime",
+        "multiple charging methods",
+        "radio bands",
+        "USB output",
+        "solar charging",
+        "weight and portability"
+      ]
+    },
+    {
+      "id": "portable-carpet-cleaners",
+      "name": "Portable Carpet & Spot Cleaners",
+      "topics": [
+        "portable carpet cleaner",
+        "spot cleaner",
+        "carpet cleaner machine",
+        "upholstery cleaner",
+        "pet stain cleaner machine",
+        "handheld carpet cleaner"
+      ],
+      "audiences": [
+        "for pet owners",
+        "for small homes",
+        "for apartments",
+        "for quick clean ups"
+      ],
+      "needs": [
+        "tank capacity",
+        "suction power",
+        "ease of cleaning",
+        "drying time",
+        "pet hair performance",
+        "storage size"
+      ]
+    }
+  ],
+  "keywordPhrases": {
+    "dehumidifiers-moisture": [
+      "best dehumidifier UK",
+      "best compact dehumidifier UK",
+      "best small dehumidifier for damp",
+      "best dehumidifier for condensation",
+      "best quiet dehumidifier UK",
+      "best low energy dehumidifier UK",
+      "best dehumidifier for laundry drying",
+      "best dehumidifier for bedroom",
+      "best desiccant dehumidifier UK",
+      "best compressor dehumidifier UK",
+      "best dehumidifier under 150",
+      "best dehumidifier under 200",
+      "dehumidifier for damp flat UK",
+      "dehumidifier running cost UK",
+      "continuous drainage dehumidifier",
+      "dehumidifier vs heated airer",
+      "quiet dehumidifier for bedroom",
+      "dehumidifier for drying clothes indoors",
+      "best dehumidifier for mould",
+      "dehumidifier for bathroom condensation",
+      "energy efficient dehumidifier UK",
+      "small dehumidifier for caravan"
+    ],
+    "heated-clothes-airers": [
+      "best heated clothes airer UK",
+      "best heated drying rack",
+      "best 3 tier heated airer",
+      "best heated airer with cover",
+      "best folding heated clothes airer",
+      "best energy efficient heated airer",
+      "best cheap heated clothes airer",
+      "heated clothes airer running cost",
+      "heated airer vs dehumidifier",
+      "heated airer for small flat",
+      "electric clothes airer UK",
+      "heated airer for large loads",
+      "heated airer with cover and timer",
+      "dry clothes indoors without mould",
+      "best heated airer 2026",
+      "folding heated airer with wings"
+    ],
+    "personal-space-heating": [
+      "best oil filled radiator UK",
+      "best oil filled heater for bedroom",
+      "best PTC ceramic heater UK",
+      "best energy efficient heater UK",
+      "best portable heater for home office",
+      "oil filled radiator running cost",
+      "quiet heater for bedroom UK",
+      "best panel heater UK",
+      "best convector heater for small room"
+    ],
+    "emergency-power-preparedness": [
+      "best emergency radio UK",
+      "best hand crank radio",
+      "best wind up radio with torch",
+      "best portable power station for home",
+      "best power bank for power cuts",
+      "battery backup for wifi router",
+      "best emergency lantern UK",
+      "solar power bank for emergencies",
+      "best rechargeable torch UK"
+    ],
+    "portable-carpet-cleaners": [
+      "best portable carpet cleaner UK",
+      "best spot cleaner for carpets",
+      "best carpet cleaner for pet stains",
+      "best handheld carpet cleaner",
+      "best upholstery cleaner machine",
+      "portable carpet cleaner for apartments",
+      "best small carpet cleaner UK"
+    ]
+  },
+  "status": "research-only",
+  "note": "These clusters are distinct from the existing 25 guides. Do not publish pages or import products until evidence, SERP intent and owner approval are completed.",
+  "prepared": "2026-11-24",
+  "marketPriority": "UK-first"
+}
