@@ -3,7 +3,7 @@
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Implementation branch:** `main` (production)  
 **Status:** 25 approved guides / 100 product records are published on Cloudflare Pages production. PR #10 fixed the guarded IndexNow descendant-deploy check and is merged; PR #11 reconciled the search/discovery lifecycle. Five populated Pinterest RSS feeds (25 entries total) are connected to their matching boards per owner confirmation; Pinterest-side saved state and any automatic Pin ingestion still require verification.  
-**Updated:** 19 November 2026
+**Updated:** 25 November 2026
 
 ## Project purpose
 Build a trustworthy UK-first English-language affiliate buying-guide property, with a secondary US marketplace track. Prioritise useful original guidance, verified product information, organic discovery and measurable conversions.
