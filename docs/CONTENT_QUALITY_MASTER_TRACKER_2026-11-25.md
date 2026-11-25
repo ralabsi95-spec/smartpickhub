@@ -195,3 +195,9 @@ The 0/25 v1.0 figure was created before a complete legacy evidence crosswalk exi
 - Bosch BCS1051GB manual links are listed on the official support page but manual contents are not extracted. Weight remains withheld due differently labelled 2.9 kg, 3.8 kg and 5.3 kg figures.
 - Shark IZ862H third-party owner-guide mirror is not accepted as primary evidence; official manual remains open.
 - Page remains IN_PROGRESS, unscored; Amazon direct ASIN approval 0/4 UK and 0/4 US; no catalogue/affiliate/production changes. Continue the active page only.
+
+
+## 25 November 2026 — 10:39 Asia/Amman / 07:39 UTC — Samsung product-market evidence status updated
+- UK VS28C9784QK/EU official manual v0.7 content reviewed. Runtime and battery claims are now supported: up to 160 min only at MIN with non-motorised tool and two batteries; manual details large/light battery times and lower powered-head runtimes. SKU-specific product page confirms quantity 2 and bundle accessories. Mark this evidence SATISFIED; do not repeat.
+- Remaining Samsung UK open item: current exact retailer offer/seller/condition/stock. US VS28C9762UK/AA remains a separate record.
+- Bosch official manual content/weight scope and Shark US official IZ862H manual remain open. Cordless Vacuum page remains IN_PROGRESS and unscored; no catalogue/affiliate/production change.
