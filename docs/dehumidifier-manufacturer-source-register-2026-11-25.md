@@ -135,3 +135,12 @@ Pro Breeze source for its published method: https://probreeze.com/blogs/news/how
 4. Search for any still-current Dimplex-branded domestic dehumidifier model before spending time on legacy models.
 5. Only after choosing the candidate shortlist, check exact model/SKU/EAN matches on Amazon UK. Amazon availability must not determine or alter manufacturer specification values.
 6. Do not modify the live site or publish this research without explicit owner approval.
+
+
+## 8. Follow-up verification of the existing Meaco records
+
+The current manufacturer-owned pages were opened and their performance tables checked directly:
+
+- **Meaco 20L Low Energy:** the live manufacturer table confirms 10°C/60% = 2.52 L/day at 163 W; 20°C/60% = 8.48 L/day at 219 W; 30°C/60% = 13.27 L/day at 262 W; 10°C/80% = 5.86 L/day at 165 W; and 20°C/80% = 13.74 L/day at 228 W. The table opened in this check does not show a 30°C/80% row. The 20.38 L/day headline value is therefore not accompanied by a power value in the current table; keep its cost/L blank. Source: https://www.meaco.com/products/meaco-20l-low-energy-dehumidifier-and-air-purifier
+- **Meaco DD8L Pro:** the manufacturer page directly confirms the complete 10°C/60% and 20°C/60% rows by fan speed, including 20°C fan 3 = 7.97 L/day at 623 W and 10°C fan 3 = 6.89 L/day at 630 W. The uploaded values are supported. Source: https://www.meaco.com/products/meaco-dd8l-pro
+- **Meaco DD8L Zambezi:** the current manufacturer page confirms 20°C/60% extraction of 3.9, 8.0 and 8.3 L/day for fan speeds 1–3, but the page lists a single power-consumption figure of 351 W and does not give separate 656/661 W figures for fan speeds 2/3. It does not show a 10°C/60% performance row. Therefore, do not label the uploaded 656/661 W fan-speed values or the 10°C rows as directly manufacturer-verified on the basis of this page. Keep those figures secondary/pending original-manual confirmation. Source: https://www.meaco.com/products/meaco-dd8l-zambezi-dehumidifier
