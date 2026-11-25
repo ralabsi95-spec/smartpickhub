@@ -1803,3 +1803,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Ebac searches produced conflicting third-party 2650e/2850e wattage and extraction claims; Ebac's own domain was not accessible to the research fetcher. No reseller figure was promoted to manufacturer evidence; keep Ebac pending direct technical-sheet or written manufacturer confirmation.
 - The manufacturer source register was updated with the discrepancy and explicit evidence disposition. No product dataset, site code, pages, affiliate links, navigation, live settings, PR, merge, or deployment was changed. The review branch remains documentation/research only.
 - Next: seek a reproducible archived Meaco table or written confirmation; continue exact-model evidence collection, then choose a shortlist based on primary-source completeness before checking Amazon UK exact model/SKU matches.
+
+ 
+## 25 November 2026 — Amazon UK exact-variant screening
+- Began exact-model Amazon UK screening for the proposed dehumidifier candidates. A returned MeacoDry Arete One Amazon page is a 10L listing/selected variant (ASIN B09TBHGQXR), even though its variation selector also mentions 20L sizes. This ASIN is explicitly excluded from the Arete One 20L record.
+- Exact-model searches did not yield sufficiently verifiable direct Amazon product pages for the remaining shortlisted models in this pass. No ASIN was added and no affiliate link was generated. Search phrases remain discovery links, not direct product links.
+- The source register now records the exact-variant acceptance gate: verify the selected listing's model number/EAN, capacity variation, marketplace and ASIN together before any direct link can be approved.
+- No site/product data/affiliate code, production pages, navigation, PR, merge, or deployment was changed.
