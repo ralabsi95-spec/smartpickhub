@@ -2438,3 +2438,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Dyson V15 UK exact page continues to show conflicting out-of-stock and in-stock/Add to basket states; stock remains unconfirmed.
 - No exact Amazon direct offer was verified for the four products in either market. Direct ASIN approval remains 0/4 UK and 0/4 US. No product disposition finalized.
 - Active page remains IN_PROGRESS and unscored. No guide #2, production/catalogue/affiliate/code/Cloudflare change, merge or deployment.
+
+
+## 25 November 2026 — 12:07 Asia/Amman / 09:07 UTC — Cordless Vacuum market evidence checkpoint (documentation-only)
+- Added directional Brandwave October 2026 brand-demand snapshots (UK tracked sample: Henry 43%, Shark 15.8%, Dyson 10.5%, Miele 5.8%, Hoover 4.7%; US sample: Shark 30.7%, Dyson 25.1%, Roborock 11.2%, BISSELL 6.2%, Miele 6.2%). These are not total search volumes or product-level demand.
+- Added current buyer-intent clusters from specialist SERPs: pet hair, carpet deep-clean, hard floors, filtration/allergies, runtime/battery, emptying, handling/weight and attachments.
+- UK: Bosch exact BCS1051GB official offer displays £629.99 and in stock, 4.8/5 from 788 ratings, with a 5-year warranty offer; weight conflict remains withheld. Shark IP1251UK £489.99 but back-in-stock notification appears; availability unresolved. Dyson V16 has inconsistent stock states. IA1241UK surfaced as a separate new research lead (John Lewis £229.99, 514 reviews/4.4), not to be conflated with IP1251UK/IP1251UKT.
+- US: Shark IZ862H exact Best Buy SKU 6514613 at $499.99, 4.4/5 from 739 reviews, Add to cart; official-hosted manual gate still open. Samsung VS28C9762UK/AA Best Buy says no longer available new. Miele 11827000 Miele US $849 / 4.6 from 19 reviews. Dyson V15 availability remains contradictory.
+- Amazon direct ASIN approvals remain 0/4 UK and 0/4 US; no final disposition. No production or catalogue changes, merge or deployment.
