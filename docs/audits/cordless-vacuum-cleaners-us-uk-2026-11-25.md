@@ -154,7 +154,7 @@ Official UK page confirms 11819170 and EAN, 3.6kg, 0.5L dustbag volume, 25.2V, 6
 |---|---:|---|
 | Keyword demand and buyer intent | 15 | PARTIAL — saved cached/undated metrics; SERP sampled |
 | SERP, competitor and cannibalisation | 10 | PARTIAL — UK competitor set reviewed; full overlap matrix and US SERP pending |
-| Product identity and factual evidence | 25 | PARTIAL — four UK primary-source pages found; material conflicts remain; US not fully checked |
+| Product identity and factual evidence | 25 | PARTIAL — primary-source identity evidence located for 6/8 market records; Shark UK/US remains unresolved and material claims/listings remain open |
 | Editorial usefulness and originality | 20 | PARTIAL — catalogue/template reviewed; full refresh brief/draft not done |
 | Commercial and affiliate readiness | 10 | BLOCKED — no exact direct ASIN/listing verified |
 | On-page SEO and structured data | 10 | PARTIAL — source template/policy reviewed; live route not inspected |
@@ -167,7 +167,7 @@ Official UK page confirms 11819170 and EAN, 3.6kg, 0.5L dustbag volume, 25.2V, 6
 ## 9. Next exact actions
 
 1. Verify exact Amazon UK and US listings for each of the four models, without accepting model-family matches or ambiguous variants.
-2. Verify US manufacturer sources for Dyson V15, Shark IZ862H, Samsung VS28C9762UK/AA and Miele 11827000.
+2. Close the remaining Shark US IZ862H manufacturer-source gap; Dyson, Samsung and Miele US manufacturer evidence is now recorded.
 3. Compare the four current products against fresh current UK candidates surfaced by the SERP (Dyson V16 Piston Animal, Shark PowerDetect, Bosch Unlimited 10 ProPower, Hoover HF3 and Miele Triflex HX3 Plus); verify each from primary sources before proposing replacement.
 4. Prepare a buyer-intent-led refreshed shortlist with retain/replace/hold decisions and source notes.
 5. Only then prepare a revised editorial outline and complete the full page scorecard.
