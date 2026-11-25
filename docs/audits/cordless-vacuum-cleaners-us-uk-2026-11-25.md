@@ -681,3 +681,39 @@ Primary candidate sources:
 3. Verify exact Amazon selected offers for Dyson V15, Samsung VS28C9784QK/EU, Miele 11819170, Bosch BCS1051GB and IA1241UK.
 4. Continue US IZ862H official manual and exact-offer work separately.
 5. Build market-specific comparison scorecards and final disposition only after these gates. No guide #2.
+
+
+## 25 November 2026 — 14:19–14:30 Asia/Amman — Amazon exact-offer recheck and primary-source delta (documentation-only)
+
+### Scope / continuity
+- Resumed from the 13:50 handoff. Re-read the active audit, master tracker, operating standard, handoff and master project log before work.
+- Confirmed repository default branch remains `main`; active documentation branch is `docs/content-quality-operating-system-2026-11-25`.
+- GitHub compare: documentation branch is **89 commits ahead, 0 behind** main at this checkpoint. Changes remain documentation-only. No merge, PR merge, production deploy or website mutation.
+- Active unit remains Cordless Vacuum Cleaners (UK and US separately). Do not start guide #2.
+
+### Exact Amazon offer recheck — no ASIN approval
+- Re-ran model-specific UK/US Amazon search queries for Bosch BCS1051GB, Dyson V15, Samsung VS28C9784QK/EU and US VS28C9762UK/AA, Miele 11819170/11827000, Shark IA1241UK/IZ862H, and Shark IZ400UKT.
+- Amazon.com direct domain remains blocked by robots in this research environment; Amazon.co.uk result retrieval did not provide a first-party Amazon product detail page showing the selected model/variant, Featured Offer, seller and new/used condition.
+- Search surfaced third-party offer-monitor pages with ASIN candidates for Dyson US, including B0GXX8KQY7 (model 626417-01, Yellow/Nickel, last-observed offer) and B0C2J8KJH9 (model 447261-01, marked unavailable at last check, condition not verified). These pages are not Amazon product pages; the catalogue SKU/bundle mapping to the existing US Dyson V15 record and the current Amazon Featured Offer are not proven. **Do not approve either ASIN or create a direct affiliate URL.**
+- Search surfaced an Amazing Gadgets Outlet page claiming a Samsung UK model VS28C9784QK/EU and Amazon checkout route, but the page is third-party, not Amazon, and the content could not be independently read. This is not sufficient direct-offer evidence; do not approve an ASIN or change the marketplace destination.
+- No exact Amazon direct selected offer has been verified for any of the eight market records. Direct-ASIN approval count remains **0/4 UK and 0/4 US**. Continue using labelled Amazon search links where already configured; do not turn search queries into direct product links.
+- The earlier Shark IZ400UKT ASIN B0B42QJL5B remains QUARANTINED / NOT APPROVED. B0B42KZTH2 remains rejected. No new direct evidence supersedes those dispositions.
+
+### Samsung exact-model support documentation delta (non-blocking)
+- Samsung UK support page for exact model VS28C9784QK/EU exposes a model-specific User Manual, version **0.7**, modified **11 August 2025**, file `O_DJ68-00900C-07_IB_VS9700_EU_EN_250702.pdf`. Download URL: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=VS28C9784QK&CttFileID=10789220&CDCttType=UM&VPath=UM%2F202508%2F20250811201509973%2FO_DJ68-00900C-07_IB_VS9700_EU_EN_250702.pdf
+- This is useful exact-model documentation; it does not change the already-closed Good Housekeeping/Argos SKU match, the score 90/100, product selection, bundle validation or Amazon status. No manual contents were extracted in this checkpoint, so do not claim any additional operating/safety finding from it.
+
+### Shark IZ862H official-source follow-up
+- Rechecked official SharkNinja sources. Search returns Shark parts/accessory pages explicitly listing compatibility with IZ862H/IZ862HC and an official US PowerDetect IP1251 comparison page that names IZ862H only as a comparison baseline. These are not an IZ862H owner manual or a full exact-model specification sheet.
+- The official IP1251 or IP3251 specs/bundles must not be transferred to IZ862H. The primary exact-model owner-guide/manual gate for IZ862H remains OPEN.
+- No new official exact-model manual was located. Keep Shark US IZ862H on HOLD for safety/maintenance copy until the exact official manual or model-matched support document is obtained.
+
+### Current disposition / work remaining
+- Samsung UK exact independent-review/model/package matching remains CLOSED.
+- Bosch BCS1051GB operating-weight conflict remains OPEN (2.9kg vs 3.8kg); continue withholding weight and handling score.
+- Shark IZ400UKT direct ASIN remains quarantined; no direct offer approval.
+- Shark US IZ862H official manual gate remains OPEN.
+- Amazon direct offer verification remains unresolved across UK and US; no current featured offer, seller or condition approved.
+- No final retain/replace/hold matrix; active page remains IN_PROGRESS and unscored.
+- No content/catalogue/product/affiliate URL/code/Cloudflare/sitemap/robots change, PR, merge, deployment or publication performed.
+- Next: obtain Bosch written weight clarification; inspect exact Amazon product pages when first-party page access is available and validate variant/seller/condition/Featured Offer; obtain exact Shark IZ862H official manual; then complete market-separated scorecards and final disposition. Only after those hard gates should the page be scored and prepared for owner approval/release.
