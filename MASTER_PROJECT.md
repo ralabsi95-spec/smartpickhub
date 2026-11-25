@@ -2480,3 +2480,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Samsung Bespoke Jet AI test evidence remains family-level until the exact catalogue model/bundle is matched. Shark Clean & Empty is a docked competitor and must not be confused with IA1241UK base bundle.
 - No final retain/replace/hold decision. No catalogue, production content, affiliate URLs, code, Cloudflare, sitemap, robots, merge, deployment or publication changed.
 - Next: resolve Bosch weight; verify B0B42QJL5B direct offer when accessible; exact Samsung SKU/bundle; remaining UK exact Amazon offers; continue US IZ862H primary manual and exact-offer work separately; then final market-specific scorecards and disposition.
+
+
+## 25 November 2026 — 13:50 Asia/Amman — Samsung exact test match / Bosch and Shark offer blockers
+- Samsung VS28C9784QK/EU is now matched to Good Housekeeping's 90/100 review through Argos item 326/9381, which explicitly lists the exact model/EAN and package contents. Samsung official page confirms runtime conditions and two-battery details.
+- Bosch BCS1051GB operating weight remains unresolved: Bosch product page says 3.8kg; Bosch support page says 2.9kg with tube/floor nozzle; official specification sheet lists net/gross package weights but does not reconcile. Keep weight out.
+- Shark IZ400UKT ASIN lead B0B42QJL5B is quarantined, not approved, due MPN mismatch lead (IZ420UKT vs IZ400UKT) and inaccessible Amazon page. Official Shark confirms IZ400UKT single-battery and IZ420UKT double-battery are distinct.
+- No final product disposition, production/catalogue/affiliate/code/Cloudflare changes, merge, deployment or publication.
