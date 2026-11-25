@@ -2328,3 +2328,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - No change to product dispositions, Amazon direct approval (0/4 UK, 0/4 US), catalogue, affiliate URLs, production code/content/settings, PR merge or deployment. Cordless Vacuum Cleaners remains the only active page, IN_PROGRESS and unscored.
 - Next: extract/review Samsung v0.7 and Bosch manual/packaging; obtain official Shark IZ862H owner guide; then complete exact offers, UK/US buyer-intent comparison, retain/replace/hold matrix and page scorecard. Reuse all prior evidence and do not repeat completed checks.
 
+
+
+## 25 November 2026 — 10:39 Asia/Amman / 07:39 UTC — Samsung UK manual reviewed; runtime claim clarified
+- Retrieved and reviewed Samsung's official VS28C9784QK v0.7 English/EU manual (file ID 10789220; 11 Aug 2025). Exact Samsung UK Business page confirms the 160-minute headline is conditional: minimum power, non-motorised tool, two batteries; exact bundle lists two batteries.
+- Manual family table supports approx. 100 min with VCA-SBTC97 (3970 mAh) and approx. 60 min with VCA-SBTC97S/SBTD95 (2200 mAh) using Combination/Extension Crevice Tool at MIN. With powered heads, MIN times are lower: Active Dual Brush 58/34 min; Slim LED Brush+ 77/45 min. Never describe 160 min as powered floor-head runtime.
+- Samsung UK manual/content/runtime gate is now closed. Commercial seller/stock verification and US variant verification remain separate.
+- Bosch weight and Shark IZ862H official-manual gaps remain open. No catalogue, affiliate, content, production or deployment changes; active page remains IN_PROGRESS and unscored.
