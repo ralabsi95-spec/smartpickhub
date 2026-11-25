@@ -176,3 +176,11 @@ Source: https://manuals.duux.com/Bora/index.html
 ### Ebac — do not promote reseller figures to manufacturer evidence
 
 Searches surfaced conflicting third-party values for older Ebac 2650e/2850e models (including different wattages and extraction conditions). Ebac's own domain/manual endpoint was blocked to the research fetcher in this pass. The manuals retrieved from third-party hosts describe Smart Control, fan settings and general real-home extraction but do not establish a reliable manufacturer-origin 10°C/20°C performance-and-wattage matrix. Keep Ebac outside the evidence-backed comparison pending a directly accessible Ebac technical sheet or written manufacturer confirmation. Do not resolve conflicting seller values by choosing one.
+
+
+## 10. Initial Amazon UK exact-variant screening — not approved for affiliate linking (25 November 2026)
+
+- A search result for an Amazon UK MeacoDry Arete One listing returned ASIN **B09TBHGQXR**, but the page's actual product title and selected size identify the 10L model. Although the listing page exposes a variation selector that mentions Arete One 20L among other sizes, this parent/selected ASIN is not evidence that the ASIN itself identifies the 20L variant. **Do not use B09TBHGQXR for the 20L record.**
+- Exact-model Amazon UK searches in this pass did not return sufficiently verifiable direct product pages for the other target models (Meaco 20L Low Energy, DD8L Pro, DD8L Zambezi, PureMate PM-470, Pro Breeze PB-08/PB-18, and De’Longhi DEXD214RF).
+- No Amazon ASIN was added to the dataset and no affiliate link was generated. Search phrases remain discovery links only, not direct product links.
+- Before any direct Amazon link is approved, capture the exact listing title, manufacturer/model number or EAN/GTIN, selected size/capacity variation, seller/marketplace, and ASIN from the exact product page. Recheck the selected variation itself rather than relying on a parent listing, title keyword match, or variation menu.
