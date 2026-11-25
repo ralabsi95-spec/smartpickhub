@@ -1837,3 +1837,13 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Added docs/dehumidifier-shortlist-comparison-2026-11-25.md. It explicitly says this is not a winner ranking or equivalent laundry-load test; it keeps technology, fan modes, product generations and discontinued status visible.
 - No changes were made to the uploaded JSON/CSV, live product catalogue, website code, pages, navigation, affiliate links, PR, merge, or deployment. New model IDs are proposed only in the worksheet.
 - Next: verify exact UK product identifiers/EANs and retail availability for the seven-model pool; separate currently purchasable recommendations from the discontinued Zambezi benchmark; then consider a reviewed data-only update proposal. Do not auto-import or publish.
+
+ 
+## 25 November 2026 — EcoAir manufacturer confirmation and Pro Breeze variant mapping
+- Opened EcoAir's current UK manufacturer pages for DD1 Classic MK6 and DD1 Simple MK3. Both now have manufacturer-confirmed headline extraction at 20°C/60% RH (7.5 L/day) and power modes (300W low, 580W high; DD1 Classic also lists 25W sampling), with model-specific temperature range, tank and noise details.
+- Corrected the earlier dataset evidence status: EcoAir DD1 Classic is no longer “retailer-only” for its basic specifications. However, the manufacturer page does not explicitly pair 580W high mode (or 300W low mode) with the 7.5L/day extraction figure. Therefore do not calculate manufacturer-verified p/L from the assumed 580W pairing; retain the original assumption only as a clearly labelled illustrative value outside the ranked comparison.
+- Added DD1 Simple MK3 as a manufacturer-backed spec-only candidate, also excluded from p/L until a paired test point is published.
+- Reviewed Pro Breeze's official manual index and captured model-code mapping for PB-18/PB-D-18, PB-D-24-WF, PB-D-24W-EU, PB-08, PB-D-23 and PB-D-40W. Exact suffix matching is mandatory; capacity alone is not enough to identify a product or manual.
+- Added an explicit spec-only appendix to the shortlist worksheet covering EcoAir, Duux, Pro Breeze, PureMate and De’Longhi models with their evidence limits. No new models were inserted into the uploaded JSON/CSV.
+- No website code, live catalogue, affiliate links, pages, navigation, PR, merge, or deployment changed.
+- Next: verify Pro Breeze PB-D-40W through the exact official linked manual and keep broadening the manufacturer-backed market pool without weakening condition-matching rules.
