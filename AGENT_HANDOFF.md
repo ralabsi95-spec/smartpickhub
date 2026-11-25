@@ -1,3 +1,14 @@
+# LATEST ACTIVE HANDOFF — 25 November 2026 — 12:19 Asia/Amman / 09:19 UTC
+
+- Active unit remains Cordless Vacuum Cleaners; do not start guide #2.
+- Shark PowerDetect Speed **IA1241UK** now has exact manufacturer identity/spec evidence. It is distinct from IA1241UKT Pet, IA1241UKPU Royal Grey, IA1241UKTRD Cherry Red and IP1251 variants. Exact base bundle does not include a pet tool.
+- Exact Shark UK page displays £229.99, 3.22 kg, 0.47 L, one battery, 350 W, up to 60 min ECO with non-motorised tool, 5-hour charge, charging base, wall mount and 20 cm duster-crevice tool. 5-year guarantee on registration; battery 2 years.
+- Critical manufacturer conflict: Shark support article scoped to IA1241UK/IA1241UKT states up to 70 min ECO and ~6-hour charge. Keep runtime/charge reconciliation OPEN. Support article confirms removable battery/charging sleeve, supplied-charger-only instruction and modes. Full owner manual/maintenance/safety gate remains OPEN.
+- Shark product page displays mixed stock/cart messaging; category page has Add to cart. Availability remains UNCONFIRMED. John Lewis exact listing snapshot: £249.99, 4.5/5 from 405 reviews. Which? test summary differs from maker capacity/runtime values; do not mix.
+- Amazon UK exact IA1241UK ASIN/selected offer not verified. Amazon-labelled IA1241UKPU is a different variant; reject for IA1241UK. No ASIN approved.
+- Candidate state is RESEARCH LEAD only, not approved shortlist/replacement. No page or catalogue edits, affiliate links, code, Cloudflare settings, merge, deployment or publication.
+- Next: obtain the exact IA1000UK-series owner manual and official maintenance/safety guidance; request/locate Shark clarification of 60-vs-70-minute and 5-vs-6-hour conflicts; inspect exact Amazon UK IA1241UK offer if available; then compare IA1241UK against existing UK models and only then decide shortlist/disposition. Keep US work separate.
+
 # ACTIVE HANDOFF ADDENDUM — 25 November 2026 (Amazon Shark ASIN rejection)
 
 - Amazon UK ASIN B0B42KZTH2 was inspected directly in search results. It lists title/model number IZ400UK, but secondary Model Name says IZ400UKT; capacity 0.7 L, weight 5.11 kg, 25.2 V, and no featured offers. Included accessories/package do not cleanly match official IZ400UKT package.
