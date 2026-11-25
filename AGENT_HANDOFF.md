@@ -1947,3 +1947,14 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Approved Amazon direct-ASIN count remains 0/4 UK and 0/4 US. Do not replace this with third-party tracker observations or retailer offers. Non-Amazon retailer snapshots are recorded only as market/price/availability context.
 - No final retain/replace decision is made yet. Product-market records remain separate. Active page remains IN_PROGRESS and unscored; no guide #2.
 - No catalogue, page copy, affiliate URL, code, Cloudflare configuration, sitemap, robots, PR merge, production deployment or publication changed.
+
+
+# LATEST ACTIVE HANDOFF — 25 November 2026 — 11:58 Asia/Amman / 08:58 UTC
+
+- Resume the single active page: Cordless Vacuum Cleaners. Do not start guide #2.
+- Shark US IZ862H official manual search was retried with SharkNinja.com/Sharkclean.com domain restrictions; no official-hosted exact-model manual/spec document surfaced. Keep the primary-source gate OPEN. The SharkNinja IP1251 page only uses IZ862H as a comparison point and cannot supply IZ862H specifications. Third-party IZ800 manual mirror remains secondary evidence only.
+- Miele UK 11819170 now has an exact Miele-hosted datasheet. Runtime is 60 min PowerUnit solo LOW, 30 min with electrical accessories LOW, 14 min with electrical accessories HIGH; exact sheet also records 0.5 L, 3.6 kg, 25.2 V, 2500 mAh, 77 dB and 240 min charge. Keep bundle claims exact to regional SKU.
+- Dyson V15 UK exact product page still renders contradictory out-of-stock and in-stock/Add to basket states. Availability remains unconfirmed.
+- Fresh Amazon exact-model search produced no verifiable selected, buyable Amazon offer for the eight product-market records. Direct ASIN approvals remain 0/4 UK and 0/4 US. Ignore third-party tracker/deal pages as ASIN evidence.
+- No final retain/replace/hold matrix yet. Continue market-specific buyer-intent comparison and exact retailer offer verification. Do not publish or alter catalogue/product/affiliate/code/Cloudflare settings. Documentation-only updates are on this branch; no merge/deploy.
+- Read the newest audit entry and tracker entry before resuming; do not repeat completed Samsung/Bosch/Miele source checks.
