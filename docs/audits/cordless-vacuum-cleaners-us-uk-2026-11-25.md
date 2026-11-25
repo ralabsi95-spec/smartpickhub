@@ -8,12 +8,14 @@
 
 ## 1. Reusable prior evidence
 
-The 18 Nov 2026 `docs/25_GUIDE_100_PRODUCT_AUDIT_2026-11-18.md` already records:
+The 18 Nov 2026 `docs/25_GUIDE_100_PRODUCT_AUDIT_2026-11-18.md` and the 19 Nov 2026 `EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md` already record:
 - Guide #11 has four structurally complete product records.
 - Miele Triflex HX2 UK material number 11819170 and US 11827000 are separate records/variants; UK source data includes runtime by configuration.
 - Shark Stratos US IZ862H and UK IZ400UK are different regional models/configurations.
 - Dyson and Samsung exact regional model codes/runtime/bundle checks remain required.
-- The previous audit is a structure and targeted source pass, not proof of current retailer availability or exact Amazon listings.
+- The 19 Nov editorial preflight records owner approval for all 25 guides, while explicitly stating it did not live-verify every manufacturer claim, retailer listing, stock, price or image right. Its guide #11 product notes are reused below.
+- `EXISTING_25_GUIDES_INTENT_MAP.md` already assigns this canonical page the provisional UK query “best cordless vacuum cleaner” and its supporting buyer intents. This is reused rather than regenerated.
+- The previous audits are structural/editorial preflight baselines, not proof of current retailer availability or exact Amazon listings.
 
 These findings are reused. No structural re-sweep of the 4 records was repeated.
 
