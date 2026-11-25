@@ -267,3 +267,16 @@ The 25 existing guides are the fixed initial quality cohort. The headline denomi
 - Reopen a locked page only for a material trigger: manufacturer/model discontinuation or safety recall; significant spec/variant/warranty/availability change; broken retailer/affiliate destination or policy change; Google/Bing indexing/manual-action issue; route/canonical/robots/schema regression; material search-intent/SERP shift; owner request. Record trigger and delta; do not repeat the entire audit by default.
 - At 100% of the 25-guide cohort, close the initial cohort. Only then begin the separate expansion queue. Each new product is prepared as a complete page/product unit, fully audited, owner-approved, then published or scheduled; no bulk thin-page generation.
 - Keep QA PASS, owner approval, merged, deployed, indexed and commercially performing as distinct states. Never call a page indexed based only on successful deployment or live test.
+## 10. Legacy evidence, historical completion and no-reset rule (added 25 Nov 2026)
+
+The v1.0 standard is a certification framework, not a reset of project history. Existing completed work must be reconciled and credited by scope.
+
+- Preserve separate counters for approved/published guides, structural catalogue completeness, product source-reference coverage, historical CI/release checks, v1.0 full page PASS, owner approval, deployment, indexing and commercial performance.
+- A 0/N v1.0 PASS counter means only that N pages have not yet been fully certified against every v1.0 gate. It must never be presented as overall project progress or as evidence that previous work was not completed.
+- Reuse legacy evidence when the prior record identifies the exact scope, source, date, commit/version and result and remains applicable. Mark the relevant scorecard criterion SATISFIED — LEGACY EVIDENCE; do not repeat its test.
+- Recheck only volatile evidence (e.g. current stock/price), broken or stale sources, unresolved conflicts, affected code/catalogue, or a recorded material regression. Historical tests remain valid for their exact commit and scope, not automatically for later changed code.
+- A structural audit can satisfy structural criteria only. A source URL recorded is not proof every claim was verified. A successful build does not prove indexing. Prior owner approval/publication does not automatically equal v1.0 PASS, but it must remain credited in its own counter.
+- Before marking a page QUEUED or repeating any test, inspect legacy audit files, merged PRs, exact-SHA CI runs, release/deployment records, previous source checks and owner decisions. Pages with prior work should be marked LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING, not NOT STARTED.
+- Do not reset the cohort or re-audit all 25 from scratch. Reconcile old evidence first, then run only missing delta checks. The active page remains the only full v1.0 pilot unless the owner changes priority.
+
+The controlling evidence map is docs/LEGACY_EVIDENCE_RECONCILIATION_2026-11-25.md.
