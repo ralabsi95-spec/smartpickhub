@@ -441,3 +441,32 @@ Primary candidate sources:
 - One new evidence gate closed: Bosch BCS1051GB manual/runtime/care content (with exact family-scope caveat). Bosch weight remains a hard publication hold for weight only; it does not invalidate other independently supported specs.
 - Shark US official manual gate remains open. Exact retailer/Amazon offer checks and UK/US buyer-intent/product disposition remain open. Cordless Vacuum Cleaners page remains IN_PROGRESS and unscored. Do not start guide #2 or repeat completed checks.
 - No catalogue/product/page content, affiliate destination, source code, Cloudflare setting, sitemap, robots, PR merge, production deployment or publication changed.
+
+
+## 25 November 2026 — 12:05 Asia/Amman / 09:05 UTC — exact retailer availability and price snapshots (non-Amazon; documentation-only)
+
+### UK Samsung VS28C9784QK/EU — exact non-Amazon retailer offer observed
+- Harvey Norman UK exact SKU page identifies VS28C9784QK/EU and displays £709 (was £1,099) with an Add to cart control on 25 Nov 2026. Product page: https://www.harveynorman.co.uk/products/samsung-bespoke-jet-ai-bagless-cordless-vacuum-cleaner-vs28c9784qk-eu-black
+- The same exact-SKU page lists the bundle: Active Dual Brush, Slim LED Brush+, Pet Tool+, accessory cradle, combination/long-reach crevice tool, flex tool, 100min/60min battery, charging kit, 3 dust bags and All-in-one Clean Station. Its product description states up to 100 min with a 3970mAh large battery at minimum power with a non-motorised tool; powered accessories reduce runtime. This aligns with Samsung manual evidence already closed.
+- Availability is not fully resolved because delivery/collection is postcode/store dependent; Add to cart is visible but no universal stock promise is made. Record as exact model + retailer + observed price + add-to-cart snapshot, not confirmed nationwide stock. This is NOT an Amazon listing and must not be used as an Amazon Associates destination.
+
+### US Samsung VS28C9762UK/AA — retailer availability warning
+- Best Buy exact model page identifies VS28C9762UK/AA, SKU 6544286, and shows clearance $200.99 but explicitly “Unavailable”; another Best Buy page states item no longer available in new condition. This is a single retailer signal only, not proof of market-wide discontinuation or absence of Amazon stock.
+- Official Samsung US model spec PDF confirms exact SKU identity and 280AW / up to 100-min headline, but does not establish current sellable stock. Keep US commercial status as LIMITED/UNCONFIRMED and do not transfer UK VS28C9784QK/EU offer or specs to it.
+- Sources: https://www.bestbuy.com/product/samsung-bespoke-jet-ai-cordless-stick-vacuum-with-all-in-one-clean-station-satin-black/J3ZYG26WWK/sku/6544286 ; https://image-us.samsung.com/SamsungUS/home/home-appliances/vacuums/jet-stick/vs28c9762ukaa/pdf/13314.5_VS28C9762UK_Bespoke_JetAI_National_V10.pdf
+
+### Miele Triflex HX2 — UK and US official/retailer channels
+- UK exact material 11819170 / EAN 4002516449959: Miele UK exact product page says “Permanently out of stock”. Miele UK category/brand page simultaneously lists this SKU at £649 and says “Available to purchase with Miele Experts” (call 0330 160 6600). Treat as manufacturer direct web stock unavailable, with expert-channel purchase route advertised but stock not independently confirmed. Do not mark simply in stock or discontinued.
+- US exact material 11827000 / EAN 4002516453017: Miele USA product page displays $849 sale price and exact model/specification data; no primary page cart/stock status was exposed in retrieved content. Red Vacuums lists the exact model in stock at $849 and describes itself as an authorised Miele dealer; this is a retailer stock signal, not an Amazon offer. Abt also lists exact model at $849 with shipping details, but its availability remains retailer-specific.
+- Sources: https://www.miele.co.uk/product/11819170/cordless-stick-vacuum-cleaners-triflex-hx2-lotus-white ; https://www.miele.co.uk/c/triflex-hx2-cordless-vacuum-10294.htm ; https://www.mieleusa.com/product/11827000/cordless-stick-vacuum-cleaner-triflex-hx2-lotus-white ; https://www.redvacuums.com/products/miele-triflex-hx2-cordless-stick-vac-11827000 ; https://www.abt.com/Miele-Triflex-HX2-Lotus-White-Cordless-Stick-Vacuum-Cleaner-11827000/p/188992.html
+
+### Dyson V15 Detect — manufacturer channel snapshots
+- Dyson UK exact V15 Detect Absolute page currently has contradictory rendered states: one section says out of stock while another shows £479.99, in-stock/add-to-basket messaging. Do not treat as verified stock until the contradiction is resolved on a fresh live session.
+- Dyson US exact V15 Detect page displays $599.99, marked “In stock in 10–14 days”, with official specs (240 AW, up to 60 min, 0.77 L, 6.83 lb). This is a Dyson direct-channel offer snapshot, not Amazon stock or price.
+- Sources: https://www.dyson.co.uk/vacuum-cleaners/cordless/v15/detect-yellow-nickel ; https://www.dyson.com/vacuum-cleaners/cordless/v15/detect-yellow
+
+### Amazon direct-link approval and commercial disposition
+- Amazon US direct product pages were not accessible in this retrieval session; no exact selected ASIN / featured offer / seller / condition was independently confirmed. Amazon UK exact direct listings likewise not confirmed in this pass.
+- Approved Amazon direct-ASIN count remains 0/4 UK and 0/4 US. Do not replace this with third-party tracker observations or retailer offers. Non-Amazon retailer snapshots are recorded only as market/price/availability context.
+- No final retain/replace decision is made yet. Product-market records remain separate. Active page remains IN_PROGRESS and unscored; no guide #2.
+- No catalogue, page copy, affiliate URL, code, Cloudflare configuration, sitemap, robots, PR merge, production deployment or publication changed.
