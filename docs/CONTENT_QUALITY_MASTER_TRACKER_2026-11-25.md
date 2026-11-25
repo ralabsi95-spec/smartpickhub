@@ -1,0 +1,113 @@
+# SmartPickHub — Master Content Quality Tracker
+
+**As of:** 25 November 2026  
+**Source of truth:** This tracker plus `CONTENT_QUALITY_OPERATING_STANDARD.md` and each page's individual audit file.  
+**Production catalogue:** 25 published guides / 100 product records on Cloudflare Pages (confirmed project baseline).  
+**Branch:** `docs/content-quality-operating-system-2026-11-25` (documentation-only; not merged).
+
+## 1. Headline progress
+
+| Measure | Current | Meaning |
+|---|---:|---|
+| Existing guides in scope | 25 | Current catalogue baseline |
+| Fully passed under v1.0 standard | **0 / 25 (0%)** | No page has yet completed every new gate and earned PASS |
+| Active page audits | 1 | Cordless vacuum cleaners |
+| Queued pages | 24 | Not yet started under the new standard |
+| Product units in existing catalogue | 100 | Four per guide |
+| Fully verified product-market units under this new audit | Not yet counted | Existing 18 Nov audit is reused as partial evidence, not relabelled as full pass |
+
+**Important:** The 18 Nov 25-guide/100-product ledger is a reusable structural and targeted-source baseline. It is not discarded and will not be repeated. Its scope did not certify every product claim, current retailer listing, exact Amazon variant or complete editorial quality for every guide. Accordingly, 0/25 means zero pages have yet received a complete v1.0 PASS; it does not mean no previous work exists.
+
+## 2. Status definitions
+
+- `QUEUED`: not yet started under the v1.0 page workflow.
+- `IN_PROGRESS`: one active page with a named next action.
+- `REVISE`: audit complete enough to identify required editorial/product fixes; not passed.
+- `HOLD`: a material evidence or technical blocker prevents safe completion.
+- `PASS`: >=90/100, every mandatory evidence gate passed, no hard blocker.
+- `REJECT`: no distinct buyer need or evidence/commercial basis.
+- `OWNER_APPROVED`: owner approved the exact change/release; separate from PASS.
+- `PUBLISHED`: verified deployed state; separate from PASS and OWNER_APPROVED.
+
+## 3. Current active unit
+
+| Field | Value |
+|---|---|
+| Page | Cordless Vacuum Cleaners |
+| Slug | `cordless-vacuum-cleaners-us-uk` |
+| URL | https://smartpickhub.pages.dev/guides/cordless-vacuum-cleaners-us-uk/ |
+| Catalogue baseline | `main` commit `c2fb4419e8a40e010f4307e901e11b4112e5f09c`; catalogue blob `075ce71d57b2ee21fdecd4f1c82036819ba55937` |
+| Priority reason | Saved UK-market keyword snapshot: “best cordless vacuum cleaner” 27,100 volume / KD 8 / CPC 2.50 / commercial; “cordless vacuum cleaner” 22,200 / KD 18 / CPC 1.86 / transactional. Metrics are cached/undated and must not be presented as fresh. |
+| SERP sample | 25 Nov 2026; current web results show strong testing-led competitors including Good Housekeeping, Which?, TechRadar, The Independent, The Guardian and Ideal Home. |
+| Status | IN_PROGRESS |
+| Initial findings | Product refresh and exact-marketplace verification required. Existing four product records have primary manufacturer source pages, but important variant/availability/runtime conflicts remain. No Amazon direct ASIN verified for the four records in this pass. |
+| Next action | Complete exact model/variant and current retailer/marketplace verification for all four products; then prepare a dated refresh brief and page-content change list. No production edits. |
+| Audit record | `docs/audits/cordless-vacuum-cleaners-us-uk-2026-11-25.md` |
+
+## 4. Existing guide queue
+
+The queue preserves the catalogue order as an inventory only. Work priority after the active pilot may be adjusted using validated buyer intent, commercial opportunity, freshness risk and effort. Do not silently change a guide slug or create a duplicate route.
+
+| # | Guide | Slug | Status |
+|---:|---|---|---|
+| 1 | Home Office Ergonomics | `home-office-ergonomics-us-uk` | QUEUED |
+| 2 | Portable Power & Travel Tech | `portable-power-travel-tech-us-uk` | QUEUED |
+| 3 | Smart Home Security Cameras | `smart-home-security-cameras-us-uk` | QUEUED |
+| 4 | Wi-Fi 7 Home Routers & Mesh Systems | `wifi-7-home-mesh-routers-us-uk` | QUEUED |
+| 5 | USB-C GaN Chargers | `usb-c-gan-chargers-us-uk` | QUEUED |
+| 6 | Webcams | `webcams-video-calls-streaming-us-uk` | QUEUED |
+| 7 | 4K USB-C Monitors | `4k-usb-c-monitors-home-office-us-uk` | QUEUED |
+| 8 | Thunderbolt / USB-C Docking Stations | `thunderbolt-usb-c-docking-stations-us-uk` | QUEUED |
+| 9 | Portable SSDs | `portable-ssd-external-storage-us-uk` | QUEUED |
+| 10 | Air Fryers | `air-fryers-us-uk` | QUEUED |
+| 11 | Cordless Vacuum Cleaners | `cordless-vacuum-cleaners-us-uk` | IN_PROGRESS |
+| 12 | Cordless Drills | `cordless-drills-us-uk` | QUEUED |
+| 13 | Robot Vacuum & Mop Combos | `robot-vacuum-mops-us-uk` | QUEUED |
+| 14 | Noise-Cancelling Headphones | `noise-cancelling-headphones-us-uk` | QUEUED |
+| 15 | Wireless Earbuds | `wireless-earbuds-us-uk` | QUEUED |
+| 16 | Home Air Purifiers | `home-air-purifiers-us-uk` | QUEUED |
+| 17 | Espresso Coffee Machines | `espresso-coffee-machines-us-uk` | QUEUED |
+| 18 | Tablets for Work & Study | `tablets-for-work-study-us-uk` | QUEUED |
+| 19 | Dash Cameras | `dash-cams-us-uk` | QUEUED |
+| 20 | Portable Projectors | `portable-projectors-us-uk` | QUEUED |
+| 21 | Home NAS Storage | `home-nas-storage-us-uk` | QUEUED |
+| 22 | Electric Toothbrushes | `electric-toothbrushes-us-uk` | QUEUED |
+| 23 | Gaming Mice | `gaming-mice-us-uk` | QUEUED |
+| 24 | Smartwatches | `smartwatches-us-uk` | QUEUED |
+| 25 | Home Printers | `home-printers-us-uk` | QUEUED |
+
+## 5. Reusable evidence — do not repeat without reason
+
+- `docs/25_GUIDE_100_PRODUCT_AUDIT_2026-11-18.md`: full structural sweep of 25 guides / 100 products and targeted primary-source spot checks; retain its model, regional-risk and unresolved-issue notes.
+- `PRODUCT_STRUCTURED_DATA_POLICY.md`: owner-approved standard for editorial guide JSON-LD; exactly one ItemList of Thing items, Article and BreadcrumbList; no Product rich-result entities for ordinary comparison guides.
+- `docs/RELEASE_INDEXING_PINTEREST_GOVERNANCE.md`: release, indexing and Pinterest approval gates; historical pre-launch sections are superseded by its dated status notes and latest master handoff.
+- `MASTER_PROJECT.md`, `AGENT_HANDOFF.md`, `ROADMAP_2026-11-24.md`: operational and indexing context.
+- Open PRs #38–#41 remain subject to their recorded draft/unmerged status; do not duplicate their work or assume approval.
+
+## 6. New opportunity queue
+
+New topics/keywords/products are research-only until:
+1. overlap is checked against the 25 live guides and open PR #39/#41 datasets;
+2. market-specific buyer intent and SERP are evidenced;
+3. products and exact regional variants are verified;
+4. an original buyer decision is demonstrated;
+5. an individual page audit reaches PASS;
+6. the owner approves any publication.
+
+The one-million-product discovery ambition is a database/research pipeline objective, not a target for one million indexable URLs.
+
+## 7. Change log
+
+### 25 November 2026
+- Established v1.0 page/product quality workflow and 100-point page scorecard.
+- Reused the 18 Nov 25-guide/100-product structural audit as baseline; no repeat audit performed.
+- Started the Cordless Vacuum Cleaners page audit as the pilot because of saved UK commercial keyword signals.
+- Current SERP research identified strong test-led competitors; page differentiation must be specification/source-led and must not claim physical testing.
+- Four primary manufacturer source pages were located/rechecked; product and marketplace conflicts are recorded in the individual audit.
+- No site code, catalogue, page content, affiliate destination, sitemap, robots, index status, PR merge or deployment was changed.
+
+## 8. Next active unit for the next operator
+
+**Continue:** `cordless-vacuum-cleaners-us-uk`  
+**Do not start page #2 until the active page has a documented disposition and exact remaining actions.**  
+**First task:** verify all four product identities, variants and current retailer/Amazon UK listings; preserve search links unless an exact direct listing is proven. Then complete the page scorecard and update this tracker.
