@@ -1712,3 +1712,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - GA4: existing Stream ID 16395435693, Measurement ID G-Q7XK4V953R; production tag absent in observed Network tests. PR #38 remains draft/unmerged; consent panel drafted, but no privacy/cookie notice, tracker inventory, Zaraz check, CI verification or production Realtime validation. Owner doesn't know whether other trackers are used.
 - Pinterest: RSS/image/social snippet generation exists in source; production feed ingestion, pin publication and analytics are unverified. Homepage socialImage/OG image gap remains open.
 - Before public expansion, finish Google sitemap diagnostics, Bing blocked URL discrepancy, GA4 privacy/consent/CI/release validation, Pinterest production validation, and cross-platform AI visibility/crawler baseline. Do not repeat completed setup or request duplicate screenshots. No production changes during this checkpoint.
+
+
+## 25 November 2026 — Active task handoff: Cordless Vacuum Cleaners only
+- Active guide: `cordless-vacuum-cleaners-us-uk`. Do not start another guide until all four final products have documented decisions and the guide passes QA.
+- Read `CORDLESS_VACUUM_RESEARCH_AUDIT_2026-11-25.md` on branch `research/cordless-vacuum-audit-2026-11-25` before continuing. It contains exact manufacturer source links, Amazon listing leads, rejected ASIN, market parity gaps and unresolved Bosch weight conflict.
+- Do not repeat the already confirmed UK specs for Dyson V16, Shark IP1251UK or Hoover HF310P 001. Do not repeat the already confirmed Shark PowerDetect US IP1251 model existence. Do not treat Bosch's 3.8 kg / 2.9 kg / 5.3 kg figures as reconciled.
+- Marketplace gate: Amazon UK and US pages must be checked against exact model suffix, package contents, seller, new/used condition, price, availability and warranty. Third-party tracker values are leads only; no direct ASIN link is approved. Keep B0B42KZTH2 rejected. B0B42QJL5B is only an IZ400UKT verification lead because direct Amazon returned 503.
+- US gate: do not force Bosch BCS1051GB or Hoover HF310P 001 into US market records; find exact US counterparts independently or record no equivalent. Keep Samsung VS28C9760UG/AA distinct from VS28C9762UK/AA.
+- This branch is research/documentation only. Do not merge, publish, edit production catalogue/pages, change affiliate URLs, or modify Cloudflare settings without explicit owner approval.
