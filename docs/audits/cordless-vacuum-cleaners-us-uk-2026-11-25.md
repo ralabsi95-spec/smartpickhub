@@ -341,3 +341,37 @@ Primary candidate sources:
 - Shark US: official manual gate OPEN; third-party copy is corroborative only.
 - No product retain/replace decision is changed by this checkpoint. Amazon direct approval remains 0/4 UK and 0/4 US. No ASIN, affiliate destination, catalogue data, page content, code, Cloudflare setting, PR merge or production deployment changed.
 - Page remains IN_PROGRESS and unscored. Continue with these exact gaps; do not restart completed identity, structural, metadata or CI checks.
+
+
+## 25 November 2026 — 10:39 Asia/Amman / 07:39 UTC — Samsung v0.7 manual content review: runtime and battery bundle reconciled
+
+### Exact model and document scope
+- Samsung UK support page is for exact model VS28C9784QK and lists the English/EU User Manual v0.7, file `O_DJ68-00900C-07_IB_VS9700_EU_EN_250702.pdf`, modified 11 Aug 2025, file ID 10789220.
+- The PDF is now directly readable. Its cover identifies the supported family as `VS90F40***/VS28C97****/VS25C97****`; therefore the specification table applies to VS28C97****, which includes the exact VS28C9784QK model family. The exact Samsung UK Business product page separately identifies VS28C9784QK/EU and confirms its supplied battery quantity and 160-minute headline.
+- Official manual: https://downloadcenter.samsung.com/content/UM/202508/20250811201509973/O_DJ68-00900C-07_IB_VS9700_EU_EN_250702.pdf
+- Exact model support: https://www.samsung.com/uk/support/model/VS28C9784QK/WA/
+- Exact product page: https://www.samsung.com/uk/business/vacuum-cleaners/stick/bespoke-jet-plus-210w-all-in-one-clean-station-black-vs28c9784qk-eu/
+
+### Runtime: approved wording and conditions
+- Samsung's exact VS28C9784QK/EU UK Business page states up to 160 minutes, specifically at minimum power with a non-motorised tool attached using two batteries; it lists battery quantity 2 EA.
+- The v0.7 manual explains the underlying battery-dependent times. With the larger VCA-SBTC97 battery, Combination Tool / Extension Crevice Tool at MIN is approx. 100 min; with the lighter VCA-SBTC97S or VCA-SBTD95 battery, the same tool/mode is approx. 60 min. The manual states its table times are based on one battery and cleaning time doubles when two batteries are used consecutively.
+- With the Active Dual Brush, the larger battery is approx. 58 min at MIN and the smaller battery approx. 34 min at MIN. Slim LED Brush+ is approx. 77 min and 45 min respectively at MIN. These are accessory-specific and must not be collapsed into a single generic runtime.
+- The 160-minute value is not the floor-brush runtime. The manual also contains 160 min in the Spray Spinning Sweeper row for the large battery; that is a different wet-mopping attachment. Keep the UK marketing claim tied to minimum power + non-motorised tool + two batteries.
+- Safe editorial wording: “Up to 160 minutes with two batteries at minimum power using a non-motorised tool; runtime is shorter with powered floor heads and higher suction settings.” Add that the two supplied batteries are different capacity classes only if verified from the bundle/product spec; Samsung page confirms 2 batteries and different charge times, while the manual's family table gives 100-min and 60-min battery profiles.
+- Battery specifications in manual: VCA-SBTC97 is Li-ion 25.2 V, 3970 mAh; VCA-SBTC97S / VCA-SBTD95 are Li-ion 25.2 V, 2200 mAh. Charge times: 5.0 h for VCA-SBTC97; 3.5 h for VCA-SBTC97S / VCA-SBTD95.
+- The manual's accessories list marks several items with an asterisk meaning they may differ by model. Do not infer every optional accessory in the family diagram is included in this exact SKU; use the exact Samsung product page's model-specific list for bundle claims.
+- Exact product page lists two batteries, Active Dual Brush, Slim LED Brush+, Pet Tool+, Combination Tool, Extension Crevice Tool, Flexible Tool, Accessory Cradle and Battery Charging Kit. Dust capacity 0.5 L; clean station dust bag 2.0 L.
+- Source lines in PDF: product specification and runtime table pp.50–51 (PDF lines 1432–1513); accessories list p.13 (lines 283–296). Exact model product page corroborates 160-min condition and 2 batteries.
+
+### Gate update
+- Samsung UK manual discovery: CLOSED.
+- Samsung UK manual content review: CLOSED for runtime, battery chemistry/voltage/capacity, charge time and accessory caveats.
+- Samsung UK runtime/battery-count claim: SATISFIED with exact model product page + v0.7 family manual; no longer an open gap.
+- Remaining Samsung gate: confirm live commercial offer and exact seller/condition/stock for the selected UK destination; keep US VS28C9762UK/AA evidence separate.
+- No catalogue data, product page copy, affiliate URL or production file changed. This is evidence-only documentation. Product retain/replace decision remains pending with the rest of the four-product comparison.
+
+### Other active gaps unchanged
+- Bosch BCS1051GB weight remains withheld: 2.9 kg with tube/floor nozzle vs 5.3 kg net in support/spec sheet, and 3.8 kg on product overview with another label. Official manual content still not reviewed.
+- Shark US IZ862H: only secondary-hosted copy of an owner guide found; no SharkNinja-hosted official model-specific manual captured. Official primary-source gate remains OPEN.
+- Amazon direct ASIN approvals remain 0/4 UK and 0/4 US; no ASIN or affiliate link changed.
+- Page remains IN_PROGRESS and unscored; do not start guide #2.
