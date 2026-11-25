@@ -90,3 +90,8 @@ Primary references:
 - De’Longhi DEXD214RF: https://www.delonghi.com/en-gb/p/tasciugo-ariadry-multi-tasciugo-ariadry-multi-dehumidifier-dex214rf/DEXD214RF.html
 
 Do not include these candidates in the condition-matched p/L table unless a source establishes the wattage and extraction rate for the same model, mode and test condition.
+
+
+### Additional Pro Breeze manual-confirmed specification-only records
+- **OmniDry 10L PB-D-40W family:** the Pro Breeze-linked official manual confirms 160W rated input at 27°C/60% RH, 185W maximum input at 30°C/80% RH, 5–35°C operating range and R290/37g. It does not provide paired litres/day extraction values for those same conditions, so it remains outside the p/L comparison. Manual: https://cdn.shopify.com/s/files/1/0668/4075/6504/files/PB-D-4_3.PDF?v=1786957408
+- **PB-08 20L Max Extraction:** official manual confirms 20L/day at 30°C/80% RH, 420W input, 5.5L tank and 5–32°C operating range. The manual does not provide a multi-condition extraction curve or explicitly pair a selected mode's wattage with the headline 20L/day; it remains outside the p/L comparison. Manual: https://cdn.shopify.com/s/files/1/0668/4075/6504/files/PB-08_Instruction_Manual__EU__DIGITAL_FEB_23_FINAL_v5-min.pdf?v=1677257685
