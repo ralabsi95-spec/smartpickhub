@@ -13,7 +13,7 @@
 - New v1.0 full-audit certification: **0/25 PASS (0%)**, 1 active, 24 queued. This counter means no page has yet completed every v1.0 gate; it does not erase the earlier structural/editorial work.
 - Active unit: `cordless-vacuum-cleaners-us-uk`.
 - Do not begin page #2 until the active page receives a documented disposition and exact remaining actions.
-- First task: verify exact UK and US manufacturer variants plus retailer/Amazon destinations for all four vacuum products. Do not accept ambiguous ASIN/model matches. Keep model-name search links as search links unless an exact direct listing is proven.
+- Manufacturer identity evidence is now located for 6/8 market-specific model records (Dyson UK/US, Samsung UK/US, Miele UK/US); Shark UK identity/capacity and Shark US IZ862H source remain unresolved. First task: close the Shark evidence gap and verify exact UK/US retailer/Amazon destinations for all four vacuum products. No exact Amazon direct listing is verified in either market. Do not accept ambiguous ASIN/model matches. Keep model-name search links as search links unless an exact direct listing is proven.
 
 ## Permanent execution rules
 - One page at a time; each product-market identity is a separate verification unit.
