@@ -236,3 +236,37 @@ Additional official Ebac-hosted documents were located:
 - Ebac 15 manual: https://ebac.com/content/manuals/ebac_dehumidifier_manual_ebac15.pdf
 
 These establish operating instructions, broad real-home extraction guidance and some temperature/behaviour details, but the retrieved text does not provide the exact model-specific wattage plus condition-by-condition extraction table needed for a comparable pence/L result. The 2000 Series manual mentions 2650e/2850e fuse information, not rated operating watts. Keep Ebac outside the evidence-backed ranking pending an exact-model technical sheet or written manufacturer confirmation.
+
+
+## 14. Expanded manufacturer-backed comparison pool — seven models with paired multi-condition data
+
+The following seven candidates now have Meaco UK product pages with condition-specific water-removal and power data. The tables generally provide both 10°C and 20°C at 60% RH; most also provide 80% RH rows. This is a research pool, not a final recommendation/ranking, and several products may be legacy/low-stock or have distinct variants.
+
+| Exact model family | Evidence coverage | Source / notes |
+|---|---|---|
+| MeacoDry Arete One 20L | 10°C and 20°C at 50%, 60%, 80% RH | Official Meaco product page; AC motor; product page also notes Arete One 20L and Two 20L are distinct variants |
+| MeacoDry Arete Two 20L | 10°C, 20°C, 30°C at 60% and 80% RH | Official Meaco UK product page; DC motor; 4.8L tank |
+| Meaco 20L Low Energy | 10°C/20°C at 60% and 80% RH; 30°C/60% RH | Official Meaco UK product page; no 30°C/80% wattage row on the current table |
+| Meaco 12L Low Energy | 10°C, 20°C, 30°C at 60% and 80% RH | Official Meaco UK product page; 157W rated page power; 2.5L tank |
+| MeacoDry ABC 12L | 10°C, 20°C, 30°C at 60% and 80% RH; high/low fan outputs | Official Meaco UK product page; retain the fan mode with each row |
+| Meaco DD8L Pro | 10°C and 20°C at 60% RH, fan speeds 1–3 | Official Meaco UK product page; desiccant; 2L tank; 1–35°C operating range |
+| Meaco DD8L Zambezi | 10°C and 20°C at 60% RH, fan speeds 1–3 | Official Meaco UK product page; desiccant; historical/now discontinued product—Meaco states DD8L Pro is its replacement |
+
+Primary manufacturer pages:
+- Arete One 20L: https://www.meaco.com/products/meacodry-arete-one-20l-dehumidifier-and-air-purifier
+- Arete Two 20L: https://www.meaco.com/products/meacodry-arete-two-20l-dual-dehumidifier-hepa-air-purifier
+- 20L Low Energy: https://www.meaco.com/products/meaco-20l-low-energy-dehumidifier-and-air-purifier
+- 12L Low Energy: https://www.meaco.com/products/meaco-12l-low-energy-dehumidifier-and-air-purifier
+- ABC 12L: https://www.meaco.com/products/meacodry-abc-range-12l-dehumidifier
+- DD8L Pro: https://www.meaco.com/products/meaco-dd8l-pro
+- DD8L Zambezi: https://www.meaco.com/products/meaco-dd8l-zambezi-dehumidifier
+
+### Shortlist guardrails
+
+1. The seven models can form the first manufacturer-data pool, but do not rank by nominal “12L/20L” headline capacity. Compare the exact same room condition (e.g. 10°C/60% RH) and disclose compressor/desiccant type.
+2. For multi-speed desiccant models, keep each fan-speed row separate; never mix extraction at one fan speed with wattage from another.
+3. Arete One and Arete Two are separate generations and must never share a product identifier or listing.
+4. The Arete One 20L page is a direct Meaco source. Do not substitute a distributor-hosted PDF if the direct product page is available.
+5. Keep the Zambezi as a useful legacy benchmark, not a current-buy recommendation: Meaco's own product/legacy page says it is no longer available and names DD8L Pro as its replacement.
+6. The Meaco 20L Low Energy page's 30°C/80% headline value has no paired wattage in the current table; leave cost/L blank for that condition.
+7. No model should enter the live product catalogue until exact UK retail model/EAN/variant and stock/listing identity are checked separately. Manufacturer evidence and Amazon listing identity are separate validation gates.
