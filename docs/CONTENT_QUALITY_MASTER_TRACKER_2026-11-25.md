@@ -12,7 +12,7 @@
 | Existing guides in scope | 25 | Current catalogue baseline |
 | Fully passed under v1.0 standard | **0 / 25 (0%)** | No page has yet completed every new gate and earned PASS |
 | Active page audits | 1 | Cordless vacuum cleaners |
-| Queued pages | 24 | Not yet started under the new standard |
+| Legacy evidence awaiting page-by-page reconciliation | 24 | Prior audits, approvals, source references and release evidence exist; map them before any new checks |
 | Product units in existing catalogue | 100 | Four per guide |
 | Fully verified product-market units under this new audit | Not yet counted | Existing 18 Nov audit is reused as partial evidence, not relabelled as full pass |
 
@@ -20,7 +20,8 @@
 
 ## 2. Status definitions
 
-- `QUEUED`: not yet started under the v1.0 page workflow.
+- `LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING`: prior audit, approval, source, CI or release evidence exists; map it first and perform only missing delta checks. Do not call the page not started.
+- `QUEUED`: use only when no relevant prior work or evidence exists after checking the legacy records.
 - `IN_PROGRESS`: one active page with a named next action.
 - `REVISE`: audit complete enough to identify required editorial/product fixes; not passed.
 - `HOLD`: a material evidence or technical blocker prevents safe completion.
@@ -50,31 +51,31 @@ The queue preserves the catalogue order as an inventory only. Work priority afte
 
 | # | Guide | Slug | Status |
 |---:|---|---|---|
-| 1 | Home Office Ergonomics | `home-office-ergonomics-us-uk` | QUEUED |
-| 2 | Portable Power & Travel Tech | `portable-power-travel-tech-us-uk` | QUEUED |
-| 3 | Smart Home Security Cameras | `smart-home-security-cameras-us-uk` | QUEUED |
-| 4 | Wi-Fi 7 Home Routers & Mesh Systems | `wifi-7-home-mesh-routers-us-uk` | QUEUED |
-| 5 | USB-C GaN Chargers | `usb-c-gan-chargers-us-uk` | QUEUED |
-| 6 | Webcams | `webcams-video-calls-streaming-us-uk` | QUEUED |
-| 7 | 4K USB-C Monitors | `4k-usb-c-monitors-home-office-us-uk` | QUEUED |
-| 8 | Thunderbolt / USB-C Docking Stations | `thunderbolt-usb-c-docking-stations-us-uk` | QUEUED |
-| 9 | Portable SSDs | `portable-ssd-external-storage-us-uk` | QUEUED |
-| 10 | Air Fryers | `air-fryers-us-uk` | QUEUED |
+| 1 | Home Office Ergonomics | `home-office-ergonomics-us-uk` | LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING |
+| 2 | Portable Power & Travel Tech | `portable-power-travel-tech-us-uk` | LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING |
+| 3 | Smart Home Security Cameras | `smart-home-security-cameras-us-uk` | LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING |
+| 4 | Wi-Fi 7 Home Routers & Mesh Systems | `wifi-7-home-mesh-routers-us-uk` | LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING |
+| 5 | USB-C GaN Chargers | `usb-c-gan-chargers-us-uk` | LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING |
+| 6 | Webcams | `webcams-video-calls-streaming-us-uk` | LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING |
+| 7 | 4K USB-C Monitors | `4k-usb-c-monitors-home-office-us-uk` | LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING |
+| 8 | Thunderbolt / USB-C Docking Stations | `thunderbolt-usb-c-docking-stations-us-uk` | LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING |
+| 9 | Portable SSDs | `portable-ssd-external-storage-us-uk` | LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING |
+| 10 | Air Fryers | `air-fryers-us-uk` | LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING |
 | 11 | Cordless Vacuum Cleaners | `cordless-vacuum-cleaners-us-uk` | IN_PROGRESS |
-| 12 | Cordless Drills | `cordless-drills-us-uk` | QUEUED |
-| 13 | Robot Vacuum & Mop Combos | `robot-vacuum-mops-us-uk` | QUEUED |
-| 14 | Noise-Cancelling Headphones | `noise-cancelling-headphones-us-uk` | QUEUED |
-| 15 | Wireless Earbuds | `wireless-earbuds-us-uk` | QUEUED |
-| 16 | Home Air Purifiers | `home-air-purifiers-us-uk` | QUEUED |
-| 17 | Espresso Coffee Machines | `espresso-coffee-machines-us-uk` | QUEUED |
-| 18 | Tablets for Work & Study | `tablets-for-work-study-us-uk` | QUEUED |
-| 19 | Dash Cameras | `dash-cams-us-uk` | QUEUED |
-| 20 | Portable Projectors | `portable-projectors-us-uk` | QUEUED |
-| 21 | Home NAS Storage | `home-nas-storage-us-uk` | QUEUED |
-| 22 | Electric Toothbrushes | `electric-toothbrushes-us-uk` | QUEUED |
-| 23 | Gaming Mice | `gaming-mice-us-uk` | QUEUED |
-| 24 | Smartwatches | `smartwatches-us-uk` | QUEUED |
-| 25 | Home Printers | `home-printers-us-uk` | QUEUED |
+| 12 | Cordless Drills | `cordless-drills-us-uk` | LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING |
+| 13 | Robot Vacuum & Mop Combos | `robot-vacuum-mops-us-uk` | LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING |
+| 14 | Noise-Cancelling Headphones | `noise-cancelling-headphones-us-uk` | LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING |
+| 15 | Wireless Earbuds | `wireless-earbuds-us-uk` | LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING |
+| 16 | Home Air Purifiers | `home-air-purifiers-us-uk` | LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING |
+| 17 | Espresso Coffee Machines | `espresso-coffee-machines-us-uk` | LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING |
+| 18 | Tablets for Work & Study | `tablets-for-work-study-us-uk` | LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING |
+| 19 | Dash Cameras | `dash-cams-us-uk` | LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING |
+| 20 | Portable Projectors | `portable-projectors-us-uk` | LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING |
+| 21 | Home NAS Storage | `home-nas-storage-us-uk` | LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING |
+| 22 | Electric Toothbrushes | `electric-toothbrushes-us-uk` | LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING |
+| 23 | Gaming Mice | `gaming-mice-us-uk` | LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING |
+| 24 | Smartwatches | `smartwatches-us-uk` | LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING |
+| 25 | Home Printers | `home-printers-us-uk` | LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING |
 
 ## 5. Reusable evidence — do not repeat without reason
 
