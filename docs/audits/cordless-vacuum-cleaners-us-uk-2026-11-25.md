@@ -281,3 +281,33 @@ Primary candidate sources:
 - Correct decision: ASIN B0B42KZTH2 is NOT approved. Do not use it for IZ400UKT. Keep the marketplace destination as a clearly labelled Shark Stratos model-name search URL unless a separate Amazon ASIN is found whose selected model number and package match IZ400UKT exactly and has a buyable offer.
 - Amazon UK search found no other reliable exact direct ASIN result for Dyson V15, Samsung VS28C9784QK/EU or Miele 11819170 in this pass. This is not proof that no listing exists. Amazon US direct search is blocked by robots in this retrieval environment, so US exact listing verification remains unavailable; do not infer absence.
 - Direct Amazon approved counts remain 0/4 UK and 0/4 US. The only exact ASIN surfaced for the four UK products is rejected/unapproved; no direct product link is authorised.
+
+## 25 November 2026 — CONTROLLING CORRECTIONS AND FOLLOW-UP VERIFICATION (supersedes earlier conflicting notes)
+
+### Shark UK: do not conflate IZ400UK with IZ400UKT
+- The live catalogue target is IZ400UKT. Official Shark product evidence for the separate IZ400UK explicitly gives 0.19 L; that value is **not transferable** to IZ400UKT. Official IZ400UKT details already captured in this audit confirm the correct model/package and 240 V region, but the capacity remains unverified from an accessible primary spec source. Keep capacity blank/unknown rather than publishing 0.19 L or copying Amazon's 0.7 L.
+- Amazon UK ASIN B0B42KZTH2 page was independently rechecked in current search output. It displays title/model number IZ400UK, secondary Model Name IZ400UKT, capacity 0.7 L, 5.11 kg, 25.2 V, and no featured offer. **Disposition: REJECT ASIN B0B42KZTH2** for the IZ400UKT catalogue record. Retain only a clearly labelled marketplace search destination pending a distinct, exact, buyable listing.
+- This corrects older paragraphs in this file that described 0.19 L versus 0.7 L as a same-model conflict or said the intended catalogue model itself was still unresolved. Those paragraphs remain historical observations; this addendum is controlling.
+
+### Bosch BCS1051GB: weight labels reconciled only partly
+- Bosch product overview currently reports “Measured weight, ready for op.” = 3.8 kg. Bosch support detail separately reports 2.9 kg “ready for use with tube and floor nozzle”, and 5.3 kg under “Net weight”. Official pages therefore use different measurement labels/values. Do not publish a single product-weight claim until Bosch explains the measurement scope or a model manual/package specification supplies an unambiguous comparable figure. Keep 3.8 kg as product-overview value and 2.9 kg as support-page value in the evidence log, not a resolved consensus.
+- Source product: https://www.bosch-home.co.uk/en/product/vacuum-cleaners/cordless-vacuum-cleaners/unlimited/unlimited10/BCS1051GB
+- Source support: https://www.bosch-home.co.uk/supportdetail/product/BCS1051GB/01
+
+### Shark US IZ862H: official support corroboration, manual gap remains
+- SharkNinja US official parts pages identify IZ862H as compatible with the original Stratos battery XBATR725SL and charging cord XCHRIZ800; the official dust-cup part page also lists IZ862H compatibility. These confirm service-parts association with the model but do **not** establish full vacuum specifications, power, voltage, runtime or owner-guide instructions.
+- No official, model-specific Shark US owner guide/specification PDF was retrieved in this pass. Third-party IZ800 manual mirrors and retailer specifications remain secondary evidence. Keep primary-source gate OPEN; do not use the 48-hour filter-drying instruction as a product-specific claim until confirmed in an official guide.
+- Sources: https://www.sharkninja.com/removable-lithium-ion-battery/XBATR725SL.html ; https://www.sharkninja.com/charging-cord/XCHRIZ800.html ; https://www.sharkninja.com/dust-cup/296FFJ860H.html
+
+### Amazon availability verification status (no change to approval counter)
+- Re-search did not produce verifiable exact, currently buyable Amazon direct listings for the other seven product-market records. Amazon US search remains blocked to this retrieval environment. This means **unverified**, not “no listing exists”.
+- Approved direct-ASIN count remains 0/4 UK and 0/4 US. No Amazon direct URL is approved; clearly labelled search links may remain where already present, subject to current link QA.
+
+### Page-level decision and next work
+- Active page remains IN_PROGRESS and unscored. Existing products: Dyson V15 Detect (UK/US), Shark Stratos (UK IZ400UKT / US IZ862H), Samsung Bespoke Jet AI (UK VS28C9784QK/EU / US VS28C9762UK/AA), Miele Triflex HX2 (UK 11819170 / US 11827000). Replacement candidates remain candidates only; none approved.
+- Product decisions are not yet ready: Shark US primary evidence unresolved; Dyson UK offer/package state contradictory; Samsung battery/runtime bundle conditions require manual extraction; Miele UK availability unresolved; exact Amazon direct offers remain unverified; Bosch replacement candidate weight label remains unresolved; four-candidate market-fit comparison is incomplete.
+- Next exact sequence: (1) request/locate official Shark IZ862H owner guide; (2) obtain Bosch clarification/manual for the weight definitions; (3) extract Samsung UK v0.7 manual and verify runtime/battery pack inclusions for each regional variant; (4) verify exact live seller/condition/offer for product-market records where direct marketplace link is proposed, otherwise retain search links; (5) finish UK and US buyer-intent and replacement comparison, then record four explicit retain/replace/hold decisions; (6) complete every page/product hard gate and >=90/100 scorecard. No next guide until this page is dispositioned.
+
+### Audit governance
+- Last verified: 25 November 2026. Evidence snapshot is time-sensitive for price, stock and offers.
+- No production code, catalogue data, page copy, affiliate URL, Cloudflare configuration, sitemap, robots, merge, deployment or publication was changed by this research/documentation checkpoint.
