@@ -355,3 +355,12 @@ The 0/25 v1.0 figure was created before a complete legacy evidence crosswalk exi
 - Bosch BCS1051GB 2.9kg vs 3.8kg discrepancy remains unresolved across exact-model official pages; do not publish weight.
 - Shark IZ400UKT ASIN B0B42QJL5B quarantined/not approved due conflicting variant mapping (IZ400UKT vs IZ420UKT) and inaccessible Amazon page. B0B42KZTH2 remains rejected.
 - No production/catalogue/affiliate changes or final product dispositions.
+
+
+## 25 November 2026 — 14:30 Asia/Amman — Amazon recheck / manual-source delta
+- GitHub documentation branch now 89 ahead / 0 behind main; no merge/deploy.
+- Amazon.com blocked by robots and no first-party UK Amazon detail page confirmed the selected offer, seller, condition and exact model for the remaining vacuum records. Third-party Dyson ASIN leads B0GXX8KQY7 and B0C2J8KJH9 are not approved; a third-party Samsung listing is also not Amazon-offer proof. ASIN approvals remain 0/4 UK and 0/4 US.
+- Samsung exact UK model support page lists manual v0.7, modified 11 Aug 2025; added as documentation lead only, no contents extracted and no changes to closed SKU/review match.
+- Shark IZ862H official parts pages and IP1251 comparison do not constitute an IZ862H manual. Manual gate remains open; do not transfer comparator specs.
+- Bosch 2.9kg vs 3.8kg conflict remains open. Shark B0B42QJL5B stays quarantined and B0B42KZTH2 rejected.
+- Page remains IN_PROGRESS/unscored, no final market matrix, no production/catalogue/affiliate/code/Cloudflare/merge/deploy/publication changes.
