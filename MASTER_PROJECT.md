@@ -2380,3 +2380,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Added a seven-model research pool and strict shortlist guardrails to the source register. This is not an approved public ranking or catalogue import. Exact UK retail model/EAN/variant and Amazon listing checks remain separate gates.
 - No site code, product catalogue, affiliate links, pages, navigation, PR, merge, or deployment changed.
 - Next: reconcile the uploaded dataset's existing model names/IDs against these exact manufacturer model families, calculate condition-matched figures for a draft comparison worksheet, and identify which 6–8 products are actually current UK retail variants before any affiliate work.
+
+ 
+## 25 November 2026 — Condition-matched seven-model comparison worksheet
+- Reopened and inspected the exact uploaded JSON and CSV. The JSON currently contains five model records: Arete One 20L, Meaco 20L Low Energy, DD8L Zambezi, DD8L Pro and EcoAir DD1 Classic MK6. The first four model IDs match the new Meaco source evidence; EcoAir remains retailer-only/unverified.
+- Built a separate draft worksheet using seven Meaco model families with manufacturer-published paired power/extraction data at the same two conditions (10°C/60% RH and 20°C/60% RH): Arete One 20L, Arete Two 20L, 20L Low Energy, 12L Low Energy, ABC 12L high fan, DD8L Pro fan 3 and DD8L Zambezi fan 3.
+- Calculated illustrative p/L values at the Q4 2026 GB benchmark (26.32p/kWh). At 10°C/60% RH the worksheet gives 33.2–53.8p/L for the compressor models and 55.8–57.8p/L for the selected desiccant fan-3 modes; at 20°C/60% RH it gives 15.4–20.2p/L for compressor models and 49.4–50.3p/L for fan-3 desiccant modes. These are derived from paired manufacturer test figures under a continuous 24-hour assumption, not laboratory tests or household bills.
+- Added docs/dehumidifier-shortlist-comparison-2026-11-25.md. It explicitly says this is not a winner ranking or equivalent laundry-load test; it keeps technology, fan modes, product generations and discontinued status visible.
+- No changes were made to the uploaded JSON/CSV, live product catalogue, website code, pages, navigation, affiliate links, PR, merge, or deployment. New model IDs are proposed only in the worksheet.
+- Next: verify exact UK product identifiers/EANs and retail availability for the seven-model pool; separate currently purchasable recommendations from the discontinued Zambezi benchmark; then consider a reviewed data-only update proposal. Do not auto-import or publish.
