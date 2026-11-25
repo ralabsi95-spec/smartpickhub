@@ -2335,3 +2335,31 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Manual family table supports approx. 100 min with VCA-SBTC97 (3970 mAh) and approx. 60 min with VCA-SBTC97S/SBTD95 (2200 mAh) using Combination/Extension Crevice Tool at MIN. With powered heads, MIN times are lower: Active Dual Brush 58/34 min; Slim LED Brush+ 77/45 min. Never describe 160 min as powered floor-head runtime.
 - Samsung UK manual/content/runtime gate is now closed. Commercial seller/stock verification and US variant verification remain separate.
 - Bosch weight and Shark IZ862H official-manual gaps remain open. No catalogue, affiliate, content, production or deployment changes; active page remains IN_PROGRESS and unscored.
+
+
+## 25 November 2026 — 10:46 Asia/Amman / 07:46 UTC — Samsung gate closure + Bosch/Shark source follow-up (documentation-only)
+
+### Samsung UK VS28C9784QK/EU — runtime/manual gate closed
+- Exact UK support page and official v0.7 manual were reviewed. The manual family scope includes VS28C97**** and therefore covers VS28C9784QK; the exact model's Samsung UK Business product page confirms two batteries and the 160-minute headline.
+- Approved claim is limited to up to 160 minutes at minimum power with a non-motorised tool, using two batteries consecutively. This is not powered-floor-brush runtime. With the larger VCA-SBTC97 battery, manual runtime at MIN is approx. 100 min with a non-motorised tool; with the smaller VCA-SBTC97S/VCA-SBTD95 battery it is approx. 60 min. Powered brush runtimes are lower (Active Dual Brush: approx. 58/34 min at MIN for large/small battery; Slim LED Brush+: approx. 77/45 min).
+- Battery details: VCA-SBTC97 Li-ion 25.2 V, 3970 mAh, 5 h charge; VCA-SBTC97S/VCA-SBTD95 Li-ion 25.2 V, 2200 mAh, 3.5 h charge. Do not infer optional family accessories as included; use exact SKU bundle list.
+- Gate status: official manual discovery CLOSED; manual content review CLOSED for runtime/battery/charge/accessory caveats; runtime/battery-count evidence SATISFIED. Remaining commercial gate: exact live seller, condition and stock for UK destination. US VS28C9762UK/AA remains a separate evidence record.
+- Sources: https://www.samsung.com/uk/support/model/VS28C9784QK/WA/ ; https://downloadcenter.samsung.com/content/UM/202508/20250811201509973/O_DJ68-00900C-07_IB_VS9700_EU_EN_250702.pdf ; https://www.samsung.com/uk/business/vacuum-cleaners/stick/bespoke-jet-plus-210w-all-in-one-clean-station-black-vs28c9784qk-eu/
+
+### Bosch BCS1051GB — official weight labels compared; still withheld
+- Bosch UK official product page labels 3.8 kg as “Measured weight, ready for op.”: https://www.bosch-home.co.uk/en/product/vacuum-cleaners/cordless-vacuum-cleaners/unlimited/unlimited10/BCS1051GB
+- Bosch UK official support/specification page lists 2.9 kg as “Weight (ready for use with tube and floor nozzle)” and 5.3 kg as “Net weight”: https://www.bosch-home.co.uk/supportdetail/product/BCS1051GB/01
+- Bosch official BSH specification PDF also reports 2.9 kg for ready-for-use with tube and floor nozzle: https://media3.bsh-group.com/Documents/specsheet/en-IE/BCS1051GB.pdf
+- These are official manufacturer sources but the 2.9 kg and 3.8 kg ready/operational labels do not reconcile clearly. Net weight 5.3 kg is a separate label. Do not select one weight for editorial copy until Bosch clarifies measurement method/scope or a definitive manual/package label resolves it. Other official runtime details remain 100 min ECO non-electrical accessory, 80 min ECO powered floor nozzle, 30 min Auto powered nozzle, 13 min Turbo powered nozzle; one 5Ah 18V battery; 0.4 L; approx. 71 min charge.
+- Manual listing is visible on official support pages, but actual manual contents have not yet been extracted. Manual-content gate remains OPEN.
+
+### Shark US IZ862H — no official-hosted manual found in this pass
+- Exact IZ862H/IZ800 owner-guide copies are available from third-party hosts, including https://manualsfile.com/product/k2zp91ivwkl.html and https://manuals.plus/m/22f03d9d160187fec6232a240f5b604b60b7d769be0e252e824d48533da4e4a5 . A PDF mirror at https://qcg-media.s3.amazonaws.com/media/uploads/118513/2022/06/20220630_202169_IZ800SeriesIBMPMv5LR3.pdf carries Sharkclean.com manual content, but is not hosted on an official SharkNinja domain.
+- The manual mirror states 60 min ECO in hand-vac mode and 10 min Boost in hand-vac mode, with Clean Sense IQ runtime variable by debris/use; 3.5 h full charge; filter/dust-cup drying up to 48 h. These are secondary-hosted manual claims only and are NOT approved for manufacturer-verified editorial claims at this point.
+- SharkNinja official parts pages corroborate IZ862H compatibility with battery XBATR725SL, charging cord XCHRIZ800 and dust-cup component, but do not establish full product specifications or manual instructions. Official support route: https://www.sharkninja.com/parts-support?SKU=IZ862H
+- Primary-source/manual gate remains OPEN. Do not state voltage, weight, bin capacity, runtime, or care instructions as manufacturer-verified from these mirrors.
+
+### Page state / release discipline
+- Active page remains Cordless Vacuum Cleaners, IN_PROGRESS and unscored. Samsung UK evidence gate closed; Bosch weight/manual gates remain open; Shark US primary manual gate remains open; exact retailer/Amazon offer verification and UK/US market-fit comparison remain incomplete.
+- Amazon direct-ASIN approvals remain 0/4 UK and 0/4 US. No ASIN, affiliate destination, catalogue/product/page content, source code, Cloudflare setting, sitemap, robots, PR merge or production deployment changed.
+- Continue only the unresolved items above. Do not start guide #2 and do not repeat completed catalogue/SEO/CI/source checks.
