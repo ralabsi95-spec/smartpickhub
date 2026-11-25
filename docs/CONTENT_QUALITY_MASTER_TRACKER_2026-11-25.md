@@ -153,3 +153,8 @@ Use the additional energy/environment and Google indexability checklist in CONTE
 - Screened four UK alternatives from primary manufacturer sources: Dyson V16, Shark PowerDetect IP1251UK, Bosch Unlimited 10 ProPower BCS1051GB, Hoover HF3 Pet HF310P 001. Their runtime claims have different test conditions; no replacement is approved yet.
 - US candidates found from primary sources for Shark PowerDetect IP1251 and Dyson V16; their specs are distinct from UK variants. Bosch/Hoover US counterparts not established; Miele HX3 Plus official source not found.
 - Amazon direct ASIN approvals remain 0/4 UK and 0/4 US. No catalogue changes, affiliate edits, publication, PR merge or deployment.
+
+### 25 November 2026 — Amazon direct listing verification checkpoint
+- Amazon UK ASIN B0B42KZTH2 rejected/unapproved: model number/title IZ400UK vs Model Name IZ400UKT; conflicting specs/package and no featured offers. Do not use as direct affiliate destination for catalogue IZ400UKT.
+- No reliable exact Amazon UK direct ASIN surfaced for Dyson V15, Samsung VS28C9784QK/EU or Miele 11819170. Amazon US direct search blocked by robots during this check; absence is not proven.
+- Approved Amazon direct links remain 0/4 UK and 0/4 US. Use labelled search URLs unless exact buyable variant is verified.
