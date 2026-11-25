@@ -2399,3 +2399,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Added an explicit spec-only appendix to the shortlist worksheet covering EcoAir, Duux, Pro Breeze, PureMate and De’Longhi models with their evidence limits. No new models were inserted into the uploaded JSON/CSV.
 - No website code, live catalogue, affiliate links, pages, navigation, PR, merge, or deployment changed.
 - Next: verify Pro Breeze PB-D-40W through the exact official linked manual and keep broadening the manufacturer-backed market pool without weakening condition-matching rules.
+
+ 
+## 25 November 2026 — Pro Breeze official manual verification
+- Opened the exact Pro Breeze support-index links and inspected the manufacturer-hosted manuals, rather than relying on third-party manual mirrors.
+- PB-D-40W OmniDry 10L manual confirms regional model family PB-D-40W-UK / PB-D-40W-RT-UK / PB-D-40W-EU / PB-D-40W-RT-EU; 160W rated input at 27°C/60% RH; 185W maximum input at 30°C/80% RH; 5–35°C operating range; R290/37g. The retrieved manual specifications do not provide matching litres/day values at those same conditions, so no p/L calculation is allowed.
+- PB-08 20L Max Extraction manual confirms approx. 20L/day at 30°C/80% RH, 420W input, 5.5L tank, 5–32°C range and R290/100g. It does not provide a condition-specific extraction curve or a clear mode/power pairing for a p/L comparison.
+- Updated the source register and shortlist appendix. Both models are now manufacturer-manual verified as specification-only candidates; neither is promoted into the seven-model paired p/L table.
+- No uploaded JSON/CSV, site code, catalogue, affiliate links, pages, navigation, PR, merge, or deployment changed.
+- Next: verify exact UK retail/EAN/ASIN identity for currently sold candidates, then prepare a proposed data-only patch for owner review without importing or publishing it.
