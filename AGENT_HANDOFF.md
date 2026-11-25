@@ -1,3 +1,12 @@
+# LATEST ACTIVE HANDOFF — 25 November 2026 — 13:50 Asia/Amman / 10:50 UTC
+
+- Active page remains Cordless Vacuum Cleaners; do not start guide #2.
+- Samsung UK review matching gap is CLOSED: Good Housekeeping's 12 Nov 2026 Bespoke Jet AI test links to Argos product 326/9381, whose exact model is VS28C9784QK/EU (EAN 8806095055602). GH score 90/100; Argos package includes two batteries, Clean Station, Pet Tool+ and specified tools. Samsung official page confirms exact model, runtime conditions and battery charge durations. Do not state 160min with powered floorhead; maximum is minimum power + non-motorised tool + two batteries.
+- Bosch BCS1051GB weight conflict remains OPEN between two official exact-model pages: Bosch product page 3.8kg measured ready for operation vs support page 2.9kg ready for use with tube/floor nozzle. Official spec sheet net 5.3kg/gross 6.8kg does not resolve it. Withhold weight; keep candidate HOLD pending Bosch clarification.
+- Shark IZ400UKT Amazon ASIN B0B42QJL5B is QUARANTINED / NOT APPROVED: Which? link associates it with IZ400UKT, but a third-party catalogue maps same ASIN to MPN IZ420UKT; Amazon page fetch is inaccessible. Shark official pages confirm IZ400UKT single-battery vs IZ420UKT double-battery distinction. Do not affiliate-link this ASIN or claim it is definitely IZ420UKT. B0B42KZTH2 remains rejected.
+- No final UK/US retain/replace/hold matrix. No production/catalogue/affiliate/code/Cloudflare changes, no merge or deployment.
+- Next: Bosch written clarification; exact Amazon offer verification for five UK records; continue US IZ862H official manual and exact offer; then scorecards and disposition. Do not repeat IA1241UK official manual/safety gate or Samsung GH exact-SKU matching gate; both are satisfied.
+
 # LATEST ACTIVE HANDOFF — 25 November 2026 — 13:35 Asia/Amman / 10:35 UTC
 
 - Active page remains Cordless Vacuum Cleaners. Do not begin guide #2.
