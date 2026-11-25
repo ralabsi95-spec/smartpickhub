@@ -1,3 +1,28 @@
+# ACTIVE HANDOFF — 25 November 2026 (vacuum audit continued)
+
+## Do not repeat completed checks
+- Read the newest addendum at the end of `docs/audits/cordless-vacuum-cleaners-us-uk-2026-11-25.md` before resuming.
+- The live `main` catalogue was re-read: UK Shark record is `IZ400UKT`, US record is `IZ862H`. Official Shark UK IZ400UKT page is now recorded. Do not repeat generic UK model lookup.
+- Critical correction: IZ400UK is a separate product from IZ400UKT; 0.19 L belongs to IZ400UK only. Do not apply that capacity to catalogue IZ400UKT. Amazon candidate B0B42KZTH2 still shows inconsistent model number/name, so do not approve its ASIN.
+- Shark US IZ862H still lacks a model-specific official manual/specification source. SharkNinja official parts/support page accepts SKU=IZ862H but did not expose the manual in the captured result; third-party manual copies are not primary evidence.
+- Miele UK official product sheet for 11819170 / EAN 4002516449959 is now captured; 60/30/14 min runtime conditions, 0.5 L, 3.6 kg, 25.2 V, 2500 mAh, 77 dB, 240 min charge. Retail availability still unresolved.
+- Samsung UK official support page for VS28C9784QK exposes v0.7 user manual dated 11 Aug 2025. Download was not extracted; existing 160 min two-battery vs 100 min single-battery condition issue remains.
+- Dyson V15 UK page has contradictory out-of-stock and in-stock/add-to-basket sections; exact Dry option availability remains unverified.
+- Four UK replacement candidates have manufacturer evidence: Dyson V16 Piston Animal; Shark PowerDetect IP1251UK; Bosch Unlimited 10 ProPower BCS1051GB; Hoover HF3 Pet HF310P 001. Candidate details and runtime caveats are in the audit. None is approved as a replacement.
+- US candidate evidence: Shark PowerDetect IP1251 and Dyson V16 US official pages; do not merge their US specs with UK suffix variants. No US Bosch/Hoover counterpart established. Miele HX3 Plus has no verified official product page in this search.
+- Bosch BCS1051GB weight conflict remains: Bosch product page says 3.8 kg ready-for-use; official support detail says 2.9 kg ready-for-use with tube/floor nozzle. Resolve via official packaging/manual; do not publish either until reconciled.
+- Amazon direct ASIN approval remains 0/4 UK and 0/4 US. No affiliate links changed.
+
+## Exact next actions
+1. Resolve Bosch BCS1051GB weight discrepancy using official manual/packaging.
+2. Obtain official Shark IZ862H owner guide from Shark support or manufacturer; keep HOLD until then.
+3. Verify exact Amazon selected variants for all eight product-market records; if direct listing cannot be proven, retain labelled marketplace search URLs.
+4. Complete US candidate and market-specific buyer-intent comparison.
+5. Produce final retain/replace/hold matrix, refreshed editorial brief, then scorecard. Do not start guide #2 until this page has a documented disposition.
+
+Current page status: IN_PROGRESS, unscored. QA headline remains 0/25. No production changes, owner approval, PR merge or deployment.
+
+---
 # ACTIVE RESEARCH CHECKPOINT — 25 November 2026 (continued)
 
 - New audit evidence appended to `docs/audits/cordless-vacuum-cleaners-us-uk-2026-11-25.md`; read that dated addendum before repeating any Shark checks.
