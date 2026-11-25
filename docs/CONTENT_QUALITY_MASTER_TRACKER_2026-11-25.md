@@ -79,6 +79,8 @@ The queue preserves the catalogue order as an inventory only. Work priority afte
 ## 5. Reusable evidence — do not repeat without reason
 
 - `docs/25_GUIDE_100_PRODUCT_AUDIT_2026-11-18.md`: full structural sweep of 25 guides / 100 products and targeted primary-source spot checks; retain its model, regional-risk and unresolved-issue notes.
+- `EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md`: 19 Nov editorial preflight and owner-approved release record for all 25 guides; explicitly states it is not full live re-verification of every manufacturer claim, Amazon listing, stock, price or image right. Reuse the guide-by-guide caveats, including the cordless-vacuum product notes.
+- `EXISTING_25_GUIDES_INTENT_MAP.md`: existing canonical page intent map and provisional UK primary queries; do not recreate these clusters. Use it as the initial intent baseline and update only when fresh evidence changes the decision.
 - `PRODUCT_STRUCTURED_DATA_POLICY.md`: owner-approved standard for editorial guide JSON-LD; exactly one ItemList of Thing items, Article and BreadcrumbList; no Product rich-result entities for ordinary comparison guides.
 - `docs/RELEASE_INDEXING_PINTEREST_GOVERNANCE.md`: release, indexing and Pinterest approval gates; historical pre-launch sections are superseded by its dated status notes and latest master handoff.
 - `MASTER_PROJECT.md`, `AGENT_HANDOFF.md`, `ROADMAP_2026-11-24.md`: operational and indexing context.
@@ -100,7 +102,7 @@ The one-million-product discovery ambition is a database/research pipeline objec
 
 ### 25 November 2026
 - Established v1.0 page/product quality workflow and 100-point page scorecard.
-- Reused the 18 Nov 25-guide/100-product structural audit as baseline; no repeat audit performed.
+- Reused the 18 Nov 25-guide/100-product structural audit, 19 Nov editorial approval audit and existing 25-guide intent map as baselines; no repeat audit performed.
 - Started the Cordless Vacuum Cleaners page audit as the pilot because of saved UK commercial keyword signals.
 - Current SERP research identified strong test-led competitors; page differentiation must be specification/source-led and must not claim physical testing.
 - Four primary manufacturer source pages were located/rechecked; product and marketplace conflicts are recorded in the individual audit.
