@@ -1,3 +1,16 @@
+# ACTIVE RESEARCH CHECKPOINT — 25 November 2026 (continued)
+
+- New audit evidence appended to `docs/audits/cordless-vacuum-cleaners-us-uk-2026-11-25.md`; read that dated addendum before repeating any Shark checks.
+- Shark UK: manufacturer page explicitly lists model IZ400UK and 0.19 L; Amazon candidate ASIN B0B42KZTH2 calls itself IZ400UK in title/model number but IZ400UKT in model name and lists 0.7 L; no featured offer. ASIN is NOT approved; UK Shark remains HOLD.
+- Shark US: IZ862H identity/specs are supported by retailers and a third-party mirror of IZ800 manual; 120 V/60 Hz and 309 W surfaced, runtime 60 min ECO handheld, weight 8.9 lb and bin approx 0.72 qt. Still find official Shark-hosted manual/spec source; do not call third-party manual primary evidence.
+- Samsung UK exact model VS28C9784QK/EU retailer page found at Harvey Norman; retrieved price is stale (crawl two months old) and must not be quoted.
+- Miele UK official range page confirms Miele Expert purchase route for 11819170 while direct product page says permanently out of stock; actual availability remains unverified.
+- Amazon direct approved count remains 0/4 UK and 0/4 US. No ASIN/affiliate link has been added or changed.
+- New product-relevant note: vacuum filters may need full air drying after washing; Shark manual mirror says up to 48 hours. Verify from official manual before using as product-specific published claim. Do not infer water resistance. Rated motor watts are not battery charging kWh; no running-cost estimate without measured energy and dated tariff.
+
+Next: official Shark US source; reconcile UK model/capacity/package discrepancy; then exact current offers for Dyson/Samsung/Miele; decide retain/replace/hold and complete audit. Page remains IN_PROGRESS and unscored.
+
+---
 # ACTIVE HANDOFF — 25 November 2026 (owner-confirmed release discipline)
 
 ## Continue from here; do not restart
