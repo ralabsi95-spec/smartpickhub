@@ -1721,3 +1721,13 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Marketplace gate: Amazon UK and US pages must be checked against exact model suffix, package contents, seller, new/used condition, price, availability and warranty. Third-party tracker values are leads only; no direct ASIN link is approved. Keep B0B42KZTH2 rejected. B0B42QJL5B is only an IZ400UKT verification lead because direct Amazon returned 503.
 - US gate: do not force Bosch BCS1051GB or Hoover HF310P 001 into US market records; find exact US counterparts independently or record no equivalent. Keep Samsung VS28C9760UG/AA distinct from VS28C9762UK/AA.
 - This branch is research/documentation only. Do not merge, publish, edit production catalogue/pages, change affiliate URLs, or modify Cloudflare settings without explicit owner approval.
+
+
+## 25 November 2026 — Mandatory quality closure and reporting handoff
+- Before any work, read `PROJECT_QUALITY_CLOSURE_REGISTER.md`, then this file and `MASTER_PROJECT.md`. Check the Closed register before repeating any task.
+- Every work item must be NOT STARTED / IN PROGRESS / BLOCKED / PASS — READY TO CLOSE / CLOSED — DO NOT REPEAT / REOPENED — REGRESSION / CHANGE.
+- A PASS is not closed until exact scope, branch/commit/version, test results, evidence links, date, residual risks and reopen triggers are written to the closure register and master log.
+- Closed work is skipped by all later operators. Reopen only the smallest affected scope after a documented regression, materially changed fact/offer/policy, security issue, production drift or owner instruction.
+- Distinguish published pages from fully audited, PASS and CLOSED pages/products. The 25-guide release milestone is closed; this does not mean all 100 product records passed full QA.
+- Current active guide remains `cordless-vacuum-cleaners-us-uk`; do not start the next guide until four final product decisions and full guide QA are closed.
+- Project-wide open items and current evidence are in `PROJECT_QUALITY_CLOSURE_REGISTER.md`. No main merge or production deployment was performed for this documentation update.
