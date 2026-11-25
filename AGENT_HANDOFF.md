@@ -1,3 +1,16 @@
+# LATEST ACTIVE HANDOFF — 25 November 2026 — 12:41 Asia/Amman / 09:41 UTC
+
+- Active page remains Cordless Vacuum Cleaners; no guide #2.
+- **IA1241UK official owner manual now found.** Shark-hosted full IA1000UK Series Owner's Guide: https://support.sharkclean.co.uk/hc/en-gb/article_attachments/25906345085212 . Shark official support article maps IA1000UK series to IA1241UK and IA1241UKT. Exact series manual can be used for operation/safety/maintenance; exact bundle still must come from IA1241UK product page.
+- Manual confirms 18V, 350W body motor, 115W nozzle, battery XIABTR540EU 18V/3750mAh/67.5Wh, chargers DK25A-220100H-B or GQ30B-225100-AB.
+- Runtime safe claim = up to 60 min ECO with non-motorised tool (owner guide + exact product page). Ignore the support FAQ's inconsistent 70-min claim for copy; document it as a source conflict.
+- Charge safe operating instruction = approx. 6h (owner guide + support FAQ); exact product page says 5h. Preserve conflict; do not state 5h as settled.
+- Maintenance/safety gate SATISFIED: monthly filters, cold water only, fully air-dry; no liquids/wet surfaces; turn off/remove battery before service; only specified battery/chargers; storage 3–40°C, charging 5–40°C; no hazardous/liquid pickup.
+- Retailer signal: John Lewis exact IA1241UK £249.99, 4.5/5 from 405, Add to basket. Currys Business exact IA1241UK product code N682145W 10+ in stock at £229.98 inc VAT. Shark direct page has notify-me/cart conflict; stock unconfirmed.
+- Amazon exact IA1241UK ASIN/featured offer still unverified; IA1241UKPU is different variant, do not approve.
+- Candidate remains RESEARCH LEAD, not approved shortlist/replacement. No production/catalogue/affiliate/code/Cloudflare changes, no merge/deploy.
+- Next: compare IA1241UK against existing UK options by buyer-intent fit and exact retailer offer strength; resolve Amazon exact listing if accessible. Then return to remaining UK/US exact offer/disposition matrix. Keep US separate.
+
 # LATEST ACTIVE HANDOFF — 25 November 2026 — 12:19 Asia/Amman / 09:19 UTC
 
 - Active unit remains Cordless Vacuum Cleaners; do not start guide #2.
