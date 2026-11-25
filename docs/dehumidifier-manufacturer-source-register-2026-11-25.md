@@ -184,3 +184,55 @@ Searches surfaced conflicting third-party values for older Ebac 2650e/2850e mode
 - Exact-model Amazon UK searches in this pass did not return sufficiently verifiable direct product pages for the other target models (Meaco 20L Low Energy, DD8L Pro, DD8L Zambezi, PureMate PM-470, Pro Breeze PB-08/PB-18, and De’Longhi DEXD214RF).
 - No Amazon ASIN was added to the dataset and no affiliate link was generated. Search phrases remain discovery links only, not direct product links.
 - Before any direct Amazon link is approved, capture the exact listing title, manufacturer/model number or EAN/GTIN, selected size/capacity variation, seller/marketplace, and ASIN from the exact product page. Recheck the selected variation itself rather than relying on a parent listing, title keyword match, or variation menu.
+
+
+## 11. Authoritative re-check — Meaco Zambezi table is directly present on Meaco's live product page (25 November 2026)
+
+This section supersedes the earlier qualified/pending conclusion in Section 9.
+
+The Meaco UK product page was opened again and its full “Extraction Rate Data” table is directly visible in the page body. It confirms all six rows below, including the previously questioned mode-specific wattages:
+
+| Room condition | Fan speed | Extraction | Wattage | Calculated cost/L at 26.32p/kWh |
+|---|---:|---:|---:|---:|
+| 20°C / 60% RH | 1 | 3.9 L/day | 351 W | 56.9p |
+| 20°C / 60% RH | 2 | 8.0 L/day | 656 W | 51.8p |
+| 20°C / 60% RH | 3 | 8.3 L/day | 661 W | 50.3p |
+| 10°C / 60% RH | 1 | 3.9 L/day | 351 W | 56.9p |
+| 10°C / 60% RH | 2 | 6.6 L/day | 656 W | 62.8p |
+| 10°C / 60% RH | 3 | 7.5 L/day | 663 W | 55.8p |
+
+**Evidence status correction:** all six rows are now **directly manufacturer-published on Meaco's live UK product page**, not merely a search-index snapshot or secondary review. The earlier pending-primary-confirmation flag for these rows can be cleared. The 2019 manual's general energy-use text remains contextual, not the source of the six-row table.
+
+**Calculation note:** pence/L is calculated as (W / 1000 × 24 ÷ L/day) × 26.32p. It assumes the listed mode runs continuously at the stated wattage for 24 hours and achieves the stated extraction rate under the same published room condition. It is a derived comparison from manufacturer-rated figures, not a separate SmartPickHub laboratory measurement. Show the method and condition beside any displayed result; do not generalise it to other humidity/temperature conditions.
+
+Primary source: https://www.meaco.com/products/meaco-dd8l-zambezi-dehumidifier (opened page, “Extraction Rate Data” table).
+
+## 12. Duux Bora Smart 20L — corrected official UK specification
+
+This section supersedes the earlier statement that no wattage was available.
+
+The current Duux UK product page identifies:
+- Product name: Bora Smart 20L Dehumidifier.
+- Product number: **DXDH20UK**.
+- EAN: **8716164987492**.
+- Dehumidification capacity: 20 L/day.
+- Water tank: 4 L.
+- Consumption range: **20–260 W**.
+- Standby consumption: 0.9 W.
+- Minimum operating temperature: **15°C**.
+- Noise: 36–42 dB.
+- Compressor technology; 40 m² effective space.
+- Duux's page states 6p/hour at its highest setting using 27p/kWh at 20°C/60% RH; this is the manufacturer's rounded running-cost claim, not a substitute for a measured extraction/wattage pair.
+
+**Decision:** add DXDH20UK as a manufacturer-verified specification-only candidate. Do not calculate pence/L or include it in a 10°C performance ranking: no condition-specific extraction curve is supplied, and the manufacturer's stated minimum operating temperature is 15°C. Do not confuse this UK product number/EAN with the generic DXDH20/DXDH30 manual family.
+Primary source: https://duux.co.uk/product/bora-smart-dehumidifier/
+
+## 13. Ebac — expanded official manual check, still insufficient for performance ranking
+
+Additional official Ebac-hosted documents were located:
+- 2000 Series manual: https://ebac.com/content/manuals/ebac_dehumidifier_manual_2000_series.pdf
+- 3000 Series manual: https://ebac.com/content/manuals/ebac_dehumidifier_manual_3000_series.pdf
+- 4000 Series manual: https://ebac.com/content/manuals/ebac_dehumidifier_manual_4000_series.pdf
+- Ebac 15 manual: https://ebac.com/content/manuals/ebac_dehumidifier_manual_ebac15.pdf
+
+These establish operating instructions, broad real-home extraction guidance and some temperature/behaviour details, but the retrieved text does not provide the exact model-specific wattage plus condition-by-condition extraction table needed for a comparable pence/L result. The 2000 Series manual mentions 2650e/2850e fuse information, not rated operating watts. Keep Ebac outside the evidence-backed ranking pending an exact-model technical sheet or written manufacturer confirmation.
