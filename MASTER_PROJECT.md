@@ -2430,3 +2430,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Approved Amazon direct-ASIN count remains 0/4 UK and 0/4 US. Do not replace this with third-party tracker observations or retailer offers. Non-Amazon retailer snapshots are recorded only as market/price/availability context.
 - No final retain/replace decision is made yet. Product-market records remain separate. Active page remains IN_PROGRESS and unscored; no guide #2.
 - No catalogue, page copy, affiliate URL, code, Cloudflare configuration, sitemap, robots, PR merge, production deployment or publication changed.
+
+
+## 25 November 2026 — 11:58 Asia/Amman / 08:58 UTC — Cordless Vacuum evidence checkpoint (documentation-only)
+- Retried exact IZ862H manual/spec searches restricted to SharkNinja.com and Sharkclean.com; no official-hosted document surfaced. SharkNinja IP1251's comparison with IZ862H is not a specification source for IZ862H. Third-party IZ800 manual remains secondary corroboration; primary gate OPEN.
+- Added Miele-hosted UK datasheet for exact Triflex HX2 material 11819170 / EAN 4002516449959. It confirms LOW runtime 60 min PowerUnit solo / 30 min with electrical accessories, HIGH 14 min with electrical accessories; 0.5 L, 3.6 kg, 25.2 V, 2500 mAh, 77 dB and 240 min charge. Preserve conditions and exact regional bundle.
+- Dyson V15 UK exact page continues to show conflicting out-of-stock and in-stock/Add to basket states; stock remains unconfirmed.
+- No exact Amazon direct offer was verified for the four products in either market. Direct ASIN approval remains 0/4 UK and 0/4 US. No product disposition finalized.
+- Active page remains IN_PROGRESS and unscored. No guide #2, production/catalogue/affiliate/code/Cloudflare change, merge or deployment.
