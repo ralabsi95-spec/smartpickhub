@@ -403,3 +403,23 @@ Primary candidate sources:
 - Active page remains Cordless Vacuum Cleaners, IN_PROGRESS and unscored. Samsung UK evidence gate closed; Bosch weight/manual gates remain open; Shark US primary manual gate remains open; exact retailer/Amazon offer verification and UK/US market-fit comparison remain incomplete.
 - Amazon direct-ASIN approvals remain 0/4 UK and 0/4 US. No ASIN, affiliate destination, catalogue/product/page content, source code, Cloudflare setting, sitemap, robots, PR merge or production deployment changed.
 - Continue only the unresolved items above. Do not start guide #2 and do not repeat completed catalogue/SEO/CI/source checks.
+
+
+## 25 November 2026 — 11:07 Asia/Amman / 08:07 UTC — Bosch manual access + Shark IZ862H guide corroboration (documentation-only)
+
+### Shark US IZ862H — exact-series owner guide text now cross-checked; still secondary-hosted
+- Search retrieved the 24-page IZ800 Series Owner's Guide explicitly associated with exact model IZ862H. The manual text identifies SharkNinja Operating LLC, Sharkclean.com and document code IZ800Series_IB_MP_Mv20; ManualsFile reports model IZ862H, series IZ800, document published 8 July 2022 and updated 15 Jan 2025. ManualsLib independently exposes the same IZ800 guide and exact IZ862H related-product association.
+- Extracted claims from the guide: battery full charge approx. 3.5 hours; ECO runtime up to 60 minutes in handheld mode; Boost runtime up to 10 minutes in handheld mode; Clean Sense IQ runtime varies with use/debris; filters and dust cup should air-dry fully up to 48 hours after rinsing. The 60/10-minute claims are mode/handheld-specific, not universal floor-head runtime promises.
+- This is a manual bearing manufacturer authorship and model-family association, but the copies retrieved are hosted by third-party manual libraries, not SharkNinja/Sharkclean. Therefore it is corroborative secondary-hosted evidence only; it does NOT close the official-hosted primary-source gate. Do not upgrade it to manufacturer-primary evidence or publish its claims as independently verified against the official manual until SharkNinja provides or exposes the same file on an official domain.
+- References: https://manualsfile.com/product/k2zp91ivwkl.html ; https://www.manualslib.com/manual/3357248/Shark-Stratos-Clean-Sense-Iq-Multiflex-Iz862h.html ; https://www.manualslib.com/manual/2778286/shark-stratos-clean-sense-iq-multiflex-iz800-series.html
+- SharkNinja Parts & Support page for SKU IZ862H was opened but the rendered content does not surface an IZ862H-specific manual or a model-specific document link. Official parts compatibility pages remain component-level corroboration only. Primary source gate remains OPEN.
+
+### Bosch BCS1051GB — official manuals are listed, download contents not retrieved
+- Bosch's exact E-Nr BCS1051GB/01 service page displays multiple User Manual and Interactive User Manual entries. The page's rendered web extraction does not expose the document download URLs, so no official user-manual content has yet been reviewed. Do not mark the manual-content gate complete.
+- The official Bosch support specification page continues to list net weight 5.3 kg and ready-for-use with tube/floor nozzle 2.9 kg. Bosch product overview separately labels 3.8 kg “Measured weight, ready for op.”. Official spec sheet PDF search result also states 2.9 kg ready-for-use with tube/floor nozzle. These values use different labels and are not reconciled; keep one single weight claim out of editorial copy pending Bosch clarification.
+- Bosch official support source: https://www.bosch-home.co.uk/en/productservice/BCS1051GB-01 ; support specification: https://www.bosch-home.co.uk/supportdetail/product/BCS1051GB/01 ; product overview: https://www.bosch-home.co.uk/en/product/vacuum-cleaners/cordless-vacuum-cleaners/unlimited/unlimited10/BCS1051GB ; official spec sheet: https://media3.bsh-group.com/Documents/specsheet/en-IE/BCS1051GB.pdf
+
+### Status and next action
+- No quality gate closed in this pass: Shark manual evidence is better corroborated but still third-party-hosted; Bosch official manual is listed but not extracted and weight remains unresolved.
+- Active Cordless Vacuum Cleaners page remains IN_PROGRESS and unscored. Do not start guide #2. Continue with exact official manual acquisition (Bosch download endpoint / Bosch support clarification; SharkNinja official support response or official-hosted guide), exact current retail/Amazon offer verification and separate UK/US product-market comparison.
+- No production, catalogue, product copy, affiliate destination, Cloudflare setting, sitemap, robots, merge, deployment or publication changes were made.
