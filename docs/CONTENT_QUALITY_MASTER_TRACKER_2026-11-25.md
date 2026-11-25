@@ -158,3 +158,9 @@ Use the additional energy/environment and Google indexability checklist in CONTE
 - Amazon UK ASIN B0B42KZTH2 rejected/unapproved: model number/title IZ400UK vs Model Name IZ400UKT; conflicting specs/package and no featured offers. Do not use as direct affiliate destination for catalogue IZ400UKT.
 - No reliable exact Amazon UK direct ASIN surfaced for Dyson V15, Samsung VS28C9784QK/EU or Miele 11819170. Amazon US direct search blocked by robots during this check; absence is not proven.
 - Approved Amazon direct links remain 0/4 UK and 0/4 US. Use labelled search URLs unless exact buyable variant is verified.
+
+### 25 November 2026 — Active page checkpoint correction
+- Controlling correction is recorded at the end of `docs/audits/cordless-vacuum-cleaners-us-uk-2026-11-25.md`. Shark UK is IZ400UKT; 0.19 L belongs only to IZ400UK. Reject Amazon ASIN B0B42KZTH2 due to model-number/title IZ400UK vs Model Name IZ400UKT, 0.7 L / 5.11 kg / 25.2 V listing metadata and no featured offer.
+- Bosch BCS1051GB weight remains unresolved because official pages display 3.8 kg measured ready-for-operation, 2.9 kg ready-for-use with tube/floor nozzle and 5.3 kg net weight. Do not choose a single published value.
+- Shark US IZ862H official parts compatibility is corroborated, but official vacuum manual/spec source remains missing. Amazon direct listing approvals remain 0/4 UK and 0/4 US.
+- Current full-audit count remains 0/25 PASS (0%); active page remains IN_PROGRESS. No page or product-market unit is counted from partial research.
