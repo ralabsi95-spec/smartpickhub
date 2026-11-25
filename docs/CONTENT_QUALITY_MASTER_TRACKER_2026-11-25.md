@@ -364,3 +364,10 @@ The 0/25 v1.0 figure was created before a complete legacy evidence crosswalk exi
 - Shark IZ862H official parts pages and IP1251 comparison do not constitute an IZ862H manual. Manual gate remains open; do not transfer comparator specs.
 - Bosch 2.9kg vs 3.8kg conflict remains open. Shark B0B42QJL5B stays quarantined and B0B42KZTH2 rejected.
 - Page remains IN_PROGRESS/unscored, no final market matrix, no production/catalogue/affiliate/code/Cloudflare/merge/deploy/publication changes.
+
+
+## 25 November 2026 — 14:45 Asia/Amman — Bosch weight corroboration / Shark IZ862H evidence leads
+- Bosch exact official PDF repeats 2.9kg ready for use with tube/floor nozzle, matching Bosch support page, but Bosch product page still states 3.8kg measured ready for operation. Conflict stays open; no weight claim/handling score.
+- Shark IZ862H IZ800 Series Owner's Guide found on secondary manual sites; model scope includes IZ862H, but Shark-hosted official PDF not yet retrieved/validated. Treat contents as provisional; next locate Shark Canadian support copy and verify exact scope. Do not transfer specs from IA1241/IP3251.
+- US Amazon ASIN lead B0B5JMNGNQ matches IZ862H in third-party catalogues and has Amazon-linked offers, but Amazon direct page is blocked and selected seller/condition/Featured Offer not verified. Not approved. B0BW51TNGC is Renewed and excluded.
+- Shark UK B0B42QJL5B remains quarantined; third-party MPN mapping again conflicts IZ400UKT/IZ420UKT. Amazon approval remains 0/4 UK and 0/4 US. No final disposition or production changes.
