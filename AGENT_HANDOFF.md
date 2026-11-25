@@ -1841,3 +1841,14 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - No product decisions, ASIN approvals or affiliate-link changes. Amazon direct approval remains 0/4 UK and 0/4 US. No production change, merge or deployment.
 - Active page remains Cordless Vacuum Cleaners, IN_PROGRESS and unscored. Next: obtain/review Samsung v0.7 contents; obtain/review Bosch official manual/packaging or manufacturer clarification; request SharkNinja IZ862H owner guide; continue exact offer checks and US intent/candidate comparison. Then decide retain/replace/hold and complete the scorecard. Do not start page #2.
 
+
+
+---
+# LATEST ACTIVE HANDOFF — 25 November 2026 — 10:39 Asia/Amman / 07:39 UTC
+
+- Samsung UK: exact VS28C9784QK support page lists official v0.7 manual (file ID 10789220); PDF was opened and reviewed. Runtime/battery gate is now CLOSED. Exact Samsung UK Business product page confirms up to 160 min only at MIN with a non-motorised tool and two batteries; quantity is 2. Manual explains approx. 100 min with larger VCA-SBTC97 battery and approx. 60 min with lighter VCA-SBTC97S/SBTD95 battery using Combination/Extension Crevice Tool at MIN. Powered floor-head times are lower (Active Dual Brush 58/34 min; Slim LED Brush+ 77/45 min at MIN). Do not state 160 min as powered floor-head runtime.
+- Samsung manual: family cover includes VS28C97****; model-specific product page identifies VS28C9784QK/EU. Battery specs: 25.2 V; 3970 mAh large / 2200 mAh light; charge 5 h / 3.5 h. Exact product page lists 2 batteries and the SKU-specific accessories. Do not infer optional accessories from the family diagram.
+- Bosch BCS1051GB: manual links are available but contents not reviewed; weight remains withheld because official sources label 2.9 kg ready for use with tube/floor nozzle, 5.3 kg net, and 3.8 kg measured ready for operation.
+- Shark US IZ862H: third-party-hosted owner-guide copy is not accepted as a SharkNinja primary source. Official manual gate remains open.
+- No product decisions, ASIN approvals, affiliate URL or production changes. Amazon direct approval remains 0/4 UK and 0/4 US. Page remains IN_PROGRESS/unscored; no page #2.
+- Next: obtain/review Bosch manual or official measurement clarification; secure SharkNinja-hosted IZ862H manual or written support confirmation; complete exact current retailer offers and US market-intent comparison; then decide retain/replace/hold and score the page.
