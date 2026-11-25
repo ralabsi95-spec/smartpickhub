@@ -1,3 +1,36 @@
+# ACTIVE HANDOFF — 25 November 2026: page-by-page content quality workflow
+
+**Read these first, in order:**
+1. `docs/CONTENT_QUALITY_OPERATING_STANDARD.md` — permanent v1.0 process and scorecard.
+2. `docs/CONTENT_QUALITY_MASTER_TRACKER_2026-11-25.md` — authoritative 25-page queue and progress counters.
+3. `docs/audits/cordless-vacuum-cleaners-us-uk-2026-11-25.md` — current active page audit and exact next actions.
+4. `EDITORIAL_APPROVAL_AUDIT_25_GUIDES.md`, `docs/25_GUIDE_100_PRODUCT_AUDIT_2026-11-18.md`, and `EXISTING_25_GUIDES_INTENT_MAP.md` — reusable prior evidence; do not repeat it.
+5. Read the latest dated entry at the end of `MASTER_PROJECT.md`.
+
+## Current execution state
+- Documentation branch: `docs/content-quality-operating-system-2026-11-25` (docs-only; not merged).
+- Production baseline: 25 published/owner-approved guides and 100 product records; Cloudflare Pages only.
+- New v1.0 full-audit certification: **0/25 PASS (0%)**, 1 active, 24 queued. This counter means no page has yet completed every v1.0 gate; it does not erase the earlier structural/editorial work.
+- Active unit: `cordless-vacuum-cleaners-us-uk`.
+- Do not begin page #2 until the active page receives a documented disposition and exact remaining actions.
+- First task: verify exact UK and US manufacturer variants plus retailer/Amazon destinations for all four vacuum products. Do not accept ambiguous ASIN/model matches. Keep model-name search links as search links unless an exact direct listing is proven.
+
+## Permanent execution rules
+- One page at a time; each product-market identity is a separate verification unit.
+- Distinguish research complete, draft complete, quality PASS, owner approval and published.
+- Full page PASS requires >=90/100 and zero hard blockers. Do not award a partial page a percentage in the full-audit numerator.
+- Reuse prior evidence and record its original date; only re-check stale, conflicting or missing evidence.
+- No paid OpenSEO keyword/competitor research without owner approval. Last-known balance was 28 credits; current balance has not been rechecked. Free public search and already-saved metrics were used for the first page.
+- No production edits, catalogue imports, affiliate-link changes, status changes, PR merge or deployment without explicit owner approval.
+- Keep UK primary and US separately researched. Never invent ASINs, prices, ratings, stock, reviews, testing claims or image rights.
+
+## Files created in this workflow
+- `docs/CONTENT_QUALITY_OPERATING_STANDARD.md`
+- `docs/CONTENT_QUALITY_MASTER_TRACKER_2026-11-25.md`
+- `docs/audits/cordless-vacuum-cleaners-us-uk-2026-11-25.md`
+
+---
+
 **Latest live SEO/indexability checkpoint — 23 November 2026 06:10 UTC**  
 - Latest audit record is at the end of `MASTER_PROJECT.md`. The current public sitemap has 29 URLs: 25 guides plus homepage, guide library, affiliate disclosure and How We Research.
 - Live `robots.txt` allows wildcard crawling and declares `https://smartpickhub.pages.dev/sitemap-index.xml`.
