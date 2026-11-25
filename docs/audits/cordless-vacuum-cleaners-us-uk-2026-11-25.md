@@ -192,3 +192,31 @@ Official UK page confirms 11819170 and EAN, 3.6kg, 0.5L dustbag volume, 25.2V, 6
 - Dyson US support model index (V15 Detect SV22): https://www.dyson.com/support/vacuum-cleaners/cordless
 - Samsung US exact model specification PDF: https://image-us.samsung.com/SamsungUS/home/home-appliances/vacuums/jet-stick/vs28c9762ukaa/pdf/13314.5_VS28C9762UK_Bespoke_JetAI_National_V10.pdf
 - Miele US exact model 11827000: https://www.mieleusa.com/product/11827000/cordless-stick-vacuum-cleaner-triflex-hx2-lotus-white
+
+## 25 November 2026 — Additional manufacturer and retailer evidence checkpoint
+
+### Shark Stratos UK — identity narrowed, capacity conflict remains a hard blocker
+- SharkNinja UK's current product page explicitly identifies the single-battery product as model IZ400UK, not IZ400UKT. It states 60 minutes only in ECO with a non-motorised tool, 4.1 kg, 0.19 L dust cup, 3.5-hour charge, one included battery, 240 V, 309 W, and a 5-year guarantee after registration (2 years for battery, UK/ROI). Source: https://www.sharkninja.co.uk/shark-stratos-anti-hair-wrap-plus-cordless-vacuum-single-battery-iz400uk/IZ400UK.html
+- Amazon UK result for ASIN B0B42KZTH2 has title/model number IZ400UK but its model-name field says IZ400UKT; it lists 0.7 L capacity, while the manufacturer's current page says 0.19 L. Amazon result currently shows no featured offer. Source: https://www.amazon.co.uk/Shark-Anti-Odour-Technology-Attachments-IZ400UK/dp/B0B42KZTH2
+- Decision: do NOT approve B0B42KZTH2 as the affiliate destination yet. The model/packaging and 0.19 L vs 0.7 L conflict is material. Retain the official 0.19 L as the manufacturer-stated specification in research notes, but the product record remains HOLD until Shark confirms the correct variant/capacity and a buyable exact listing is verified. Do not silently copy the Amazon 0.7 L value.
+
+### Shark Stratos US — exact model identified; primary-source gap still open
+- Exact US variant IZ862H is confirmed by retailer product records: 120 V / 60 Hz and 309 W are shown in the IZ800-series owner's guide mirror; runtime up to 60 minutes is explicitly ECO measured at the handheld vacuum in Kohl's product details; weight 8.9 lb and dust cup approximately 0.72 qt are shown by Kohl's. Sources: https://www.kohls.com/product/prd-5884781/shark-stratos-cordless-vacuum-with-clean-sense-iq-and-odor-neutralizer-duoclean-powerfins-hairpro-includes-duster-crevice-tool-antiallergen-brush-up-to-60-minute-runtime-deepcleaning-vacuum-hepa-filter-ash-purple-iz862h.jsp and https://manualzz.com/doc/68296941/shark-iz862h-stratos%E2%84%A2-cordless-user-manual
+- The retrieved manual is an IZ800 Series owner guide reproduced by a third-party manual host, not a verified official Shark-hosted source in this check. It lists 120 V~, 60 Hz and 309 W, and includes battery care/indoor storage and filter drying guidance. Do not treat the mirror as primary evidence. Official Shark-hosted IZ862H manual/source remains unresolved.
+- Important market distinction: US IZ862H is a 120 V/60 Hz product; do not merge its electrical, package, runtime or warranty details with UK IZ400UK (240 V).
+
+### Additional commercial listing evidence
+- Samsung UK exact model VS28C9784QK/EU appears on Harvey Norman UK with the exact model string. The retrieved page displayed a promotional price but was crawled two months before this audit; price is stale/unusable and not copied. Source: https://www.harveynorman.co.uk/products/samsung-bespoke-jet-ai-bagless-cordless-vacuum-cleaner-vs28c9784qk-eu-black
+- Miele UK official range page lists material number 11819170 / Triflex HX2 and states purchase via Miele Experts, while the direct product page still reports permanently out of stock. This confirms an official sales route exists but does not verify live stock or an online checkout offer. Sources: https://www.miele.co.uk/c/triflex-hx2-cordless-vacuum-10294.htm and https://www.miele.co.uk/product/11819170/cordless-stick-vacuum-cleaners-triflex-hx2-lotus-white
+- No exact, currently buyable Amazon direct listing was approved for Dyson V15, Samsung Bespoke Jet AI or Miele Triflex HX2 in this checkpoint. Amazon exact direct-listing verification remains 0/4 UK and 0/4 US. Shark ASIN B0B42KZTH2 remains a rejected/unapproved candidate pending resolution; count remains zero.
+
+### Environmental/maintenance relevance discovered
+- Shark IZ862H manual guidance surfaced in the third-party manual mirror: store indoors; filters rinsed with water must air-dry completely for up to 48 hours before reinstalling. This supports a relevant maintenance/moisture caution, not a claim that the vacuum is water-resistant. Verify against an official manufacturer manual before using it as a cited product claim.
+- For this vacuum guide, electricity running cost is low-value unless comparable measured kWh or defensible charging energy is available. Do not estimate annual cost from 309 W motor input; that is not measured battery charging consumption. Moisture/humidity check should focus on dry-use-only limitations, filter drying, and battery/electrical safety, using primary sources.
+
+### Status after this checkpoint
+- UK Shark manufacturer identity/model: PARTIALLY RESOLVED (IZ400UK); capacity/package conflict unresolved; Amazon listing not approved.
+- US Shark model identity: retailer/manual evidence supports IZ862H; official Shark primary source remains unresolved.
+- Exact Amazon direct listing approval: 0/4 UK and 0/4 US.
+- Page remains IN_PROGRESS, unscored, with no production edits, affiliate-link changes, owner approval, merge or deployment.
+- Next exact action: locate official Shark-hosted IZ862H manual/specification; ask manufacturer documentation to reconcile UK 0.19 L vs retailer/Amazon 0.7 L and the IZ400UK/IZ400UKT package naming; then complete exact offer checks for the other three models.
