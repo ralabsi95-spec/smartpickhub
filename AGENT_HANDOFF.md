@@ -1,3 +1,18 @@
+# LATEST ACTIVE HANDOFF — 25 November 2026 — 13:35 Asia/Amman / 10:35 UTC
+
+- Active page remains Cordless Vacuum Cleaners. Do not begin guide #2.
+- Documentation branch `docs/content-quality-operating-system-2026-11-25` remains 78 commits ahead of `main`, 0 behind at the start of this checkpoint; documentation-only updates are being recorded here. No merge/deploy.
+- Fresh UK 2026 SERP evidence: Which? 20 Aug buying guide, Expert Reviews 2026 Dyson V15 overall pick, The Independent 9 Oct Bosch Unlimited 10 ProPower overall pick, Good Housekeeping 12 Nov Samsung Bespoke Jet AI and Shark PowerDetect Clean & Empty testing. These establish buyer-intent/competitor context, not exact SKU matching unless separately verified.
+- Bosch BCS1051GB official page: £629.99, in stock, Add to cart, 4.8/5 from 788 ratings, conditional 5-year warranty. Weight discrepancy remains 2.9kg vs 3.8kg; withhold weight and keep candidate HOLD.
+- Dyson V15 UK official page shows £479.99/Add to basket and out-of-stock/notify-me simultaneously. Availability conflicted.
+- Miele 11819170: Miele category page offers Expert purchase route at £649, but exact product page previously showed permanently out of stock. Direct online availability unconfirmed.
+- Shark IZ400UKT: Which? retailer link exposes ASIN lead B0B42QJL5B and £309 Amazon snapshot; Amazon fetch returned 503. Exact selected offer/seller/condition not verified. B0B42KZTH2 remains rejected due model number/name mismatch.
+- Good Housekeeping's Shark PowerDetect Clean & Empty pet-hair pick is a docked product and is NOT IA1241UK base bundle. Do not transfer score/specs.
+- No exact Amazon selected offer approved for the five other UK product records in this pass. Amazon direct approval count unchanged until exact seller/condition/variant/featured offer verified.
+- No final retain/replace/hold decision. No production/catalogue/affiliate/source/Cloudflare changes, no owner approval, no merge, no deploy.
+- Next: Bosch weight clarification; inspect B0B42QJL5B on Amazon; exact Samsung SKU/bundle match; remaining UK Amazon exact offers; continue US IZ862H official manual and exact-offer verification separately; then final market-specific scorecard and disposition.
+- Do not repeat IA1241UK official manual/safety search; its gate is SATISFIED via IA1000UK official Owner's Guide and exact model-to-series mapping.
+
 # LATEST ACTIVE HANDOFF — 25 November 2026 — 12:41 Asia/Amman / 09:41 UTC
 
 - Active page remains Cordless Vacuum Cleaners; no guide #2.
