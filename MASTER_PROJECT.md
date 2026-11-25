@@ -2468,3 +2468,15 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Commercial evidence: John Lewis exact SKU £249.99 / 4.5 from 405 / Add to basket; Currys Business exact IA1241UK product code N682145W shows 10+ stock at £229.98 inc VAT. Shark direct page still has notification/cart UI conflict.
 - Amazon direct exact IA1241UK offer remains unverified; IA1241UKPU is a different variant and not approved.
 - Candidate remains research lead only. Active page IN_PROGRESS/unscored; no guide #2. No catalogue, page copy, affiliate, code, Cloudflare, sitemap, robots, PR merge, deployment or publication changes.
+
+
+## 25 November 2026 — 13:35 Asia/Amman — Cordless Vacuum UK comparison checkpoint
+- Continued the active Cordless Vacuum Cleaners page only; no guide #2.
+- Fresh UK market evidence added from Which? 2026 buying guidance, Expert Reviews' Dyson V15 pick, The Independent's Bosch Unlimited 10 ProPower pick and Good Housekeeping's 12 Nov 2026 tests. These are buyer-intent/competitor signals; exact product SKU/bundle matching remains mandatory.
+- Bosch BCS1051GB official exact page snapshot: £629.99, In stock, Add to cart, 4.8/5 from 788 ratings, conditional five-year warranty. Conflicting official weight data (2.9kg vs 3.8kg) remains unresolved; do not publish weight or approve replacement.
+- Dyson V15 official page shows £479.99/Add to basket and out-of-stock/notify-me in the same page; stock remains conflicted.
+- Miele 11819170 has an advertised Miele Expert purchase route at £649, while the exact product page previously showed permanently out of stock; direct online availability unconfirmed.
+- Which? IZ400UKT page exposes Amazon ASIN lead B0B42QJL5B and a £309 Amazon price snapshot, but Amazon page fetch returned 503. Seller/condition/selected offer remain unverified; not approved. ASIN B0B42KZTH2 remains rejected for model mismatch.
+- Samsung Bespoke Jet AI test evidence remains family-level until the exact catalogue model/bundle is matched. Shark Clean & Empty is a docked competitor and must not be confused with IA1241UK base bundle.
+- No final retain/replace/hold decision. No catalogue, production content, affiliate URLs, code, Cloudflare, sitemap, robots, merge, deployment or publication changed.
+- Next: resolve Bosch weight; verify B0B42QJL5B direct offer when accessible; exact Samsung SKU/bundle; remaining UK exact Amazon offers; continue US IZ862H primary manual and exact-offer work separately; then final market-specific scorecards and disposition.
