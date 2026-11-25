@@ -296,3 +296,12 @@ The 0/25 v1.0 figure was created before a complete legacy evidence crosswalk exi
 - Approved Amazon direct-ASIN count remains 0/4 UK and 0/4 US. Do not replace this with third-party tracker observations or retailer offers. Non-Amazon retailer snapshots are recorded only as market/price/availability context.
 - No final retain/replace decision is made yet. Product-market records remain separate. Active page remains IN_PROGRESS and unscored; no guide #2.
 - No catalogue, page copy, affiliate URL, code, Cloudflare configuration, sitemap, robots, PR merge, production deployment or publication changed.
+
+
+## 25 November 2026 — 11:58 Asia/Amman / 08:58 UTC — targeted source retry and evidence reconciliation
+- Shark IZ862H: exact-model searches limited to SharkNinja.com/Sharkclean.com did not surface an official-hosted manual/specification. Official IP1251 comparator page is not an IZ862H spec source. Third-party IZ800 guide remains secondary-hosted only; primary manual gate OPEN.
+- Miele UK Triflex HX2 material 11819170: added exact Miele-hosted product sheet (EAN 4002516449959). Verified runtime distinctions: LOW 60 min PowerUnit solo / 30 min with electrical accessories; HIGH 14 min with electrical accessories; 0.5 L, 3.6 kg, 25.2 V, 2500 mAh, 77 dB, 240 min charge. Use only exact listed bundle.
+- Dyson V15 UK: fresh exact page extraction still contains conflicting out-of-stock and in-stock/Add to basket blocks. Availability remains UNCONFIRMED; do not cite £479.99 as a verified offer.
+- Amazon: no exact selected buyable Amazon offer with matching model, seller and condition verified in this pass. Direct-ASIN approvals remain 0/4 UK and 0/4 US. Irrelevant third-party deal/tracker results are not ASIN evidence.
+- Page remains IN_PROGRESS and unscored; no final product disposition, page #2, content/code/catalogue/affiliate changes, merge or deployment.
+- Sources: https://www.sharkninja.com/shark-powerdetect-cordless-stick-vacuum/IP1251.html ; https://qcg-media.s3.amazonaws.com/media/uploads/118513/2022/06/20220630_202169_IZ800SeriesIBMPMv5LR3.pdf ; https://media.miele.com/downloads/n-/gb/FS_11819170_GBE_GB-en-GB.pdf ; https://www.dyson.co.uk/vacuum-cleaners/cordless/v15/detect-yellow-nickel
