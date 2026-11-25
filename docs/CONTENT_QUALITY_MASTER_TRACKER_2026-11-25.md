@@ -40,8 +40,8 @@
 | Priority reason | Saved UK-market keyword snapshot: “best cordless vacuum cleaner” 27,100 volume / KD 8 / CPC 2.50 / commercial; “cordless vacuum cleaner” 22,200 / KD 18 / CPC 1.86 / transactional. Metrics are cached/undated and must not be presented as fresh. |
 | SERP sample | 25 Nov 2026; current web results show strong testing-led competitors including Good Housekeeping, Which?, TechRadar, The Independent, The Guardian and Ideal Home. |
 | Status | IN_PROGRESS |
-| Initial findings | Product refresh and exact-marketplace verification required. Existing four product records have primary manufacturer source pages, but important variant/availability/runtime conflicts remain. No Amazon direct ASIN verified for the four records in this pass. |
-| Next action | Complete exact model/variant and current retailer/marketplace verification for all four products; then prepare a dated refresh brief and page-content change list. No production edits. |
+| Initial findings | Continued audit found official Shark UK IZ400UKT identity and separated it from IZ400UK (0.19 L belongs to IZ400UK, not the catalogue variant); Shark US IZ862H official manual still missing. Miele UK official spec PDF and Samsung official support/manual listing added. Dyson/Miele availability and Samsung runtime bundle remain open. Four UK alternatives now have primary-source screening. Amazon direct ASIN approvals remain 0/4 UK and 0/4 US. |
+| Next action | Resolve Bosch BCS1051GB weight conflict; obtain official Shark IZ862H manual; verify exact Amazon selected variants for the eight market records; complete US candidate comparison and retain/replace/hold matrix. No production edits. |
 | Audit record | `docs/audits/cordless-vacuum-cleaners-us-uk-2026-11-25.md` |
 
 ## 4. Existing guide queue
@@ -112,7 +112,7 @@ The one-million-product discovery ambition is a database/research pipeline objec
 
 **Continue:** `cordless-vacuum-cleaners-us-uk`  
 **Do not start page #2 until the active page has a documented disposition and exact remaining actions.**  
-**First task:** verify all four product identities, variants and current retailer/Amazon UK listings; preserve search links unless an exact direct listing is proven. Then complete the page scorecard and update this tracker.
+**First task:** continue from the 25 Nov audit addendum. Do not repeat the Shark UK identity search: catalogue model IZ400UKT is confirmed; 0.19 L belongs to separate IZ400UK. Resolve Bosch BCS1051GB 2.9 kg vs 3.8 kg; obtain official Shark IZ862H manual; verify Amazon selected variants for all eight UK/US records; finish US candidate screening and retain/replace/hold matrix. Preserve search links unless exact direct offers are proven.
 
 ## 9. Release milestones, permanent completion lock and no-repeat rule (owner confirmed 25 Nov 2026)
 
@@ -146,3 +146,10 @@ Use the additional energy/environment and Google indexability checklist in CONTE
 - QA, owner approval, merged, deployed, indexed and performance are separate counters.
 - Products verified = exact product-market units fully evidenced / total relevant product-market units, never a percentage inferred from guide count.
 - At 100%, expansion begins as a separate queue. Every new product/page passes the same gates before publish or schedule.
+
+### 25 November 2026 — Continued vacuum evidence checkpoint
+- Corrected Shark UK variant interpretation against current `main` catalogue: intended model is IZ400UKT; separate IZ400UK is 0.19 L. Do not transfer IZ400UK capacity to IZ400UKT. Amazon ASIN B0B42KZTH2 still has mismatched model fields and is not approved.
+- Added official Shark IZ400UKT product source, Miele 11819170 official technical PDF, Samsung VS28C9784QK support/manual listing, and recorded Dyson V15 contradictory availability signals.
+- Screened four UK alternatives from primary manufacturer sources: Dyson V16, Shark PowerDetect IP1251UK, Bosch Unlimited 10 ProPower BCS1051GB, Hoover HF3 Pet HF310P 001. Their runtime claims have different test conditions; no replacement is approved yet.
+- US candidates found from primary sources for Shark PowerDetect IP1251 and Dyson V16; their specs are distinct from UK variants. Bosch/Hoover US counterparts not established; Miele HX3 Plus official source not found.
+- Amazon direct ASIN approvals remain 0/4 UK and 0/4 US. No catalogue changes, affiliate edits, publication, PR merge or deployment.
