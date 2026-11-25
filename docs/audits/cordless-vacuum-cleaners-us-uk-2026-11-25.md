@@ -644,3 +644,40 @@ Primary candidate sources:
 4. Verify exact Amazon selected variants and current seller/condition/featured offer for the remaining UK products; preserve search links when unresolved.
 5. Continue the US IZ862H official-manual and exact-offer work separately, then build the final UK/US intent scorecards and disposition matrix.
 6. No guide #2 until this active page is dispositioned. No production, catalogue, affiliate, Cloudflare, merge or deployment changes.
+
+
+## 25 November 2026 — 13:50 Asia/Amman / 10:50 UTC — Bosch weight source reconciliation attempt, Samsung exact test-model match, Shark ASIN quarantine
+
+### Bosch BCS1051GB — official weight conflict remains unresolved
+- Rechecked two live Bosch UK official sources for the exact model BCS1051GB:
+  - Bosch GB product page explicitly reports "Measured weight, ready for op." **3.8 kg**: https://www.bosch-home.com/gb/en/product/vacuum-cleaners/cordless-vacuum-cleaners/unlimited/unlimited10/BCS1051GB
+  - Bosch UK service page for exact support code BCS1051GB/01 reports "Weight (ready for use with tube and floor nozzle): **2.9 kg**": https://www.bosch-home.co.uk/en/productservice/BCS1051GB-01
+- Bosch-hosted BSH spec sheet confirms the exact model code, package dimensions, net weight 5.3 kg and gross weight 6.8 kg, but does not reconcile the 2.9-vs-3.8 kg operating-weight labels: https://media3.bsh-group.com/Documents/specsheet/en-IE/BCS1051GB.pdf
+- These are both official, exact-model sources; the scope wording is similar but not demonstrably identical. No authoritative correction/clarification found. **Conflict remains OPEN.** Do not publish either operating weight or score weight/handling until Bosch confirms which configuration/measurement is intended. This is not a reason to reject the whole product; retain as candidate HOLD pending clarification.
+
+### Samsung VS28C9784QK/EU — Good Housekeeping test now matched to exact SKU
+- Good Housekeeping UK article updated 12 Nov 2026 identifies Samsung Bespoke Jet AI as its "Best cordless stick vacuum with AI", score **90/100**; tester reports good dust/pet-hair pickup across tested surfaces, good tool selection and comfortable balance, with drawbacks around dust-bin refitting and price. The article shows £880 at Argos at the time captured: https://www.goodhousekeeping.com/uk/product-reviews/house-garden/g685066/the-top-5-best-stick-vacuums/
+- The GH outbound retailer link opens Argos product 326/9381. Argos page explicitly identifies the exact model **VS28C9784QK/EU**, EAN 8806095055602, and the same product/hardware bundle: All-in-One Clean Station, two batteries, Active Dual LED / Active Dual LED Brush+, Pet Tool+, flexible tool, accessory cradle and other tools. Thus the independent review can be attributed to the exact catalogue model, not merely the Samsung family. Argos page: https://www.argos.co.uk/product/3269381/GM-Variant
+- Samsung official UK Business product page independently confirms exact model VS28C9784QK/EU, 280W suction, two batteries, Clean Station, 160 min maximum under minimum-power/non-motorised-tool conditions, battery charge times 300min/210min, 0.5L bin, Pet Tool+, and net weight 2.79kg with the smaller battery and Slim LED Brush+. It also identifies 5-year warranty. Source: https://www.samsung.com/uk/business/vacuum-cleaners/stick/bespoke-jet-plus-210w-all-in-one-clean-station-black-vs28c9784qk-eu/
+- GH's 160min and 5h charge figures are review-page summary values. Use Samsung's more precise conditions in technical copy: up to 160min only with two batteries, minimum power and non-motorised tool; battery charging is 300min (large) / 210min (light). Do not imply 160min with a powered floorhead or on one battery.
+- This closes the exact review-SKU matching gap for Samsung UK. It does not verify Amazon availability or approve an ASIN. Argos price/stock is retailer-specific and postcode-dependent.
+
+### Shark IZ400UKT Amazon ASIN B0B42QJL5B — do not approve; conflicting variant mapping
+- Which? exact IZ400UKT review page linked to ASIN B0B42QJL5B and previously showed an Amazon price snapshot, but Amazon direct page is still inaccessible to this research environment.
+- A third-party catalogue source associates the same ASIN with MPN **IZ420UKT** while describing it as IZ400UKT; another marketplace data mirror shows the model name IZ400UKT but carries contradictory product attributes. This is not enough to identify the Amazon selected variant.
+- Shark official pages establish that IZ400UKT is the single-battery Pet Pro model (60min max, 4.1kg, Pet Tool), whereas IZ420UKT is a distinct double-battery model (120min max). Official comparison/product pages: https://www.sharkninja.co.uk/shark-stratos-anti-hair-wrap-plus-pet-pro-cordless-vacuum-single-battery-iz400ukt/IZ400UKT.html ; https://www.sharkninja.co.uk/shark-stratos-anti-hair-wrap-plus-pet-pro-cordless-vacuum-double-battery-iz420ukt/IZ420UKT.html
+- **Disposition: QUARANTINE / NOT APPROVED for IZ400UKT** until Amazon itself displays the selected exact model, seller, condition and live Featured Offer. Do not create a direct affiliate URL from B0B42QJL5B. Keep the existing Amazon search route. Previously rejected B0B42KZTH2 remains rejected for model-number/name mismatch. Do not claim B0B42QJL5B is definitively an IZ420UKT either; only the mapping conflict is established.
+
+### Current UK page effect
+- Samsung UK exact independent-test evidence gate is now SATISFIED.
+- Bosch weight hard claim remains withheld.
+- Shark IZ400UKT direct Amazon ASIN gate remains unresolved; B0B42QJL5B is quarantined, not approved.
+- No final retain/replace/hold matrix; page remains IN_PROGRESS and unscored.
+- No product catalogue, production page, affiliate destination, code, Cloudflare setting, sitemap, robots, PR merge, deployment or publication changed.
+
+### Next actions
+1. Seek Bosch written clarification for 2.9kg vs 3.8kg; until then keep weight out.
+2. Obtain Amazon-visible exact variant/offer evidence for IZ400UKT or leave as search link; do not retry rejected ASINs without new direct evidence.
+3. Verify exact Amazon selected offers for Dyson V15, Samsung VS28C9784QK/EU, Miele 11819170, Bosch BCS1051GB and IA1241UK.
+4. Continue US IZ862H official manual and exact-offer work separately.
+5. Build market-specific comparison scorecards and final disposition only after these gates. No guide #2.
