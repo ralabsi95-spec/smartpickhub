@@ -16,6 +16,7 @@
     "audit-report": "node scripts/build-audit-report.mjs",
     "predev": "npm run images",
     "images": "node scripts/generate-pinterest-images.mjs",
+    "contrast": "node scripts/check-design-contrast.mjs",
     "indexnow": "node scripts/ping-indexnow.mjs",
     "audit:images": "node scripts/audit-product-images.mjs",
     "research:commons": "node scripts/research-commons-images.mjs",

@@ -40,6 +40,8 @@ jobs:
           npm audit --json > test-reports/npm-audit.json || echo "npm audit reported findings; inspect the JSON report."
       - name: Astro type and content checks
         run: npm run check
+      - name: Verify WCAG contrast for text over gradient backgrounds
+        run: npm run contrast
       - name: Test product intake dry-run importer
         run: npm run import:self-test
       - name: Test product intake dry-run end-to-end in isolated workspace
@@ -109,4 +111,3 @@ jobs:
           path: test-reports/
           if-no-files-found: warn
           retention-days: 14
-

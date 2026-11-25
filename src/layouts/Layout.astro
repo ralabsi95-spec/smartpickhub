@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import '../styles/accessibility-contrast.css';
 interface Props { title: string; description?: string; canonical?: string; socialImage?: string; }
 const { title, description = 'Practical buying guides and product comparisons for shoppers in the United States and United Kingdom.', canonical, socialImage } = Astro.props;
 const canonicalUrl = canonical ?? Astro.url.href;
