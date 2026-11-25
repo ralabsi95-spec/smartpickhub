@@ -499,3 +499,48 @@ Primary candidate sources:
 2. Complete current exact retailer offer verification and market-specific buyer-intent comparison for the four existing models and candidate replacements.
 3. Keep Miele 11819170 runtime/accessory claims tied to the official datasheet above; retain the UK availability conflict as unresolved.
 4. Do not start guide #2 until the vacuum page has a defensible retain/replace/hold matrix and complete scorecard.
+
+
+## 25 November 2026 — 12:07 Asia/Amman / 09:07 UTC — market-demand, buyer-intent and exact retailer snapshots (documentation-only)
+
+### Method and limits
+- This pass adds current SERP/editorial intent signals and exact retailer/manufacturer offer snapshots. Brandwave's Brand Demand Index is a directional share among its own tracked brand set (13 UK brands / 15 US brands), not total vacuum search volume, not cordless-only demand and not keyword-volume data. Do not turn its percentages into monthly keyword volume or product-level demand.
+- Retailer ratings/review counts are platform-specific social proof, not independent lab scores. Prices and stock are volatile snapshots. Exact suffix/model identity must be preserved; no cross-variant transfer.
+
+### Search demand / brand context
+- UK Brandwave October 2026: among 13 tracked vacuum brands, Henry 43%, Shark 15.8%, Dyson 10.5%, Miele 5.8%, Hoover 4.7%; Samsung is shown at the bottom of the tracked set in the earlier captured result (0.23%). The page's small five-answer AI sample mentions Henry/Shark/Dyson/Hoover most often, with Dyson ranked first most often. Use as directional context only, not as the market's complete search share.
+- US Brandwave October 2026: among 15 tracked vacuum brands, Shark 30.7%, Dyson 25.1%, Roborock 11.2%, BISSELL 6.2%, Miele 6.2%; Samsung is last in the displayed list. The AI sample mentions Dyson in all five answers and Shark in four. This supports prioritising Shark/Dyson US product evidence, not a final product ranking.
+- Sources: https://gobrandwave.com/demand/uk/categories/uk-vacuum-brands ; https://gobrandwave.com/demand/us/categories/us-vacuum-brands
+
+### Buyer-intent clusters supported by current specialist SERPs
+- Current 2026 buying/review pages repeatedly organise cordless-vacuum choices around pet-hair pickup, carpet deep cleaning, hard-floor pickup, filtration/allergy containment, runtime/battery life, dust-bin emptying, weight/handling and attachments. The page should serve these separate purchase problems instead of treating “best cordless vacuum” as a single undifferentiated intent.
+- RTINGS' Oct 15 2026 pet-hair guide ranks the Dyson V15 Detect as its best cordless pet-hair pick, with strong pet-hair pickup/filtration but caveats around debris pickup and bin size. Vacuum Wars' Nov 24 2026 overall ranking puts V15 Detect first based on its lab suite; this is independent editorial/lab evidence, not Amazon offer evidence. Which? current UK guide warns that only a subset of cordless models clean well enough to replace a corded vacuum.
+- Sources: https://www.rtings.com/vacuum/reviews/best/cordless-pet-hair ; https://vacuumwars.com/vacuum-wars-best-cordless-vacuums/ ; https://www.which.co.uk/reviews/cordless-vacuum-cleaners/article/how-to-buy-the-best-cordless-vacuum-cleaner-atupv7o0Grrx
+
+### UK — exact model / retailer evidence
+- Bosch Unlimited 10 ProPower BCS1051GB: Bosch's exact model page now displays £629.99, “In stock”, Add to cart, 4.8/5 from 788 ratings (captured listing) and 5-year warranty offer for qualifying purchases/registration. This resolves current manufacturer-channel commercial availability for the exact candidate model, unlike the earlier generic Unlimited 10 retailer listing. Runtime claim remains capped at the already verified “up to 100 min in ECO with non-electric accessory on supplied 5.0Ah battery”. The conflicting weight labels remain unresolved and weight must stay out of copy.
+- Shark PowerDetect IP1251UK: SharkNinja exact model page identifies IP1251UK and displays £489.99, but the page also presents an email notification for when the item is back in stock. Treat the price as a manufacturer snapshot and stock as UNCONFIRMED; do not describe as currently buyable.
+- Dyson V16 Piston Animal: Dyson UK product page lists 315AW, up to 70 min, 1.3L, 3.4kg and £549.99 in one current extraction, but other rendered page states show “currently out of stock”/notify-me while still showing an “In stock” block. Keep availability UNCONFIRMED pending consistent exact live cart/dispatch evidence. John Lewis popularity-sorted category showed the V16 at £599.99 with 311 reviews and 3.8/5 in its captured listing; retailer snapshot, not Dyson direct offer.
+- New candidate-discovery lead (not yet added to approved shortlist): Shark PowerDetect Speed IA1241UK. John Lewis popularity-sorted listing showed £229.99, 4.4/5 from 514 reviews, 0.5L and 3.22kg. This is a different exact model from IP1251UK/IP1251UKT. It merits an official-source and exact Amazon-variant check before any candidate decision.
+- John Lewis category also showed Shark PowerPro Pet IZ380UKFDB at £199.99 with 1,842 reviews and 4.4/5; useful competitive price/social-proof context, not a candidate automatically.
+- Sources: https://www.bosch-home.co.uk/en/product/vacuum-cleaners/cordless-vacuum-cleaners/unlimited/unlimited-10/BCS1051GB ; https://www.sharkninja.co.uk/shark-powerdetect-cordless-vacuum-cleaner/IP1251UK.html ; https://www.dyson.co.uk/vacuum-cleaners/cordless/v16-piston-animal/black-copper ; https://www.johnlewis.com/browse/electricals/vacuum-cleaners/vacuum-cleaners/cordless/_/N-aifZlmug?sortBy=popularity
+
+### US — exact model / retailer evidence
+- Shark Stratos IZ862H: Best Buy exact SKU 6514613 page shows model IZ862H, rating 4.4/5 from 739 reviews, $499.99 and Add to cart. This establishes a current retailer buyable-offer signal for the exact US catalogue model. It does not close the official-hosted manual gate and is not an Amazon direct offer.
+- Samsung Bespoke Jet AI VS28C9762UK/AA: Best Buy exact SKU 6544286 reports “no longer available in new condition”; its review page shows 4.2/5 from 81 reviews and a $200.99 clearance price marked Unavailable. Treat as a strong retailer-specific new-condition availability warning, not proof of market-wide discontinuation. Do not transfer specs or stock from a newer Samsung model.
+- Miele Triflex HX2 11827000: Miele US exact product page lists $849 and 4.6/5 from 19 reviews. US retailer pages include offers at approximately $849; availability remains seller/location-specific. This supports continued commercial consideration but does not verify an Amazon offer.
+- Dyson V15 Detect: Dyson US page continues to show conflicting out-of-stock and “in stock in 10–14 days” messages at $599.99. Best Buy search results show adjacent V15 bundles with different accessories/prices; do not treat them as the exact same bundle/selected variant without model-level matching. Specialist test evidence supports its pet-hair and overall performance relevance, but current exact retail offer remains unresolved.
+- Sources: https://www.bestbuy.com/product/shark-stratos-multiflex-cordless-stick-vacuum-with-clean-sense-iq-and-odor-neutralizer-up-to-40-min-runtime-ash-purple/JXJVXG4HC6 ; https://www.bestbuy.com/product/samsung-bespoke-jet-ai-cordless-stick-vacuum-with-all-in-one-clean-station-satin-black/J3ZYG26WWK/sku/6544286 ; https://www.mieleusa.com/product/11827000/cordless-stick-vacuum-cleaner-triflex-hx2-lotus-white ; https://www.dyson.com/vacuum-cleaners/cordless/v15/detect-yellow
+
+### Provisional market read — not final retain/replace decisions
+- UK: BCS1051GB now has strong exact-model official availability and social proof but is premium-priced and has an unresolved weight discrepancy. IP1251UK has official identity but stock unclear at £489.99. V16 has strong brand/product relevance but stock conflicts and mixed retailer review signal. IA1241UK is a promising lower-priced new lead, pending manufacturer documentation and exact affiliate offer validation.
+- US: IZ862H has a confirmed exact Best Buy retailer offer and strong review count, but the primary manual gate remains open. V15 remains highly relevant to pet-hair/overall buyer intent, but exact offer state is inconsistent. Samsung VS28C9762UK/AA is weak on current new-condition availability at the checked retailer. Miele remains a premium niche option with an exact US retailer/manufacturer offer signal.
+- No final retain/replace/hold matrix is authorised by this evidence alone. Amazon direct ASIN approvals remain 0/4 UK and 0/4 US. Keep UK and US product-market records separate.
+- No catalogue, page copy, product records, affiliate links, source code, Cloudflare settings, sitemap, robots, PR merge, deployment or publication changed.
+
+### Next actions
+1. Obtain SharkNinja official manual/spec source or support response for IZ862H; do not repeat generic search without a new lead.
+2. Validate IA1241UK as a new UK candidate using official model-specific source, bundle, runtime conditions, maintenance, safety and exact Amazon offer; do not conflate it with IP1251UK or IP1251UKT.
+3. Verify current Amazon offers for exact variants where accessible; otherwise retain labelled Amazon search links and mark ASIN unresolved.
+4. Resolve Dyson V15/V16 and Shark IP1251 stock contradictions with exact live cart/dispatch evidence; keep Bosch weight withheld.
+5. Complete evidence-backed UK/US buyer-intent scorecard and final retain/replace/hold matrix before closing the page. No guide #2.
