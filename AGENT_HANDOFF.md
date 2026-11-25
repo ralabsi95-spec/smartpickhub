@@ -1810,3 +1810,15 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - GA4: existing Stream ID 16395435693, Measurement ID G-Q7XK4V953R; production tag absent in observed Network tests. PR #38 remains draft/unmerged; consent panel drafted, but no privacy/cookie notice, tracker inventory, Zaraz check, CI verification or production Realtime validation. Owner doesn't know whether other trackers are used.
 - Pinterest: RSS/image/social snippet generation exists in source; production feed ingestion, pin publication and analytics are unverified. Homepage socialImage/OG image gap remains open.
 - Before public expansion, finish Google sitemap diagnostics, Bing blocked URL discrepancy, GA4 privacy/consent/CI/release validation, Pinterest production validation, and cross-platform AI visibility/crawler baseline. Do not repeat completed setup or request duplicate screenshots. No production changes during this checkpoint.
+
+
+# CONTROLLING HANDOFF ADDENDUM — 25 November 2026 (latest live verification)
+
+- **Authoritative branch:** `docs/content-quality-operating-system-2026-11-25`; latest checked compare is 28 commits ahead of `main`, 0 behind at the time of this check. This branch is documentation-only and is NOT merged. Do not rely on the old research branch as the current controlling record.
+- **Progress:** 0/25 complete v1.0 PASS (0%). Milestones: 10/25, 15/25, 20/25, 25/25. Current page: Cordless Vacuum Cleaners, IN_PROGRESS, unscored. No next guide until disposition and scorecard complete.
+- **Shark UK:** catalogue model IZ400UKT is confirmed. IZ400UK is distinct and its 0.19 L capacity must not be transferred to IZ400UKT. Amazon B0B42KZTH2 is rejected; model fields disagree and no featured offer exists. Do not retry this ASIN.
+- **Bosch candidate:** official pages disagree by measurement label: 3.8 kg ready-for-operation, 2.9 kg ready-for-use with tube/floor nozzle, and 5.3 kg net weight. Keep weight out of publication pending clarification.
+- **Shark US:** IZ862H is linked to official Shark replacement battery/cord/dust-cup compatibility pages; those are not a full-spec source. Official manual remains unresolved. Do not cite third-party mirror for filter drying or electrical claims as primary evidence.
+- **Amazon:** direct approved ASINs = 0/4 UK and 0/4 US. “Not verified” is not proof of absence. Keep labelled marketplace search links unless exact model, bundle, seller, condition and buyable offer are confirmed.
+- **No production changes:** no catalogue or guide content, code, affiliate URLs, routes, sitemap, robots, Cloudflare settings, merge, deployment or publication changed.
+- **Next actions:** obtain Shark IZ862H official owner guide; Bosch measurement clarification; extract Samsung UK official v0.7 manual and reconcile 160-min two-battery vs 100-min one-battery conditions; verify exact offer/seller for current products or retain search links; complete UK/US candidate fit and four retain/replace/hold decisions; then score full page. Update audit/tracker/handoff together. Do not begin page #2.
