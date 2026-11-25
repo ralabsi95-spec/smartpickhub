@@ -41,8 +41,8 @@
 | Priority reason | Saved UK-market keyword snapshot: “best cordless vacuum cleaner” 27,100 volume / KD 8 / CPC 2.50 / commercial; “cordless vacuum cleaner” 22,200 / KD 18 / CPC 1.86 / transactional. Metrics are cached/undated and must not be presented as fresh. |
 | SERP sample | 25 Nov 2026; current web results show strong testing-led competitors including Good Housekeeping, Which?, TechRadar, The Independent, The Guardian and Ideal Home. |
 | Status | IN_PROGRESS |
-| Initial findings | Continued audit found official Shark UK IZ400UKT identity and separated it from IZ400UK (0.19 L belongs to IZ400UK, not the catalogue variant); Shark US IZ862H official manual still missing. Miele UK official spec PDF and Samsung official support/manual listing added. Dyson/Miele availability and Samsung runtime bundle remain open. Four UK alternatives now have primary-source screening. Amazon direct ASIN approvals remain 0/4 UK and 0/4 US. |
-| Next action | Resolve Bosch BCS1051GB weight conflict; obtain official Shark IZ862H manual; verify exact Amazon selected variants for the eight market records; complete US candidate comparison and retain/replace/hold matrix. No production edits. |
+| Initial findings | Continued audit has closed Shark IA1241UK official manual/safety gate; fresh UK SERP evidence strengthens Dyson V15 and Bosch BCS1051GB as editorial benchmarks/candidates. Bosch exact official offer is £629.99/In stock with 4.8/5 from 788, but weight remains conflicted (2.9 vs 3.8kg). Dyson V15 stock UI remains contradictory; Miele 11819170 has Expert-channel purchase route but direct stock unconfirmed. Which? provides exact IZ400UKT Amazon ASIN lead B0B42QJL5B, but Amazon fetch returned 503 and offer/seller/condition are unverified; B0B42KZTH2 remains rejected. Samsung independent test evidence is family-level only pending exact SKU/bundle match. Amazon exact selected offers remain unapproved. |
+| Next action | Resolve Bosch weight scope; inspect Amazon ASIN lead B0B42QJL5B when accessible; exact-match Samsung test SKU/bundle; verify remaining UK exact Amazon offers; continue US IZ862H official manual and exact-offer work separately; then final UK/US scorecards and disposition. No production edits. |
 | Audit record | `docs/audits/cordless-vacuum-cleaners-us-uk-2026-11-25.md` |
 
 ## 4. Existing guide queue
@@ -339,3 +339,12 @@ The 0/25 v1.0 figure was created before a complete legacy evidence crosswalk exi
 - Exact retailer signal: John Lewis £249.99 / 4.5 from 405 / Add to basket; Currys Business IA1241UK product code N682145W shows 10+ in stock at £229.98 inc VAT. Shark direct product page has mixed notify-me/cart UI, so direct stock remains unconfirmed.
 - Amazon direct IA1241UK ASIN/featured offer still unverified; IA1241UKPU is a different variant and rejected for this record.
 - IA1241UK manual/maintenance/safety gate = SATISFIED at series scope with exact support mapping. Candidate remains research lead, not shortlist/replacement approved. Page IN_PROGRESS/unscored; no catalogue/content/affiliate/code/Cloudflare/merge/deploy/publication changes.
+
+
+### 25 November 2026 — 13:35 Asia/Amman
+- Fresh UK competitor/intent evidence added from Which? (20 Aug 2026), Expert Reviews (2026), The Independent (9 Oct 2026) and Good Housekeeping (12 Nov 2026).
+- Bosch BCS1051GB strengthened as a candidate by official £629.99/In-stock/4.8-from-788 snapshot and Independent editorial recognition; weight conflict remains a hard content blocker.
+- Dyson V15 official stock messaging still conflicted; Miele 11819170 has Expert-channel route but no confirmed direct online stock.
+- New exact Shark IZ400UKT Amazon ASIN lead B0B42QJL5B from Which? page; direct Amazon fetch 503, so no offer approval. Previously rejected B0B42KZTH2 remains rejected.
+- Good Housekeeping Samsung Bespoke Jet AI evidence remains family-level until exact SKU and package are matched. Shark Clean & Empty must not be conflated with IA1241UK base bundle.
+- No final product disposition; no production/catalogue/affiliate/Cloudflare changes.
