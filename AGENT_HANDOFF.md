@@ -1958,3 +1958,18 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Fresh Amazon exact-model search produced no verifiable selected, buyable Amazon offer for the eight product-market records. Direct ASIN approvals remain 0/4 UK and 0/4 US. Ignore third-party tracker/deal pages as ASIN evidence.
 - No final retain/replace/hold matrix yet. Continue market-specific buyer-intent comparison and exact retailer offer verification. Do not publish or alter catalogue/product/affiliate/code/Cloudflare settings. Documentation-only updates are on this branch; no merge/deploy.
 - Read the newest audit entry and tracker entry before resuming; do not repeat completed Samsung/Bosch/Miele source checks.
+
+
+# LATEST ACTIVE HANDOFF — 25 November 2026 — 12:07 Asia/Amman / 09:07 UTC
+
+- Continue only the active Cordless Vacuum Cleaners page; no guide #2.
+- New market evidence is appended to the latest audit/tracker entries. Read those before repeating checks.
+- UK exact candidate BCS1051GB: Bosch official product page now shows £629.99, In stock/Add to cart, 4.8/5 from 788 ratings, 5-year warranty offer. Its runtime claim conditions are already verified; weight remains withheld because Bosch labels conflict.
+- UK Shark IP1251UK official page displays £489.99 plus back-in-stock notification; availability remains unconfirmed. New discovery lead Shark PowerDetect Speed IA1241UK appears on John Lewis at £229.99 with 514 reviews/4.4, but it is NOT IP1251UK or IP1251UKT. Verify official manual/spec and exact Amazon variant before adding it to shortlist.
+- UK Dyson V16: official page has conflicting stock states despite current price/spec renderings; keep availability unconfirmed. John Lewis popularity listing showed £599.99 / 311 reviews / 3.8.
+- US Shark IZ862H exact Best Buy SKU 6514613 is shown at $499.99, 4.4/5 from 739 reviews, Add to cart. This closes a retailer-offer signal only; Shark official-hosted manual remains OPEN.
+- US Samsung VS28C9762UK/AA Best Buy says no longer available in new condition; treat as retailer warning, not proof of global discontinuation. Miele 11827000 has Miele US $849 / 4.6 from 19 reviews. Dyson V15 offer page still contradictory.
+- Brandwave October 2026 shares are directional within limited tracked brand sets only (UK 13 brands; US 15); not query search volumes. Buyer-intent clusters: pet hair, carpet, hard floors, filtration/allergies, runtime, emptying, handling/weight and attachments.
+- No final retain/replace/hold matrix yet. Amazon direct ASIN approvals remain 0/4 UK and 0/4 US. Keep market records separate and do not assume variant/bundle equivalence.
+- No catalogue/product/page/affiliate/code/Cloudflare/sitemap/robots change, merge or deployment. Documentation-only branch remains unmerged.
+- Exact next actions: verify IA1241UK manufacturer evidence; resolve Shark IZ862H official manual; recheck exact Amazon selected offers; resolve Dyson/UK Shark stock contradictions; retain Bosch weight hold; then finish page scorecard and disposition.
