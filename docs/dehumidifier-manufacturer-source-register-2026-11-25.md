@@ -144,3 +144,35 @@ The current manufacturer-owned pages were opened and their performance tables ch
 - **Meaco 20L Low Energy:** the live manufacturer table confirms 10°C/60% = 2.52 L/day at 163 W; 20°C/60% = 8.48 L/day at 219 W; 30°C/60% = 13.27 L/day at 262 W; 10°C/80% = 5.86 L/day at 165 W; and 20°C/80% = 13.74 L/day at 228 W. The table opened in this check does not show a 30°C/80% row. The 20.38 L/day headline value is therefore not accompanied by a power value in the current table; keep its cost/L blank. Source: https://www.meaco.com/products/meaco-20l-low-energy-dehumidifier-and-air-purifier
 - **Meaco DD8L Pro:** the manufacturer page directly confirms the complete 10°C/60% and 20°C/60% rows by fan speed, including 20°C fan 3 = 7.97 L/day at 623 W and 10°C fan 3 = 6.89 L/day at 630 W. The uploaded values are supported. Source: https://www.meaco.com/products/meaco-dd8l-pro
 - **Meaco DD8L Zambezi:** the current manufacturer page confirms 20°C/60% extraction of 3.9, 8.0 and 8.3 L/day for fan speeds 1–3, but the page lists a single power-consumption figure of 351 W and does not give separate 656/661 W figures for fan speeds 2/3. It does not show a 10°C/60% performance row. Therefore, do not label the uploaded 656/661 W fan-speed values or the 10°C rows as directly manufacturer-verified on the basis of this page. Keep those figures secondary/pending original-manual confirmation. Source: https://www.meaco.com/products/meaco-dd8l-zambezi-dehumidifier
+
+
+## 9. Follow-up source reconciliation — Meaco Zambezi and Ebac/Duux (25 November 2026)
+
+### Meaco DD8L Zambezi — official-source discrepancy; retain a qualified status
+
+A fresh search-index result for Meaco's own UK product URL surfaced a six-row extraction table, including the uploaded figures:
+
+| Room condition | Fan speed | Extraction | Wattage |
+|---|---:|---:|---:|
+| 20°C / 60% RH | 1 | 3.9 L/day | 351 W |
+| 20°C / 60% RH | 2 | 8.0 L/day | 656 W |
+| 20°C / 60% RH | 3 | 8.3 L/day | 661 W |
+| 10°C / 60% RH | 1 | 3.9 L/day | 351 W |
+| 10°C / 60% RH | 2 | 6.6 L/day | 656 W |
+| 10°C / 60% RH | 3 | 7.5 L/day | 663 W |
+
+However, opening the live Meaco UK page on this check date shows only 20°C/60% extraction by fan speed (3.9 / 8.0 / 8.3 L/day) and a single 351 W power figure; the six-row table is not present in the page text currently served. The linked official 2019 Meaco instruction manual states 45 W fan-only and 350–660 W while dehumidifying, but refers readers to Meaco's website for the detailed condition table rather than reproducing the six rows.
+
+**Decision:** the uploaded 10°C and fan-speed-specific rows have a credible Meaco-origin search-index snapshot and are consistent with the official manual's broad power range, but they are not reproducible from the currently opened live page/manual. Keep them as **manufacturer-origin evidence snapshot / pending direct archival confirmation**, not as fully re-verified live manufacturer data. Do not delete or overwrite the uploaded values; do not promote them to a public ranking until an archived Meaco table or written manufacturer confirmation is obtained. The 20°C/60% extraction values remain directly visible on the current live Meaco page. Sources:
+- Current Meaco UK product page: https://www.meaco.com/products/meaco-dd8l-zambezi-dehumidifier
+- Official Meaco-hosted/linked 2019 manual: https://cdn.shopify.com/s/files/1/0371/8378/3043/files/Meaco_DD8L_Zambezi_Dehumidifier_instruction_manual_2019_English.pdf?v=1679586458
+- Search-indexed official-page result captured in the research record on 25 Nov 2026 (the result exposed all six rows; live page extraction did not).
+
+### Duux Bora DXDH20 — no wattage verified
+
+The Duux-hosted manual explicitly lists “Input power: 220–240 VAC; 50/60 Hz”. This is the mains supply voltage/frequency, not power consumption in watts. It also lists 20 L/day and a 4 L tank, but no wattage or condition-specific performance matrix. Keep the model spec-only and do not estimate W or cost/L from this manual.
+Source: https://manuals.duux.com/Bora/index.html
+
+### Ebac — do not promote reseller figures to manufacturer evidence
+
+Searches surfaced conflicting third-party values for older Ebac 2650e/2850e models (including different wattages and extraction conditions). Ebac's own domain/manual endpoint was blocked to the research fetcher in this pass. The manuals retrieved from third-party hosts describe Smart Control, fan settings and general real-home extraction but do not establish a reliable manufacturer-origin 10°C/20°C performance-and-wattage matrix. Keep Ebac outside the evidence-backed comparison pending a directly accessible Ebac technical sheet or written manufacturer confirmation. Do not resolve conflicting seller values by choosing one.
