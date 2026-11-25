@@ -345,6 +345,13 @@ The 0/25 v1.0 figure was created before a complete legacy evidence crosswalk exi
 - Fresh UK competitor/intent evidence added from Which? (20 Aug 2026), Expert Reviews (2026), The Independent (9 Oct 2026) and Good Housekeeping (12 Nov 2026).
 - Bosch BCS1051GB strengthened as a candidate by official £629.99/In-stock/4.8-from-788 snapshot and Independent editorial recognition; weight conflict remains a hard content blocker.
 - Dyson V15 official stock messaging still conflicted; Miele 11819170 has Expert-channel route but no confirmed direct online stock.
-- New exact Shark IZ400UKT Amazon ASIN lead B0B42QJL5B from Which? page; direct Amazon fetch 503, so no offer approval. Previously rejected B0B42KZTH2 remains rejected.
+- Shark IZ400UKT ASIN B0B42QJL5B is quarantined/not approved: Amazon page inaccessible and third-party MPN mapping conflicts with IZ420UKT; Shark official pages distinguish single-battery IZ400UKT from double-battery IZ420UKT. B0B42KZTH2 remains rejected.
 - Good Housekeeping Samsung Bespoke Jet AI evidence remains family-level until exact SKU and package are matched. Shark Clean & Empty must not be conflated with IA1241UK base bundle.
 - No final product disposition; no production/catalogue/affiliate/Cloudflare changes.
+
+
+### 25 November 2026 — 13:50 Asia/Amman
+- Closed Samsung UK independent-review exact-SKU match: Good Housekeeping 90/100 test links to Argos item 326/9381, exact VS28C9784QK/EU. Samsung official model page corroborates two-battery runtime conditions, Pet Tool+ and 0.5L bin.
+- Bosch BCS1051GB 2.9kg vs 3.8kg discrepancy remains unresolved across exact-model official pages; do not publish weight.
+- Shark IZ400UKT ASIN B0B42QJL5B quarantined/not approved due conflicting variant mapping (IZ400UKT vs IZ420UKT) and inaccessible Amazon page. B0B42KZTH2 remains rejected.
+- No production/catalogue/affiliate changes or final product dispositions.
