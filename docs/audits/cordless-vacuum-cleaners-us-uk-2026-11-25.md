@@ -311,3 +311,33 @@ Primary candidate sources:
 ### Audit governance
 - Last verified: 25 November 2026. Evidence snapshot is time-sensitive for price, stock and offers.
 - No production code, catalogue data, page copy, affiliate URL, Cloudflare configuration, sitemap, robots, merge, deployment or publication was changed by this research/documentation checkpoint.
+
+
+## 25 November 2026 — 10:35 Asia/Amman / 07:35 UTC — Follow-up source verification (documentation-only)
+
+### Samsung UK VS28C9784QK/EU — official v0.7 manual located, contents not yet extracted
+- Samsung UK model support page for exact model VS28C9784QK lists an English/EU User Manual, version 0.7, file name `O_DJ68-00900C-07_IB_VS9700_EU_EN_250702.pdf`, modified 11 Aug 2025, file ID 10789220. The official download URL is:
+  https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=VS28C9784QK&CttFileID=10789220&CDCttType=UM&VPath=UM%2F202508%2F20250811201509973%2FO_DJ68-00900C-07_IB_VS9700_EU_EN_250702.pdf
+- The Samsung support page was readable and exposes this file metadata, but the PDF endpoint returned inaccessible through the current retrieval channel. Therefore the manual is LOCATED, not CONTENT-REVIEWED. Do not claim runtime/battery-bundle reconciliation from it yet.
+- Samsung's official UK Business product page continues to state up to 160 minutes with two separate batteries. Keep the distinction from the 100-minute single-battery claim; verify conditions from the manual/product spec before publication.
+- Sources: https://www.samsung.com/uk/support/model.VS28C9784QK_WA/ ; https://www.samsung.com/uk/business/vacuum-cleaners/stick/bespoke-jet-plus-210w-all-in-one-clean-station-black-vs28c9784qk-eu/
+
+### Bosch BCS1051GB — current official service page rechecked; discrepancy remains
+- Bosch UK official support page for BCS1051GB/01 lists a User Manual and Interactive User Manual among its documents, but the document contents were not extracted in this pass.
+- Its official service specification states net weight 5.3 kg and separately states weight ready for use with tube and floor nozzle 2.9 kg. Bosch's product overview separately labels 3.8 kg as measured weight ready for operation. These labels are not directly comparable and do not establish one unambiguous publication weight. Keep the weight claim out of editorial copy until the measurement scope is reconciled.
+- The Bosch product page currently surfaced £629.99 and In stock in the retrieved result; this is a time-sensitive snapshot only, not a durable price/availability claim.
+- Sources: https://www.bosch-home.co.uk/supportdetail/product/BCS1051GB/01 ; https://www.bosch-home.co.uk/en/product/vacuum-cleaners/cordless-vacuum-cleaners/unlimited/unlimited10/BCS1051GB
+
+### Shark US IZ862H — third-party guide located; primary-source gate still open
+- A third-party mirror surfaced a 24-page IZ800 Series Owner's Guide whose cover/model listing includes IZ862H. It contains safety, cleaning and filter-drying instructions, but it is not hosted by SharkNinja and is not accepted as primary manufacturer evidence.
+- Do not publish its 48-hour filter/dust-cup drying instruction, voltage, runtime or other model-specific claims as manufacturer-verified until an official SharkNinja-hosted manual or support response is obtained.
+- SharkNinja's official Parts & Support route for SKU IZ862H remains the only primary support page captured; it did not expose a model-specific owner guide in the retrieved content.
+- Secondary reference (not accepted for publication claims): https://manualsfile.com/product/k2zp91ivwkl.html
+- Official support reference: https://www.sharkninja.com/parts-support?SKU=IZ862H
+
+### Decisions and next actions
+- Samsung: manual discovery gate SATISFIED; manual-content review and runtime/battery-pack reconciliation remain OPEN.
+- Bosch: manual discovery gate PARTIALLY SATISFIED; retrieve and inspect official manual/packaging, then ask Bosch to reconcile measurement labels if needed. Weight remains withheld.
+- Shark US: official manual gate OPEN; third-party copy is corroborative only.
+- No product retain/replace decision is changed by this checkpoint. Amazon direct approval remains 0/4 UK and 0/4 US. No ASIN, affiliate destination, catalogue data, page content, code, Cloudflare setting, PR merge or production deployment changed.
+- Page remains IN_PROGRESS and unscored. Continue with these exact gaps; do not restart completed identity, structural, metadata or CI checks.
