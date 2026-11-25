@@ -164,3 +164,27 @@ Use the additional energy/environment and Google indexability checklist in CONTE
 - Bosch BCS1051GB weight remains unresolved because official pages display 3.8 kg measured ready-for-operation, 2.9 kg ready-for-use with tube/floor nozzle and 5.3 kg net weight. Do not choose a single published value.
 - Shark US IZ862H official parts compatibility is corroborated, but official vacuum manual/spec source remains missing. Amazon direct listing approvals remain 0/4 UK and 0/4 US.
 - Current full-audit count remains 0/25 PASS (0%); active page remains IN_PROGRESS. No page or product-market unit is counted from partial research.
+
+## 10. Historical progress reconciliation — do not read 0/25 as overall progress
+
+The initial catalogue and release work is not zero. The separate, scope-specific historical counters are:
+
+| Historical milestone | Verified result | Scope boundary |
+|---|---:|---|
+| Owner-approved / published guides | **25/25** | Confirmed by 19 Nov editorial approval audit and current main catalogue editorialStatus. Not equivalent to v1.0 full PASS. |
+| Guide records present | **25/25** | Current catalogue baseline. |
+| Product records present | **100/100** | Four records per guide. |
+| Required base product fields present | **100/100** | 18 Nov structural audit; not claim-level fact verification. |
+| Manufacturer source-reference slots inventoried | **100/100** | 19 Nov editorial audit shows 4/4 references per guide; not live-link or claim-by-claim certification. |
+| SEO metadata release | **25/25 guide titles** | PR #19 merged and production deployment recorded by PR #21. Four descriptions shortened. |
+| Exact-SHA CI | **PASS on PR #37 SHA** | Run 45350133248 passed build-and-audit; accessibility/Lighthouse steps were skipped in this run. |
+| Full v1.0 page certification | **0/25 currently certified** | New, narrower standard; legacy evidence has not yet been cross-mapped page by page. Not an overall progress score. |
+
+The 0/25 v1.0 figure was created before a complete legacy evidence crosswalk existed. It is retained only as the count of fully certified pages under the new standard. It must not erase or conceal the historical completed milestones above.
+
+### Mandatory no-repeat handling
+- Read docs/LEGACY_EVIDENCE_RECONCILIATION_2026-11-25.md before setting a guide to QUEUED or repeating any test.
+- For the 24 non-active pages, map existing evidence first. Use LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING until the evidence map is complete; do not imply no work has started.
+- Credit exact prior evidence as SATISFIED — LEGACY EVIDENCE when its scope, date, source, commit and result match the criterion.
+- Only perform missing delta checks. Never rerun the 18 Nov structural audit, 19 Nov approval inventory, PR #19 metadata release or PR #37 exact-SHA test without a material trigger.
+- The 25/25 prior publication milestone remains completed. v1.0 certification, current indexing, retailer offers and current commercial performance remain separate measures.
