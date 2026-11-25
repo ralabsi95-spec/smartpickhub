@@ -270,3 +270,44 @@ Primary manufacturer pages:
 5. Keep the Zambezi as a useful legacy benchmark, not a current-buy recommendation: Meaco's own product/legacy page says it is no longer available and names DD8L Pro as its replacement.
 6. The Meaco 20L Low Energy page's 30°C/80% headline value has no paired wattage in the current table; leave cost/L blank for that condition.
 7. No model should enter the live product catalogue until exact UK retail model/EAN/variant and stock/listing identity are checked separately. Manufacturer evidence and Amazon listing identity are separate validation gates.
+
+
+## 15. EcoAir DD1 Classic MK6 — manufacturer specifications now verified; performance pairing still incomplete
+
+This section supersedes the original Section 1 statement that EcoAir DD1 Classic was retailer-only/unverified for all specifications.
+
+The current EcoAir UK manufacturer product page directly identifies DD1 Classic MK6 and confirms:
+- Desiccant dehumidifier; up to 7.5 L/day at 20°C / 60% RH.
+- E7 control changes between full power, economy and standby based on humidity.
+- Rated power consumption by operating state: 25W sampling, 300W low mode, 580W high mode.
+- Operating temperature: 1–40°C.
+- Water tank: 2 L; noise 34/46 dB(A); continuous drain hose included; 3-year warranty stated on the current page.
+- Current manufacturer page shows the product for sale.
+
+**Important evidence limit:** the page lists the 7.5 L/day capacity and the 300W/580W modes as separate specification bullets; it does not explicitly state which power mode was used to achieve the 7.5 L/day result. Therefore:
+- Upgrade the model's basic specification evidence to manufacturer-verified.
+- Do not assume 580W pairs with 7.5 L/day for a cost/L ranking.
+- Do not create a multi-condition performance curve; no 10°C/20°C wattage/extraction matrix is published on the page.
+- Retain the uploaded 580W “assumed high mode” note as an assumption, not a confirmed paired test value. If used in an illustrative calculation, keep it outside manufacturer-verified rankings and label the assumption conspicuously.
+
+Primary source: https://ecoair.org/products/dd1-classic
+
+## 16. Additional EcoAir and Pro Breeze spec-only candidates
+
+### EcoAir DD1 Simple MK3
+EcoAir's UK product page confirms 7.5 L/day at 20°C/60% RH, 300W low mode, 580W high mode, operating range 1–35°C and 2L tank. As with DD1 Classic, the manufacturer page does not explicitly pair a particular wattage mode with the 7.5 L/day figure. Do not calculate a verified cost/L.
+Primary source: https://ecoair.org/products/dd1-simple
+
+### Pro Breeze model-code mapping
+The current Pro Breeze support page is useful for avoiding model/variant mix-ups. It maps:
+- OmniDry 12L Quiet: PB-18 / PB-D-18.
+- OmniDry 20L with app: PB-D-24-WF.
+- OmniDry 20L without app: PB-D-24W-EU.
+- 20L Max Extraction with Laundry Mode: PB-08.
+- 20L Premium One-Click Laundry: PB-D-23.
+- OmniDry 10L: PB-D-40W.
+The page explicitly instructs customers to match the full rating-label code, including regional suffixes, before using a manual. It does not provide condition-specific extraction/wattage curves. Keep these as identity/specification research candidates, not cost/L ranking records.
+Primary support source: https://eu.probreeze.com/en-fr/blogs/news/pro-breeze-dehumidifier-instructions
+
+### Pro Breeze PB-D-40W / OmniDry 10L
+A manufacturer-hosted manual linked by the Pro Breeze support page is required for exact regional variant confirmation. A third-party-hosted manual search result reports 160W rated input at 27°C/60% RH and 185W maximum input at 30°C/80% RH, but until the official linked manual is opened and its matching model code verified, treat these wattages as provisional manual-derived data, not yet a fully verified manufacturer-source row.
