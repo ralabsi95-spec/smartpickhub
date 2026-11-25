@@ -311,3 +311,34 @@ Primary support source: https://eu.probreeze.com/en-fr/blogs/news/pro-breeze-deh
 
 ### Pro Breeze PB-D-40W / OmniDry 10L
 A manufacturer-hosted manual linked by the Pro Breeze support page is required for exact regional variant confirmation. A third-party-hosted manual search result reports 160W rated input at 27°C/60% RH and 185W maximum input at 30°C/80% RH, but until the official linked manual is opened and its matching model code verified, treat these wattages as provisional manual-derived data, not yet a fully verified manufacturer-source row.
+
+
+## 17. Pro Breeze PB-D-40W and PB-08 — official manual verification completed
+
+This section supersedes the provisional/manual-pending note for PB-D-40W in Section 16.
+
+### OmniDry 10L — PB-D-40W family
+The Pro Breeze support page links a manufacturer-hosted PDF. The PDF identifies the model family as PB-D-40W-UK, PB-D-40W-RT-UK, PB-D-40W-EU and PB-D-40W-RT-EU. It confirms:
+- Product: OmniDry 10L.
+- Rated input power: 160W at 27°C/60% RH.
+- Maximum input power: 185W at 30°C/80% RH.
+- Operating temperature: 5–35°C.
+- Refrigerant: R290 / 37g.
+- Net weight: 7kg.
+
+The manual does not publish a paired litres/day extraction value at those same two conditions in the retrieved specifications. Do not derive p/L or add it to the condition-matched table yet.
+Official Pro Breeze manual linked from its support index: https://cdn.shopify.com/s/files/1/0668/4075/6504/files/PB-D-4_3.PDF?v=1786957408
+
+### 20L Max Extraction — PB-08
+The official Pro Breeze support page links the PB-08 manual. The manual identifies the 20L PB-08 model and confirms:
+- Approximate collection capacity: 20L/day at 30°C / 80% RH.
+- Input power: 420W.
+- Maximum tank: 5.5L.
+- Operating range: 5–32°C.
+- Refrigerant: R290 / 100g.
+- Low-power, high-power and laundry modes.
+
+The manual does not provide a condition-specific extraction curve or explicitly pair a mode-specific wattage with the 20L/day figure. Keep as manufacturer-backed specifications only; no p/L calculation.
+Official Pro Breeze manual linked from its support index: https://cdn.shopify.com/s/files/1/0668/4075/6504/files/PB-08_Instruction_Manual__EU__DIGITAL_FEB_23_FINAL_v5-min.pdf?v=1677257685
+
+**Evidence decision:** PB-D-40W and PB-08 can now be marked manufacturer-manual verified for the listed specifications. Neither is eligible for the paired p/L table until matching extraction and power values for the same condition/mode are published.
