@@ -189,3 +189,9 @@ The 0/25 v1.0 figure was created before a complete legacy evidence crosswalk exi
 - Credit exact prior evidence as SATISFIED — LEGACY EVIDENCE when its scope, date, source, commit and result match the criterion.
 - Only perform missing delta checks. Never rerun the 18 Nov structural audit, 19 Nov approval inventory, PR #19 metadata release or PR #37 exact-SHA test without a material trigger.
 - The 25/25 prior publication milestone remains completed. v1.0 certification, current indexing, retailer offers and current commercial performance remain separate measures.
+
+## 25 November 2026 — 10:35 Asia/Amman / 07:35 UTC — Active page evidence delta
+- Samsung VS28C9784QK v0.7 official manual is now located (file ID 10789220; 11 Aug 2025) but not content-reviewed; runtime/battery bundle check remains open.
+- Bosch BCS1051GB manual links are listed on the official support page but manual contents are not extracted. Weight remains withheld due differently labelled 2.9 kg, 3.8 kg and 5.3 kg figures.
+- Shark IZ862H third-party owner-guide mirror is not accepted as primary evidence; official manual remains open.
+- Page remains IN_PROGRESS, unscored; Amazon direct ASIN approval 0/4 UK and 0/4 US; no catalogue/affiliate/production changes. Continue the active page only.
