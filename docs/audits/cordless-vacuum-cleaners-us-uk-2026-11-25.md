@@ -572,3 +572,40 @@ Primary candidate sources:
 - Candidate status: **RESEARCH LEAD — NOT YET SHORTLIST-APPROVED**. It is a promising lighter, lower-priced mainstream option and may support everyday/hard-floor/allergy intent, but the pet-tool-free base bundle, no self-empty dock, contradictory manufacturer runtime/charge figures, unresolved care/manual gate, and unverified Amazon exact offer prevent replacement approval.
 - UK existing and candidate products remain separate records. No final retain/replace/hold matrix. Page remains IN_PROGRESS and unscored; no guide #2.
 - No catalogue, product copy, affiliate URL, source code, Cloudflare setting, sitemap, robots, PR merge, deployment or publication changed.
+
+
+## 25 November 2026 — 12:41 Asia/Amman / 09:41 UTC — IA1000UK official owner guide recovered; runtime, charging, care and safety reconciled (documentation-only)
+
+### Official manufacturer-hosted owner guide found
+- Located the full **Shark PowerDetect Speed Cordless Vacuum IA1000UK Series OWNER'S GUIDE** as a PDF hosted directly on Shark's support domain: https://support.sharkclean.co.uk/hc/en-gb/article_attachments/25906345085212
+- The official Shark support article for the IA1000UK Series explicitly states it supports models **IA1241UK and IA1241UKT**. This provides the exact model-to-series association needed to use the IA1000UK owner guide for IA1241UK. Do not transfer bundle contents between IA1241UK and IA1241UKT.
+- The separate official Quick Start / safety sheet is also hosted on Shark support: https://support.sharkclean.co.uk/hc/en-gb/article_attachments/25906887705116 . It confirms IA1000 Series battery and charger model identifiers, key warnings, and the QR path to full instructions.
+
+### Model-to-series scope and verified technical facts
+- Owner guide technical specification (IA1000UK Series): 18 V; body motor 350 W; nozzle 115 W.
+- Battery pack: Shark XIABTR540EU, 18 V, 3750 mAh, 67.5 Wh. Approved charger identifiers in the guide: DK25A-220100H-B or GQ30B-225100-AB. Do not imply universal USB charging or third-party charger compatibility.
+- Runtime: owner guide states up to **60 minutes in ECO** on a fully charged battery; exact IA1241UK product page also says up to 60 minutes in ECO with a non-motorised tool. The official support battery FAQ's up-to-70-minute statement conflicts with both. For future copy, use the conservative, mutually corroborated **up to 60 minutes in ECO with non-motorised tool**, and note that mode/accessory/use affect runtime; do not use 70 minutes.
+- Charge time: owner guide states approximately **6 hours**; official support battery FAQ also states approximately 6 hours. The exact product page metadata says 5 hours, so retain a documented manufacturer-page discrepancy. For any precise charge-time claim, prefer the owner-guide/support operating instruction (approx. 6 hours) and do not state 5 hours as settled.
+- Exact IA1241UK manufacturer product page remains the authority for its 0.47 L capacity, 3.22 kg, one-battery base bundle (charging base, wall mount, 20 cm Duster-Crevice tool, Li-ion battery), colour Ultramarine, and registered guarantee. The series guide does not validate regional box contents.
+- Owner guide source sections: technical specifications pp.2–3; battery charging/runtime pp.6–7; controls/detect modes pp.8–10; maintenance pp.12–16; guarantee pp.19–20 (PDF text lines around 60–67, 288–344, 349–376, 460–540). The official PDF itself labels the series IA1000UK.
+
+### Maintenance, safety and environmental/use limits now evidenced
+- Filter care: clear loose debris; rinse with cold water only; clean at least monthly; let filters dry fully before reinstalling. Do not expose other vacuum components to water/liquid except filters and dust cup.
+- Dust cup: turn power off before emptying; remove and empty as guide directs. Empty when needed to preserve pickup.
+- Brush/nozzle: power off before maintenance; clear hair/fibres/string and blockages; use a screwdriver to unlock/relock the soleplate as described. Turn off and remove battery before servicing to reduce shock/unintended-start risk.
+- Safety: do not use on wet/damp surfaces or pick up liquids, burning materials, sharp objects, large debris or hazardous/toxic materials; do not use with blocked airflow or without dust cup, filters and brushroll; keep openings away from hair/face/fingers/clothing; supervise children and do not allow child cleaning/maintenance.
+- Battery: use only the specified XIABTR540EU battery and approved charger models. Storage temperature 3–40°C; charge only 5–40°C; keep battery terminals away from metal objects; do not modify/repair battery or vacuum; disconnect battery before adjustment/accessory change/storage. The battery's capacity naturally declines with age.
+- No IP/moisture resistance rating is claimed; damp/wet surface use is prohibited. Do not infer water resistance from washable filters.
+
+### Commercial signal and Amazon status
+- Current exact Shark product page displays £229.99 but also an email back-in-stock notification in its rendered content; category page lists Add to cart. Keep manufacturer direct availability **CONFLICTED / UNCONFIRMED**, not definitively in stock.
+- John Lewis exact IA1241UK listing: £249.99, Add to basket, 4.5/5 from 405 reviews in retrieved result: https://www.johnlewis.com/shark-powerdetect-speed-ia1241uk-cordless-vacuum-cleaner-ultramarine/p114981533
+- Currys Business exact part number IA1241UK / product code N682145W: 10+ in stock, £229.98 inc VAT (£191.65 ex VAT), Add to basket in retrieved listing. This is a business-channel stock signal, not an Amazon offer: https://business.currys.co.uk/catalogue/domestic-appliances/floorcare/vacuum-cleaners/shark-powerdetect-speed-ia1241uk-cordless-vacuum-cleaner-ultramarine/N682145W
+- Amazon search still does not establish an exact IA1241UK direct offer with matching ASIN, selected variant, seller, condition and current featured offer. Results include IA1241UKPU Royal Grey, which is a different suffix/variant; do not approve it for IA1241UK.
+- Candidate status remains **RESEARCH LEAD — NOT SHORTLIST/REPLACEMENT APPROVED** pending Amazon offer and comparative market fit. Full manufacturer manual/maintenance/safety gate is now SATISFIED at IA1000UK series scope with exact support mapping; runtime/charge conflict is documented, runtime safe claim resolved to 60 min, charge time should be expressed as approx. 6h per manual with 5h product-page conflict retained.
+
+### Disposition and project state
+- This evidence closes the previously missing official owner-guide/manual, maintenance and safety gate for IA1241UK via exact IA1000UK series mapping.
+- It does not approve IA1241UK as a replacement, does not approve an Amazon ASIN, and does not close the active Cordless Vacuum page.
+- Page remains IN_PROGRESS and unscored; no guide #2. UK and US products remain independent.
+- No catalogue, product copy, affiliate URL, source code, Cloudflare setting, sitemap, robots, PR merge, deployment or publication changed.
