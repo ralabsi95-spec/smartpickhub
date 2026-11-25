@@ -1831,3 +1831,13 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - The tracker must show separate counters for published/approved, structural completeness, source-reference inventory, historical CI/release, v1.0 PASS, indexed and commercial performance. Never display 0/25 as overall progress.
 - For non-active guides, use LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING, not NOT STARTED. Only target missing/stale/conflicting criteria. Volatile stock/prices and live indexing can require dated refresh; stable historical tests remain valid for their exact commit/scope.
 - Active unit remains Cordless Vacuum Cleaners. Continue only its unresolved delta items. No new page #2 yet.
+
+---
+# LATEST ACTIVE HANDOFF — 25 November 2026 — 10:35 Asia/Amman / 07:35 UTC
+
+- Samsung UK exact support page now confirms an official v0.7 User Manual exists for VS28C9784QK, file ID 10789220, modified 11 Aug 2025. The download endpoint could not be extracted in this retrieval pass. Status: manual LOCATED, NOT CONTENT-REVIEWED; runtime/battery bundle gate remains open.
+- Bosch BCS1051GB official support page lists manuals but their content was not extracted. Its official support data states 2.9 kg with tube/floor nozzle and 5.3 kg net; product overview states 3.8 kg ready for operation. Measurement labels remain unresolved; do not publish a single weight.
+- A third-party IZ800 Series Owner's Guide mirror includes IZ862H, but it is not a SharkNinja-hosted primary source. It does not close the official US manual gate. Do not publish its 48-hour filter-drying instruction as manufacturer-verified.
+- No product decisions, ASIN approvals or affiliate-link changes. Amazon direct approval remains 0/4 UK and 0/4 US. No production change, merge or deployment.
+- Active page remains Cordless Vacuum Cleaners, IN_PROGRESS and unscored. Next: obtain/review Samsung v0.7 contents; obtain/review Bosch official manual/packaging or manufacturer clarification; request SharkNinja IZ862H owner guide; continue exact offer checks and US intent/candidate comparison. Then decide retain/replace/hold and complete the scorecard. Do not start page #2.
+
