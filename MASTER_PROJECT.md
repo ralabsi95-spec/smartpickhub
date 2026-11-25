@@ -2495,3 +2495,10 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Samsung VS28C9784QK/EU exact manufacturer support resource lists user manual v0.7 dated 11 Aug 2025 (not yet extracted); previous 90/100 GH exact-SKU match remains closed.
 - Shark US IZ862H still lacks exact-model official owner manual; parts compatibility/comparator references do not close the gate.
 - Bosch weight discrepancy unresolved; keep weight withheld. No final disposition, no production or affiliate changes.
+
+
+## 25 November 2026 — 14:45 Asia/Amman — Cordless vacuum evidence follow-up
+- Bosch official detailed PDF and support page both state 2.9kg ready for use with tube/floor nozzle; live product page still says 3.8kg ready for operation. Conflict not closed; withhold weight.
+- Shark IZ862H IZ800 manual found in secondary repositories with exact model scope, but Shark-hosted official copy not yet verified. Keep safety/maintenance copy provisional pending primary host.
+- Shark US ASIN B0B5JMNGNQ is an exact-model lead only; Amazon direct offer seller/condition/Featured Offer not verified. Do not approve. Renewed ASIN B0BW51TNGC excluded.
+- Shark UK B0B42QJL5B remains quarantined due IZ420UKT MPN conflict. No final product disposition, affiliate or production changes.
