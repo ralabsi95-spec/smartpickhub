@@ -1819,3 +1819,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Expanded Ebac official-manual check to include 2000, 3000, 4000 series and Ebac 15. These still do not provide model-specific wattage plus a condition-by-condition extraction table for a defensible cost/L ranking. Keep Ebac pending.
 - Updated the manufacturer source register with superseding evidence sections and explicit source distinctions. No production data/code/pages/affiliate links/navigation, PR, merge, or deployment changed.
 - Next: broaden manufacturer search for other models with primary-source 10°C/20°C condition matrices; then create a strict evidence shortlist and verify exact UK model variants before any product linking.
+
+ 
+## 25 November 2026 — Seven-model Meaco primary-data pool
+- Expanded the manufacturer research beyond the original five uploaded models. Seven model families now have Meaco UK primary-source multi-condition paired water-removal and wattage tables: Arete One 20L, Arete Two 20L, 20L Low Energy, 12L Low Energy, ABC 12L, DD8L Pro and DD8L Zambezi.
+- Confirmed Arete Two 20L's six-condition matrix (10/20/30°C at 60/80% RH), including 10°C/60% = 3.35 L/day at 176W and 20°C/60% = 8.50 L/day at 207W. Confirmed 12L Low Energy's six-condition matrix (10/20/30°C at 60/80% RH), including 10°C/60% = 1.62 L/day at 138W and 20°C/60% = 4.92 L/day at 157W. Confirmed ABC 12L's high/low fan condition rows, and re-opened DD8L Pro and Arete One 20L source tables.
+- Kept distinctions explicit: Arete One and Arete Two are different generations; the Zambezi is a legacy discontinued product and Meaco names DD8L Pro as its replacement; DD8L Pro/Zambezi fan-speed rows must remain separate; the 20L Low Energy 30°C/80% headline value has no paired wattage on the current page and has no cost/L.
+- Added a seven-model research pool and strict shortlist guardrails to the source register. This is not an approved public ranking or catalogue import. Exact UK retail model/EAN/variant and Amazon listing checks remain separate gates.
+- No site code, product catalogue, affiliate links, pages, navigation, PR, merge, or deployment changed.
+- Next: reconcile the uploaded dataset's existing model names/IDs against these exact manufacturer model families, calculate condition-matched figures for a draft comparison worksheet, and identify which 6–8 products are actually current UK retail variants before any affiliate work.
