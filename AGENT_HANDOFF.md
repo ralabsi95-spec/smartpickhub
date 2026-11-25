@@ -1822,3 +1822,12 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - **Amazon:** direct approved ASINs = 0/4 UK and 0/4 US. “Not verified” is not proof of absence. Keep labelled marketplace search links unless exact model, bundle, seller, condition and buyable offer are confirmed.
 - **No production changes:** no catalogue or guide content, code, affiliate URLs, routes, sitemap, robots, Cloudflare settings, merge, deployment or publication changed.
 - **Next actions:** obtain Shark IZ862H official owner guide; Bosch measurement clarification; extract Samsung UK official v0.7 manual and reconcile 160-min two-battery vs 100-min one-battery conditions; verify exact offer/seller for current products or retain search links; complete UK/US candidate fit and four retain/replace/hold decisions; then score full page. Update audit/tracker/handoff together. Do not begin page #2.
+
+# CRITICAL HANDOFF — historical work must not be reset (25 Nov 2026)
+
+- The 0/25 figure means 0 guides fully certified against every new v1.0 gate so far. It is NOT overall project progress and does NOT mean prior checks were absent.
+- Verified legacy milestones: 25/25 guides owner-approved/published in the 19 Nov editorial audit and current main catalogue (editorialStatus: Approved for publication); 25 guides / 100 product records structurally present; 100/100 required base product fields present in 18 Nov structural audit; 100/100 manufacturer source-reference slots inventoried in 19 Nov audit; PR #19 SEO title refinement merged and production deployment recorded by PR #21; PR #37 exact-SHA CI run 45350133248 passed its build-and-audit job (axe/Lighthouse steps skipped).
+- Read docs/LEGACY_EVIDENCE_RECONCILIATION_2026-11-25.md before any work. Reuse evidence and record SATISFIED — LEGACY EVIDENCE when scope matches. Do not repeat the same checks or run all 25 audits from scratch.
+- The tracker must show separate counters for published/approved, structural completeness, source-reference inventory, historical CI/release, v1.0 PASS, indexed and commercial performance. Never display 0/25 as overall progress.
+- For non-active guides, use LEGACY_EVIDENCE_AVAILABLE — RECONCILIATION_PENDING, not NOT STARTED. Only target missing/stale/conflicting criteria. Volatile stock/prices and live indexing can require dated refresh; stable historical tests remain valid for their exact commit/scope.
+- Active unit remains Cordless Vacuum Cleaners. Continue only its unresolved delta items. No new page #2 yet.
