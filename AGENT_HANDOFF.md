@@ -2057,3 +2057,35 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - No final retain/replace/hold matrix; active page remains IN_PROGRESS and unscored.
 - No content/catalogue/product/affiliate URL/code/Cloudflare/sitemap/robots change, PR, merge, deployment or publication performed.
 - Next: obtain Bosch written weight clarification; inspect exact Amazon product pages when first-party page access is available and validate variant/seller/condition/Featured Offer; obtain exact Shark IZ862H official manual; then complete market-separated scorecards and final disposition. Only after those hard gates should the page be scored and prepared for owner approval/release.
+
+
+## 25 November 2026 — 14:45 Asia/Amman — Bosch official datasheet recheck and Shark US exact-manual / ASIN leads (documentation-only)
+
+### Bosch BCS1051GB — stronger corroboration, conflict not closed
+- Re-opened the Bosch-hosted BSH specification PDF for exact model BCS1051GB: https://media3.bsh-group.com/Documents/specsheet/en-IE/BCS1051GB.pdf
+- The PDF now visibly states **“Weight (ready for use with tube and floor nozzle): 2.9kg”** (PDF extracted text line 89), matching the wording on Bosch's exact-model support page. It also lists net packed-product weight 5.3kg and gross 6.8kg, which are packaging/product-sheet fields and must not be confused with operating weight.
+- Bosch's exact-model live product page still states “Measured weight, ready for op.” **3.8kg**, while the PDF and support page state 2.9kg with tube/floor nozzle. The repeated 2.9kg evidence strengthens that figure but does not explain the product-page 3.8kg field. **Conflict remains OPEN** pending Bosch correction or written confirmation. Do not publish either weight or score handling/weight yet.
+- Current Bosch page still shows £629.99, In stock, Add to cart, 4.8/5 from 788 ratings and conditional 5-year warranty; this is Bosch direct channel only, not Amazon. Source: https://www.bosch-home.com/gb/en/product/vacuum-cleaners/cordless-vacuum-cleaners/unlimited/unlimited10/BCS1051GB
+
+### Shark US IZ862H — model-matched owner-guide content recovered, source-hosting gate still needs primary confirmation
+- Search located the IZ800 Series Owner's Guide that explicitly names IZ862H in the model scope / battery instructions. It is currently surfaced through secondary manual repositories (ManualsFile, Manuals.plus, Manualslib and Device.report), not a verified Shark-hosted download. The guide covers safety, lithium-ion battery, charging, use, MultiFLEX, dust-cup emptying, filter cleaning, blockages, sensors, troubleshooting and technical specifications.
+- The secondary copies corroborate model scope and useful candidate claims: 60-minute runtime listing, 25.2V battery family, 309W, and filter air-drying up to 48 hours. Do not publish these from secondary copies as manufacturer-confirmed until an official Shark support-hosted copy or exact support article is located. No third-party manual copy is being treated as the final primary source.
+- A search result from Arkivo points to a copy of the IZ800 owner guide on Shark's Canadian support domain, but the underlying direct URL was not retrieved/validated in this pass. This is the next exact lead: obtain and open the Shark-hosted Canadian PDF, confirm that its title/model scope includes IZ862H, then check whether US warranty/electrical market caveats need to be separated.
+- SharkNinja US product page lookup was misdirected by the search/open resolver to IA1241 PowerDetect Speed, not IZ862H. Discard that page as IZ862H evidence; no specs were transferred from IA1241.
+
+### Shark US Amazon IZ862H — stronger exact-ASIN lead, not approved
+- Third-party product-monitor result identifies **B0B5JMNGNQ** as “Shark Cordless Stratos Stick Vacuum Cleaner … IZ862H”, with Amazon-linked offers. A dated offer tracker reported $439.99 from third-party seller Hotwired (44% seller rating) and Amazon.com new offer $499.99; it also listed used Amazon Resale offers. Another secondary listing associates B0B5JMNGNQ with IZ862H. Amazon direct page https://www.amazon.com/dp/B0B5JMNGNQ remains blocked to this retrieval environment.
+- This is a materially stronger exact-model ASIN lead than the previous generic Dyson leads, but seller/condition/selected Featured Offer and live Amazon page could not be independently verified. **Do not approve B0B5JMNGNQ for direct affiliate use yet.** Keep the existing Amazon search link until first-party Amazon confirmation.
+- Another ASIN B0BW51TNGC is explicitly a Renewed IZ862H listing; do not use it for a new-condition catalogue record.
+
+### UK Shark IZ400UKT — quarantine reaffirmed
+- Fresh Which? page result currently shows Amazon UK £269.99 and “In Stock” for IZ400UKT, but its page does not itself expose a first-party Amazon selected offer. Third-party product catalogue again maps barcode 0622356254618 to the display name IZ400UKT but MPN IZ420UKT for ASIN B0B42QJL5B. This reinforces the variant conflict; do not approve the ASIN.
+- Shark official exact IZ400UKT product page remains available as the model/bundle authority: https://www.sharkninja.co.uk/shark-stratos-anti-hair-wrap-plus-pet-pro-cordless-vacuum-single-battery-iz400ukt/IZ400UKT.html
+
+### State and next actions
+- Bosch weight remains withheld; repeated 2.9kg official detailed evidence does not reconcile the 3.8kg live product field.
+- Shark IZ862H owner-guide content found, but official hosting not yet confirmed. Next search exact Shark Canada support document and verify exact model scope; keep claims provisional until primary host.
+- Shark US B0B5JMNGNQ is an exact-model ASIN lead only; not approved. B0BW51TNGC is Renewed and excluded.
+- Shark UK B0B42QJL5B remains quarantined; B0B42KZTH2 remains rejected.
+- Amazon direct approval remains 0/4 UK and 0/4 US; no seller/condition/Featured Offer was confirmed on first-party Amazon.
+- No final retain/replace/hold matrix; page remains IN_PROGRESS/unscored. No production/catalogue/affiliate/code/Cloudflare/sitemap/robots/merge/deploy/publication changes.
