@@ -371,3 +371,25 @@ The 0/25 v1.0 figure was created before a complete legacy evidence crosswalk exi
 - Shark IZ862H IZ800 Series Owner's Guide found on secondary manual sites; model scope includes IZ862H, but Shark-hosted official PDF not yet retrieved/validated. Treat contents as provisional; next locate Shark Canadian support copy and verify exact scope. Do not transfer specs from IA1241/IP3251.
 - US Amazon ASIN lead B0B5JMNGNQ matches IZ862H in third-party catalogues and has Amazon-linked offers, but Amazon direct page is blocked and selected seller/condition/Featured Offer not verified. Not approved. B0BW51TNGC is Renewed and excluded.
 - Shark UK B0B42QJL5B remains quarantined; third-party MPN mapping again conflicts IZ400UKT/IZ420UKT. Amazon approval remains 0/4 UK and 0/4 US. No final disposition or production changes.
+
+
+## 25 November 2026 — 15:20 Asia/Amman — Shark IZ862H Canadian manufacturer-page / owner-guide follow-up (documentation-only)
+
+### Shark IZ862H / IZ862HC — exact regional relationship and manual status
+- Located the official SharkNinja Canada product page for **IZ862HC**: https://www.sharkninja.ca/shark-stratos-cordless-with-clean-sense-iq-duoclean-powerfins-hairpro/IZ862HC.html . The page identifies its Canadian sellable model as IZ862HC, while its product-detail copy explicitly describes the Shark Stratos Cordless **IZ862H**. It lists Canadian-market price/warranty/bundle fields (including 5-year limited warranty, 1 battery, Duster Crevice Tool and Anti-Allergen Brush); these are Canada-specific and must not be copied into the US IZ862H record without exact US confirmation.
+- The same official page's support link resolves to Shark Canada's IZ800 Series support section, https://support.sharkclean.ca/hc/en-us/sections/5257532247580-IZ800-Series, but the support endpoint returned HTTP 403 in this retrieval session. No official downloadable attachment was retrieved from that section.
+- Recovered a readable 24-page IZ800 Series Owner's Guide PDF at https://qcg-media.s3.amazonaws.com/media/uploads/118513/2022/06/20220630_202169_IZ800SeriesIBMPMv5LR3.pdf . Its cover identifies Shark STRATOS / IZ800 Series Owner's Guide, and its safety text explicitly names IZ862H in the XBAT725SL battery compatibility list. It contains operating, charging, maintenance, filter-drying and troubleshooting instructions. However, the S3 host is not a verified Shark-owned support domain; treat it as a manufacturer-document copy on a third-party/mediated file host, not as proof that the official Shark-hosted manual gate is closed.
+- The manual's US/Canada-specific electrical and warranty language must remain separate from any UK content. Do not transfer Canadian warranty, product bundle, dimensions, or charging fields to the US record. The US IZ862H official manual-hosting gate remains OPEN until the same guide or an exact support attachment is retrievable from SharkNinja/Shark support directly.
+- A secondary source's claim that the PDF is also on Shark Canada support is not independently verified; the linked support section returned 403. Keep runtime/specification claims sourced to the US exact model or verified primary manual, not this hosting lead alone.
+
+### Bosch BCS1051GB — current official pages still disagree
+- Fresh official Bosch GB product-page result continues to state “Measured weight, ready for op.” **3.8kg**: https://www.bosch-home.com/gb/en/product/vacuum-cleaners/cordless-vacuum-cleaners/unlimited/unlimited10/BCS1051GB
+- Bosch GB exact-model support page states “Weight (ready for use with tube and floor nozzle): **2.9kg**”: https://www.bosch-home.co.uk/supportdetail/product/BCS1051GB/01
+- The exact-model official spec sheet's net/gross packed-product values (5.3kg/6.8kg) are not operating weight and do not resolve the conflict. No written Bosch clarification was obtained. Keep both operating-weight claims withheld and handling/weight score blocked.
+
+### Disposition
+- Shark IZ862H manual source-hosting gate: OPEN; model scope in the recovered guide is exact, but official Shark hosting is not validated.
+- Shark Canada official product page for IZ862HC is a regional-variant corroboration only; do not treat it as US bundle/warranty evidence.
+- Bosch BCS1051GB weight conflict remains OPEN.
+- Amazon direct ASIN approval remains 0/4 UK and 0/4 US; no first-party seller/condition/Featured Offer confirmation in this pass. Shark B0B5JMNGNQ remains a lead only; no direct approval.
+- No final retain/replace/hold matrix; active page remains IN_PROGRESS/unscored. No production/catalogue/affiliate/code/Cloudflare/sitemap/robots/PR merge/deployment/publication changes.
