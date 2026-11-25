@@ -77,9 +77,11 @@ Template/source observations:
 **Primary source checked:** https://www.dyson.co.uk/vacuum-cleaners/cordless/v15/detect-yellow-nickel  
 Retrieved 25 Nov 2026. Official page identifies V15 Detect Absolute, 240 AW in Powerful mode, up to 60 minutes, 0.77L bin, 3.1kg and 4.5h charge. It describes the Fluffy Optic and Motorbar heads and a click-in battery.
 
-**Conflict / caution:** the same page extraction includes both an out-of-stock message and an “In stock”/Add-to-basket section for option variants. Treat live availability as ambiguous, not as a reliable stock claim. Product variants shown include Dry, Dry + Wet and Dry + Detail Cleaning Kit. The catalogue name “Absolute” must be matched to the selected package, not assumed from the family name.
+**US primary source additionally checked:** https://www.dyson.com/vacuum-cleaners/cordless/v15/detect-yellow and Dyson support model index https://www.dyson.com/support/vacuum-cleaners/cordless. The US page identifies V15 Detect (SV22 in the support index), 240 AW, up to 60 minutes, 0.77L bin, 6.83lb and 4.5h charge. The US page's availability extraction also contains conflicting stock messaging. The US product is titled V15 Detect, while the UK package is V15 Detect Absolute; do not assume identical package contents or regional SKU.
 
-**Disposition:** retain as a research candidate; current exact marketplace offer and selected bundle unresolved. Do not add ASIN or price.
+**Conflict / caution:** the UK page extraction includes both an out-of-stock message and an “In stock”/Add-to-basket section for option variants. Treat live availability as ambiguous, not as a reliable stock claim. Product variants shown include Dry, Dry + Wet and Dry + Detail Cleaning Kit. The catalogue name “Absolute” must be matched to the selected package, not assumed from the family name.
+
+**Disposition:** UK and US model-family sources found, but exact package equivalence and current retailer/Amazon listings remain unresolved. Do not add ASIN or price.
 
 ### Product 2 — Shark Stratos
 
@@ -88,9 +90,9 @@ Retrieved 25 Nov 2026. Official page identifies V15 Detect Absolute, 240 AW in P
 **Primary source checked:** https://www.sharkninja.co.uk/shark-stratos-anti-hair-wrap-plus-cordless-vacuum-single-battery-iz400uk/IZ400UK.html  
 The previous source redirects to this official SharkNinja UK product page. The live page identifies model **IZ400UK** (not IZ400UKT), up to 60 minutes only in ECO mode with a non-motorised tool, 4.1kg, a 0.19L dust-cup capacity, one battery, 240V, 309W, and a five-year guarantee on registration / two years for battery (UK & ROI only). It currently shows £199.99, but no price is to be copied into the guide without a dated owner-approved price policy.
 
-**Conflict / caution:** the catalogue uses IZ400UKT and states 0.7L; the current official IZ400UK page says 0.19L. A current Amazon listing found ASIN B0B42KZTH2, but its title says IZ400UK while product information says IZ400UKT, and the page says no featured offers. This is not a safe direct-ASIN approval. Need exact variant reconciliation and current listing/seller confirmation.
+**Conflict / caution:** the catalogue uses IZ400UKT and states 0.7L; the current official IZ400UK page says 0.19L and identifies model IZ400UK. A current Amazon listing found ASIN B0B42KZTH2, but its title says IZ400UK while product information says IZ400UKT, and the page says no featured offers. This is not a safe direct-ASIN approval. Need exact variant reconciliation and current listing/seller confirmation. A primary US manufacturer page/manual for IZ862H was not located in this pass; unrelated Shark support results were not treated as evidence.
 
-**Disposition:** HOLD exact UK variant and dust-capacity claim. Do not add ASIN. US IZ862H needs separate US manufacturer source/listing verification.
+**Disposition:** HOLD exact UK variant and dust-capacity claim. Do not add ASIN. US IZ862H primary-source verification remains open.
 
 ### Product 3 — Samsung Bespoke Jet AI
 
@@ -99,9 +101,11 @@ The previous source redirects to this official SharkNinja UK product page. The l
 **Primary source checked:** https://www.samsung.com/uk/business/vacuum-cleaners/stick/bespoke-jet-plus-210w-all-in-one-clean-station-black-vs28c9784qk-eu/  
 Official page confirms UK model VS28C9784QK/EU and up to 280W suction power. Its headline says up to 160 minutes with two separate batteries, but detailed performance section states up to 100 minutes on one large battery with a non-motorised tool. The 160-minute aggregate must be reconciled with the precise included battery configuration before retaining the statement. Samsung's separate family page lists 280W and up to one hour with a removable battery; the official support page confirms the model code and regional support documents.
 
-**Conflict / caution:** catalogue says 160 minutes using two batteries at minimum power; official detailed product copy states 100 minutes for the large battery with non-motorised tool. Avoid blending headline, family and model-specific runtime claims. The US identifier must be independently verified and cannot be inferred from the UK model.
+**US primary source additionally checked:** Samsung US specification PDF https://image-us.samsung.com/SamsungUS/home/home-appliances/vacuums/jet-stick/vs28c9762ukaa/pdf/13314.5_VS28C9762UK_Bespoke_JetAI_National_V10.pdf confirms exact model VS28C9762UK/AA, UPC 887276777344, 280 AW, 120V/60Hz, one 25.2V battery, 0.5L vacuum dustbin, and runtime of 100 minutes Min / 49 Mid / 16 Max / 4 Jet with a non-motorised tool at Min for the 100-minute claim. The US variant is electrically and technically separate from the UK model.
 
-**Disposition:** HOLD runtime claim pending exact model/bundle documentation; UK identity/source is verified. Retailer/Amazon exact listing unresolved. No ASIN.
+**Conflict / caution:** catalogue says 160 minutes using two batteries at minimum power; official UK detailed product copy states 100 minutes on one large battery with a non-motorised tool. Samsung's US PDF confirms 100 minutes with one battery, not the UK two-battery bundle. Do not blend the US/UK runtime or assume 160 minutes applies to every package. Need verify exact UK package battery count and the basis for 160-minute combined runtime.
+
+**Disposition:** UK and US exact model codes verified from primary sources; hold the UK 160-minute statement pending exact bundle documentation. Retailer/Amazon exact listings unresolved. No ASIN.
 
 ### Product 4 — Miele Triflex HX2 Lotus White
 
@@ -110,7 +114,9 @@ Official page confirms UK model VS28C9784QK/EU and up to 280W suction power. Its
 **Primary source checked:** https://www.miele.co.uk/product/11819170/cordless-stick-vacuum-cleaners-triflex-hx2-lotus-white  
 Official UK page confirms 11819170 and EAN, 3.6kg, 0.5L dustbag volume, 25.2V, 60 minutes in LOW with PowerUnit solo, 30 minutes in LOW with electrical accessories, 14 minutes in HIGH with electrical accessories, 240-minute recharge and supplied floorhead/accessories. It currently labels the product permanently out of stock on the product page; Miele range/campaign pages still list it as available through Miele Experts, so current direct/retailer purchase status is not resolved.
 
-**Disposition:** UK product identity and performance conditions verified; current purchase path and Amazon listing unresolved. Keep as legacy/current-range candidate only after retail availability review. US model is separate and requires its own source/listing check.
+**US primary source additionally checked:** https://www.mieleusa.com/product/11827000/cordless-stick-vacuum-cleaner-triflex-hx2-lotus-white confirms material number 11827000 / EAN 4002516453017 and the same core 60/30/14-minute runtime conditions, 3.6kg weight, 0.5L capacity and included accessory configuration. This verifies the US product identity separately; it does not prove US Amazon availability.
+
+**Disposition:** UK and US product identities and performance conditions are verified from separate manufacturer pages. UK current purchase path remains mixed: the product page labels permanently out of stock while Miele's range pages list purchase via Miele Experts. Amazon listings remain unresolved.
 
 ## 6. Marketplace / affiliate status
 
@@ -119,6 +125,14 @@ Official UK page confirms 11819170 and EAN, 3.6kg, 0.5L dustbag volume, 25.2V, 6
 - Existing catalogue identifiers are search phrases, not ASINs. Keep the existing search-link behavior and do not convert any phrase to a direct product link.
 - Amazon US listings were not verified.
 - No price, stock, rating or review data has been added to the project.
+
+
+## 6A. Cross-market identity checkpoint added 25 Nov 2026
+
+- Manufacturer identity pages/documents now located for 6 of 8 market-specific model records (Dyson UK/US, Samsung UK/US, Miele UK/US). This is a source-location count only, not a complete product PASS.
+- Shark UK is unresolved because the catalogue uses IZ400UKT while the current official product page identifies IZ400UK; the catalogue's 0.7L claim conflicts with the official page's 0.19L. Shark US IZ862H still lacks an exact primary-source page/manual in this pass.
+- Exact Amazon UK direct listings verified: 0/4. The one Shark ASIN candidate remains ambiguous and is not approved. Amazon US direct listings verified: 0/4; Amazon.com access is restricted in this retrieval environment, so absence of results must not be interpreted as proof of no listing.
+- Samsung US official PDF resolves the exact US model and runtime ladder (100/49/16/4 minutes by Min/Mid/Max/Jet). UK runtime must remain separately sourced and its two-battery 160-minute headline reconciled to the detailed 100-minute single-large-battery statement.
 
 ## 7. Preliminary gap list — not yet a final score
 
@@ -174,3 +188,7 @@ Official UK page confirms 11819170 and EAN, 3.6kg, 0.5L dustbag volume, 25.2V, 6
 - Samsung UK support: https://www.samsung.com/uk/support/model/VS28C9784QK/EU/
 - Miele UK: https://www.miele.co.uk/product/11819170/cordless-stick-vacuum-cleaners-triflex-hx2-lotus-white
 - Amazon UK Shark candidate (not approved as direct destination): https://www.amazon.co.uk/Shark-Anti-Odour-Technology-Attachments-IZ400UK/dp/B0B42KZTH2
+- Dyson US product page: https://www.dyson.com/vacuum-cleaners/cordless/v15/detect-yellow
+- Dyson US support model index (V15 Detect SV22): https://www.dyson.com/support/vacuum-cleaners/cordless
+- Samsung US exact model specification PDF: https://image-us.samsung.com/SamsungUS/home/home-appliances/vacuums/jet-stick/vs28c9762ukaa/pdf/13314.5_VS28C9762UK_Bespoke_JetAI_National_V10.pdf
+- Miele US exact model 11827000: https://www.mieleusa.com/product/11827000/cordless-stick-vacuum-cleaner-triflex-hx2-lotus-white
