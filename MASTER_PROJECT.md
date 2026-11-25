@@ -2487,3 +2487,11 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Bosch BCS1051GB operating weight remains unresolved: Bosch product page says 3.8kg; Bosch support page says 2.9kg with tube/floor nozzle; official specification sheet lists net/gross package weights but does not reconcile. Keep weight out.
 - Shark IZ400UKT ASIN lead B0B42QJL5B is quarantined, not approved, due MPN mismatch lead (IZ420UKT vs IZ400UKT) and inaccessible Amazon page. Official Shark confirms IZ400UKT single-battery and IZ420UKT double-battery are distinct.
 - No final product disposition, production/catalogue/affiliate/code/Cloudflare changes, merge, deployment or publication.
+
+
+## 25 November 2026 — 14:30 Asia/Amman — Cordless vacuum Amazon offer checkpoint
+- Documentation branch is 89 commits ahead, 0 behind main; still not merged.
+- No first-party Amazon detail page confirmed exact variant + Featured Offer + seller + condition for any pending product-market record. Direct-ASIN approval remains 0/4 UK and 0/4 US. Third-party Dyson ASIN leads B0GXX8KQY7 and B0C2J8KJH9 not approved; keep marketplace search URLs.
+- Samsung VS28C9784QK/EU exact manufacturer support resource lists user manual v0.7 dated 11 Aug 2025 (not yet extracted); previous 90/100 GH exact-SKU match remains closed.
+- Shark US IZ862H still lacks exact-model official owner manual; parts compatibility/comparator references do not close the gate.
+- Bosch weight discrepancy unresolved; keep weight withheld. No final disposition, no production or affiliate changes.
