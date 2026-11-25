@@ -470,3 +470,32 @@ Primary candidate sources:
 - Approved Amazon direct-ASIN count remains 0/4 UK and 0/4 US. Do not replace this with third-party tracker observations or retailer offers. Non-Amazon retailer snapshots are recorded only as market/price/availability context.
 - No final retain/replace decision is made yet. Product-market records remain separate. Active page remains IN_PROGRESS and unscored; no guide #2.
 - No catalogue, page copy, affiliate URL, code, Cloudflare configuration, sitemap, robots, PR merge, production deployment or publication changed.
+
+
+## 25 November 2026 — 11:58 Asia/Amman / 08:58 UTC — Shark official-source retry + Miele datasheet + Dyson UK stock contradiction (documentation-only)
+
+### Shark US IZ862H — targeted official-domain retry did not close the manual gate
+- Ran targeted searches restricted to SharkNinja.com and Sharkclean.com for exact model IZ862H, the IZ800 Series Owner's Guide and PDF/manual variants. No official-hosted exact-model manual or full product specification document surfaced in this pass.
+- The official SharkNinja IP1251 PowerDetect page compares the newer IP1251 against IZ862H and states up to 70 minutes ECO runtime measured at the hand vacuum for IP1251. This is evidence that Shark uses IZ862H as a comparator, but it is NOT a specification source for IZ862H; do not transfer IP1251 runtime/specifications to IZ862H.
+- Secondary-hosted IZ800 manual PDF and manual-library pages continue to identify IZ862H within the IZ800 series. The mirrored manual gives 60 minutes ECO and 10 minutes Boost in handheld mode; Clean Sense IQ runtime varies by use/debris. Treat these as secondary-hosted manual claims only, not manufacturer-primary claims. Keep the official-hosted primary-source gate OPEN.
+- Sources: https://www.sharkninja.com/shark-powerdetect-cordless-stick-vacuum/IP1251.html ; https://qcg-media.s3.amazonaws.com/media/uploads/118513/2022/06/20220630_202169_IZ800SeriesIBMPMv5LR3.pdf ; https://manualsfile.com/product/k2zp91ivwkl.html ; https://www.manualslib.com/manual/3357248/Shark-Stratos-Clean-Sense-Iq-Multiflex-Iz862h.html
+
+### Miele Triflex HX2 UK 11819170 — exact manufacturer product sheet surfaced
+- Miele-hosted PDF identifies EAN 4002516449959 and material 11819170 exactly. It confirms 0.5 L dustbag volume, 3.6 kg, 25.2 V, 2500 mAh Li-ion battery, 77 dB, 240-minute recharge, runtime 60 min PowerUnit solo at LOW, 30 min with electrical accessories at LOW, and 14 min with electrical accessories at HIGH. This is stronger model-specific primary evidence than a retailer summary and preserves the critical solo-vs-powered-accessory runtime distinction.
+- Standard accessories on the sheet: crevice nozzle, dusting brush, XXL SPD 20 upholstery nozzle, MultiFloor XXL SEB 430 electrobrush, wall mount and power supply; cleaning tool listed No. Do not infer other regional bundle contents.
+- Manufacturer source: https://media.miele.com/downloads/n-/gb/FS_11819170_GBE_GB-en-GB.pdf
+
+### Dyson V15 Detect Absolute UK — live product page remains internally contradictory
+- A fresh search extraction again exposes both “currently out of stock” and a separate “In stock” / £479.99 / Add to basket block on the same exact Dyson UK product page. This is not a resolved stock state. Keep availability UNCONFIRMED; do not quote £479.99 as a reliable buyable offer or infer that the item is available.
+- Source: https://www.dyson.co.uk/vacuum-cleaners/cordless/v15/detect-yellow-nickel
+
+### Amazon and disposition
+- Fresh exact-model marketplace searches did not produce an independently verifiable Amazon direct offer with matching model/variant, seller, condition and current buyable featured offer for the four existing records in either market. Search results included unrelated third-party deal/tracker pages; these are not Amazon offer evidence and were not promoted to ASIN approval.
+- Approved direct ASINs remain 0/4 UK and 0/4 US. No new retain/replace decision is justified by this pass. UK and US product-market records remain separate; page remains IN_PROGRESS and unscored.
+- No catalogue, product/page copy, affiliate destination, source code, Cloudflare setting, sitemap, robots, PR merge, deployment or publication changed.
+
+### Exact next actions
+1. Seek SharkNinja support response or an official-domain manual/document endpoint for IZ862H; do not repeat generic searches without a new lead.
+2. Complete current exact retailer offer verification and market-specific buyer-intent comparison for the four existing models and candidate replacements.
+3. Keep Miele 11819170 runtime/accessory claims tied to the official datasheet above; retain the UK availability conflict as unresolved.
+4. Do not start guide #2 until the vacuum page has a defensible retain/replace/hold matrix and complete scorecard.
