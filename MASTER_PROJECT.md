@@ -2457,3 +2457,14 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Amazon UK search did not verify exact IA1241UK ASIN, seller, condition and live featured offer. IA1241UKPU is a different variant and not approved. No Amazon direct link added.
 - Candidate remains a research lead, not shortlist-approved or replacement-approved. Cordless Vacuum Cleaners remains IN_PROGRESS/unscored; no guide #2. No catalogue, content, affiliate, code, Cloudflare, sitemap, robots, PR merge, production deployment or publication changes.
 - Next: obtain exact manual/care/safety material and Shark clarification of runtime/charge conflict; verify exact Amazon offer; then conduct UK-only candidate comparison before final product disposition. Continue US independently.
+
+
+## 25 November 2026 — 12:41 Asia/Amman / 09:41 UTC — IA1000UK official owner guide recovered; runtime, charging, care and safety reconciled (documentation-only)
+- Found and reviewed the full Shark-hosted IA1000UK Series Owner's Guide: https://support.sharkclean.co.uk/hc/en-gb/article_attachments/25906345085212 . Official Shark support article maps IA1000UK Series to exact models IA1241UK and IA1241UKT, establishing series-scope association for the IA1241UK audit.
+- Owner guide confirms 18V, 350W body motor, 115W nozzle; battery XIABTR540EU 18V/3750mAh/67.5Wh; approved chargers DK25A-220100H-B or GQ30B-225100-AB.
+- Runtime: manual and exact IA1241UK page support up to 60 min ECO (with non-motorised tool per product page); support FAQ's 70-min claim conflicts and is not used for safe editorial copy. Charge time: manual and support FAQ approx. 6h, while exact product page metadata says 5h; use approx. 6h per operating guide and keep product page conflict disclosed.
+- Manual closes IA1241UK operation, maintenance and safety evidence gate at series scope: filter cleaning at least monthly, cold water only, fully dry before reinstall; no wet/damp surfaces or liquid pickup; power off/remove battery before servicing; use specified battery/charger; storage 3–40°C and charging 5–40°C; avoid hazardous debris and damaged/modified battery. Do not infer an IP/water-resistance rating.
+- Exact model product page supplies its distinct 0.47L, 3.22kg and base bundle; pet tool is not in base IA1241UK package.
+- Commercial evidence: John Lewis exact SKU £249.99 / 4.5 from 405 / Add to basket; Currys Business exact IA1241UK product code N682145W shows 10+ stock at £229.98 inc VAT. Shark direct page still has notification/cart UI conflict.
+- Amazon direct exact IA1241UK offer remains unverified; IA1241UKPU is a different variant and not approved.
+- Candidate remains research lead only. Active page IN_PROGRESS/unscored; no guide #2. No catalogue, page copy, affiliate, code, Cloudflare, sitemap, robots, PR merge, deployment or publication changes.
