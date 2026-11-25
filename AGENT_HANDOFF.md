@@ -1,3 +1,20 @@
+# ACTIVE HANDOFF — 25 November 2026 (owner-confirmed release discipline)
+
+## Continue from here; do not restart
+- Read `docs/CONTENT_QUALITY_OPERATING_STANDARD.md` §9 and `docs/CONTENT_QUALITY_MASTER_TRACKER_2026-11-25.md` §9 before work.
+- Active page remains `cordless-vacuum-cleaners-us-uk`; resume its documented unresolved product/retailer evidence. Do not begin page #2 until its disposition is complete.
+- Initial cohort = 25 existing guides. Headline QA remains 0/25 (0%). Milestones: 40%=10 PASS pages, 60%=15, 80%=20, 100%=25. Never backdate or count partial work.
+- At each milestone, all included products must clear hard blockers; obtain owner approval, perform controlled merge and production release, verify route/SEO, then mark each released page `LOCKED_COMPLETE` with audit/PR/commit/deployment evidence. A PASS alone is not a release.
+- Never repeat a locked page's full audit. Reopen only for a recorded material trigger (recall/safety, changed model/spec/variant/warranty, broken affiliate destination/policy, indexing/manual action, route/canonical/robots/schema regression, material SERP/intent shift, or owner request); use a delta audit.
+- At 100% of the 25-guide cohort, close it and start expansion. Each new product/page is a complete audited unit, then owner-approved and published or scheduled. No bulk thin-page generation.
+- Apply relevant energy/operating-cost/environment checks (power, kWh, dated local tariff assumptions, humidity/IP/moisture suitability, consumables/batteries) and Google crawl/indexability checks from Standard §9. Record N/A with reason where irrelevant.
+- Google Live Test eligibility is not indexing. Diagnose HTTP/redirects, robots, noindex/X-Robots-Tag, canonical, rendered HTML/internal links, sitemap fetch/XML, GSC index state/canonical, duplicates/soft-404/manual actions before proposing fixes. Do not change production technical settings without evidence and approval.
+- Current changes are documentation-only on `docs/content-quality-operating-system-2026-11-25`; no production edits, PR merge, deployment or paid OpenSEO usage.
+
+## Exact next action
+Continue the Cordless Vacuum Cleaners audit: resolve Shark UK model/capacity discrepancy and find primary US IZ862H evidence; verify exact current retailer/Amazon variants for the four existing models; then disposition retain/replace/hold and complete the page scorecard. Update audit + tracker + this handoff. No production changes without explicit approval.
+
+---
 # ACTIVE HANDOFF — 25 November 2026: page-by-page content quality workflow
 
 **Read these first, in order:**
