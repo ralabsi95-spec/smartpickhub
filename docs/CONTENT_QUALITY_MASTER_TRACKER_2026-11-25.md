@@ -326,3 +326,16 @@ The 0/25 v1.0 figure was created before a complete legacy evidence crosswalk exi
 - Manufacturer page stock UI conflicts (notification/back-in-stock message versus category page Add to cart); availability UNCONFIRMED.
 - Amazon search did not verify exact IA1241UK ASIN/featured offer. IA1241UKPU Amazon-labelled listing is a different variant and rejected for this model. No ASIN approval.
 - Candidate state = RESEARCH LEAD, not shortlist-approved or replacement-approved. Page remains IN_PROGRESS/unscored. No production/catalogue/affiliate changes, no merge/deploy.
+
+
+## 25 November 2026 — 12:41 Asia/Amman / 09:41 UTC — IA1000UK official owner guide recovered; runtime, charging, care and safety reconciled (documentation-only)
+- **Major evidence gate closed:** full Shark-hosted IA1000UK Series Owner's Guide found at https://support.sharkclean.co.uk/hc/en-gb/article_attachments/25906345085212 . Shark's official support article explicitly maps the series to IA1241UK and IA1241UKT. This is primary manufacturer-hosted manual evidence; do not transfer bundle contents across suffix variants.
+- Manual confirms 18 V, 350 W body motor, 115 W nozzle; battery XIABTR540EU 18 V / 3750 mAh / 67.5 Wh; charger DK25A-220100H-B or GQ30B-225100-AB.
+- Runtime: manual says up to 60 min ECO; exact IA1241UK product page says up to 60 min ECO with non-motorised tool. Support battery FAQ says up to 70 min, a conflicting outlier. Safe copy ceiling = up to 60 min ECO with non-motorised tool; don't state 70.
+- Charge: manual and support battery FAQ say approx. 6h; exact product page metadata says 5h. Prefer owner-guide instruction (approx. 6h) for editorial claim and preserve the product-page conflict.
+- Maintenance/care: monthly filter cleaning, cold water only, full air-dry before reinstall; other vacuum components must not be exposed to liquids (except filters/dust cup); power off and remove battery before service; check/clear brushroll/nozzle/airway blockages.
+- Safety: no wet/damp surfaces/liquid pickup; specified battery and charger only; storage 3–40°C, charging 5–40°C; avoid damaged/modified batteries, metal-terminal shorting and hazardous debris. No IP rating/water-resistance claim.
+- Exact IA1241UK bundle/specs stay from the exact model page: 0.47L, 3.22kg, one battery, charging base, wall mount and 20cm Duster-Crevice tool; no Pet Tool in base bundle.
+- Exact retailer signal: John Lewis £249.99 / 4.5 from 405 / Add to basket; Currys Business IA1241UK product code N682145W shows 10+ in stock at £229.98 inc VAT. Shark direct product page has mixed notify-me/cart UI, so direct stock remains unconfirmed.
+- Amazon direct IA1241UK ASIN/featured offer still unverified; IA1241UKPU is a different variant and rejected for this record.
+- IA1241UK manual/maintenance/safety gate = SATISFIED at series scope with exact support mapping. Candidate remains research lead, not shortlist/replacement approved. Page IN_PROGRESS/unscored; no catalogue/content/affiliate/code/Cloudflare/merge/deploy/publication changes.
