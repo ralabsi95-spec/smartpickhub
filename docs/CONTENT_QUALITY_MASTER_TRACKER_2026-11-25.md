@@ -113,3 +113,36 @@ The one-million-product discovery ambition is a database/research pipeline objec
 **Continue:** `cordless-vacuum-cleaners-us-uk`  
 **Do not start page #2 until the active page has a documented disposition and exact remaining actions.**  
 **First task:** verify all four product identities, variants and current retailer/Amazon UK listings; preserve search links unless an exact direct listing is proven. Then complete the page scorecard and update this tracker.
+
+## 9. Release milestones, permanent completion lock and no-repeat rule (owner confirmed 25 Nov 2026)
+
+The initial cohort is the 25 existing guides. Each guide's audit covers its four catalogue products; exact product-market verification is also counted separately.
+
+| Milestone | Required full PASS pages | Release gate |
+|---|---:|---|
+| 40% | 10 / 25 | All 10 page audits and included product records pass; owner approval; controlled merge; production deployment and route/SEO verification |
+| 60% | 15 / 25 | Same gates for cumulative cohort |
+| 80% | 20 / 25 | Same gates for cumulative cohort |
+| 100% | 25 / 25 | Close initial cohort; only then start expansion queue |
+
+A milestone does not itself authorise merging or publishing. Each exact batch requires owner approval. The current counter remains 0/25 (0%) until a complete audit earns PASS. No backdating or credit for partial work.
+
+### Locked complete pages
+After PASS + owner approval + merge + verified production deployment, set status to LOCKED_COMPLETE and record:
+- audit file and final score / blockers = 0;
+- approved PR and merge commit;
+- deployed commit and production verification date;
+- public route, canonical, robots, sitemap and internal-link checks;
+- product-market and affiliate destination verification;
+- any follow-up monitoring trigger.
+
+Successors must not redo a locked page. Reopen only for a recorded material trigger: recall/safety issue, model/spec/variant/warranty change, broken affiliate route or policy change, indexing/manual action, route/canonical/robots/schema regression, material buyer-intent/SERP shift, or owner request. Perform a delta audit limited to the trigger unless evidence requires wider review.
+
+### Extended mandatory checks
+Use the additional energy/environment and Google indexability checklist in CONTENT_QUALITY_OPERATING_STANDARD.md §9. Apply product-specific checks only when material; record N/A and why. Do not claim an electricity running cost without dated local tariff and explicit usage assumptions. Do not claim moisture suitability without manufacturer/IP evidence.
+
+### Progress accounting
+- Headline percentage = complete PASS guide audits / 25. A guide is not counted until its four product records have no unresolved hard blocker.
+- QA, owner approval, merged, deployed, indexed and performance are separate counters.
+- Products verified = exact product-market units fully evidenced / total relevant product-market units, never a percentage inferred from guide count.
+- At 100%, expansion begins as a separate queue. Every new product/page passes the same gates before publish or schedule.
