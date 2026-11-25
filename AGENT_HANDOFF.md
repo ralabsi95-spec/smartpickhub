@@ -1,3 +1,13 @@
+# ACTIVE HANDOFF ADDENDUM — 25 November 2026 (Amazon Shark ASIN rejection)
+
+- Amazon UK ASIN B0B42KZTH2 was inspected directly in search results. It lists title/model number IZ400UK, but secondary Model Name says IZ400UKT; capacity 0.7 L, weight 5.11 kg, 25.2 V, and no featured offers. Included accessories/package do not cleanly match official IZ400UKT package.
+- Official Shark IZ400UK is 0.19 L, 4.1 kg and 240 V; IZ400UKT is a distinct model. Amazon listing attributes conflict with the official model data and model-number field. **Reject/unapproved ASIN B0B42KZTH2** for the catalogue's IZ400UKT. Do not add it to site.
+- No exact reliable Amazon direct result surfaced for Dyson V15, Samsung VS28C9784QK/EU or Miele 11819170 in this pass. This does not prove no Amazon listing exists. Amazon US direct search is blocked by robots in this retrieval environment.
+- Amazon direct approved count stays 0/4 UK and 0/4 US. Continue with labelled search links unless an exact, selected, buyable variant is verified.
+
+Resume next from Bosch BCS1051GB weight conflict, official Shark IZ862H manual, and remaining UK/US candidate comparison. No page #2 until this page is dispositioned.
+
+---
 # ACTIVE HANDOFF — 25 November 2026 (vacuum audit continued)
 
 ## Do not repeat completed checks
