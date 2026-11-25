@@ -1,5 +1,8 @@
 # SmartPickHub — 100-step execution roadmap
 
+> **Supersession note — 25 November 2026:** This is a historical 100-step execution roadmap, not the page-by-page quality completion counter. Its older checkpoint text and statements that all guides were drafts / none approved are superseded by the 19 November owner-approved 25-guide release and the latest `MASTER_PROJECT.md` checkpoint. Steps 32–40 (product lifecycle/source/market checks and full editorial review) remain substantive work and are now executed through `docs/CONTENT_QUALITY_OPERATING_STANDARD.md` with live status in `docs/CONTENT_QUALITY_MASTER_TRACKER_2026-11-25.md`. Use that tracker for page quality progress; do not treat the 100-step tally as a percentage of fully audited pages. Reuse the existing 25-guide intent and editorial audit artifacts rather than restarting them.
+
+
 **Last updated:** 18 November 2026  
 **Repository:** https://github.com/ralabsi95-spec/smartpickhub  
 **Working branch:** `automation/bootstrap`  
