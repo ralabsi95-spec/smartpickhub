@@ -204,3 +204,66 @@ Update the master tracker and `MASTER_PROJECT.md` / `AGENT_HANDOFF.md` at each s
 - Start with small release pilots only after the current technical discovery/indexing issues are understood and the owner approves release.
 - Increase batch size only after actual page quality, crawl/discovery, user engagement and conversion evidence supports it. There is no Google-approved daily page quota.
 
+
+## 9. Extended product-specific and Google indexability quality gates (25 Nov 2026)
+
+These checks extend v1.0. Apply only where relevant to the product and buyer decision; record N/A with a reason rather than forcing irrelevant specifications into every guide.
+
+### 9.1 Energy, operating cost and environmental suitability
+
+For appliances and powered equipment, evaluate where material and source-supported:
+- Rated input power (W), voltage/frequency and regional plug/electrical compatibility.
+- Energy use in a clearly defined operating mode or test cycle (kWh per cycle, hour or year); do not convert rated watts into claimed real-world consumption without stating the calculation and assumptions.
+- Running-cost estimate only when a current, market-specific electricity tariff is sourced and dated. Formula: kWh × tariff per kWh; show usage assumptions and label it an estimate, not a guaranteed bill.
+- Energy labels/efficiency classes and official test methodology where legally/applicably available. Never compare ratings from incompatible schemes or markets.
+- Heat output, ventilation/clearance, noise and standby consumption when relevant to safe installation, comfort or ownership cost.
+- Humidity/moisture suitability: IP rating or explicit manufacturer permission for damp rooms, bathrooms, basements, outdoor use, wet cleaning or water exposure. Do not infer moisture resistance from appearance or marketing wording. Flag corrosion, mould, condensation, filter-drying and electrical shock risks where relevant.
+- Consumables, filter replacement, battery replacement, charging, water use, detergent, descaling, maintenance intervals and disposal/recycling when these materially affect total cost or suitability.
+- For products with batteries: chemistry/capacity where disclosed, replaceability, spare-battery availability, charging conditions, transport/safety warnings and end-of-life route.
+- For vacuums/air treatment: distinguish motor input watts from suction/air-watt claims; record runtime by power mode, tool/head, battery and test condition; dust-bin capacity, filtration standard, filter availability and maintenance. Do not infer whole-room air-cleaning performance from a filter label alone.
+
+### 9.2 Google crawl and indexability gate
+
+Before PASS, check the actual canonical production URL and record timestamp, tool/report, result and evidence. A successful live test means eligible/accessible at test time; it does not prove Google has crawled or indexed the URL.
+
+Required checks:
+- HTTP response and redirect chain: expected public URL resolves successfully; no 4xx/5xx, redirect loop, unexpected login/challenge, soft-404 or wrong destination.
+- robots.txt: no disallow rule affecting the URL or required assets; confirm the correct host/protocol and no accidental broad block.
+- HTML robots meta and X-Robots-Tag: no unintended noindex/none; distinguish page directives from image/PDF directives.
+- Canonical: absolute, valid, intended self-canonical (or documented canonical target); no cross-market or duplicate-page canonical mistake.
+- Rendered HTML: meaningful primary content and ordinary crawlable anchor links exist without requiring a click, form submission or client-only interaction; check mobile/desktop rendering when materially different.
+- Sitemap: correct sitemap index/child sitemap returns valid XML with successful HTTP response; canonical URLs only, correct host/protocol, no noindex/redirect/error URLs; lastmod truthful; robots references the intended sitemap. Confirm Search Console submission/processing separately.
+- Discovery: page is linked from relevant index/category pages and other contextual pages; avoid orphan URLs. Sitemap presence and IndexNow notification do not guarantee discovery or indexing.
+- Search Console URL Inspection: record Google Index state, last crawl, crawl allowed, page fetch, indexing allowed, user-declared canonical and Google-selected canonical when available. Record Live Test separately. URL unknown to Google is not itself proof of a noindex/robots block or content-quality rejection; investigate discovery/referring sitemap/links and crawl history.
+- Structured data: validate syntax and policy compliance; compare JSON-LD with visible content. Structured data validity does not guarantee indexing or rich results.
+- Duplicate/thin/soft-404 and quality signals: verify unique buyer task, substantial visible content, coherent title/H1, no near-duplicate market pages, no empty templates, no misleading metadata or doorway-like mass pages.
+- Manual actions/security issues and Search Console Page Indexing reasons where available; distinguish property-wide reports from URL-specific evidence.
+- After release, recheck the deployed URL, sitemap response, canonical/robots, internal links and GSC status on a sensible schedule. Do not repeatedly submit requests or alter technical files without a diagnosed cause.
+
+Known failure patterns to guard against (not an assertion that each occurred on this site):
+1. Accidental noindex or X-Robots-Tag: noindex on production.
+2. robots.txt disallowing the guide, host, or required rendering resources.
+3. Canonical pointing to the homepage, another guide, staging host, HTTP version, or wrong market variant.
+4. Sitemap invalid XML, inaccessible response, wrong sitemap index/child URL, blocked fetch, redirects, stale/noncanonical URLs, or host mismatch.
+5. URL omitted from sitemap and weak/no internal links; orphan pages and navigation links available only after JavaScript interaction.
+6. Broken routes, redirect chains/loops, 404/5xx, soft-404, bot challenges or server instability.
+7. Empty/thin/duplicated pages, near-identical UK/US pages without meaningful regional differences, or scaled pages with no distinct user value.
+8. Rendering differences where important content/links are absent from Google's rendered HTML.
+9. Conflicting canonical, robots, sitemap and structured-data signals.
+10. Search Console processing delay or URL unknown misdiagnosed as a confirmed technical block; live-test eligibility misreported as indexed.
+11. Structured-data errors or markup inconsistent with visible content (usually a rich-result/quality issue, not automatically a deindexing cause).
+12. Manual action, security issue, legal/policy restriction or spam-policy violation.
+
+Diagnosis rule: never change robots.txt, sitemap, canonical, page status or deployment configuration solely because a URL is not indexed. First capture the exact report reason and read-only HTTP/HTML/header evidence; then propose the smallest fix and obtain owner approval.
+
+### 9.3 Release batch, lock and no-repeat protocol
+
+The 25 existing guides are the fixed initial quality cohort. The headline denominator remains 25 guides. Each existing guide currently contains four product records; a completed page audit includes its four records, while product-market evidence is still reported separately and cannot be silently inferred from a page PASS.
+
+- 40% milestone = 10 of 25 guides with complete PASS audits (and all product records required by those pages cleared), then owner approval, controlled merge and verified production release. 60% = 15/25; 80% = 20/25; 100% = 25/25.
+- A percentage milestone is not permission to publish. Owner approval is still required for the exact batch, PR/merge and deployment.
+- Do not merge a documentation-only audit branch as if it were a content release. Content/code changes must be isolated, previewed, tested and separately approved.
+- After a page is PASS, owner-approved, merged and production-verified, mark it LOCKED_COMPLETE with audit ID, commit, PR, deployed commit, release date and route/SEO checks. Future operators must skip it and start at the next uncompleted page.
+- Reopen a locked page only for a material trigger: manufacturer/model discontinuation or safety recall; significant spec/variant/warranty/availability change; broken retailer/affiliate destination or policy change; Google/Bing indexing/manual-action issue; route/canonical/robots/schema regression; material search-intent/SERP shift; owner request. Record trigger and delta; do not repeat the entire audit by default.
+- At 100% of the 25-guide cohort, close the initial cohort. Only then begin the separate expansion queue. Each new product is prepared as a complete page/product unit, fully audited, owner-approved, then published or scheduled; no bulk thin-page generation.
+- Keep QA PASS, owner approval, merged, deployed, indexed and commercially performing as distinct states. Never call a page indexed based only on successful deployment or live test.
