@@ -2111,3 +2111,26 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Bosch BCS1051GB weight conflict remains OPEN.
 - Amazon direct ASIN approval remains 0/4 UK and 0/4 US; no first-party seller/condition/Featured Offer confirmation in this pass. Shark B0B5JMNGNQ remains a lead only; no direct approval.
 - No final retain/replace/hold matrix; active page remains IN_PROGRESS/unscored. No production/catalogue/affiliate/code/Cloudflare/sitemap/robots/PR merge/deployment/publication changes.
+
+
+## 26 November 2026 — 11:40 Asia/Amman — Google Search Console sitemap status / read-only production fetch (no changes)
+
+### Owner-provided GSC screenshots
+- On 26 Nov the Sitemaps table still shows both submitted entries as **Couldn't fetch**, Type **Unknown**, and **0 discovered pages / 0 discovered videos**: `/sitemap-index.xml` (submitted 22 Nov 2026) and `/sitemap-0.xml` (submitted 19 Nov 2026).
+- Opening the index entry shows **Last read 11/22/26**, **0 discovered pages**, and **“Sitemap could not be read.”** This confirms the Search Console processing error is still present in the owner's UI; it does not, by itself, identify the underlying cause or prove that the live sitemap is absent.
+
+### Fresh read-only check of production URLs on 26 Nov
+- Retrieved `https://smartpickhub.pages.dev/robots.txt`; extracted content is `User-agent: * Allow: / Sitemap: https://smartpickhub.pages.dev/sitemap-index.xml`.
+- Retrieved `https://smartpickhub.pages.dev/sitemap-index.xml`; it exposes one child sitemap: `https://smartpickhub.pages.dev/sitemap-0.xml`.
+- Retrieved `https://smartpickhub.pages.dev/sitemap-0.xml`; it exposes **29 URL entries**, including homepage, /guides/, and the existing guide routes, including cordless-vacuum-cleaners.
+- All three production URL fetches returned extracted content without per-URL fetch errors in the read-only retrieval tool. This confirms the URLs are currently retrievable by that retrieval path, but that tool did not expose raw HTTP status, response headers/content-type, or a Googlebot-specific request. Do not overstate this as proof that Googlebot receives identical responses.
+
+### Diagnosis and next action
+- The sitemap documents are currently present and linked correctly from robots.txt → sitemap index → child sitemap, with 29 URLs exposed. This is consistent with the earlier 22/24 Nov checks and argues against a missing-file or obviously broken-reference explanation.
+- GSC still reports an earlier failed processing result; the index's displayed Last read is 22 Nov, not 26 Nov. A current successful third-party retrieval does not prove Google has retried or successfully parsed the files. The underlying Google fetch/parse cause therefore remains **UNRESOLVED** (possible transient Google fetch/processing issue or response/header difference not captured by current retrieval).
+- Do not delete/re-submit either sitemap, rename files, edit Astro sitemap generation, robots.txt, Cloudflare settings, headers, or production pages based solely on these screenshots. No indexing requests or production changes performed.
+- Next diagnostic should be narrowly read-only: obtain raw response status + headers (especially Content-Type, redirects and any challenge/cache headers) and, if available, Cloudflare request/security events for Google's sitemap fetch window; then compare with a Google URL Inspection/live fetch or a later GSC Last read update. Only propose a minimal change if a specific reproducible defect is identified and the owner approves.
+
+### Project state
+- Existing guide/product structural counts and historical completion are unchanged; do not interpret sitemap's 0 discovered pages as 0 project pages or a reset of the completed catalogue.
+- No change to active Cordless Vacuum audit state, Amazon ASIN approvals, content/catalogue, affiliate URLs, production code, Cloudflare Pages, sitemap/robots, merge, deployment or publication.
