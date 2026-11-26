@@ -872,3 +872,13 @@ Primary candidate sources:
 - Once import completes, inspect Bing **Sitemaps** and **URL Inspection** for the exact canonical guide URL `https://smartpickhub.pages.dev/guides/cordless-vacuum-cleaners-us-uk/`; record Bing's actual response before submitting anything. Do not submit the shortened wrong-slug URL `/guides/cordless-vacuum-cleaners/`.
 - Current confirmed Google evidence remains: Live Test successful for both sitemap index and child sitemap; Live Test successful for the correct guide URL; wrong shortened guide URL returned 404; Google Page indexing report is still processing. No Bing property has yet been imported or inspected, and no Bing index status is known.
 - No production code, catalogue, affiliate links, sitemap, robots, Cloudflare, DNS, IndexNow, merge, deployment, or publication changes. Bing is now planned as a supplemental diagnostic only.
+
+
+## 26 November 2026 — 13:12 Asia/Amman — Correction: Bing Webmaster Tools already added (user screenshot)
+
+- User clarified that Bing Webmaster Tools had already been added previously; do NOT ask the user to import/add/verify the property again.
+- User screenshot confirms the existing Bing Webmaster Tools dashboard is open with the site selector showing `smartpickhub.pages...` (the SmartPickHub Pages property), and the left navigation includes Search Performance, URL Inspection, Site Explorer, Sitemaps, and IndexNow. This is sufficient evidence that the site is already present and accessible in Bing Webmaster Tools.
+- The Home dashboard currently shows Total Clicks 0 and Total Impressions 0 on the visible graph for 22–24 Nov. Treat only as the displayed reporting snapshot; do not infer no crawl/indexing from zero performance data.
+- Bing property addition/import is **already completed** (confirmed by user and screenshot), not merely planned. Next action is to inspect the existing property's **Sitemaps** section, then use **URL Inspection** for the exact canonical guide URL `https://smartpickhub.pages.dev/guides/cordless-vacuum-cleaners-us-uk/`. Capture actual Bing status before any submission or configuration change.
+- Do not repeat onboarding or import instructions. Do not activate IndexNow or change site settings without separate review and explicit approval.
+- No production code, content, catalogue, affiliate, sitemap, robots, Cloudflare, DNS, merge, deployment, or publication changes.
