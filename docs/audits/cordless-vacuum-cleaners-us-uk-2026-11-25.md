@@ -942,3 +942,12 @@ Primary candidate sources:
   3. Open **Broken redirect** row and capture source URL, target URL, redirect chain/status, and failure reason.
 - Compare each reported URL with current repo routes and sitemap only after exact URLs are known. The prior Google Live Test 404 was for the incorrect shortened path `/guides/cordless-vacuum-cleaners/`; the canonical slug-correct guide `/guides/cordless-vacuum-cleaners-us-uk/` passed Google's Live Test. Do not conflate these without matching Ahrefs' actual affected URL.
 - No source code, content, redirects, sitemap, robots, IndexNow, DNS, Cloudflare, affiliate, catalogue, production, merge, deployment, or publication changes.
+
+
+## 26 November 2026 — Ahrefs 404 detail screenshot: www host variant
+
+- User supplied Ahrefs issue detail screenshot for **404 pages**. The sole affected URL shown is exactly `https://www.smartpickhub.pages.dev/` (www-prefixed hostname), with HTTP status **404 Not found**. Ahrefs shows one result.
+- This is distinct from the approved canonical production origin `https://smartpickhub.pages.dev/` (without www). Do not conflate it with the earlier Google Live Test on the guide URL or the wrong shortened guide slug.
+- Current evidence confirms the www-prefixed hostname returns 404 to Ahrefs' crawler; it does not yet show which page/link on the site references this host, nor whether the www variant is intentionally unsupported.
+- No redirect, DNS, Cloudflare custom-domain, canonical, internal-link, sitemap, or source-code changes are approved or made. Do not add a redirect simply to suppress the Ahrefs issue.
+- Next diagnostic: in the same Ahrefs issue view, click the **Links to 404 pages** tab and capture the referring page(s) and anchor/target link. Then inspect that exact source in repository and determine whether an obsolete www URL is embedded. Only after source confirmation decide whether the correct fix is to update an internal link (preferred if it is a project-authored link) or leave the www host unsupported. Avoid configuring redirects/DNS for a pages.dev hostname without a separate technical justification.
