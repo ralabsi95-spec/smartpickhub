@@ -2158,3 +2158,15 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 
 ### Change boundary
 - Read-only checks only. No sitemap resubmission, URL indexing request, production code/configuration change, catalogue/content/affiliate change, Cloudflare change, PR merge, deployment, or publication.
+
+
+## 26 November 2026 — 13:00 Asia/Amman — Google URL Inspection Live Test: sitemap index (user screenshot)
+
+- User ran the Google Search Console **Live Test** for `https://smartpickhub.pages.dev/sitemap-index.xml` and provided the result screenshot (26 Nov 2026, 12:58:56 PM local).
+- Live Test result: **Page can be indexed**; **Crawl allowed? Yes**; **Page fetch: Successful**; **Indexing allowed? Yes**. Crawled as Google Inspection Tool smartphone.
+- Discovery says **Not checked in live tests**. This is not a failed discovery result; the live test reports fetch/crawl availability, not sitemap discovery/processing.
+- No user-declared canonical is present; Google-selected canonical is only determined after indexing. This is not a sitemap parsing verdict.
+- This is direct evidence that Google's Live Test tool can fetch the sitemap index URL successfully at the test time. It does NOT prove that the Sitemaps report's asynchronous sitemap processor has successfully parsed the index or fetched its child sitemap. Thus the historical Sitemaps report error remains unresolved.
+- Do not click Request Indexing for the XML sitemap. Do not delete/resubmit either sitemap or change production settings based on this one result.
+- Next diagnostic: run the same Live Test for `https://smartpickhub.pages.dev/sitemap-0.xml` and capture Page availability, Crawl allowed, and Page fetch. Then compare both Live Test results with the Sitemaps report. If both succeed, continue with Google-reported sitemap error details / wait for Last read update; if the child fails, investigate only the specific failure.
+- No production, code, robots, sitemap, Cloudflare, content, catalogue, affiliate, merge, deploy or publication changes.
