@@ -2304,3 +2304,14 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - No explicit www custom-domain alias is documented in the checked production config. The observed 301→404 may be a host/redirect configuration or discovered URL variant, but its origin is not established. Do not change Cloudflare settings or add redirects based only on inference.
 - Next: inspect the **4XX page** error entry separately to identify its exact URL and status, then determine whether it overlaps with the www redirect chain. After all three errors are identified, classify each as site-level host configuration, external URL, or actual internal content link.
 - No code, metadata, redirect, DNS, Cloudflare, sitemap, robots, IndexNow, affiliate, catalogue, production, merge, deployment, or publication changes.
+
+
+## 26 November 2026 — Ahrefs www seed URL detail (owner screenshot)
+
+- The Ahrefs URL detail panel for `https://www.smartpickhub.pages.dev/` identifies it as `Type: Other, Seed`, `Internal URL: Yes`, `HTTP status: 404 Not found`, `First found at: Seed URL`, and `Depth: 0`.
+- Inlink breakdown: `All inlinks: 1`, `Href inlinks: 0`, `Redirect inlinks: 1`. Therefore Ahrefs has no HTML href inlink from a content page; the only inlink is the redirect from `http://www.smartpickhub.pages.dev/` to the HTTPS www URL, as shown in the prior owner screenshot.
+- The `404 page` and `4XX page` entries in the All Issues overview both refer to this same 404 URL/category overlap; they should not be counted as two separate broken pages. The third critical item, `Broken redirect`, is the redirect chain feeding that same 404 target. Current evidence indicates one www-host seed/redirect problem, not three separate content URL defects.
+- `Download status (CURL code): Write error (23)` is shown in the Ahrefs panel; preserve as crawler diagnostic metadata, not as the HTTP status (which is explicitly 404).
+- No page content href needs correction based on this evidence. The source-of-truth production host remains `https://smartpickhub.pages.dev/` without www, as documented in `astro.config.mjs` and `README.md` on `main`.
+- Remaining diagnostic question: why Ahrefs' configured/discovered seed set includes the www host and why the HTTP www host redirects to the HTTPS www host. This is not resolved by the screenshots. Review Ahrefs project crawl start URLs/settings and Cloudflare Pages/custom-domain/redirect configuration read-only before proposing a change. Do not assume the www alias is configured or change DNS/Cloudflare without owner approval and a suitable rollback/backup.
+- No code, content, redirect, DNS, Cloudflare, sitemap, robots, IndexNow, affiliate, catalogue, production, merge, deployment, or publication changes.
