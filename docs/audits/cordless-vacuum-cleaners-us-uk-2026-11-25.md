@@ -882,3 +882,20 @@ Primary candidate sources:
 - Bing property addition/import is **already completed** (confirmed by user and screenshot), not merely planned. Next action is to inspect the existing property's **Sitemaps** section, then use **URL Inspection** for the exact canonical guide URL `https://smartpickhub.pages.dev/guides/cordless-vacuum-cleaners-us-uk/`. Capture actual Bing status before any submission or configuration change.
 - Do not repeat onboarding or import instructions. Do not activate IndexNow or change site settings without separate review and explicit approval.
 - No production code, content, catalogue, affiliate, sitemap, robots, Cloudflare, DNS, merge, deployment, or publication changes.
+
+
+## 26 November 2026 — Ahrefs Site Audit crawl received (email snapshot)
+
+- User supplied the actual Ahrefs notification for project `Smartpickhub.pages`, crawl timestamp `2026-11-26T08:19:37Z` (email dated 26 Nov 2026).
+- Crawl analyzed **33 internal URLs**. Health Score **97**. Reported issue counts: **2 Errors, 31 Warnings (+1), 31 Notices (+1)**.
+- Newly surfaced issue summaries:
+  - **Open Graph tags incomplete** — 29 URLs (+1).
+  - **Changed pages not submitted to IndexNow** — 29 URLs (+29), classified as Notice.
+  - **Title tag changed** — 25 URLs (+25), classified as Notice.
+  - **Meta description changed** — 4 URLs (+4), classified as Notice.
+  - **X (Twitter) card missing** — 4 URLs (+1).
+- This is an email summary only. The two Errors and remaining 31 Warnings / 31 Notices are not itemized in the supplied message. Exact affected URLs, issue descriptions, severity, and recommended fixes remain **unverified** until the Ahrefs issue list is inspected.
+- Interpretations: title/meta “changed” notices indicate differences from a prior crawl, not necessarily invalid metadata. IndexNow-not-submitted is a submission notice, not proof of Google/Bing indexing failure. Do not enable IndexNow or submit the 29 URLs automatically: project policy keeps IndexNow activation gated to the approved production/indexability state; verify current noindex/release status first.
+- Open Graph incomplete and missing X cards are candidates for metadata/template review. Do not edit code until exact affected URL list and current metadata are inspected. The previous project notes mention a possible missing social image tag, but this Ahrefs snapshot does not identify which OG properties are missing.
+- No site, source, metadata, robots, sitemap, IndexNow, Cloudflare, affiliate, catalogue, merge, deployment, or publication changes were made from this report.
+- Next diagnostic: open the crawl's **View all issues** page, filter **Errors**, and capture both Error rows including issue name, affected URL count, and example URLs. Then inspect Warnings and the Open Graph issue details. Prioritize the two Errors before cosmetic/social metadata notices.
