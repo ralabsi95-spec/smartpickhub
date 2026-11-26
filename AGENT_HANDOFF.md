@@ -2264,3 +2264,21 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
   3. Inspect Open Graph issue details for the exact missing properties and affected URLs; then X card issue. Do not alter templates until we know if the problem is site-wide or page-specific.
   4. Treat IndexNow-not-submitted and title/meta changed as notices, not indexing errors. Do not activate IndexNow or bulk-submit URLs without a separate decision and checking current noindex/release gates.
 - No code, page metadata, sitemap, robots, IndexNow, DNS, Cloudflare, affiliate, catalogue, production, merge, deployment, or publication changes were made from this PDF.
+
+
+## 26 November 2026 — Ahrefs Errors filter screenshot inspected
+
+- User supplied screenshot of Ahrefs Site Audit → All issues, filtered by `Importance: Error`, for crawl `26-11-2026T081937`.
+- UI counters: **Actual 3**, **New 0**, **All tracked 52**, **Turned off 0**.
+- Exact issue entries shown:
+  1. **Internal pages → 404 page** — Crawled: 1.
+  2. **Internal pages → 4XX page** — Crawled: 1.
+  3. **Redirects → Broken redirect** — Crawled: 1.
+- These are three issue entries/categories, each with one crawled occurrence. The screenshot does not expose affected URL(s), exact HTTP status for the generic 4XX row, redirect source/destination, or root cause. Do not assume 404 and 4XX are the same URL or different URLs until details are opened.
+- No issue is marked New in this view; that does not establish that the issues are harmless or resolved.
+- Next diagnostic sequence, read-only:
+  1. Open **404 page** row and capture affected URL + details.
+  2. Open **4XX page** row and capture affected URL + exact status.
+  3. Open **Broken redirect** row and capture source URL, target URL, redirect chain/status, and failure reason.
+- Compare each reported URL with current repo routes and sitemap only after exact URLs are known. The prior Google Live Test 404 was for the incorrect shortened path `/guides/cordless-vacuum-cleaners/`; the canonical slug-correct guide `/guides/cordless-vacuum-cleaners-us-uk/` passed Google's Live Test. Do not conflate these without matching Ahrefs' actual affected URL.
+- No source code, content, redirects, sitemap, robots, IndexNow, DNS, Cloudflare, affiliate, catalogue, production, merge, deployment, or publication changes.
