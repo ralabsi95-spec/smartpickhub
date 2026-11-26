@@ -416,3 +416,27 @@ The 0/25 v1.0 figure was created before a complete legacy evidence crosswalk exi
 ### Project state
 - Existing guide/product structural counts and historical completion are unchanged; do not interpret sitemap's 0 discovered pages as 0 project pages or a reset of the completed catalogue.
 - No change to active Cordless Vacuum audit state, Amazon ASIN approvals, content/catalogue, affiliate URLs, production code, Cloudflare Pages, sitemap/robots, merge, deployment or publication.
+
+
+## 26 November 2026 — 12:58 Asia/Amman — Search Console sitemap diagnosis / live index-status evidence (read-only)
+
+### Search Console property and sitemap status
+- Confirmed through the connected Search Console property `https://smartpickhub.pages.dev/` (site owner) that the correct Pages property is selected in the OpenSEO project. The old `https://smartpickhub.infinityfree.me/` property remains visible but is not selected and is legacy only.
+- User screenshots dated 26 Nov show `sitemap-index.xml` and `sitemap-0.xml` with `Couldn't fetch`; the index details say `Sitemap could not be read`, last read 2026-11-22, discovered pages 0. The child row shows Type `Unknown`, which Google documents can mean either an unrecognized file or that the sitemap has not yet been processed. Do not infer that the sitemap XML is malformed from this alone.
+- Google Search Central's current Sitemaps report documentation says a submitted sitemap should be tested with URL Inspection Live Test and Page availability; expected values are `Crawl allowed? Yes` and `Page fetch Successful`. It also says click the sitemap row/error to see details; the report's `Last read` is present only when Google fetched it. Google may retry fetch/parse failures for a few days, then stop; if the issue is fixed after repeated failures, resubmit the sitemap. Sources: https://support.google.com/webmasters/answer/7451001
+- Current web retrieval tool could not open the production robots.txt or sitemap URLs, and container-side raw HTTP/header requests failed at DNS resolution from this execution environment. Therefore raw HTTP status, Content-Type, redirect chain, Cloudflare headers, and Googlebot-specific response remain **NOT VERIFIED** in this pass. Do not reuse the previous generic extracted-content result as proof of HTTP 200 or Googlebot accessibility.
+
+### Live Google index inspection (Search Console API, 26 Nov 2026)
+- `https://smartpickhub.pages.dev/`: `Submitted and indexed`; verdict PASS; robots allowed; indexing allowed; page fetch SUCCESSFUL; Google-selected canonical equals declared canonical; crawled as MOBILE; last crawl 2026-11-19T10:26:28Z.
+- `https://smartpickhub.pages.dev/guides/`: `URL is unknown to Google`; crawl/index fields unspecified.
+- `https://smartpickhub.pages.dev/guides/cordless-vacuum-cleaners/`: `URL is unknown to Google`; crawl/index fields unspecified.
+- These are URL index-state results, not Live Tests. The homepage result proves Google successfully crawled and indexed the homepage, not that Google fetched the sitemap or crawled the guide URLs. Guide URLs remain undiscovered/unknown in the inspected property; no inference that they are blocked or technically invalid.
+
+### Diagnostic interpretation / next required evidence
+- This is not a total domain access failure: homepage is indexed and its last crawl succeeded. Sitemap processing and guide discovery remain separate unresolved states.
+- Do not change sitemap generation, robots.txt, Cloudflare, page content, canonical, or deployment settings based on current evidence. Do not delete/resubmit the sitemap yet.
+- Next user-side step: in Search Console URL Inspection, inspect the exact sitemap URL `https://smartpickhub.pages.dev/sitemap-index.xml`, choose **Test Live URL**, then expand **Page availability** and capture `Crawl allowed?` and `Page fetch`. Repeat for `https://smartpickhub.pages.dev/sitemap-0.xml` only after recording the index result. Separately inspect the exact guide URL with Live Test to distinguish crawl accessibility from index state.
+- If Live Test reports fetch success, preserve the screenshot and allow the Sitemaps report to refresh; if it reports blocked/failed, capture the exact reason and then investigate the corresponding robots/HTTP/Cloudflare cause. No speculative production fix.
+
+### Change boundary
+- Read-only checks only. No sitemap resubmission, URL indexing request, production code/configuration change, catalogue/content/affiliate change, Cloudflare change, PR merge, deployment, or publication.
