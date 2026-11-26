@@ -521,3 +521,28 @@ The 0/25 v1.0 figure was created before a complete legacy evidence crosswalk exi
 - Open Graph incomplete and missing X cards are candidates for metadata/template review. Do not edit code until exact affected URL list and current metadata are inspected. The previous project notes mention a possible missing social image tag, but this Ahrefs snapshot does not identify which OG properties are missing.
 - No site, source, metadata, robots, sitemap, IndexNow, Cloudflare, affiliate, catalogue, merge, deployment, or publication changes were made from this report.
 - Next diagnostic: open the crawl's **View all issues** page, filter **Errors**, and capture both Error rows including issue name, affected URL count, and example URLs. Then inspect Warnings and the Open Graph issue details. Prioritize the two Errors before cosmetic/social metadata notices.
+
+
+## 26 November 2026 — Ahrefs full Overview PDF reviewed (2 pages)
+
+- User uploaded `Overview - Smartpickhub.pages.pdf`, the full Ahrefs Site Audit Overview for crawl `26 Nov 2026`, compared with `19 Nov`. The PDF is the fuller overview snapshot and supersedes the abbreviated email for its displayed aggregate counts.
+- Page 1:
+  - SEO Health Score **97 (Excellent)**.
+  - AI Discoverability Score **100 (Excellent)**, but the component breakdown shows **Bot access 100** only; **Machine readability = N/A**, **Freshness signals = Coming soon**, and **AI search performance = Coming soon**. Do not interpret 100 as a complete AI-content/schema audit.
+  - Issue distribution: **3 Errors, 31 Warnings, 83 Notices** (117 issue instances/categories in Ahrefs' distribution).
+  - Error distribution chart reports **61 URLs without errors** and **2 URLs with errors**. This is distinct from the count of 3 Error issue types/entries.
+  - What's new: Open Graph tags incomplete (29 crawled, +1 change, 1 new); Changed pages not submitted to IndexNow (29, +29, Notice); Title tag changed (25, +25, Notice); Meta description changed (4, +4, Notice); X (Twitter) card missing (4, +1, 1 new).
+- Page 2:
+  - Crawled URLs distribution: **59 total = 33 internal + 26 resources**.
+  - Content types: **29 HTML, 25 images, 1 CSS, 1 Other** (counts shown by Ahrefs).
+  - HTTP status distribution: **60 Success (2xx), 2 Redirect (3xx), 1 Client error (4xx)**. The exact 4xx URL and cause are not exposed in this Overview; must inspect the Errors list before diagnosing.
+  - Link crawl status: **471 links found; 172 crawled; 299 uncrawled**. These are link crawl statuses, not counts of indexed pages.
+  - TTFB distribution across 29 HTML URLs: **5 fast (<200ms), 3 medium (200–300ms), 12 slow (300–500ms), 9 too slow (>500ms)**. Thus 21/29 exceeded 300ms in this Ahrefs crawl; this is a triage signal, not by itself a Core Web Vitals failure or proof of Google ranking impact.
+- Reconcile email vs PDF: the email summary stated 2 Errors and 31 Warnings / 31 Notices; the full Overview PDF displays 3 Errors, 31 Warnings and 83 Notices. Use the PDF's aggregate overview as the current full snapshot; note that 3 issue entries can affect 2 URLs. Investigate exact issue list for authoritative itemization.
+- The displayed 100 AI score is limited by the component state: only bot access is scored; machine readability and freshness/AI performance are not yet scored. Avoid marketing the site as fully AI-optimized based on this number.
+- Priority for next read-only review:
+  1. Open Ahrefs `View all issues`, filter **Errors**, capture all three Error entries and their affected URLs; identify the 4xx URL and determine if internal, external, or resource before considering a fix.
+  2. Inspect TTFB details for the 9 URLs >500ms and 12 URLs 300–500ms; separate HTML document response time from asset loading and avoid changes until exact pages/causes are known.
+  3. Inspect Open Graph issue details for the exact missing properties and affected URLs; then X card issue. Do not alter templates until we know if the problem is site-wide or page-specific.
+  4. Treat IndexNow-not-submitted and title/meta changed as notices, not indexing errors. Do not activate IndexNow or bulk-submit URLs without a separate decision and checking current noindex/release gates.
+- No code, page metadata, sitemap, robots, IndexNow, DNS, Cloudflare, affiliate, catalogue, production, merge, deployment, or publication changes were made from this PDF.
