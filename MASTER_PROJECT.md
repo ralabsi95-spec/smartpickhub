@@ -2704,3 +2704,16 @@ Decision: retain DS224+ as a UK-market model, but do not state universal current
 - Current evidence confirms the www-prefixed hostname returns 404 to Ahrefs' crawler; it does not yet show which page/link on the site references this host, nor whether the www variant is intentionally unsupported.
 - No redirect, DNS, Cloudflare custom-domain, canonical, internal-link, sitemap, or source-code changes are approved or made. Do not add a redirect simply to suppress the Ahrefs issue.
 - Next diagnostic: in the same Ahrefs issue view, click the **Links to 404 pages** tab and capture the referring page(s) and anchor/target link. Then inspect that exact source in repository and determine whether an obsolete www URL is embedded. Only after source confirmation decide whether the correct fix is to update an internal link (preferred if it is a project-authored link) or leave the www host unsupported. Avoid configuring redirects/DNS for a pages.dev hostname without a separate technical justification.
+
+
+## 26 November 2026 — Ahrefs 404 / broken redirect detail confirmed
+
+- User supplied Ahrefs Data Explorer detail for the 404 target and the broken redirect.
+- 404 target: `https://www.smartpickhub.pages.dev/`; HTTP status **404**, organic traffic 0, depth 0, not indexable, Ahrefs shows **1** incoming link.
+- Broken redirect detail: source `http://www.smartpickhub.pages.dev/` (HTTP **301**) redirects to `https://www.smartpickhub.pages.dev/` (HTTP **404**). Link type Redirect; nofollow No; one row.
+- This proves the redirect chain fails because the HTTP www host redirects to the HTTPS www host, which returns 404. Approved production canonical host is `https://smartpickhub.pages.dev/` (no www).
+- Read `astro.config.mjs` on `main`: `productionSite = 'https://smartpickhub.pages.dev'`; Astro's `site` uses that production host unless overridden for preview. Read `README.md` on `main`: production is `https://smartpickhub.pages.dev/`. This confirms the project source-of-truth host is non-www.
+- The two Ahrefs screenshots do **not** identify a content page linking to this URL; the one incoming link shown is consistent with the redirect source itself. Do not claim a specific content page contains a bad href without the source detail.
+- No explicit www custom-domain alias is documented in the checked production config. The observed 301→404 may be a host/redirect configuration or discovered URL variant, but its origin is not established. Do not change Cloudflare settings or add redirects based only on inference.
+- Next: inspect the **4XX page** error entry separately to identify its exact URL and status, then determine whether it overlaps with the www redirect chain. After all three errors are identified, classify each as site-level host configuration, external URL, or actual internal content link.
+- No code, metadata, redirect, DNS, Cloudflare, sitemap, robots, IndexNow, affiliate, catalogue, production, merge, deployment, or publication changes.
