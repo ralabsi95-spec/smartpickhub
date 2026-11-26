@@ -841,3 +841,21 @@ Primary candidate sources:
 - The Sitemaps report's earlier `Couldn't fetch` / `Sitemap could not be read` remains unresolved. Current evidence does not justify changing the sitemap files, robots.txt, headers, Cloudflare, or production code.
 - Next step: return to Search Console → Sitemaps, open the submitted `/sitemap-0.xml` row and capture any detailed error / last-read information available from its details page; then inspect `/sitemap-index.xml` row details. Do not click Request Indexing for either XML URL, do not delete or resubmit the sitemaps yet. If no more specific error is shown, preserve the successful live-test evidence and wait for the Sitemaps report's next processing/Last read update.
 - No production, sitemap, robots, Cloudflare, content, catalogue, affiliate, code, merge, deploy or publication changes.
+
+
+## 26 November 2026 — 13:05 Asia/Amman — Guide 404 traced to inspected URL slug mismatch (read-only)
+
+### User-provided URL Inspection Live Test
+- User tested `https://smartpickhub.pages.dev/guides/cordless-vacuum-cleaners/` at 1:03:17 PM local. Google reports **URL is not available to Google**; Page availability: **Page cannot be indexed: Not found (404)**; Crawl allowed: Yes; Page fetch: Failed: Not found (404); Indexing allowed: N/A. This is a confirmed 404 for that exact path at test time. No indexing request was submitted.
+
+### Repository source-of-truth check on main
+- Read `src/data/products.json` on GitHub `main` (blob SHA `075ce71d57b2ee21fdecd4f1c82036819ba55937`). It contains 25 guides and the matching cordless vacuum guide record has slug **`cordless-vacuum-cleaners-us-uk`**, title **“Cordless Vacuum Cleaners: Comparing Stick Vacuums for US & UK Homes”**, editorialStatus **“Approved for publication”**.
+- Read `src/pages/guides/[slug].astro` on `main` (blob SHA `5ef0270d28b6b1fcb4249585d81356665e967e91`). Its `getStaticPaths()` maps every `data.guides` entry to `params: { slug: guide.slug }`; canonical path is constructed as `/guides/${guide.slug}/`. Therefore the route generated from the current `main` data is **`https://smartpickhub.pages.dev/guides/cordless-vacuum-cleaners-us-uk/`**, not the shorter path tested by the user.
+- Read `src/pages/guides/index.astro` on `main` (blob SHA `bb7d77a3a0c9424199f2808a5373f6e3c77783ec`); guide cards link to `/guides/${guide.slug}/`, consistent with the generated route.
+- Search Console index inspection for the slug-correct URL `https://smartpickhub.pages.dev/guides/cordless-vacuum-cleaners-us-uk/` returned **URL is unknown to Google** with crawl/index fields unspecified. This is stored index status, NOT a Live Test and NOT proof of 404 or 200.
+- Direct external fetch of the slug-correct production URL could not be completed by the web retrieval tool in this session. Thus current deployed HTTP response for the correct route remains **NOT YET VERIFIED**. Repository `main` establishes the expected generated route, but does not alone prove what is currently deployed.
+
+### Diagnosis / next step
+- The confirmed 404 belongs to the wrong/shortened slug URL that was entered. The project source on `main` uses the `-us-uk` suffix. Do not modify slug data, redirects, sitemap, production code or Cloudflare based on this mismatch.
+- Next: run Search Console **TEST LIVE URL** for `https://smartpickhub.pages.dev/guides/cordless-vacuum-cleaners-us-uk/`. If fetch is Successful, request indexing for this correct content URL (not the 404 URL and not XML sitemaps), provided the user chooses to do so. If it returns 404, stop and inspect the actual deployed build/Cloudflare Pages deployment against `main` before any fix.
+- No production, catalogue, affiliate, sitemap, robots, Cloudflare, code, merge, deployment or publication changes. No Request Indexing action was taken by the assistant.
