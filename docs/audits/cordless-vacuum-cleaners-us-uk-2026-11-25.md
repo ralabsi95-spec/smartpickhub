@@ -830,3 +830,14 @@ Primary candidate sources:
 - Do not click Request Indexing for the XML sitemap. Do not delete/resubmit either sitemap or change production settings based on this one result.
 - Next diagnostic: run the same Live Test for `https://smartpickhub.pages.dev/sitemap-0.xml` and capture Page availability, Crawl allowed, and Page fetch. Then compare both Live Test results with the Sitemaps report. If both succeed, continue with Google-reported sitemap error details / wait for Last read update; if the child fails, investigate only the specific failure.
 - No production, code, robots, sitemap, Cloudflare, content, catalogue, affiliate, merge, deploy or publication changes.
+
+
+## 26 November 2026 — 13:02 Asia/Amman — Google URL Inspection Live Test: child sitemap (user screenshot)
+
+- User ran the Google Search Console **Live Test** for `https://smartpickhub.pages.dev/sitemap-0.xml` and supplied screenshot (26 Nov 2026, 1:00:48 PM local).
+- Live Test result: **Page can be indexed**; **Crawl allowed? Yes**; **Page fetch: Successful**; **Indexing allowed? Yes**. Crawled as Google Inspection Tool smartphone.
+- Discovery says **Not checked in live tests**; this is not a failed discovery result. No user-declared canonical is present; Google-selected canonical is only determined after indexing. Neither field diagnoses sitemap parser success.
+- Together with the preceding 12:58:56 PM Live Test for `sitemap-index.xml` (same successful availability, crawl, fetch and indexing-allowed verdicts), this establishes that Google Inspection Tool could fetch both sitemap URLs at their respective test times. It does not establish that the Sitemaps report's asynchronous processor parsed the XML, followed the index reference, or discovered the 29 child URLs.
+- The Sitemaps report's earlier `Couldn't fetch` / `Sitemap could not be read` remains unresolved. Current evidence does not justify changing the sitemap files, robots.txt, headers, Cloudflare, or production code.
+- Next step: return to Search Console → Sitemaps, open the submitted `/sitemap-0.xml` row and capture any detailed error / last-read information available from its details page; then inspect `/sitemap-index.xml` row details. Do not click Request Indexing for either XML URL, do not delete or resubmit the sitemaps yet. If no more specific error is shown, preserve the successful live-test evidence and wait for the Sitemaps report's next processing/Last read update.
+- No production, sitemap, robots, Cloudflare, content, catalogue, affiliate, code, merge, deploy or publication changes.
